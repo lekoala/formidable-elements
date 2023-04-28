@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input mask demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="./assets/demo.css" rel="stylesheet">
+    <script type="module" src="./assets/demo.js"></script>
+
+    <script type="module" src="../dist/input-mask.min.js"></script>
+</head>
+
+<body class="p-3">
+    <form action="https://vercel-dumper.vercel.app">
+        <div class="mb-3">
+            <label for="mask-input" class="form-label">Simple mask</label>
+            <input-mask data-config='{"mask": "aa-9999"}'>
+                <input type="text" class="form-control" id="mask-input" name="mask" placeholder="aa-9999">
+            </input-mask>
+            <!-- placeholder attribute != placeholder option -->
+        </div>
+        <div class="mb-3">
+            <label for="maskdefault-input" class="form-label">Simple mask with default value</label>
+            <input-mask data-config='{"mask": "aa-9999", "placeholder":"aa-9999"}'>
+                <input type="text" class="form-control" id="maskdefault-input" name="maskdefault" value="BB-1234">
+            </input-mask>
+        </div>
+        <div class="mb-3">
+            <label for="masknohidden-input" class="form-label">Simple mask (no hidden)</label>
+            <input-mask data-config='{"mask": "aa-9999", "placeholder":"aa-9999"}' data-keep-mask="true">
+                <input type="text" class="form-control" id="masknohidden-input" name="masknohidden" value="BB-1234">
+            </input-mask>
+        </div>
+        <div class="mb-3">
+            <label for="date-input" class="form-label">Date (alias)</label>
+            <input-mask data-config='{"alias": "datetime", "inputFormat": "dd/mm/yyyy"}'>
+                <input type="text" class="form-control" id="date-input" name="date">
+            </input-mask>
+        </div>
+        <div class="mb-3">
+            <label for="date-input" class="form-label">Date (alias) but iso format</label>
+            <input-mask data-config='{"alias": "datetime", "inputFormat": "dd/mm/yyyy", "outputFormat":"yyyy-mm-dd"}'>
+                <input type="text" class="form-control" id="date-input" name="date">
+            </input-mask>
+        </div>
+        <div class="mb-3">
+            <label for="perc-input" class="form-label">Decimal % (can go above 100%). Useful when you store the value / 100 in the
+                db</label>
+            <input-mask data-config='{"suffix": " %", "alias": "numeric", "rightAlign": false}' data-decimal="true">
+                <input type="text" class="form-control" id="perc-input" name="perc" value="0.01">
+            </input-mask>
+        </div>
+        <div class="mb-3">
+            <label for="percreg-input" class="form-label">Regular %</label>
+            <input-mask data-config='{"alias": "percentage", "rightAlign": false}'>
+                <input type="text" class="form-control" id="percreg-input" name="percreg" value="0.01">
+            </input-mask>
+        </div>
+        <div class="mb-3">
+            <label for="currency-input" class="form-label">Currency</label>
+            <input-mask data-config='{"alias": "currency", "suffix": " €", "rightAlign": false, "radixPoint": ","}'>
+                <input type="text" class="form-control" id="currency-input" name="currency">
+            </input-mask>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <hr>
+    <button class="btn btn-light delete-btn" data-name="input-mask">Delete element</button>
+    <button class="btn btn-light copy-btn" data-name="input-mask">Copy element</button>
+    <button class="btn btn-light move-btn" data-name="input-mask">Move element</button>
+    <hr>
+    <div id="target"></div>
+</body>
+
+</html>

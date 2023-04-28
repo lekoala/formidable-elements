@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flatpickr demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="./assets/demo.css" rel="stylesheet">
+    <script type="module" src="./assets/demo.js"></script>
+
+    <script src="../dist/flatpickr-input.min.js"></script>
+    <!-- needs to be included after the element, it will wait until locale is parsed -->
+    <script src="https://npmcdn.com/flatpickr@4.6.13/dist/l10n/fr.js"></script>
+</head>
+
+<body class="p-3">
+    <form action="https://vercel-dumper.vercel.app">
+        <div class="mb-3">
+            <label for="date-input" class="form-label">Date</label>
+            <flatpickr-input data-config='{}'>
+                <input type="text" class="form-control" id="date-input" name="date">
+            </flatpickr-input>
+        </div>
+        <div class="mb-3">
+            <label for="datedef-input" class="form-label">Date (default value)</label>
+            <flatpickr-input data-config='{"allowInput": true}'>
+                <input type="text" class="form-control" id="datedef-input" name="datedef" value="2023-04-24">
+            </flatpickr-input>
+        </div>
+        <div class="mb-3">
+            <label for="datekeep-input" class="form-label">Date (keep format, no hidden input)</label>
+            <flatpickr-input data-config='{"allowInput": true}' data-keep-format="1">
+                <input type="text" class="form-control" id="datekeep-input" name="datekeep" value="2023-04-24">
+            </flatpickr-input>
+        </div>
+        <div class="mb-3">
+            <label for="frdate-input" class="form-label">Date French</label>
+            <flatpickr-input data-config='{"locale": "fr"}'>
+                <input type="text" class="form-control" id="frdate-input" name="frdate" value="2023-04-24">
+            </flatpickr-input>
+        </div>
+        <div class="mb-3">
+            <label for="datetime-input" class="form-label">Date time</label>
+            <flatpickr-input data-config='{"enableTime": true}' data-confirm-date="true">
+                <input type="text" class="form-control" id="datetime-input" name="datetime" value="2023-04-23 13:30:30">
+            </flatpickr-input>
+        </div>
+        <div class="input-group  mb-3">
+            <label for="startdate-input" class="form-label me-3">Start:end</label>
+            <flatpickr-input data-config='{}' data-range="#enddate-input">
+                <input type="text" class="form-control" id="startdate-input" name="startdate" value="">
+            </flatpickr-input>
+            <flatpickr-input data-config='{}'>
+                <input type="text" class="form-control" id="enddate-input" name="enddate" value="">
+            </flatpickr-input>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <hr>
+    <button class="btn btn-light delete-btn" data-name="flatpickr-input">Delete element</button>
+    <button class="btn btn-light copy-btn" data-name="flatpickr-input">Copy element</button>
+    <button class="btn btn-light move-btn" data-name="flatpickr-input">Move element</button>
+    <hr>
+    <div id="target"></div>
+</body>
+
+</html>

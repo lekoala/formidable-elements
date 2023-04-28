@@ -1,0 +1,49 @@
+{
+  "name": "formidable-elements",
+  "main": "index",
+  "description": "A formidable set of libraries that can be used as custom elements with an unified API.",
+  "version": "1.0.0-dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lekoala/formidable-elements"
+  },
+  "author": "LeKoala",
+  "license": "MIT",
+  "dependencies": {
+    "@melloware/coloris": "^0.19.1",
+    "bootstrap5-autocomplete": "^1.1.5",
+    "bootstrap5-tags": "^1.5.20",
+    "cleave-es6": "^1.0.0",
+    "countdown": "^2.6.0",
+    "filepond": "^4.30.4",
+    "filepond-plugin-file-metadata": "^1.0.8",
+    "filepond-plugin-file-poster": "^2.5.1",
+    "filepond-plugin-file-validate-size": "^2.2.8",
+    "filepond-plugin-file-validate-type": "^1.2.8",
+    "filepond-plugin-image-crop": "^2.0.6",
+    "filepond-plugin-image-exif-orientation": "^1.0.11",
+    "filepond-plugin-image-preview": "^4.6.11",
+    "filepond-plugin-image-resize": "^2.0.10",
+    "filepond-plugin-image-transform": "^3.8.7",
+    "filepond-plugin-image-validate-size": "^1.2.7",
+    "flatpickr": "^4.6.13",
+    "inputmask": "^5.0.8"
+  },
+  "devDependencies": {
+    "esbuild": "^0.17.18"
+  },
+  "keywords": [
+    "form",
+    "custom-element",
+    "input",
+    "library",
+    "web-component"
+  ],
+  "scripts": {
+    "build": "esbuild ./src/*.js --bundle --minify --loader:.css=text --format=iife --outdir=dist --out-extension:.js=.min.js",
+    "start": "npm run build -- --servedir=.",
+    "watch": "npm run build -- --watch",
+    "bump": "npm run build-all && npm version patch",
+    "update-deps": "npx npm-check-updates -u"
+  }
+}
