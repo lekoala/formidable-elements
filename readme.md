@@ -60,6 +60,8 @@ for the attribute.
 Why no plain data attributes ? Well, data attributes are a pain to use. They default to string and this
 require conversion to make it work. Also, components with lots of options quickly become horrible.
 
+Some elements have specific (data) attributes for some custom features, see dedicated docs (wip).
+
 You can access the configuration using the `config` public property of the element.
 
 Editing json in your vscode can be easier with https://marketplace.visualstudio.com/items?itemName=andersonbruceb.json-in-html
