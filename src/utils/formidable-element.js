@@ -22,6 +22,7 @@ class FormidableElement extends HTMLElement {
    * This can get called multiple times
    */
   connectedCallback() {
+    // Clear destroyed timeout if reconnected quickly (eg: when attaching to a new parent)
     if (t) {
       clearTimeout(t);
     }
@@ -30,6 +31,7 @@ class FormidableElement extends HTMLElement {
 
   disconnectedCallback() {
     this.disconnected();
+    // Schedule destroyed callback
     t = setTimeout(() => {
       this.destroyed();
       this.config = null;

@@ -1,3 +1,4 @@
+//@ts-ignore
 import Tags from "bootstrap5-tags";
 //@ts-ignore
 import styles from "../node_modules/bootstrap5-tags/tags-pure.min.css";
