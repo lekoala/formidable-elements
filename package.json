@@ -28,7 +28,8 @@
     "filepond-plugin-image-validate-size": "^1.2.7",
     "flatpickr": "^4.6.13",
     "inputmask": "^5.0.8",
-    "squire-rte": "^2.0.3"
+    "squire-rte": "^2.0.3",
+    "superfile": "^1.2.1"
   },
   "devDependencies": {
     "esbuild": "^0.17.18"
