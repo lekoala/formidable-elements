@@ -1,40 +1,41 @@
 import Editor from "../node_modules/squire-rte/dist/squire-raw.mjs";
 
 import FormidableElement from "./utils/formidable-element.js";
-import attr from "./utils/attr.js";
 import ce from "./utils/ce.js";
+import { q } from "./utils/query.js";
 import parseHTML from "./utils/parseHTML.js";
 import setHTML, { loadDOMPurify } from "./utils/setHTML.js";
 import hasBootstrap from "./utils/hasBootstrap.js";
 import injectStyles from "./utils/injectStyles.js";
 
+const FORCE_DOMPURIFY = true;
 const name = "squire-editor";
 
 const styles = `
-squire-editor {
+.squire-editor {
   position:relative;
   display:block;
 }
-squire-editor .squire-toolbar {
+.squire-editor .squire-toolbar {
   position:absolute;
   top:0;
   background:#EFEFEF;
   overflow:hidden;
 }
-squire-editor .squire-toolbar-group {
+.squire-editor .squire-toolbar-group {
   border-right:1px solid rgba(100,100,100,0.2);
   display:inline-block;
 }
-squire-editor .squire-toolbar-group:last-child {
+.squire-editor .squire-toolbar-group:last-child {
   border-right:0;
 }
-squire-editor .squire-toolbar button {
+.squire-editor .squire-toolbar button {
   border:0;
   height:38px;
   width:38px;
   background:transparent;
 }
-squire-editor .squire-toolbar button:hover {
+.squire-editor .squire-toolbar button:hover {
   background:rgba(100,100,100,0.2);
 }
 `;
@@ -70,16 +71,21 @@ function adjustStyles(editor, toolbar, textarea) {
 
 const resizeObserver = new ResizeObserver((entries) => {
   for (const entry of entries) {
+    /**
+     * @type {HTMLElement}
+     */
+    //@ts-ignore
+    const t = entry.target;
     // Only compute if width has changed
-    const w = entry.target.offsetWidth;
-    if (w == entry.target.dataset.width) {
+    const w = t.offsetWidth.toString();
+    if (w == t.dataset.width) {
       continue;
     }
-    entry.target.dataset.width = w;
+    t.dataset.width = w;
     if (entry.contentBoxSize) {
-      const textarea = entry.target.querySelector("textarea");
-      const editor = entry.target.querySelector(".squire-input");
-      const toolbar = entry.target.querySelector(".squire-toolbar");
+      const textarea = q("textarea", null, t);
+      const editor = q("div", ".squire-input", t);
+      const toolbar = q("div", ".squire-toolbar", t);
       //@ts-ignore
       adjustStyles(editor, toolbar, textarea);
     }
@@ -93,34 +99,38 @@ class SquireEditor extends FormidableElement {
    * @returns {HTMLTextAreaElement}
    */
   get el() {
-    return this.querySelector("textarea");
+    return q("textarea", null, this);
   }
 
   created() {
     // Allow creation of element if necessary
     if (!this.el) {
-      const el = ce("textarea");
-      el.name = attr(this, "name");
-      // this should be sanitized by yourself
-      el.value = attr(this, "value");
+      const el = ce("textarea", {
+        name: this.getAttribute("name"),
+        // this should be sanitized by yourself
+        value: this.getAttribute("value"),
+      });
       if (hasBootstrap()) {
         el.classList.add("form-control");
       }
       this.appendChild(el);
     }
 
-    this.el.setAttribute("hidden", "");
-    this.el.style.overflow = "hidden";
-    this.el.spellcheck = false;
+    this.classList.add("squire-editor");
+
+    const el = this.el;
+    el.setAttribute("hidden", "");
+    el.style.overflow = "hidden";
+    el.spellcheck = false;
 
     this.init();
   }
 
   async init() {
-    await loadDOMPurify();
+    await loadDOMPurify(FORCE_DOMPURIFY);
 
-    let toolbar = this.querySelector(".squire-toolbar");
-    let editor = this.querySelector(".squire-input");
+    let toolbar = q("div", ".squire-toolbar", this);
+    let editor = q("div", ".squire-input", this);
     if (toolbar) {
       toolbar.remove();
     }
@@ -297,6 +307,7 @@ class SquireEditor extends FormidableElement {
         el.dataset.removeAction = btn.removeAction;
         el.dataset.format = btn.format;
         el.dataset.prompt = btn.prompt || "";
+        el.ariaLabel = btn.name;
         parent.appendChild(el);
       };
       buttons.forEach((btn) => {
@@ -324,15 +335,16 @@ class SquireEditor extends FormidableElement {
 
     this.config = Object.assign(
       {
-        blockTag: "div", // fixContainer use div by default, so don't use p
-        blockAttributes: { class: "paragraph" }, // ignored also by fixContainer
+        //@link https://github.com/fastmail/Squire/issues/432
+        blockTag: "div",
+        blockAttributes: { class: "paragraph" },
         tagAttributes: {
           blockquote: { class: "blockquote" },
         },
         sanitizeToDOMFragment: (html, editor) => {
           // not ideal, but in chrome, calling setHTML on a template doesn't seem to be working atm
           const tmp = ce("div");
-          setHTML(tmp, html);
+          setHTML(tmp, html, FORCE_DOMPURIFY);
           const frag = parseHTML(tmp.innerHTML);
           return frag ? document.importNode(frag, true) : document.createDocumentFragment();
         },
@@ -349,6 +361,20 @@ class SquireEditor extends FormidableElement {
       const html = this.editor.getHTML();
       this.el.value = html;
     });
+    if (this.dataset.allowPaste) {
+      this.editor.addEventListener("pasteImage", (event) => {
+        const items = [...event.detail.clipboardData.items];
+        const imageItems = items.filter((item) => /image/.test(item.type));
+        if (!imageItems.length) {
+          return false;
+        }
+        let reader = new FileReader();
+        reader.onload = (loadEvent) => {
+          this.editor.insertImage(loadEvent.target.result);
+        };
+        reader.readAsDataURL(imageItems[0].getAsFile());
+      });
+    }
   }
 
   connected() {
@@ -391,10 +417,11 @@ class SquireEditor extends FormidableElement {
     const prompt = btn.dataset.prompt;
     let value, otherValue;
 
+    const editor = q("div", ".squire-input", this);
+
     // special action
     if (action === "html") {
-      const editor = this.querySelector(".squire-input");
-      const textarea = this.querySelector("textarea");
+      const textarea = q("textarea", null, this);
       if (textarea.hasAttribute("hidden")) {
         const h = Math.max(parseInt(window.getComputedStyle(editor).height), textarea.scrollHeight);
         textarea.style.height = h + "px";
@@ -412,6 +439,11 @@ class SquireEditor extends FormidableElement {
     }
 
     if (action && ed && ed[action]) {
+      // Editor is hidden
+      if (editor.hasAttribute("hidden")) {
+        return;
+      }
+
       const selection = ed.getSelection();
 
       if (format && removeAction && ed.hasFormat(format)) {

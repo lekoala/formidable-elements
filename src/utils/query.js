@@ -1,6 +1,8 @@
 function s(tagName, selector, ctx) {
   selector = selector || tagName;
-  if (!(ctx instanceof Document)) {
+  // if its an element
+  //@link https://developer.mozilla.org/en-US/docs/Web/API/Node/nodeType#value
+  if (ctx.nodeType == 1) {
     selector = `:scope ${selector}`;
   }
   return selector;

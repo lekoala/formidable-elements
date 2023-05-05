@@ -4,7 +4,6 @@ import Coloris from "@melloware/coloris";
 import FormidableElement from "./utils/formidable-element.js";
 import injectStyles from "./utils/injectStyles.js";
 import setId from "./utils/setId.js";
-import attr from "./utils/attr.js";
 import isRTL from "./utils/isRTL.js";
 
 // Example
@@ -43,7 +42,7 @@ class ColorisInput extends FormidableElement {
 
   created() {
     const id = setId(this.el, name);
-    attr(this.el, "autocomplete", "off");
+    this.el.autocomplete = "off";
 
     // el, wrap, rtl, inline, defaultColor and a11y can only be set globally
     Coloris.coloris({
@@ -57,7 +56,7 @@ class ColorisInput extends FormidableElement {
   }
 
   destroyed() {
-    const id = attr(this.el, "id");
+    const id = this.el.id;
     Coloris.removeInstance(`#${id}`);
   }
 }

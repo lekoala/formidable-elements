@@ -1,5 +1,3 @@
-import attr from "./attr.js";
-
 let counter = 0;
 
 /**
@@ -9,7 +7,7 @@ let counter = 0;
  */
 export default function setId(el, name) {
   counter++;
-  const id = attr(el, "id") || `${name}-${counter}`;
-  attr(el, "id", id);
+  const id = el.id || `${name}-${counter}`;
+  el.id = id;
   return id;
 }

@@ -3,15 +3,18 @@
  * @link https://sanitizer-api.dev/
  * @param {HTMLElement} el (NOT a template element)
  * @param {string} html
- * @param {Object} opts
+ * @param {Boolean} force
  */
-export default function setHTML(el, html, opts = {}) {
+export default function setHTML(el, html, force = false) {
   //@ts-ignore
-  if (window.Sanitizer) {
+  if (window.Sanitizer && !force) {
     //@ts-ignore
     el.setHTML(html);
   } else if (window["DOMPurify"]) {
-    el.innerHTML = window["DOMPurify"].sanitize(html);
+    el.innerHTML = window["DOMPurify"].sanitize(html, {
+      WHOLE_DOCUMENT: false,
+      FORCE_BODY: false,
+    });
   } else {
     el.innerHTML = html;
   }
