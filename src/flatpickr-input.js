@@ -1,8 +1,13 @@
 import FormidableElement from "./utils/formidable-element.js";
 import flatpickr from "flatpickr";
 import confirmDatePlugin from "flatpickr/dist/plugins/confirmDate/confirmDate.js";
+import monthSelectPlugin from "flatpickr/dist/plugins/monthSelect/index.js";
 // @ts-ignore
 import styles from "../node_modules/flatpickr/dist/flatpickr.min.css";
+// @ts-ignore
+import confirmDateStyles from "../node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.css";
+// @ts-ignore
+import monthSelectStyles from "../node_modules/flatpickr/dist/plugins/monthSelect/style.css";
 import injectStyles from "./utils/injectStyles.js";
 import insertHiddenInput from "./utils/insertHiddenInput.js";
 import setId from "./utils/setId.js";
@@ -22,8 +27,14 @@ import { toDateTime, toDate, toTime } from "./utils/date.js";
 const events = ["change", "blur"];
 const name = "flatpickr-input";
 
+// bootstrap compat
+const customStyles = `input.flatpickr-input.form-control[readonly] {
+    background-color: var(--bs-body-bg, #fff);
+    border-color: var(--bs-border-color, #dee2e6);
+}`;
+
 // Inject styles
-injectStyles(name, styles);
+injectStyles(name, styles + confirmDateStyles + monthSelectStyles + customStyles);
 
 class FlatpickrInput extends FormidableElement {
   /**
@@ -113,6 +124,10 @@ class FlatpickrInput extends FormidableElement {
       //@ts-ignore
       plugins.push(new confirmDatePlugin({}));
     }
+    if (this.dataset.monthSelect) {
+      //@ts-ignore
+      plugins.push(new monthSelectPlugin({}));
+    }
     this.config.plugins = plugins;
 
     // wait until locale is defined
@@ -154,6 +169,8 @@ class FlatpickrInput extends FormidableElement {
 
   init() {
     const input = this.el;
+
+    const isReadonly = input.readOnly;
 
     /**
      * @type {flatpickr.Instance}
@@ -198,6 +215,8 @@ class FlatpickrInput extends FormidableElement {
   }
 }
 
-customElements.define(name, FlatpickrInput);
+if (!customElements.get(name)) {
+  customElements.define(name, FlatpickrInput);
+}
 
 export default FlatpickrInput;

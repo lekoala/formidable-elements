@@ -42,6 +42,8 @@ class CleaveInput extends FormidableElement {
   }
 }
 
-customElements.define(name, CleaveInput);
+if (!customElements.get(name)) {
+  customElements.define(name, CleaveInput);
+}
 
 export default CleaveInput;

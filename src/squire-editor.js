@@ -8,7 +8,7 @@ import setHTML, { loadDOMPurify } from "./utils/setHTML.js";
 import hasBootstrap from "./utils/hasBootstrap.js";
 import injectStyles from "./utils/injectStyles.js";
 
-const FORCE_DOMPURIFY = true;
+const FORCE_DOMPURIFY = false;
 const name = "squire-editor";
 
 const styles = `
@@ -479,6 +479,8 @@ class SquireEditor extends FormidableElement {
   }
 }
 
-customElements.define(name, SquireEditor);
+if (!customElements.get(name)) {
+  customElements.define(name, SquireEditor);
+}
 
 export default SquireEditor;

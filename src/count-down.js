@@ -47,6 +47,8 @@ class CountdownElement extends FormidableElement {
   }
 }
 
-customElements.define(name, CountdownElement);
+if (!customElements.get(name)) {
+  customElements.define(name, CountdownElement);
+}
 
 export default CountdownElement;

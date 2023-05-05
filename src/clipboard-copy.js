@@ -93,6 +93,8 @@ class ClipboardCopy extends FormidableElement {
   }
 }
 
-customElements.define(name, ClipboardCopy);
+if (!customElements.get(name)) {
+  customElements.define(name, ClipboardCopy);
+}
 
 export default ClipboardCopy;

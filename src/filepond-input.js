@@ -90,6 +90,8 @@ class FilePondInput extends FormidableElement {
   }
 }
 
-customElements.define(name, FilePondInput);
+if (!customElements.get(name)) {
+  customElements.define(name, FilePondInput);
+}
 
 export default FilePondInput;

@@ -61,6 +61,8 @@ class ColorisInput extends FormidableElement {
   }
 }
 
-customElements.define(name, ColorisInput);
+if (!customElements.get(name)) {
+  customElements.define(name, ColorisInput);
+}
 
 export default ColorisInput;

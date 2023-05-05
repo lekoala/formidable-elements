@@ -27,6 +27,8 @@ class BsAutocomplete extends FormidableElement {
   }
 }
 
-customElements.define(name, BsAutocomplete);
+if (!customElements.get(name)) {
+  customElements.define(name, BsAutocomplete);
+}
 
 export default BsAutocomplete;

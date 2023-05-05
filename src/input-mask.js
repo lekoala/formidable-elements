@@ -103,6 +103,8 @@ class InputmaskElement extends FormidableElement {
   }
 }
 
-customElements.define(name, InputmaskElement);
+if (!customElements.get(name)) {
+  customElements.define(name, InputmaskElement);
+}
 
 export default InputmaskElement;

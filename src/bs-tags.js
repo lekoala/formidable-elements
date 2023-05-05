@@ -34,6 +34,8 @@ class BsTags extends FormidableElement {
   }
 }
 
-customElements.define(name, BsTags);
+if (!customElements.get(name)) {
+  customElements.define(name, BsTags);
+}
 
 export default BsTags;
