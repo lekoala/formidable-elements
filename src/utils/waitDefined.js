@@ -2,7 +2,7 @@ import isUndefined from "./isUndefined.js";
 
 /**
  * Wait until a given test returns a defined value
- * This can be useful if something needs to be parsed
+ * This can be useful if something needs to be parsed or loaded
  * @param {Function} test
  * @param {Function} cb
  * @param {Boolean} run

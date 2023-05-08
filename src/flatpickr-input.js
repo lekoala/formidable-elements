@@ -11,6 +11,8 @@ import monthSelectStyles from "../node_modules/flatpickr/dist/plugins/monthSelec
 import injectStyles from "./utils/injectStyles.js";
 import insertHiddenInput from "./utils/insertHiddenInput.js";
 import setId from "./utils/setId.js";
+import waitDefined from "./utils/waitDefined.js";
+import isUndefined from "./utils/isUndefined.js";
 import { q } from "./utils/query.js";
 import { toDateTime, toDate, toTime } from "./utils/date.js";
 import localeProvider from "./utils/localeProvider.js";
@@ -136,6 +138,7 @@ class FlatpickrInput extends FormidableElement {
     this.config.plugins = plugins;
 
     // load given locale
+    // wait until locale is defined
     const locale = this.config.locale;
     if (locale) {
       const labels = localeProvider(name, locale);
@@ -143,7 +146,20 @@ class FlatpickrInput extends FormidableElement {
         window["flatpickr"]["l10ns"][locale] = labels;
       }
     }
-    this.init();
+    // This may be necessary due to how flatpickr handles translations
+    waitDefined(
+      () => {
+        // return early
+        if (!locale || typeof locale !== "string") {
+          return true;
+        }
+        //@ts-ignore
+        return isUndefined(window.flatpickr.l10ns[locale]);
+      },
+      () => {
+        this.init();
+      }
+    );
   }
 
   getDefaultFormat() {
