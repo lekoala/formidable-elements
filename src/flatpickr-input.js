@@ -137,7 +137,6 @@ class FlatpickrInput extends FormidableElement {
 
     // load given locale
     const locale = this.config.locale;
-    console.log(locale);
     if (locale) {
       const labels = localeProvider(name, locale);
       if (labels) {
