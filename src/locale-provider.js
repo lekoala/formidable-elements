@@ -19,7 +19,7 @@ class LocaleProvider extends HTMLElement {
   /**
    * @param {string} name
    * @param {string} locale A given locale (as stored by set method) or default
-   * @returns {Object}
+   * @returns {Object|null}
    */
   static for(name, locale = "default") {
     const data = dict[name];
@@ -41,7 +41,7 @@ class LocaleProvider extends HTMLElement {
         return data[locale];
       }
     }
-    return {};
+    return null;
   }
 }
 

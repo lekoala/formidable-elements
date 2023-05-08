@@ -1,7 +1,7 @@
 /**
  * A simple helper for the locale-provider element
  * Expects that you already loaded it beforehand or will return a blank object
- * @returns {Object}
+ * @returns {Object|null}
  */
 export default function localeProvider(name, locale) {
   const el = customElements.get("locale-provider");
