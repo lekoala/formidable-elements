@@ -36,7 +36,7 @@ const customStyles = `input.flatpickr-input.form-control[readonly] {
 injectStyles(name, styles + confirmDateStyles + monthSelectStyles + customStyles);
 
 // Global localization without passing locale based on navigator language or set default
-const globalLocale = localeProvider().for(name);
+const globalLocale = localeProvider(name);
 if (globalLocale) {
   flatpickr.localize(globalLocale);
 }
@@ -138,8 +138,10 @@ class FlatpickrInput extends FormidableElement {
     // load given locale
     const locale = this.config.locale;
     if (locale) {
-      const labels = localeProvider().for(name, locale);
-      window["flatpickr"]["l10ns"][locale] = labels;
+      const labels = localeProvider(name, locale);
+      if (labels) {
+        window["flatpickr"]["l10ns"][locale] = labels;
+      }
     }
     this.init();
   }

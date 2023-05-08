@@ -22,7 +22,7 @@ class TomSelectElement extends FormidableElement {
     const input = this.el;
     const id = setId(input, name);
 
-    const labels = localeProvider().for(name);
+    const labels = localeProvider(name) || {};
     const render = this.config.render || {};
     // Bind labels to config
     // @link https://tom-select.js.org/examples/i18n/

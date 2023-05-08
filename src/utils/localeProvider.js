@@ -1,14 +1,13 @@
 /**
- * @typedef LocaleProvider
- * @property {Function} for
+ * A simple helper for the locale-provider element
+ * Expects that you already loaded it beforehand or will return a blank object
+ * @returns {Object}
  */
-
-/**
- * A simple getter for the locale-provider element
- * Expects that you already loaded it beforehand
- * @returns {LocaleProvider}
- */
-export default function localeProvider() {
+export default function localeProvider(name, locale) {
+  const el = customElements.get("locale-provider");
+  if (!el) {
+    return null;
+  }
   //@ts-ignore
-  return customElements.get("locale-provider");
+  return el.for(name, locale);
 }
