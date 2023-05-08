@@ -185,8 +185,6 @@ class FlatpickrInput extends FormidableElement {
   init() {
     const input = this.el;
 
-    const isReadonly = input.readOnly;
-
     /**
      * @type {flatpickr.Instance}
      */
@@ -195,12 +193,13 @@ class FlatpickrInput extends FormidableElement {
     this.handleEvent = (ev) => {
       const d = this.flatpickr.selectedDates[0] || null;
 
+      let v = "";
+      if (d) {
+        v = this.convertDate(new Date(d));
+      }
+
       // hidden value
       if (this.hiddenInput) {
-        let v = "";
-        if (d) {
-          v = this.convertDate(new Date(d));
-        }
         this.hiddenInput.value = v;
       }
 
@@ -215,6 +214,13 @@ class FlatpickrInput extends FormidableElement {
         let fp = q(this.el.dataset.rangeEnd)._flatpickr;
         fp.set("minDate", d);
       }
+
+      // This can be useful to have one source of truth for the value when updated
+      this.dispatchEvent(
+        new CustomEvent("valueChanged", {
+          detail: v,
+        })
+      );
     };
     events.forEach((type) => {
       input.addEventListener(type, this);
