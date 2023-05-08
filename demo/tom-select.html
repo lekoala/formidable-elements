@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tom-select demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="./assets/demo.css" rel="stylesheet">
+    <script type="module" src="./assets/demo.js"></script>
+
+    <!-- to be loaded before -->
+    <script type="module" src="../dist/locale-provider.min.js"></script>
+    <script type="module">
+        window['locale-provider'].set('tom-select', 'default', {
+            option_create: '<div class="create">Ajouter <strong>{input}</strong>&hellip;</div>',
+            no_results: '<div class="no-results">Aucun résultat trouvé</div>'
+        });
+    </script>
+    <script type="module" src="../dist/tom-select.min.js"></script>
+</head>
+
+<body class="p-3">
+    <form action="https://vercel-dumper.vercel.app" method="post">
+        <div class="mb-3">
+            <label for="input-tags" class="form-label">Tags</label>
+            <tom-select data-config='{"persist": false,"createOnBlur": true,"create": true}'>
+                <input id="input-tags" value="awesome,neat" autocomplete="off" placeholder="How cool is this?">
+            </tom-select>
+        </div>
+        <div class="mb-3">
+            <label for="select-beast" class="form-label">Select beast (required)</label>
+            <tom-select data-config='{"create": true,"sortField": {"field": "text","direction": "asc"}}'>
+                <select id="select-beast" placeholder="Select a person..." autocomplete="off" required pattern="[a-z]+">
+                    <option value="">Select a person...</option>
+                    <option value="4">Thomas Edison</option>
+                    <option value="1">Nikola</option>
+                    <option value="3">Nikola Tesla</option>
+                    <option value="5">Arnold Schwarzenegger</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a person
+                </div>
+            </tom-select>
+        </div>
+        <div class="mb-3">
+            <label for="select-state" class="form-label">Select state</label>
+            <tom-select data-config='{"maxItems": 3}'>
+                <select id="select-state" name="state[]" multiple placeholder="Select a state..." autocomplete="off">
+                    <option value="">Select a state...</option>
+                    <option value="AL">Alabama</option>
+                    <option value="AK">Alaska</option>
+                    <option value="AZ">Arizona</option>
+                    <option value="AR">Arkansas</option>
+                    <option value="CA" selected>California</option>
+                    <option value="CO">Colorado</option>
+                    <option value="CT">Connecticut</option>
+                    <option value="DE">Delaware</option>
+                    <option value="DC">District of Columbia</option>
+                    <option value="FL">Florida</option>
+                    <option value="GA">Georgia</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="ID">Idaho</option>
+                    <option value="IL">Illinois</option>
+                    <option value="IN">Indiana</option>
+                    <option value="IA">Iowa</option>
+                    <option value="KS">Kansas</option>
+                    <option value="KY">Kentucky</option>
+                    <option value="LA">Louisiana</option>
+                    <option value="ME">Maine</option>
+                    <option value="MD">Maryland</option>
+                    <option value="MA">Massachusetts</option>
+                    <option value="MI">Michigan</option>
+                    <option value="MN">Minnesota</option>
+                    <option value="MS">Mississippi</option>
+                    <option value="MO">Missouri</option>
+                    <option value="MT">Montana</option>
+                    <option value="NE">Nebraska</option>
+                    <option value="NV">Nevada</option>
+                    <option value="NH">New Hampshire</option>
+                    <option value="NJ">New Jersey</option>
+                    <option value="NM">New Mexico</option>
+                    <option value="NY">New York</option>
+                    <option value="NC">North Carolina</option>
+                    <option value="ND">North Dakota</option>
+                    <option value="OH">Ohio</option>
+                    <option value="OK">Oklahoma</option>
+                    <option value="OR">Oregon</option>
+                    <option value="PA">Pennsylvania</option>
+                    <option value="RI">Rhode Island</option>
+                    <option value="SC">South Carolina</option>
+                    <option value="SD">South Dakota</option>
+                    <option value="TN">Tennessee</option>
+                    <option value="TX">Texas</option>
+                    <option value="UT">Utah</option>
+                    <option value="VT">Vermont</option>
+                    <option value="VA">Virginia</option>
+                    <option value="WA">Washington</option>
+                    <option value="WV">West Virginia</option>
+                    <option value="WI">Wisconsin</option>
+                    <option value="WY" selected>Wyoming</option>
+                </select>
+            </tom-select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <hr>
+    <button class="btn btn-light delete-btn" data-name="tom-select">Delete element</button>
+    <button class="btn btn-light copy-btn" data-name="tom-select">Copy element</button>
+    <button class="btn btn-light move-btn" data-name="tom-select">Move element</button>
+    <hr>
+    <div id="target"></div>
+</body>
+
+</html>

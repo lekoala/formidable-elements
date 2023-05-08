@@ -10,6 +10,8 @@
 - coloris: https://github.com/mdbassit/Coloris
 - filepond: https://github.com/pqina/filepond
 - countdown: https://www.npmjs.com/package/countdown
+- tom select: https://tom-select.js.org/
+- superfile: https://github.com/lekoala/superfile
 
 Bootstrap specific:
 
@@ -19,6 +21,7 @@ Bootstrap specific:
 And some custom made stuff as well:
 
 - clipboard-copy
+- squire-editor: https://github.com/fastmail/Squire
 
 ## Documentation
 
@@ -96,6 +99,38 @@ As much as possible, these components are designed to work with any css framewor
 or needed, I try to make these look good by default on Bootstrap.
 
 Adjustements are most of the time available as css variables.
+
+## Translating
+
+Some libraries (flatpickr, tom-select...) need to have some elements translated. While there is often a way
+to provide some global translations, formidable elements gives you one convention to load all your translations.
+
+This is done through the `locale-provider` element which is a very simple element that works like this in your html
+
+```html
+<script type="module" src="../dist/locale-provider.min.js"></script>
+<script type="module">
+    window['locale-provider'].set('tom-select', 'default', {
+        option_create: '<div class="create">Ajouter <strong>{input}</strong>&hellip;</div>',
+        no_results: '<div class="no-results">Aucun résultat trouvé</div>'
+    });
+</script>
+```
+
+Then, in each element, we can call `localeProvider` which returns the global instance. This means the translations
+must be defined BEFORE the element.
+
+For example
+
+```js
+const globalLocale = localeProvider().for(name);
+if (globalLocale) {
+  flatpickr.localize(globalLocale);
+}
+```
+
+The `for` method can be given a specific locale or left to default, which will try to find in our dictionnary entries
+matching curreny browser locale or will be using `default`.
 
 ## A note about separate elements
 

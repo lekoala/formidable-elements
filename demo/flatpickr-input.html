@@ -12,9 +12,16 @@
     <link href="./assets/demo.css" rel="stylesheet">
     <script type="module" src="./assets/demo.js"></script>
 
-    <script src="../dist/flatpickr-input.min.js"></script>
-    <!-- needs to be included after the element, it will wait until locale is parsed -->
-    <script src="https://npmcdn.com/flatpickr@4.6.13/dist/l10n/fr.js"></script>
+
+    <script type="module" src="../dist/locale-provider.min.js"></script>
+    <script type="module">
+        // import with side effects, creates "fr" variable
+        import "https://npmcdn.com/flatpickr@4.6.13/dist/l10n/fr.js";
+        window['locale-provider'].set('flatpickr-input', 'fr', fr.French);
+        // you can also set a global default !
+        // window['locale-provider'].set('flatpickr-input', 'default', fr.French);
+    </script>
+    <script type="module" src="../dist/flatpickr-input.min.js"></script>
 </head>
 
 <body class="p-3">

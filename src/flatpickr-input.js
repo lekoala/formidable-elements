@@ -11,10 +11,9 @@ import monthSelectStyles from "../node_modules/flatpickr/dist/plugins/monthSelec
 import injectStyles from "./utils/injectStyles.js";
 import insertHiddenInput from "./utils/insertHiddenInput.js";
 import setId from "./utils/setId.js";
-import waitDefined from "./utils/waitDefined.js";
-import isUndefined from "./utils/isUndefined.js";
 import { q } from "./utils/query.js";
 import { toDateTime, toDate, toTime } from "./utils/date.js";
+import localeProvider from "./utils/localeProvider.js";
 
 // Example
 /*            
@@ -35,6 +34,12 @@ const customStyles = `input.flatpickr-input.form-control[readonly] {
 
 // Inject styles
 injectStyles(name, styles + confirmDateStyles + monthSelectStyles + customStyles);
+
+// Global localization without passing locale based on navigator language or set default
+const globalLocale = localeProvider().for(name);
+if (globalLocale) {
+  flatpickr.localize(globalLocale);
+}
 
 class FlatpickrInput extends FormidableElement {
   /**
@@ -130,21 +135,13 @@ class FlatpickrInput extends FormidableElement {
     }
     this.config.plugins = plugins;
 
-    // wait until locale is defined
+    // load given locale
     const locale = this.config.locale;
-    waitDefined(
-      () => {
-        // return early
-        if (!locale || typeof locale !== "string") {
-          return true;
-        }
-        //@ts-ignore
-        return isUndefined(window.flatpickr.l10ns[locale]);
-      },
-      () => {
-        this.init();
-      }
-    );
+    if (locale) {
+      const labels = localeProvider().for(name, locale);
+      window["flatpickr"]["l10ns"][locale] = labels;
+    }
+    this.init();
   }
 
   getDefaultFormat() {
