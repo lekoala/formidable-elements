@@ -331,6 +331,8 @@ class SquireEditor extends FormidableElement {
     this.appendChild(editor);
 
     const textarea = this.el;
+    //@link https://github.com/system-fonts/modern-font-stacks#monospace-code
+    textarea.style.fontFamily = "ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace";
     adjustStyles(editor, toolbar, textarea);
 
     this.config = Object.assign(
