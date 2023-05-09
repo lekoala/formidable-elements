@@ -28,6 +28,7 @@
     "filepond-plugin-image-validate-size": "^1.2.7",
     "flatpickr": "^4.6.13",
     "inputmask": "^5.0.8",
+    "intl-tel-input": "^18.1.5",
     "squire-rte": "^2.0.3",
     "superfile": "^1.2.1",
     "tom-select": "^2.2.2"
