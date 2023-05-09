@@ -10,7 +10,10 @@
 - coloris: https://github.com/mdbassit/Coloris
 - filepond: https://github.com/pqina/filepond
 - countdown: https://www.npmjs.com/package/countdown
+- tel input: https://intl-tel-input.com/
+- tip tap: https://tiptap.dev/
 - tom select: https://tom-select.js.org/
+- squire-editor: https://github.com/fastmail/Squire
 - superfile: https://github.com/lekoala/superfile
 
 Bootstrap specific:
@@ -21,7 +24,8 @@ Bootstrap specific:
 And some custom made stuff as well:
 
 - clipboard-copy
-- squire-editor: https://github.com/fastmail/Squire
+- growing-textarea
+- locale-provider
 
 ## Documentation
 
@@ -148,15 +152,22 @@ loaded once through the custom elements registry, but I'm not sure yet that woul
 
 Including css injection
 
-    dist\filepond-input.min.js 178.8kb
-    dist\input-mask.min.js 86.0kb
-    dist\flatpickr-input.min.js 72.4kb
-    dist\bs-tags.min.js 26.2kb
-    dist\coloris-input.min.js 24.5kb
-    dist\cleave-input.min.js 17.6kb
-    dist\bs-autocomplete.min.js 11.8kb
-    dist\count-down.min.js 9.3kb
-    dist\clipboard-copy.min.js 1.8kb
+  dist\tiptap-editor.min.js     299.8kb
+  dist\tel-input.min.js         288.2kb
+  dist\filepond-input.min.js    184.8kb
+  dist\input-mask.min.js         86.0kb
+  dist\flatpickr-input.min.js    82.2kb
+  dist\tom-select.min.js         69.7kb
+  dist\squire-editor.min.js      67.6kb
+  dist\bs-tags.min.js            26.3kb
+  dist\coloris-input.min.js      24.4kb
+  dist\cleave-input.min.js       17.6kb
+  dist\bs-autocomplete.min.js    12.2kb
+  dist\count-down.min.js          9.4kb
+  dist\superfile-input.min.js     5.4kb
+  dist\clipboard-copy.min.js      1.8kb
+  dist\growing-textarea.min.js    416b
+  dist\locale-provider.min.js     394b
 
 ## Missing a lib
 
