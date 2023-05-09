@@ -26,7 +26,8 @@
     <form action="https://vercel-dumper.vercel.app">
         <div class="mb-3">
             <squire-editor>
-                <textarea id="mytextarea" name="myeditor" class="form-control">Hello, World!</textarea>
+                <textarea id="mytextarea" name="myeditor" class="form-control"
+                    style="max-height:200px">Hello, World (max-height:200px)!</textarea>
             </squire-editor>
         </div>
         <div class="mb-3">
@@ -34,7 +35,12 @@
             </squire-editor>
         </div>
         <div class="mb-3">
-            <squire-editor name="providededitor" value="Hello me! No toolbars!" data-toolbar="false">
+            <squire-editor data-toolbar="false" data-allow-paste="true">
+                <textarea id="notoolbar" name="notoolbar" class="form-control" style="height:200px">Hello me! No toolbars! Fixed height
+                <p>This is a basic example of implementing images. Drag to re-order. You can also paste images < 1920 px as base64.</p>
+                <img src="https://source.unsplash.com/8xznAGy4HcY/200x100" />
+                <img src="https://source.unsplash.com/K9QHL52rE2k/200x100" />
+            </textarea>
             </squire-editor>
         </div>
         <div class="mb-3">

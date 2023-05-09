@@ -11,6 +11,13 @@
   "license": "MIT",
   "dependencies": {
     "@melloware/coloris": "^0.19.1",
+    "@tiptap/core": "^2.0.3",
+    "@tiptap/extension-image": "^2.0.3",
+    "@tiptap/extension-link": "^2.0.3",
+    "@tiptap/extension-typography": "^2.0.3",
+    "@tiptap/extension-underline": "^2.0.3",
+    "@tiptap/pm": "^2.0.3",
+    "@tiptap/starter-kit": "^2.0.3",
     "bootstrap5-autocomplete": "^1.1.6",
     "bootstrap5-tags": "^1.5.21",
     "cleave-es6": "^1.0.0",
