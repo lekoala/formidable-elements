@@ -25,23 +25,23 @@
         <div class="mb-3">
             <label for="autocompleteDatalist" class="form-label">Pick a time zone from datalist</label>
             <!-- you can pass functions as json as well -->
-            <bs-autocomplete data-config='{"datalist": "list-timezone"}'>
+            <bs-autocomplete data-config='{"datalist": "list-timezone", "hiddenInput": true}'>
                 <input type="text" class="form-control" id="autocompleteDatalist" name="autocompleteDatalist"
                     placeholder="Type something" />
 
                 <datalist id="list-timezone">
                     <option value="asia_aden">Asia/Aden</option>
                     <!-- we can use the value attribute -->
-                    <option>Asia/Aqtau</option>
-                    <option>Asia/Baghdad</option>
-                    <option>Asia/Barnaul</option>
-                    <option>Asia/Chita</option>
-                    <option>Asia/Dhaka</option>
-                    <option>Asia/Famagusta</option>
-                    <option>Asia/Hong_Kong</option>
-                    <option>Asia/Jayapura</option>
-                    <option>Asia/Kuala_Lumpur</option>
-                    <option>Asia/Jakarta</option>
+                    <option value="1">Asia/Aqtau</option>
+                    <option value="2">Asia/Baghdad</option>
+                    <option value="3">Asia/Barnaul</option>
+                    <option value="4">Asia/Chita</option>
+                    <option value="5">Asia/Dhaka</option>
+                    <option value="6">Asia/Famagusta</option>
+                    <option value="7">Asia/Hong_Kong</option>
+                    <option value="8">Asia/Jayapura</option>
+                    <option value="9">Asia/Kuala_Lumpur</option>
+                    <option value="10">Asia/Jakarta</option>
                 </datalist>
             </bs-autocomplete>
             <div class="invalid-feedback">Please select a valid tag.</div>

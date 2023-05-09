@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "@melloware/coloris": "^0.19.1",
-    "bootstrap5-autocomplete": "^1.1.5",
+    "bootstrap5-autocomplete": "^1.1.6",
     "bootstrap5-tags": "^1.5.21",
     "cleave-es6": "^1.0.0",
     "countdown": "^2.6.0",
