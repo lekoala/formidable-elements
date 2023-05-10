@@ -52,12 +52,13 @@ properly, everything can be garbage collected.
 
 Since its not easy to distinguish a move (through node.appendChild) or a removal (through el.remove or
 node.removeChild), this library assume a delay of 1 second, after which the destroyed function is called
+(this feels like a hack, but if you have a better idea, let me know :-) ).
 
-destroyed will clear config. If for some reason that node is added again to the dom, created will happen again.
+`destroyed` will clear config. If for some reason that node is added again to the dom, created will happen again.
 
 ## Configure elements
 
-Configure the underlying library by using the data-config attribute. Don't forget to use single quotes
+Configure the underlying library by using the data-config attribute. Don't forget to use 'single quotes'
 for the attribute.
 
 ```html
@@ -121,19 +122,19 @@ This is done through the `locale-provider` element which is a very simple elemen
 </script>
 ```
 
-Then, in each element, we can call `localeProvider` which returns the global instance. This means the translations
+Then, in each element, we can call `localeProvider` helper. This means the translations
 must be defined BEFORE the element.
 
 For example
 
 ```js
-const globalLocale = localeProvider().for(name);
+const globalLocale = localeProvider(name, locale);
 if (globalLocale) {
   flatpickr.localize(globalLocale);
 }
 ```
 
-The `for` method can be given a specific locale or left to default, which will try to find in our dictionnary entries
+You can pass a specific locale or leave it to default, which will try to find in our dictionnary entries
 matching curreny browser locale or will be using `default`.
 
 ## A note about separate elements
@@ -152,22 +153,22 @@ loaded once through the custom elements registry, but I'm not sure yet that woul
 
 Including css injection
 
-  dist\tiptap-editor.min.js     299.8kb
-  dist\tel-input.min.js         288.2kb
-  dist\filepond-input.min.js    184.8kb
-  dist\input-mask.min.js         86.0kb
-  dist\flatpickr-input.min.js    82.2kb
-  dist\tom-select.min.js         69.7kb
-  dist\squire-editor.min.js      67.6kb
-  dist\bs-tags.min.js            26.3kb
-  dist\coloris-input.min.js      24.4kb
-  dist\cleave-input.min.js       17.6kb
-  dist\bs-autocomplete.min.js    12.2kb
-  dist\count-down.min.js          9.4kb
-  dist\superfile-input.min.js     5.4kb
-  dist\clipboard-copy.min.js      1.8kb
-  dist\growing-textarea.min.js    416b
-  dist\locale-provider.min.js     394b
+    dist\tiptap-editor.min.js     299.8kb
+    dist\tel-input.min.js         288.2kb
+    dist\filepond-input.min.js    184.8kb
+    dist\input-mask.min.js         86.0kb
+    dist\flatpickr-input.min.js    82.2kb
+    dist\tom-select.min.js         69.7kb
+    dist\squire-editor.min.js      67.6kb
+    dist\bs-tags.min.js            26.3kb
+    dist\coloris-input.min.js      24.4kb
+    dist\cleave-input.min.js       17.6kb
+    dist\bs-autocomplete.min.js    12.2kb
+    dist\count-down.min.js          9.4kb
+    dist\superfile-input.min.js     5.4kb
+    dist\clipboard-copy.min.js      1.8kb
+    dist\growing-textarea.min.js    416b
+    dist\locale-provider.min.js     394b
 
 ## Missing a lib
 
