@@ -27,7 +27,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-      "bytes": 25801,
+      "bytes": 26311,
       "imports": [],
       "format": "esm"
     },
@@ -1211,8 +1211,18 @@
       "imports": [],
       "format": "esm"
     },
+    "src/utils/bootstrap-icons.js": {
+      "bytes": 8710,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/utils/font-stacks.js": {
+      "bytes": 1689,
+      "imports": [],
+      "format": "esm"
+    },
     "src/squire-editor.js": {
-      "bytes": 23584,
+      "bytes": 16645,
       "imports": [
         {
           "path": "node_modules/squire-rte/dist/squire-raw.mjs",
@@ -1253,6 +1263,16 @@
           "path": "src/utils/injectStyles.js",
           "kind": "import-statement",
           "original": "./utils/injectStyles.js"
+        },
+        {
+          "path": "src/utils/bootstrap-icons.js",
+          "kind": "import-statement",
+          "original": "./utils/bootstrap-icons.js"
+        },
+        {
+          "path": "src/utils/font-stacks.js",
+          "kind": "import-statement",
+          "original": "./utils/font-stacks.js"
         }
       ],
       "format": "esm"
@@ -1920,7 +1940,7 @@
       "format": "esm"
     },
     "src/tiptap-editor.js": {
-      "bytes": 23495,
+      "bytes": 16342,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -2056,6 +2076,16 @@
           "path": "src/utils/injectStyles.js",
           "kind": "import-statement",
           "original": "./utils/injectStyles.js"
+        },
+        {
+          "path": "src/utils/bootstrap-icons.js",
+          "kind": "import-statement",
+          "original": "./utils/bootstrap-icons.js"
+        },
+        {
+          "path": "src/utils/font-stacks.js",
+          "kind": "import-statement",
+          "original": "./utils/font-stacks.js"
         }
       ],
       "format": "esm"
@@ -2633,13 +2663,13 @@
           "bytesInOutput": 358
         },
         "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-          "bytesInOutput": 11437
+          "bytesInOutput": 11719
         },
         "src/bs-autocomplete.js": {
           "bytesInOutput": 319
         }
       },
-      "bytes": 12470
+      "bytes": 12752
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -3101,11 +3131,17 @@
         "src/utils/injectStyles.js": {
           "bytesInOutput": 160
         },
+        "src/utils/bootstrap-icons.js": {
+          "bytesInOutput": 7378
+        },
+        "src/utils/font-stacks.js": {
+          "bytesInOutput": 106
+        },
         "src/squire-editor.js": {
-          "bytesInOutput": 15152
+          "bytesInOutput": 7356
         }
       },
-      "bytes": 69253
+      "bytes": 68941
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -3329,11 +3365,17 @@
         "src/utils/injectStyles.js": {
           "bytesInOutput": 160
         },
+        "src/utils/bootstrap-icons.js": {
+          "bytesInOutput": 8254
+        },
+        "src/utils/font-stacks.js": {
+          "bytesInOutput": 106
+        },
         "src/tiptap-editor.js": {
-          "bytesInOutput": 15034
+          "bytesInOutput": 6875
         }
       },
-      "bytes": 307003
+      "bytes": 307204
     },
     "dist/tom-select.min.js": {
       "imports": [],
