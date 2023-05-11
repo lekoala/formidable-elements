@@ -36,7 +36,7 @@ const styles = `
   width:38px;
   background:transparent;
 }
-.squire-editor .squire-toolbar button:hover {
+.squire-editor .squire-toolbar button:hover, .squire-editor .squire-toolbar button.is-active {
   background:rgba(100,100,100,0.2);
 }
 `;
@@ -135,13 +135,16 @@ class SquireEditor extends FormidableElement {
       }
       this.appendChild(el);
     }
+    this.classList.add(name);
 
-    this.classList.add("squire-editor");
-
+    // Configure textarea
     const el = this.el;
     el.setAttribute("hidden", "");
     el.style.overflow = "hidden";
     el.spellcheck = false;
+    el.style.fontFamily = MonospaceCode;
+    el.style.width = "100%";
+    el.style.boxSizing = "border-box";
 
     this.init();
   }
@@ -321,10 +324,6 @@ class SquireEditor extends FormidableElement {
     this.appendChild(editor);
 
     const textarea = this.el;
-    //@link https://github.com/system-fonts/modern-font-stacks#monospace-code
-    textarea.style.fontFamily = MonospaceCode;
-    textarea.style.width = "100%";
-    textarea.style.boxSizing = "border-box";
     adjustStyles(editor, toolbar, textarea);
 
     this.config = Object.assign(

@@ -55,7 +55,7 @@ const styles = `
   width:38px;
   background:transparent;
 }
-.tiptap-editor .tiptap-toolbar button:hover {
+.tiptap-editor .tiptap-toolbar button:not([disabled]):hover, .tiptap-editor .tiptap-toolbar button.is-active {
   background:rgba(100,100,100,0.2);
 }
 .tiptap-editor .ProseMirror-selectednode {
@@ -157,13 +157,16 @@ class TiptapEditor extends FormidableElement {
       }
       this.appendChild(el);
     }
+    this.classList.add(name);
 
-    this.classList.add("tiptap-editor");
-
+    // Configure textarea
     const el = this.el;
     el.setAttribute("hidden", "");
     el.style.overflow = "hidden";
     el.spellcheck = false;
+    el.style.fontFamily = MonospaceCode;
+    el.style.width = "100%";
+    el.style.boxSizing = "border-box";
 
     this.init();
   }
@@ -303,6 +306,15 @@ class TiptapEditor extends FormidableElement {
       ];
 
       const allowedButtons = this.dataset.buttons ? this.dataset.buttons.split(",") : [];
+      this.buttons = [];
+      var checkButtonActive = (el, btn) => {
+        const params = btn.prompt ? undefined : btn.params;
+        if (this.tiptap.isActive(btn.name, params)) {
+          el.classList.add("is-active");
+        } else {
+          el.classList.remove("is-active");
+        }
+      };
       const makeButton = (btn, parent = toolbar) => {
         if (allowedButtons.length && !allowedButtons.includes(btn.name)) {
           return;
@@ -329,10 +341,15 @@ class TiptapEditor extends FormidableElement {
               }
             }
             this.tiptap.chain().focus()[btn.action](btn.params).run();
+            checkButtonActive(el, btn);
           };
         }
         el.ariaLabel = btn.name; // to improve
         parent.appendChild(el);
+        this.buttons.push({
+          btn,
+          el,
+        });
       };
       buttons.forEach((btn) => {
         if (Array.isArray(btn)) {
@@ -352,10 +369,6 @@ class TiptapEditor extends FormidableElement {
     this.appendChild(editor);
 
     const textarea = this.el;
-    textarea.style.fontFamily = MonospaceCode;
-    textarea.style.width = "100%";
-    textarea.style.boxSizing = "border-box";
-
     const allowPaste = this.dataset.allowPaste;
     const pasteSize = this.dataset.pasteSize || 1920;
 
@@ -389,6 +402,13 @@ class TiptapEditor extends FormidableElement {
         element: editor,
         editable: !textarea.readOnly && !textarea.disabled,
         content: textarea.value,
+        //@link https://tiptap.dev/api/events#option-1-configuration
+        onSelectionUpdate: ({ editor }) => {
+          // Check which formatting options are enabled ?
+          this.buttons.forEach((obj) => {
+            checkButtonActive(obj.el, obj.btn);
+          });
+        },
         onUpdate: ({ editor }) => {
           const html = editor.getHTML();
           this.el.value = html;
@@ -486,12 +506,26 @@ class TiptapEditor extends FormidableElement {
         }
         editor.setAttribute("hidden", "");
         textarea.removeAttribute("hidden");
+
+        // disable all editor buttons
+        this.buttons.forEach((btn) => {
+          if (btn.btn.action) {
+            btn.el.setAttribute("disabled", "disabled");
+          }
+        });
       } else {
         // Inject html back in
         this.tiptap.commands.setContent(textarea.value);
 
         textarea.setAttribute("hidden", "");
         editor.removeAttribute("hidden");
+
+        // enable all editor buttons
+        this.buttons.forEach((obj) => {
+          if (obj.btn.action) {
+            obj.el.removeAttribute("disabled");
+          }
+        });
       }
       return;
     }
@@ -500,6 +534,7 @@ class TiptapEditor extends FormidableElement {
   destroyed() {
     this.tiptap.destroy();
     this.tiptap = null;
+    this.buttons = null;
   }
 }
 
