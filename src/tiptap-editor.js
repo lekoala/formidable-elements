@@ -111,6 +111,20 @@ function adjustStyles(editor, toolbar, textarea) {
   textarea.style.paddingTop = `calc(${textarea.dataset.defaultPadding} + ${toolbarStyles.height})`;
 }
 
+/**
+ * @param {Object} btn
+ * @param {HTMLButtonElement} el
+ * @param {Editor} editor
+ */
+function checkButtonActive(btn, el, editor) {
+  const params = btn.prompt ? undefined : btn.params;
+  if (editor.isActive(btn.name, params)) {
+    el.classList.add("is-active");
+  } else {
+    el.classList.remove("is-active");
+  }
+}
+
 const resizeObserver = new ResizeObserver((entries) => {
   for (const entry of entries) {
     /**
@@ -183,6 +197,7 @@ class TiptapEditor extends FormidableElement {
 
     // Create toolbar
     const hasToolbar = !this.dataset.toolbar;
+    this.buttons = [];
     if (hasToolbar) {
       toolbar = ce("div");
       toolbar.classList.add("tiptap-toolbar");
@@ -306,20 +321,13 @@ class TiptapEditor extends FormidableElement {
       ];
 
       const allowedButtons = this.dataset.buttons ? this.dataset.buttons.split(",") : [];
-      this.buttons = [];
-      var checkButtonActive = (el, btn) => {
-        const params = btn.prompt ? undefined : btn.params;
-        if (this.tiptap.isActive(btn.name, params)) {
-          el.classList.add("is-active");
-        } else {
-          el.classList.remove("is-active");
-        }
-      };
       const makeButton = (btn, parent = toolbar) => {
         if (allowedButtons.length && !allowedButtons.includes(btn.name)) {
           return;
         }
+
         const el = ce("button");
+
         el.type = "button";
         el.innerHTML = btn.icon;
         // Delegated to component
@@ -331,8 +339,8 @@ class TiptapEditor extends FormidableElement {
             if (editor.hasAttribute("hidden")) {
               return;
             }
-            // Prompt ?
-            if (btn.prompt) {
+            // Prompt (if not active already)
+            if (btn.prompt && !this.tiptap.isActive(btn.name)) {
               const v = prompt();
               if (typeof btn.prompt === "string") {
                 btn.params[btn.prompt] = v;
@@ -341,14 +349,15 @@ class TiptapEditor extends FormidableElement {
               }
             }
             this.tiptap.chain().focus()[btn.action](btn.params).run();
-            checkButtonActive(el, btn);
+            checkButtonActive(btn, el, this.tiptap);
           };
         }
         el.ariaLabel = btn.name; // to improve
         parent.appendChild(el);
+
         this.buttons.push({
-          btn,
           el,
+          btn,
         });
       };
       buttons.forEach((btn) => {
@@ -406,7 +415,7 @@ class TiptapEditor extends FormidableElement {
         onSelectionUpdate: ({ editor }) => {
           // Check which formatting options are enabled ?
           this.buttons.forEach((obj) => {
-            checkButtonActive(obj.el, obj.btn);
+            checkButtonActive(obj.btn, obj.el, this.tiptap);
           });
         },
         onUpdate: ({ editor }) => {

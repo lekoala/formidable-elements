@@ -89,6 +89,21 @@ function adjustStyles(editor, toolbar, textarea) {
   textarea.style.paddingTop = `calc(${textarea.dataset.defaultPadding} + ${toolbarStyles.height})`;
 }
 
+/**
+ * @param {Object} btn
+ * @param {HTMLButtonElement} el
+ * @param {Object} editor
+ */
+function checkButtonActive(btn, el, editor) {
+  if (btn.format) {
+    if (editor.hasFormat(btn.format)) {
+      el.classList.add("is-active");
+    } else {
+      el.classList.remove("is-active");
+    }
+  }
+}
+
 const resizeObserver = new ResizeObserver((entries) => {
   for (const entry of entries) {
     /**
@@ -163,6 +178,8 @@ class SquireEditor extends FormidableElement {
 
     // Create toolbar
     const hasToolbar = !this.dataset.toolbar;
+    this.buttons = [];
+
     if (hasToolbar) {
       toolbar = ce("div");
       toolbar.classList.add("squire-toolbar");
@@ -282,7 +299,7 @@ class SquireEditor extends FormidableElement {
           },
           {
             name: "html",
-            action: "html",
+            customAction: "html",
             icon: icons.html,
           },
         ],
@@ -294,14 +311,19 @@ class SquireEditor extends FormidableElement {
           return;
         }
         const el = ce("button");
+
         el.type = "button";
         el.innerHTML = btn.icon;
-        el.dataset.action = btn.action;
+        el.dataset.action = btn.customAction || btn.action;
         el.dataset.removeAction = btn.removeAction || "";
         el.dataset.format = btn.format || "";
         el.dataset.prompt = btn.prompt || "";
         el.ariaLabel = btn.name;
         parent.appendChild(el);
+        this.buttons.push({
+          el,
+          btn,
+        });
       };
       buttons.forEach((btn) => {
         if (Array.isArray(btn)) {
@@ -364,6 +386,8 @@ class SquireEditor extends FormidableElement {
       if (!cursorPosition) {
         return;
       }
+
+      // Adjust position
       const scrollViewOffsetTop = editor.getBoundingClientRect().top;
       const offsetTop = cursorPosition.top - scrollViewOffsetTop;
       const offsetBottom = cursorPosition.bottom - scrollViewOffsetTop;
@@ -379,6 +403,11 @@ class SquireEditor extends FormidableElement {
       if (scrollBy) {
         editor.scrollBy(0, Math.round(scrollBy));
       }
+
+      // Check which formatting options are enabled ?
+      this.buttons.forEach((obj) => {
+        checkButtonActive(obj.btn, obj.el, this.squire);
+      });
     });
 
     // Opt in
@@ -460,12 +489,27 @@ class SquireEditor extends FormidableElement {
 
         editor.setAttribute("hidden", "");
         textarea.removeAttribute("hidden");
+
+        // disable all editor buttons
+        this.buttons.forEach((obj) => {
+          if (obj.btn.action) {
+            obj.el.setAttribute("disabled", "disabled");
+            obj.el.classList.remove("is-active");
+          }
+        });
       } else {
         // Inject html back in
         this.squire.setHTML(textarea.value);
 
         textarea.setAttribute("hidden", "");
         editor.removeAttribute("hidden");
+
+        // enable all editor buttons
+        this.buttons.forEach((obj) => {
+          if (obj.btn.action) {
+            obj.el.removeAttribute("disabled");
+          }
+        });
       }
       return;
     }
@@ -508,6 +552,7 @@ class SquireEditor extends FormidableElement {
   destroyed() {
     this.squire.destroy();
     this.squire = null;
+    this.buttons = null;
   }
 }
 
