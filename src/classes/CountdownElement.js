@@ -57,25 +57,25 @@ function computeData(data, inst) {
 
 class CountdownElement extends FormidableElement {
   created() {
-    const labels = localeProvider(name, this.locale, {});
     this.config = Object.assign(
       {
+        locale: this.dataset.locale || "default",
         timer: true,
         pad: true,
         decimalDigits: 0,
-        labels: Object.assign(
-          {
-            days: "d",
-            hours: "h",
-            minutes: "m",
-            seconds: "s",
-          },
-          labels
-        ),
+        labels: {
+          days: "d",
+          hours: "h",
+          minutes: "m",
+          seconds: "s",
+        },
         interval: 1000, // in ms
       },
       this.config
     );
+
+    // Use locale-provider for labels
+    this.config.labels = localeProvider(name, this.config.locale, this.config.labels);
 
     // Expose common parameters as data attr
     if (this.dataset.start) {

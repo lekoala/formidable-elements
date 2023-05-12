@@ -39,7 +39,6 @@ class FormidableElement extends HTMLElement {
   }
 
   parsedCallback() {
-    this.locale = this.dataset.locale || "default";
     if (!this.config) {
       /**
        * The config object as parsed from data-config attribute

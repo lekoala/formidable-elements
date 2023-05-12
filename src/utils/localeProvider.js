@@ -4,7 +4,7 @@
  *
  * @param {string} name
  * @param {string} locale
- * @param {Object} defaults
+ * @param {Object|null} defaults
  * @returns {Object|null}
  */
 export default function localeProvider(name, locale = "default", defaults = null) {
@@ -13,5 +13,5 @@ export default function localeProvider(name, locale = "default", defaults = null
     return defaults;
   }
   //@ts-ignore
-  return el.for(name, locale);
+  return Object.assign(defaults || {}, el.for(name, locale));
 }
