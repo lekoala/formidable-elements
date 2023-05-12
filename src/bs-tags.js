@@ -1,41 +1,6 @@
-//@ts-ignore
-import Tags from "bootstrap5-tags";
-//@ts-ignore
-import styles from "../node_modules/bootstrap5-tags/tags-pure.min.css";
-import FormidableElement from "./utils/formidable-element.js";
-import injectStyles from "./utils/injectStyles.js";
-const name = "bs-tags";
+import BsTags from "./classes/BsTags.js";
+import defineEl from "./utils/defineEl.js";
 
-// WARNING: global side effect: with this, focus styles rely only on css variables now
-injectStyles(name, styles);
-
-/**
- */
-class BsTags extends FormidableElement {
-  /**
-   * @returns {HTMLSelectElement}
-   */
-  get el() {
-    return this.querySelector("select");
-  }
-
-  created() {
-    // cleanup html if cloned
-    const dropmenu = this.querySelector("div.dropdown");
-    if (dropmenu) {
-      dropmenu.remove();
-    }
-    this.tags = new Tags(this.el, this.config);
-  }
-
-  destroyed() {
-    this.tags.dispose();
-    this.tags = null;
-  }
-}
-
-if (!customElements.get(name)) {
-  customElements.define(name, BsTags);
-}
+defineEl("bs-tags", BsTags);
 
 export default BsTags;

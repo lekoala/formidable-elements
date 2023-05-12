@@ -15,7 +15,7 @@
     <!-- to be loaded before -->
     <script type="module" src="../dist/locale-provider.min.js"></script>
     <script type="module">
-        window['locale-provider'].set('tom-select', 'default', {
+        customElements.get('locale-provider').set('tom-select', 'default', {
             option_create: '<div class="create">Ajouter <strong>{input}</strong>&hellip;</div>',
             no_results: '<div class="no-results">Aucun résultat trouvé</div>'
         });

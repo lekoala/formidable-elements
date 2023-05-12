@@ -1,42 +1,6 @@
-import Superfile from "superfile";
-import FormidableElement from "./utils/formidable-element.js";
-import injectStyles from "./utils/injectStyles.js";
+import SuperfileElement from "./classes/SuperfileElement.js";
+import defineEl from "./utils/defineEl.js";
 
-const name = "superfile-input";
-
-injectStyles(
-  name,
-  `img:not([src]) {
-  display: none;
-}
-.superfile:not(.superfile-ready) {
-  visibility: hidden;
-}
-.superfile-drag input {
-  background: var(--bs-highlight-bg, palegoldenrod);
-}`
-);
-
-class SuperfileElement extends FormidableElement {
-  /**
-   * @returns {HTMLInputElement}
-   */
-  get el() {
-    return this.querySelector("input");
-  }
-
-  created() {
-    const input = this.el;
-    this.superfile = new Superfile(input);
-  }
-
-  destroyed() {
-    this.superfile = null;
-  }
-}
-
-if (!customElements.get(name)) {
-  customElements.define(name, SuperfileElement);
-}
+defineEl("superfile-input", SuperfileElement);
 
 export default SuperfileElement;

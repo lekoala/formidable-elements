@@ -1,0 +1,41 @@
+.squire-editor {
+    position: relative;
+    display: block;
+}
+
+.squire-editor * {
+    box-sizing: border-box;
+}
+
+.squire-editor textarea {
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+    width: 100%;
+    overflow: hidden;
+}
+
+.squire-editor .squire-toolbar {
+    position: absolute;
+    background: var(--bs-tertiary-bg, #EFEFEF);
+    overflow: hidden;
+}
+
+.squire-editor .squire-toolbar-group {
+    border-right: 1px solid rgba(100, 100, 100, 0.2);
+    display: inline-block;
+}
+
+.squire-editor .squire-toolbar-group:last-child {
+    border-right: 0;
+}
+
+.squire-editor .squire-toolbar button {
+    border: 0;
+    height: 38px;
+    width: 38px;
+    background: transparent;
+}
+
+.squire-editor .squire-toolbar button:hover,
+.squire-editor .squire-toolbar button.is-active {
+    background: rgba(100, 100, 100, 0.2);
+}

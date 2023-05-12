@@ -1,0 +1,46 @@
+.tiptap-editor {
+    position: relative;
+    display: block;
+}
+
+.tiptap-editor * {
+    box-sizing: border-box;
+}
+
+.tiptap-editor textarea {
+    font-family: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+    width: 100%;
+    overflow: hidden;
+}
+
+.tiptap-editor .tiptap-toolbar {
+    position: absolute;
+    background: var(--bs-tertiary-bg, #EFEFEF);
+    overflow: hidden;
+    z-index: 2;
+}
+
+.tiptap-editor .tiptap-toolbar-group {
+    border-right: 1px solid rgba(100, 100, 100, 0.2);
+    display: inline-block;
+}
+
+.tiptap-editor .tiptap-toolbar-group:last-child {
+    border-right: 0;
+}
+
+.tiptap-editor .tiptap-toolbar button {
+    border: 0;
+    height: 38px;
+    width: 38px;
+    background: transparent;
+}
+
+.tiptap-editor .tiptap-toolbar button:not([disabled]):hover,
+.tiptap-editor .tiptap-toolbar button.is-active {
+    background: rgba(100, 100, 100, 0.2);
+}
+
+.tiptap-editor .ProseMirror-selectednode {
+    border: 2px solid var(--bs-focus-ring-color, rgba(13, 110, 253, 0.25))
+}

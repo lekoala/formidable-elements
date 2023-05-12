@@ -1,3 +1,4 @@
+// Shorter alias
 const local = window.localStorage;
 
 /**

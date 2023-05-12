@@ -13,7 +13,7 @@
     <script type="module" src="./assets/demo.js"></script>
 
 
-    <!-- <script type="module" src="../dist/locale-provider.min.js"></script> -->
+    <script type="module" src="../dist/locale-provider.min.js"></script>
     <script type="module">
         // You can also define early a global object, then load it
         // window['flatpickr'] = { "l10ns": {} };
@@ -23,14 +23,14 @@
     <!-- <script type="module" src="https://npmcdn.com/flatpickr@4.6.13/dist/l10n/es.js"></script> -->
     <script type="module">
         // This is available if defined before include
-        // window['locale-provider'].set('flatpickr-input', 'fr', window['flatpickr']["l10ns"]["fr"]);
-        // window['locale-provider'].set('flatpickr-input', 'es', window['flatpickr']["l10ns"]["es"]);
+        // customElements.get('locale-provider').set('flatpickr-input', 'fr', window['flatpickr']["l10ns"]["fr"]);
+        // customElements.get('locale-provider').set('flatpickr-input', 'es', window['flatpickr']["l10ns"]["es"]);
 
         // import with side effects, creates "fr" variable
         // import "https://npmcdn.com/flatpickr@4.6.13/dist/l10n/fr.js";
-        // window['locale-provider'].set('flatpickr-input', 'fr', fr.French);
+        // customElements.get('locale-provider').set('flatpickr-input', 'fr', fr.French);
         // you can also set a global default !
-        // window['locale-provider'].set('flatpickr-input', 'default', fr.French);
+        // customElements.get('locale-provider').set('flatpickr-input', 'default', fr.French);
     </script>
     <script src="../dist/flatpickr-input.min.js"></script>
 

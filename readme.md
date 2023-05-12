@@ -170,6 +170,17 @@ Including css injection
     dist\growing-textarea.min.js    416b
     dist\locale-provider.min.js     394b
 
+## Names conflicts
+
+If for some reason you already have a custom element with the same name, it's easy to import the base class
+and define the custom elements since they are in separate files.
+
+Elements DO NOT RELY on their tag name in order to work properly.
+
+## Accessing underlying lib
+
+All bundled libraries are accessible under the `lib` public property for each component.
+
 ## Missing a lib
 
 Open an issue or use Modular Behaviour: https://github.com/lekoala/modular-behaviour.js
