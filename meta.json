@@ -1,5 +1,10 @@
 {
   "inputs": {
+    "node_modules/bootstrap5-autocomplete/autocomplete.js": {
+      "bytes": 26311,
+      "imports": [],
+      "format": "esm"
+    },
     "src/utils/replaceCallbacks.js": {
       "bytes": 588,
       "imports": [],
@@ -10,7 +15,7 @@
       "imports": [],
       "format": "esm"
     },
-    "src/utils/formidable-element.js": {
+    "src/utils/FormidableElement.js": {
       "bytes": 1851,
       "imports": [
         {
@@ -26,23 +31,49 @@
       ],
       "format": "esm"
     },
-    "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-      "bytes": 26311,
+    "src/utils/rmElements.js": {
+      "bytes": 353,
       "imports": [],
       "format": "esm"
     },
-    "src/bs-autocomplete.js": {
-      "bytes": 734,
+    "src/classes/BsAutocomplete.js": {
+      "bytes": 724,
       "imports": [
-        {
-          "path": "src/utils/formidable-element.js",
-          "kind": "import-statement",
-          "original": "./utils/formidable-element.js"
-        },
         {
           "path": "node_modules/bootstrap5-autocomplete/autocomplete.js",
           "kind": "import-statement",
           "original": "bootstrap5-autocomplete"
+        },
+        {
+          "path": "src/utils/FormidableElement.js",
+          "kind": "import-statement",
+          "original": "../utils/FormidableElement.js"
+        },
+        {
+          "path": "src/utils/rmElements.js",
+          "kind": "import-statement",
+          "original": "../utils/rmElements.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/defineEl.js": {
+      "bytes": 286,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/bs-autocomplete.js": {
+      "bytes": 186,
+      "imports": [
+        {
+          "path": "src/classes/BsAutocomplete.js",
+          "kind": "import-statement",
+          "original": "./classes/BsAutocomplete.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
         }
       ],
       "format": "esm"
@@ -61,8 +92,8 @@
       "imports": [],
       "format": "esm"
     },
-    "src/bs-tags.js": {
-      "bytes": 958,
+    "src/classes/BsTags.js": {
+      "bytes": 879,
       "imports": [
         {
           "path": "node_modules/bootstrap5-tags/tags.js",
@@ -72,17 +103,38 @@
         {
           "path": "node_modules/bootstrap5-tags/tags-pure.min.css",
           "kind": "import-statement",
-          "original": "../node_modules/bootstrap5-tags/tags-pure.min.css"
+          "original": "../../node_modules/bootstrap5-tags/tags-pure.min.css"
         },
         {
-          "path": "src/utils/formidable-element.js",
+          "path": "src/utils/FormidableElement.js",
           "kind": "import-statement",
-          "original": "./utils/formidable-element.js"
+          "original": "../utils/FormidableElement.js"
+        },
+        {
+          "path": "src/utils/rmElements.js",
+          "kind": "import-statement",
+          "original": "../utils/rmElements.js"
         },
         {
           "path": "src/utils/injectStyles.js",
           "kind": "import-statement",
-          "original": "./utils/injectStyles.js"
+          "original": "../utils/injectStyles.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/bs-tags.js": {
+      "bytes": 146,
+      "imports": [
+        {
+          "path": "src/classes/BsTags.js",
+          "kind": "import-statement",
+          "original": "./classes/BsTags.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
         }
       ],
       "format": "esm"
@@ -133,29 +185,61 @@
       ],
       "format": "esm"
     },
-    "src/cleave-input.js": {
-      "bytes": 1160,
+    "src/classes/CleaveInput.js": {
+      "bytes": 1035,
       "imports": [
         {
           "path": "node_modules/cleave-es6/src/Cleave.js",
           "kind": "import-statement",
-          "original": "../node_modules/cleave-es6/src/Cleave.js"
+          "original": "../../node_modules/cleave-es6/src/Cleave.js"
         },
         {
-          "path": "src/utils/formidable-element.js",
+          "path": "src/utils/FormidableElement.js",
           "kind": "import-statement",
-          "original": "./utils/formidable-element.js"
+          "original": "../utils/FormidableElement.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/cleave-input.js": {
+      "bytes": 171,
+      "imports": [
+        {
+          "path": "src/classes/CleaveInput.js",
+          "kind": "import-statement",
+          "original": "./classes/CleaveInput.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/classes/ClipboardCopy.js": {
+      "bytes": 2472,
+      "imports": [
+        {
+          "path": "src/utils/FormidableElement.js",
+          "kind": "import-statement",
+          "original": "../utils/FormidableElement.js"
         }
       ],
       "format": "esm"
     },
     "src/clipboard-copy.js": {
-      "bytes": 2592,
+      "bytes": 181,
       "imports": [
         {
-          "path": "src/utils/formidable-element.js",
+          "path": "src/classes/ClipboardCopy.js",
           "kind": "import-statement",
-          "original": "./utils/formidable-element.js"
+          "original": "./classes/ClipboardCopy.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
         }
       ],
       "format": "esm"
@@ -179,13 +263,13 @@
       "imports": [],
       "format": "esm"
     },
-    "src/coloris-input.js": {
-      "bytes": 1928,
+    "src/classes/ColorisInput.js": {
+      "bytes": 1849,
       "imports": [
         {
           "path": "node_modules/@melloware/coloris/dist/coloris.min.css",
           "kind": "import-statement",
-          "original": "../node_modules/@melloware/coloris/dist/coloris.min.css"
+          "original": "../../node_modules/@melloware/coloris/dist/coloris.min.css"
         },
         {
           "path": "node_modules/@melloware/coloris/dist/esm/coloris.js",
@@ -193,24 +277,40 @@
           "original": "@melloware/coloris"
         },
         {
-          "path": "src/utils/formidable-element.js",
+          "path": "src/utils/FormidableElement.js",
           "kind": "import-statement",
-          "original": "./utils/formidable-element.js"
+          "original": "../utils/FormidableElement.js"
         },
         {
           "path": "src/utils/injectStyles.js",
           "kind": "import-statement",
-          "original": "./utils/injectStyles.js"
+          "original": "../utils/injectStyles.js"
         },
         {
           "path": "src/utils/setId.js",
           "kind": "import-statement",
-          "original": "./utils/setId.js"
+          "original": "../utils/setId.js"
         },
         {
           "path": "src/utils/isRTL.js",
           "kind": "import-statement",
-          "original": "./utils/isRTL.js"
+          "original": "../utils/isRTL.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/coloris-input.js": {
+      "bytes": 176,
+      "imports": [
+        {
+          "path": "src/classes/ColorisInput.js",
+          "kind": "import-statement",
+          "original": "./classes/ColorisInput.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
         }
       ],
       "format": "esm"
@@ -225,8 +325,8 @@
       "imports": [],
       "format": "esm"
     },
-    "src/count-down.js": {
-      "bytes": 1481,
+    "src/classes/CountdownElement.js": {
+      "bytes": 1363,
       "imports": [
         {
           "path": "node_modules/countdown/countdown.js",
@@ -234,14 +334,30 @@
           "original": "countdown"
         },
         {
-          "path": "src/utils/formidable-element.js",
+          "path": "src/utils/FormidableElement.js",
           "kind": "import-statement",
-          "original": "./utils/formidable-element.js"
+          "original": "../utils/FormidableElement.js"
         },
         {
           "path": "src/utils/date.js",
           "kind": "import-statement",
-          "original": "./utils/date.js"
+          "original": "../utils/date.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/count-down.js": {
+      "bytes": 189,
+      "imports": [
+        {
+          "path": "src/classes/CountdownElement.js",
+          "kind": "import-statement",
+          "original": "./classes/CountdownElement.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
         }
       ],
       "format": "esm"
@@ -313,88 +429,104 @@
       "imports": [],
       "format": "esm"
     },
-    "src/filepond-input.js": {
-      "bytes": 3955,
+    "src/classes/FilePondInput.js": {
+      "bytes": 3912,
       "imports": [
         {
           "path": "node_modules/filepond/dist/filepond.esm.js",
           "kind": "import-statement",
-          "original": "../node_modules/filepond/dist/filepond.esm.js"
+          "original": "../../node_modules/filepond/dist/filepond.esm.js"
         },
         {
           "path": "node_modules/filepond/dist/filepond.min.css",
           "kind": "import-statement",
-          "original": "../node_modules/filepond/dist/filepond.min.css"
+          "original": "../../node_modules/filepond/dist/filepond.min.css"
         },
         {
           "path": "node_modules/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.esm.js",
           "kind": "import-statement",
-          "original": "../node_modules/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.esm.js"
+          "original": "../../node_modules/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.esm.js"
         },
         {
           "path": "node_modules/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.esm.js",
           "kind": "import-statement",
-          "original": "../node_modules/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.esm.js"
+          "original": "../../node_modules/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.esm.js"
         },
         {
           "path": "node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.esm.js",
           "kind": "import-statement",
-          "original": "../node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.esm.js"
+          "original": "../../node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.esm.js"
         },
         {
           "path": "node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.min.css",
           "kind": "import-statement",
-          "original": "../node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.min.css"
+          "original": "../../node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.min.css"
         },
         {
           "path": "node_modules/filepond-plugin-file-metadata/dist/filepond-plugin-file-metadata.esm.js",
           "kind": "import-statement",
-          "original": "../node_modules/filepond-plugin-file-metadata/dist/filepond-plugin-file-metadata.esm.js"
+          "original": "../../node_modules/filepond-plugin-file-metadata/dist/filepond-plugin-file-metadata.esm.js"
         },
         {
           "path": "node_modules/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.esm.js",
           "kind": "import-statement",
-          "original": "../node_modules/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.esm.js"
+          "original": "../../node_modules/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.esm.js"
         },
         {
           "path": "node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.esm.js",
           "kind": "import-statement",
-          "original": "../node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.esm.js"
+          "original": "../../node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.esm.js"
         },
         {
           "path": "node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css",
           "kind": "import-statement",
-          "original": "../node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css"
+          "original": "../../node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css"
         },
         {
           "path": "node_modules/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.esm.js",
           "kind": "import-statement",
-          "original": "../node_modules/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.esm.js"
+          "original": "../../node_modules/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.esm.js"
         },
         {
           "path": "node_modules/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.esm.js",
           "kind": "import-statement",
-          "original": "../node_modules/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.esm.js"
+          "original": "../../node_modules/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.esm.js"
         },
         {
           "path": "node_modules/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.esm.js",
           "kind": "import-statement",
-          "original": "../node_modules/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.esm.js"
+          "original": "../../node_modules/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.esm.js"
         },
         {
           "path": "node_modules/filepond-plugin-image-validate-size/dist/filepond-plugin-image-validate-size.esm.js",
           "kind": "import-statement",
-          "original": "../node_modules/filepond-plugin-image-validate-size/dist/filepond-plugin-image-validate-size.esm.js"
+          "original": "../../node_modules/filepond-plugin-image-validate-size/dist/filepond-plugin-image-validate-size.esm.js"
         },
         {
-          "path": "src/utils/formidable-element.js",
+          "path": "src/utils/FormidableElement.js",
           "kind": "import-statement",
-          "original": "./utils/formidable-element.js"
+          "original": "../utils/FormidableElement.js"
         },
         {
           "path": "src/utils/injectStyles.js",
           "kind": "import-statement",
-          "original": "./utils/injectStyles.js"
+          "original": "../utils/injectStyles.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/filepond-input.js": {
+      "bytes": 181,
+      "imports": [
+        {
+          "path": "src/classes/FilePondInput.js",
+          "kind": "import-statement",
+          "original": "./classes/FilePondInput.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
         }
       ],
       "format": "esm"
@@ -561,18 +693,13 @@
       "format": "esm"
     },
     "src/utils/localeProvider.js": {
-      "bytes": 366,
+      "bytes": 385,
       "imports": [],
       "format": "esm"
     },
-    "src/flatpickr-input.js": {
-      "bytes": 7052,
+    "src/classes/FlatpickrInput.js": {
+      "bytes": 6984,
       "imports": [
-        {
-          "path": "src/utils/formidable-element.js",
-          "kind": "import-statement",
-          "original": "./utils/formidable-element.js"
-        },
         {
           "path": "node_modules/flatpickr/dist/esm/index.js",
           "kind": "import-statement",
@@ -591,64 +718,101 @@
         {
           "path": "node_modules/flatpickr/dist/flatpickr.min.css",
           "kind": "import-statement",
-          "original": "../node_modules/flatpickr/dist/flatpickr.min.css"
+          "original": "../../node_modules/flatpickr/dist/flatpickr.min.css"
         },
         {
           "path": "node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.css",
           "kind": "import-statement",
-          "original": "../node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.css"
+          "original": "../../node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.css"
         },
         {
           "path": "node_modules/flatpickr/dist/plugins/monthSelect/style.css",
           "kind": "import-statement",
-          "original": "../node_modules/flatpickr/dist/plugins/monthSelect/style.css"
+          "original": "../../node_modules/flatpickr/dist/plugins/monthSelect/style.css"
+        },
+        {
+          "path": "src/utils/FormidableElement.js",
+          "kind": "import-statement",
+          "original": "../utils/FormidableElement.js"
         },
         {
           "path": "src/utils/injectStyles.js",
           "kind": "import-statement",
-          "original": "./utils/injectStyles.js"
+          "original": "../utils/injectStyles.js"
         },
         {
           "path": "src/utils/insertHiddenInput.js",
           "kind": "import-statement",
-          "original": "./utils/insertHiddenInput.js"
+          "original": "../utils/insertHiddenInput.js"
         },
         {
           "path": "src/utils/setId.js",
           "kind": "import-statement",
-          "original": "./utils/setId.js"
+          "original": "../utils/setId.js"
         },
         {
           "path": "src/utils/waitDefined.js",
           "kind": "import-statement",
-          "original": "./utils/waitDefined.js"
+          "original": "../utils/waitDefined.js"
         },
         {
           "path": "src/utils/isUndefined.js",
           "kind": "import-statement",
-          "original": "./utils/isUndefined.js"
+          "original": "../utils/isUndefined.js"
         },
         {
           "path": "src/utils/query.js",
           "kind": "import-statement",
-          "original": "./utils/query.js"
+          "original": "../utils/query.js"
         },
         {
           "path": "src/utils/date.js",
           "kind": "import-statement",
-          "original": "./utils/date.js"
+          "original": "../utils/date.js"
         },
         {
           "path": "src/utils/localeProvider.js",
           "kind": "import-statement",
-          "original": "./utils/localeProvider.js"
+          "original": "../utils/localeProvider.js"
         }
       ],
       "format": "esm"
     },
-    "src/growing-textarea.js": {
-      "bytes": 618,
+    "src/flatpickr-input.js": {
+      "bytes": 186,
+      "imports": [
+        {
+          "path": "src/classes/FlatpickrInput.js",
+          "kind": "import-statement",
+          "original": "./classes/FlatpickrInput.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/classes/GrowingTextarea.js": {
+      "bytes": 760,
       "imports": [],
+      "format": "esm"
+    },
+    "src/growing-textarea.js": {
+      "bytes": 191,
+      "imports": [
+        {
+          "path": "src/classes/GrowingTextarea.js",
+          "kind": "import-statement",
+          "original": "./classes/GrowingTextarea.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        }
+      ],
       "format": "esm"
     },
     "node_modules/inputmask/lib/keycode.js": {
@@ -1133,45 +1297,77 @@
       ],
       "format": "esm"
     },
-    "src/input-mask.js": {
-      "bytes": 3208,
+    "src/classes/InputmaskElement.js": {
+      "bytes": 3104,
       "imports": [
         {
           "path": "node_modules/inputmask/lib/extensions/inputmask.extensions.js",
           "kind": "import-statement",
-          "original": "../node_modules/inputmask/lib/extensions/inputmask.extensions.js"
+          "original": "../../node_modules/inputmask/lib/extensions/inputmask.extensions.js"
         },
         {
           "path": "node_modules/inputmask/lib/extensions/inputmask.date.extensions.js",
           "kind": "import-statement",
-          "original": "../node_modules/inputmask/lib/extensions/inputmask.date.extensions.js"
+          "original": "../../node_modules/inputmask/lib/extensions/inputmask.date.extensions.js"
         },
         {
           "path": "node_modules/inputmask/lib/extensions/inputmask.numeric.extensions.js",
           "kind": "import-statement",
-          "original": "../node_modules/inputmask/lib/extensions/inputmask.numeric.extensions.js"
+          "original": "../../node_modules/inputmask/lib/extensions/inputmask.numeric.extensions.js"
         },
         {
           "path": "node_modules/inputmask/lib/inputmask.js",
           "kind": "import-statement",
-          "original": "../node_modules/inputmask/lib/inputmask.js"
+          "original": "../../node_modules/inputmask/lib/inputmask.js"
         },
         {
-          "path": "src/utils/formidable-element.js",
+          "path": "src/utils/FormidableElement.js",
           "kind": "import-statement",
-          "original": "./utils/formidable-element.js"
+          "original": "../utils/FormidableElement.js"
         },
         {
           "path": "src/utils/insertHiddenInput.js",
           "kind": "import-statement",
-          "original": "./utils/insertHiddenInput.js"
+          "original": "../utils/insertHiddenInput.js"
         }
       ],
       "format": "esm"
     },
-    "src/locale-provider.js": {
-      "bytes": 1432,
+    "src/input-mask.js": {
+      "bytes": 189,
+      "imports": [
+        {
+          "path": "src/classes/InputmaskElement.js",
+          "kind": "import-statement",
+          "original": "./classes/InputmaskElement.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/classes/LocaleProvider.js": {
+      "bytes": 1258,
       "imports": [],
+      "format": "esm"
+    },
+    "src/locale-provider.js": {
+      "bytes": 186,
+      "imports": [
+        {
+          "path": "src/classes/LocaleProvider.js",
+          "kind": "import-statement",
+          "original": "./classes/LocaleProvider.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        }
+      ],
       "format": "esm"
     },
     "node_modules/squire-rte/dist/squire-raw.mjs": {
@@ -1216,63 +1412,78 @@
       "imports": [],
       "format": "esm"
     },
-    "src/utils/font-stacks.js": {
-      "bytes": 1689,
-      "imports": [],
-      "format": "esm"
+    "src/css/squire-editor.min.css": {
+      "bytes": 720,
+      "imports": []
     },
-    "src/squire-editor.js": {
-      "bytes": 16645,
+    "src/classes/SquireEditor.js": {
+      "bytes": 15783,
       "imports": [
         {
           "path": "node_modules/squire-rte/dist/squire-raw.mjs",
           "kind": "import-statement",
-          "original": "../node_modules/squire-rte/dist/squire-raw.mjs"
+          "original": "../../node_modules/squire-rte/dist/squire-raw.mjs"
         },
         {
-          "path": "src/utils/formidable-element.js",
+          "path": "src/utils/FormidableElement.js",
           "kind": "import-statement",
-          "original": "./utils/formidable-element.js"
+          "original": "../utils/FormidableElement.js"
         },
         {
           "path": "src/utils/ce.js",
           "kind": "import-statement",
-          "original": "./utils/ce.js"
+          "original": "../utils/ce.js"
         },
         {
           "path": "src/utils/query.js",
           "kind": "import-statement",
-          "original": "./utils/query.js"
+          "original": "../utils/query.js"
         },
         {
           "path": "src/utils/parseHTML.js",
           "kind": "import-statement",
-          "original": "./utils/parseHTML.js"
+          "original": "../utils/parseHTML.js"
         },
         {
           "path": "src/utils/setHTML.js",
           "kind": "import-statement",
-          "original": "./utils/setHTML.js"
+          "original": "../utils/setHTML.js"
         },
         {
           "path": "src/utils/hasBootstrap.js",
           "kind": "import-statement",
-          "original": "./utils/hasBootstrap.js"
+          "original": "../utils/hasBootstrap.js"
         },
         {
           "path": "src/utils/injectStyles.js",
           "kind": "import-statement",
-          "original": "./utils/injectStyles.js"
+          "original": "../utils/injectStyles.js"
         },
         {
           "path": "src/utils/bootstrap-icons.js",
           "kind": "import-statement",
-          "original": "./utils/bootstrap-icons.js"
+          "original": "../utils/bootstrap-icons.js"
         },
         {
-          "path": "src/utils/font-stacks.js",
+          "path": "src/css/squire-editor.min.css",
           "kind": "import-statement",
-          "original": "./utils/font-stacks.js"
+          "original": "../css/squire-editor.min.css"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/squire-editor.js": {
+      "bytes": 176,
+      "imports": [
+        {
+          "path": "src/classes/SquireEditor.js",
+          "kind": "import-statement",
+          "original": "./classes/SquireEditor.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
         }
       ],
       "format": "esm"
@@ -1282,8 +1493,8 @@
       "imports": [],
       "format": "esm"
     },
-    "src/superfile-input.js": {
-      "bytes": 841,
+    "src/classes/SuperfileElement.js": {
+      "bytes": 753,
       "imports": [
         {
           "path": "node_modules/superfile/superfile.js",
@@ -1291,14 +1502,30 @@
           "original": "superfile"
         },
         {
-          "path": "src/utils/formidable-element.js",
+          "path": "src/utils/FormidableElement.js",
           "kind": "import-statement",
-          "original": "./utils/formidable-element.js"
+          "original": "../utils/FormidableElement.js"
         },
         {
           "path": "src/utils/injectStyles.js",
           "kind": "import-statement",
-          "original": "./utils/injectStyles.js"
+          "original": "../utils/injectStyles.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/superfile-input.js": {
+      "bytes": 194,
+      "imports": [
+        {
+          "path": "src/classes/SuperfileElement.js",
+          "kind": "import-statement",
+          "original": "./classes/SuperfileElement.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
         }
       ],
       "format": "esm"
@@ -1323,13 +1550,17 @@
       "bytes": 253932,
       "imports": []
     },
-    "src/utils/storage.js": {
-      "bytes": 699,
+    "src/css/tel-input.min.css": {
+      "bytes": 3355,
+      "imports": []
+    },
+    "src/utils/Storage.js": {
+      "bytes": 717,
       "imports": [],
       "format": "esm"
     },
-    "src/tel-input.js": {
-      "bytes": 6051,
+    "src/classes/TelInput.js": {
+      "bytes": 2639,
       "imports": [
         {
           "path": "node_modules/intl-tel-input/index.js",
@@ -1339,27 +1570,48 @@
         {
           "path": "node_modules/intl-tel-input/build/js/utils.js",
           "kind": "import-statement",
-          "original": "../node_modules/intl-tel-input/build/js/utils.js"
+          "original": "../../node_modules/intl-tel-input/build/js/utils.js"
         },
         {
-          "path": "src/utils/formidable-element.js",
+          "path": "src/css/tel-input.min.css",
           "kind": "import-statement",
-          "original": "./utils/formidable-element.js"
+          "original": "../css/tel-input.min.css"
+        },
+        {
+          "path": "src/utils/FormidableElement.js",
+          "kind": "import-statement",
+          "original": "../utils/FormidableElement.js"
         },
         {
           "path": "src/utils/injectStyles.js",
           "kind": "import-statement",
-          "original": "./utils/injectStyles.js"
+          "original": "../utils/injectStyles.js"
         },
         {
           "path": "src/utils/localeProvider.js",
           "kind": "import-statement",
-          "original": "./utils/localeProvider.js"
+          "original": "../utils/localeProvider.js"
         },
         {
-          "path": "src/utils/storage.js",
+          "path": "src/utils/Storage.js",
           "kind": "import-statement",
-          "original": "./utils/storage.js"
+          "original": "../utils/Storage.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/tel-input.js": {
+      "bytes": 156,
+      "imports": [
+        {
+          "path": "src/classes/TelInput.js",
+          "kind": "import-statement",
+          "original": "./classes/TelInput.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
         }
       ],
       "format": "esm"
@@ -1939,8 +2191,12 @@
       ],
       "format": "esm"
     },
-    "src/tiptap-editor.js": {
-      "bytes": 16342,
+    "src/css/tiptap-editor.min.css": {
+      "bytes": 852,
+      "imports": []
+    },
+    "src/classes/TiptapEditor.js": {
+      "bytes": 15325,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -2053,39 +2309,55 @@
           "original": "@tiptap/extension-image"
         },
         {
-          "path": "src/utils/formidable-element.js",
+          "path": "src/utils/FormidableElement.js",
           "kind": "import-statement",
-          "original": "./utils/formidable-element.js"
+          "original": "../utils/FormidableElement.js"
         },
         {
           "path": "src/utils/ce.js",
           "kind": "import-statement",
-          "original": "./utils/ce.js"
+          "original": "../utils/ce.js"
         },
         {
           "path": "src/utils/query.js",
           "kind": "import-statement",
-          "original": "./utils/query.js"
+          "original": "../utils/query.js"
         },
         {
           "path": "src/utils/hasBootstrap.js",
           "kind": "import-statement",
-          "original": "./utils/hasBootstrap.js"
+          "original": "../utils/hasBootstrap.js"
         },
         {
           "path": "src/utils/injectStyles.js",
           "kind": "import-statement",
-          "original": "./utils/injectStyles.js"
+          "original": "../utils/injectStyles.js"
         },
         {
           "path": "src/utils/bootstrap-icons.js",
           "kind": "import-statement",
-          "original": "./utils/bootstrap-icons.js"
+          "original": "../utils/bootstrap-icons.js"
         },
         {
-          "path": "src/utils/font-stacks.js",
+          "path": "src/css/tiptap-editor.min.css",
           "kind": "import-statement",
-          "original": "./utils/font-stacks.js"
+          "original": "../css/tiptap-editor.min.css"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/tiptap-editor.js": {
+      "bytes": 176,
+      "imports": [
+        {
+          "path": "src/classes/TiptapEditor.js",
+          "kind": "import-statement",
+          "original": "./classes/TiptapEditor.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
         }
       ],
       "format": "esm"
@@ -2610,38 +2882,54 @@
       "bytes": 14862,
       "imports": []
     },
-    "src/tom-select.js": {
-      "bytes": 1530,
+    "src/classes/TomSelectElement.js": {
+      "bytes": 1523,
       "imports": [
         {
           "path": "node_modules/tom-select/src/tom-select.complete.ts",
           "kind": "import-statement",
-          "original": "../node_modules/tom-select/src/tom-select.complete.js"
+          "original": "../../node_modules/tom-select/src/tom-select.complete.js"
         },
         {
           "path": "node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css",
           "kind": "import-statement",
-          "original": "../node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css"
+          "original": "../../node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css"
         },
         {
-          "path": "src/utils/formidable-element.js",
+          "path": "src/utils/FormidableElement.js",
           "kind": "import-statement",
-          "original": "./utils/formidable-element.js"
+          "original": "../utils/FormidableElement.js"
         },
         {
           "path": "src/utils/injectStyles.js",
           "kind": "import-statement",
-          "original": "./utils/injectStyles.js"
+          "original": "../utils/injectStyles.js"
         },
         {
           "path": "src/utils/setId.js",
           "kind": "import-statement",
-          "original": "./utils/setId.js"
+          "original": "../utils/setId.js"
         },
         {
           "path": "src/utils/localeProvider.js",
           "kind": "import-statement",
-          "original": "./utils/localeProvider.js"
+          "original": "../utils/localeProvider.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/tom-select.js": {
+      "bytes": 189,
+      "imports": [
+        {
+          "path": "src/classes/TomSelectElement.js",
+          "kind": "import-statement",
+          "original": "./classes/TomSelectElement.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
         }
       ],
       "format": "esm"
@@ -2653,23 +2941,32 @@
       "exports": [],
       "entryPoint": "src/bs-autocomplete.js",
       "inputs": {
+        "node_modules/bootstrap5-autocomplete/autocomplete.js": {
+          "bytesInOutput": 11719
+        },
         "src/utils/replaceCallbacks.js": {
           "bytesInOutput": 215
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 116
         },
-        "src/utils/formidable-element.js": {
+        "src/utils/FormidableElement.js": {
           "bytesInOutput": 358
         },
-        "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-          "bytesInOutput": 11719
+        "src/utils/rmElements.js": {
+          "bytesInOutput": 106
+        },
+        "src/classes/BsAutocomplete.js": {
+          "bytesInOutput": 242
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 61
         },
         "src/bs-autocomplete.js": {
-          "bytesInOutput": 319
+          "bytesInOutput": 31
         }
       },
-      "bytes": 12752
+      "bytes": 12873
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -2688,17 +2985,26 @@
         "src/utils/whenParsed.js": {
           "bytesInOutput": 116
         },
-        "src/utils/formidable-element.js": {
+        "src/utils/FormidableElement.js": {
           "bytesInOutput": 358
+        },
+        "src/utils/rmElements.js": {
+          "bytesInOutput": 106
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 159
         },
+        "src/classes/BsTags.js": {
+          "bytesInOutput": 213
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 61
+        },
         "src/bs-tags.js": {
-          "bytesInOutput": 300
+          "bytesInOutput": 24
         }
       },
-      "bytes": 26956
+      "bytes": 27060
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -2726,14 +3032,20 @@
         "src/utils/whenParsed.js": {
           "bytesInOutput": 116
         },
-        "src/utils/formidable-element.js": {
+        "src/utils/FormidableElement.js": {
           "bytesInOutput": 358
         },
+        "src/classes/CleaveInput.js": {
+          "bytesInOutput": 284
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 61
+        },
         "src/cleave-input.js": {
-          "bytesInOutput": 356
+          "bytesInOutput": 29
         }
       },
-      "bytes": 18053
+      "bytes": 18071
     },
     "dist/clipboard-copy.min.js": {
       "imports": [],
@@ -2746,14 +3058,20 @@
         "src/utils/whenParsed.js": {
           "bytesInOutput": 116
         },
-        "src/utils/formidable-element.js": {
+        "src/utils/FormidableElement.js": {
           "bytesInOutput": 358
         },
+        "src/classes/ClipboardCopy.js": {
+          "bytesInOutput": 1100
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 61
+        },
         "src/clipboard-copy.js": {
-          "bytesInOutput": 1173
+          "bytesInOutput": 30
         }
       },
-      "bytes": 1887
+      "bytes": 1905
     },
     "dist/coloris-input.min.js": {
       "imports": [],
@@ -2764,7 +3082,7 @@
           "bytesInOutput": 8485
         },
         "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-          "bytesInOutput": 14544
+          "bytesInOutput": 14536
         },
         "src/utils/replaceCallbacks.js": {
           "bytesInOutput": 215
@@ -2772,7 +3090,7 @@
         "src/utils/whenParsed.js": {
           "bytesInOutput": 116
         },
-        "src/utils/formidable-element.js": {
+        "src/utils/FormidableElement.js": {
           "bytesInOutput": 365
         },
         "src/utils/injectStyles.js": {
@@ -2784,11 +3102,17 @@
         "src/utils/isRTL.js": {
           "bytesInOutput": 89
         },
+        "src/classes/ColorisInput.js": {
+          "bytesInOutput": 547
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 65
+        },
         "src/coloris-input.js": {
-          "bytesInOutput": 596
+          "bytesInOutput": 33
         }
       },
-      "bytes": 24947
+      "bytes": 24988
     },
     "dist/count-down.min.js": {
       "imports": [],
@@ -2798,8 +3122,8 @@
         "node_modules/countdown/countdown.js": {
           "bytesInOutput": 7446
         },
-        "src/count-down.js": {
-          "bytesInOutput": 616
+        "src/classes/CountdownElement.js": {
+          "bytesInOutput": 544
         },
         "src/utils/replaceCallbacks.js": {
           "bytesInOutput": 215
@@ -2807,14 +3131,20 @@
         "src/utils/whenParsed.js": {
           "bytesInOutput": 116
         },
-        "src/utils/formidable-element.js": {
+        "src/utils/FormidableElement.js": {
           "bytesInOutput": 359
         },
         "src/utils/date.js": {
           "bytesInOutput": 64
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 65
+        },
+        "src/count-down.js": {
+          "bytesInOutput": 30
         }
       },
-      "bytes": 9594
+      "bytes": 9617
     },
     "dist/filepond-input.min.js": {
       "imports": [],
@@ -2869,17 +3199,23 @@
         "src/utils/whenParsed.js": {
           "bytesInOutput": 118
         },
-        "src/utils/formidable-element.js": {
+        "src/utils/FormidableElement.js": {
           "bytesInOutput": 367
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 160
         },
+        "src/classes/FilePondInput.js": {
+          "bytesInOutput": 481
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 65
+        },
         "src/filepond-input.js": {
-          "bytesInOutput": 538
+          "bytesInOutput": 34
         }
       },
-      "bytes": 189204
+      "bytes": 189246
     },
     "dist/flatpickr-input.min.js": {
       "imports": [],
@@ -2891,15 +3227,6 @@
         },
         "node_modules/flatpickr/dist/plugins/monthSelect/index.js": {
           "bytesInOutput": 5505
-        },
-        "src/utils/replaceCallbacks.js": {
-          "bytesInOutput": 217
-        },
-        "src/utils/whenParsed.js": {
-          "bytesInOutput": 118
-        },
-        "src/utils/formidable-element.js": {
-          "bytesInOutput": 367
         },
         "node_modules/flatpickr/dist/esm/types/options.js": {
           "bytesInOutput": 1837
@@ -2925,8 +3252,8 @@
         "node_modules/flatpickr/dist/esm/index.js": {
           "bytesInOutput": 42084
         },
-        "src/flatpickr-input.js": {
-          "bytesInOutput": 2307
+        "src/classes/FlatpickrInput.js": {
+          "bytesInOutput": 2250
         },
         "node_modules/flatpickr/dist/flatpickr.min.css": {
           "bytesInOutput": 16177
@@ -2936,6 +3263,15 @@
         },
         "node_modules/flatpickr/dist/plugins/monthSelect/style.css": {
           "bytesInOutput": 2832
+        },
+        "src/utils/replaceCallbacks.js": {
+          "bytesInOutput": 217
+        },
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 118
+        },
+        "src/utils/FormidableElement.js": {
+          "bytesInOutput": 367
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 160
@@ -2963,20 +3299,32 @@
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 86
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 65
+        },
+        "src/flatpickr-input.js": {
+          "bytesInOutput": 35
         }
       },
-      "bytes": 84202
+      "bytes": 84245
     },
     "dist/growing-textarea.min.js": {
       "imports": [],
       "exports": [],
       "entryPoint": "src/growing-textarea.js",
       "inputs": {
+        "src/classes/GrowingTextarea.js": {
+          "bytesInOutput": 340
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 61
+        },
         "src/growing-textarea.js": {
-          "bytesInOutput": 391
+          "bytesInOutput": 32
         }
       },
-      "bytes": 416
+      "bytes": 458
     },
     "dist/input-mask.min.js": {
       "imports": [],
@@ -3061,7 +3409,7 @@
         "src/utils/whenParsed.js": {
           "bytesInOutput": 118
         },
-        "src/utils/formidable-element.js": {
+        "src/utils/FormidableElement.js": {
           "bytesInOutput": 367
         },
         "src/utils/insertAfter.js": {
@@ -3073,22 +3421,34 @@
         "src/utils/insertHiddenInput.js": {
           "bytesInOutput": 234
         },
+        "src/classes/InputmaskElement.js": {
+          "bytesInOutput": 902
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 65
+        },
         "src/input-mask.js": {
-          "bytesInOutput": 975
+          "bytesInOutput": 30
         }
       },
-      "bytes": 88066
+      "bytes": 88088
     },
     "dist/locale-provider.min.js": {
       "imports": [],
       "exports": [],
       "entryPoint": "src/locale-provider.js",
       "inputs": {
+        "src/classes/LocaleProvider.js": {
+          "bytesInOutput": 281
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 61
+        },
         "src/locale-provider.js": {
-          "bytesInOutput": 369
+          "bytesInOutput": 31
         }
       },
-      "bytes": 394
+      "bytes": 398
     },
     "dist/squire-editor.min.js": {
       "imports": [
@@ -3110,7 +3470,7 @@
         "src/utils/whenParsed.js": {
           "bytesInOutput": 118
         },
-        "src/utils/formidable-element.js": {
+        "src/utils/FormidableElement.js": {
           "bytesInOutput": 367
         },
         "src/utils/ce.js": {
@@ -3134,14 +3494,20 @@
         "src/utils/bootstrap-icons.js": {
           "bytesInOutput": 7378
         },
-        "src/utils/font-stacks.js": {
-          "bytesInOutput": 106
+        "src/css/squire-editor.min.css": {
+          "bytesInOutput": 730
+        },
+        "src/classes/SquireEditor.js": {
+          "bytesInOutput": 6590
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 65
         },
         "src/squire-editor.js": {
-          "bytesInOutput": 7356
+          "bytesInOutput": 33
         }
       },
-      "bytes": 68941
+      "bytes": 68897
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -3157,17 +3523,23 @@
         "src/utils/whenParsed.js": {
           "bytesInOutput": 116
         },
-        "src/utils/formidable-element.js": {
+        "src/utils/FormidableElement.js": {
           "bytesInOutput": 358
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 159
         },
+        "src/classes/SuperfileElement.js": {
+          "bytesInOutput": 357
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 61
+        },
         "src/superfile-input.js": {
-          "bytesInOutput": 411
+          "bytesInOutput": 31
         }
       },
-      "bytes": 5568
+      "bytes": 5606
     },
     "dist/tel-input.min.js": {
       "imports": [],
@@ -3180,11 +3552,14 @@
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
         },
-        "src/tel-input.js": {
-          "bytesInOutput": 4428
+        "src/classes/TelInput.js": {
+          "bytesInOutput": 1010
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
           "bytesInOutput": 251264
+        },
+        "src/css/tel-input.min.css": {
+          "bytesInOutput": 3365
         },
         "src/utils/replaceCallbacks.js": {
           "bytesInOutput": 217
@@ -3192,7 +3567,7 @@
         "src/utils/whenParsed.js": {
           "bytesInOutput": 118
         },
-        "src/utils/formidable-element.js": {
+        "src/utils/FormidableElement.js": {
           "bytesInOutput": 367
         },
         "src/utils/injectStyles.js": {
@@ -3201,11 +3576,17 @@
         "src/utils/localeProvider.js": {
           "bytesInOutput": 86
         },
-        "src/utils/storage.js": {
+        "src/utils/Storage.js": {
           "bytesInOutput": 227
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 65
+        },
+        "src/tel-input.js": {
+          "bytesInOutput": 29
         }
       },
-      "bytes": 295073
+      "bytes": 295114
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -3350,7 +3731,7 @@
         "src/utils/whenParsed.js": {
           "bytesInOutput": 118
         },
-        "src/utils/formidable-element.js": {
+        "src/utils/FormidableElement.js": {
           "bytesInOutput": 367
         },
         "src/utils/ce.js": {
@@ -3368,14 +3749,20 @@
         "src/utils/bootstrap-icons.js": {
           "bytesInOutput": 8254
         },
-        "src/utils/font-stacks.js": {
-          "bytesInOutput": 106
+        "src/css/tiptap-editor.min.css": {
+          "bytesInOutput": 862
+        },
+        "src/classes/TiptapEditor.js": {
+          "bytesInOutput": 5963
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 65
         },
         "src/tiptap-editor.js": {
-          "bytesInOutput": 6875
+          "bytesInOutput": 33
         }
       },
-      "bytes": 307204
+      "bytes": 307146
     },
     "dist/tom-select.min.js": {
       "imports": [],
@@ -3472,7 +3859,7 @@
         "src/utils/whenParsed.js": {
           "bytesInOutput": 118
         },
-        "src/utils/formidable-element.js": {
+        "src/utils/FormidableElement.js": {
           "bytesInOutput": 367
         },
         "src/utils/injectStyles.js": {
@@ -3484,11 +3871,17 @@
         "src/utils/localeProvider.js": {
           "bytesInOutput": 86
         },
+        "src/classes/TomSelectElement.js": {
+          "bytesInOutput": 516
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 65
+        },
         "src/tom-select.js": {
-          "bytesInOutput": 501
+          "bytesInOutput": 30
         }
       },
-      "bytes": 71387
+      "bytes": 71497
     }
   }
 }
