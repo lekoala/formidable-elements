@@ -1,4 +1,44 @@
 /**
+ * @typedef DateExpression
+ * @property {Number} seconds
+ * @property {Number} minutes
+ * @property {Number} hours
+ * @property {Number} days
+ */
+
+/**
+ * @param {DateExpression} expr
+ * @param {Date|Number} dateOrTime
+ * @returns {Date}
+ */
+export function changeDate(expr, dateOrTime = null) {
+  if (!dateOrTime) {
+    dateOrTime = new Date();
+  }
+  let t = dateOrTime instanceof Date ? dateOrTime.getTime() : dateOrTime;
+  if (expr.seconds) t += 1000 * expr.seconds;
+  if (expr.minutes) t += 1000 * 60 * expr.minutes;
+  if (expr.hours) t += 1000 * 60 * 60 * expr.hours;
+  if (expr.days) t += 1000 * 60 * 60 * 24 * expr.days;
+  return new Date(t);
+}
+
+/**
+ * @param {Date|Number} dateOrTime
+ * @returns {DateExpression}
+ */
+export function dateParts(dateOrTime) {
+  const t = dateOrTime instanceof Date ? dateOrTime.getTime() : dateOrTime;
+  const expr = {
+    days: Math.floor(t / (1000 * 60 * 60 * 24)),
+    hours: Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+    minutes: Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)),
+    seconds: Math.floor((t % (1000 * 60)) / 1000),
+  };
+  return expr;
+}
+
+/**
  * String to Date
  * @param {Date|string} str
  * @returns {Date}

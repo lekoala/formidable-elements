@@ -12,24 +12,70 @@
     <link href="./assets/demo.css" rel="stylesheet">
     <script type="module" src="./assets/demo.js"></script>
 
-    <script type="module" src="../dist/count-down.min.js"></script>
-    <script>
-        function renderDate(ts) {
-            console.log(ts);
-            return `<span class="h">${ts.hours}h</span> <span class="m">${ts.minutes}m</span> <span class="s">${ts.seconds}s</span>`;
+    <script type="module" src="../dist/locale-provider.min.js"></script>
+    <script type="module">
+        // customElements.get('locale-provider').set('count-down', 'default', {
+        //     days: "j"
+        // });
+
+        window['app'] = {
+            onComplete: () => {
+                console.log("COMPLETE");
+            }
         }
     </script>
+    <script type="module" src="../dist/count-down.min.js"></script>
 </head>
 
 <body class="p-3">
     <div class="mb-3">
-        <count-down data-config='{"end": "2025-01-01"}'></count-down>
+        Static timer to 01/01/2025 <count-down data-config='{"end": "2025-01-01", "timer": false}'></count-down>
     </div>
     <div class="mb-3">
-        <count-down data-config='{"end": "2025-01-01", "timer": true, "ontick": {"__fn": "console.log"}}'></count-down>
+        Dynamic timer to 01/01/2025 + log <count-down data-config='{"end": "2025-01-01", "onTick": {"__fn": "console.log"}}'></count-down>
     </div>
     <div class="mb-3">
-        <count-down data-config='{"end": "2025-01-01", "timer": true, "renderer": {"__fn": "renderDate"}, "units": ["HOURS","MINUTES","SECONDS"]}'></count-down>
+        Custom start date (2024-12-30 > 2025-01-01) <count-down
+            data-config='{"start": "2024-12-30 20:00:00", "end": "2025-01-01 14:00:00"}'></count-down>
+    </div>
+    <div class="mb-3">
+        Custom start date (2024-12-30 > 2025-01-01) no padding <count-down
+            data-config='{"start": "2024-12-30 20:00:00", "end": "2025-01-01 14:00:00", "pad": false}'></count-down>
+    </div>
+    <div class="mb-3">
+        Custom start date (2024-12-30 > 2025-01-01) every 5s <count-down
+            data-config='{"start": "2024-12-30", "end": "2025-01-01", "interval": 5000}'></count-down>
+    </div>
+    <div class="mb-3">
+        Custom display <count-down data-end="2025-01-01">
+            <span class="days"><span class="value"></span><span class="label"> jours</span></span> <span class="hours"><span
+                    class="value"></span><span class="label"> heures</span></span> <span class="minutes"><span class="value"></span><span
+                    class="label"> minutes</span></span> <span class="seconds"><span class="value"></span><span class="label">
+                    seconds</span></span>
+        </count-down>
+    </div>
+    <div class="mb-3">
+        +30 minutes <count-down data-config='{"end": {"minutes": 30}}'>
+            <span class="minutes"><span class="value"></span><span class="label"> minutes</span></span> <span class="seconds"><span
+                    class="value"></span><span class="label">
+                    seconds</span></span>
+        </count-down>
+    </div>
+    <div class="mb-3">
+        +30 minutes in seconds <count-down data-config='{"end": {"minutes": 30}, "unit": "seconds"}'>
+            <span class="seconds"><span class="value"></span><span class="label">
+                    seconds</span></span>
+        </count-down>
+    </div>
+    <div class="mb-3">
+        +30 minutes in minutes <count-down data-config='{"end": {"minutes": 30}, "unit": "minutes", "decimalDigits": 2}'></count-down>
+    </div>
+    <div class="mb-3">
+        +5 seconds and on complete <count-down data-config='{"end": {"seconds": 5}, "onComplete": {"__fn": "app.onComplete"}}'>
+            <span class="minutes"><span class="value"></span><span class="label"> minutes</span></span> <span class="seconds"><span
+                    class="value"></span><span class="label">
+                    seconds</span></span>
+        </count-down>
     </div>
     <hr>
     <button class="btn btn-light delete-btn" data-name="count-down">Delete element</button>

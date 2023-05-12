@@ -9,7 +9,6 @@
 - flatpickr: https://github.com/flatpickr/flatpickr
 - coloris: https://github.com/mdbassit/Coloris
 - filepond: https://github.com/pqina/filepond
-- countdown: https://www.npmjs.com/package/countdown
 - tel input: https://intl-tel-input.com/
 - tip tap: https://tiptap.dev/
 - tom select: https://tom-select.js.org/
@@ -24,6 +23,7 @@ Bootstrap specific:
 And some custom made stuff as well:
 
 - clipboard-copy
+- countdown
 - growing-textarea
 - locale-provider
 
