@@ -11,6 +11,7 @@ export default function replaceCallbacks(obj) {
         if (typeof fn == "string") {
           obj[k] = fn.split(".").reduce((r, p) => r[p], window);
         } else if (Array.isArray(fn)) {
+          // experimental, may be removed
           obj[k] = new Function(fn[0], fn[1]);
         }
       } else {

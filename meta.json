@@ -1,7 +1,7 @@
 {
   "inputs": {
     "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-      "bytes": 26311,
+      "bytes": 26446,
       "imports": [],
       "format": "esm"
     },
@@ -37,7 +37,7 @@
       "format": "esm"
     },
     "src/classes/BsAutocomplete.js": {
-      "bytes": 724,
+      "bytes": 723,
       "imports": [
         {
           "path": "node_modules/bootstrap5-autocomplete/autocomplete.js",
@@ -331,7 +331,7 @@
       "format": "esm"
     },
     "src/classes/CountdownElement.js": {
-      "bytes": 4617,
+      "bytes": 5538,
       "imports": [
         {
           "path": "src/utils/FormidableElement.js",
@@ -2942,7 +2942,7 @@
       "entryPoint": "src/bs-autocomplete.js",
       "inputs": {
         "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-          "bytesInOutput": 11719
+          "bytesInOutput": 11783
         },
         "src/utils/replaceCallbacks.js": {
           "bytesInOutput": 215
@@ -2966,7 +2966,7 @@
           "bytesInOutput": 31
         }
       },
-      "bytes": 12873
+      "bytes": 12937
     },
     "dist/bs-tags.min.js": {
       "imports": [],

@@ -50,7 +50,7 @@
     "web-component"
   ],
   "scripts": {
-    "build": "esbuild ./src/*.js --bundle --minify --loader:.css=text --format=iife --outdir=dist --out-extension:.js=.min.js --metafile=meta.json",
+    "build": "esbuild ./src/*.js --bundle --minify --loader:.css=text --format=iife --outdir=dist --out-extension:.js=.min.js --metafile=meta.json --analyze 2> ./docs/filesize.md",
     "start": "npm run build -- --servedir=.",
     "watch": "npm run build -- --watch",
     "bump": "npm run build-all && npm version patch",

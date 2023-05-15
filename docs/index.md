@@ -5,4 +5,10 @@ parameters through `data-config`.
 
 - [count-down](count-down.md)
 
+## Api documentation
+
 Or check [the full api documentation](api.md)
+
+## Filesize
+
+You can [check each component size](filesize.md). One of the goal of formidable element is to avoid bloated elements with heavy dependencies.

@@ -86,9 +86,12 @@ Simple strings (evaluated again window object):
     "onChange": {"__fn": "myGlobalCallback"}
     "onChange": {"__fn": "app.myGlobalCallback"} // can be nested
 
-Full definitions using array [args, body] that use new Function constructor:
+EXPERIMENTAL: Full definitions using array [args, body] that use new Function constructor:
 
     "onChange": {"__fn":["ev,inst","console.log(ev)"]}}
+
+(it's probably better to have some global app namespace rather than trying to fit code in a json config,
+therefore this feature is marked as experimental for now)
 
 ## Styling
 
@@ -115,10 +118,10 @@ This is done through the `locale-provider` element which is a very simple elemen
 ```html
 <script type="module" src="../dist/locale-provider.min.js"></script>
 <script type="module">
-    window['locale-provider'].set('tom-select', 'default', {
-        option_create: '<div class="create">Ajouter <strong>{input}</strong>&hellip;</div>',
-        no_results: '<div class="no-results">Aucun résultat trouvé</div>'
-    });
+  window["locale-provider"].set("tom-select", "default", {
+    option_create: '<div class="create">Ajouter <strong>{input}</strong>&hellip;</div>',
+    no_results: '<div class="no-results">Aucun résultat trouvé</div>',
+  });
 </script>
 ```
 
@@ -151,24 +154,8 @@ loaded once through the custom elements registry, but I'm not sure yet that woul
 
 ## Sizes
 
-Including css injection
-
-    dist\tiptap-editor.min.js     299.8kb
-    dist\tel-input.min.js         288.2kb
-    dist\filepond-input.min.js    184.8kb
-    dist\input-mask.min.js         86.0kb
-    dist\flatpickr-input.min.js    82.2kb
-    dist\tom-select.min.js         69.7kb
-    dist\squire-editor.min.js      67.6kb
-    dist\bs-tags.min.js            26.3kb
-    dist\coloris-input.min.js      24.4kb
-    dist\cleave-input.min.js       17.6kb
-    dist\bs-autocomplete.min.js    12.2kb
-    dist\count-down.min.js          9.4kb
-    dist\superfile-input.min.js     5.4kb
-    dist\clipboard-copy.min.js      1.8kb
-    dist\growing-textarea.min.js    416b
-    dist\locale-provider.min.js     394b
+[Detailed file size are available here](./docs/filesize.md) 
+and analyzable with [esbuild bundle analyzer](https://esbuild.github.io/analyze/) using the `meta.json` files
 
 ## Names conflicts
 
