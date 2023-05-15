@@ -5,8 +5,8 @@ import localeProvider from "../utils/localeProvider.js";
 
 /**
  * @typedef CountdownConfig
- * @property {string|Object} start Start time or date expression
- * @property {string|Object} end End time or date expression
+ * @property {string|Object|Date} start Start time or date expression
+ * @property {string|Object|Date} end End time or date expression
  * @property {string} url Url on complete
  * @property {string} unit Unit to use instead of various components
  * @property {string} locale Locale
@@ -58,20 +58,39 @@ function computeData(data, inst) {
     data[inst.config.unit] = fraction(parts, inst.config.unit, inst.config.decimalDigits);
   } else {
     const qt = inst.config.pad ? 2 : 1;
-    data.days = parts.days;
+    data.days = parts.days.toString();
     data.hours = pad(parts.hours, qt);
     data.minutes = pad(parts.minutes, qt);
     data.seconds = pad(parts.seconds, qt);
   }
   for (const [name, value] of Object.entries(inst.config.labels)) {
-    const el = q(`.${name} .value`, null, inst);
-    // Don't touch dom unless changed
-    if (el && el.innerHTML != data[name]) {
-      el.innerHTML = data[name];
+    const valueEl = q(`.${name} .value`, null, inst);
+    const labelEl = q(`.${name} .label`, null, inst);
+
+    // Don't touch dom unless changed (make sure we have strings in data object)
+    if (valueEl && valueEl.innerHTML != data[name]) {
+      valueEl.innerHTML = data[name];
+      // Hide days if empty
+      if (name === "days" && "0" == data[name]) {
+        valueEl.parentElement.setAttribute("hidden", "");
+      }
+    }
+    // Singular/plural
+    if (labelEl) {
+      if (labelEl.dataset.singular && (data[name] == "1" || data[name] == "01")) {
+        labelEl.innerHTML = labelEl.dataset.singular;
+      } else if (labelEl.dataset.plural) {
+        labelEl.innerHTML = labelEl.dataset.plural;
+      }
     }
   }
 }
 
+/**
+ * This is a simple coutdown elements
+ * It's not meant to compute more than days (weeks, months, etc)
+ * Because that is not very convenient due to months not having the same number of days, 2 weeks sometimes meaning 15 days
+ */
 class CountdownElement extends FormidableElement {
   created() {
     /**
@@ -81,7 +100,7 @@ class CountdownElement extends FormidableElement {
       {
         locale: this.dataset.locale || "default",
         timer: true,
-        pad: true,
+        pad: false,
         decimalDigits: 0,
         labels: {
           days: "d",
@@ -98,22 +117,19 @@ class CountdownElement extends FormidableElement {
     this.config.labels = localeProvider(name, this.config.locale, this.config.labels);
 
     // Expose common parameters as data attr
-    if (this.dataset.start) {
-      this.config.start = this.dataset.start;
-    }
-    if (this.dataset.end) {
-      this.config.end = this.dataset.end;
-    }
-    if (this.dataset.url) {
-      this.config.url = this.dataset.url;
-    }
-
-    if (typeof this.config.start == "object") {
-      this.config.start = changeDate(this.config.start);
-    }
-    if (typeof this.config.end == "object") {
-      this.config.end = changeDate(this.config.end);
-    }
+    ["start", "end", "url"].forEach((attr) => {
+      /**
+       * @type {string|Date}
+       */
+      const v = this.dataset[attr];
+      if (v) {
+        this.config[attr] = v;
+      }
+      // Replace date expressions
+      if (typeof this.config[attr] == "object") {
+        this.config[attr] = changeDate(this.config[attr]);
+      }
+    });
 
     const start = asDate(this.config.start);
     const end = asDate(this.config.end);
@@ -129,7 +145,7 @@ class CountdownElement extends FormidableElement {
         if (this.config.unit && this.config.unit != cv) {
           return pv;
         }
-        return `${pv} <span class="${cv}"><span class="value"></span><span class="label">${this.config.labels[cv]}</span></span>`;
+        return `${pv} <span class="unit ${cv}"><span class="value"></span><span class="label">${this.config.labels[cv]}</span></span>`;
       }, "");
     }
 

@@ -67,13 +67,25 @@ export function data(el, k, v) {
  */
 export function classlist(el) {
   return {
+    /**
+     * @param {string} v
+     * @returns {Boolean}
+     */
     contains: (v) => {
       return el.classList.contains(v);
     },
+    /**
+     * @param {string|Array} v
+     * @returns {Void}
+     */
     add: (v) => {
       v = typeof v === "string" ? [v] : v;
       el.classList.add(...v);
     },
+    /**
+     * @param {string|Array} v
+     * @returns {Void}
+     */
     remove: (v) => {
       v = typeof v === "string" ? [v] : v;
       el.classList.remove(...v);
