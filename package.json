@@ -18,7 +18,7 @@
     "@tiptap/extension-underline": "^2.0.3",
     "@tiptap/pm": "^2.0.3",
     "@tiptap/starter-kit": "^2.0.3",
-    "bootstrap5-autocomplete": "^1.1.7",
+    "bootstrap5-autocomplete": "^1.1.8",
     "bootstrap5-tags": "^1.5.22",
     "cleave-es6": "^1.0.0",
     "filepond": "^4.30.4",
@@ -40,7 +40,7 @@
     "tom-select": "^2.2.2"
   },
   "devDependencies": {
-    "esbuild": "^0.17.18"
+    "esbuild": "^0.17.19"
   },
   "keywords": [
     "form",
@@ -54,6 +54,7 @@
     "start": "npm run build -- --servedir=.",
     "watch": "npm run build -- --watch",
     "bump": "npm run build-all && npm version patch",
+    "jsdoc": "npx jsdoc-to-markdown ./src/classes/*.js > ./docs/api.md",
     "update-deps": "npx npm-check-updates -u"
   }
 }

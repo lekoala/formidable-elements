@@ -14,7 +14,7 @@ class BsAutocomplete extends FormidableElement {
   }
 
   created() {
-    // Clear dropdown if elements was duplicated
+    // Clear dropdown if element was duplicated
     rmElements(this, "div.dropdown");
 
     this.config = Object.assign(

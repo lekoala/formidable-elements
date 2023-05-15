@@ -3,6 +3,23 @@ import { asDate, dateParts, changeDate } from "../utils/date.js";
 import { q } from "../utils/query.js";
 import localeProvider from "../utils/localeProvider.js";
 
+/**
+ * @typedef CountdownConfig
+ * @property {string|Object} start Start time or date expression
+ * @property {string|Object} end End time or date expression
+ * @property {string} url Url on complete
+ * @property {string} unit Unit to use instead of various components
+ * @property {string} locale Locale
+ * @property {Boolean} timer Self updating timer (true by default)
+ * @property {Boolean} pad Pad h/m/s with 0
+ * @property {Number} decimalDigits Number of decimals to show for fractional numbers
+ * @property {Object} labels Units labels
+ * @property {Number} interval Time between timer update (1s by default)
+ * @property {Boolean} reloadOnComplete Reload page at the end of the count down
+ * @property {Function} onInit Callback on init
+ * @property {Function} onTick Callback on tick
+ * @property {Function} onComplete Callback on complete
+ */
 const name = "count-down";
 
 function pad(v, qt = 2) {
@@ -57,6 +74,9 @@ function computeData(data, inst) {
 
 class CountdownElement extends FormidableElement {
   created() {
+    /**
+     * @type {CountdownConfig}
+     */
     this.config = Object.assign(
       {
         locale: this.dataset.locale || "default",
