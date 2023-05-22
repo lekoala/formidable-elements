@@ -448,9 +448,14 @@ class Anchored extends HTMLElement {
     const doc = this.ownerDocument.documentElement;
 
     // clientWidth = excluding scrollbar
-    // on mobile, having viewport units can make window.innerX very different thant doc.clientX
-    let clientWidth = Math.max(doc.clientWidth, window.innerWidth);
-    let clientHeight = Math.max(doc.clientHeight, window.innerHeight);
+    let clientWidth = doc.clientWidth;
+    let clientHeight = doc.clientHeight;
+    // on mobile, having a viewport larger than 100% can make window.innerX very different than doc.clientX
+    // take a 16px margin for scrollbars
+    if (window.innerWidth - 16 > clientWidth) {
+      clientWidth = window.innerWidth;
+      clientHeight = window.innerHeight;
+    }
     let startX = 0;
     let startY = 0;
 

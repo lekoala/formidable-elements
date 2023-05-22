@@ -6,7 +6,7 @@
       "format": "esm"
     },
     "src/classes/Anchored.js": {
-      "bytes": 14541,
+      "bytes": 14674,
       "imports": [
         {
           "path": "src/utils/whenParsed.js",
@@ -2951,7 +2951,7 @@
           "bytesInOutput": 116
         },
         "src/classes/Anchored.js": {
-          "bytesInOutput": 5158
+          "bytesInOutput": 5172
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 61
@@ -2960,7 +2960,7 @@
           "bytesInOutput": 26
         }
       },
-      "bytes": 5386
+      "bytes": 5400
     },
     "dist/bs-autocomplete.min.js": {
       "imports": [],
