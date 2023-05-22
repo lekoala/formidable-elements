@@ -115,6 +115,25 @@ function getLengthFromAxis(axis) {
 }
 
 /**
+ * @param {Side|string} side
+ * @returns {Side}
+ */
+function flipSide(side) {
+  if (side == "top") {
+    return "bottom";
+  }
+  if (side == "bottom") {
+    return "top";
+  }
+  if (side == "left") {
+    return "right";
+  }
+  if (side == "right") {
+    return "left";
+  }
+}
+
+/**
  * @param {Coords} coords
  * @param {Side} side
  * @param {Number} offset
@@ -184,8 +203,6 @@ function computeCoordsFromPlacement(reference, floating, placement, rtl = false)
   return coords;
 }
 
-const events = ["mouseleave", "blur", "mouseenter", "focus", "click"];
-
 /**
  * A lightweight element to position floating elements (dropdowns, tooltips, popovers...)
  * https://developer.chrome.com/blog/tether-elements-to-each-other-with-css-anchor-positioning/
@@ -193,6 +210,8 @@ const events = ["mouseleave", "blur", "mouseenter", "focus", "click"];
 class Anchored extends HTMLElement {
   constructor() {
     super();
+
+    this._enabled = true;
 
     /**
      * @type {EventCallback}
@@ -270,6 +289,14 @@ class Anchored extends HTMLElement {
     this._addRemoveEvents();
   }
 
+  enable() {
+    this._enabled = true;
+  }
+
+  disable() {
+    this._enabled = false;
+  }
+
   _addRemoveEvents(remove = false) {
     const method = remove ? "removeEventListener" : "addEventListener";
     this._events.forEach((event) => {
@@ -345,7 +372,7 @@ class Anchored extends HTMLElement {
    */
   handleEvent(ev) {
     this._updateZindex();
-    if (this._handler && ev.currentTarget == this) {
+    if (this._handler && ev.currentTarget == this && this._enabled) {
       this._handler(ev, this.el, this);
     }
     if (this._targetHandler && ev.currentTarget == this.target) {
@@ -359,11 +386,11 @@ class Anchored extends HTMLElement {
       return;
     }
     const elStyles = window.getComputedStyle(el);
-    const isVisible = elStyles.opacity != "0" && elStyles.display != "none";
+    const isVisible = elStyles.display != "none" && !el.hasAttribute("hidden");
     const hasPointerEvents = this.style.pointerEvents != "none";
 
     // Make sure elements don't catch mouse if their child is not visible
-    if (!isVisible) {
+    if (!isVisible || !this._enabled) {
       if (hasPointerEvents) {
         this.style.pointerEvents = "none";
       }
@@ -476,10 +503,9 @@ class Anchored extends HTMLElement {
 
     // Arrow
     if (arrowEl) {
-      let pos, otherPos, posValue;
+      let pos, posValue;
       if (axis == "x") {
         pos = reference.x > coords.x ? "right" : "left";
-        otherPos = pos == "right" ? "left" : "right";
         posValue = floating.width / 2 - arrow.width / 2 + totalShift;
         if (posValue > floating.width - offset) {
           posValue = floating.width - offset;
@@ -490,9 +516,12 @@ class Anchored extends HTMLElement {
       }
       if (axis == "y") {
         pos = reference.y < coords.y ? "bottom" : "top";
-        otherPos = pos == "bottom" ? "top" : "bottom";
+
         posValue = floating.height / 2 - arrow.height / 2;
       }
+      const otherPos = flipSide(pos);
+      const otherSide = flipSide(side);
+      arrowEl.style[otherSide] = `${offset * -1}px`;
       arrowEl.style[otherPos] = "unset";
       arrowEl.style[pos] = `${posValue}px`;
     }
@@ -502,6 +531,10 @@ class Anchored extends HTMLElement {
     if (el.classList.contains("tooltip")) {
       el.dataset.popperPlacement = placement;
       el.classList.add("bs-tooltip-auto");
+    }
+    if (el.classList.contains("popover")) {
+      el.dataset.popperPlacement = placement;
+      el.classList.add("bs-popover-auto");
     }
 
     // Position element
