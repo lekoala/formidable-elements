@@ -263,8 +263,8 @@
    ├ src/utils/defineEl.js                                                                                      61b     1.1%
    └ src/superfile-input.js                                                                                     31b     0.6%
 
-  dist/anchor-ed.min.js                                                                                        5.2kb  100.0%
-   ├ src/classes/Anchored.js                                                                                   5.0kb   95.7%
+  dist/anchor-ed.min.js                                                                                        5.3kb  100.0%
+   ├ src/classes/Anchored.js                                                                                   5.0kb   95.8%
    ├ src/utils/whenParsed.js                                                                                   116b     2.2%
    ├ src/utils/defineEl.js                                                                                      61b     1.1%
    └ src/anchor-ed.js                                                                                           26b     0.5%
@@ -306,4 +306,4 @@
   dist\flatpickr-input.min.js   82.3kb
   ...and 12 more output files...
 
-Done in 60ms
+Done in 59ms
