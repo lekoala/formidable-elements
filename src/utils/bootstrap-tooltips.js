@@ -26,6 +26,7 @@ const onEvent = (ev, el, anchored) => {
   }
   // click to open
   if (trigger == "click" && ["click"].includes(ev.type)) {
+    anchored.enable();
     el.classList.toggle("show");
   }
   anchored.position();

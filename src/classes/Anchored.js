@@ -372,7 +372,7 @@ class Anchored extends HTMLElement {
    */
   handleEvent(ev) {
     this._updateZindex();
-    if (this._handler && ev.currentTarget == this && this._enabled) {
+    if (this._handler && ev.currentTarget == this) {
       this._handler(ev, this.el, this);
     }
     if (this._targetHandler && ev.currentTarget == this.target) {
@@ -385,6 +385,7 @@ class Anchored extends HTMLElement {
     if (!el) {
       return;
     }
+
     const elStyles = window.getComputedStyle(el);
     const isVisible = elStyles.display != "none" && !el.hasAttribute("hidden");
     const hasPointerEvents = this.style.pointerEvents != "none";
@@ -444,10 +445,12 @@ class Anchored extends HTMLElement {
     let alignement = getAlignment(placement);
     let axis = getMainAxisFromPlacement(placement);
 
-    //excluding scrollbar
     const doc = this.ownerDocument.documentElement;
-    let clientWidth = doc.clientWidth;
-    let clientHeight = doc.clientHeight;
+
+    // clientWidth = excluding scrollbar
+    // on mobile, having viewport units can make window.innerX very different thant doc.clientX
+    let clientWidth = Math.max(doc.clientWidth, window.innerWidth);
+    let clientHeight = Math.max(doc.clientHeight, window.innerHeight);
     let startX = 0;
     let startY = 0;
 
@@ -469,11 +472,17 @@ class Anchored extends HTMLElement {
     // Flip if it overflows on axis
     let placementChanged = false;
     if (axis == "x" && (coords.y < startY || coords.y >= clientHeight)) {
-      side = side == "top" ? "bottom" : "top";
+      side = flipSide(side);
       placementChanged = true;
     }
     if (axis == "y" && (coords.x < startX || coords.x >= clientWidth)) {
-      side = side == "left" ? "right" : "left";
+      side = flipSide(side);
+      placementChanged = true;
+    }
+    // If there is not much space at all in the viewport, then it's better to use top/bottom
+    if (axis == "y" && doc.clientWidth - floating.width < 100) {
+      side = "top";
+      axis = "x";
       placementChanged = true;
     }
     if (placementChanged) {
