@@ -306,4 +306,4 @@
   dist\flatpickr-input.min.js   82.3kb
   ...and 12 more output files...
 
-Done in 73ms
+Done in 60ms

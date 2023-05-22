@@ -521,6 +521,7 @@ class Anchored extends HTMLElement {
       }
       const otherPos = flipSide(pos);
       const otherSide = flipSide(side);
+      arrowEl.style[side] = `unset`;
       arrowEl.style[otherSide] = `${offset * -1}px`;
       arrowEl.style[otherPos] = "unset";
       arrowEl.style[pos] = `${posValue}px`;
