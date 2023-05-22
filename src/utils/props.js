@@ -1,5 +1,3 @@
-import isUndefined from "./isUndefined.js";
-
 /**
  * @param {HTMLElement} el
  * @param {string} k
@@ -7,7 +5,7 @@ import isUndefined from "./isUndefined.js";
  * @returns {string}
  */
 export function attr(el, k, v) {
-  if (isUndefined(v)) {
+  if (v === undefined) {
     return el.getAttribute(k);
   }
   el.setAttribute(k, "" + v);
@@ -21,7 +19,7 @@ export function attr(el, k, v) {
  * @returns {string}
  */
 export function prop(el, k, v) {
-  if (isUndefined(v)) {
+  if (v === undefined) {
     return el[k];
   }
   el[k] = v;
@@ -35,7 +33,7 @@ export function prop(el, k, v) {
  * @returns {string}
  */
 export function data(el, k, v) {
-  if (isUndefined(v)) {
+  if (v === undefined) {
     return el.dataset[k];
   }
   el.dataset[k] = v;

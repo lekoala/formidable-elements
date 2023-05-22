@@ -1,17 +1,49 @@
 {
   "inputs": {
+    "src/utils/whenParsed.js": {
+      "bytes": 1066,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/classes/Anchored.js": {
+      "bytes": 13598,
+      "imports": [
+        {
+          "path": "src/utils/whenParsed.js",
+          "kind": "import-statement",
+          "original": "../utils/whenParsed.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/defineEl.js": {
+      "bytes": 286,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/anchor-ed.js": {
+      "bytes": 156,
+      "imports": [
+        {
+          "path": "src/classes/Anchored.js",
+          "kind": "import-statement",
+          "original": "./classes/Anchored.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        }
+      ],
+      "format": "esm"
+    },
     "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-      "bytes": 26446,
+      "bytes": 26705,
       "imports": [],
       "format": "esm"
     },
     "src/utils/replaceCallbacks.js": {
-      "bytes": 588,
-      "imports": [],
-      "format": "esm"
-    },
-    "src/utils/whenParsed.js": {
-      "bytes": 1066,
+      "bytes": 631,
       "imports": [],
       "format": "esm"
     },
@@ -55,11 +87,6 @@
           "original": "../utils/rmElements.js"
         }
       ],
-      "format": "esm"
-    },
-    "src/utils/defineEl.js": {
-      "bytes": 286,
-      "imports": [],
       "format": "esm"
     },
     "src/bs-autocomplete.js": {
@@ -326,12 +353,12 @@
       "format": "esm"
     },
     "src/utils/localeProvider.js": {
-      "bytes": 539,
+      "bytes": 591,
       "imports": [],
       "format": "esm"
     },
     "src/classes/CountdownElement.js": {
-      "bytes": 5538,
+      "bytes": 6260,
       "imports": [
         {
           "path": "src/utils/FormidableElement.js",
@@ -665,40 +692,24 @@
       "imports": [],
       "format": "esm"
     },
-    "src/utils/isUndefined.js": {
-      "bytes": 131,
-      "imports": [],
-      "format": "esm"
-    },
     "src/utils/insertHiddenInput.js": {
-      "bytes": 838,
+      "bytes": 793,
       "imports": [
         {
           "path": "src/utils/insertAfter.js",
           "kind": "import-statement",
           "original": "./insertAfter.js"
-        },
-        {
-          "path": "src/utils/isUndefined.js",
-          "kind": "import-statement",
-          "original": "./isUndefined.js"
         }
       ],
       "format": "esm"
     },
     "src/utils/waitDefined.js": {
-      "bytes": 658,
-      "imports": [
-        {
-          "path": "src/utils/isUndefined.js",
-          "kind": "import-statement",
-          "original": "./isUndefined.js"
-        }
-      ],
+      "bytes": 612,
+      "imports": [],
       "format": "esm"
     },
     "src/classes/FlatpickrInput.js": {
-      "bytes": 6984,
+      "bytes": 6967,
       "imports": [
         {
           "path": "node_modules/flatpickr/dist/esm/index.js",
@@ -754,11 +765,6 @@
           "path": "src/utils/waitDefined.js",
           "kind": "import-statement",
           "original": "../utils/waitDefined.js"
-        },
-        {
-          "path": "src/utils/isUndefined.js",
-          "kind": "import-statement",
-          "original": "../utils/isUndefined.js"
         },
         {
           "path": "src/utils/query.js",
@@ -1350,7 +1356,7 @@
       "format": "esm"
     },
     "src/classes/LocaleProvider.js": {
-      "bytes": 1251,
+      "bytes": 1218,
       "imports": [],
       "format": "esm"
     },
@@ -1531,7 +1537,7 @@
       "format": "esm"
     },
     "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-      "bytes": 95341,
+      "bytes": 96116,
       "imports": [],
       "format": "cjs"
     },
@@ -1547,7 +1553,7 @@
       "format": "cjs"
     },
     "node_modules/intl-tel-input/build/js/utils.js": {
-      "bytes": 253932,
+      "bytes": 253990,
       "imports": []
     },
     "src/css/tel-input.min.css": {
@@ -2936,13 +2942,33 @@
     }
   },
   "outputs": {
+    "dist/anchor-ed.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/anchor-ed.js",
+      "inputs": {
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 116
+        },
+        "src/classes/Anchored.js": {
+          "bytesInOutput": 4770
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 61
+        },
+        "src/anchor-ed.js": {
+          "bytesInOutput": 26
+        }
+      },
+      "bytes": 4998
+    },
     "dist/bs-autocomplete.min.js": {
       "imports": [],
       "exports": [],
       "entryPoint": "src/bs-autocomplete.js",
       "inputs": {
         "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-          "bytesInOutput": 11783
+          "bytesInOutput": 11870
         },
         "src/utils/replaceCallbacks.js": {
           "bytesInOutput": 215
@@ -2966,7 +2992,7 @@
           "bytesInOutput": 31
         }
       },
-      "bytes": 12937
+      "bytes": 13024
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -3138,7 +3164,7 @@
           "bytesInOutput": 120
         },
         "src/classes/CountdownElement.js": {
-          "bytesInOutput": 2099
+          "bytesInOutput": 2171
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 61
@@ -3147,7 +3173,7 @@
           "bytesInOutput": 26
         }
       },
-      "bytes": 3657
+      "bytes": 3729
     },
     "dist/filepond-input.min.js": {
       "imports": [],
@@ -3256,7 +3282,7 @@
           "bytesInOutput": 42084
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 2250
+          "bytesInOutput": 2280
         },
         "node_modules/flatpickr/dist/flatpickr.min.css": {
           "bytesInOutput": 16177
@@ -3282,17 +3308,14 @@
         "src/utils/insertAfter.js": {
           "bytesInOutput": 60
         },
-        "src/utils/isUndefined.js": {
-          "bytesInOutput": 35
-        },
         "src/utils/insertHiddenInput.js": {
-          "bytesInOutput": 234
+          "bytesInOutput": 239
         },
         "src/utils/setId.js": {
           "bytesInOutput": 72
         },
         "src/utils/waitDefined.js": {
-          "bytesInOutput": 97
+          "bytesInOutput": 102
         },
         "src/utils/query.js": {
           "bytesInOutput": 135
@@ -3310,7 +3333,7 @@
           "bytesInOutput": 35
         }
       },
-      "bytes": 84280
+      "bytes": 84285
     },
     "dist/growing-textarea.min.js": {
       "imports": [],
@@ -3418,11 +3441,8 @@
         "src/utils/insertAfter.js": {
           "bytesInOutput": 60
         },
-        "src/utils/isUndefined.js": {
-          "bytesInOutput": 35
-        },
         "src/utils/insertHiddenInput.js": {
-          "bytesInOutput": 234
+          "bytesInOutput": 239
         },
         "src/classes/InputmaskElement.js": {
           "bytesInOutput": 902
@@ -3434,7 +3454,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 88088
+      "bytes": 88058
     },
     "dist/locale-provider.min.js": {
       "imports": [],
@@ -3550,7 +3570,7 @@
       "entryPoint": "src/tel-input.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 37605
+          "bytesInOutput": 37702
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
@@ -3559,7 +3579,7 @@
           "bytesInOutput": 1010
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 251264
+          "bytesInOutput": 251322
         },
         "src/css/tel-input.min.css": {
           "bytesInOutput": 3365
@@ -3589,7 +3609,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 295149
+      "bytes": 295304
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],

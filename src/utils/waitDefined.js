@@ -1,5 +1,3 @@
-import isUndefined from "./isUndefined.js";
-
 /**
  * Wait until a given test returns a defined value
  * This can be useful if something needs to be parsed or loaded
@@ -20,7 +18,7 @@ export default function waitDefined(test, cb, run = true, count = 0) {
     return;
   }
   setTimeout(() => {
-    if (isUndefined(test())) {
+    if (test() === undefined) {
       waitDefined(test, cb, run, count);
     } else {
       cb();

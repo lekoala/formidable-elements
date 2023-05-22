@@ -5,7 +5,7 @@
  * @param {string} name
  * @param {string} locale
  * @param {Object|null} defaults
- * @returns {Object|null}
+ * @returns {Object|null} Returns null only if locale-provider is not defined
  */
 export default function localeProvider(name, locale = "default", defaults = null) {
   const el = customElements.get("locale-provider");

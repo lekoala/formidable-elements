@@ -1,5 +1,4 @@
 import insertAfter from "./insertAfter.js";
-import isUndefined from "./isUndefined.js";
 
 /**
  * Get or create a hidden element
@@ -19,7 +18,7 @@ export default function insertHiddenInput(input, v = undefined) {
     insertAfter(h, input);
   }
   // pass a custom value
-  if (!isUndefined(v)) {
+  if (v !== undefined) {
     h.value = v;
   }
   // swap names, keep ids

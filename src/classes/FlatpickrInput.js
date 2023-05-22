@@ -13,7 +13,6 @@ import injectStyles from "../utils/injectStyles.js";
 import insertHiddenInput from "../utils/insertHiddenInput.js";
 import setId from "../utils/setId.js";
 import waitDefined from "../utils/waitDefined.js";
-import isUndefined from "../utils/isUndefined.js";
 import { q } from "../utils/query.js";
 import { toDateTime, toDate, toTime } from "../utils/date.js";
 import localeProvider from "../utils/localeProvider.js";
@@ -143,7 +142,7 @@ class FlatpickrInput extends FormidableElement {
     const locale = this.config.locale;
     if (locale) {
       const labels = localeProvider(name, locale);
-      if (labels) {
+      if (labels && Object.keys(labels).length > 0) {
         window["flatpickr"]["l10ns"][locale] = labels;
       }
     }
@@ -155,7 +154,7 @@ class FlatpickrInput extends FormidableElement {
           return true;
         }
         //@ts-ignore
-        return isUndefined(window.flatpickr.l10ns[locale]);
+        return window.flatpickr.l10ns[locale] === undefined;
       },
       () => {
         this.init();

@@ -1,4 +1,3 @@
-const name = "locale-provider";
 const dict = {};
 
 /**

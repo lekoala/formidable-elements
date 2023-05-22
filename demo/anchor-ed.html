@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anchor-ed demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <link href="./assets/demo.css" rel="stylesheet">
+    <script type="module" src="../dist/anchor-ed.min.js"></script>
+
+    <style>
+        .frame {
+            display: grid;
+            width: 600px;
+            height: 400px;
+            background: #eee;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .outer-frame {
+            background: #ccc;
+            padding: 20px;
+            width: 500px;
+            height: 300px;
+        }
+
+        .scrolling {
+            display: block;
+            overflow: scroll;
+        }
+
+        .bigger {
+            width: 800px;
+            height: 600px;
+        }
+
+        .frame .select {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+
+        .frame:has([value=center]:checked) {
+            place-items: center;
+        }
+
+        .frame:has([value=north]:checked) {
+            align-content: start;
+            justify-content: center;
+        }
+
+        .frame:has([value=north-east]:checked) {
+            align-content: start;
+            justify-content: end;
+        }
+
+        .frame:has([value=east]:checked) {
+            align-content: center;
+            justify-content: end;
+        }
+
+        .frame:has([value=south-east]:checked) {
+            align-content: end;
+            justify-content: end;
+        }
+
+        .frame:has([value=south]:checked) {
+            align-content: end;
+            justify-content: center;
+        }
+
+        .frame:has([value=south-west]:checked) {
+            align-content: end;
+            justify-content: start;
+        }
+
+        .frame:has([value=west]:checked) {
+            align-content: center;
+            justify-content: start;
+        }
+
+        .frame:has([value=north-west]:checked) {
+            align-content: start;
+            justify-content: start;
+        }
+
+        .boat {
+            background: blanchedalmond;
+            color: #333;
+            width: 200px;
+            text-align: center;
+        }
+
+        .anchor {
+            display: inline-block;
+            background: #333;
+            text-align: center;
+            font-weight: bold;
+            padding: 1rem;
+            color: #fff;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        .unlimited-tooltip .tooltip-inner {
+            width: 500px;
+            max-width: none;
+        }
+    </style>
+    <script type="module">
+        import tooltips from "../src/utils/bootstrap-tooltips.js";
+        import dropdowns from "../src/utils/bootstrap-dropdowns.js";
+
+        // init twice to make sure it doesn't have side effects
+        tooltips();
+        tooltips();
+        dropdowns();
+        dropdowns();
+
+        const anchors = document.querySelectorAll('anchor-ed');
+        document.querySelectorAll("select").forEach((el) => {
+            el.addEventListener('change', (ev) => {
+                const anchor = el.parentElement.parentElement.querySelector('anchor-ed');
+                anchor.dataset[el.name] = el.value;
+                anchor.position();
+            })
+        })
+
+        document.querySelectorAll('a.anchor').forEach((el) => {
+            el.addEventListener('click', (ev) => {
+                ev.preventDefault();
+                const tt = document.querySelector('anchor-ed[to=' + el.getAttribute('id') + ']');
+                if (tt) {
+                    tt.classList.toggle('hide');
+                    tt.position();
+                }
+            })
+        });
+
+        document.querySelector('#destroy-button').addEventListener("click", (ev) => {
+            if (!ev.target.previousSibling) {
+                alert("You've killed all the buttons");
+                return;
+            }
+            ev.target.previousSibling.remove();
+        })
+
+        document.querySelector('#move-button').addEventListener("click", (ev) => {
+            if (!ev.target.previousSibling) {
+                alert("You've killed all the buttons");
+                return;
+            }
+            const dest = document.getElementById("dest");
+            dest.appendChild(ev.target.previousSibling)
+        })
+    </script>
+</head>
+
+<body class="p-3" style="width:150vw;">
+    <div style="position:fixed;top:0;right:0" class="unlimited-tooltip">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-title="Tooltip on top with a very long shifted content">
+            Tooltip on top, flipped
+        </button>
+    </div>
+    <div style="position:fixed;bottom:0;left:0;z-index:5" class="unlimited-tooltip">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Tooltip on top with a very long shifted content">
+            Tooltip on bottom, flipped
+        </button>
+    </div>
+    <p>Tooltips</p>
+    <p>The viewport is used to check if the tooltip goes out of bounds. If so, it is flipped or shifted accordingly. If the source element
+        leaves the viewport, the tooltip is hidden.</p>
+    <p>&nbsp;</p>
+    <div>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on left"
+            data-show="1">
+            Tooltip on left always visible (flipped)
+        </button>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top">
+            Tooltip on top
+        </button>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Tooltip on right">
+            Tooltip on right
+        </button>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            data-bs-title="Tooltip on bottom">
+            Tooltip on bottom
+        </button>
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Tooltip on left">
+            Tooltip on left
+        </button>
+
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Tooltip on top"
+            data-show="1">
+            Tooltip on top always visible
+        </button>
+
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-title="Tooltip on top and bigger" data-show="1">
+            Always visible
+        </button>
+
+        <button id="destroy-button">Destroy prev button</button>
+
+        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-placement="top" title="Tooltip on top">
+            Regular title
+        </button>
+
+        <button id="move-button">Move prev button</button>
+
+        <div id="dest"></div>
+    </div>
+    <hr>
+    <p>Dropdowns</p>
+
+    <div class="row">
+        <div class="col-auto">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown button
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-auto">
+            <div class="btn-group dropup">
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropup
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-auto">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="false">
+                    Manual close
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-auto">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="inside">
+                    Inside close
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-auto">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                    Outside close
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item disabled" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <hr>
+
+    <p>Scope an anchor to a given element so that its used for bounds instead of the whole viewport. See how the placement change to keep
+        the anchored element inside the frame.</p>
+    <div class="frame" id="my-frame">
+        <anchor-ed to="my-anchor" scope="my-frame">
+            <div class="boat">Anchor me (scoped)!<br>Another line</div>
+        </anchor-ed>
+        <a class="anchor" id="my-anchor">The anchor</a>
+
+        <div class="select">
+            <select name="placement">
+                <option value=bottom>Placement</option>
+                <option value=top>top</option>
+                <option value=top-end>top-end</option>
+                <option value=top-start>top-start</option>
+                <option value=bottom>bottom</option>
+                <option value=bottom-end>bottom-end</option>
+                <option value=bottom-start>bottom-start</option>
+                <option value=left>left</option>
+                <option value=left-end>left-end</option>
+                <option value=left-start>left-start</option>
+                <option value=right>right</option>
+                <option value=right-end>right-end</option>
+                <option value=right-start>right-start</option>
+            </select>
+            <select name="position">
+                <option value=center>Position anchor</option>
+                <option value=center>Center</option>
+                <option value=north>North</option>
+                <option value=north-east>North East</option>
+                <option value=east>East</option>
+                <option value=south-east>South East</option>
+                <option value=south>South</option>
+                <option value=south-west>South West</option>
+                <option value=west>West</option>
+                <option value=north-west>North West</option>
+            </select>
+        </div>
+    </div>
+
+    <hr>
+
+    <p>Multiple scrolling elements don't matter. If the element leaves the viewport, the anchored element is hidden.</p>
+
+    <div class="outer-frame scrolling">
+        <div class="scrolling frame" dir="rtl">
+            <div class="bigger">
+                <!-- it is automatically anchored to next element -->
+                <anchor-ed>
+                    <div class="boat">Anchor me!</div>
+                </anchor-ed>
+                <!-- id is assigned automatically -->
+                <a class="anchor">The anchor RTL</a>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+
+    <div class="frame">
+        <div class="bigger">
+            <anchor-ed to="my-anchor3">
+                <div class="boat">Anchor me!</div>
+            </anchor-ed>
+            <a class="anchor" id="my-anchor3">The anchor with overflow hidden</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="scrolling frame">
+        <div class="bigger">
+            <!-- not sure why you would want that, but you can keep it visible even if anchor is not visible -->
+            <anchor-ed to="my-anchor4" data-keep-visible="1">
+                <div class="boat">Anchor me keep visible!</div>
+            </anchor-ed>
+            <a class="anchor" id="my-anchor4">The anchor</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

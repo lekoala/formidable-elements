@@ -18,7 +18,7 @@
     "@tiptap/extension-underline": "^2.0.3",
     "@tiptap/pm": "^2.0.3",
     "@tiptap/starter-kit": "^2.0.3",
-    "bootstrap5-autocomplete": "^1.1.8",
+    "bootstrap5-autocomplete": "^1.1.9",
     "bootstrap5-tags": "^1.5.22",
     "cleave-es6": "^1.0.0",
     "filepond": "^4.30.4",
@@ -34,7 +34,7 @@
     "filepond-plugin-image-validate-size": "^1.2.7",
     "flatpickr": "^4.6.13",
     "inputmask": "^5.0.8",
-    "intl-tel-input": "^18.1.5",
+    "intl-tel-input": "^18.1.6",
     "squire-rte": "^2.0.3",
     "superfile": "^1.2.1",
     "tom-select": "^2.2.2"
