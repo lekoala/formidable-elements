@@ -1,33 +1,42 @@
 let counter = 0;
 
 const onEvent = (ev, el, anchored) => {
+  let disable = false;
+  let enable = false;
   const trigger = anchored.dataset.trigger;
   // treat hover and hover focus the same
   if (trigger == "hover") {
     if (["mouseleave", "blur"].includes(ev.type)) {
-      anchored.disable();
-      el.classList.remove("show");
+      disable = true;
     }
     if (["mouseenter", "focus"].includes(ev.type)) {
-      anchored.enable();
-      el.classList.add("show");
+      enable = true;
     }
   }
   // dismiss on next click because it loses focus
   if (trigger == "focus") {
     if (["blur"].includes(ev.type)) {
-      anchored.disable();
-      el.classList.remove("show");
+      disable = true;
     }
     if (["focus"].includes(ev.type)) {
-      anchored.enable();
-      el.classList.add("show");
+      enable = true;
     }
   }
   // click to open
   if (trigger == "click" && ["click"].includes(ev.type)) {
+    if (el.classList.contains("show")) {
+      disable = true;
+    } else {
+      enable = true;
+    }
+  }
+  if (enable) {
     anchored.enable();
-    el.classList.toggle("show");
+    el.classList.add("show");
+  }
+  if (disable) {
+    anchored.disable();
+    el.classList.remove("show");
   }
   anchored.position();
 };
