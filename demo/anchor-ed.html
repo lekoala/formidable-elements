@@ -163,13 +163,26 @@
             const dest = document.getElementById("dest");
             dest.appendChild(ev.target.previousSibling)
         })
+
+        document.querySelector('#body-width-btn').addEventListener("click", (ev) => {
+            const el = document.querySelector('#body-width');
+            if (el.style.width) {
+                el.style.width = "";
+            }
+            else {
+                el.style.width = "150%";
+            }
+        })
     </script>
 </head>
 
 <body class="p-3" style="width:100%">
+    <button id="body-width-btn">toggle body width</button>
+    <hr>
+
     <!-- on mobile, this messes up documentElement.clientWidth which becomes != window.innerWidth -->
     <!-- it also pushes fixed element with right:0 outside of the viewport -->
-    <div style="width:150%">
+    <div style="width:150%" id="body-width">
         <div style="position:fixed;top:0;right:0" class="unlimited-tooltip">
             <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="top"
                 data-bs-title="Tooltip on top with a very long shifted content">

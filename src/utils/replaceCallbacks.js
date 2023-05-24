@@ -7,13 +7,8 @@ export default function replaceCallbacks(obj) {
   for (const [k, v] of Object.entries(obj)) {
     if (v && typeof v == "object") {
       const fn = v["__fn"];
-      if (fn) {
-        if (typeof fn == "string") {
-          obj[k] = fn.split(".").reduce((r, p) => r[p], window);
-        } else if (Array.isArray(fn)) {
-          // experimental, may be removed
-          obj[k] = new Function(fn[0], fn[1]);
-        }
+      if (typeof fn == "string") {
+        obj[k] = fn.split(".").reduce((r, p) => r[p], window);
       } else {
         replaceCallbacks(v);
       }

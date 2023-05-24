@@ -1,21 +1,5 @@
 import Superfile from "superfile";
 import FormidableElement from "../utils/FormidableElement.js";
-import injectStyles from "../utils/injectStyles.js";
-
-const name = "superfile-input";
-
-injectStyles(
-  name,
-  `img:not([src]) {
-  display: none;
-}
-.superfile:not(.superfile-ready) {
-  visibility: hidden;
-}
-.superfile-drag input {
-  background: var(--bs-highlight-bg, palegoldenrod);
-}`
-);
 
 class SuperfileElement extends FormidableElement {
   /**

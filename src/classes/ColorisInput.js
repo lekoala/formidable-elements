@@ -1,8 +1,5 @@
-// @ts-ignore
-import styles from "../../node_modules/@melloware/coloris/dist/coloris.min.css";
 import Coloris from "@melloware/coloris";
 import FormidableElement from "../utils/FormidableElement.js";
-import injectStyles from "../utils/injectStyles.js";
 import setId from "../utils/setId.js";
 import isRTL from "../utils/isRTL.js";
 
@@ -19,15 +16,6 @@ import isRTL from "../utils/isRTL.js";
 const themeMode = document.documentElement.dataset.bsTheme || "auto";
 const rtl = isRTL();
 const name = "coloris-input";
-
-// Inject styles + init once
-injectStyles(
-  name,
-  `${styles} 
-  .clr-field {display: block;width: 4em;border-radius: var(--bs-border-radius, 0.25rem);overflow: hidden;}
-  .clr-field input {cursor: pointer;}
-  .clr-field button {width:100%;}`
-);
 
 // Only once! after, use .set
 Coloris.init();

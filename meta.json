@@ -6,7 +6,7 @@
       "format": "esm"
     },
     "src/classes/Anchored.js": {
-      "bytes": 14674,
+      "bytes": 14962,
       "imports": [
         {
           "path": "src/utils/whenParsed.js",
@@ -43,7 +43,7 @@
       "format": "esm"
     },
     "src/utils/replaceCallbacks.js": {
-      "bytes": 631,
+      "bytes": 467,
       "imports": [],
       "format": "esm"
     },
@@ -110,27 +110,13 @@
       "imports": [],
       "format": "esm"
     },
-    "node_modules/bootstrap5-tags/tags-pure.min.css": {
-      "bytes": 1022,
-      "imports": []
-    },
-    "src/utils/injectStyles.js": {
-      "bytes": 331,
-      "imports": [],
-      "format": "esm"
-    },
     "src/classes/BsTags.js": {
-      "bytes": 879,
+      "bytes": 590,
       "imports": [
         {
           "path": "node_modules/bootstrap5-tags/tags.js",
           "kind": "import-statement",
           "original": "bootstrap5-tags"
-        },
-        {
-          "path": "node_modules/bootstrap5-tags/tags-pure.min.css",
-          "kind": "import-statement",
-          "original": "../../node_modules/bootstrap5-tags/tags-pure.min.css"
         },
         {
           "path": "src/utils/FormidableElement.js",
@@ -141,16 +127,46 @@
           "path": "src/utils/rmElements.js",
           "kind": "import-statement",
           "original": "../utils/rmElements.js"
-        },
-        {
-          "path": "src/utils/injectStyles.js",
-          "kind": "import-statement",
-          "original": "../utils/injectStyles.js"
         }
       ],
       "format": "esm"
     },
+    "node_modules/bootstrap5-tags/tags-pure.min.css": {
+      "bytes": 1022,
+      "imports": []
+    },
+    "src/utils/injectStyles.js": {
+      "bytes": 331,
+      "imports": [],
+      "format": "esm"
+    },
     "src/bs-tags.js": {
+      "bytes": 410,
+      "imports": [
+        {
+          "path": "src/classes/BsTags.js",
+          "kind": "import-statement",
+          "original": "./classes/BsTags.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        },
+        {
+          "path": "node_modules/bootstrap5-tags/tags-pure.min.css",
+          "kind": "import-statement",
+          "original": "../node_modules/bootstrap5-tags/tags-pure.min.css"
+        },
+        {
+          "path": "src/utils/injectStyles.js",
+          "kind": "import-statement",
+          "original": "./utils/injectStyles.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/bs-tags.raw.js": {
       "bytes": 146,
       "imports": [
         {
@@ -271,10 +287,6 @@
       ],
       "format": "esm"
     },
-    "node_modules/@melloware/coloris/dist/coloris.min.css": {
-      "bytes": 8475,
-      "imports": []
-    },
     "node_modules/@melloware/coloris/dist/esm/coloris.js": {
       "bytes": 41807,
       "imports": [],
@@ -291,13 +303,8 @@
       "format": "esm"
     },
     "src/classes/ColorisInput.js": {
-      "bytes": 1849,
+      "bytes": 1440,
       "imports": [
-        {
-          "path": "node_modules/@melloware/coloris/dist/coloris.min.css",
-          "kind": "import-statement",
-          "original": "../../node_modules/@melloware/coloris/dist/coloris.min.css"
-        },
         {
           "path": "node_modules/@melloware/coloris/dist/esm/coloris.js",
           "kind": "import-statement",
@@ -307,11 +314,6 @@
           "path": "src/utils/FormidableElement.js",
           "kind": "import-statement",
           "original": "../utils/FormidableElement.js"
-        },
-        {
-          "path": "src/utils/injectStyles.js",
-          "kind": "import-statement",
-          "original": "../utils/injectStyles.js"
         },
         {
           "path": "src/utils/setId.js",
@@ -326,7 +328,37 @@
       ],
       "format": "esm"
     },
+    "node_modules/@melloware/coloris/dist/coloris.min.css": {
+      "bytes": 8475,
+      "imports": []
+    },
     "src/coloris-input.js": {
+      "bytes": 598,
+      "imports": [
+        {
+          "path": "src/classes/ColorisInput.js",
+          "kind": "import-statement",
+          "original": "./classes/ColorisInput.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        },
+        {
+          "path": "node_modules/@melloware/coloris/dist/coloris.min.css",
+          "kind": "import-statement",
+          "original": "../node_modules/@melloware/coloris/dist/coloris.min.css"
+        },
+        {
+          "path": "src/utils/injectStyles.js",
+          "kind": "import-statement",
+          "original": "./utils/injectStyles.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/coloris-input.raw.js": {
       "bytes": 176,
       "imports": [
         {
@@ -404,10 +436,6 @@
       "imports": [],
       "format": "esm"
     },
-    "node_modules/filepond/dist/filepond.min.css": {
-      "bytes": 17447,
-      "imports": []
-    },
     "node_modules/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.esm.js": {
       "bytes": 6303,
       "imports": [],
@@ -423,10 +451,6 @@
       "imports": [],
       "format": "esm"
     },
-    "node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.min.css": {
-      "bytes": 2688,
-      "imports": []
-    },
     "node_modules/filepond-plugin-file-metadata/dist/filepond-plugin-file-metadata.esm.js": {
       "bytes": 1563,
       "imports": [],
@@ -441,10 +465,6 @@
       "bytes": 53516,
       "imports": [],
       "format": "esm"
-    },
-    "node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css": {
-      "bytes": 3307,
-      "imports": []
     },
     "node_modules/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.esm.js": {
       "bytes": 4176,
@@ -467,17 +487,12 @@
       "format": "esm"
     },
     "src/classes/FilePondInput.js": {
-      "bytes": 3912,
+      "bytes": 3345,
       "imports": [
         {
           "path": "node_modules/filepond/dist/filepond.esm.js",
           "kind": "import-statement",
           "original": "../../node_modules/filepond/dist/filepond.esm.js"
-        },
-        {
-          "path": "node_modules/filepond/dist/filepond.min.css",
-          "kind": "import-statement",
-          "original": "../../node_modules/filepond/dist/filepond.min.css"
         },
         {
           "path": "node_modules/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.esm.js",
@@ -495,11 +510,6 @@
           "original": "../../node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.esm.js"
         },
         {
-          "path": "node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.min.css",
-          "kind": "import-statement",
-          "original": "../../node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.min.css"
-        },
-        {
           "path": "node_modules/filepond-plugin-file-metadata/dist/filepond-plugin-file-metadata.esm.js",
           "kind": "import-statement",
           "original": "../../node_modules/filepond-plugin-file-metadata/dist/filepond-plugin-file-metadata.esm.js"
@@ -513,11 +523,6 @@
           "path": "node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.esm.js",
           "kind": "import-statement",
           "original": "../../node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.esm.js"
-        },
-        {
-          "path": "node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css",
-          "kind": "import-statement",
-          "original": "../../node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css"
         },
         {
           "path": "node_modules/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.esm.js",
@@ -543,16 +548,59 @@
           "path": "src/utils/FormidableElement.js",
           "kind": "import-statement",
           "original": "../utils/FormidableElement.js"
-        },
-        {
-          "path": "src/utils/injectStyles.js",
-          "kind": "import-statement",
-          "original": "../utils/injectStyles.js"
         }
       ],
       "format": "esm"
     },
+    "node_modules/filepond/dist/filepond.min.css": {
+      "bytes": 17447,
+      "imports": []
+    },
+    "node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.min.css": {
+      "bytes": 2688,
+      "imports": []
+    },
+    "node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css": {
+      "bytes": 3307,
+      "imports": []
+    },
     "src/filepond-input.js": {
+      "bytes": 746,
+      "imports": [
+        {
+          "path": "src/classes/FilePondInput.js",
+          "kind": "import-statement",
+          "original": "./classes/FilePondInput.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        },
+        {
+          "path": "node_modules/filepond/dist/filepond.min.css",
+          "kind": "import-statement",
+          "original": "../node_modules/filepond/dist/filepond.min.css"
+        },
+        {
+          "path": "node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.min.css",
+          "kind": "import-statement",
+          "original": "../node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.min.css"
+        },
+        {
+          "path": "node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css",
+          "kind": "import-statement",
+          "original": "../node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css"
+        },
+        {
+          "path": "src/utils/injectStyles.js",
+          "kind": "import-statement",
+          "original": "./utils/injectStyles.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/filepond-input.raw.js": {
       "bytes": 181,
       "imports": [
         {
@@ -675,18 +723,6 @@
       "imports": [],
       "format": "cjs"
     },
-    "node_modules/flatpickr/dist/flatpickr.min.css": {
-      "bytes": 16166,
-      "imports": []
-    },
-    "node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.css": {
-      "bytes": 373,
-      "imports": []
-    },
-    "node_modules/flatpickr/dist/plugins/monthSelect/style.css": {
-      "bytes": 2822,
-      "imports": []
-    },
     "src/utils/insertAfter.js": {
       "bytes": 222,
       "imports": [],
@@ -709,7 +745,7 @@
       "format": "esm"
     },
     "src/classes/FlatpickrInput.js": {
-      "bytes": 6967,
+      "bytes": 6136,
       "imports": [
         {
           "path": "node_modules/flatpickr/dist/esm/index.js",
@@ -727,29 +763,9 @@
           "original": "flatpickr/dist/plugins/monthSelect/index.js"
         },
         {
-          "path": "node_modules/flatpickr/dist/flatpickr.min.css",
-          "kind": "import-statement",
-          "original": "../../node_modules/flatpickr/dist/flatpickr.min.css"
-        },
-        {
-          "path": "node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.css",
-          "kind": "import-statement",
-          "original": "../../node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.css"
-        },
-        {
-          "path": "node_modules/flatpickr/dist/plugins/monthSelect/style.css",
-          "kind": "import-statement",
-          "original": "../../node_modules/flatpickr/dist/plugins/monthSelect/style.css"
-        },
-        {
           "path": "src/utils/FormidableElement.js",
           "kind": "import-statement",
           "original": "../utils/FormidableElement.js"
-        },
-        {
-          "path": "src/utils/injectStyles.js",
-          "kind": "import-statement",
-          "original": "../utils/injectStyles.js"
         },
         {
           "path": "src/utils/insertHiddenInput.js",
@@ -784,7 +800,55 @@
       ],
       "format": "esm"
     },
+    "node_modules/flatpickr/dist/flatpickr.min.css": {
+      "bytes": 16166,
+      "imports": []
+    },
+    "node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.css": {
+      "bytes": 373,
+      "imports": []
+    },
+    "node_modules/flatpickr/dist/plugins/monthSelect/style.css": {
+      "bytes": 2822,
+      "imports": []
+    },
     "src/flatpickr-input.js": {
+      "bytes": 867,
+      "imports": [
+        {
+          "path": "src/classes/FlatpickrInput.js",
+          "kind": "import-statement",
+          "original": "./classes/FlatpickrInput.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        },
+        {
+          "path": "node_modules/flatpickr/dist/flatpickr.min.css",
+          "kind": "import-statement",
+          "original": "../node_modules/flatpickr/dist/flatpickr.min.css"
+        },
+        {
+          "path": "node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.css",
+          "kind": "import-statement",
+          "original": "../node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.css"
+        },
+        {
+          "path": "node_modules/flatpickr/dist/plugins/monthSelect/style.css",
+          "kind": "import-statement",
+          "original": "../node_modules/flatpickr/dist/plugins/monthSelect/style.css"
+        },
+        {
+          "path": "src/utils/injectStyles.js",
+          "kind": "import-statement",
+          "original": "./utils/injectStyles.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/flatpickr-input.raw.js": {
       "bytes": 186,
       "imports": [
         {
@@ -801,7 +865,7 @@
       "format": "esm"
     },
     "src/classes/GrowingTextarea.js": {
-      "bytes": 760,
+      "bytes": 858,
       "imports": [],
       "format": "esm"
     },
@@ -1304,7 +1368,7 @@
       "format": "esm"
     },
     "src/classes/InputmaskElement.js": {
-      "bytes": 3104,
+      "bytes": 3176,
       "imports": [
         {
           "path": "node_modules/inputmask/lib/extensions/inputmask.extensions.js",
@@ -1381,6 +1445,17 @@
       "imports": [],
       "format": "esm"
     },
+    "src/utils/EventfulElement.js": {
+      "bytes": 719,
+      "imports": [
+        {
+          "path": "src/utils/FormidableElement.js",
+          "kind": "import-statement",
+          "original": "./FormidableElement.js"
+        }
+      ],
+      "format": "esm"
+    },
     "src/utils/ce.js": {
       "bytes": 393,
       "imports": [],
@@ -1418,12 +1493,8 @@
       "imports": [],
       "format": "esm"
     },
-    "src/css/squire-editor.min.css": {
-      "bytes": 720,
-      "imports": []
-    },
     "src/classes/SquireEditor.js": {
-      "bytes": 15783,
+      "bytes": 15568,
       "imports": [
         {
           "path": "node_modules/squire-rte/dist/squire-raw.mjs",
@@ -1431,9 +1502,9 @@
           "original": "../../node_modules/squire-rte/dist/squire-raw.mjs"
         },
         {
-          "path": "src/utils/FormidableElement.js",
+          "path": "src/utils/EventfulElement.js",
           "kind": "import-statement",
-          "original": "../utils/FormidableElement.js"
+          "original": "../utils/EventfulElement.js"
         },
         {
           "path": "src/utils/ce.js",
@@ -1461,24 +1532,44 @@
           "original": "../utils/hasBootstrap.js"
         },
         {
-          "path": "src/utils/injectStyles.js",
-          "kind": "import-statement",
-          "original": "../utils/injectStyles.js"
-        },
-        {
           "path": "src/utils/bootstrap-icons.js",
           "kind": "import-statement",
           "original": "../utils/bootstrap-icons.js"
-        },
-        {
-          "path": "src/css/squire-editor.min.css",
-          "kind": "import-statement",
-          "original": "../css/squire-editor.min.css"
         }
       ],
       "format": "esm"
     },
+    "src/css/squire-editor.min.css": {
+      "bytes": 720,
+      "imports": []
+    },
     "src/squire-editor.js": {
+      "bytes": 336,
+      "imports": [
+        {
+          "path": "src/classes/SquireEditor.js",
+          "kind": "import-statement",
+          "original": "./classes/SquireEditor.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        },
+        {
+          "path": "src/css/squire-editor.min.css",
+          "kind": "import-statement",
+          "original": "./css/squire-editor.min.css"
+        },
+        {
+          "path": "src/utils/injectStyles.js",
+          "kind": "import-statement",
+          "original": "./utils/injectStyles.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/squire-editor.raw.js": {
       "bytes": 176,
       "imports": [
         {
@@ -1500,7 +1591,7 @@
       "format": "esm"
     },
     "src/classes/SuperfileElement.js": {
-      "bytes": 753,
+      "bytes": 447,
       "imports": [
         {
           "path": "node_modules/superfile/superfile.js",
@@ -1511,16 +1602,32 @@
           "path": "src/utils/FormidableElement.js",
           "kind": "import-statement",
           "original": "../utils/FormidableElement.js"
-        },
-        {
-          "path": "src/utils/injectStyles.js",
-          "kind": "import-statement",
-          "original": "../utils/injectStyles.js"
         }
       ],
       "format": "esm"
     },
     "src/superfile-input.js": {
+      "bytes": 493,
+      "imports": [
+        {
+          "path": "src/classes/SuperfileElement.js",
+          "kind": "import-statement",
+          "original": "./classes/SuperfileElement.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        },
+        {
+          "path": "src/utils/injectStyles.js",
+          "kind": "import-statement",
+          "original": "./utils/injectStyles.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/superfile-input.raw.js": {
       "bytes": 194,
       "imports": [
         {
@@ -1556,17 +1663,13 @@
       "bytes": 253990,
       "imports": []
     },
-    "src/css/tel-input.min.css": {
-      "bytes": 3355,
-      "imports": []
-    },
     "src/utils/Storage.js": {
       "bytes": 717,
       "imports": [],
       "format": "esm"
     },
     "src/classes/TelInput.js": {
-      "bytes": 2639,
+      "bytes": 2176,
       "imports": [
         {
           "path": "node_modules/intl-tel-input/index.js",
@@ -1579,19 +1682,9 @@
           "original": "../../node_modules/intl-tel-input/build/js/utils.js"
         },
         {
-          "path": "src/css/tel-input.min.css",
-          "kind": "import-statement",
-          "original": "../css/tel-input.min.css"
-        },
-        {
           "path": "src/utils/FormidableElement.js",
           "kind": "import-statement",
           "original": "../utils/FormidableElement.js"
-        },
-        {
-          "path": "src/utils/injectStyles.js",
-          "kind": "import-statement",
-          "original": "../utils/injectStyles.js"
         },
         {
           "path": "src/utils/localeProvider.js",
@@ -1606,7 +1699,37 @@
       ],
       "format": "esm"
     },
+    "src/css/tel-input.min.css": {
+      "bytes": 3355,
+      "imports": []
+    },
     "src/tel-input.js": {
+      "bytes": 630,
+      "imports": [
+        {
+          "path": "src/classes/TelInput.js",
+          "kind": "import-statement",
+          "original": "./classes/TelInput.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        },
+        {
+          "path": "src/css/tel-input.min.css",
+          "kind": "import-statement",
+          "original": "./css/tel-input.min.css"
+        },
+        {
+          "path": "src/utils/injectStyles.js",
+          "kind": "import-statement",
+          "original": "./utils/injectStyles.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/tel-input.raw.js": {
       "bytes": 156,
       "imports": [
         {
@@ -2197,12 +2320,8 @@
       ],
       "format": "esm"
     },
-    "src/css/tiptap-editor.min.css": {
-      "bytes": 852,
-      "imports": []
-    },
     "src/classes/TiptapEditor.js": {
-      "bytes": 15325,
+      "bytes": 14989,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -2315,9 +2434,9 @@
           "original": "@tiptap/extension-image"
         },
         {
-          "path": "src/utils/FormidableElement.js",
+          "path": "src/utils/EventfulElement.js",
           "kind": "import-statement",
-          "original": "../utils/FormidableElement.js"
+          "original": "../utils/EventfulElement.js"
         },
         {
           "path": "src/utils/ce.js",
@@ -2335,24 +2454,44 @@
           "original": "../utils/hasBootstrap.js"
         },
         {
-          "path": "src/utils/injectStyles.js",
-          "kind": "import-statement",
-          "original": "../utils/injectStyles.js"
-        },
-        {
           "path": "src/utils/bootstrap-icons.js",
           "kind": "import-statement",
           "original": "../utils/bootstrap-icons.js"
-        },
-        {
-          "path": "src/css/tiptap-editor.min.css",
-          "kind": "import-statement",
-          "original": "../css/tiptap-editor.min.css"
         }
       ],
       "format": "esm"
     },
+    "src/css/tiptap-editor.min.css": {
+      "bytes": 852,
+      "imports": []
+    },
     "src/tiptap-editor.js": {
+      "bytes": 336,
+      "imports": [
+        {
+          "path": "src/classes/TiptapEditor.js",
+          "kind": "import-statement",
+          "original": "./classes/TiptapEditor.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        },
+        {
+          "path": "src/css/tiptap-editor.min.css",
+          "kind": "import-statement",
+          "original": "./css/tiptap-editor.min.css"
+        },
+        {
+          "path": "src/utils/injectStyles.js",
+          "kind": "import-statement",
+          "original": "./utils/injectStyles.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/tiptap-editor.raw.js": {
       "bytes": 176,
       "imports": [
         {
@@ -2884,12 +3023,8 @@
       ],
       "format": "esm"
     },
-    "node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css": {
-      "bytes": 14862,
-      "imports": []
-    },
     "src/classes/TomSelectElement.js": {
-      "bytes": 1523,
+      "bytes": 1259,
       "imports": [
         {
           "path": "node_modules/tom-select/src/tom-select.complete.ts",
@@ -2897,19 +3032,9 @@
           "original": "../../node_modules/tom-select/src/tom-select.complete.js"
         },
         {
-          "path": "node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css",
-          "kind": "import-statement",
-          "original": "../../node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css"
-        },
-        {
           "path": "src/utils/FormidableElement.js",
           "kind": "import-statement",
           "original": "../utils/FormidableElement.js"
-        },
-        {
-          "path": "src/utils/injectStyles.js",
-          "kind": "import-statement",
-          "original": "../utils/injectStyles.js"
         },
         {
           "path": "src/utils/setId.js",
@@ -2924,7 +3049,37 @@
       ],
       "format": "esm"
     },
+    "node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css": {
+      "bytes": 14862,
+      "imports": []
+    },
     "src/tom-select.js": {
+      "bytes": 457,
+      "imports": [
+        {
+          "path": "src/classes/TomSelectElement.js",
+          "kind": "import-statement",
+          "original": "./classes/TomSelectElement.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        },
+        {
+          "path": "node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css",
+          "kind": "import-statement",
+          "original": "../node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css"
+        },
+        {
+          "path": "src/utils/injectStyles.js",
+          "kind": "import-statement",
+          "original": "./utils/injectStyles.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/tom-select.raw.js": {
       "bytes": 189,
       "imports": [
         {
@@ -2951,7 +3106,7 @@
           "bytesInOutput": 116
         },
         "src/classes/Anchored.js": {
-          "bytesInOutput": 5172
+          "bytesInOutput": 5289
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 61
@@ -2960,7 +3115,7 @@
           "bytesInOutput": 26
         }
       },
-      "bytes": 5400
+      "bytes": 5517
     },
     "dist/bs-autocomplete.min.js": {
       "imports": [],
@@ -2971,7 +3126,7 @@
           "bytesInOutput": 11870
         },
         "src/utils/replaceCallbacks.js": {
-          "bytesInOutput": 215
+          "bytesInOutput": 164
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 116
@@ -2992,7 +3147,7 @@
           "bytesInOutput": 31
         }
       },
-      "bytes": 13024
+      "bytes": 12973
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -3002,11 +3157,8 @@
         "node_modules/bootstrap5-tags/tags.js": {
           "bytesInOutput": 24783
         },
-        "node_modules/bootstrap5-tags/tags-pure.min.css": {
-          "bytesInOutput": 1031
-        },
         "src/utils/replaceCallbacks.js": {
-          "bytesInOutput": 215
+          "bytesInOutput": 164
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 116
@@ -3017,20 +3169,55 @@
         "src/utils/rmElements.js": {
           "bytesInOutput": 106
         },
-        "src/utils/injectStyles.js": {
-          "bytesInOutput": 159
-        },
         "src/classes/BsTags.js": {
-          "bytesInOutput": 213
+          "bytesInOutput": 190
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 61
         },
+        "node_modules/bootstrap5-tags/tags-pure.min.css": {
+          "bytesInOutput": 1031
+        },
+        "src/utils/injectStyles.js": {
+          "bytesInOutput": 159
+        },
         "src/bs-tags.js": {
+          "bytesInOutput": 39
+        }
+      },
+      "bytes": 27032
+    },
+    "dist/bs-tags.raw.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/bs-tags.raw.js",
+      "inputs": {
+        "node_modules/bootstrap5-tags/tags.js": {
+          "bytesInOutput": 24783
+        },
+        "src/utils/replaceCallbacks.js": {
+          "bytesInOutput": 164
+        },
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 116
+        },
+        "src/utils/FormidableElement.js": {
+          "bytesInOutput": 358
+        },
+        "src/utils/rmElements.js": {
+          "bytesInOutput": 106
+        },
+        "src/classes/BsTags.js": {
+          "bytesInOutput": 190
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 61
+        },
+        "src/bs-tags.raw.js": {
           "bytesInOutput": 24
         }
       },
-      "bytes": 27091
+      "bytes": 25827
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -3053,7 +3240,7 @@
           "bytesInOutput": 7403
         },
         "src/utils/replaceCallbacks.js": {
-          "bytesInOutput": 215
+          "bytesInOutput": 164
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 116
@@ -3071,7 +3258,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 18071
+      "bytes": 18020
     },
     "dist/clipboard-copy.min.js": {
       "imports": [],
@@ -3079,7 +3266,7 @@
       "entryPoint": "src/clipboard-copy.js",
       "inputs": {
         "src/utils/replaceCallbacks.js": {
-          "bytesInOutput": 215
+          "bytesInOutput": 164
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 116
@@ -3097,30 +3284,24 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 1905
+      "bytes": 1854
     },
     "dist/coloris-input.min.js": {
       "imports": [],
       "exports": [],
       "entryPoint": "src/coloris-input.js",
       "inputs": {
-        "node_modules/@melloware/coloris/dist/coloris.min.css": {
-          "bytesInOutput": 8485
-        },
         "node_modules/@melloware/coloris/dist/esm/coloris.js": {
           "bytesInOutput": 14536
         },
         "src/utils/replaceCallbacks.js": {
-          "bytesInOutput": 215
+          "bytesInOutput": 164
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 116
         },
         "src/utils/FormidableElement.js": {
           "bytesInOutput": 365
-        },
-        "src/utils/injectStyles.js": {
-          "bytesInOutput": 160
         },
         "src/utils/setId.js": {
           "bytesInOutput": 72
@@ -3129,16 +3310,57 @@
           "bytesInOutput": 89
         },
         "src/classes/ColorisInput.js": {
-          "bytesInOutput": 547
+          "bytesInOutput": 352
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 65
         },
+        "node_modules/@melloware/coloris/dist/coloris.min.css": {
+          "bytesInOutput": 8485
+        },
+        "src/utils/injectStyles.js": {
+          "bytesInOutput": 160
+        },
         "src/coloris-input.js": {
+          "bytesInOutput": 247
+        }
+      },
+      "bytes": 24956
+    },
+    "dist/coloris-input.raw.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/coloris-input.raw.js",
+      "inputs": {
+        "node_modules/@melloware/coloris/dist/esm/coloris.js": {
+          "bytesInOutput": 14536
+        },
+        "src/utils/replaceCallbacks.js": {
+          "bytesInOutput": 164
+        },
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 116
+        },
+        "src/utils/FormidableElement.js": {
+          "bytesInOutput": 365
+        },
+        "src/utils/setId.js": {
+          "bytesInOutput": 72
+        },
+        "src/utils/isRTL.js": {
+          "bytesInOutput": 89
+        },
+        "src/classes/ColorisInput.js": {
+          "bytesInOutput": 352
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 65
+        },
+        "src/coloris-input.raw.js": {
           "bytesInOutput": 33
         }
       },
-      "bytes": 24988
+      "bytes": 16097
     },
     "dist/count-down.min.js": {
       "imports": [],
@@ -3146,7 +3368,7 @@
       "entryPoint": "src/count-down.js",
       "inputs": {
         "src/utils/replaceCallbacks.js": {
-          "bytesInOutput": 215
+          "bytesInOutput": 164
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 116
@@ -3173,7 +3395,7 @@
           "bytesInOutput": 26
         }
       },
-      "bytes": 3729
+      "bytes": 3678
     },
     "dist/filepond-input.min.js": {
       "imports": [],
@@ -3182,9 +3404,6 @@
       "inputs": {
         "node_modules/filepond/dist/filepond.esm.js": {
           "bytesInOutput": 100838
-        },
-        "node_modules/filepond/dist/filepond.min.css": {
-          "bytesInOutput": 17457
         },
         "node_modules/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.esm.js": {
           "bytesInOutput": 1781
@@ -3195,9 +3414,6 @@
         "node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.esm.js": {
           "bytesInOutput": 6016
         },
-        "node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.min.css": {
-          "bytesInOutput": 2698
-        },
         "node_modules/filepond-plugin-file-metadata/dist/filepond-plugin-file-metadata.esm.js": {
           "bytesInOutput": 597
         },
@@ -3206,9 +3422,6 @@
         },
         "node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.esm.js": {
           "bytesInOutput": 20954
-        },
-        "node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css": {
-          "bytesInOutput": 3317
         },
         "node_modules/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.esm.js": {
           "bytesInOutput": 1540
@@ -3223,7 +3436,7 @@
           "bytesInOutput": 3185
         },
         "src/utils/replaceCallbacks.js": {
-          "bytesInOutput": 217
+          "bytesInOutput": 166
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 118
@@ -3231,20 +3444,88 @@
         "src/utils/FormidableElement.js": {
           "bytesInOutput": 367
         },
-        "src/utils/injectStyles.js": {
-          "bytesInOutput": 160
-        },
         "src/classes/FilePondInput.js": {
-          "bytesInOutput": 481
+          "bytesInOutput": 441
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 65
         },
+        "node_modules/filepond/dist/filepond.min.css": {
+          "bytesInOutput": 17457
+        },
+        "node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.min.css": {
+          "bytesInOutput": 2698
+        },
+        "node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css": {
+          "bytesInOutput": 3317
+        },
+        "src/utils/injectStyles.js": {
+          "bytesInOutput": 160
+        },
         "src/filepond-input.js": {
+          "bytesInOutput": 64
+        }
+      },
+      "bytes": 189185
+    },
+    "dist/filepond-input.raw.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/filepond-input.raw.js",
+      "inputs": {
+        "node_modules/filepond/dist/filepond.esm.js": {
+          "bytesInOutput": 100838
+        },
+        "node_modules/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.esm.js": {
+          "bytesInOutput": 1781
+        },
+        "node_modules/filepond-plugin-file-validate-size/dist/filepond-plugin-file-validate-size.esm.js": {
+          "bytesInOutput": 1900
+        },
+        "node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.esm.js": {
+          "bytesInOutput": 6016
+        },
+        "node_modules/filepond-plugin-file-metadata/dist/filepond-plugin-file-metadata.esm.js": {
+          "bytesInOutput": 597
+        },
+        "node_modules/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.esm.js": {
+          "bytesInOutput": 1613
+        },
+        "node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.esm.js": {
+          "bytesInOutput": 20954
+        },
+        "node_modules/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.esm.js": {
+          "bytesInOutput": 1540
+        },
+        "node_modules/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.esm.js": {
+          "bytesInOutput": 1232
+        },
+        "node_modules/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.esm.js": {
+          "bytesInOutput": 21928
+        },
+        "node_modules/filepond-plugin-image-validate-size/dist/filepond-plugin-image-validate-size.esm.js": {
+          "bytesInOutput": 3185
+        },
+        "src/utils/replaceCallbacks.js": {
+          "bytesInOutput": 166
+        },
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 118
+        },
+        "src/utils/FormidableElement.js": {
+          "bytesInOutput": 367
+        },
+        "src/classes/FilePondInput.js": {
+          "bytesInOutput": 441
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 65
+        },
+        "src/filepond-input.raw.js": {
           "bytesInOutput": 34
         }
       },
-      "bytes": 189246
+      "bytes": 165523
     },
     "dist/flatpickr-input.min.js": {
       "imports": [],
@@ -3282,28 +3563,16 @@
           "bytesInOutput": 42084
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 2280
-        },
-        "node_modules/flatpickr/dist/flatpickr.min.css": {
-          "bytesInOutput": 16177
-        },
-        "node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.css": {
-          "bytesInOutput": 383
-        },
-        "node_modules/flatpickr/dist/plugins/monthSelect/style.css": {
-          "bytesInOutput": 2832
+          "bytesInOutput": 2105
         },
         "src/utils/replaceCallbacks.js": {
-          "bytesInOutput": 217
+          "bytesInOutput": 166
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 118
         },
         "src/utils/FormidableElement.js": {
           "bytesInOutput": 367
-        },
-        "src/utils/injectStyles.js": {
-          "bytesInOutput": 160
         },
         "src/utils/insertAfter.js": {
           "bytesInOutput": 60
@@ -3329,11 +3598,100 @@
         "src/utils/defineEl.js": {
           "bytesInOutput": 65
         },
+        "node_modules/flatpickr/dist/flatpickr.min.css": {
+          "bytesInOutput": 16177
+        },
+        "node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.css": {
+          "bytesInOutput": 383
+        },
+        "node_modules/flatpickr/dist/plugins/monthSelect/style.css": {
+          "bytesInOutput": 2832
+        },
+        "src/utils/injectStyles.js": {
+          "bytesInOutput": 160
+        },
         "src/flatpickr-input.js": {
+          "bytesInOutput": 225
+        }
+      },
+      "bytes": 84249
+    },
+    "dist/flatpickr-input.raw.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/flatpickr-input.raw.js",
+      "inputs": {
+        "node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.js": {
+          "bytesInOutput": 1892
+        },
+        "node_modules/flatpickr/dist/plugins/monthSelect/index.js": {
+          "bytesInOutput": 5505
+        },
+        "node_modules/flatpickr/dist/esm/types/options.js": {
+          "bytesInOutput": 1837
+        },
+        "node_modules/flatpickr/dist/esm/l10n/default.js": {
+          "bytesInOutput": 815
+        },
+        "node_modules/flatpickr/dist/esm/utils/index.js": {
+          "bytesInOutput": 282
+        },
+        "node_modules/flatpickr/dist/esm/utils/dom.js": {
+          "bytesInOutput": 799
+        },
+        "node_modules/flatpickr/dist/esm/utils/formatting.js": {
+          "bytesInOutput": 2567
+        },
+        "node_modules/flatpickr/dist/esm/utils/dates.js": {
+          "bytesInOutput": 2092
+        },
+        "node_modules/flatpickr/dist/esm/utils/polyfills.js": {
+          "bytesInOutput": 320
+        },
+        "node_modules/flatpickr/dist/esm/index.js": {
+          "bytesInOutput": 42084
+        },
+        "src/classes/FlatpickrInput.js": {
+          "bytesInOutput": 2105
+        },
+        "src/utils/replaceCallbacks.js": {
+          "bytesInOutput": 166
+        },
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 118
+        },
+        "src/utils/FormidableElement.js": {
+          "bytesInOutput": 367
+        },
+        "src/utils/insertAfter.js": {
+          "bytesInOutput": 60
+        },
+        "src/utils/insertHiddenInput.js": {
+          "bytesInOutput": 239
+        },
+        "src/utils/setId.js": {
+          "bytesInOutput": 72
+        },
+        "src/utils/waitDefined.js": {
+          "bytesInOutput": 102
+        },
+        "src/utils/query.js": {
+          "bytesInOutput": 135
+        },
+        "src/utils/date.js": {
+          "bytesInOutput": 272
+        },
+        "src/utils/localeProvider.js": {
+          "bytesInOutput": 121
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 65
+        },
+        "src/flatpickr-input.raw.js": {
           "bytesInOutput": 35
         }
       },
-      "bytes": 84285
+      "bytes": 64507
     },
     "dist/growing-textarea.min.js": {
       "imports": [],
@@ -3341,7 +3699,7 @@
       "entryPoint": "src/growing-textarea.js",
       "inputs": {
         "src/classes/GrowingTextarea.js": {
-          "bytesInOutput": 340
+          "bytesInOutput": 347
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 61
@@ -3350,7 +3708,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 458
+      "bytes": 465
     },
     "dist/input-mask.min.js": {
       "imports": [],
@@ -3430,7 +3788,7 @@
           "bytesInOutput": 12137
         },
         "src/utils/replaceCallbacks.js": {
-          "bytesInOutput": 217
+          "bytesInOutput": 166
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 118
@@ -3454,7 +3812,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 88058
+      "bytes": 88007
     },
     "dist/locale-provider.min.js": {
       "imports": [],
@@ -3488,13 +3846,16 @@
           "bytesInOutput": 51827
         },
         "src/utils/replaceCallbacks.js": {
-          "bytesInOutput": 217
+          "bytesInOutput": 166
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 118
         },
         "src/utils/FormidableElement.js": {
           "bytesInOutput": 367
+        },
+        "src/utils/EventfulElement.js": {
+          "bytesInOutput": 311
         },
         "src/utils/ce.js": {
           "bytesInOutput": 100
@@ -3511,26 +3872,82 @@
         "src/utils/hasBootstrap.js": {
           "bytesInOutput": 38
         },
-        "src/utils/injectStyles.js": {
-          "bytesInOutput": 160
-        },
         "src/utils/bootstrap-icons.js": {
           "bytesInOutput": 7378
         },
-        "src/css/squire-editor.min.css": {
-          "bytesInOutput": 730
-        },
         "src/classes/SquireEditor.js": {
-          "bytesInOutput": 6590
+          "bytesInOutput": 6543
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 65
         },
+        "src/css/squire-editor.min.css": {
+          "bytesInOutput": 730
+        },
+        "src/utils/injectStyles.js": {
+          "bytesInOutput": 160
+        },
         "src/squire-editor.js": {
+          "bytesInOutput": 56
+        }
+      },
+      "bytes": 69133
+    },
+    "dist/squire-editor.raw.min.js": {
+      "imports": [
+        {
+          "path": "https://cdn.jsdelivr.net/npm/dompurify@3/+esm",
+          "kind": "dynamic-import",
+          "external": true
+        }
+      ],
+      "exports": [],
+      "entryPoint": "src/squire-editor.raw.js",
+      "inputs": {
+        "node_modules/squire-rte/dist/squire-raw.mjs": {
+          "bytesInOutput": 51827
+        },
+        "src/utils/replaceCallbacks.js": {
+          "bytesInOutput": 166
+        },
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 118
+        },
+        "src/utils/FormidableElement.js": {
+          "bytesInOutput": 367
+        },
+        "src/utils/EventfulElement.js": {
+          "bytesInOutput": 311
+        },
+        "src/utils/ce.js": {
+          "bytesInOutput": 100
+        },
+        "src/utils/query.js": {
+          "bytesInOutput": 134
+        },
+        "src/utils/parseHTML.js": {
+          "bytesInOutput": 66
+        },
+        "src/utils/setHTML.js": {
+          "bytesInOutput": 320
+        },
+        "src/utils/hasBootstrap.js": {
+          "bytesInOutput": 38
+        },
+        "src/utils/bootstrap-icons.js": {
+          "bytesInOutput": 7378
+        },
+        "src/classes/SquireEditor.js": {
+          "bytesInOutput": 6543
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 65
+        },
+        "src/squire-editor.raw.js": {
           "bytesInOutput": 33
         }
       },
-      "bytes": 68897
+      "bytes": 68220
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -3541,7 +3958,7 @@
           "bytesInOutput": 4284
         },
         "src/utils/replaceCallbacks.js": {
-          "bytesInOutput": 215
+          "bytesInOutput": 164
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 116
@@ -3549,20 +3966,49 @@
         "src/utils/FormidableElement.js": {
           "bytesInOutput": 358
         },
-        "src/utils/injectStyles.js": {
-          "bytesInOutput": 159
-        },
         "src/classes/SuperfileElement.js": {
-          "bytesInOutput": 357
+          "bytesInOutput": 152
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 61
         },
+        "src/utils/injectStyles.js": {
+          "bytesInOutput": 159
+        },
         "src/superfile-input.js": {
+          "bytesInOutput": 244
+        }
+      },
+      "bytes": 5563
+    },
+    "dist/superfile-input.raw.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/superfile-input.raw.js",
+      "inputs": {
+        "node_modules/superfile/superfile.js": {
+          "bytesInOutput": 4284
+        },
+        "src/utils/replaceCallbacks.js": {
+          "bytesInOutput": 164
+        },
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 116
+        },
+        "src/utils/FormidableElement.js": {
+          "bytesInOutput": 358
+        },
+        "src/classes/SuperfileElement.js": {
+          "bytesInOutput": 152
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 61
+        },
+        "src/superfile-input.raw.js": {
           "bytesInOutput": 31
         }
       },
-      "bytes": 5606
+      "bytes": 5191
     },
     "dist/tel-input.min.js": {
       "imports": [],
@@ -3576,25 +4022,19 @@
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 1010
+          "bytesInOutput": 825
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
           "bytesInOutput": 251322
         },
-        "src/css/tel-input.min.css": {
-          "bytesInOutput": 3365
-        },
         "src/utils/replaceCallbacks.js": {
-          "bytesInOutput": 217
+          "bytesInOutput": 166
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 118
         },
         "src/utils/FormidableElement.js": {
           "bytesInOutput": 367
-        },
-        "src/utils/injectStyles.js": {
-          "bytesInOutput": 160
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 121
@@ -3605,11 +4045,58 @@
         "src/utils/defineEl.js": {
           "bytesInOutput": 65
         },
+        "src/css/tel-input.min.css": {
+          "bytesInOutput": 3365
+        },
+        "src/utils/injectStyles.js": {
+          "bytesInOutput": 160
+        },
         "src/tel-input.js": {
+          "bytesInOutput": 225
+        }
+      },
+      "bytes": 295264
+    },
+    "dist/tel-input.raw.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/tel-input.raw.js",
+      "inputs": {
+        "node_modules/intl-tel-input/build/js/intlTelInput.js": {
+          "bytesInOutput": 37702
+        },
+        "node_modules/intl-tel-input/index.js": {
+          "bytesInOutput": 38
+        },
+        "src/classes/TelInput.js": {
+          "bytesInOutput": 825
+        },
+        "node_modules/intl-tel-input/build/js/utils.js": {
+          "bytesInOutput": 251322
+        },
+        "src/utils/replaceCallbacks.js": {
+          "bytesInOutput": 166
+        },
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 118
+        },
+        "src/utils/FormidableElement.js": {
+          "bytesInOutput": 367
+        },
+        "src/utils/localeProvider.js": {
+          "bytesInOutput": 121
+        },
+        "src/utils/Storage.js": {
+          "bytesInOutput": 227
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 65
+        },
+        "src/tel-input.raw.js": {
           "bytesInOutput": 29
         }
       },
-      "bytes": 295304
+      "bytes": 291543
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -3749,13 +4236,16 @@
           "bytesInOutput": 728
         },
         "src/utils/replaceCallbacks.js": {
-          "bytesInOutput": 217
+          "bytesInOutput": 166
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 118
         },
         "src/utils/FormidableElement.js": {
           "bytesInOutput": 367
+        },
+        "src/utils/EventfulElement.js": {
+          "bytesInOutput": 311
         },
         "src/utils/ce.js": {
           "bytesInOutput": 101
@@ -3766,26 +4256,199 @@
         "src/utils/hasBootstrap.js": {
           "bytesInOutput": 38
         },
-        "src/utils/injectStyles.js": {
-          "bytesInOutput": 160
-        },
         "src/utils/bootstrap-icons.js": {
           "bytesInOutput": 8254
         },
-        "src/css/tiptap-editor.min.css": {
-          "bytesInOutput": 862
-        },
         "src/classes/TiptapEditor.js": {
-          "bytesInOutput": 5963
+          "bytesInOutput": 5803
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 65
         },
+        "src/css/tiptap-editor.min.css": {
+          "bytesInOutput": 862
+        },
+        "src/utils/injectStyles.js": {
+          "bytesInOutput": 160
+        },
         "src/tiptap-editor.js": {
+          "bytesInOutput": 56
+        }
+      },
+      "bytes": 307269
+    },
+    "dist/tiptap-editor.raw.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/tiptap-editor.raw.js",
+      "inputs": {
+        "node_modules/orderedmap/dist/index.js": {
+          "bytesInOutput": 1439
+        },
+        "node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 43231
+        },
+        "node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 27946
+        },
+        "node_modules/prosemirror-state/dist/index.js": {
+          "bytesInOutput": 11815
+        },
+        "node_modules/@tiptap/pm/state/dist/index.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/prosemirror-view/dist/index.js": {
+          "bytesInOutput": 89837
+        },
+        "node_modules/@tiptap/pm/view/dist/index.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/w3c-keyname/index.es.js": {
+          "bytesInOutput": 1635
+        },
+        "node_modules/prosemirror-keymap/dist/index.js": {
+          "bytesInOutput": 1155
+        },
+        "node_modules/@tiptap/pm/keymap/dist/index.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/@tiptap/pm/model/dist/index.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/@tiptap/pm/transform/dist/index.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/prosemirror-commands/dist/index.js": {
+          "bytesInOutput": 8679
+        },
+        "node_modules/@tiptap/pm/commands/dist/index.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/prosemirror-schema-list/dist/index.js": {
+          "bytesInOutput": 2463
+        },
+        "node_modules/@tiptap/pm/schema-list/dist/index.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/@tiptap/core/dist/index.js": {
+          "bytesInOutput": 49993
+        },
+        "node_modules/@tiptap/extension-document/dist/index.js": {
+          "bytesInOutput": 58
+        },
+        "node_modules/@tiptap/extension-paragraph/dist/index.js": {
+          "bytesInOutput": 392
+        },
+        "node_modules/@tiptap/extension-text/dist/index.js": {
+          "bytesInOutput": 46
+        },
+        "node_modules/@tiptap/extension-heading/dist/index.js": {
+          "bytesInOutput": 950
+        },
+        "node_modules/@tiptap/extension-italic/dist/index.js": {
+          "bytesInOutput": 906
+        },
+        "node_modules/@tiptap/extension-bold/dist/index.js": {
+          "bytesInOutput": 965
+        },
+        "node_modules/@tiptap/extension-strike/dist/index.js": {
+          "bytesInOutput": 754
+        },
+        "node_modules/@tiptap/extension-underline/dist/index.js": {
+          "bytesInOutput": 596
+        },
+        "node_modules/@tiptap/extension-blockquote/dist/index.js": {
+          "bytesInOutput": 598
+        },
+        "node_modules/@tiptap/extension-code/dist/index.js": {
+          "bytesInOutput": 662
+        },
+        "node_modules/@tiptap/extension-code-block/dist/index.js": {
+          "bytesInOutput": 2502
+        },
+        "node_modules/prosemirror-dropcursor/dist/index.js": {
+          "bytesInOutput": 2909
+        },
+        "node_modules/@tiptap/pm/dropcursor/dist/index.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/@tiptap/extension-dropcursor/dist/index.js": {
+          "bytesInOutput": 151
+        },
+        "node_modules/@tiptap/extension-hard-break/dist/index.js": {
+          "bytesInOutput": 882
+        },
+        "node_modules/rope-sequence/dist/index.es.js": {
+          "bytesInOutput": 3400
+        },
+        "node_modules/prosemirror-history/dist/index.js": {
+          "bytesInOutput": 5709
+        },
+        "node_modules/@tiptap/pm/history/dist/index.js": {
+          "bytesInOutput": 0
+        },
+        "node_modules/@tiptap/extension-history/dist/index.js": {
+          "bytesInOutput": 493
+        },
+        "node_modules/@tiptap/extension-horizontal-rule/dist/index.js": {
+          "bytesInOutput": 690
+        },
+        "node_modules/@tiptap/extension-bullet-list/dist/index.js": {
+          "bytesInOutput": 1850
+        },
+        "node_modules/@tiptap/extension-list-item/dist/index.js": {
+          "bytesInOutput": 428
+        },
+        "node_modules/@tiptap/extension-ordered-list/dist/index.js": {
+          "bytesInOutput": 2205
+        },
+        "node_modules/@tiptap/extension-typography/dist/index.js": {
+          "bytesInOutput": 1899
+        },
+        "node_modules/linkifyjs/dist/linkify.es.js": {
+          "bytesInOutput": 19444
+        },
+        "node_modules/@tiptap/extension-link/dist/index.js": {
+          "bytesInOutput": 3398
+        },
+        "node_modules/@tiptap/extension-image/dist/index.js": {
+          "bytesInOutput": 728
+        },
+        "src/utils/replaceCallbacks.js": {
+          "bytesInOutput": 166
+        },
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 118
+        },
+        "src/utils/FormidableElement.js": {
+          "bytesInOutput": 367
+        },
+        "src/utils/EventfulElement.js": {
+          "bytesInOutput": 311
+        },
+        "src/utils/ce.js": {
+          "bytesInOutput": 101
+        },
+        "src/utils/query.js": {
+          "bytesInOutput": 135
+        },
+        "src/utils/hasBootstrap.js": {
+          "bytesInOutput": 38
+        },
+        "src/utils/bootstrap-icons.js": {
+          "bytesInOutput": 8254
+        },
+        "src/classes/TiptapEditor.js": {
+          "bytesInOutput": 5803
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 65
+        },
+        "src/tiptap-editor.raw.js": {
           "bytesInOutput": 33
         }
       },
-      "bytes": 307146
+      "bytes": 306224
     },
     "dist/tom-select.min.js": {
       "imports": [],
@@ -3873,20 +4536,14 @@
         "node_modules/tom-select/src/tom-select.complete.ts": {
           "bytesInOutput": 439
         },
-        "node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css": {
-          "bytesInOutput": 14872
-        },
         "src/utils/replaceCallbacks.js": {
-          "bytesInOutput": 217
+          "bytesInOutput": 166
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 118
         },
         "src/utils/FormidableElement.js": {
           "bytesInOutput": 367
-        },
-        "src/utils/injectStyles.js": {
-          "bytesInOutput": 160
         },
         "src/utils/setId.js": {
           "bytesInOutput": 72
@@ -3895,16 +4552,135 @@
           "bytesInOutput": 121
         },
         "src/classes/TomSelectElement.js": {
-          "bytesInOutput": 516
+          "bytesInOutput": 430
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 65
         },
+        "node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css": {
+          "bytesInOutput": 14872
+        },
+        "src/utils/injectStyles.js": {
+          "bytesInOutput": 160
+        },
         "src/tom-select.js": {
+          "bytesInOutput": 122
+        }
+      },
+      "bytes": 71487
+    },
+    "dist/tom-select.raw.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/tom-select.raw.js",
+      "inputs": {
+        "node_modules/@orchidjs/sifter/dist/umd/sifter.js": {
+          "bytesInOutput": 7911
+        },
+        "node_modules/@orchidjs/unicode-variants/dist/umd/index.js": {
+          "bytesInOutput": 4901
+        },
+        "node_modules/tom-select/src/contrib/microevent.ts": {
+          "bytesInOutput": 462
+        },
+        "node_modules/tom-select/src/contrib/microplugin.ts": {
+          "bytesInOutput": 876
+        },
+        "node_modules/tom-select/src/tom-select.ts": {
+          "bytesInOutput": 26122
+        },
+        "node_modules/@orchidjs/sifter/lib/utils.ts": {
+          "bytesInOutput": 116
+        },
+        "node_modules/tom-select/src/vanilla.ts": {
+          "bytesInOutput": 1165
+        },
+        "node_modules/tom-select/src/contrib/highlight.ts": {
+          "bytesInOutput": 697
+        },
+        "node_modules/tom-select/src/constants.ts": {
+          "bytesInOutput": 89
+        },
+        "node_modules/tom-select/src/defaults.ts": {
+          "bytesInOutput": 962
+        },
+        "node_modules/tom-select/src/utils.ts": {
+          "bytesInOutput": 1012
+        },
+        "node_modules/tom-select/src/getSettings.ts": {
+          "bytesInOutput": 1496
+        },
+        "node_modules/tom-select/src/plugins/change_listener/plugin.ts": {
+          "bytesInOutput": 55
+        },
+        "node_modules/tom-select/src/plugins/checkbox_options/plugin.ts": {
+          "bytesInOutput": 889
+        },
+        "node_modules/tom-select/src/plugins/clear_button/plugin.ts": {
+          "bytesInOutput": 400
+        },
+        "node_modules/tom-select/src/plugins/drag_drop/plugin.ts": {
+          "bytesInOutput": 736
+        },
+        "node_modules/tom-select/src/plugins/dropdown_header/plugin.ts": {
+          "bytesInOutput": 560
+        },
+        "node_modules/tom-select/src/plugins/caret_position/plugin.ts": {
+          "bytesInOutput": 539
+        },
+        "node_modules/tom-select/src/plugins/dropdown_input/plugin.ts": {
+          "bytesInOutput": 954
+        },
+        "node_modules/tom-select/src/plugins/input_autogrow/plugin.ts": {
+          "bytesInOutput": 520
+        },
+        "node_modules/tom-select/src/plugins/no_backspace_delete/plugin.ts": {
+          "bytesInOutput": 123
+        },
+        "node_modules/tom-select/src/plugins/no_active_items/plugin.ts": {
+          "bytesInOutput": 98
+        },
+        "node_modules/tom-select/src/plugins/optgroup_columns/plugin.ts": {
+          "bytesInOutput": 402
+        },
+        "node_modules/tom-select/src/plugins/remove_button/plugin.ts": {
+          "bytesInOutput": 542
+        },
+        "node_modules/tom-select/src/plugins/restore_on_backspace/plugin.ts": {
+          "bytesInOutput": 223
+        },
+        "node_modules/tom-select/src/plugins/virtual_scroll/plugin.ts": {
+          "bytesInOutput": 1730
+        },
+        "node_modules/tom-select/src/tom-select.complete.ts": {
+          "bytesInOutput": 439
+        },
+        "src/utils/replaceCallbacks.js": {
+          "bytesInOutput": 166
+        },
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 118
+        },
+        "src/utils/FormidableElement.js": {
+          "bytesInOutput": 367
+        },
+        "src/utils/setId.js": {
+          "bytesInOutput": 72
+        },
+        "src/utils/localeProvider.js": {
+          "bytesInOutput": 121
+        },
+        "src/classes/TomSelectElement.js": {
+          "bytesInOutput": 430
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 65
+        },
+        "src/tom-select.raw.js": {
           "bytesInOutput": 30
         }
       },
-      "bytes": 71532
+      "bytes": 56363
     }
   }
 }

@@ -1,14 +1,9 @@
 import TomSelect from "../../node_modules/tom-select/src/tom-select.complete.js";
-//@ts-ignore
-import styles from "../../node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css";
 import FormidableElement from "../utils/FormidableElement.js";
-import injectStyles from "../utils/injectStyles.js";
 import setId from "../utils/setId.js";
 import localeProvider from "../utils/localeProvider.js";
 
 const name = "tom-select";
-
-injectStyles(name, styles.replace("/*# sourceMappingURL=tom-select.bootstrap5.min.css.map */", ""));
 
 class TomSelectElement extends FormidableElement {
   /**

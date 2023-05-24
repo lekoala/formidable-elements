@@ -1,15 +1,7 @@
 import flatpickr from "flatpickr";
 import confirmDatePlugin from "flatpickr/dist/plugins/confirmDate/confirmDate.js";
 import monthSelectPlugin from "flatpickr/dist/plugins/monthSelect/index.js";
-// @ts-ignore
-import styles from "../../node_modules/flatpickr/dist/flatpickr.min.css";
-// @ts-ignore
-import confirmDateStyles from "../../node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.css";
-// @ts-ignore
-import monthSelectStyles from "../../node_modules/flatpickr/dist/plugins/monthSelect/style.css";
-
 import FormidableElement from "../utils/FormidableElement.js";
-import injectStyles from "../utils/injectStyles.js";
 import insertHiddenInput from "../utils/insertHiddenInput.js";
 import setId from "../utils/setId.js";
 import waitDefined from "../utils/waitDefined.js";
@@ -17,25 +9,8 @@ import { q } from "../utils/query.js";
 import { toDateTime, toDate, toTime } from "../utils/date.js";
 import localeProvider from "../utils/localeProvider.js";
 
-// Example
-/*            
-<label for="date-input" class="form-label">Date</label>
-<flatpickr-input data-config='{}'>
-    <input type="text" class="form-control" id="date-input" name="date">
-</flatpickr-input>
-*/
-
 const events = ["change", "blur"];
 const name = "flatpickr-input";
-
-// bootstrap compat
-const customStyles = `input.flatpickr-input.form-control[readonly] {
-    background-color: var(--bs-body-bg, #fff);
-    border-color: var(--bs-border-color, #dee2e6);
-}`;
-
-// Inject styles
-injectStyles(name, styles + confirmDateStyles + monthSelectStyles + customStyles);
 
 // Global localization without passing locale based on navigator language or set default
 const globalLocale = localeProvider(name);
@@ -190,6 +165,7 @@ class FlatpickrInput extends FormidableElement {
      */
     this.flatpickr = flatpickr(input, this.config);
 
+    // Use arrow function to make sure that the scope is always this
     this.handleEvent = (ev) => {
       const d = this.flatpickr.selectedDates[0] || null;
 

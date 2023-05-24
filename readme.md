@@ -78,28 +78,18 @@ Editing json in your vscode can be easier with https://marketplace.visualstudio.
 
 JSON is great, but what when you want to pass callbacks, eg: onRender, onChange etc...
 
-In order to support this, you can pass dedicated function object values that have two signatures
-These will be replaced by the `replaceCallbacks` utility.
-
-Simple strings (evaluated again window object):
+In order to support this, you can pass dedicated object with the `__fn` key.
+These will be replaced by the `replaceCallbacks` utility and are evaluated against the window object.
 
     "onChange": {"__fn": "myGlobalCallback"}
     "onChange": {"__fn": "app.myGlobalCallback"} // can be nested
-
-EXPERIMENTAL: Full definitions using array [args, body] that use new Function constructor:
-
-    "onChange": {"__fn":["ev,inst","console.log(ev)"]}}
-
-(it's probably better to have some global app namespace rather than trying to fit code in a json config,
-therefore this feature is marked as experimental for now)
 
 ## Styling
 
 As much as possible, components have their style bundled (using `injectStyles` utility). They will be injected into document head
 on first use.
 
-If you want to load the styles yourself, you can insert before an element matching the id (styles won't load twice)
-(they will still be loaded in the js, so it's not perfect in terms of bandwidth).
+If you want to load the styles yourself, you can use the `.raw` variant of each element. It's the same code, but without injected styles.
 
 ## Bootstrap support
 
@@ -154,7 +144,7 @@ loaded once through the custom elements registry, but I'm not sure yet that woul
 
 ## Sizes
 
-[Detailed file size are available here](./docs/filesize.md) 
+[Detailed file size are available here](./docs/filesize.md)
 and analyzable with [esbuild bundle analyzer](https://esbuild.github.io/analyze/) using the `meta.json` files
 
 ## Names conflicts

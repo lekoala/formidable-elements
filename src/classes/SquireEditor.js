@@ -1,20 +1,15 @@
 import Editor from "../../node_modules/squire-rte/dist/squire-raw.mjs";
 
-import FormidableElement from "../utils/FormidableElement.js";
+import EventfulElement from "../utils/EventfulElement.js";
 import ce from "../utils/ce.js";
 import { q } from "../utils/query.js";
 import parseHTML from "../utils/parseHTML.js";
 import setHTML, { loadDOMPurify } from "../utils/setHTML.js";
 import hasBootstrap from "../utils/hasBootstrap.js";
-import injectStyles from "../utils/injectStyles.js";
 import * as icons from "../utils/bootstrap-icons.js";
-//@ts-ignore
-import styles from "../css/squire-editor.min.css";
 
 const FORCE_DOMPURIFY = false;
 const name = "squire-editor";
-
-injectStyles(name, styles);
 
 /**
  * @param {HTMLElement} editor
@@ -103,7 +98,7 @@ const resizeObserver = new ResizeObserver((entries) => {
 
 /**
  */
-class SquireEditor extends FormidableElement {
+class SquireEditor extends EventfulElement {
   /**
    * @returns {HTMLTextAreaElement}
    */
@@ -421,11 +416,13 @@ class SquireEditor extends FormidableElement {
     resizeObserver.unobserve(this);
   }
 
-  handleEvent(ev) {
-    this[`_${ev.type}`](ev);
+  destroyed() {
+    this.squire.destroy();
+    this.squire = null;
+    this.buttons = null;
   }
 
-  _input(ev) {
+  $input(ev) {
     const textarea = this.el;
     if (ev.target === textarea && !textarea.dataset.fixedHeight) {
       textarea.style.height = "0";
@@ -433,7 +430,7 @@ class SquireEditor extends FormidableElement {
     }
   }
 
-  _click(ev) {
+  $click(ev) {
     const btn = ev.target.closest("button");
     if (!btn) {
       return;
@@ -517,12 +514,6 @@ class SquireEditor extends FormidableElement {
         ed[action](value, otherValue);
       }
     }
-  }
-
-  destroyed() {
-    this.squire.destroy();
-    this.squire = null;
-    this.buttons = null;
   }
 }
 

@@ -21,18 +21,13 @@ import Typography from "@tiptap/extension-typography";
 import Link from "@tiptap/extension-link";
 import { Image as ImageExtension } from "@tiptap/extension-image";
 
-import FormidableElement from "../utils/FormidableElement.js";
+import EventfulElement from "../utils/EventfulElement.js";
 import ce from "../utils/ce.js";
 import { q } from "../utils/query.js";
 import hasBootstrap from "../utils/hasBootstrap.js";
-import injectStyles from "../utils/injectStyles.js";
 import * as icons from "../utils/bootstrap-icons.js";
-//@ts-ignore
-import styles from "../css/tiptap-editor.min.css";
 
 const name = "tiptap-editor";
-
-injectStyles(name, styles);
 
 /**
  * @param {HTMLElement} editor
@@ -120,7 +115,7 @@ const resizeObserver = new ResizeObserver((entries) => {
 
 /**
  */
-class TiptapEditor extends FormidableElement {
+class TiptapEditor extends EventfulElement {
   /**
    * @returns {HTMLTextAreaElement}
    */
@@ -433,27 +428,29 @@ class TiptapEditor extends FormidableElement {
     adjustStyles(editor.firstElementChild, toolbar, textarea);
   }
 
+  get events() {
+    return ["click", "input"];
+  }
+
   connected() {
-    this.addEventListener("click", this);
-    this.addEventListener("input", this);
     resizeObserver.observe(this);
   }
 
   disconnected() {
-    this.removeEventListener("click", this);
-    this.removeEventListener("input", this);
     resizeObserver.unobserve(this);
   }
 
-  handleEvent(ev) {
-    this[`_${ev.type}`](ev);
-  }
-
   _undoStateChange(ev) {
-    this._input(ev);
+    this.$input(ev);
   }
 
-  _input(ev) {
+  destroyed() {
+    this.tiptap.destroy();
+    this.tiptap = null;
+    this.buttons = null;
+  }
+
+  $input(ev) {
     const textarea = this.el;
     if (ev.target === textarea && !textarea.dataset.fixedHeight) {
       // auto growing textarea
@@ -462,7 +459,7 @@ class TiptapEditor extends FormidableElement {
     }
   }
 
-  _click(ev) {
+  $click(ev) {
     const btn = ev.target.closest("button");
     if (!btn) {
       return;
@@ -504,12 +501,6 @@ class TiptapEditor extends FormidableElement {
       }
       return;
     }
-  }
-
-  destroyed() {
-    this.tiptap.destroy();
-    this.tiptap = null;
-    this.buttons = null;
   }
 }
 

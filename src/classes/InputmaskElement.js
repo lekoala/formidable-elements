@@ -49,6 +49,7 @@ class InputmaskElement extends FormidableElement {
       // @ts-ignore
       this.hiddenInput = insertHiddenInput(input, this.inputmask.unmaskedvalue(input.value));
 
+      // Use arrow function to make sure that the scope is always this
       // Replicate unmasked value to hidden field
       this.handleEvent = (ev) => {
         // @ts-ignore

@@ -42,7 +42,6 @@ const set = new Set();
 // Update position of elements on scroll or resize
 let ticking = false;
 const onResize = (ev) => {
-  ticking = false;
   set.forEach((el) => {
     // Only position if the event
     const shouldCompute = ev.target instanceof Window || ev.target.contains(el);
@@ -50,6 +49,7 @@ const onResize = (ev) => {
       el.position();
     }
   });
+  ticking = false;
 };
 const rafCallback = (ev) => {
   if (!ticking) {
@@ -390,7 +390,7 @@ class Anchored extends HTMLElement {
     const isVisible = elStyles.display != "none" && !el.hasAttribute("hidden");
     const hasPointerEvents = this.style.pointerEvents != "none";
 
-    // Make sure elements don't catch mouse if their child is not visible
+    // Make sure elements don't catch mouse if their child is not visible or not enabled
     if (!isVisible || !this._enabled) {
       if (hasPointerEvents) {
         this.style.pointerEvents = "none";
@@ -419,12 +419,6 @@ class Anchored extends HTMLElement {
       arrow = arrowEl.getBoundingClientRect();
     }
 
-    // clear coords for proper placement
-    Object.assign(this.style, {
-      left: `unset`,
-      top: `unset`,
-    });
-
     let floating = this.getBoundingClientRect();
 
     // Fix invalid width/height
@@ -450,9 +444,11 @@ class Anchored extends HTMLElement {
     // clientWidth = excluding scrollbar
     let clientWidth = doc.clientWidth;
     let clientHeight = doc.clientHeight;
+
+    let scrollBarWidth = window.innerWidth - clientWidth;
+
     // on mobile, having a viewport larger than 100% can make window.innerX very different than doc.clientX
-    // take a 16px margin for scrollbars
-    if (window.innerWidth - 16 > clientWidth) {
+    if (scrollBarWidth > 20) {
       clientWidth = window.innerWidth;
       clientHeight = window.innerHeight;
     }
@@ -477,11 +473,19 @@ class Anchored extends HTMLElement {
     // Flip if it overflows on axis
     let placementChanged = false;
     if (axis == "x" && (coords.y < startY || coords.y >= clientHeight)) {
-      side = flipSide(side);
+      if (coords.y < startY && coords.y >= clientHeight) {
+        this.style.maxHeight = "90vh";
+      } else {
+        side = flipSide(side);
+      }
       placementChanged = true;
     }
     if (axis == "y" && (coords.x < startX || coords.x >= clientWidth)) {
-      side = flipSide(side);
+      if (coords.x < startX && coords.x >= clientWidth) {
+        this.style.maxWidth = "90vw";
+      } else {
+        side = flipSide(side);
+      }
       placementChanged = true;
     }
     // If there is not much space at all in the viewport, then it's better to use top/bottom
@@ -552,11 +556,13 @@ class Anchored extends HTMLElement {
       el.classList.add("bs-popover-auto");
     }
 
-    // Position element
-    Object.assign(this.style, {
-      left: `${coords.x}px`,
-      top: `${coords.y}px`,
-    });
+    // Position element if updated
+    if (parseInt(this.style.left) != parseInt("" + coords.x) || parseInt(this.style.top) != parseInt("" + coords.y)) {
+      Object.assign(this.style, {
+        left: `${coords.x}px`,
+        top: `${coords.y}px`,
+      });
+    }
   }
 }
 

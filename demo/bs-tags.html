@@ -41,7 +41,7 @@
             <label for="showDisabled" class="form-label">Tags (show disabled)</label>
             <!-- you can pass functions as json as well -->
             <bs-tags
-                data-config='{"allowClear": true, "showDisabled": true, "onFocus": {"__fn": "app.myFocus"}, "arr": [1,2,3], "nested": {"func": {"__fn": ["a,b,c", "return a+b+c"]}}}'>
+                data-config='{"allowClear": true, "showDisabled": true, "onFocus": {"__fn": "app.myFocus"}, "arr": [1,2,3], "nested": {"func": {"__fn": "console.log"}}}'>
                 <select class="form-select" id="showDisabled" name="showDisabled[]" multiple data-show-disabled="true">
                     <option disabled hidden value="">Choose a tag...</option>
                     <option value="1" selected="selected">Apple</option>

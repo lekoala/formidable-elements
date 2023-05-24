@@ -12,15 +12,16 @@ class GrowingTextarea extends HTMLElement {
     return this.firstElementChild;
   }
 
-  handleEvent(ev) {
-    const target = this.el;
-    if (target instanceof HTMLTextAreaElement) {
-      target.style.overflow = "hidden";
-      target.style.height = "0";
-      target.style.height = target.scrollHeight + "px";
-    }
-  }
   connectedCallback() {
+    // Use arrow function to make sure that the scope is always this
+    this.handleEvent = (ev) => {
+      const target = this.el;
+      if (target instanceof HTMLTextAreaElement) {
+        target.style.overflow = "hidden";
+        target.style.height = "0";
+        target.style.height = target.scrollHeight + "px";
+      }
+    };
     this.addEventListener("input", this);
   }
   disconnectedCallback() {

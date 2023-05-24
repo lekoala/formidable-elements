@@ -1,25 +1,11 @@
 import intlTelInput from "intl-tel-input";
 // Include utils right away to make loading easier
 import "../../node_modules/intl-tel-input/build/js/utils.js";
-//@ts-ignore
-// import styles from "../node_modules/intl-tel-input/build/css/intlTelInput.min.css";
-// Opiniated styles
-// No flags by default
-import styles from "../css/tel-input.min.css";
 import FormidableElement from "../utils/FormidableElement.js";
-import injectStyles from "../utils/injectStyles.js";
 import localeProvider from "../utils/localeProvider.js";
 import Storage from "../utils/Storage.js";
 
 const name = "tel-input";
-
-injectStyles(
-  name,
-  `${styles}
-.iti__selected-dial-code { min-width: 3ch }
-.iti__arrow { border: none }
-.input-group .iti .form-control { border-top-right-radius: 0; border-bottom-right-radius: 0}`
-);
 
 class TelInput extends FormidableElement {
   /**
