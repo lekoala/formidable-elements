@@ -15,6 +15,10 @@ class TelInput extends FormidableElement {
     return this.querySelector("input");
   }
 
+  get value() {
+    return this.el.value;
+  }
+
   created() {
     const input = this.el;
     const inputName = input.name;

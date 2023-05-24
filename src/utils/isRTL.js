@@ -1,6 +1,6 @@
 /**
  * @returns {Boolean}
  */
-export default function isRTL() {
+export default () => {
   return window.getComputedStyle(document.documentElement).direction === "rtl";
-}
+};

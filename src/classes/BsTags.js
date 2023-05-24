@@ -13,6 +13,10 @@ class BsTags extends FormidableElement {
     return this.querySelector("select");
   }
 
+  get value() {
+    return this.el.value;
+  }
+
   created() {
     // Clear dropdown if element was duplicated
     rmElements(this, "div.dropdown");

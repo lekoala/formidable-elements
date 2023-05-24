@@ -14,7 +14,7 @@
  * @param {Number} timeout
  * @returns {ExtendedFunction}
  */
-export default function debounce(handler, timeout = 300) {
+export default (handler, timeout = 300) => {
   let timer = null;
   return (...args) => {
     clearTimeout(timer);
@@ -23,4 +23,4 @@ export default function debounce(handler, timeout = 300) {
       handler(...args);
     }, timeout);
   };
-}
+};

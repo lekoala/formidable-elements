@@ -26,6 +26,13 @@ class FlatpickrInput extends FormidableElement {
     return this.querySelector("input");
   }
 
+  get value() {
+    if (this.hiddenInput) {
+      return this.hiddenInput.value;
+    }
+    return this.el.value;
+  }
+
   created() {
     // keep original formatted format as display value
     this.keepFormat = !!this.dataset.keepFormat;

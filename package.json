@@ -37,6 +37,7 @@
     "intl-tel-input": "^18.1.6",
     "squire-rte": "^2.0.3",
     "superfile": "^1.2.1",
+    "tabulator-tables": "^5.5.0",
     "tom-select": "^2.2.2"
   },
   "devDependencies": {

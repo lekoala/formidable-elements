@@ -7,7 +7,7 @@
  * @param {Number} count
  * @returns {void}
  */
-export default function waitDefined(test, cb, run = true, count = 0) {
+const waitDefined = (test, cb, run = true, count = 0) => {
   count++;
   // we waited long enough (325ms)
   if (count > 25) {
@@ -24,4 +24,5 @@ export default function waitDefined(test, cb, run = true, count = 0) {
       cb();
     }
   }, count);
-}
+};
+export default waitDefined;

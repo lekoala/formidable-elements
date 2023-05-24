@@ -106,6 +106,10 @@ class SquireEditor extends EventfulElement {
     return q("textarea", null, this);
   }
 
+  get value() {
+    return this.el.value;
+  }
+
   created() {
     // Allow creation of element if necessary
     if (!this.el) {

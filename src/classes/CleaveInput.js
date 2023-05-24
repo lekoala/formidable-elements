@@ -20,6 +20,10 @@ class CleaveInput extends FormidableElement {
     return this.querySelector("input");
   }
 
+  get value() {
+    return this.cleave.getRawValue(true);
+  }
+
   created() {
     // Add a custom type attribute for ease of use
     const type = this.getAttribute("type");

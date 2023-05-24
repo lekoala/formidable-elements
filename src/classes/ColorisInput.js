@@ -28,6 +28,10 @@ class ColorisInput extends FormidableElement {
     return this.querySelector("input");
   }
 
+  get value() {
+    return this.el.value;
+  }
+
   created() {
     const id = setId(this.el, name);
     this.el.autocomplete = "off";

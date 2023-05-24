@@ -15,7 +15,7 @@
  * @param {ParsedHTMLElement} el
  * @returns {void}
  */
-export default function whenParsed(el) {
+const whenParsed = (el) => {
   /**
    * @type {Node}
    */
@@ -31,4 +31,5 @@ export default function whenParsed(el) {
   setTimeout(() => {
     whenParsed(el);
   });
-}
+};
+export default whenParsed;

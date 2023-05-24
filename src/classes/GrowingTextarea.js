@@ -12,6 +12,10 @@ class GrowingTextarea extends HTMLElement {
     return this.firstElementChild;
   }
 
+  get value() {
+    return this.el.value;
+  }
+
   connectedCallback() {
     // Use arrow function to make sure that the scope is always this
     this.handleEvent = (ev) => {

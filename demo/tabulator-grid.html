@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabulator-grid demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="./assets/demo.css" rel="stylesheet">
+    <script type="module" src="./assets/demo.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/last-icon@2.2.0/last-icon.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/last-icon@2.2.0/last-icon.min.css" rel="stylesheet">
+
+    <!-- for external editor -->
+    <script type="module" src="../dist/input-mask.min.js"></script>
+    <script type="module"
+        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/components/format-number/format-number.js"></script>
+
+    <!-- to be loaded before -->
+    <script type="module">
+        const data = [];
+
+        function pad(i) {
+            let s = String(i);
+            while (s.length < 3) {
+                s = "0" + s;
+            }
+            return s;
+        }
+
+        for (let i = 1; i <= 175; i++) {
+            data.push({ id: pad(i), name: "Item " + i });
+        }
+
+        window["demoData"] = function () {
+            return data.map(d => {
+                d.rand = Math.random() * 10;
+                return d;
+            });
+        }
+
+        const timer = setInterval(() => {
+            const grid = document.getElementById('timer-grid');
+            if (grid) {
+                grid.tabulator.replaceData(window["demoData"]());
+            }
+
+        }, 1000);
+    </script>
+    <script type="module">
+
+        var tableDataNested = [
+            {
+                name: "Oli Bob", location: "United Kingdom", gender: "male", col: "red", dob: "14/04/1984", country: "UK", _children: [
+                    { name: "Mary May", location: "Germany", gender: "female", col: "blue", dob: "14/05/1982", country: "UK", },
+                    { name: "Christine Lobowski", location: "France", gender: "female", col: "green", dob: "22/05/1982", country: "UK", },
+                    {
+                        name: "Brendon Philips", location: "USA", gender: "male", col: "orange", dob: "01/08/1980", country: "UK", _children: [
+                            { name: "Margret Marmajuke", location: "Canada", gender: "female", col: "yellow", dob: "31/01/1999", country: "UK" },
+                            { name: "Frank Harbours", location: "Russia", gender: "male", col: "red", dob: "12/05/1966", country: "UK" },
+                        ]
+                    },
+                ]
+            },
+            { name: "Jamie Newhart", location: "India", gender: "male", col: "green", dob: "14/05/1985", country: "FR" },
+            {
+                name: "Gemma Jane", location: "China", gender: "female", col: "red", dob: "22/05/1982", country: "UK", _children: [
+                    { name: "Emily Sykes", location: "South Korea", gender: "female", col: "maroon", dob: "11/11/1970", country: "UK" },
+                ]
+            },
+            { name: "James Newman", location: "Japan", gender: "male", col: "red", dob: "22/03/1998", country: "EU" },
+        ];
+
+        window['datagridConfig'] = {
+            _rowClickTriggersAction: true,
+            height: "311px",
+            data: tableDataNested,
+            dataTree: true,
+            // renderVertical: 'basic',
+            dataTreeStartExpanded: false,
+            layout: "fitDataFill",
+            responsiveLayout: "hide",
+            columns: [
+                { title: "Name", field: "name", width: 200, responsive: 0 }, //never hide this column
+                { title: "Location", field: "location", width: 150 },
+                { title: "Gender", field: "gender", width: 150, responsive: 2 }, //hide this column first
+                {
+                    title: "Favourite Color", field: "col", minWidth: 150, formatter: "external", formatterParams: {
+                        "function": (v) => {
+                            return `<span style="background:${v};display:block;width:8px;height:8px;border-radius:8px;"></span>`
+                        }
+                    }
+                },
+                { title: "Country", field: "country", minWidth: 80, formatter: "flag" },
+                { title: "Date Of Birth", field: "dob", hozAlign: "center", sorter: "date", minWidth: 150 },
+                {
+                    title: "", field: "_btn", hozAlign: "center", formatter: "button", cssClass: "tabulator-cell-btn", formatterParams: {
+                        "title": "My Action", "icon": "star", "onClick": (ev, btn, cell) => {
+                            console.log(ev, btn, cell);
+                        }
+                    }
+                },
+            ],
+        }
+    </script>
+    <script type="module">
+        window['overflowGridConfig'] = {
+            autoColumns: false,
+            responsiveLayoutCollapseStartOpen: false,
+            columns: [
+                {
+                    formatter: "responsiveCollapse",
+                    headerSort: false,
+                    width: 50,
+                    resizable: false
+                },
+                { field: "id", title: "id", minWidth: "100", resizable: false },
+                { field: "email", title: "email", minWidth: "200", resizable: false },
+                {
+                    field: "car",
+                    title: "car",
+                    formatter: "customTickCross",
+                    minWidth: 60,
+                },
+                {
+                    field: "first_name",
+                    title: "first_name",
+                    resizable: false,
+                    editor: "input",
+                    minWidth: 150,
+                },
+                {
+                    field: "last_name",
+                    title: "last_name",
+                    minWidth: "200",
+                    resizable: false,
+                    editor: "input",
+                    minWidth: 150,
+                },
+            ],
+            pagination: true, //enable pagination
+            paginationSize: 200,
+            // debugEventsExternal: true,
+            layout: "fitColumns",
+            // height: "100%",
+            // maxHeight: "100%",
+            //renderVertical: "basic", // fix pagination
+            // responsiveLayout: "collapse",
+            responsiveLayout: "flexCollapse",
+            paginationMode: "remote", //enable remote pagination
+            ajaxURL: "https://reqres.in/api/users", //set url for ajax request
+            ajaxResponse: function (url, params, response) {
+                var i = 0;
+                response.data = [];
+                while (response.data.length < 200) {
+                    i++;
+                    response.data.push({
+                        id: i + ((response.page - 1) * 200),
+                        email: "test" + i + "@test.com",
+                        first_name: "fn " + i,
+                        last_name: "ln " + i,
+                        car: Math.round(Math.random()) == 0 ? true : false,
+                    });
+                }
+                response.total = 2000;
+                response.total_pages = 10;
+                return response;
+            },
+            dataSendParams: {
+                page: "page" //change page request parameter to "pageNo"
+            },
+            dataReceiveParams: {
+                last_page: "total_pages", //change last_page parameter name to "max_pages"
+                last_row: "total"
+            },
+            ajaxParams: { token: "ABC123" }, //set any standard parameters to pass with the request
+            paginationSize: 5, //optional parameter to request a certain number of rows per page
+            paginationInitialPage: 2 //optional parameter to set the initial page to load
+        };
+    </script>
+    <script type="module">
+        window['editGridConfig'] = {
+            columns: [
+                { field: "id", title: "id", minWidth: "100", resizable: false },
+                { field: "email", title: "email", minWidth: "200", resizable: false },
+                {
+                    field: "name",
+                    title: "name",
+                    resizable: false,
+                    editor: "input",
+                    minWidth: 150,
+                },
+                {
+                    field: "amount",
+                    title: "amount",
+                    minWidth: "200",
+                    resizable: false,
+                    editor: "external",
+                    editorParams: {
+                        "element": "input-mask",
+                        "elementConfig": '{"alias": "currency", "suffix": " €", "rightAlign": false, "radixPoint": ","}',
+                        // "rawInput": true,
+                        "initCallback": console.log
+                    },
+                    formatter: "external",
+                    formatterParams: {
+                        "function": (v) => {
+                            return `<sl-format-number type="currency" currency="EUR" value="${v}" lang="de"></sl-format-number>`
+                        }
+                    },
+                    minWidth: 150,
+                },
+                {
+                    field: "other_amount",
+                    title: "other_amount",
+                    minWidth: "200",
+                    resizable: false,
+                    editor: "money",
+                    minWidth: 150,
+                },
+            ],
+            pagination: true, //enable pagination
+            paginationSize: 10,
+            layout: "fitColumns",
+            paginationMode: "remote", //enable remote pagination
+            ajaxURL: "https://reqres.in/api/users", //set url for ajax request
+            ajaxResponse: function (url, params, response) {
+                var i = 0;
+                response.data = [];
+                while (response.data.length < 10) {
+                    i++;
+                    response.data.push({
+                        id: i + ((response.page - 1) * 200),
+                        email: "test" + i + "@test.com",
+                        name: "name " + i,
+                        amount: Math.round(Math.random() * 1000),
+                        other_amount: Math.round(Math.random() * 1000)
+                    });
+                }
+                response.total = 200;
+                response.total_pages = 10;
+                return response;
+            },
+            dataSendParams: {
+                page: "page" //change page request parameter to "pageNo"
+            },
+            dataReceiveParams: {
+                last_page: "total_pages", //change last_page parameter name to "max_pages"
+                last_row: "total"
+            },
+            ajaxParams: { token: "ABC123" }, //set any standard parameters to pass with the request
+            paginationSize: 5, //optional parameter to request a certain number of rows per page
+            paginationInitialPage: 2 //optional parameter to set the initial page to load
+        };
+
+        let clone = Object.assign({}, window['editGridConfig']);
+        clone['ajaxURL'] = '';
+        clone['pagination'] = false;
+        clone['selectable'] = true;
+        clone['paginationMode'] = 'local';
+        clone['columns'] = [
+            {
+
+                field: "id", title: "id", minWidth: "100", editor: "customInput", editorParams: {
+                    inputmode: "decimal"
+                }
+            },
+            {
+                field: "email", title: "email", minWidth: "200", editor: "customInput", editorParams: {
+                    type: "email"
+                }
+            },
+            {
+                field: "name",
+                title: "name",
+                resizable: false,
+                editor: "input",
+                minWidth: 150,
+            },
+            {
+                field: "amount",
+                title: "amount",
+                minWidth: "200",
+                resizable: false,
+                editor: "external",
+                editorParams: {
+                    "element": "input-mask",
+                    "elementConfig": '{"alias": "currency", "suffix": " €", "rightAlign": false, "radixPoint": ","}',
+                    // "rawInput": true,
+                    "initCallback": console.log
+                },
+                formatter: "external",
+                formatterParams: {
+                    "function": (v) => {
+                        return `<sl-format-number type="currency" currency="EUR" value="${v}" lang="de"></sl-format-number>`
+                    }
+                },
+                minWidth: 150,
+            },
+            {
+                field: "other_amount",
+                title: "other_amount",
+                minWidth: "200",
+                resizable: false,
+                editor: "money",
+                minWidth: 150,
+            }
+        ]
+        clone['columns'].unshift({
+            formatter: "rowSelection", titleFormatter: "rowSelection", align: "center", headerSort: false, width: 40
+        });
+
+        window['editEmptyGridConfig'] = clone;
+    </script>
+
+    <script type="module" src="../dist/locale-provider.min.js"></script>
+    <script type="module" src="../dist/tabulator-grid.min.js"></script>
+</head>
+
+<body class="p-3">
+    <p>Loading json</p>
+
+    <tabulator-grid data-config='{"ajaxURL": "./data/tabulator-json-1.json"}'>
+    </tabulator-grid>
+
+    <hr>
+
+    <p>Self refreshing table without page jumps + fixed size on last page</p>
+
+    <tabulator-grid id="timer-grid"
+        data-config='{"data": {"__fn": "demoData"}, "layout": "fitColumns", "pagination": "local", "paginationSize": 10}'>
+    </tabulator-grid>
+    <hr>
+
+    <p>Responsive table using ajax calls. Live editable content even in responsive columns thanks to flexResponsive.</p>
+
+    <tabulator-grid id="overflow-grid" data-config='overflowGridConfig' style="width:600px;border:1px solid #666;">
+    </tabulator-grid>
+    <hr>
+
+    <p>Global config (datatree example + nice scroll + fixed height 311px)</p>
+
+    <tabulator-grid id="data-grid" data-config='datagridConfig' style="border:1px solid #666;">
+    </tabulator-grid>
+    <hr>
+
+    <p>Imported table</p>
+
+    <tabulator-grid>
+        <table id="imported-table">
+            <thead>
+                <tr>
+                    <th width="200">Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Height</th>
+                    <th>Favourite Color</th>
+                    <th>Date of Birth</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Billy Bob</td>
+                    <td>12</td>
+                    <td>male</td>
+                    <td>1</td>
+                    <td>red</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Mary May</td>
+                    <td>1</td>
+                    <td>female</td>
+                    <td>2</td>
+                    <td>blue</td>
+                    <td>14/05/1982</td>
+                </tr>
+            </tbody>
+        </table>
+    </tabulator-grid>
+    <hr>
+    <p>Editable and serialized to input</p>
+
+    <form action="https://vercel-dumper.vercel.app" method="post">
+        <tabulator-grid id="editable-grid" data-config="editGridConfig">
+            <div></div>
+            <input type="hidden" name="my-grid-data">
+        </tabulator-grid>
+        <br />
+
+        <p>Add remove rows from an empty editable table</p>
+        <tabulator-grid id="editable-grid-empty" data-config="editEmptyGridConfig">
+            <div></div>
+            <input type="hidden" name="my-grid-data">
+            <div class="pt-3">
+                <button class="tabulator-add-row btn btn-success" type="button">Add row</button>
+                <button class="tabulator-remove-selected btn btn-danger" type="button">Remove rows</button>
+            </div>
+        </tabulator-grid>
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <hr>
+
+    <button class="btn btn-light delete-btn" data-name="tabulator-grid">Delete element</button>
+    <button class="btn btn-light copy-btn" data-name="tabulator-grid">Copy element</button>
+    <button class="btn btn-light move-btn" data-name="tabulator-grid">Move element</button>
+    <hr>
+    <div id="target"></div>
+</body>
+
+</html>

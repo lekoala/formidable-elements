@@ -29,6 +29,13 @@ class InputmaskElement extends FormidableElement {
     return this.querySelector("input");
   }
 
+  get value() {
+    if (this.hiddenInput) {
+      return this.hiddenInput.value;
+    }
+    return this.el.value;
+  }
+
   created() {
     const input = this.el;
 
@@ -40,6 +47,9 @@ class InputmaskElement extends FormidableElement {
     if (isDecimal) {
       input.value = "" + decimalmultiply(input.value, 100);
     }
+    if (this.config.radixPoint === ",") {
+      input.value = input.value.replace(".", ",");
+    }
 
     this.inputmask = new Inputmask(this.config);
     this.inputmask.mask(input);
@@ -47,7 +57,7 @@ class InputmaskElement extends FormidableElement {
     if (!this.keepMask) {
       // create hidden input
       // @ts-ignore
-      this.hiddenInput = insertHiddenInput(input, this.inputmask.unmaskedvalue(input.value));
+      this.hiddenInput = insertHiddenInput(input);
 
       // Use arrow function to make sure that the scope is always this
       // Replicate unmasked value to hidden field
@@ -75,6 +85,7 @@ class InputmaskElement extends FormidableElement {
         }
         this.hiddenInput.value = val;
       };
+      this.handleEvent(); // run once to make sure value is set on hidden field
     }
   }
 

@@ -6,7 +6,7 @@ import insertAfter from "./insertAfter.js";
  * @param {string} v
  * @returns {HTMLInputElement}
  */
-export default function insertHiddenInput(input, v = undefined) {
+export default (input, v = undefined) => {
   /**
    * @type {HTMLInputElement}
    */
@@ -27,4 +27,4 @@ export default function insertHiddenInput(input, v = undefined) {
   input.name = `formatted_${input.name}`;
 
   return h;
-}
+};

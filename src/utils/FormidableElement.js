@@ -44,7 +44,7 @@ class FormidableElement extends HTMLElement {
        * The config object as parsed from data-config attribute
        * @type {Object}
        */
-      this.config = replaceCallbacks(JSON.parse(this.dataset.config || "{}"));
+      this.config = replaceCallbacks(this.dataset.config || {});
       this.created();
     }
     this.connected();

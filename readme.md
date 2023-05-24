@@ -14,6 +14,7 @@
 - tom select: https://tom-select.js.org/
 - squire-editor: https://github.com/fastmail/Squire
 - superfile: https://github.com/lekoala/superfile
+- tabulator: https://tabulator.info/
 
 Bootstrap specific:
 
@@ -30,6 +31,8 @@ And some custom made stuff as well:
 ## Documentation
 
 Please see the demos for now and refer to original libraries
+
+Custom components are documented in /docs folder
 
 ## Lifecycle of elements
 
@@ -68,11 +71,9 @@ for the attribute.
 Why no plain data attributes ? Well, data attributes are a pain to use. They default to string and this
 require conversion to make it work. Also, components with lots of options quickly become horrible.
 
-Some elements have specific (data) attributes for some custom features, see dedicated docs (wip).
+Some elements have specific (data) attributes for some custom features, see dedicated docs in /docs.
 
 You can access the configuration using the `config` public property of the element.
-
-Editing json in your vscode can be easier with https://marketplace.visualstudio.com/items?itemName=andersonbruceb.json-in-html
 
 ### Passing functions
 
@@ -83,6 +84,12 @@ These will be replaced by the `replaceCallbacks` utility and are evaluated again
 
     "onChange": {"__fn": "myGlobalCallback"}
     "onChange": {"__fn": "app.myGlobalCallback"} // can be nested
+
+You can also resolve the whole config like this
+
+```html
+<my-elem data-config="app.myGlobalFunc"></my-elem>
+```
 
 ## Styling
 

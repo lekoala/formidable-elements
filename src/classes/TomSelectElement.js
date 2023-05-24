@@ -13,6 +13,10 @@ class TomSelectElement extends FormidableElement {
     return this.querySelector("input,select");
   }
 
+  get value() {
+    return this.el.value;
+  }
+
   created() {
     const input = this.el;
     const id = setId(input, name);

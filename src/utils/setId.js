@@ -5,9 +5,9 @@ let counter = 0;
  * @param {string} name
  * @returns {string}
  */
-export default function setId(el, name) {
+export default (el, name) => {
   counter++;
   const id = el.id || `${name}-${counter}`;
   el.id = id;
   return id;
-}
+};

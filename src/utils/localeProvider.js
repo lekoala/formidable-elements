@@ -7,11 +7,11 @@
  * @param {Object|null} defaults
  * @returns {Object|null} Returns null only if locale-provider is not defined
  */
-export default function localeProvider(name, locale = "default", defaults = null) {
+export default (name, locale = "default", defaults = null) => {
   const el = customElements.get("locale-provider");
   if (!el) {
     return defaults;
   }
   //@ts-ignore
   return Object.assign(defaults || {}, el.for(name, locale));
-}
+};

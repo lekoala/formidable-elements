@@ -1,7 +1,7 @@
 /**
  * @returns {Boolean}
  */
-export default function hasBootstrap() {
+export default () => {
   //@ts-ignore
-  return window.bootstrap;
-}
+  return !!window.bootstrap;
+};

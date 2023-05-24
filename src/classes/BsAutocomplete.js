@@ -13,6 +13,10 @@ class BsAutocomplete extends FormidableElement {
     return this.querySelector("input");
   }
 
+  get value() {
+    return this.el.value;
+  }
+
   created() {
     // Clear dropdown if element was duplicated
     rmElements(this, "div.dropdown");
