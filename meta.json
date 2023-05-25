@@ -37,6 +37,27 @@
       ],
       "format": "esm"
     },
+    "src/classes/BoundInput.js": {
+      "bytes": 1001,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/bound-input.js": {
+      "bytes": 166,
+      "imports": [
+        {
+          "path": "src/classes/BoundInput.js",
+          "kind": "import-statement",
+          "original": "./classes/BoundInput.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        }
+      ],
+      "format": "esm"
+    },
     "node_modules/bootstrap5-autocomplete/autocomplete.js": {
       "bytes": 26705,
       "imports": [],
@@ -876,6 +897,53 @@
           "path": "src/classes/FlatpickrInput.js",
           "kind": "import-statement",
           "original": "./classes/FlatpickrInput.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/defaultLang.js": {
+      "bytes": 105,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/utils/reflectedProperties.js": {
+      "bytes": 318,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/classes/NumberFormatter.js": {
+      "bytes": 1859,
+      "imports": [
+        {
+          "path": "src/utils/FormidableElement.js",
+          "kind": "import-statement",
+          "original": "../utils/FormidableElement.js"
+        },
+        {
+          "path": "src/utils/defaultLang.js",
+          "kind": "import-statement",
+          "original": "../utils/defaultLang.js"
+        },
+        {
+          "path": "src/utils/reflectedProperties.js",
+          "kind": "import-statement",
+          "original": "../utils/reflectedProperties.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/format-number.js": {
+      "bytes": 188,
+      "imports": [
+        {
+          "path": "src/classes/NumberFormatter.js",
+          "kind": "import-statement",
+          "original": "./classes/NumberFormatter.js"
         },
         {
           "path": "src/utils/defineEl.js",
@@ -5574,6 +5642,23 @@
       },
       "bytes": 5513
     },
+    "dist/bound-input.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/bound-input.js",
+      "inputs": {
+        "src/classes/BoundInput.js": {
+          "bytesInOutput": 459
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 56
+        },
+        "src/bound-input.js": {
+          "bytesInOutput": 27
+        }
+      },
+      "bytes": 567
+    },
     "dist/bs-autocomplete.min.js": {
       "imports": [],
       "exports": [],
@@ -6221,6 +6306,44 @@
         }
       },
       "bytes": 64637
+    },
+    "dist/format-number.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/format-number.js",
+      "inputs": {
+        "src/utils/isString.js": {
+          "bytesInOutput": 28
+        },
+        "src/utils/getGlobalFn.js": {
+          "bytesInOutput": 49
+        },
+        "src/utils/replaceCallbacks.js": {
+          "bytesInOutput": 155
+        },
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 117
+        },
+        "src/utils/FormidableElement.js": {
+          "bytesInOutput": 344
+        },
+        "src/utils/defaultLang.js": {
+          "bytesInOutput": 76
+        },
+        "src/utils/reflectedProperties.js": {
+          "bytesInOutput": 119
+        },
+        "src/classes/NumberFormatter.js": {
+          "bytesInOutput": 803
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 56
+        },
+        "src/format-number.js": {
+          "bytesInOutput": 29
+        }
+      },
+      "bytes": 1801
     },
     "dist/growing-textarea.min.js": {
       "imports": [],

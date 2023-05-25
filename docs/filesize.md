@@ -903,6 +903,23 @@
    ├ src/clipboard-copy.js                                                                                      30b     1.6%
    └ src/utils/isString.js                                                                                      28b     1.5%
 
+  dist/format-number.min.js                                                                                    1.8kb  100.0%
+   ├ src/classes/NumberFormatter.js                                                                            803b    44.6%
+   ├ src/utils/FormidableElement.js                                                                            344b    19.1%
+   ├ src/utils/replaceCallbacks.js                                                                             155b     8.6%
+   ├ src/utils/reflectedProperties.js                                                                          119b     6.6%
+   ├ src/utils/whenParsed.js                                                                                   117b     6.5%
+   ├ src/utils/defaultLang.js                                                                                   76b     4.2%
+   ├ src/utils/defineEl.js                                                                                      56b     3.1%
+   ├ src/utils/getGlobalFn.js                                                                                   49b     2.7%
+   ├ src/format-number.js                                                                                       29b     1.6%
+   └ src/utils/isString.js                                                                                      28b     1.6%
+
+  dist/bound-input.min.js                                                                                      567b   100.0%
+   ├ src/classes/BoundInput.js                                                                                 459b    81.0%
+   ├ src/utils/defineEl.js                                                                                      56b     9.9%
+   └ src/bound-input.js                                                                                         27b     4.8%
+
   dist/growing-textarea.min.js                                                                                 493b   100.0%
    ├ src/classes/GrowingTextarea.js                                                                            380b    77.1%
    ├ src/utils/defineEl.js                                                                                      56b    11.4%
@@ -919,6 +936,6 @@
   dist\tiptap-editor.min.js       300.1kb
   dist\tiptap-editor.raw.min.js   299.1kb
   dist\tel-input.min.js           288.4kb
-  ...and 23 more output files...
+  ...and 25 more output files...
 
-Done in 85ms
+Done in 152ms
