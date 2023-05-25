@@ -893,6 +893,19 @@
    ├ src/utils/isString.js                                                                                      28b     0.8%
    └ src/count-down.js                                                                                          26b     0.7%
 
+  dist/format-date.min.js                                                                                      2.3kb  100.0%
+   ├ src/classes/DateFormatter.js                                                                              1.0kb   45.9%
+   ├ src/utils/FormidableElement.js                                                                            344b    14.7%
+   ├ src/utils/date.js                                                                                         265b    11.4%
+   ├ src/utils/replaceCallbacks.js                                                                             155b     6.6%
+   ├ src/utils/reflectedProperties.js                                                                          119b     5.1%
+   ├ src/utils/whenParsed.js                                                                                   117b     5.0%
+   ├ src/utils/defaultLang.js                                                                                   76b     3.3%
+   ├ src/utils/defineEl.js                                                                                      56b     2.4%
+   ├ src/utils/getGlobalFn.js                                                                                   49b     2.1%
+   ├ src/utils/isString.js                                                                                      28b     1.2%
+   └ src/format-date.js                                                                                         27b     1.2%
+
   dist/clipboard-copy.min.js                                                                                   1.9kb  100.0%
    ├ src/classes/ClipboardCopy.js                                                                              1.1kb   57.8%
    ├ src/utils/FormidableElement.js                                                                            344b    18.1%
@@ -903,16 +916,16 @@
    ├ src/clipboard-copy.js                                                                                      30b     1.6%
    └ src/utils/isString.js                                                                                      28b     1.5%
 
-  dist/format-number.min.js                                                                                    1.8kb  100.0%
-   ├ src/classes/NumberFormatter.js                                                                            803b    44.6%
-   ├ src/utils/FormidableElement.js                                                                            344b    19.1%
-   ├ src/utils/replaceCallbacks.js                                                                             155b     8.6%
-   ├ src/utils/reflectedProperties.js                                                                          119b     6.6%
-   ├ src/utils/whenParsed.js                                                                                   117b     6.5%
-   ├ src/utils/defaultLang.js                                                                                   76b     4.2%
-   ├ src/utils/defineEl.js                                                                                      56b     3.1%
-   ├ src/utils/getGlobalFn.js                                                                                   49b     2.7%
-   ├ src/format-number.js                                                                                       29b     1.6%
+  dist/format-number.min.js                                                                                    1.7kb  100.0%
+   ├ src/classes/NumberFormatter.js                                                                            723b    42.0%
+   ├ src/utils/FormidableElement.js                                                                            344b    20.0%
+   ├ src/utils/replaceCallbacks.js                                                                             155b     9.0%
+   ├ src/utils/reflectedProperties.js                                                                          119b     6.9%
+   ├ src/utils/whenParsed.js                                                                                   117b     6.8%
+   ├ src/utils/defaultLang.js                                                                                   76b     4.4%
+   ├ src/utils/defineEl.js                                                                                      56b     3.3%
+   ├ src/utils/getGlobalFn.js                                                                                   49b     2.8%
+   ├ src/format-number.js                                                                                       29b     1.7%
    └ src/utils/isString.js                                                                                      28b     1.6%
 
   dist/bound-input.min.js                                                                                      567b   100.0%
@@ -936,6 +949,6 @@
   dist\tiptap-editor.min.js       300.1kb
   dist\tiptap-editor.raw.min.js   299.1kb
   dist\tel-input.min.js           288.4kb
-  ...and 25 more output files...
+  ...and 26 more output files...
 
-Done in 152ms
+Done in 800ms

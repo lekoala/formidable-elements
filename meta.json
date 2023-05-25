@@ -916,8 +916,50 @@
       "imports": [],
       "format": "esm"
     },
+    "src/classes/DateFormatter.js": {
+      "bytes": 2597,
+      "imports": [
+        {
+          "path": "src/utils/FormidableElement.js",
+          "kind": "import-statement",
+          "original": "../utils/FormidableElement.js"
+        },
+        {
+          "path": "src/utils/date.js",
+          "kind": "import-statement",
+          "original": "../utils/date.js"
+        },
+        {
+          "path": "src/utils/defaultLang.js",
+          "kind": "import-statement",
+          "original": "../utils/defaultLang.js"
+        },
+        {
+          "path": "src/utils/reflectedProperties.js",
+          "kind": "import-statement",
+          "original": "../utils/reflectedProperties.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/format-date.js": {
+      "bytes": 178,
+      "imports": [
+        {
+          "path": "src/classes/DateFormatter.js",
+          "kind": "import-statement",
+          "original": "./classes/DateFormatter.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        }
+      ],
+      "format": "esm"
+    },
     "src/classes/NumberFormatter.js": {
-      "bytes": 1859,
+      "bytes": 1724,
       "imports": [
         {
           "path": "src/utils/FormidableElement.js",
@@ -6307,6 +6349,47 @@
       },
       "bytes": 64637
     },
+    "dist/format-date.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/format-date.js",
+      "inputs": {
+        "src/utils/isString.js": {
+          "bytesInOutput": 28
+        },
+        "src/utils/getGlobalFn.js": {
+          "bytesInOutput": 49
+        },
+        "src/utils/replaceCallbacks.js": {
+          "bytesInOutput": 155
+        },
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 117
+        },
+        "src/utils/FormidableElement.js": {
+          "bytesInOutput": 344
+        },
+        "src/utils/date.js": {
+          "bytesInOutput": 265
+        },
+        "src/utils/defaultLang.js": {
+          "bytesInOutput": 76
+        },
+        "src/utils/reflectedProperties.js": {
+          "bytesInOutput": 119
+        },
+        "src/classes/DateFormatter.js": {
+          "bytesInOutput": 1072
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 56
+        },
+        "src/format-date.js": {
+          "bytesInOutput": 27
+        }
+      },
+      "bytes": 2333
+    },
     "dist/format-number.min.js": {
       "imports": [],
       "exports": [],
@@ -6334,7 +6417,7 @@
           "bytesInOutput": 119
         },
         "src/classes/NumberFormatter.js": {
-          "bytesInOutput": 803
+          "bytesInOutput": 723
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -6343,7 +6426,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 1801
+      "bytes": 1721
     },
     "dist/growing-textarea.min.js": {
       "imports": [],
