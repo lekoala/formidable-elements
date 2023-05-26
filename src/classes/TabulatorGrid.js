@@ -3,7 +3,7 @@ import { default as Tabulator } from "../../node_modules/tabulator-tables/src/js
 import * as modules from "./tabulator/optional.js";
 import * as editors from "./tabulator/custom-editors.js";
 import * as formatters from "./tabulator/custom-formatters.js";
-import { simpleRowFormatter } from "./tabulator/helpers.js";
+import { simpleRowFormatter, expandTooltips } from "./tabulator/helpers.js";
 import ModuleBinder from "../../node_modules/tabulator-tables/src/js/core/tools/ModuleBinder.js";
 
 class TabulatorFull extends Tabulator {}
@@ -35,11 +35,22 @@ class TabulatorGrid extends FormidableElement {
     const el = this.el;
     const config = this.config;
 
+    // Trigger default action on row click
     const rowClickTriggersAction = config._rowClickTriggersAction || false;
     delete config["_rowClickTriggersAction"];
 
+    //@link https://tabulator.info/docs/5.5/columns#autocolumns
     if (!config.columns) {
       config.autoColumns = true;
+    }
+
+    //@link https://tabulator.info/docs/5.5/columns#defaults
+    if (!config.columnDefaults) {
+      config.columnDefaults = {
+        //@link https://tabulator.info/docs/5.5/menu#tooltips-cell
+        tooltip: expandTooltips,
+        headerFilter: this.dataset.filter == "true" ? true : false,
+      };
     }
 
     // Data provider
@@ -193,9 +204,6 @@ class TabulatorGrid extends FormidableElement {
       });
     }
     if (removeRow) {
-      if (!config.selectable) {
-        removeRow.setAttribute("hidden", "");
-      }
       removeRow.addEventListener("click", (event) => {
         //@ts-ignore
         tabulator.getSelectedRows().forEach((row) => {

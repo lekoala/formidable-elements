@@ -17,8 +17,8 @@
 
     <!-- for external editor -->
     <script type="module" src="../dist/input-mask.min.js"></script>
-    <script type="module"
-        src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.4.0/dist/components/format-number/format-number.js"></script>
+    <script type="module" src="../dist/format-number.min.js"></script>
+    <script type="module" src="../dist/format-date.min.js"></script>
 
     <!-- to be loaded before -->
     <script type="module">
@@ -55,7 +55,7 @@
 
         var tableDataNested = [
             {
-                name: "Oli Bob", location: "United Kingdom", gender: "male", col: "red", dob: "14/04/1984", country: "UK", _children: [
+                name: "Oli Bob with a very long name expanded to a tooltip", location: "United Kingdom", gender: "male", col: "red", dob: "14/04/1984", country: "UK", _children: [
                     { name: "Mary May", location: "Germany", gender: "female", col: "blue", dob: "14/05/1982", country: "UK", },
                     { name: "Christine Lobowski", location: "France", gender: "female", col: "green", dob: "22/05/1982", country: "UK", },
                     {
@@ -209,7 +209,7 @@
                     formatter: "external",
                     formatterParams: {
                         "function": (v) => {
-                            return `<sl-format-number type="currency" currency="EUR" value="${v}" lang="de"></sl-format-number>`
+                            return `<format-number currency="EUR" value="${v}" lang="de"></format-number>`
                         }
                     },
                     minWidth: 150,
@@ -260,7 +260,8 @@
         let clone = Object.assign({}, window['editGridConfig']);
         clone['ajaxURL'] = '';
         clone['pagination'] = false;
-        clone['selectable'] = true;
+        // don't select row on click with editable
+        // clone['selectable'] = true;
         clone['paginationMode'] = 'local';
         clone['columns'] = [
             {
@@ -296,7 +297,7 @@
                 formatter: "external",
                 formatterParams: {
                     "function": (v) => {
-                        return `<sl-format-number type="currency" currency="EUR" value="${v}" lang="de"></sl-format-number>`
+                        return `<format-number type="currency" currency="EUR" value="${v}" lang="de"></format-number>`
                     }
                 },
                 minWidth: 150,
@@ -311,7 +312,7 @@
             }
         ]
         clone['columns'].unshift({
-            formatter: "rowSelection", titleFormatter: "rowSelection", align: "center", headerSort: false, width: 40
+            formatter: "rowSelection", titleFormatter: "rowSelection", hozAlign: "center", headerSort: false, width: 40
         });
 
         window['editEmptyGridConfig'] = clone;
@@ -324,7 +325,7 @@
 <body class="p-3">
     <p>Loading json</p>
 
-    <tabulator-grid data-config='{"ajaxURL": "./data/tabulator-json-1.json"}'>
+    <tabulator-grid data-config='{"ajaxURL": "./data/tabulator-json-1.json"}' data-filter="true">
     </tabulator-grid>
 
     <hr>

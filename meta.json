@@ -4105,12 +4105,12 @@
       "format": "esm"
     },
     "src/classes/tabulator/helpers.js": {
-      "bytes": 244,
+      "bytes": 723,
       "imports": [],
       "format": "esm"
     },
     "src/classes/TabulatorGrid.js": {
-      "bytes": 7151,
+      "bytes": 7507,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Tabulator.js",
@@ -7312,7 +7312,7 @@
           "bytesInOutput": 810
         },
         "src/classes/tabulator/helpers.js": {
-          "bytesInOutput": 137
+          "bytesInOutput": 225
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7330,7 +7330,7 @@
           "bytesInOutput": 353
         },
         "src/classes/TabulatorGrid.js": {
-          "bytesInOutput": 2473
+          "bytesInOutput": 2520
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7348,7 +7348,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 452140
+      "bytes": 452275
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -7887,7 +7887,7 @@
           "bytesInOutput": 810
         },
         "src/classes/tabulator/helpers.js": {
-          "bytesInOutput": 137
+          "bytesInOutput": 225
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7905,7 +7905,7 @@
           "bytesInOutput": 353
         },
         "src/classes/TabulatorGrid.js": {
-          "bytesInOutput": 2473
+          "bytesInOutput": 2520
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7914,7 +7914,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 407483
+      "bytes": 407618
     },
     "dist/tel-input.min.js": {
       "imports": [],
