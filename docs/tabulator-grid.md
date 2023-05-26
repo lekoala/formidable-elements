@@ -33,6 +33,7 @@ Add `sticky` attribute
 - data-filter
 - data-row-click-triggers-action
 - data-listeners
+- data-fixed-paginated-height
 
 ## Extra config keys
 

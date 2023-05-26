@@ -37,9 +37,6 @@ class TabulatorGrid extends EventfulElement {
     const el = this.el;
     const config = this.config;
 
-    // Trigger default action on row click
-    const rowClickTriggersAction = parseBool(this.dataset.rowClickTriggersAction);
-
     //@link https://tabulator.info/docs/5.5/columns#autocolumns
     if (!config.columns) {
       config.autoColumns = true;
@@ -113,6 +110,7 @@ class TabulatorGrid extends EventfulElement {
     }
 
     // Click on row to trigger default action
+    const rowClickTriggersAction = parseBool(this.dataset.rowClickTriggersAction);
     if (rowClickTriggersAction) {
       tabulator.on("rowClick", function (e, row) {
         const target = e.target.closest(".tabulator-cell");
@@ -155,6 +153,7 @@ class TabulatorGrid extends EventfulElement {
 
     // Fix table size on full redraw
     // @link https://github.com/olifolkerd/tabulator/issues/4155
+    const fixedPaginatedHeight = parseBool(this.dataset.fixedPaginatedHeight);
     tabulator.on("renderStarted", () => {
       const holder = tabulator.element.querySelector(".tabulator-tableholder");
       holder.style.minHeight = holder.clientHeight + "px";
@@ -168,7 +167,7 @@ class TabulatorGrid extends EventfulElement {
       // If you want to keep table with paginated element with the same size if rows are missing (eg: on last page)
       let paginatedHeight = 0;
       //@ts-ignore
-      if (tabulator.options.pagination && this.config.paginationSize <= 12 && tabulator.getPage() > 2 && table.firstChild) {
+      if (tabulator.options.pagination && fixedPaginatedHeight && table.firstChild) {
         paginatedHeight = this.config.paginationSize * table.firstChild.offsetHeight;
       }
       // Replace height value computed by tabulator and remove minHeight
