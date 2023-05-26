@@ -4069,7 +4069,7 @@
       "format": "esm"
     },
     "src/classes/tabulator/Format/formatters/button.js": {
-      "bytes": 2444,
+      "bytes": 2452,
       "imports": [
         {
           "path": "src/utils/interpolate.js",
@@ -7338,7 +7338,7 @@
           "bytesInOutput": 58
         },
         "src/classes/tabulator/Format/formatters/button.js": {
-          "bytesInOutput": 875
+          "bytesInOutput": 879
         },
         "src/classes/tabulator/helpers.js": {
           "bytesInOutput": 225
@@ -7380,7 +7380,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 454413
+      "bytes": 454417
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -7919,7 +7919,7 @@
           "bytesInOutput": 58
         },
         "src/classes/tabulator/Format/formatters/button.js": {
-          "bytesInOutput": 875
+          "bytesInOutput": 879
         },
         "src/classes/tabulator/helpers.js": {
           "bytesInOutput": 225
@@ -7952,7 +7952,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 408704
+      "bytes": 408708
     },
     "dist/tel-input.min.js": {
       "imports": [],

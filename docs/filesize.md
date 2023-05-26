@@ -89,8 +89,8 @@
    ├ node_modules/tabulator-tables/src/js/core/tools/Alert.js                                                  958b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/input.js                               891b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/range.js                               883b     0.2%
+   ├ src/classes/tabulator/Format/formatters/button.js                                                         879b     0.2%
    ├ node_modules/tabulator-tables/src/js/core/cell/CellComponent.js                                           876b     0.2%
-   ├ src/classes/tabulator/Format/formatters/button.js                                                         875b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/inputMask.js                                            862b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/rowSelection.js                   858b     0.2%
    ├ node_modules/tabulator-tables/src/js/core/defaults/options.js                                             845b     0.2%
@@ -280,8 +280,8 @@
    ├ node_modules/tabulator-tables/src/js/core/tools/Alert.js                                                  958b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/input.js                               891b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/range.js                               883b     0.2%
+   ├ src/classes/tabulator/Format/formatters/button.js                                                         879b     0.2%
    ├ node_modules/tabulator-tables/src/js/core/cell/CellComponent.js                                           876b     0.2%
-   ├ src/classes/tabulator/Format/formatters/button.js                                                         875b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/inputMask.js                                            862b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/rowSelection.js                   858b     0.2%
    ├ node_modules/tabulator-tables/src/js/core/defaults/options.js                                             845b     0.2%
@@ -955,4 +955,4 @@
   dist\tel-input.min.js           288.4kb
   ...and 26 more output files...
 
-Done in 147ms
+Done in 88ms
