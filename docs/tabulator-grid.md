@@ -24,6 +24,10 @@ With `flexCollapse`, you can collapse cells while keeping them fully editable.
 
 Add `lazy` attribute
 
+## Sticky headers
+
+Add `sticky` attribute
+
 ## Data attributes
 
 - data-filter
@@ -47,4 +51,5 @@ Add/remove rows with buttons and selectable
 - Nice pagination icons
 - Nice scrollers on desktop
 - Prevent submit on enter if nested in a form
+- Sticky headers with tabulator-sticky
 

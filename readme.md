@@ -26,6 +26,10 @@ And some custom made stuff as well:
 - clipboard-copy
 - countdown
 - growing-textarea
+- bound-input
+- format-date
+- format-number
+- anchor-ed
 - locale-provider
 
 ## Documentation
@@ -68,12 +72,17 @@ for the attribute.
 <my-elem data-config='{"test": true}'></my-elem>
 ```
 
+WARNING: this means that any value with a single quote needs to be escaped otherwise json will not be valid.
+In php, this can be done like so : `$json = str_replace("'", '&#39;', $json);`
+
 Why no plain data attributes ? Well, data attributes are a pain to use. They default to string and this
 require conversion to make it work. Also, components with lots of options quickly become horrible.
 
 Some elements have specific (data) attributes for some custom features, see dedicated docs in /docs.
 
 You can access the configuration using the `config` public property of the element.
+
+Some heavier elements support the `lazy` attribute to make them `created` once visible in the viewport.
 
 ### Passing functions
 

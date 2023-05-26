@@ -175,6 +175,11 @@ class TabulatorGrid extends EventfulElement {
     const navigatorClass = tabulator.browserMobile ? "mobile" : "desktop";
     el.classList.add(`tabulator-navigator-${navigatorClass}`);
 
+    // Sticky shortcut
+    if (this.hasAttribute("sticky")) {
+      el.classList.add(`tabulator-sticky`);
+    }
+
     // Mitigate issue https://github.com/olifolkerd/tabulator/issues/3692
     if (form) {
       tabulator.element.addEventListener(
