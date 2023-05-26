@@ -163,12 +163,19 @@ class TabulatorGrid extends EventfulElement {
     tabulator.on("renderComplete", () => {
       const holder = tabulator.element.querySelector(".tabulator-tableholder");
       const table = tabulator.element.querySelector(".tabulator-table");
+
+      let height = Math.min(holder.clientHeight, table.clientHeight);
       // If you want to keep table with paginated element with the same size if rows are missing (eg: on last page)
       let paginatedHeight = 0;
       if (tabulator.options.pagination && table.firstChild) {
         paginatedHeight = this.config.paginationSize * table.firstChild.offsetHeight;
+        // only if more than one page
+        //@ts-ignore
+        if (height < paginatedHeight && tabulator.getPageMax() > 1) {
+          height = paginatedHeight;
+        }
       }
-      holder.style.minHeight = Math.max(Math.min(holder.clientHeight, table.clientHeight), paginatedHeight) + "px";
+      holder.style.minHeight = `${height}px`;
     });
 
     // Add desktop or mobile class

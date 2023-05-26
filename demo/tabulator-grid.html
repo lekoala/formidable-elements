@@ -328,7 +328,7 @@
 <body class="p-3">
     <p>Loading json</p>
 
-    <tabulator-grid data-config='{"ajaxURL": "./data/tabulator-json-1.json"}' data-filter="true">
+    <tabulator-grid data-config='{"ajaxURL": "./data/tabulator-json-1.json", "height": "100%"}' data-filter="true">
         <div class="tabulator-sticky"></div>
     </tabulator-grid>
 
@@ -339,6 +339,7 @@
     <tabulator-grid id="timer-grid"
         data-config='{"data": {"__fn": "demoData"}, "layout": "fitColumns", "pagination": "local", "paginationSize": 10}'>
     </tabulator-grid>
+
     <hr>
 
     <p>Responsive table using ajax calls. Live editable content even in responsive columns thanks to flexResponsive.</p>
