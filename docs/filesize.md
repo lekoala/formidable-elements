@@ -42,7 +42,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/FrozenRows/FrozenRows.js                                     2.7kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/History/History.js                                           2.6kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/star.js                                2.5kb    0.6%
-   ├ src/classes/TabulatorGrid.js                                                                              2.5kb    0.6%
+   ├ src/classes/TabulatorGrid.js                                                                              2.4kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/Import/Import.js                                             2.3kb    0.5%
    ├ node_modules/tabulator-tables/src/js/modules/Mutator/Mutator.js                                           2.2kb    0.5%
    ├ node_modules/tabulator-tables/src/js/core/rendering/Renderer.js                                           2.2kb    0.5%
@@ -174,6 +174,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters/exists.js                               80b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/plaintext.js                       77b     0.0%
    ├ src/utils/safeGlobalFn.js                                                                                  72b     0.0%
+   ├ src/utils/parseBool.js                                                                                     70b     0.0%
    ├ src/classes/tabulator/custom-editors.js                                                                    67b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/list.js                                 66b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Download/defaults/downloaders.js                              60b     0.0%
@@ -231,7 +232,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/FrozenRows/FrozenRows.js                                     2.7kb    0.7%
    ├ node_modules/tabulator-tables/src/js/modules/History/History.js                                           2.6kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/star.js                                2.5kb    0.6%
-   ├ src/classes/TabulatorGrid.js                                                                              2.5kb    0.6%
+   ├ src/classes/TabulatorGrid.js                                                                              2.4kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/Import/Import.js                                             2.3kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/Mutator/Mutator.js                                           2.2kb    0.6%
    ├ node_modules/tabulator-tables/src/js/core/rendering/Renderer.js                                           2.2kb    0.6%
@@ -361,6 +362,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters/exists.js                               80b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/plaintext.js                       77b     0.0%
    ├ src/utils/safeGlobalFn.js                                                                                  72b     0.0%
+   ├ src/utils/parseBool.js                                                                                     70b     0.0%
    ├ src/classes/tabulator/custom-editors.js                                                                    67b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/list.js                                 66b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Download/defaults/downloaders.js                              60b     0.0%

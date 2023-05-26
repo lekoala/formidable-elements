@@ -76,7 +76,6 @@
         ];
 
         window['datagridConfig'] = {
-            _rowClickTriggersAction: true,
             height: "311px",
             data: tableDataNested,
             dataTree: true,
@@ -100,7 +99,7 @@
                 {
                     title: "", field: "_btn", hozAlign: "center", formatter: "button", cssClass: "tabulator-cell-btn", formatterParams: {
                         "title": "My Action", "icon": "star", "onClick": (ev, btn, cell) => {
-                            console.log(ev, btn, cell);
+                            console.log("ACTION", ev, btn, cell);
                         }
                     }
                 },
@@ -345,7 +344,7 @@
 
     <p>Global config (datatree example + nice scroll + fixed height 311px)</p>
 
-    <tabulator-grid id="data-grid" data-config='datagridConfig' style="border:1px solid #666;">
+    <tabulator-grid id="data-grid" data-config='datagridConfig' style="border:1px solid #666;" data-row-click-triggers-action="true">
     </tabulator-grid>
     <hr>
 

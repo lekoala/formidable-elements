@@ -18,6 +18,7 @@ TabulatorFull.extendModule("format", "formatters", formatters);
 
 import FormidableElement from "../utils/FormidableElement.js";
 import { iconPrev, iconNext, iconFirst, iconLast } from "../utils/icons.js";
+import parseBool from "../utils/parseBool.js";
 
 class TabulatorGrid extends FormidableElement {
   /**
@@ -36,8 +37,7 @@ class TabulatorGrid extends FormidableElement {
     const config = this.config;
 
     // Trigger default action on row click
-    const rowClickTriggersAction = config._rowClickTriggersAction || false;
-    delete config["_rowClickTriggersAction"];
+    const rowClickTriggersAction = parseBool(this.dataset.rowClickTriggersAction);
 
     //@link https://tabulator.info/docs/5.5/columns#autocolumns
     if (!config.columns) {
@@ -49,7 +49,7 @@ class TabulatorGrid extends FormidableElement {
       config.columnDefaults = {
         //@link https://tabulator.info/docs/5.5/menu#tooltips-cell
         tooltip: expandTooltips,
-        headerFilter: this.dataset.filter == "true" ? true : false,
+        headerFilter: parseBool(this.dataset.filter),
       };
     }
 
@@ -115,12 +115,7 @@ class TabulatorGrid extends FormidableElement {
     if (rowClickTriggersAction) {
       tabulator.on("rowClick", function (e, row) {
         const target = e.target.closest(".tabulator-cell");
-        // don't trigger in editable cells
-        if (target.classList.contains("tabulator-cell-editable")) {
-          return;
-        }
-        // don't trigger for other buttons
-        if (target.classList.contains("tabulator-cell-btn")) {
+        if (!target || target.classList.contains("tabulator-cell-editable") || target.classList.contains("tabulator-cell-btn")) {
           return;
         }
         // don't trigger on interactive elements

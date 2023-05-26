@@ -4109,8 +4109,13 @@
       "imports": [],
       "format": "esm"
     },
+    "src/utils/parseBool.js": {
+      "bytes": 108,
+      "imports": [],
+      "format": "esm"
+    },
     "src/classes/TabulatorGrid.js": {
-      "bytes": 7507,
+      "bytes": 7381,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Tabulator.js",
@@ -4151,6 +4156,11 @@
           "path": "src/utils/icons.js",
           "kind": "import-statement",
           "original": "../utils/icons.js"
+        },
+        {
+          "path": "src/utils/parseBool.js",
+          "kind": "import-statement",
+          "original": "../utils/parseBool.js"
         }
       ],
       "format": "esm"
@@ -7329,8 +7339,11 @@
         "src/utils/FormidableElement.js": {
           "bytesInOutput": 353
         },
+        "src/utils/parseBool.js": {
+          "bytesInOutput": 70
+        },
         "src/classes/TabulatorGrid.js": {
-          "bytesInOutput": 2520
+          "bytesInOutput": 2497
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7348,7 +7361,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 452275
+      "bytes": 452322
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -7904,8 +7917,11 @@
         "src/utils/FormidableElement.js": {
           "bytesInOutput": 353
         },
+        "src/utils/parseBool.js": {
+          "bytesInOutput": 70
+        },
         "src/classes/TabulatorGrid.js": {
-          "bytesInOutput": 2520
+          "bytesInOutput": 2497
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7914,7 +7930,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 407618
+      "bytes": 407665
     },
     "dist/tel-input.min.js": {
       "imports": [],
