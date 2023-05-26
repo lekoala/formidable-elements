@@ -3568,7 +3568,7 @@
       "format": "esm"
     },
     "src/classes/tabulator/ResponsiveLayout/ResponsiveLayout.js": {
-      "bytes": 5067,
+      "bytes": 5066,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/modules/ResponsiveLayout/ResponsiveLayout.js",
@@ -4027,7 +4027,7 @@
       "format": "esm"
     },
     "src/classes/tabulator/Format/formatters/responsiveCollapse.js": {
-      "bytes": 1608,
+      "bytes": 1548,
       "imports": [],
       "format": "esm"
     },
@@ -4126,7 +4126,7 @@
       "format": "esm"
     },
     "src/classes/TabulatorGrid.js": {
-      "bytes": 8197,
+      "bytes": 8087,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Tabulator.js",
@@ -4186,7 +4186,7 @@
       "imports": []
     },
     "src/css/tabulator-grid.min.css": {
-      "bytes": 8766,
+      "bytes": 9552,
       "imports": []
     },
     "src/tabulator-grid.js": {
@@ -7320,7 +7320,7 @@
           "bytesInOutput": 110
         },
         "src/classes/tabulator/Format/formatters/responsiveCollapse.js": {
-          "bytesInOutput": 1013
+          "bytesInOutput": 1023
         },
         "src/utils/icons.js": {
           "bytesInOutput": 1256
@@ -7362,7 +7362,7 @@
           "bytesInOutput": 70
         },
         "src/classes/TabulatorGrid.js": {
-          "bytesInOutput": 2764
+          "bytesInOutput": 2759
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7371,7 +7371,7 @@
           "bytesInOutput": 35890
         },
         "src/css/tabulator-grid.min.css": {
-          "bytesInOutput": 8776
+          "bytesInOutput": 9562
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 159
@@ -7380,7 +7380,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 453622
+      "bytes": 454413
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -7901,7 +7901,7 @@
           "bytesInOutput": 110
         },
         "src/classes/tabulator/Format/formatters/responsiveCollapse.js": {
-          "bytesInOutput": 1013
+          "bytesInOutput": 1023
         },
         "src/utils/icons.js": {
           "bytesInOutput": 1256
@@ -7943,7 +7943,7 @@
           "bytesInOutput": 70
         },
         "src/classes/TabulatorGrid.js": {
-          "bytesInOutput": 2764
+          "bytesInOutput": 2759
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7952,7 +7952,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 408699
+      "bytes": 408704
     },
     "dist/tel-input.min.js": {
       "imports": [],

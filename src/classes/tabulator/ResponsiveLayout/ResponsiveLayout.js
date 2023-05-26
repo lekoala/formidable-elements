@@ -4,7 +4,7 @@ import ResponsiveLayout from "../../../../node_modules/tabulator-tables/src/js/m
 /**
  * Introduce a new "flexCollapse" mode that depends on flex order for showing responsive rows
  * flexCollapse allows editable collapsed cells
- * 
+ *
  * Rows are toggled with row-responsive-toggled that is triggered by the updated responsiveCollapse formatter
  */
 class MyResponsiveLayout extends ResponsiveLayout {
