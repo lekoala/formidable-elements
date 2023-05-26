@@ -168,7 +168,7 @@ class TabulatorGrid extends EventfulElement {
       // If you want to keep table with paginated element with the same size if rows are missing (eg: on last page)
       let paginatedHeight = 0;
       //@ts-ignore
-      if (tabulator.options.pagination && this.config.paginationSize <= 12 && tabulator.getPageMax() > 1 && table.firstChild) {
+      if (tabulator.options.pagination && this.config.paginationSize <= 12 && tabulator.getPage() > 2 && table.firstChild) {
         paginatedHeight = this.config.paginationSize * table.firstChild.offsetHeight;
       }
       // Replace height value computed by tabulator and remove minHeight
