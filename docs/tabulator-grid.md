@@ -28,6 +28,7 @@ Add `lazy` attribute
 
 - data-filter
 - data-row-click-triggers-action
+- data-listeners
 
 ## Extra config keys
 

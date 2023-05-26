@@ -19,6 +19,7 @@ TabulatorFull.extendModule("format", "formatters", formatters);
 import EventfulElement from "../utils/EventfulElement.js";
 import { iconPrev, iconNext, iconFirst, iconLast } from "../utils/icons.js";
 import parseBool from "../utils/parseBool.js";
+import getGlobalFn from "../utils/getGlobalFn.js";
 
 class TabulatorGrid extends EventfulElement {
   /**
@@ -206,6 +207,15 @@ class TabulatorGrid extends EventfulElement {
         });
         updateHiddenInput();
       });
+    }
+
+    // Extra listeners
+    const listeners = this.dataset.listeners ? JSON.parse(this.dataset.listeners) : {};
+    for (const listenerName in listeners) {
+      var cb = getGlobalFn(listeners[listenerName]);
+      if (cb) {
+        tabulator.on(listenerName, cb);
+      }
     }
 
     this.tabulator = tabulator;
