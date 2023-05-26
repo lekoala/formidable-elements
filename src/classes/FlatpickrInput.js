@@ -215,7 +215,10 @@ class FlatpickrInput extends FormidableElement {
     events.forEach((type) => {
       input.removeEventListener(type, this);
     });
-    this.flatpickr.destroy();
+    if (this.flatpickr) {
+      this.flatpickr.destroy();
+      this.flatpickr = null;
+    }
   }
 }
 

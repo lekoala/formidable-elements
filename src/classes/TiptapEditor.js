@@ -449,8 +449,10 @@ class TiptapEditor extends EventfulElement {
   }
 
   destroyed() {
-    this.tiptap.destroy();
-    this.tiptap = null;
+    if (this.tiptap) {
+      this.tiptap.destroy();
+      this.tiptap = null;
+    }
     this.buttons = null;
   }
 

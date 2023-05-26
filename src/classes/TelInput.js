@@ -71,8 +71,10 @@ class TelInput extends FormidableElement {
   }
 
   destroyed() {
-    this.iti.destroy();
-    this.iti = null;
+    if (this.iti) {
+      this.iti.destroy();
+      this.iti = null;
+    }
   }
 }
 

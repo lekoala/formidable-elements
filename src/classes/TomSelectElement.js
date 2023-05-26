@@ -41,8 +41,10 @@ class TomSelectElement extends FormidableElement {
   }
 
   destroyed() {
-    this.tomselect.destroy();
-    this.tomselect = null;
+    if (this.tomselect) {
+      this.tomselect.destroy();
+      this.tomselect = null;
+    }
   }
 }
 

@@ -421,8 +421,10 @@ class SquireEditor extends EventfulElement {
   }
 
   destroyed() {
-    this.squire.destroy();
-    this.squire = null;
+    if (this.squire) {
+      this.squire.destroy();
+      this.squire = null;
+    }
     this.buttons = null;
   }
 

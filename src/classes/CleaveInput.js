@@ -38,8 +38,10 @@ class CleaveInput extends FormidableElement {
   }
 
   destroyed() {
-    this.cleave.destroy();
-    this.cleave = null;
+    if (this.cleave) {
+      this.cleave.destroy();
+      this.cleave = null;
+    }
   }
 }
 

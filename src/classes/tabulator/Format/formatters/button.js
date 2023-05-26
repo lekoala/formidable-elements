@@ -54,6 +54,9 @@ export default function (cell, formatterParams, onRendered) {
     class: classes,
   };
   if (ajax) {
+    if (typeof ajax != "string") {
+      console.error("Ajax param must be a string");
+    }
     attrs["data-ajax"] = ajax;
   }
 

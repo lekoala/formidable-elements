@@ -74,9 +74,11 @@ class FilePondInput extends FormidableElement {
   }
 
   destroyed() {
-    //@ts-ignore
-    this.filepond.destroy();
-    this.filepond = null;
+    if (this.filepond) {
+      //@ts-ignore
+      this.filepond.destroy();
+      this.filepond = null;
+    }
   }
 }
 

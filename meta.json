@@ -69,7 +69,7 @@
       "format": "esm"
     },
     "src/utils/getGlobalFn.js": {
-      "bytes": 70,
+      "bytes": 103,
       "imports": [],
       "format": "esm"
     },
@@ -271,7 +271,7 @@
       "format": "esm"
     },
     "src/classes/CleaveInput.js": {
-      "bytes": 1102,
+      "bytes": 1137,
       "imports": [
         {
           "path": "node_modules/cleave-es6/src/Cleave.js",
@@ -529,7 +529,7 @@
       "format": "esm"
     },
     "src/classes/FilePondInput.js": {
-      "bytes": 3345,
+      "bytes": 3384,
       "imports": [
         {
           "path": "node_modules/filepond/dist/filepond.esm.js",
@@ -787,7 +787,7 @@
       "format": "esm"
     },
     "src/classes/FlatpickrInput.js": {
-      "bytes": 6261,
+      "bytes": 6327,
       "imports": [
         {
           "path": "node_modules/flatpickr/dist/esm/index.js",
@@ -1630,7 +1630,7 @@
       "format": "esm"
     },
     "src/classes/SquireEditor.js": {
-      "bytes": 15619,
+      "bytes": 15654,
       "imports": [
         {
           "path": "node_modules/squire-rte/dist/squire-raw.mjs",
@@ -3932,8 +3932,14 @@
       "format": "esm"
     },
     "src/utils/safeGlobalFn.js": {
-      "bytes": 141,
-      "imports": [],
+      "bytes": 201,
+      "imports": [
+        {
+          "path": "src/utils/getGlobalFn.js",
+          "kind": "import-statement",
+          "original": "./getGlobalFn.js"
+        }
+      ],
       "format": "esm"
     },
     "src/classes/tabulator/Edit/editors/external.js": {
@@ -4063,7 +4069,7 @@
       "format": "esm"
     },
     "src/classes/tabulator/Format/formatters/button.js": {
-      "bytes": 2348,
+      "bytes": 2444,
       "imports": [
         {
           "path": "src/utils/interpolate.js",
@@ -4120,7 +4126,7 @@
       "format": "esm"
     },
     "src/classes/TabulatorGrid.js": {
-      "bytes": 7994,
+      "bytes": 8197,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Tabulator.js",
@@ -4180,7 +4186,7 @@
       "imports": []
     },
     "src/css/tabulator-grid.min.css": {
-      "bytes": 8500,
+      "bytes": 8766,
       "imports": []
     },
     "src/tabulator-grid.js": {
@@ -4256,7 +4262,7 @@
       "format": "esm"
     },
     "src/classes/TelInput.js": {
-      "bytes": 2227,
+      "bytes": 2259,
       "imports": [
         {
           "path": "node_modules/intl-tel-input/index.js",
@@ -4908,7 +4914,7 @@
       "format": "esm"
     },
     "src/classes/TiptapEditor.js": {
-      "bytes": 15040,
+      "bytes": 15075,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5611,7 +5617,7 @@
       "format": "esm"
     },
     "src/classes/TomSelectElement.js": {
-      "bytes": 1310,
+      "bytes": 1348,
       "imports": [
         {
           "path": "node_modules/tom-select/src/tom-select.complete.ts",
@@ -5877,7 +5883,7 @@
           "bytesInOutput": 344
         },
         "src/classes/CleaveInput.js": {
-          "bytesInOutput": 331
+          "bytesInOutput": 346
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -5886,7 +5892,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 18117
+      "bytes": 18132
     },
     "dist/clipboard-copy.min.js": {
       "imports": [],
@@ -6103,7 +6109,7 @@
           "bytesInOutput": 353
         },
         "src/classes/FilePondInput.js": {
-          "bytesInOutput": 441
+          "bytesInOutput": 458
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6124,7 +6130,7 @@
           "bytesInOutput": 64
         }
       },
-      "bytes": 189244
+      "bytes": 189261
     },
     "dist/filepond-input.raw.min.js": {
       "imports": [],
@@ -6180,7 +6186,7 @@
           "bytesInOutput": 353
         },
         "src/classes/FilePondInput.js": {
-          "bytesInOutput": 441
+          "bytesInOutput": 458
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6189,7 +6195,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 165583
+      "bytes": 165600
     },
     "dist/flatpickr-input.min.js": {
       "imports": [],
@@ -6227,7 +6233,7 @@
           "bytesInOutput": 42084
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 2178
+          "bytesInOutput": 2216
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6284,7 +6290,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 84378
+      "bytes": 84416
     },
     "dist/flatpickr-input.raw.min.js": {
       "imports": [],
@@ -6322,7 +6328,7 @@
           "bytesInOutput": 42084
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 2178
+          "bytesInOutput": 2216
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6367,7 +6373,7 @@
           "bytesInOutput": 35
         }
       },
-      "bytes": 64637
+      "bytes": 64675
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -6643,7 +6649,7 @@
           "bytesInOutput": 7378
         },
         "src/classes/SquireEditor.js": {
-          "bytesInOutput": 6576
+          "bytesInOutput": 6591
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6658,7 +6664,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 69638
+      "bytes": 69653
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -6711,7 +6717,7 @@
           "bytesInOutput": 7378
         },
         "src/classes/SquireEditor.js": {
-          "bytesInOutput": 6576
+          "bytesInOutput": 6591
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6720,7 +6726,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 68726
+      "bytes": 68741
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -7286,8 +7292,11 @@
         "src/classes/tabulator/custom-editors.js": {
           "bytesInOutput": 67
         },
+        "src/utils/getGlobalFn.js": {
+          "bytesInOutput": 50
+        },
         "src/utils/safeGlobalFn.js": {
-          "bytesInOutput": 72
+          "bytesInOutput": 38
         },
         "src/utils/ce.js": {
           "bytesInOutput": 99
@@ -7329,16 +7338,13 @@
           "bytesInOutput": 58
         },
         "src/classes/tabulator/Format/formatters/button.js": {
-          "bytesInOutput": 810
+          "bytesInOutput": 875
         },
         "src/classes/tabulator/helpers.js": {
           "bytesInOutput": 225
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
-        },
-        "src/utils/getGlobalFn.js": {
-          "bytesInOutput": 50
         },
         "src/utils/replaceCallbacks.js": {
           "bytesInOutput": 163
@@ -7356,7 +7362,7 @@
           "bytesInOutput": 70
         },
         "src/classes/TabulatorGrid.js": {
-          "bytesInOutput": 2696
+          "bytesInOutput": 2764
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7365,7 +7371,7 @@
           "bytesInOutput": 35890
         },
         "src/css/tabulator-grid.min.css": {
-          "bytesInOutput": 8510
+          "bytesInOutput": 8776
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 159
@@ -7374,7 +7380,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 453257
+      "bytes": 453622
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -7867,8 +7873,11 @@
         "src/classes/tabulator/custom-editors.js": {
           "bytesInOutput": 67
         },
+        "src/utils/getGlobalFn.js": {
+          "bytesInOutput": 50
+        },
         "src/utils/safeGlobalFn.js": {
-          "bytesInOutput": 72
+          "bytesInOutput": 38
         },
         "src/utils/ce.js": {
           "bytesInOutput": 99
@@ -7910,16 +7919,13 @@
           "bytesInOutput": 58
         },
         "src/classes/tabulator/Format/formatters/button.js": {
-          "bytesInOutput": 810
+          "bytesInOutput": 875
         },
         "src/classes/tabulator/helpers.js": {
           "bytesInOutput": 225
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
-        },
-        "src/utils/getGlobalFn.js": {
-          "bytesInOutput": 50
         },
         "src/utils/replaceCallbacks.js": {
           "bytesInOutput": 163
@@ -7937,7 +7943,7 @@
           "bytesInOutput": 70
         },
         "src/classes/TabulatorGrid.js": {
-          "bytesInOutput": 2696
+          "bytesInOutput": 2764
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7946,7 +7952,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 408600
+      "bytes": 408699
     },
     "dist/tel-input.min.js": {
       "imports": [],
@@ -7960,7 +7966,7 @@
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 858
+          "bytesInOutput": 870
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
           "bytesInOutput": 251322
@@ -7999,7 +8005,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 295355
+      "bytes": 295367
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8013,7 +8019,7 @@
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 858
+          "bytesInOutput": 870
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
           "bytesInOutput": 251322
@@ -8046,7 +8052,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 291635
+      "bytes": 291647
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -8216,7 +8222,7 @@
           "bytesInOutput": 8254
         },
         "src/classes/TiptapEditor.js": {
-          "bytesInOutput": 5836
+          "bytesInOutput": 5851
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8231,7 +8237,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 307777
+      "bytes": 307792
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -8401,7 +8407,7 @@
           "bytesInOutput": 8254
         },
         "src/classes/TiptapEditor.js": {
-          "bytesInOutput": 5836
+          "bytesInOutput": 5851
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8410,7 +8416,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 306733
+      "bytes": 306748
     },
     "dist/tom-select.min.js": {
       "imports": [],
@@ -8520,7 +8526,7 @@
           "bytesInOutput": 120
         },
         "src/classes/TomSelectElement.js": {
-          "bytesInOutput": 463
+          "bytesInOutput": 481
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8535,7 +8541,7 @@
           "bytesInOutput": 122
         }
       },
-      "bytes": 71573
+      "bytes": 71591
     },
     "dist/tom-select.raw.min.js": {
       "imports": [],
@@ -8645,7 +8651,7 @@
           "bytesInOutput": 120
         },
         "src/classes/TomSelectElement.js": {
-          "bytesInOutput": 463
+          "bytesInOutput": 481
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8654,7 +8660,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 56450
+      "bytes": 56468
     }
   }
 }

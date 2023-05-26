@@ -357,6 +357,10 @@ em.tabulator-value-placeholder {
     text-align: left !important;
 }
 
+.tabulator-responsive-flex-cell input {
+    text-align: left !important;
+}
+
 .tabulator-responsive-flex-cell[data-label]::before {
     content: attr(data-label);
     width: var(--tabulator-responsive-label-width);
@@ -373,6 +377,11 @@ em.tabulator-value-placeholder {
     /* display: none; */
     margin-left: var(--tabulator-margin);
     width: calc(var(--tabulator-responsive-label-width) - var(--tabulator-margin));
+}
+
+.tabulator-editing.tabulator-responsive-flex-cell input,
+.tabulator-editing.tabulator-responsive-flex-cell select {
+    max-width: calc(100% - var(--tabulator-responsive-label-width) - var(--tabulator-margin));
 }
 
 /* Improve handle ui */
