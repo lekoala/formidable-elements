@@ -1577,12 +1577,17 @@
       "format": "esm"
     },
     "src/utils/EventfulElement.js": {
-      "bytes": 719,
+      "bytes": 1833,
       "imports": [
         {
           "path": "src/utils/FormidableElement.js",
           "kind": "import-statement",
           "original": "./FormidableElement.js"
+        },
+        {
+          "path": "src/utils/replaceCallbacks.js",
+          "kind": "import-statement",
+          "original": "./replaceCallbacks.js"
         }
       ],
       "format": "esm"
@@ -4115,7 +4120,7 @@
       "format": "esm"
     },
     "src/classes/TabulatorGrid.js": {
-      "bytes": 7381,
+      "bytes": 7375,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Tabulator.js",
@@ -4148,9 +4153,9 @@
           "original": "../../node_modules/tabulator-tables/src/js/core/tools/ModuleBinder.js"
         },
         {
-          "path": "src/utils/FormidableElement.js",
+          "path": "src/utils/EventfulElement.js",
           "kind": "import-statement",
-          "original": "../utils/FormidableElement.js"
+          "original": "../utils/EventfulElement.js"
         },
         {
           "path": "src/utils/icons.js",
@@ -6612,7 +6617,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 311
+          "bytesInOutput": 736
         },
         "src/utils/ce.js": {
           "bytesInOutput": 99
@@ -6648,7 +6653,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 69213
+      "bytes": 69638
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -6680,7 +6685,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 311
+          "bytesInOutput": 736
         },
         "src/utils/ce.js": {
           "bytesInOutput": 99
@@ -6710,7 +6715,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 68301
+      "bytes": 68726
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -7339,6 +7344,9 @@
         "src/utils/FormidableElement.js": {
           "bytesInOutput": 353
         },
+        "src/utils/EventfulElement.js": {
+          "bytesInOutput": 736
+        },
         "src/utils/parseBool.js": {
           "bytesInOutput": 70
         },
@@ -7361,7 +7369,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 452322
+      "bytes": 453058
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -7917,6 +7925,9 @@
         "src/utils/FormidableElement.js": {
           "bytesInOutput": 353
         },
+        "src/utils/EventfulElement.js": {
+          "bytesInOutput": 736
+        },
         "src/utils/parseBool.js": {
           "bytesInOutput": 70
         },
@@ -7930,7 +7941,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 407665
+      "bytes": 408401
     },
     "dist/tel-input.min.js": {
       "imports": [],
@@ -8185,7 +8196,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 311
+          "bytesInOutput": 736
         },
         "src/utils/ce.js": {
           "bytesInOutput": 100
@@ -8215,7 +8226,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 307352
+      "bytes": 307777
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -8370,7 +8381,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 311
+          "bytesInOutput": 736
         },
         "src/utils/ce.js": {
           "bytesInOutput": 100
@@ -8394,7 +8405,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 306308
+      "bytes": 306733
     },
     "dist/tom-select.min.js": {
       "imports": [],

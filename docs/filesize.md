@@ -1,12 +1,12 @@
 
-  dist/tabulator-grid.min.js                                                                                 441.7kb  100.0%
+  dist/tabulator-grid.min.js                                                                                 442.4kb  100.0%
    ├ node_modules/tabulator-tables/dist/css/tabulator_bootstrap5.min.css                                      35.0kb    7.9%
    ├ node_modules/tabulator-tables/src/js/core/RowManager.js                                                  15.5kb    3.5%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/List.js                                                15.3kb    3.5%
    ├ node_modules/tabulator-tables/src/js/modules/Page/Page.js                                                15.0kb    3.4%
    ├ node_modules/tabulator-tables/src/js/modules/Filter/Filter.js                                            14.2kb    3.2%
    ├ node_modules/tabulator-tables/src/js/core/Tabulator.js                                                   13.4kb    3.0%
-   ├ node_modules/tabulator-tables/src/js/core/column/Column.js                                               12.6kb    2.9%
+   ├ node_modules/tabulator-tables/src/js/core/column/Column.js                                               12.6kb    2.8%
    ├ node_modules/tabulator-tables/src/js/modules/MoveRows/MoveRows.js                                        11.9kb    2.7%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/Edit.js                                                11.0kb    2.5%
    ├ node_modules/tabulator-tables/src/js/modules/Export/Export.js                                            10.9kb    2.5%
@@ -30,7 +30,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/MoveColumns/MoveColumns.js                                   5.2kb    1.2%
    ├ node_modules/tabulator-tables/src/js/modules/ReactiveData/ReactiveData.js                                 4.9kb    1.1%
    ├ node_modules/tabulator-tables/src/js/core/tools/Popup.js                                                  4.8kb    1.1%
-   ├ node_modules/tabulator-tables/src/js/modules/FrozenColumns/FrozenColumns.js                               4.6kb    1.1%
+   ├ node_modules/tabulator-tables/src/js/modules/FrozenColumns/FrozenColumns.js                               4.6kb    1.0%
    ├ node_modules/tabulator-tables/src/js/modules/Clipboard/Clipboard.js                                       4.4kb    1.0%
    ├ node_modules/tabulator-tables/src/js/core/tools/InteractionMonitor.js                                     4.0kb    0.9%
    ├ node_modules/tabulator-tables/src/js/core/cell/Cell.js                                                    4.0kb    0.9%
@@ -38,7 +38,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/Format/Format.js                                             3.3kb    0.7%
    ├ node_modules/tabulator-tables/src/js/modules/Print/Print.js                                               3.0kb    0.7%
    ├ node_modules/tabulator-tables/src/js/modules/ResizeTable/ResizeTable.js                                   2.9kb    0.7%
-   ├ src/classes/tabulator/ResponsiveLayout/ResponsiveLayout.js                                                2.9kb    0.7%
+   ├ src/classes/tabulator/ResponsiveLayout/ResponsiveLayout.js                                                2.9kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/FrozenRows/FrozenRows.js                                     2.7kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/History/History.js                                           2.6kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/star.js                                2.5kb    0.6%
@@ -99,6 +99,7 @@
    ├ src/classes/tabulator/Edit/editors/customInput.js                                                         791b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Download/defaults/downloaders/csv.js                         784b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/link.js                           759b     0.2%
+   ├ src/utils/EventfulElement.js                                                                              736b     0.2%
    ├ node_modules/tabulator-tables/src/js/core/tools/DeprecationAdvisor.js                                     725b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/buttonCross.js                    724b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Page/defaults/pageCounters/rows.js                           710b     0.2%
@@ -191,7 +192,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/Accessor/defaults/accessors.js                                10b     0.0%
    └ node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js                                  10b     0.0%
 
-  dist/tabulator-grid.raw.min.js                                                                             398.1kb  100.0%
+  dist/tabulator-grid.raw.min.js                                                                             398.8kb  100.0%
    ├ node_modules/tabulator-tables/src/js/core/RowManager.js                                                  15.5kb    3.9%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/List.js                                                15.3kb    3.8%
    ├ node_modules/tabulator-tables/src/js/modules/Page/Page.js                                                15.0kb    3.8%
@@ -199,13 +200,13 @@
    ├ node_modules/tabulator-tables/src/js/core/Tabulator.js                                                   13.4kb    3.4%
    ├ node_modules/tabulator-tables/src/js/core/column/Column.js                                               12.6kb    3.2%
    ├ node_modules/tabulator-tables/src/js/modules/MoveRows/MoveRows.js                                        11.9kb    3.0%
-   ├ node_modules/tabulator-tables/src/js/modules/Edit/Edit.js                                                11.0kb    2.8%
+   ├ node_modules/tabulator-tables/src/js/modules/Edit/Edit.js                                                11.0kb    2.7%
    ├ node_modules/tabulator-tables/src/js/modules/Export/Export.js                                            10.9kb    2.7%
    ├ node_modules/tabulator-tables/src/js/modules/DataTree/DataTree.js                                        10.2kb    2.6%
    ├ node_modules/tabulator-tables/src/js/modules/GroupRows/GroupRows.js                                       9.6kb    2.4%
    ├ node_modules/tabulator-tables/src/js/modules/GroupRows/Group.js                                           9.1kb    2.3%
    ├ node_modules/tabulator-tables/src/js/modules/ColumnCalcs/ColumnCalcs.js                                   9.1kb    2.3%
-   ├ node_modules/tabulator-tables/src/js/core/ColumnManager.js                                                9.0kb    2.3%
+   ├ node_modules/tabulator-tables/src/js/core/ColumnManager.js                                                9.0kb    2.2%
    ├ node_modules/tabulator-tables/src/js/core/rendering/renderers/VirtualDomHorizontal.js                     7.8kb    2.0%
    ├ node_modules/tabulator-tables/src/js/modules/Persistence/Persistence.js                                   7.7kb    1.9%
    ├ node_modules/tabulator-tables/src/js/modules/SelectRow/SelectRow.js                                       7.4kb    1.9%
@@ -257,7 +258,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/date.js                                1.5kb    0.4%
    ├ node_modules/tabulator-tables/src/js/modules/Validate/defaults/validators.js                              1.4kb    0.4%
    ├ node_modules/tabulator-tables/src/js/core/FooterManager.js                                                1.4kb    0.4%
-   ├ node_modules/tabulator-tables/src/js/core/Module.js                                                       1.4kb    0.4%
+   ├ node_modules/tabulator-tables/src/js/core/Module.js                                                       1.4kb    0.3%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/datetime.js                            1.4kb    0.3%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/time.js                                1.4kb    0.3%
    ├ node_modules/tabulator-tables/src/js/core/tools/ExternalEventBus.js                                       1.3kb    0.3%
@@ -289,6 +290,7 @@
    ├ src/classes/tabulator/Edit/editors/customInput.js                                                         791b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Download/defaults/downloaders/csv.js                         784b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/link.js                           759b     0.2%
+   ├ src/utils/EventfulElement.js                                                                              736b     0.2%
    ├ node_modules/tabulator-tables/src/js/core/tools/DeprecationAdvisor.js                                     725b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/buttonCross.js                    724b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Page/defaults/pageCounters/rows.js                           710b     0.2%
@@ -380,10 +382,10 @@
    ├ node_modules/tabulator-tables/src/js/modules/Accessor/defaults/accessors.js                                10b     0.0%
    └ node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js                                  10b     0.0%
 
-  dist/tiptap-editor.min.js                                                                                  300.1kb  100.0%
+  dist/tiptap-editor.min.js                                                                                  300.6kb  100.0%
    ├ node_modules/prosemirror-view/dist/index.js                                                              87.7kb   29.2%
-   ├ node_modules/@tiptap/core/dist/index.js                                                                  48.8kb   16.3%
-   ├ node_modules/prosemirror-model/dist/index.js                                                             42.2kb   14.1%
+   ├ node_modules/@tiptap/core/dist/index.js                                                                  48.8kb   16.2%
+   ├ node_modules/prosemirror-model/dist/index.js                                                             42.2kb   14.0%
    ├ node_modules/prosemirror-transform/dist/index.js                                                         27.3kb    9.1%
    ├ node_modules/linkifyjs/dist/linkify.es.js                                                                19.0kb    6.3%
    ├ node_modules/prosemirror-state/dist/index.js                                                             11.5kb    3.8%
@@ -408,6 +410,7 @@
    ├ node_modules/@tiptap/extension-hard-break/dist/index.js                                                   882b     0.3%
    ├ src/css/tiptap-editor.min.css                                                                             862b     0.3%
    ├ node_modules/@tiptap/extension-strike/dist/index.js                                                       754b     0.2%
+   ├ src/utils/EventfulElement.js                                                                              736b     0.2%
    ├ node_modules/@tiptap/extension-image/dist/index.js                                                        728b     0.2%
    ├ node_modules/@tiptap/extension-horizontal-rule/dist/index.js                                              690b     0.2%
    ├ node_modules/@tiptap/extension-code/dist/index.js                                                         662b     0.2%
@@ -417,7 +420,6 @@
    ├ node_modules/@tiptap/extension-list-item/dist/index.js                                                    428b     0.1%
    ├ node_modules/@tiptap/extension-paragraph/dist/index.js                                                    392b     0.1%
    ├ src/utils/FormidableElement.js                                                                            353b     0.1%
-   ├ src/utils/EventfulElement.js                                                                              311b     0.1%
    ├ src/utils/replaceCallbacks.js                                                                             163b     0.1%
    ├ src/utils/injectStyles.js                                                                                 159b     0.1%
    ├ node_modules/@tiptap/extension-dropcursor/dist/index.js                                                   151b     0.0%
@@ -432,7 +434,7 @@
    ├ src/utils/hasBootstrap.js                                                                                  30b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/tiptap-editor.raw.min.js                                                                              299.1kb  100.0%
+  dist/tiptap-editor.raw.min.js                                                                              299.5kb  100.0%
    ├ node_modules/prosemirror-view/dist/index.js                                                              87.7kb   29.3%
    ├ node_modules/@tiptap/core/dist/index.js                                                                  48.8kb   16.3%
    ├ node_modules/prosemirror-model/dist/index.js                                                             42.2kb   14.1%
@@ -459,6 +461,7 @@
    ├ node_modules/@tiptap/extension-italic/dist/index.js                                                       906b     0.3%
    ├ node_modules/@tiptap/extension-hard-break/dist/index.js                                                   882b     0.3%
    ├ node_modules/@tiptap/extension-strike/dist/index.js                                                       754b     0.2%
+   ├ src/utils/EventfulElement.js                                                                              736b     0.2%
    ├ node_modules/@tiptap/extension-image/dist/index.js                                                        728b     0.2%
    ├ node_modules/@tiptap/extension-horizontal-rule/dist/index.js                                              690b     0.2%
    ├ node_modules/@tiptap/extension-code/dist/index.js                                                         662b     0.2%
@@ -468,7 +471,6 @@
    ├ node_modules/@tiptap/extension-list-item/dist/index.js                                                    428b     0.1%
    ├ node_modules/@tiptap/extension-paragraph/dist/index.js                                                    392b     0.1%
    ├ src/utils/FormidableElement.js                                                                            353b     0.1%
-   ├ src/utils/EventfulElement.js                                                                              311b     0.1%
    ├ src/utils/replaceCallbacks.js                                                                             163b     0.1%
    ├ node_modules/@tiptap/extension-dropcursor/dist/index.js                                                   151b     0.0%
    ├ src/utils/query.js                                                                                        135b     0.0%
@@ -668,14 +670,14 @@
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.1%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/squire-editor.min.js                                                                                   67.6kb  100.0%
-   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                              50.6kb   74.9%
-   ├ src/utils/bootstrap-icons.js                                                                              7.2kb   10.7%
-   ├ src/classes/SquireEditor.js                                                                               6.4kb    9.5%
-   ├ src/css/squire-editor.min.css                                                                             730b     1.1%
+  dist/squire-editor.min.js                                                                                   68.0kb  100.0%
+   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                              50.6kb   74.4%
+   ├ src/utils/bootstrap-icons.js                                                                              7.2kb   10.6%
+   ├ src/classes/SquireEditor.js                                                                               6.4kb    9.4%
+   ├ src/utils/EventfulElement.js                                                                              736b     1.1%
+   ├ src/css/squire-editor.min.css                                                                             730b     1.0%
    ├ src/utils/FormidableElement.js                                                                            353b     0.5%
    ├ src/utils/setHTML.js                                                                                      320b     0.5%
-   ├ src/utils/EventfulElement.js                                                                              311b     0.4%
    ├ src/utils/replaceCallbacks.js                                                                             163b     0.2%
    ├ src/utils/injectStyles.js                                                                                 159b     0.2%
    ├ src/utils/query.js                                                                                        134b     0.2%
@@ -688,13 +690,13 @@
    ├ src/utils/hasBootstrap.js                                                                                  30b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/squire-editor.raw.min.js                                                                               66.7kb  100.0%
-   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                              50.6kb   75.9%
-   ├ src/utils/bootstrap-icons.js                                                                              7.2kb   10.8%
+  dist/squire-editor.raw.min.js                                                                               67.1kb  100.0%
+   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                              50.6kb   75.4%
+   ├ src/utils/bootstrap-icons.js                                                                              7.2kb   10.7%
    ├ src/classes/SquireEditor.js                                                                               6.4kb    9.6%
+   ├ src/utils/EventfulElement.js                                                                              736b     1.1%
    ├ src/utils/FormidableElement.js                                                                            353b     0.5%
    ├ src/utils/setHTML.js                                                                                      320b     0.5%
-   ├ src/utils/EventfulElement.js                                                                              311b     0.5%
    ├ src/utils/replaceCallbacks.js                                                                             163b     0.2%
    ├ src/utils/query.js                                                                                        134b     0.2%
    ├ src/utils/whenParsed.js                                                                                   121b     0.2%
@@ -946,11 +948,11 @@
    └ src/locale-provider.js                                                                                     31b     7.9%
 
 
-  dist\tabulator-grid.min.js      441.7kb
-  dist\tabulator-grid.raw.min.js  398.1kb
-  dist\tiptap-editor.min.js       300.1kb
-  dist\tiptap-editor.raw.min.js   299.1kb
+  dist\tabulator-grid.min.js      442.4kb
+  dist\tabulator-grid.raw.min.js  398.8kb
+  dist\tiptap-editor.min.js       300.6kb
+  dist\tiptap-editor.raw.min.js   299.5kb
   dist\tel-input.min.js           288.4kb
   ...and 26 more output files...
 
-Done in 87ms
+Done in 772ms

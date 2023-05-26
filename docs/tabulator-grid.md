@@ -20,9 +20,17 @@ An opiniated wrapper for tabulator. Custom styles for Bootstrap 5.
 
 With `flexCollapse`, you can collapse cells while keeping them fully editable.
 
+## Lazy
+
+Add `lazy` attribute
+
+## Data attributes
+
+- data-filter
+- data-row-click-triggers-action
+
 ## Extra config keys
 
-- _rowClickTriggersAction
 - _initCallback
 - _state
 

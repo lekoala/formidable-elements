@@ -16,11 +16,11 @@ TabulatorFull.extendModule("edit", "editors", editors);
 //@ts-ignore
 TabulatorFull.extendModule("format", "formatters", formatters);
 
-import FormidableElement from "../utils/FormidableElement.js";
+import EventfulElement from "../utils/EventfulElement.js";
 import { iconPrev, iconNext, iconFirst, iconLast } from "../utils/icons.js";
 import parseBool from "../utils/parseBool.js";
 
-class TabulatorGrid extends FormidableElement {
+class TabulatorGrid extends EventfulElement {
   /**
    * @returns {HTMLDivElement}
    */

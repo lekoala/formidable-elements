@@ -180,6 +180,10 @@
             paginationSize: 5, //optional parameter to request a certain number of rows per page
             paginationInitialPage: 2 //optional parameter to set the initial page to load
         };
+
+        document.getElementById("show-lazy").addEventListener('click', (ev) => {
+            document.getElementById("overflow-grid").removeAttribute("hidden");
+        });
     </script>
     <script type="module">
         window['editGridConfig'] = {
@@ -338,7 +342,8 @@
 
     <p>Responsive table using ajax calls. Live editable content even in responsive columns thanks to flexResponsive.</p>
 
-    <tabulator-grid id="overflow-grid" data-config='overflowGridConfig' style="width:600px;border:1px solid #666;">
+    <button id="show-lazy">show lazy grid</button>
+    <tabulator-grid id="overflow-grid" data-config='overflowGridConfig' style="width:600px;border:1px solid #666;" lazy hidden>
     </tabulator-grid>
     <hr>
 
