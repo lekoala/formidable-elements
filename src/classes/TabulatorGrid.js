@@ -20,6 +20,7 @@ import EventfulElement from "../utils/EventfulElement.js";
 import { iconPrev, iconNext, iconFirst, iconLast } from "../utils/icons.js";
 import parseBool from "../utils/parseBool.js";
 import getGlobalFn from "../utils/getGlobalFn.js";
+import getDelete from "../utils/getDelete.js";
 
 class TabulatorGrid extends EventfulElement {
   /**
@@ -82,17 +83,14 @@ class TabulatorGrid extends EventfulElement {
     }
 
     // init callback
-    const initCallback = config["_initCallback"] || null;
-    delete config["_initCallback"];
+    const initCallback = getDelete(config, "_initCallback");
 
     // Restore custom state (eg: server side set in session)
     // You can also use persistence module https://tabulator.info/docs/5.5/persist
-    const state = config["_state"] || {};
-    delete config["_state"];
+    const state = getDelete(config, "_state", {});
 
     // Delay loading to allow setting limit or page from state
-    const ajaxURL = config["ajaxURL"] || null;
-    delete config["ajaxURL"];
+    const ajaxURL = getDelete(config, "ajaxURL");
 
     const form = el.closest("form");
     let hiddenInput = this.querySelector("input");

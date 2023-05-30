@@ -47,6 +47,63 @@
             </tom-select>
         </div>
         <div class="mb-3">
+            <label for="duplicates" class="form-label">Select with duplicates (not working)</label>
+            <tom-select data-config='{"sortField": {"field": "text","direction": "asc"},"duplicates":true}'>
+                <select id="duplicates" class="form-select" autocomplete="off" multiple>
+                    <option value="c1">Cool1</option>
+                    <option value="c1">Cool1 duplicate</option>
+                    <option value="c2">Cool2</option>
+                    <option value="c3">Cool3</option>
+                </select>
+            </tom-select>
+        </div>
+        <div class="mb-3" style="background:#ccc; padding:1rem; overflow: hidden;">
+            <label for="select-beast-bg" class="form-label">Select beast with bg and overflow hidden</label>
+            <tom-select data-config='{"create": true,"sortField": {"field": "text","direction": "asc"}}'>
+                <select id="select-beast-bg" placeholder="Select a person..." autocomplete="off" required pattern="[a-z]+"
+                    style="height:45px">
+                    <option value="">Select a person...</option>
+                    <option value="4">Thomas Edison</option>
+                    <option value="1">Nikola</option>
+                    <option value="3">Nikola Tesla</option>
+                    <option value="5">Arnold Schwarzenegger</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a person
+                </div>
+            </tom-select>
+        </div>
+        <div class="mb-3">
+            <label for="select-beast-disabled" class="form-label">Select beast (disabled)</label>
+            <tom-select data-config='{"create": true,"sortField": {"field": "text","direction": "asc"}}'>
+                <select id="select-beast-disabled" placeholder="Select a person..." autocomplete="off" disabled>
+                    <option value="">Select a person...</option>
+                    <option value="4">Thomas Edison</option>
+                    <option value="1">Nikola</option>
+                    <option value="3">Nikola Tesla</option>
+                    <option value="5">Arnold Schwarzenegger</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a person
+                </div>
+            </tom-select>
+        </div>
+        <div class="p-3" style="position:fixed;bottom:0;left:0;right:0;background:#ccc;border-top:1px solid #ddd;z-index:9999;">
+            <label for=" select-beast-fixed" class="form-label">Select beast (fixed)</label>
+            <tom-select data-config='{"create": true,"sortField": {"field": "text","direction": "asc"}}'>
+                <select id="select-beast-fixed" placeholder="Select a person..." autocomplete="off">
+                    <option value="">Select a person...</option>
+                    <option value="4">Thomas Edison</option>
+                    <option value="1">Nikola</option>
+                    <option value="3">Nikola Tesla</option>
+                    <option value="5">Arnold Schwarzenegger</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a person
+                </div>
+            </tom-select>
+        </div>
+        <div class="mb-3">
             <label for="select-state" class="form-label">Select state</label>
             <tom-select data-config='{"maxItems": 3}'>
                 <select id="select-state" name="state[]" multiple placeholder="Select a state..." autocomplete="off">
@@ -105,7 +162,17 @@
                 </select>
             </tom-select>
         </div>
+        <div class="mb-3">
+            <label for="select-remote" class="form-label">Pick a repo</label>
+            <tom-select
+                data-config='{"create": true,"sortField": {"field": "text","direction": "asc"}, "_url": "https://api.github.com/search/repositories", "valueField": "id", "labelField": "name", "searchField": "name"}'>
+                <select id="select-remote" placeholder="Select a person..." autocomplete="off">
+                    <option value="">Select a repo...</option>
+                </select>
+            </tom-select>
+        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
     </form>
     <hr>
     <button class="btn btn-light delete-btn" data-name="tom-select">Delete element</button>

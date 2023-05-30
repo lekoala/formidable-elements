@@ -29,7 +29,7 @@ And some custom made stuff as well:
 - bound-input
 - format-date
 - format-number
-- anchor-ed
+- anchor-ed (experimental, might be dropped in the future)
 - locale-provider
 
 ## Documentation
@@ -88,7 +88,7 @@ Some heavier elements support the `lazy` attribute to make them `created` once v
 
 JSON is great, but what when you want to pass callbacks, eg: onRender, onChange etc...
 
-In order to support this, you can pass dedicated object with the `__fn` key.
+In order to support this, you can pass a dedicated object with the `__fn` key.
 These will be replaced by the `replaceCallbacks` utility and are evaluated against the window object.
 
     "onChange": {"__fn": "myGlobalCallback"}
@@ -119,7 +119,7 @@ Adjustements are most of the time available as css variables.
 Some libraries (flatpickr, tom-select...) need to have some elements translated. While there is often a way
 to provide some global translations, formidable elements gives you one convention to load all your translations.
 
-This is done through the `locale-provider` element which is a very simple element that works like this in your html
+This is done through the `locale-provider` element which is a very simple element that works like this
 
 ```html
 <script type="module" src="../dist/locale-provider.min.js"></script>
