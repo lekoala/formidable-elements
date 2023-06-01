@@ -4125,8 +4125,13 @@
       "imports": [],
       "format": "esm"
     },
+    "src/utils/getDelete.js": {
+      "bytes": 115,
+      "imports": [],
+      "format": "esm"
+    },
     "src/classes/TabulatorGrid.js": {
-      "bytes": 8079,
+      "bytes": 8044,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Tabulator.js",
@@ -4177,6 +4182,11 @@
           "path": "src/utils/getGlobalFn.js",
           "kind": "import-statement",
           "original": "../utils/getGlobalFn.js"
+        },
+        {
+          "path": "src/utils/getDelete.js",
+          "kind": "import-statement",
+          "original": "../utils/getDelete.js"
         }
       ],
       "format": "esm"
@@ -4261,8 +4271,24 @@
       "imports": [],
       "format": "esm"
     },
+    "src/utils/fetchWrapper.js": {
+      "bytes": 1043,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/utils/jsonFetch.js": {
+      "bytes": 951,
+      "imports": [
+        {
+          "path": "src/utils/fetchWrapper.js",
+          "kind": "import-statement",
+          "original": "./fetchWrapper.js"
+        }
+      ],
+      "format": "esm"
+    },
     "src/classes/TelInput.js": {
-      "bytes": 2259,
+      "bytes": 2273,
       "imports": [
         {
           "path": "node_modules/intl-tel-input/index.js",
@@ -4288,6 +4314,11 @@
           "path": "src/utils/Storage.js",
           "kind": "import-statement",
           "original": "../utils/Storage.js"
+        },
+        {
+          "path": "src/utils/jsonFetch.js",
+          "kind": "import-statement",
+          "original": "../utils/jsonFetch.js"
         }
       ],
       "format": "esm"
@@ -5616,8 +5647,13 @@
       ],
       "format": "esm"
     },
+    "src/utils/hasOverflowParent.js": {
+      "bytes": 505,
+      "imports": [],
+      "format": "esm"
+    },
     "src/classes/TomSelectElement.js": {
-      "bytes": 1348,
+      "bytes": 3637,
       "imports": [
         {
           "path": "node_modules/tom-select/src/tom-select.complete.ts",
@@ -5638,6 +5674,21 @@
           "path": "src/utils/localeProvider.js",
           "kind": "import-statement",
           "original": "../utils/localeProvider.js"
+        },
+        {
+          "path": "src/utils/hasOverflowParent.js",
+          "kind": "import-statement",
+          "original": "../utils/hasOverflowParent.js"
+        },
+        {
+          "path": "src/utils/getDelete.js",
+          "kind": "import-statement",
+          "original": "../utils/getDelete.js"
+        },
+        {
+          "path": "src/utils/jsonFetch.js",
+          "kind": "import-statement",
+          "original": "../utils/jsonFetch.js"
         }
       ],
       "format": "esm"
@@ -7361,8 +7412,11 @@
         "src/utils/parseBool.js": {
           "bytesInOutput": 70
         },
+        "src/utils/getDelete.js": {
+          "bytesInOutput": 58
+        },
         "src/classes/TabulatorGrid.js": {
-          "bytesInOutput": 2752
+          "bytesInOutput": 2689
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7380,7 +7434,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 454410
+      "bytes": 454405
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -7942,8 +7996,11 @@
         "src/utils/parseBool.js": {
           "bytesInOutput": 70
         },
+        "src/utils/getDelete.js": {
+          "bytesInOutput": 58
+        },
         "src/classes/TabulatorGrid.js": {
-          "bytesInOutput": 2752
+          "bytesInOutput": 2689
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7952,7 +8009,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 408701
+      "bytes": 408696
     },
     "dist/tel-input.min.js": {
       "imports": [],
@@ -7966,7 +8023,7 @@
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 870
+          "bytesInOutput": 849
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
           "bytesInOutput": 251322
@@ -7991,6 +8048,12 @@
         },
         "src/utils/Storage.js": {
           "bytesInOutput": 227
+        },
+        "src/utils/fetchWrapper.js": {
+          "bytesInOutput": 310
+        },
+        "src/utils/jsonFetch.js": {
+          "bytesInOutput": 310
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8005,7 +8068,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 295367
+      "bytes": 295966
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8019,7 +8082,7 @@
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 870
+          "bytesInOutput": 849
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
           "bytesInOutput": 251322
@@ -8045,6 +8108,12 @@
         "src/utils/Storage.js": {
           "bytesInOutput": 227
         },
+        "src/utils/fetchWrapper.js": {
+          "bytesInOutput": 310
+        },
+        "src/utils/jsonFetch.js": {
+          "bytesInOutput": 310
+        },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
         },
@@ -8052,7 +8121,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 291647
+      "bytes": 292246
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -8525,8 +8594,20 @@
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
         },
+        "src/utils/hasOverflowParent.js": {
+          "bytesInOutput": 208
+        },
+        "src/utils/getDelete.js": {
+          "bytesInOutput": 58
+        },
+        "src/utils/fetchWrapper.js": {
+          "bytesInOutput": 310
+        },
+        "src/utils/jsonFetch.js": {
+          "bytesInOutput": 310
+        },
         "src/classes/TomSelectElement.js": {
-          "bytesInOutput": 481
+          "bytesInOutput": 1231
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8541,7 +8622,7 @@
           "bytesInOutput": 122
         }
       },
-      "bytes": 71591
+      "bytes": 73227
     },
     "dist/tom-select.raw.min.js": {
       "imports": [],
@@ -8650,8 +8731,20 @@
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
         },
+        "src/utils/hasOverflowParent.js": {
+          "bytesInOutput": 208
+        },
+        "src/utils/getDelete.js": {
+          "bytesInOutput": 58
+        },
+        "src/utils/fetchWrapper.js": {
+          "bytesInOutput": 310
+        },
+        "src/utils/jsonFetch.js": {
+          "bytesInOutput": 310
+        },
         "src/classes/TomSelectElement.js": {
-          "bytesInOutput": 481
+          "bytesInOutput": 1231
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8660,7 +8753,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 56468
+      "bytes": 58104
     }
   }
 }

@@ -4,6 +4,7 @@ import setId from "../utils/setId.js";
 import localeProvider from "../utils/localeProvider.js";
 import hasOverflowParent from "../utils/hasOverflowParent.js";
 import getDelete from "../utils/getDelete.js";
+import jsonFetch from "../utils/jsonFetch.js";
 
 const name = "tom-select";
 
@@ -42,42 +43,21 @@ class TomSelectElement extends FormidableElement {
 
     // Ajax wrapper
     // @link https://tom-select.js.org/examples/remote/
-    const url = getDelete(config, "_url");
-    const urlParam = getDelete(config, "_urlParam", "q");
-    if (url) {
+    const ajax = getDelete(config, "_ajax");
+
+    if (ajax) {
+      const url = ajax.url;
+      const paramName = ajax.paramName || "q";
+      const params = ajax.params || {};
+      const fetchOptions = ajax.fetchOptions || {};
+      const dataKey = ajax.dataKey || "data";
+
       config.load = (query, callback) => {
-        const fetchUrl = url + "?" + urlParam + "=" + encodeURIComponent(query);
-        fetch(fetchUrl)
-          .then((response) => response.json())
+        params[paramName] = query;
+
+        jsonFetch(url, params, fetchOptions)
           .then((json) => {
-            // autofind by sub key
-            const data = json.data || json.items || json;
-
-            // autoset key/value/search
-            if (data.length) {
-              const settings = this.tomselect.settings;
-              const firstItem = data[0];
-              if (!firstItem[settings.valueField]) {
-                const lookups = ["id", "value"];
-                lookups.forEach((k) => {
-                  if (firstItem[k]) {
-                    settings.valueField = k;
-                  }
-                });
-              }
-              if (!firstItem[settings.labelField]) {
-                const lookups = ["name", "title"];
-                lookups.forEach((k) => {
-                  if (firstItem[k]) {
-                    settings.labelField = k;
-                    if (!settings.searchField.includes(k)) {
-                      settings.searchField.push(k);
-                    }
-                  }
-                });
-              }
-            }
-
+            const data = dataKey ? json[dataKey] || json : json;
             callback(data);
           })
           .catch(() => {

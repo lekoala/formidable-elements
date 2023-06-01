@@ -4,6 +4,7 @@ import "../../node_modules/intl-tel-input/build/js/utils.js";
 import FormidableElement from "../utils/FormidableElement.js";
 import localeProvider from "../utils/localeProvider.js";
 import Storage from "../utils/Storage.js";
+import jsonFetch from "../utils/jsonFetch.js";
 
 const name = "tel-input";
 
@@ -49,8 +50,7 @@ class TelInput extends FormidableElement {
           callback(result[field]);
           return;
         }
-        fetch("https://ipapi.co/json")
-          .then((res) => res.json())
+        jsonFetch("https://ipapi.co/json")
           .then((data) => {
             Storage.set("ipapi", data);
             callback(data[field]);

@@ -40,7 +40,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/ResizeTable/ResizeTable.js                                   2.9kb    0.7%
    ├ src/classes/tabulator/ResponsiveLayout/ResponsiveLayout.js                                                2.9kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/FrozenRows/FrozenRows.js                                     2.7kb    0.6%
-   ├ src/classes/TabulatorGrid.js                                                                              2.7kb    0.6%
+   ├ src/classes/TabulatorGrid.js                                                                              2.6kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/History/History.js                                           2.6kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/star.js                                2.5kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/Import/Import.js                                             2.3kb    0.5%
@@ -179,6 +179,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/list.js                                 66b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Download/defaults/downloaders.js                              60b     0.0%
    ├ src/utils/defineEl.js                                                                                      60b     0.0%
+   ├ src/utils/getDelete.js                                                                                     58b     0.0%
    ├ src/utils/interpolate.js                                                                                   58b     0.0%
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.0%
    ├ src/utils/isNumeric.js                                                                                     45b     0.0%
@@ -231,7 +232,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/ResizeTable/ResizeTable.js                                   2.9kb    0.7%
    ├ src/classes/tabulator/ResponsiveLayout/ResponsiveLayout.js                                                2.9kb    0.7%
    ├ node_modules/tabulator-tables/src/js/modules/FrozenRows/FrozenRows.js                                     2.7kb    0.7%
-   ├ src/classes/TabulatorGrid.js                                                                              2.7kb    0.7%
+   ├ src/classes/TabulatorGrid.js                                                                              2.6kb    0.7%
    ├ node_modules/tabulator-tables/src/js/modules/History/History.js                                           2.6kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/star.js                                2.5kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/Import/Import.js                                             2.3kb    0.6%
@@ -368,6 +369,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/list.js                                 66b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Download/defaults/downloaders.js                              60b     0.0%
    ├ src/utils/defineEl.js                                                                                      60b     0.0%
+   ├ src/utils/getDelete.js                                                                                     58b     0.0%
    ├ src/utils/interpolate.js                                                                                   58b     0.0%
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.0%
    ├ src/utils/isNumeric.js                                                                                     45b     0.0%
@@ -484,12 +486,14 @@
    ├ src/utils/hasBootstrap.js                                                                                  30b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/tel-input.min.js                                                                                      288.4kb  100.0%
-   ├ node_modules/intl-tel-input/build/js/utils.js                                                           245.4kb   85.1%
-   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     36.8kb   12.8%
+  dist/tel-input.min.js                                                                                      289.0kb  100.0%
+   ├ node_modules/intl-tel-input/build/js/utils.js                                                           245.4kb   84.9%
+   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     36.8kb   12.7%
    ├ src/css/tel-input.min.css                                                                                 3.3kb    1.1%
-   ├ src/classes/TelInput.js                                                                                   870b     0.3%
+   ├ src/classes/TelInput.js                                                                                   849b     0.3%
    ├ src/utils/FormidableElement.js                                                                            353b     0.1%
+   ├ src/utils/fetchWrapper.js                                                                                 310b     0.1%
+   ├ src/utils/jsonFetch.js                                                                                    310b     0.1%
    ├ src/utils/Storage.js                                                                                      227b     0.1%
    ├ src/tel-input.js                                                                                          225b     0.1%
    ├ src/utils/replaceCallbacks.js                                                                             163b     0.1%
@@ -501,11 +505,13 @@
    ├ node_modules/intl-tel-input/index.js                                                                       38b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/tel-input.raw.min.js                                                                                  284.8kb  100.0%
-   ├ node_modules/intl-tel-input/build/js/utils.js                                                           245.4kb   86.2%
+  dist/tel-input.raw.min.js                                                                                  285.4kb  100.0%
+   ├ node_modules/intl-tel-input/build/js/utils.js                                                           245.4kb   86.0%
    ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     36.8kb   12.9%
-   ├ src/classes/TelInput.js                                                                                   870b     0.3%
+   ├ src/classes/TelInput.js                                                                                   849b     0.3%
    ├ src/utils/FormidableElement.js                                                                            353b     0.1%
+   ├ src/utils/fetchWrapper.js                                                                                 310b     0.1%
+   ├ src/utils/jsonFetch.js                                                                                    310b     0.1%
    ├ src/utils/Storage.js                                                                                      227b     0.1%
    ├ src/utils/replaceCallbacks.js                                                                             163b     0.1%
    ├ src/utils/whenParsed.js                                                                                   121b     0.0%
@@ -629,13 +635,14 @@
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.1%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/tom-select.min.js                                                                                      69.9kb  100.0%
-   ├ node_modules/tom-select/src/tom-select.ts                                                                25.5kb   36.5%
-   ├ node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css                                           14.5kb   20.8%
-   ├ node_modules/@orchidjs/sifter/dist/umd/sifter.js                                                          7.7kb   11.1%
-   ├ node_modules/@orchidjs/unicode-variants/dist/umd/index.js                                                 4.8kb    6.8%
+  dist/tom-select.min.js                                                                                      71.5kb  100.0%
+   ├ node_modules/tom-select/src/tom-select.ts                                                                25.5kb   35.7%
+   ├ node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css                                           14.5kb   20.3%
+   ├ node_modules/@orchidjs/sifter/dist/umd/sifter.js                                                          7.7kb   10.8%
+   ├ node_modules/@orchidjs/unicode-variants/dist/umd/index.js                                                 4.8kb    6.7%
    ├ node_modules/tom-select/src/plugins/virtual_scroll/plugin.ts                                              1.7kb    2.4%
-   ├ node_modules/tom-select/src/getSettings.ts                                                                1.5kb    2.1%
+   ├ node_modules/tom-select/src/getSettings.ts                                                                1.5kb    2.0%
+   ├ src/classes/TomSelectElement.js                                                                           1.2kb    1.7%
    ├ node_modules/tom-select/src/vanilla.ts                                                                    1.1kb    1.6%
    ├ node_modules/tom-select/src/utils.ts                                                                     1012b     1.4%
    ├ node_modules/tom-select/src/defaults.ts                                                                   962b     1.3%
@@ -645,16 +652,18 @@
    ├ node_modules/tom-select/src/plugins/drag_drop/plugin.ts                                                   736b     1.0%
    ├ node_modules/tom-select/src/contrib/highlight.ts                                                          697b     1.0%
    ├ node_modules/tom-select/src/plugins/dropdown_header/plugin.ts                                             560b     0.8%
-   ├ node_modules/tom-select/src/plugins/remove_button/plugin.ts                                               542b     0.8%
-   ├ node_modules/tom-select/src/plugins/caret_position/plugin.ts                                              539b     0.8%
+   ├ node_modules/tom-select/src/plugins/remove_button/plugin.ts                                               542b     0.7%
+   ├ node_modules/tom-select/src/plugins/caret_position/plugin.ts                                              539b     0.7%
    ├ node_modules/tom-select/src/plugins/input_autogrow/plugin.ts                                              520b     0.7%
-   ├ src/classes/TomSelectElement.js                                                                           481b     0.7%
    ├ node_modules/tom-select/src/contrib/microevent.ts                                                         462b     0.6%
    ├ node_modules/tom-select/src/tom-select.complete.ts                                                        439b     0.6%
-   ├ node_modules/tom-select/src/plugins/optgroup_columns/plugin.ts                                            402b     0.6%
-   ├ node_modules/tom-select/src/plugins/clear_button/plugin.ts                                                400b     0.6%
+   ├ node_modules/tom-select/src/plugins/optgroup_columns/plugin.ts                                            402b     0.5%
+   ├ node_modules/tom-select/src/plugins/clear_button/plugin.ts                                                400b     0.5%
    ├ src/utils/FormidableElement.js                                                                            353b     0.5%
+   ├ src/utils/fetchWrapper.js                                                                                 310b     0.4%
+   ├ src/utils/jsonFetch.js                                                                                    310b     0.4%
    ├ node_modules/tom-select/src/plugins/restore_on_backspace/plugin.ts                                        223b     0.3%
+   ├ src/utils/hasOverflowParent.js                                                                            208b     0.3%
    ├ src/utils/replaceCallbacks.js                                                                             163b     0.2%
    ├ src/utils/injectStyles.js                                                                                 159b     0.2%
    ├ node_modules/tom-select/src/plugins/no_backspace_delete/plugin.ts                                         123b     0.2%
@@ -666,6 +675,7 @@
    ├ node_modules/tom-select/src/constants.ts                                                                   89b     0.1%
    ├ src/utils/setId.js                                                                                         67b     0.1%
    ├ src/utils/defineEl.js                                                                                      60b     0.1%
+   ├ src/utils/getDelete.js                                                                                     58b     0.1%
    ├ node_modules/tom-select/src/plugins/change_listener/plugin.ts                                              55b     0.1%
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.1%
    └ src/utils/isString.js                                                                                      29b     0.0%
@@ -735,31 +745,34 @@
    ├ src/flatpickr-input.raw.js                                                                                 35b     0.1%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/tom-select.raw.min.js                                                                                  55.1kb  100.0%
-   ├ node_modules/tom-select/src/tom-select.ts                                                                25.5kb   46.3%
-   ├ node_modules/@orchidjs/sifter/dist/umd/sifter.js                                                          7.7kb   14.0%
-   ├ node_modules/@orchidjs/unicode-variants/dist/umd/index.js                                                 4.8kb    8.7%
-   ├ node_modules/tom-select/src/plugins/virtual_scroll/plugin.ts                                              1.7kb    3.1%
+  dist/tom-select.raw.min.js                                                                                  56.7kb  100.0%
+   ├ node_modules/tom-select/src/tom-select.ts                                                                25.5kb   45.0%
+   ├ node_modules/@orchidjs/sifter/dist/umd/sifter.js                                                          7.7kb   13.6%
+   ├ node_modules/@orchidjs/unicode-variants/dist/umd/index.js                                                 4.8kb    8.4%
+   ├ node_modules/tom-select/src/plugins/virtual_scroll/plugin.ts                                              1.7kb    3.0%
    ├ node_modules/tom-select/src/getSettings.ts                                                                1.5kb    2.6%
-   ├ node_modules/tom-select/src/vanilla.ts                                                                    1.1kb    2.1%
-   ├ node_modules/tom-select/src/utils.ts                                                                     1012b     1.8%
+   ├ src/classes/TomSelectElement.js                                                                           1.2kb    2.1%
+   ├ node_modules/tom-select/src/vanilla.ts                                                                    1.1kb    2.0%
+   ├ node_modules/tom-select/src/utils.ts                                                                     1012b     1.7%
    ├ node_modules/tom-select/src/defaults.ts                                                                   962b     1.7%
-   ├ node_modules/tom-select/src/plugins/dropdown_input/plugin.ts                                              954b     1.7%
-   ├ node_modules/tom-select/src/plugins/checkbox_options/plugin.ts                                            889b     1.6%
-   ├ node_modules/tom-select/src/contrib/microplugin.ts                                                        876b     1.6%
+   ├ node_modules/tom-select/src/plugins/dropdown_input/plugin.ts                                              954b     1.6%
+   ├ node_modules/tom-select/src/plugins/checkbox_options/plugin.ts                                            889b     1.5%
+   ├ node_modules/tom-select/src/contrib/microplugin.ts                                                        876b     1.5%
    ├ node_modules/tom-select/src/plugins/drag_drop/plugin.ts                                                   736b     1.3%
    ├ node_modules/tom-select/src/contrib/highlight.ts                                                          697b     1.2%
    ├ node_modules/tom-select/src/plugins/dropdown_header/plugin.ts                                             560b     1.0%
-   ├ node_modules/tom-select/src/plugins/remove_button/plugin.ts                                               542b     1.0%
-   ├ node_modules/tom-select/src/plugins/caret_position/plugin.ts                                              539b     1.0%
+   ├ node_modules/tom-select/src/plugins/remove_button/plugin.ts                                               542b     0.9%
+   ├ node_modules/tom-select/src/plugins/caret_position/plugin.ts                                              539b     0.9%
    ├ node_modules/tom-select/src/plugins/input_autogrow/plugin.ts                                              520b     0.9%
-   ├ src/classes/TomSelectElement.js                                                                           481b     0.9%
    ├ node_modules/tom-select/src/contrib/microevent.ts                                                         462b     0.8%
    ├ node_modules/tom-select/src/tom-select.complete.ts                                                        439b     0.8%
    ├ node_modules/tom-select/src/plugins/optgroup_columns/plugin.ts                                            402b     0.7%
    ├ node_modules/tom-select/src/plugins/clear_button/plugin.ts                                                400b     0.7%
    ├ src/utils/FormidableElement.js                                                                            353b     0.6%
+   ├ src/utils/fetchWrapper.js                                                                                 310b     0.5%
+   ├ src/utils/jsonFetch.js                                                                                    310b     0.5%
    ├ node_modules/tom-select/src/plugins/restore_on_backspace/plugin.ts                                        223b     0.4%
+   ├ src/utils/hasOverflowParent.js                                                                            208b     0.4%
    ├ src/utils/replaceCallbacks.js                                                                             163b     0.3%
    ├ node_modules/tom-select/src/plugins/no_backspace_delete/plugin.ts                                         123b     0.2%
    ├ src/utils/whenParsed.js                                                                                   121b     0.2%
@@ -769,10 +782,11 @@
    ├ node_modules/tom-select/src/constants.ts                                                                   89b     0.2%
    ├ src/utils/setId.js                                                                                         67b     0.1%
    ├ src/utils/defineEl.js                                                                                      60b     0.1%
+   ├ src/utils/getDelete.js                                                                                     58b     0.1%
    ├ node_modules/tom-select/src/plugins/change_listener/plugin.ts                                              55b     0.1%
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.1%
    ├ src/tom-select.raw.js                                                                                      30b     0.1%
-   └ src/utils/isString.js                                                                                      29b     0.1%
+   └ src/utils/isString.js                                                                                      29b     0.0%
 
   dist/bs-tags.min.js                                                                                         26.5kb  100.0%
    ├ node_modules/bootstrap5-tags/tags.js                                                                     24.2kb   91.4%
@@ -952,7 +966,7 @@
   dist\tabulator-grid.raw.min.js  399.1kb
   dist\tiptap-editor.min.js       300.6kb
   dist\tiptap-editor.raw.min.js   299.6kb
-  dist\tel-input.min.js           288.4kb
+  dist\tel-input.min.js           289.0kb
   ...and 26 more output files...
 
-Done in 84ms
+Done in 94ms

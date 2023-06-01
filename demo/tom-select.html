@@ -165,7 +165,7 @@
         <div class="mb-3">
             <label for="select-remote" class="form-label">Pick a repo</label>
             <tom-select
-                data-config='{"create": true,"sortField": {"field": "text","direction": "asc"}, "_url": "https://api.github.com/search/repositories", "valueField": "id", "labelField": "name", "searchField": "name"}'>
+                data-config='{"create": true,"sortField": {"field": "text","direction": "asc"}, "_ajax": { "url" : "https://api.github.com/search/repositories", "params" : { "myparam": "abcdef"}}, "valueField": "id", "labelField": "name", "searchField": "name"}'>
                 <select id="select-remote" placeholder="Select a person..." autocomplete="off">
                     <option value="">Select a repo...</option>
                 </select>
