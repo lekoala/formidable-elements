@@ -829,17 +829,18 @@
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.2%
    └ src/utils/isString.js                                                                                      29b     0.1%
 
-  dist/floating-ui.min.js                                                                                     19.7kb  100.0%
-   ├ node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs                                      7.2kb   36.4%
-   ├ node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs                                        7.0kb   35.7%
-   ├ src/classes/FloatingUi.js                                                                                 3.9kb   19.7%
-   ├ src/utils/FormidableElement.js                                                                            353b     1.7%
-   ├ src/floating-ui.js                                                                                        324b     1.6%
-   ├ src/utils/props.js                                                                                        308b     1.5%
+  dist/floating-ui.min.js                                                                                     21.1kb  100.0%
+   ├ node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs                                      7.9kb   37.6%
+   ├ node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs                                        7.0kb   33.4%
+   ├ src/classes/FloatingUi.js                                                                                 4.3kb   20.4%
+   ├ src/floating-ui.js                                                                                        410b     1.9%
+   ├ src/utils/FormidableElement.js                                                                            353b     1.6%
+   ├ src/utils/props.js                                                                                        308b     1.4%
    ├ src/utils/replaceCallbacks.js                                                                             163b     0.8%
-   ├ src/utils/injectStyles.js                                                                                 159b     0.8%
+   ├ src/utils/injectStyles.js                                                                                 159b     0.7%
    ├ src/utils/whenParsed.js                                                                                   121b     0.6%
-   ├ src/utils/isRTL.js                                                                                         75b     0.4%
+   ├ src/utils/reflectedProperties.js                                                                          120b     0.6%
+   ├ src/utils/isRTL.js                                                                                         75b     0.3%
    ├ src/utils/defineEl.js                                                                                      60b     0.3%
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.2%
    └ src/utils/isString.js                                                                                      29b     0.1%
@@ -884,6 +885,18 @@
    ├ src/bs-autocomplete.js                                                                                     32b     0.2%
    └ src/utils/isString.js                                                                                      28b     0.2%
 
+  dist/anchor-ed.min.js                                                                                        7.1kb  100.0%
+   ├ src/classes/Anchored.js                                                                                   6.0kb   83.6%
+   ├ src/utils/FormidableElement.js                                                                            344b     4.7%
+   ├ src/utils/props.js                                                                                        270b     3.7%
+   ├ src/utils/replaceCallbacks.js                                                                             155b     2.1%
+   ├ src/utils/reflectedProperties.js                                                                          119b     1.6%
+   ├ src/utils/whenParsed.js                                                                                   117b     1.6%
+   ├ src/utils/defineEl.js                                                                                      60b     0.8%
+   ├ src/utils/getGlobalFn.js                                                                                   49b     0.7%
+   ├ src/utils/isString.js                                                                                      28b     0.4%
+   └ src/anchor-ed.js                                                                                           27b     0.4%
+
   dist/superfile-input.min.js                                                                                  5.5kb  100.0%
    ├ node_modules/superfile/superfile.js                                                                       4.2kb   76.3%
    ├ src/utils/FormidableElement.js                                                                            344b     6.1%
@@ -895,12 +908,6 @@
    ├ src/utils/defineEl.js                                                                                      56b     1.0%
    ├ src/utils/getGlobalFn.js                                                                                   49b     0.9%
    └ src/utils/isString.js                                                                                      28b     0.5%
-
-  dist/anchor-ed.min.js                                                                                        5.4kb  100.0%
-   ├ src/classes/Anchored.js                                                                                   5.2kb   95.9%
-   ├ src/utils/whenParsed.js                                                                                   117b     2.1%
-   ├ src/utils/defineEl.js                                                                                      56b     1.0%
-   └ src/anchor-ed.js                                                                                           26b     0.5%
 
   dist/superfile-input.raw.min.js                                                                              5.1kb  100.0%
    ├ node_modules/superfile/superfile.js                                                                       4.2kb   81.7%
@@ -984,4 +991,4 @@
   dist\tel-input.min.js           289.0kb
   ...and 27 more output files...
 
-Done in 98ms
+Done in 95ms

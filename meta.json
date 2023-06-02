@@ -1,17 +1,79 @@
 {
   "inputs": {
+    "src/utils/isString.js": {
+      "bytes": 111,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/utils/getGlobalFn.js": {
+      "bytes": 103,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/utils/replaceCallbacks.js": {
+      "bytes": 639,
+      "imports": [
+        {
+          "path": "src/utils/isString.js",
+          "kind": "import-statement",
+          "original": "./isString.js"
+        },
+        {
+          "path": "src/utils/getGlobalFn.js",
+          "kind": "import-statement",
+          "original": "./getGlobalFn.js"
+        }
+      ],
+      "format": "esm"
+    },
     "src/utils/whenParsed.js": {
       "bytes": 1083,
       "imports": [],
       "format": "esm"
     },
-    "src/classes/Anchored.js": {
-      "bytes": 14962,
+    "src/utils/FormidableElement.js": {
+      "bytes": 1837,
       "imports": [
+        {
+          "path": "src/utils/replaceCallbacks.js",
+          "kind": "import-statement",
+          "original": "./replaceCallbacks.js"
+        },
         {
           "path": "src/utils/whenParsed.js",
           "kind": "import-statement",
-          "original": "../utils/whenParsed.js"
+          "original": "./whenParsed.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/props.js": {
+      "bytes": 1952,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/utils/reflectedProperties.js": {
+      "bytes": 374,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/classes/Anchored.js": {
+      "bytes": 16692,
+      "imports": [
+        {
+          "path": "src/utils/FormidableElement.js",
+          "kind": "import-statement",
+          "original": "../utils/FormidableElement.js"
+        },
+        {
+          "path": "src/utils/props.js",
+          "kind": "import-statement",
+          "original": "../utils/props.js"
+        },
+        {
+          "path": "src/utils/reflectedProperties.js",
+          "kind": "import-statement",
+          "original": "../utils/reflectedProperties.js"
         }
       ],
       "format": "esm"
@@ -61,48 +123,6 @@
     "node_modules/bootstrap5-autocomplete/autocomplete.js": {
       "bytes": 26705,
       "imports": [],
-      "format": "esm"
-    },
-    "src/utils/isString.js": {
-      "bytes": 111,
-      "imports": [],
-      "format": "esm"
-    },
-    "src/utils/getGlobalFn.js": {
-      "bytes": 103,
-      "imports": [],
-      "format": "esm"
-    },
-    "src/utils/replaceCallbacks.js": {
-      "bytes": 639,
-      "imports": [
-        {
-          "path": "src/utils/isString.js",
-          "kind": "import-statement",
-          "original": "./isString.js"
-        },
-        {
-          "path": "src/utils/getGlobalFn.js",
-          "kind": "import-statement",
-          "original": "./getGlobalFn.js"
-        }
-      ],
-      "format": "esm"
-    },
-    "src/utils/FormidableElement.js": {
-      "bytes": 1837,
-      "imports": [
-        {
-          "path": "src/utils/replaceCallbacks.js",
-          "kind": "import-statement",
-          "original": "./replaceCallbacks.js"
-        },
-        {
-          "path": "src/utils/whenParsed.js",
-          "kind": "import-statement",
-          "original": "./whenParsed.js"
-        }
-      ],
       "format": "esm"
     },
     "src/utils/rmElements.js": {
@@ -927,13 +947,8 @@
       ],
       "format": "esm"
     },
-    "src/utils/props.js": {
-      "bytes": 1952,
-      "imports": [],
-      "format": "esm"
-    },
     "src/classes/FloatingUi.js": {
-      "bytes": 10242,
+      "bytes": 10956,
       "imports": [
         {
           "path": "node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs",
@@ -954,12 +969,17 @@
           "path": "src/utils/isRTL.js",
           "kind": "import-statement",
           "original": "../utils/isRTL.js"
+        },
+        {
+          "path": "src/utils/reflectedProperties.js",
+          "kind": "import-statement",
+          "original": "../utils/reflectedProperties.js"
         }
       ],
       "format": "esm"
     },
     "src/floating-ui.js": {
-      "bytes": 546,
+      "bytes": 634,
       "imports": [
         {
           "path": "src/classes/FloatingUi.js",
@@ -981,11 +1001,6 @@
     },
     "src/utils/defaultLang.js": {
       "bytes": 105,
-      "imports": [],
-      "format": "esm"
-    },
-    "src/utils/reflectedProperties.js": {
-      "bytes": 318,
       "imports": [],
       "format": "esm"
     },
@@ -5819,20 +5834,38 @@
       "exports": [],
       "entryPoint": "src/anchor-ed.js",
       "inputs": {
+        "src/utils/isString.js": {
+          "bytesInOutput": 28
+        },
+        "src/utils/getGlobalFn.js": {
+          "bytesInOutput": 49
+        },
+        "src/utils/replaceCallbacks.js": {
+          "bytesInOutput": 155
+        },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 117
         },
+        "src/utils/FormidableElement.js": {
+          "bytesInOutput": 344
+        },
+        "src/utils/props.js": {
+          "bytesInOutput": 270
+        },
+        "src/utils/reflectedProperties.js": {
+          "bytesInOutput": 119
+        },
         "src/classes/Anchored.js": {
-          "bytesInOutput": 5289
+          "bytesInOutput": 6098
         },
         "src/utils/defineEl.js": {
-          "bytesInOutput": 56
+          "bytesInOutput": 60
         },
         "src/anchor-ed.js": {
-          "bytesInOutput": 26
+          "bytesInOutput": 27
         }
       },
-      "bytes": 5513
+      "bytes": 7292
     },
     "dist/bound-input.min.js": {
       "imports": [],
@@ -6505,7 +6538,7 @@
       "entryPoint": "src/floating-ui.js",
       "inputs": {
         "node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs": {
-          "bytesInOutput": 7367
+          "bytesInOutput": 8110
         },
         "node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs": {
           "bytesInOutput": 7213
@@ -6531,8 +6564,11 @@
         "src/utils/isRTL.js": {
           "bytesInOutput": 75
         },
+        "src/utils/reflectedProperties.js": {
+          "bytesInOutput": 120
+        },
         "src/classes/FloatingUi.js": {
-          "bytesInOutput": 3976
+          "bytesInOutput": 4399
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6541,10 +6577,10 @@
           "bytesInOutput": 159
         },
         "src/floating-ui.js": {
-          "bytesInOutput": 324
+          "bytesInOutput": 410
         }
       },
-      "bytes": 20223
+      "bytes": 21595
     },
     "dist/format-date.min.js": {
       "imports": [],
