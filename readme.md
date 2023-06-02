@@ -15,6 +15,7 @@
 - squire-editor: https://github.com/fastmail/Squire
 - superfile: https://github.com/lekoala/superfile
 - tabulator: https://tabulator.info/
+- floating-ui: https://floating-ui.com/
 
 Bootstrap specific:
 
@@ -29,7 +30,7 @@ And some custom made stuff as well:
 - bound-input
 - format-date
 - format-number
-- anchor-ed (experimental, might be dropped in the future)
+- anchor-ed, a simple alternative to floating ui
 - locale-provider
 
 ## Documentation

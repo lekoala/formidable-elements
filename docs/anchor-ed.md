@@ -1,17 +1,17 @@
 # anchor-ed
 
-A lightweight (< 5kb) alternative to floating ui or popper
+A lightweight (< 7kb) alternative to floating ui or popper. Basically three times smaller.
 
 Usage:
 
 ```html
-<anchor-ed to="my-anchor">
+<anchor-ed anchor="my-anchor">
   <div class="boat">Anchor me</div>
 </anchor-ed>
 <a class="anchor" id="my-anchor">The anchor</a>
 ```
 
-You can leave the `to` attribute or give it a special value `_next` or `_prev`.
+You can leave the `anchor` attribute or give it a special value `_next` or `_prev`.
 Without value, it defaults to the next sibling.
 
 ## Placement
@@ -19,7 +19,7 @@ Without value, it defaults to the next sibling.
 You can use any of the placement of floating ui (top, bottom, left, right with -start and -end suffixes).
 
 ```html
-<anchor-ed to="my-anchor" data-placement="top-start">
+<anchor-ed to="my-anchor" placement="top-start">
   <div class="boat">Anchor me</div>
 </anchor-ed>
 <a class="anchor" id="my-anchor">The anchor</a>
@@ -34,7 +34,7 @@ Shift is enabled by default is floating element is larger than its anchor.
 In order to keep floating elements on screen, you can enable shift.
 
 ```html
-<anchor-ed to="my-anchor" data-placement="top-start" data-shift="0">
+<anchor-ed to="my-anchor" placement="top-start" data-config='{"shift": true}'>
   <div class="boat">Anchor me that is too large for the screen</div>
 </anchor-ed>
 <a class="anchor" id="my-anchor">The anchor</a>
