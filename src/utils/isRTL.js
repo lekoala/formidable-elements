@@ -1,6 +1,7 @@
 /**
+ * @param {Element} el
  * @returns {Boolean}
  */
-export default () => {
-  return window.getComputedStyle(document.documentElement).direction === "rtl";
+export default (el = document.documentElement) => {
+  return getComputedStyle(el).direction === "rtl";
 };

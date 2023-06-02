@@ -10,6 +10,7 @@
   "author": "LeKoala",
   "license": "MIT",
   "dependencies": {
+    "@floating-ui/dom": "^1.2.9",
     "@melloware/coloris": "^0.19.1",
     "@tiptap/core": "^2.0.3",
     "@tiptap/extension-image": "^2.0.3",

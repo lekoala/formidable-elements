@@ -1,4 +1,6 @@
-import whenParsed from "../utils/whenParsed.js";
+import FormidableElement from "../utils/FormidableElement.js";
+import { addClass, hasClass, removeClass, styles } from "../utils/props.js";
+import reflectedProperties from "../utils/reflectedProperties.js";
 
 /**
  * @callback EventCallback
@@ -43,10 +45,10 @@ const set = new Set();
 let ticking = false;
 const onResize = (ev) => {
   set.forEach((el) => {
-    // Only position if the event
+    // Only position if the event contains our target
     const shouldCompute = ev.target instanceof Window || ev.target.contains(el);
     if (shouldCompute) {
-      el.position();
+      el.reposition();
     }
   });
   ticking = false;
@@ -66,14 +68,14 @@ let observer = new IntersectionObserver((entries) => {
     /**
      * @type {Anchored}
      */
-    const el = document.querySelector(`anchor-ed[to="${entry.target.id}"]`);
+    const el = document.querySelector(`[anchor="${entry.target.id}"]`);
     if (el) {
       if (entry.intersectionRatio <= 0) {
         el.setAttribute("hidden", "");
       } else if (entry.intersectionRatio && el.hasAttribute("hidden")) {
         el.removeAttribute("hidden");
       }
-      el.position();
+      el.reposition();
     }
   });
 });
@@ -153,6 +155,8 @@ function applyOffset(coords, side, offset, isRTL = false) {
     case "right":
       coords.x += isRTL ? -offset : offset;
       break;
+    default:
+      console.warn(`Invalid side ${side}`);
   }
 }
 
@@ -207,11 +211,23 @@ function computeCoordsFromPlacement(reference, floating, placement, rtl = false)
  * A lightweight element to position floating elements (dropdowns, tooltips, popovers...)
  * https://developer.chrome.com/blog/tether-elements-to-each-other-with-css-anchor-positioning/
  */
-class Anchored extends HTMLElement {
+class Anchored extends FormidableElement {
+  /**
+   * @type {string}
+   */
+  anchor;
+  /**
+   * @type {Placement}
+   */
+  placement;
+  /**
+   * @type {string}
+   */
+  scope;
+
   constructor() {
     super();
-
-    this._enabled = true;
+    reflectedProperties(this, Anchored.observedAttributes);
 
     /**
      * @type {EventCallback}
@@ -221,18 +237,45 @@ class Anchored extends HTMLElement {
     /**
      * @type {EventCallback}
      */
-    this._targetHandler = null;
-    this._targetEvents = [];
+    this._anchorHandler = null;
+    this._anchorEvents = [];
+  }
+
+  enable() {
+    addClass(this, "is-active");
+  }
+
+  disable() {
+    removeClass(this, "is-active");
+  }
+
+  static get observedAttributes() {
+    return ["anchor", "placement", "scope"];
+  }
+
+  attributeChangedCallback(attrName, oldVal, newVal) {
+    if (this.config && newVal && newVal != oldVal) {
+      switch (attrName) {
+        case "anchor":
+          this._findAnchor(newVal);
+          break;
+        case "scope":
+          this._scopeEl = document.getElementById(newVal);
+          break;
+        case "placement":
+          this.config.placement = newVal;
+          break;
+      }
+      this.reposition();
+    }
   }
 
   /**
    * @returns {HTMLElement}
    */
-  get target() {
-    const v = this.to;
-    if (v) {
-      return document.getElementById(v);
-    }
+  get anchorEl() {
+    //@ts-ignore
+    return this._anchorEl;
   }
 
   /**
@@ -244,29 +287,17 @@ class Anchored extends HTMLElement {
   }
 
   /**
-   * @returns {Placement}
+   * @returns {HTMLElement}
    */
-  get placement() {
-    //@ts-ignore
-    return this.dataset.placement;
+  get arrowEl() {
+    return this._arrowEl;
   }
 
   /**
    * @returns {HTMLElement}
    */
-  get scope() {
-    const v = this.getAttribute("scope");
-    if (v) {
-      return document.getElementById(v);
-    }
-  }
-
-  get to() {
-    return this.getAttribute("to");
-  }
-
-  set to(v) {
-    this.setAttribute("to", v);
+  get scopeEl() {
+    return this._scopeEl;
   }
 
   /**
@@ -284,17 +315,9 @@ class Anchored extends HTMLElement {
    * @param {EventCallback} callback
    */
   onTarget(events, callback) {
-    this._targetEvents = this._targetEvents.concat(events);
-    this._targetHandler = callback;
+    this._anchorEvents = this._anchorEvents.concat(events);
+    this._anchorHandler = callback;
     this._addRemoveEvents();
-  }
-
-  enable() {
-    this._enabled = true;
-  }
-
-  disable() {
-    this._enabled = false;
   }
 
   _addRemoveEvents(remove = false) {
@@ -302,9 +325,9 @@ class Anchored extends HTMLElement {
     this._events.forEach((event) => {
       this[method](event, this);
     });
-    const target = this.target;
+    const target = this.anchorEl;
     if (target) {
-      this._targetEvents.forEach((event) => {
+      this._anchorEvents.forEach((event) => {
         target[method](event, this);
       });
     }
@@ -324,46 +347,90 @@ class Anchored extends HTMLElement {
     }
   }
 
-  connectedCallback() {
-    whenParsed(this);
+  created() {
+    // Same config options than floating-ui but simpler
+    this.config = Object.assign(
+      {
+        placement: this.placement || "top",
+        distance: 0,
+        flip: true,
+        shift: null,
+        shiftPadding: 0,
+        match: "",
+        arrowSelector: "[class$='-arrow']",
+        arrowPadding: 0,
+        autoUpdate: true,
+        hideWithAnchor: true,
+      },
+      this.config
+    );
+    this.enable();
+    // Anchor
+    this._findAnchor(this.anchor);
+    // Scope
+    if (this.scope) {
+      this._scopeEl = document.getElementById(this.scope);
+      if (this._scopeEl) {
+        this.config.shift = true;
+      }
+    }
+    // Arrow
+    this._arrowEl = this.config.arrowSelector ? this.querySelector(this.config.arrowSelector) : null;
+    if (this.arrowEl && !this.config.arrowPadding) {
+      this.config.arrowPadding = parseInt(getComputedStyle(this.el).borderRadius);
+    }
   }
 
-  parsedCallback() {
-    // Auto assign to prev/next element (next by default)
-    if (!this.to || this.to == "_next" || this.to == "_prev") {
-      const ne = this.to == "_prev" ? this.previousElementSibling : this.nextElementSibling;
-      // attribute is updated based on prop
-      // @link https://gomakethings.com/the-difference-between-attributes-and-properties-in-vanilla-js/
-      if (!ne.id) {
-        ne.id = `anchored-${++c}`;
-      }
-      this.to = ne.id;
+  _findAnchor(v) {
+    if (!v) {
+      v = "_next";
     }
-    const target = this.target;
+    let el = null;
+    if (["_prev", "_next"].includes(v)) {
+      el = v == "_prev" ? this.previousElementSibling : this.nextElementSibling;
+    } else {
+      el = document.getElementById(v);
+    }
+    if (el && !el.id) {
+      el.id = `anchored-${++c}`;
+    }
+    this._anchorEl = el;
+    this.anchor = el.id;
+  }
+
+  connected() {
+    const target = this.anchorEl;
     if (!target) {
-      console.error(`${this.to} is an invalid target`);
+      console.error(`${this.anchor} is invalid`, this);
       return;
     }
-    set.add(this);
-    this.style.position = "fixed";
-    this.style.zIndex = Z_LOW_INDEX;
-    this.position();
+    if (this.config.autoUpdate) {
+      set.add(this);
+    }
+    styles(this, {
+      position: "fixed",
+      zIndex: Z_LOW_INDEX,
+    });
+    this.reposition();
     this._addRemoveEvents();
-    if (!this.dataset.keepVisible) {
+    // Hide as soon as anchor leaves the viewport
+    if (this.config.hideWithAnchor) {
       observer.observe(target);
     }
   }
 
-  disconnectedCallback() {
-    const target = this.target;
+  disconnected() {
+    const target = this.anchorEl;
     this._addRemoveEvents(true);
-    if (!this.dataset.keepVisible && target) {
+    if (this.config.hideWithAnchor && target) {
       observer.unobserve(target);
     }
     if (prevTarget === this) {
       prevTarget = null;
     }
-    set.delete(this);
+    if (this.config.autoUpdate) {
+      set.delete(this);
+    }
   }
 
   /**
@@ -375,45 +442,44 @@ class Anchored extends HTMLElement {
     if (this._handler && ev.currentTarget == this) {
       this._handler(ev, this.el, this);
     }
-    if (this._targetHandler && ev.currentTarget == this.target) {
-      this._targetHandler(ev, this.el, this);
+    if (this._anchorHandler && ev.currentTarget == this.anchorEl) {
+      this._anchorHandler(ev, this.el, this);
     }
   }
 
-  position() {
+  reposition() {
     const el = this.el;
     if (!el) {
       return;
     }
 
+    const config = this.config;
+    const enabled = hasClass(this, "is-active");
     const elStyles = window.getComputedStyle(el);
     const isVisible = elStyles.display != "none" && !el.hasAttribute("hidden");
     const hasPointerEvents = this.style.pointerEvents != "none";
 
     // Make sure elements don't catch mouse if their child is not visible or not enabled
-    if (!isVisible || !this._enabled) {
+    if (!isVisible || !enabled) {
       if (hasPointerEvents) {
         this.style.pointerEvents = "none";
       }
       return;
     }
     if (!hasPointerEvents) {
-      this.style.pointerEvents = "unset";
+      this.style.pointerEvents = "";
     }
 
-    const targetEl = this.target;
+    const targetEl = this.anchorEl;
     if (!targetEl) {
       this.remove(); // cleanup
       return;
     }
-    const styles = window.getComputedStyle(targetEl);
+    const anchorStyles = window.getComputedStyle(targetEl);
     const reference = targetEl.getBoundingClientRect();
 
-    /**
-     * @type {HTMLElement}
-     */
-    const arrowEl = this.dataset.arrow ? this.querySelector(this.dataset.arrow) : null;
     let arrow = null;
+    const arrowEl = this.arrowEl;
     if (arrowEl) {
       arrowEl.style.position = "absolute"; // out of flow
       arrow = arrowEl.getBoundingClientRect();
@@ -430,7 +496,7 @@ class Anchored extends HTMLElement {
       floating.width = this.el.offsetWidth;
     }
 
-    const isRTL = styles.direction === "rtl";
+    const isRTL = anchorStyles.direction === "rtl";
     /**
      * @type {Placement}
      */
@@ -456,7 +522,7 @@ class Anchored extends HTMLElement {
     let startY = 0;
 
     // Scoped to element
-    const scope = this.scope;
+    const scope = this.scopeEl;
     if (scope) {
       const bounds = scope.getBoundingClientRect();
       startX = bounds.x;
@@ -466,70 +532,77 @@ class Anchored extends HTMLElement {
     }
 
     let coords = computeCoordsFromPlacement(reference, floating, placement, isRTL);
-
-    const offset = this.dataset.offset !== undefined ? parseInt(this.dataset.offset) : 0;
+    const offset = parseInt(this.config.distance);
     applyOffset(coords, side, offset, isRTL);
 
     // Flip if it overflows on axis
-    let placementChanged = false;
-    if (axis == "x" && (coords.y < startY || coords.y >= clientHeight)) {
-      if (coords.y < startY && coords.y >= clientHeight) {
-        this.style.maxHeight = "90vh";
-      } else {
-        side = flipSide(side);
+    if (config.flip) {
+      let placementChanged = false;
+
+      let cx = Math.ceil(coords.x);
+      let cy = Math.ceil(coords.y);
+
+      if (axis == "x" && (cy < startY || cy >= clientHeight)) {
+        if (cy < startY && cy >= clientHeight) {
+          this.style.maxHeight = "90vh";
+        } else {
+          side = flipSide(side);
+          placementChanged = true;
+        }
       }
-      placementChanged = true;
-    }
-    if (axis == "y" && (coords.x < startX || coords.x >= clientWidth)) {
-      if (coords.x < startX && coords.x >= clientWidth) {
-        this.style.maxWidth = "90vw";
-      } else {
-        side = flipSide(side);
+      if (axis == "y" && (cx < startX || cx >= clientWidth)) {
+        if (cx < startX && cx >= clientWidth) {
+          this.style.maxWidth = "90vw";
+        } else {
+          side = flipSide(side);
+          placementChanged = true;
+        }
       }
-      placementChanged = true;
-    }
-    // If there is not much space at all in the viewport, then it's better to use top/bottom
-    if (axis == "y" && doc.clientWidth - floating.width < 100) {
-      side = "top";
-      axis = "x";
-      placementChanged = true;
-    }
-    if (placementChanged) {
-      this.dataset.flipped = "true";
-      placement = alignement ? `${side}-${alignement}` : side;
-      //@ts-ignore
-      coords = computeCoordsFromPlacement(reference, floating, placement, isRTL);
-      applyOffset(coords, side, offset, isRTL);
+      // If there is not much space at all in the viewport, then it's better to use top/bottom
+      if (axis == "y" && doc.clientWidth - floating.width < 100) {
+        side = "top";
+        axis = "x";
+        placementChanged = true;
+      }
+      if (placementChanged) {
+        this.dataset.flipped = "true";
+        placement = alignement ? `${side}-${alignement}` : side;
+        //@ts-ignore
+        coords = computeCoordsFromPlacement(reference, floating, placement, isRTL);
+        applyOffset(coords, side, offset, isRTL);
+      }
+    } else if (this.dataset.flipped) {
+      this.dataset.flipped = "";
     }
 
     // Shift if it overflows on x axis (on y axis, we only flip)
     // Opt-in or automatic if floating is larger than anchor
     let totalShift = 0;
-    if (this.dataset.shift !== undefined || floating.width > reference.width) {
-      const shiftOffset = parseInt(this.dataset.shift || "0");
+    if (config.shift === null || floating.width > reference.width) {
       if (coords.x < startX) {
-        totalShift = coords.x - startX + shiftOffset;
-        coords.x = startX + shiftOffset;
+        totalShift = coords.x - startX + config.shiftPadding;
+        coords.x = startX + config.shiftPadding;
         if (arrowEl && axis == "y") {
           coords.x += arrow.width;
         }
       } else if (coords.x + floating.width > clientWidth) {
-        totalShift = clientWidth - (coords.x + floating.width) - shiftOffset;
+        totalShift = clientWidth - (coords.x + floating.width) - config.shiftPadding;
         coords.x += totalShift;
       }
     }
 
     // Arrow
     if (arrowEl) {
+      const arrowPadding = config.arrowPadding || offset;
       let pos, posValue;
       if (axis == "x") {
         pos = reference.x > coords.x ? "right" : "left";
         posValue = floating.width / 2 - arrow.width / 2 + totalShift;
-        if (posValue > floating.width - offset) {
-          posValue = floating.width - offset;
+        if (posValue > floating.width - arrowPadding) {
+          posValue = floating.width - arrowPadding;
         }
-        if (posValue < offset) {
-          posValue = offset;
+        if (posValue < arrowPadding) {
+          posValue = arrowPadding;
         }
       }
       if (axis == "y") {
@@ -557,12 +630,10 @@ class Anchored extends HTMLElement {
     }
 
     // Position element if updated
-    if (parseInt(this.style.left) != parseInt("" + coords.x) || parseInt(this.style.top) != parseInt("" + coords.y)) {
-      Object.assign(this.style, {
-        left: `${coords.x}px`,
-        top: `${coords.y}px`,
-      });
-    }
+    styles(this, {
+      left: `${coords.x}px`,
+      top: `${coords.y}px`,
+    });
   }
 }
 

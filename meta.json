@@ -340,7 +340,7 @@
       "format": "esm"
     },
     "src/utils/isRTL.js": {
-      "bytes": 142,
+      "bytes": 166,
       "imports": [],
       "format": "esm"
     },
@@ -902,6 +902,79 @@
           "path": "src/utils/defineEl.js",
           "kind": "import-statement",
           "original": "./utils/defineEl.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs": {
+      "bytes": 11634,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs": {
+      "bytes": 7606,
+      "imports": [
+        {
+          "path": "node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs",
+          "kind": "import-statement",
+          "original": "@floating-ui/core"
+        },
+        {
+          "path": "node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs",
+          "kind": "import-statement",
+          "original": "@floating-ui/core"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/props.js": {
+      "bytes": 1952,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/classes/FloatingUi.js": {
+      "bytes": 10242,
+      "imports": [
+        {
+          "path": "node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs",
+          "kind": "import-statement",
+          "original": "@floating-ui/dom"
+        },
+        {
+          "path": "src/utils/FormidableElement.js",
+          "kind": "import-statement",
+          "original": "../utils/FormidableElement.js"
+        },
+        {
+          "path": "src/utils/props.js",
+          "kind": "import-statement",
+          "original": "../utils/props.js"
+        },
+        {
+          "path": "src/utils/isRTL.js",
+          "kind": "import-statement",
+          "original": "../utils/isRTL.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/floating-ui.js": {
+      "bytes": 546,
+      "imports": [
+        {
+          "path": "src/classes/FloatingUi.js",
+          "kind": "import-statement",
+          "original": "./classes/FloatingUi.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        },
+        {
+          "path": "src/utils/injectStyles.js",
+          "kind": "import-statement",
+          "original": "./utils/injectStyles.js"
         }
       ],
       "format": "esm"
@@ -1593,7 +1666,7 @@
       "format": "esm"
     },
     "src/utils/ce.js": {
-      "bytes": 386,
+      "bytes": 240,
       "imports": [],
       "format": "esm"
     },
@@ -6004,7 +6077,7 @@
           "bytesInOutput": 67
         },
         "src/utils/isRTL.js": {
-          "bytesInOutput": 79
+          "bytesInOutput": 75
         },
         "src/classes/ColorisInput.js": {
           "bytesInOutput": 385
@@ -6022,7 +6095,7 @@
           "bytesInOutput": 247
         }
       },
-      "bytes": 25031
+      "bytes": 25027
     },
     "dist/coloris-input.raw.min.js": {
       "imports": [],
@@ -6051,7 +6124,7 @@
           "bytesInOutput": 67
         },
         "src/utils/isRTL.js": {
-          "bytesInOutput": 79
+          "bytesInOutput": 75
         },
         "src/classes/ColorisInput.js": {
           "bytesInOutput": 385
@@ -6063,7 +6136,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 16173
+      "bytes": 16169
     },
     "dist/count-down.min.js": {
       "imports": [],
@@ -6426,6 +6499,53 @@
       },
       "bytes": 64675
     },
+    "dist/floating-ui.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/floating-ui.js",
+      "inputs": {
+        "node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs": {
+          "bytesInOutput": 7367
+        },
+        "node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs": {
+          "bytesInOutput": 7213
+        },
+        "src/utils/isString.js": {
+          "bytesInOutput": 29
+        },
+        "src/utils/getGlobalFn.js": {
+          "bytesInOutput": 50
+        },
+        "src/utils/replaceCallbacks.js": {
+          "bytesInOutput": 163
+        },
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 121
+        },
+        "src/utils/FormidableElement.js": {
+          "bytesInOutput": 353
+        },
+        "src/utils/props.js": {
+          "bytesInOutput": 308
+        },
+        "src/utils/isRTL.js": {
+          "bytesInOutput": 75
+        },
+        "src/classes/FloatingUi.js": {
+          "bytesInOutput": 3976
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 60
+        },
+        "src/utils/injectStyles.js": {
+          "bytesInOutput": 159
+        },
+        "src/floating-ui.js": {
+          "bytesInOutput": 324
+        }
+      },
+      "bytes": 20223
+    },
     "dist/format-date.min.js": {
       "imports": [],
       "exports": [],
@@ -6682,7 +6802,7 @@
           "bytesInOutput": 736
         },
         "src/utils/ce.js": {
-          "bytesInOutput": 99
+          "bytesInOutput": 35
         },
         "src/utils/query.js": {
           "bytesInOutput": 134
@@ -6715,7 +6835,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 69653
+      "bytes": 69589
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -6750,7 +6870,7 @@
           "bytesInOutput": 736
         },
         "src/utils/ce.js": {
-          "bytesInOutput": 99
+          "bytesInOutput": 35
         },
         "src/utils/query.js": {
           "bytesInOutput": 134
@@ -6777,7 +6897,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 68741
+      "bytes": 68677
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -7350,7 +7470,7 @@
           "bytesInOutput": 38
         },
         "src/utils/ce.js": {
-          "bytesInOutput": 99
+          "bytesInOutput": 35
         },
         "src/classes/tabulator/Edit/editors/external.js": {
           "bytesInOutput": 1177
@@ -7434,7 +7554,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 454405
+      "bytes": 454341
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -7934,7 +8054,7 @@
           "bytesInOutput": 38
         },
         "src/utils/ce.js": {
-          "bytesInOutput": 99
+          "bytesInOutput": 35
         },
         "src/classes/tabulator/Edit/editors/external.js": {
           "bytesInOutput": 1177
@@ -8009,7 +8129,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 408696
+      "bytes": 408632
     },
     "dist/tel-input.min.js": {
       "imports": [],
@@ -8279,7 +8399,7 @@
           "bytesInOutput": 736
         },
         "src/utils/ce.js": {
-          "bytesInOutput": 100
+          "bytesInOutput": 36
         },
         "src/utils/query.js": {
           "bytesInOutput": 135
@@ -8306,7 +8426,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 307792
+      "bytes": 307728
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -8464,7 +8584,7 @@
           "bytesInOutput": 736
         },
         "src/utils/ce.js": {
-          "bytesInOutput": 100
+          "bytesInOutput": 36
         },
         "src/utils/query.js": {
           "bytesInOutput": 135
@@ -8485,7 +8605,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 306748
+      "bytes": 306684
     },
     "dist/tom-select.min.js": {
       "imports": [],

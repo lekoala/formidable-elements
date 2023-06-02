@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>floating-ui demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link href="./assets/demo.css" rel="stylesheet">
+    <script type="module" src="../dist/floating-ui.min.js"></script>
+
+    <style>
+        .frame {
+            display: grid;
+            width: 600px;
+            height: 400px;
+            background: #eee;
+            overflow: hidden;
+            position: relative;
+            max-width: 100%;
+        }
+
+        .frame:has([value=center]:checked) {
+            place-items: center;
+        }
+
+        .frame:has([value=north]:checked) {
+            align-content: start;
+            justify-content: center;
+        }
+
+        .frame:has([value=north-east]:checked) {
+            align-content: start;
+            justify-content: end;
+        }
+
+        .frame:has([value=east]:checked) {
+            align-content: center;
+            justify-content: end;
+        }
+
+        .frame:has([value=south-east]:checked) {
+            align-content: end;
+            justify-content: end;
+        }
+
+        .frame:has([value=south]:checked) {
+            align-content: end;
+            justify-content: center;
+        }
+
+        .frame:has([value=south-west]:checked) {
+            align-content: end;
+            justify-content: start;
+        }
+
+        .frame:has([value=west]:checked) {
+            align-content: center;
+            justify-content: start;
+        }
+
+        .frame:has([value=north-west]:checked) {
+            align-content: start;
+            justify-content: start;
+        }
+
+        .boat {
+            background: blanchedalmond;
+            color: #333;
+            width: 200px;
+            text-align: center;
+        }
+
+        .anchor {
+            display: inline-block;
+            background: #333;
+            text-align: center;
+            font-weight: bold;
+            padding: 1rem;
+            color: #fff;
+        }
+
+        /* needed to compute arrow padding automatically */
+        .tooltip {
+            border-radius: var(--bs-tooltip-border-radius);
+        }
+    </style>
+    <script type="module">
+        document.querySelectorAll('.frame').forEach((frame) => {
+            const floating = frame.querySelector('floating-ui');
+            const anchor = floating.anchorEl;
+            frame.querySelector('select[name=placement]').addEventListener('change', (ev) => {
+                floating.setAttribute('placement', ev.target.value);
+            })
+        })
+        document.querySelector('#body-width-btn').addEventListener("click", (ev) => {
+            const el = document.body;
+            if (el.style.width) {
+                el.style.width = "";
+            }
+            else {
+                el.style.width = "150%";
+            }
+        })
+    </script>
+</head>
+
+<body class="p-3">
+    <button id="body-width-btn">toggle body width</button>
+
+    <p>Example tooltips</p>
+    <p>&nbsp;</p>
+
+    <div class="row">
+        <div class="col-auto">
+            <floating-ui anchor="my-button-left" placement="left" data-config='{"distance":6}'>
+                <div class="tooltip fade show bs-tooltip-auto" role="tooltip">
+                    <div class='tooltip-inner'>My tooltip</div>
+                    <div class='tooltip-arrow'></div>
+                </div>
+            </floating-ui>
+            <button type="button" id="my-button-left" class="btn btn-secondary">
+                Tooltip left (flipped)
+            </button>
+        </div>
+        <div class="col-auto">
+            <floating-ui anchor="my-button" data-config='{"distance":6}'>
+                <div class="tooltip fade show bs-tooltip-auto" role="tooltip">
+                    <div class='tooltip-inner'>My tooltip</div>
+                    <div class='tooltip-arrow'></div>
+                </div>
+            </floating-ui>
+            <button type="button" id="my-button" class="btn btn-secondary">
+                Tooltip center (set values)
+            </button>
+        </div>
+        <div class="col-auto">
+            <floating-ui anchor="my-button3" data-config='{"distance":6, "arrowPlacement":"center"}'>
+                <div class="tooltip fade show bs-tooltip-auto" role="tooltip">
+                    <div class='tooltip-inner'>My tooltip</div>
+                    <div class='tooltip-arrow'></div>
+                </div>
+            </floating-ui>
+            <button type="button" id="my-button3" class="btn btn-secondary">
+                Tooltip center (50%)
+            </button>
+        </div>
+        <div class="col-auto">
+            <floating-ui anchor="my-button2" placement="top-end" data-config='{"distance":6, "arrowPlacement":"start"}'>
+                <div class="tooltip fade show bs-tooltip-auto" role="tooltip">
+                    <div class='tooltip-inner'>My tooltip</div>
+                    <div class='tooltip-arrow'></div>
+                </div>
+            </floating-ui>
+            <button type="button" id="my-button2" class="btn btn-secondary">
+                Tooltip top end
+            </button>
+        </div>
+    </div>
+    <hr>
+
+    <div class="row" style="margin-bottom:100px">
+        <div class="col-auto">
+            <p>Dropdown menu matching width</p>
+
+            <button type="button" id="my-dropdown-toggle" class="btn btn-secondary dropdown-toggle">
+                My dropdown menu
+            </button>
+
+            <floating-ui anchor="my-dropdown-toggle" placement="bottom" data-config='{"match": "width"}'>
+                <ul class="dropdown-menu show" style="width:100%;">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else</a></li>
+                </ul>
+            </floating-ui>
+        </div>
+        <div class="col-auto">
+            <p>Dropdown menu not matching width</p>
+
+            <button type="button" id="my-dropdown-toggle2" class="btn btn-secondary dropdown-toggle">
+                My dropdown menu
+            </button>
+
+            <floating-ui anchor="my-dropdown-toggle2" placement="bottom-start">
+                <ul class="dropdown-menu show" style="width:100%;">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else</a></li>
+                </ul>
+            </floating-ui>
+        </div>
+        <div class="col-auto" dir="rtl">
+            <p>Dropdown menu rtl</p>
+
+            <button type="button" id="my-dropdown-toggle3" class="btn btn-secondary dropdown-toggle">
+                My dropdown menu
+            </button>
+
+            <floating-ui anchor="my-dropdown-toggle3" placement="bottom-start">
+                <ul class="dropdown-menu show" style="width:100%;">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else</a></li>
+                </ul>
+            </floating-ui>
+        </div>
+    </div>
+
+    <hr>
+    <p>Scope an anchor to a given element so that its used for bounds instead of the whole viewport. See how the placement change to
+        keep
+        the anchored element inside the frame.</p>
+
+    <div class="frame" id="my-frame">
+        <floating-ui anchor="my-anchor" data-config='{"liveUpdate": true}'>
+            <div class="boat">
+                <span>Floating</span>
+                <select name="placement">
+                    <option value=bottom>Placement</option>
+                    <option value=top>top</option>
+                    <option value=top-end>top-end</option>
+                    <option value=top-start>top-start</option>
+                    <option value=bottom>bottom</option>
+                    <option value=bottom-end>bottom-end</option>
+                    <option value=bottom-start>bottom-start</option>
+                    <option value=left>left</option>
+                    <option value=left-end>left-end</option>
+                    <option value=left-start>left-start</option>
+                    <option value=right>right</option>
+                    <option value=right-end>right-end</option>
+                    <option value=right-start>right-start</option>
+                </select>
+            </div>
+        </floating-ui>
+        <a class="anchor" id="my-anchor">
+            <span>The anchor</span>
+            <div class="select">
+                <select name="position">
+                    <option value=center>Position anchor</option>
+                    <option value=center>Center</option>
+                    <option value=north>North</option>
+                    <option value=north-east>North East</option>
+                    <option value=east>East</option>
+                    <option value=south-east>South East</option>
+                    <option value=south>South</option>
+                    <option value=south-west>South West</option>
+                    <option value=west>West</option>
+                    <option value=north-west>North West</option>
+                </select>
+            </div>
+        </a>
+    </div>
+
+    <hr>
+
+    <div class="frame" id="my-frame2">
+        <floating-ui anchor="my-anchor2" scope="my-frame2" data-config='{"liveUpdate": true}'>
+            <div class="boat">
+                <span>Floating (scoped)</span>
+                <select name="placement">
+                    <option value=bottom>Placement</option>
+                    <option value=top>top</option>
+                    <option value=top-end>top-end</option>
+                    <option value=top-start>top-start</option>
+                    <option value=bottom>bottom</option>
+                    <option value=bottom-end>bottom-end</option>
+                    <option value=bottom-start>bottom-start</option>
+                    <option value=left>left</option>
+                    <option value=left-end>left-end</option>
+                    <option value=left-start>left-start</option>
+                    <option value=right>right</option>
+                    <option value=right-end>right-end</option>
+                    <option value=right-start>right-start</option>
+                </select>
+            </div>
+        </floating-ui>
+        <a class="anchor" id="my-anchor2">
+            <span>The anchor</span>
+            <div class="select">
+                <select name="position">
+                    <option value=center>Position anchor</option>
+                    <option value=center>Center</option>
+                    <option value=north>North</option>
+                    <option value=north-east>North East</option>
+                    <option value=east>East</option>
+                    <option value=south-east>South East</option>
+                    <option value=south>South</option>
+                    <option value=south-west>South West</option>
+                    <option value=west>West</option>
+                    <option value=north-west>North West</option>
+                </select>
+            </div>
+        </a>
+    </div>
+    <hr>
+
+    <div class="frame" id="my-frame3">
+        <floating-ui anchor="my-anchor3" scope="my-frame3" data-config='{"liveUpdate": true, "autoSize":"both"}'
+            style="width:800px;height:800px;">
+            <!-- rely on exposed css var to create variable size elements -->
+            <div class="boat" style="width:var(--auto-size-available-width, auto)">
+                <span>Floating (autosize)</span>
+                <select name="placement">
+                    <option value=bottom>Placement</option>
+                    <option value=top>top</option>
+                    <option value=top-end>top-end</option>
+                    <option value=top-start>top-start</option>
+                    <option value=bottom>bottom</option>
+                    <option value=bottom-end>bottom-end</option>
+                    <option value=bottom-start>bottom-start</option>
+                    <option value=left>left</option>
+                    <option value=left-end>left-end</option>
+                    <option value=left-start>left-start</option>
+                    <option value=right>right</option>
+                    <option value=right-end>right-end</option>
+                    <option value=right-start>right-start</option>
+                </select>
+            </div>
+        </floating-ui>
+        <a class="anchor" id="my-anchor3">
+            <span>The anchor</span>
+            <div class="select">
+                <select name="position">
+                    <option value=center>Position anchor</option>
+                    <option value=center>Center</option>
+                    <option value=north>North</option>
+                    <option value=north-east>North East</option>
+                    <option value=east>East</option>
+                    <option value=south-east>South East</option>
+                    <option value=south>South</option>
+                    <option value=south-west>South West</option>
+                    <option value=west>West</option>
+                    <option value=north-west>North West</option>
+                </select>
+            </div>
+        </a>
+    </div>
+</body>
+
+</html>

@@ -46,9 +46,9 @@ const onEvent = (ev, el, anchored) => {
     el.classList.toggle("show");
     el.focus();
     const shown = el.classList.contains("show");
-    const btn = anchored.target;
+    const btn = anchored.anchorEl;
     btn.ariaExpanded = shown ? "true" : "false";
-    anchored.position();
+    anchored.reposition();
     if (shown) {
       activeDropdowns.add(anchored);
     } else {
@@ -65,7 +65,7 @@ const onFocus = (ev, el, anchored) => {
     clearTimeout(anchored.focusTimeout);
   }
   if (ev.type == "focusout") {
-    const target = anchored.target;
+    const target = anchored.anchorEl;
     const autoClose = target.dataset.bsAutoClose || target.dataset.autoClose;
     if (autoClose !== "false" && autoClose !== "inside") {
       // wait a bit because it can be cleared by the next focusin event
@@ -121,7 +121,7 @@ const onMenuEvent = (ev, el, anchored) => {
   }
   if (ev.type == "click") {
     activeDropdowns.forEach((anchored) => {
-      const target = anchored.target;
+      const target = anchored.anchorEl;
       const autoClose = target.dataset.bsAutoClose || target.dataset.autoClose;
       if (autoClose === "false" || autoClose === "outside") {
         return;
@@ -164,7 +164,7 @@ export default function dropdowns(selector = '[data-bs-toggle="dropdown"]:not(.d
         "bottom-start": ["dropdown"],
         bottom: ["dropdown-center"],
         "top-start": ["dropup"],
-        top: ["droup", "dropup-center"],
+        top: ["dropup", "dropup-center"],
         right: ["dropend"],
         left: ["dropstart"],
       };
@@ -182,12 +182,16 @@ export default function dropdowns(selector = '[data-bs-toggle="dropdown"]:not(.d
 
       // Wrap menu in anchor-ed
       const anchored = new anchoredCtor();
-      anchored.dataset.placement = placement;
+      const conf = {};
+      //@ts-ignore
+      anchored.placement = placement;
       if (!el.id) {
         el.id = "dropdown-anchor-" + counter;
       }
-      anchored.setAttribute("to", el.id);
-      anchored.dataset.offset = "2";
+      //@ts-ignore
+      anchored.anchor = el.id;
+      conf.distance = "2";
+      anchored.dataset.config = JSON.stringify(conf);
       parent.insertBefore(anchored, menu);
       anchored.appendChild(menu); // move into
 

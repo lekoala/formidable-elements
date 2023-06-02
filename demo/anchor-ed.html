@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>anchor-ed demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
 
     <link href="./assets/demo.css" rel="stylesheet">
     <script type="module" src="../dist/anchor-ed.min.js"></script>
@@ -127,22 +127,30 @@
         dropdowns();
         dropdowns();
 
-        const anchors = document.querySelectorAll('anchor-ed');
-        document.querySelectorAll("select").forEach((el) => {
-            el.addEventListener('change', (ev) => {
-                const anchor = el.parentElement.parentElement.querySelector('anchor-ed');
-                anchor.dataset[el.name] = el.value;
-                anchor.position();
-            })
+        document.querySelectorAll('.frame').forEach((frame) => {
+            const floating = frame.querySelector('anchor-ed');
+            const anchor = floating.anchorEl;
+            const select = frame.querySelector('select[name=placement]');
+            if (select) {
+                select.addEventListener('change', (ev) => {
+                    floating.setAttribute('placement', ev.target.value);
+                })
+            }
+            const position = frame.querySelector('select[name=position]');
+            if (position) {
+                position.addEventListener('change', (ev) => {
+                    floating.reposition(); // no live update
+                })
+            }
         })
 
         document.querySelectorAll('a.anchor').forEach((el) => {
             el.addEventListener('click', (ev) => {
                 ev.preventDefault();
-                const tt = document.querySelector('anchor-ed[to=' + el.getAttribute('id') + ']');
+                const tt = document.querySelector('anchor-ed[anchor=' + el.getAttribute('id') + ']');
                 if (tt) {
                     tt.classList.toggle('hide');
-                    tt.position();
+                    tt.reposition();
                 }
             })
         });
@@ -324,33 +332,31 @@
         <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-bs-toggle="popover" data-bs-trigger="focus"
             data-bs-title="Dismissible popover" data-bs-content="And here's some amazing content. It's very engaging. Right?">Dismissible
             popover</a>
+
         <hr>
 
-        <p>Scope an anchor to a given element so that its used for bounds instead of the whole viewport. See how the placement change to
-            keep
-            the anchored element inside the frame.</p>
         <div class="frame" id="my-frame">
-            <anchor-ed to="my-anchor" scope="my-frame">
-                <div class="boat">Anchor me (scoped)!<br>Another line</div>
+            <anchor-ed anchor="my-anchor">
+                <div class="boat">Anchor me !<br>
+                    <select name="placement">
+                        <option value=bottom>Placement</option>
+                        <option value=top>top</option>
+                        <option value=top-end>top-end</option>
+                        <option value=top-start>top-start</option>
+                        <option value=bottom>bottom</option>
+                        <option value=bottom-end>bottom-end</option>
+                        <option value=bottom-start>bottom-start</option>
+                        <option value=left>left</option>
+                        <option value=left-end>left-end</option>
+                        <option value=left-start>left-start</option>
+                        <option value=right>right</option>
+                        <option value=right-end>right-end</option>
+                        <option value=right-start>right-start</option>
+                    </select>
+                </div>
             </anchor-ed>
-            <a class="anchor" id="my-anchor">The anchor</a>
-
-            <div class="select">
-                <select name="placement">
-                    <option value=bottom>Placement</option>
-                    <option value=top>top</option>
-                    <option value=top-end>top-end</option>
-                    <option value=top-start>top-start</option>
-                    <option value=bottom>bottom</option>
-                    <option value=bottom-end>bottom-end</option>
-                    <option value=bottom-start>bottom-start</option>
-                    <option value=left>left</option>
-                    <option value=left-end>left-end</option>
-                    <option value=left-start>left-start</option>
-                    <option value=right>right</option>
-                    <option value=right-end>right-end</option>
-                    <option value=right-start>right-start</option>
-                </select>
+            <a class="anchor" id="my-anchor">
+                <span>The anchor</span>
                 <select name="position">
                     <option value=center>Position anchor</option>
                     <option value=center>Center</option>
@@ -363,7 +369,48 @@
                     <option value=west>West</option>
                     <option value=north-west>North West</option>
                 </select>
-            </div>
+            </a>
+        </div>
+
+        <hr>
+        <p>Scope an anchor to a given element so that its used for bounds instead of the whole viewport. See how the placement change to
+            keep
+            the anchored element inside the frame.</p>
+        <div class="frame" id="my-frame2">
+            <anchor-ed anchor="my-anchor2" scope="my-frame2">
+                <div class="boat">Anchor me (scoped)!<br>
+                    <select name="placement">
+                        <option value=bottom>Placement</option>
+                        <option value=top>top</option>
+                        <option value=top-end>top-end</option>
+                        <option value=top-start>top-start</option>
+                        <option value=bottom>bottom</option>
+                        <option value=bottom-end>bottom-end</option>
+                        <option value=bottom-start>bottom-start</option>
+                        <option value=left>left</option>
+                        <option value=left-end>left-end</option>
+                        <option value=left-start>left-start</option>
+                        <option value=right>right</option>
+                        <option value=right-end>right-end</option>
+                        <option value=right-start>right-start</option>
+                    </select>
+                </div>
+            </anchor-ed>
+            <a class="anchor" id="my-anchor2">
+                <span>The anchor</span>
+                <select name="position">
+                    <option value=center>Position anchor</option>
+                    <option value=center>Center</option>
+                    <option value=north>North</option>
+                    <option value=north-east>North East</option>
+                    <option value=east>East</option>
+                    <option value=south-east>South East</option>
+                    <option value=south>South</option>
+                    <option value=south-west>South West</option>
+                    <option value=west>West</option>
+                    <option value=north-west>North West</option>
+                </select>
+            </a>
         </div>
 
         <hr>
@@ -388,7 +435,7 @@
 
         <div class="frame">
             <div class="bigger">
-                <anchor-ed to="my-anchor3">
+                <anchor-ed anchor="my-anchor3">
                     <div class="boat">Anchor me!</div>
                 </anchor-ed>
                 <a class="anchor" id="my-anchor3">The anchor with overflow hidden</a>
@@ -400,7 +447,7 @@
         <div class="scrolling frame">
             <div class="bigger">
                 <!-- not sure why you would want that, but you can keep it visible even if anchor is not visible -->
-                <anchor-ed to="my-anchor4" data-keep-visible="1">
+                <anchor-ed anchor="my-anchor4" data-config='{"hideWithAnchor":false}'>
                     <div class="boat">Anchor me keep visible!</div>
                 </anchor-ed>
                 <a class="anchor" id="my-anchor4">The anchor</a>

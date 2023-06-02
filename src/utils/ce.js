@@ -1,14 +1,9 @@
 /**
  * @template {keyof HTMLElementTagNameMap} K
  * @param {K|String} tagName Name of the element
- * @param {Object} props Optional properties
  * @returns {HTMLElementTagNameMap[K]}
  */
-export default (tagName, props = {}) => {
-  const el = document.createElement(tagName);
-  for (const [k, v] of Object.entries(props)) {
-    el[k] = v;
-  }
+export default (tagName) => {
   //@ts-ignore
-  return el;
+  return document.createElement(tagName);
 };

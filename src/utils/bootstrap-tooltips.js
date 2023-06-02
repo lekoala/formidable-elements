@@ -38,7 +38,7 @@ const onEvent = (ev, el, anchored) => {
     anchored.disable();
     el.classList.remove("show");
   }
-  anchored.position();
+  anchored.reposition();
 };
 
 /**
@@ -80,22 +80,30 @@ export default function tooltips(selector = '[data-bs-toggle="tooltip"],[data-bs
 
       // create tooltip as anchored element
       const anchored = new anchoredCtor();
-      anchored.dataset.placement = placement;
-      anchored.dataset.offset = el.dataset.offset !== undefined ? el.dataset.offset : defaultOffset;
+      const conf = {};
+      //@ts-ignore
+      anchored.placement = placement;
+      //@ts-ignore
+      conf.distance = el.dataset.offset !== undefined ? el.dataset.offset : defaultOffset;
       if (isPopover) {
-        anchored.dataset.arrow = ".popover-arrow";
+        //@ts-ignore
+        conf.arrowSelector = ".popover-arrow";
         anchored.innerHTML = `<div class="popover fade" role="tooltip"><div class="popover-arrow"></div>
 <h3 class="popover-header">${title}</h3>
 <div class="popover-body">${content}</div>
 </div>`;
       } else {
-        anchored.dataset.arrow = ".tooltip-arrow";
+        //@ts-ignore
+        conf.arrowSelector = ".tooltip-arrow";
         anchored.innerHTML = `<div class="tooltip fade" role="tooltip"><div class='tooltip-arrow'></div><div class='tooltip-inner'>${title}</div></div>`;
       }
       if (!el.id) {
         el.id = "tooltip-anchor-" + counter;
       }
-      anchored.setAttribute("to", el.id);
+
+      anchored.dataset.config = JSON.stringify(conf);
+      //@ts-ignore
+      anchored.anchor = el.id;
       anchored.dataset.trigger = trigger.split(" ")[0]; // store trigger for event
 
       // TODO: maybe it would be better to put them in their own layer ?
@@ -107,7 +115,7 @@ export default function tooltips(selector = '[data-bs-toggle="tooltip"],[data-bs
         //@ts-ignore
         anchored.el.classList.add("show");
         //@ts-ignore
-        anchored.position();
+        anchored.reposition();
       } else {
         //@ts-ignore
         anchored.disable();
