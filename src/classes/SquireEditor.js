@@ -7,6 +7,7 @@ import parseHTML from "../utils/parseHTML.js";
 import setHTML, { loadDOMPurify } from "../utils/setHTML.js";
 import hasBootstrap from "../utils/hasBootstrap.js";
 import * as icons from "../utils/bootstrap-icons.js";
+import { props } from "../utils/props.js";
 
 const FORCE_DOMPURIFY = false;
 const name = "squire-editor";
@@ -113,7 +114,8 @@ class SquireEditor extends EventfulElement {
   created() {
     // Allow creation of element if necessary
     if (!this.el) {
-      const el = ce("textarea", {
+      const el = ce("textarea");
+      props(el, {
         name: this.getAttribute("name"),
         // this should be sanitized by yourself
         value: this.getAttribute("value"),

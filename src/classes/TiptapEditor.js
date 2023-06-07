@@ -26,6 +26,7 @@ import ce from "../utils/ce.js";
 import { q } from "../utils/query.js";
 import hasBootstrap from "../utils/hasBootstrap.js";
 import * as icons from "../utils/bootstrap-icons.js";
+import { props } from "../utils/props.js";
 
 const name = "tiptap-editor";
 
@@ -130,7 +131,8 @@ class TiptapEditor extends EventfulElement {
   created() {
     // Allow creation of element if necessary
     if (!this.el) {
-      const el = ce("textarea", {
+      const el = ce("textarea");
+      props(el, {
         name: this.getAttribute("name"),
         // this should be sanitized by yourself
         value: this.getAttribute("value"),
