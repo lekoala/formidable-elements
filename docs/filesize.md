@@ -384,7 +384,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/Accessor/defaults/accessors.js                                10b     0.0%
    └ node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js                                  10b     0.0%
 
-  dist/tiptap-editor.min.js                                                                                  300.5kb  100.0%
+  dist/tiptap-editor.min.js                                                                                  300.6kb  100.0%
    ├ node_modules/prosemirror-view/dist/index.js                                                              87.7kb   29.2%
    ├ node_modules/@tiptap/core/dist/index.js                                                                  48.8kb   16.2%
    ├ node_modules/prosemirror-model/dist/index.js                                                             42.2kb   14.0%
@@ -429,6 +429,7 @@
    ├ src/utils/whenParsed.js                                                                                   121b     0.0%
    ├ src/utils/defineEl.js                                                                                      60b     0.0%
    ├ node_modules/@tiptap/extension-document/dist/index.js                                                      58b     0.0%
+   ├ src/utils/props.js                                                                                         58b     0.0%
    ├ src/tiptap-editor.js                                                                                       56b     0.0%
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.0%
    ├ node_modules/@tiptap/extension-text/dist/index.js                                                          46b     0.0%
@@ -436,7 +437,7 @@
    ├ src/utils/hasBootstrap.js                                                                                  30b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/tiptap-editor.raw.min.js                                                                              299.5kb  100.0%
+  dist/tiptap-editor.raw.min.js                                                                              299.6kb  100.0%
    ├ node_modules/prosemirror-view/dist/index.js                                                              87.7kb   29.3%
    ├ node_modules/@tiptap/core/dist/index.js                                                                  48.8kb   16.3%
    ├ node_modules/prosemirror-model/dist/index.js                                                             42.2kb   14.1%
@@ -479,6 +480,7 @@
    ├ src/utils/whenParsed.js                                                                                   121b     0.0%
    ├ src/utils/defineEl.js                                                                                      60b     0.0%
    ├ node_modules/@tiptap/extension-document/dist/index.js                                                      58b     0.0%
+   ├ src/utils/props.js                                                                                         58b     0.0%
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.0%
    ├ node_modules/@tiptap/extension-text/dist/index.js                                                          46b     0.0%
    ├ src/utils/ce.js                                                                                            36b     0.0%
@@ -681,7 +683,7 @@
    └ src/utils/isString.js                                                                                      29b     0.0%
 
   dist/squire-editor.min.js                                                                                   68.0kb  100.0%
-   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                              50.6kb   74.5%
+   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                              50.6kb   74.4%
    ├ src/utils/bootstrap-icons.js                                                                              7.2kb   10.6%
    ├ src/classes/SquireEditor.js                                                                               6.4kb    9.5%
    ├ src/utils/EventfulElement.js                                                                              736b     1.1%
@@ -694,6 +696,7 @@
    ├ src/utils/whenParsed.js                                                                                   121b     0.2%
    ├ src/utils/parseHTML.js                                                                                     63b     0.1%
    ├ src/utils/defineEl.js                                                                                      60b     0.1%
+   ├ src/utils/props.js                                                                                         58b     0.1%
    ├ src/squire-editor.js                                                                                       56b     0.1%
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.1%
    ├ src/utils/ce.js                                                                                            35b     0.1%
@@ -701,7 +704,7 @@
    └ src/utils/isString.js                                                                                      29b     0.0%
 
   dist/squire-editor.raw.min.js                                                                               67.1kb  100.0%
-   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                              50.6kb   75.5%
+   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                              50.6kb   75.4%
    ├ src/utils/bootstrap-icons.js                                                                              7.2kb   10.7%
    ├ src/classes/SquireEditor.js                                                                               6.4kb    9.6%
    ├ src/utils/EventfulElement.js                                                                              736b     1.1%
@@ -712,6 +715,7 @@
    ├ src/utils/whenParsed.js                                                                                   121b     0.2%
    ├ src/utils/parseHTML.js                                                                                     63b     0.1%
    ├ src/utils/defineEl.js                                                                                      60b     0.1%
+   ├ src/utils/props.js                                                                                         58b     0.1%
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.1%
    ├ src/utils/ce.js                                                                                            35b     0.1%
    ├ src/squire-editor.raw.js                                                                                   33b     0.0%
@@ -986,9 +990,9 @@
 
   dist\tabulator-grid.min.js      443.7kb
   dist\tabulator-grid.raw.min.js  399.1kb
-  dist\tiptap-editor.min.js       300.5kb
-  dist\tiptap-editor.raw.min.js   299.5kb
+  dist\tiptap-editor.min.js       300.6kb
+  dist\tiptap-editor.raw.min.js   299.6kb
   dist\tel-input.min.js           289.0kb
   ...and 27 more output files...
 
-Done in 95ms
+Done in 87ms

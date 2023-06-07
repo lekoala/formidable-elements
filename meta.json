@@ -1718,7 +1718,7 @@
       "format": "esm"
     },
     "src/classes/SquireEditor.js": {
-      "bytes": 15654,
+      "bytes": 15716,
       "imports": [
         {
           "path": "node_modules/squire-rte/dist/squire-raw.mjs",
@@ -1759,6 +1759,11 @@
           "path": "src/utils/bootstrap-icons.js",
           "kind": "import-statement",
           "original": "../utils/bootstrap-icons.js"
+        },
+        {
+          "path": "src/utils/props.js",
+          "kind": "import-statement",
+          "original": "../utils/props.js"
         }
       ],
       "format": "esm"
@@ -5033,7 +5038,7 @@
       "format": "esm"
     },
     "src/classes/TiptapEditor.js": {
-      "bytes": 15075,
+      "bytes": 15137,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5169,6 +5174,11 @@
           "path": "src/utils/bootstrap-icons.js",
           "kind": "import-statement",
           "original": "../utils/bootstrap-icons.js"
+        },
+        {
+          "path": "src/utils/props.js",
+          "kind": "import-statement",
+          "original": "../utils/props.js"
         }
       ],
       "format": "esm"
@@ -6855,8 +6865,11 @@
         "src/utils/bootstrap-icons.js": {
           "bytesInOutput": 7378
         },
+        "src/utils/props.js": {
+          "bytesInOutput": 58
+        },
         "src/classes/SquireEditor.js": {
-          "bytesInOutput": 6591
+          "bytesInOutput": 6597
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6871,7 +6884,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 69589
+      "bytes": 69653
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -6923,8 +6936,11 @@
         "src/utils/bootstrap-icons.js": {
           "bytesInOutput": 7378
         },
+        "src/utils/props.js": {
+          "bytesInOutput": 58
+        },
         "src/classes/SquireEditor.js": {
-          "bytesInOutput": 6591
+          "bytesInOutput": 6597
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6933,7 +6949,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 68677
+      "bytes": 68741
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -8446,8 +8462,11 @@
         "src/utils/bootstrap-icons.js": {
           "bytesInOutput": 8254
         },
+        "src/utils/props.js": {
+          "bytesInOutput": 58
+        },
         "src/classes/TiptapEditor.js": {
-          "bytesInOutput": 5851
+          "bytesInOutput": 5857
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8462,7 +8481,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 307728
+      "bytes": 307792
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -8631,8 +8650,11 @@
         "src/utils/bootstrap-icons.js": {
           "bytesInOutput": 8254
         },
+        "src/utils/props.js": {
+          "bytesInOutput": 58
+        },
         "src/classes/TiptapEditor.js": {
-          "bytesInOutput": 5851
+          "bytesInOutput": 5857
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8641,7 +8663,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 306684
+      "bytes": 306748
     },
     "dist/tom-select.min.js": {
       "imports": [],

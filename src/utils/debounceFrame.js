@@ -10,17 +10,17 @@
  */
 
 /**
+ * @link https://gomakethings.com/debouncing-events-with-requestanimationframe-for-better-performance/#a-better-approach
  * @param {EventCallback} handler
- * @param {Number} timeout
  * @returns {ExtendedFunction}
  */
-export default (handler, timeout = 300) => {
+export default (handler) => {
   let timer = null;
   return (...args) => {
-    if (timer) clearTimeout(timer);
-    timer = setTimeout(() => {
+    if (timer) window.cancelAnimationFrame(timer);
+    timer = window.requestAnimationFrame(() => {
       timer = null;
       handler(...args);
-    }, timeout);
+    });
   };
 };
