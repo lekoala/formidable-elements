@@ -1769,7 +1769,7 @@
       "format": "esm"
     },
     "src/css/squire-editor.min.css": {
-      "bytes": 720,
+      "bytes": 714,
       "imports": []
     },
     "src/squire-editor.js": {
@@ -5042,8 +5042,24 @@
       "imports": [],
       "format": "esm"
     },
+    "src/utils/dropmenu.js": {
+      "bytes": 3989,
+      "imports": [
+        {
+          "path": "src/utils/ce.js",
+          "kind": "import-statement",
+          "original": "./ce"
+        },
+        {
+          "path": "src/utils/isRTL.js",
+          "kind": "import-statement",
+          "original": "./isRTL"
+        }
+      ],
+      "format": "esm"
+    },
     "src/classes/TiptapEditor.js": {
-      "bytes": 16775,
+      "bytes": 19400,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5189,12 +5205,17 @@
           "path": "src/utils/isExternalURL.js",
           "kind": "import-statement",
           "original": "../utils/isExternalURL.js"
+        },
+        {
+          "path": "src/utils/dropmenu.js",
+          "kind": "import-statement",
+          "original": "../utils/dropmenu.js"
         }
       ],
       "format": "esm"
     },
     "src/css/tiptap-editor.min.css": {
-      "bytes": 852,
+      "bytes": 854,
       "imports": []
     },
     "src/tiptap-editor.js": {
@@ -6885,7 +6906,7 @@
           "bytesInOutput": 60
         },
         "src/css/squire-editor.min.css": {
-          "bytesInOutput": 730
+          "bytesInOutput": 724
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 159
@@ -6894,7 +6915,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 69653
+      "bytes": 69647
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -8478,14 +8499,20 @@
         "src/utils/isExternalURL.js": {
           "bytesInOutput": 190
         },
+        "src/utils/isRTL.js": {
+          "bytesInOutput": 75
+        },
+        "src/utils/dropmenu.js": {
+          "bytesInOutput": 1568
+        },
         "src/classes/TiptapEditor.js": {
-          "bytesInOutput": 6354
+          "bytesInOutput": 7510
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
         },
         "src/css/tiptap-editor.min.css": {
-          "bytesInOutput": 862
+          "bytesInOutput": 864
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 159
@@ -8494,7 +8521,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 308479
+      "bytes": 311280
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -8669,8 +8696,14 @@
         "src/utils/isExternalURL.js": {
           "bytesInOutput": 190
         },
+        "src/utils/isRTL.js": {
+          "bytesInOutput": 75
+        },
+        "src/utils/dropmenu.js": {
+          "bytesInOutput": 1568
+        },
         "src/classes/TiptapEditor.js": {
-          "bytesInOutput": 6354
+          "bytesInOutput": 7510
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8679,7 +8712,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 307435
+      "bytes": 310234
     },
     "dist/tom-select.min.js": {
       "imports": [],
