@@ -23,6 +23,11 @@
             padding: 1em;
             background: #ccc;
         }
+
+        .content-image {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 
@@ -30,7 +35,8 @@
     <form action="https://vercel-dumper.vercel.app">
         <div class="mb-3">
             <tiptap-editor style="max-width:50%">
-                <textarea id="mytextarea" name="myeditor" class="form-control" style="max-height:200px">Hello, World (max-height:200px)!</textarea>
+                <textarea id="mytextarea" name="myeditor" class="form-control"
+                    style="max-height:200px">Hello, World (max-height:200px)!</textarea>
             </tiptap-editor>
         </div>
         <div class="mb-3">

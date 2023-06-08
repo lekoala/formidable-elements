@@ -104,7 +104,7 @@ function adjustStyles(editor, toolbar, textarea) {
  * @param {Editor} editor
  */
 function checkButtonActive(btn, el, editor) {
-  const params = btn.prompt ? undefined : btn.params;
+  const params = btn.params;
   if (editor.isActive(btn.name, params)) {
     el.classList.add("is-active");
   } else {
@@ -221,8 +221,6 @@ class TiptapEditor extends EventfulElement {
           {
             name: "link",
             action: "toggleLink",
-            prompt: "href",
-            params: { href: null },
             icon: icons.link,
           },
           {
@@ -284,8 +282,6 @@ class TiptapEditor extends EventfulElement {
           {
             name: "image",
             action: "setImage",
-            prompt: "src",
-            params: { src: null },
             icon: icons.image,
           },
         ],
@@ -317,14 +313,11 @@ class TiptapEditor extends EventfulElement {
 
         const el = ce("button");
 
-        const btnPrompt = btn.prompt;
-
         el.type = "button";
         el.innerHTML = btn.icon;
         // Delegated to component
         el.dataset.action = btn.customAction || "";
         el.dataset.name = btnName;
-        el.dataset.prompt = btnPrompt || "";
 
         const btnAction = btn.action;
         let btnParams = Object.assign({}, btn.params || {});
@@ -335,20 +328,11 @@ class TiptapEditor extends EventfulElement {
             }
 
             // Special case for links that are editable
-            if (btnAction == "toggleLink") {
+            if (btnName == "link") {
               this._toggleLinkModal(el);
+            } else if (btnName == "image") {
+              this._toggleImageModal(el);
             } else {
-              const isActive = this.tiptap.isActive(btnName);
-
-              // Prompt (if not active already)
-              if (btnPrompt && !isActive) {
-                const v = prompt();
-                if (typeof btnPrompt === "string") {
-                  btnParams[btnPrompt] = v;
-                } else {
-                  btnParams = v;
-                }
-              }
               this.tiptap.chain().focus()[btnAction](btnParams).run();
             }
             checkButtonActive(btn, el, this.tiptap);
@@ -416,7 +400,12 @@ class TiptapEditor extends EventfulElement {
               class: null,
             },
           }),
-          ImageExtension,
+          ImageExtension.configure({
+            allowBase64: true,
+            HTMLAttributes: {
+              class: "content-image",
+            },
+          }),
         ],
         element: editor,
         editable: !textarea.readOnly && !textarea.disabled,
@@ -495,9 +484,9 @@ class TiptapEditor extends EventfulElement {
 
   _toggleLinkModal(anchor) {
     const isActive = this.tiptap.isActive("link");
-    if (this._linkMenu) {
-      this._linkMenu.remove();
-      this._linkMenu = null;
+    if (this._modalMenu) {
+      this._modalMenu.remove();
+      this._modalMenu = null;
     } else {
       const { view, state } = this.tiptap;
       const { from, to } = view.state.selection;
@@ -517,7 +506,7 @@ class TiptapEditor extends EventfulElement {
         attrs = this.tiptap.getAttributes("link");
       }
 
-      this._linkMenu = dropmenu(
+      this._modalMenu = dropmenu(
         anchor,
         [
           {
@@ -555,8 +544,71 @@ class TiptapEditor extends EventfulElement {
               this.tiptap.chain().focus().unsetLink().run();
             }
 
-            this._linkMenu.remove();
-            this._linkMenu = null;
+            this._modalMenu.remove();
+            this._modalMenu = null;
+          },
+        }
+      );
+    }
+  }
+
+  _toggleImageModal(anchor) {
+    const isActive = this.tiptap.isActive("image");
+    if (this._modalMenu) {
+      this._modalMenu.remove();
+      this._modalMenu = null;
+    } else {
+      let attrs = {};
+      if (isActive) {
+        attrs = this.tiptap.getAttributes("image");
+      }
+
+      this._modalMenu = dropmenu(
+        anchor,
+        [
+          {
+            name: "src",
+            title: "URL",
+            inputmode: "url",
+            value: attrs.src || "",
+          },
+          {
+            name: "alt",
+            title: "Alternative text",
+            value: attrs.alt || "",
+          },
+          {
+            name: "title",
+            title: "Title",
+            value: attrs.title || "",
+          },
+        ],
+        {
+          btnLabel: "Insert",
+          menuExtraStyles: {
+            minWidth: "254px",
+          },
+          submitCallback: (data) => {
+            const src = data.src;
+            const alt = data.alt || "";
+            const title = data.title || "";
+            const btnParams = {};
+
+            if (src) {
+              btnParams.src = src.trim();
+              this.tiptap
+                .chain()
+                .focus()
+                .setImage({
+                  src,
+                  alt,
+                  title,
+                })
+                .run();
+            }
+
+            this._modalMenu.remove();
+            this._modalMenu = null;
           },
         }
       );

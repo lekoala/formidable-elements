@@ -38,6 +38,7 @@ export default (anchor, fields = [], options = {}) => {
     border: "1px solid var(--bs-border-color, #dee2e6)",
     padding: "1rem",
     textAlign: "left",
+    zIndex: "2",
   };
   const menuExtraStyles = options.menuExtraStyles || {};
   const btnClasses = options.btnClasses || ["btn", "btn-primary"];
@@ -114,6 +115,7 @@ export default (anchor, fields = [], options = {}) => {
 
   let top = anchor.offsetHeight;
   let side = rtl ? "right" : "left";
+  let otherSide = rtl ? "left" : "right";
 
   const pos = {
     position: "absolute",
@@ -121,5 +123,13 @@ export default (anchor, fields = [], options = {}) => {
   };
   pos[side] = "0px";
   Object.assign(menu.style, pos);
+
+  // Overflow check
+  const menuBounds = menu.getBoundingClientRect();
+  if (menuBounds.x < 0 || menuBounds.x + menuBounds.width > window.innerWidth) {
+    menu.style[side] = "";
+    menu.style[otherSide] = "0px";
+  }
+
   return menu;
 };
