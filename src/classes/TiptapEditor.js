@@ -28,6 +28,7 @@ import hasBootstrap from "../utils/hasBootstrap.js";
 import * as icons from "../utils/bootstrap-icons.js";
 import { props } from "../utils/props.js";
 import isExternalURL from "../utils/isExternalURL.js";
+import dropmenu from "../utils/dropmenu.js";
 
 const name = "tiptap-editor";
 
@@ -333,26 +334,12 @@ class TiptapEditor extends EventfulElement {
               return;
             }
 
-            const isActive = this.tiptap.isActive(btnName);
-
             // Special case for links that are editable
             if (btnAction == "toggleLink") {
-              const existingHref = isActive ? this.tiptap.getAttributes("link").href : "";
-              const href = window.prompt("URL", existingHref);
-              if (href) {
-                btnParams.href = href.trim();
-                // Update params
-                if (isExternalURL(href)) {
-                  Object.assign(btnParams, {
-                    rel: "noopener noreferrer nofollow",
-                    target: "_blank",
-                  });
-                }
-                this.tiptap.chain().focus().setLink(btnParams).run();
-              } else {
-                this.tiptap.chain().focus().unsetLink().run();
-              }
+              this._toggleLinkModal(el);
             } else {
+              const isActive = this.tiptap.isActive(btnName);
+
               // Prompt (if not active already)
               if (btnPrompt && !isActive) {
                 const v = prompt();
@@ -504,6 +491,76 @@ class TiptapEditor extends EventfulElement {
 
   _undoStateChange(ev) {
     this.$input(ev);
+  }
+
+  _toggleLinkModal(anchor) {
+    const isActive = this.tiptap.isActive("link");
+    if (this._linkMenu) {
+      this._linkMenu.remove();
+      this._linkMenu = null;
+    } else {
+      const { view, state } = this.tiptap;
+      const { from, to } = view.state.selection;
+      const text = state.doc.textBetween(from, to, "");
+
+      // You probably never want to select the last space
+      const lastChar = text[text.length - 1];
+      if (lastChar == " ") {
+        this.tiptap.commands.setTextSelection({
+          from: from,
+          to: to - 1,
+        });
+      }
+
+      let attrs = {};
+      if (isActive) {
+        attrs = this.tiptap.getAttributes("link");
+      }
+
+      this._linkMenu = dropmenu(
+        anchor,
+        [
+          {
+            name: "href",
+            title: "URL",
+            inputmode: "url",
+            value: attrs.href || "",
+          },
+          {
+            name: "new_window",
+            title: "Open in a new window ?",
+            type: "checkbox",
+            checked: attrs.target ? true : false,
+          },
+        ],
+        {
+          btnLabel: "Insert",
+          menuExtraStyles: {
+            minWidth: "254px",
+          },
+          submitCallback: (data) => {
+            const href = data.href;
+            const btnParams = {};
+            btnParams.target = data.new_window ? "_blank" : "";
+            if (href) {
+              btnParams.href = href.trim();
+              // Update params
+              if (isExternalURL(href)) {
+                Object.assign(btnParams, {
+                  rel: "noopener noreferrer nofollow",
+                });
+              }
+              this.tiptap.chain().focus().setLink(btnParams).run();
+            } else {
+              this.tiptap.chain().focus().unsetLink().run();
+            }
+
+            this._linkMenu.remove();
+            this._linkMenu = null;
+          },
+        }
+      );
+    }
   }
 
   destroyed() {

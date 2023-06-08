@@ -16,7 +16,7 @@
 .squire-editor .squire-toolbar {
     position: absolute;
     background: var(--bs-tertiary-bg, #EFEFEF);
-    overflow: hidden;
+    z-index: 2;
 }
 
 .squire-editor .squire-toolbar-group {
