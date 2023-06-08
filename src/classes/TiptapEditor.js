@@ -27,8 +27,28 @@ import { q } from "../utils/query.js";
 import hasBootstrap from "../utils/hasBootstrap.js";
 import * as icons from "../utils/bootstrap-icons.js";
 import { props } from "../utils/props.js";
+import isExternalURL from "../utils/isExternalURL.js";
 
 const name = "tiptap-editor";
+
+//@link https://github.com/ueberdosis/tiptap/pull/4112
+//@ts-ignore
+Link.config.addAttributes = function () {
+  return {
+    href: {
+      default: null,
+    },
+    rel: {
+      default: null,
+    },
+    target: {
+      default: null,
+    },
+    class: {
+      default: null,
+    },
+  };
+};
 
 /**
  * @param {HTMLElement} editor
@@ -289,33 +309,61 @@ class TiptapEditor extends EventfulElement {
 
       const allowedButtons = this.dataset.buttons ? this.dataset.buttons.split(",") : [];
       const makeButton = (btn, parent = toolbar) => {
-        if (allowedButtons.length && !allowedButtons.includes(btn.name)) {
+        const btnName = btn.name;
+        if (allowedButtons.length && !allowedButtons.includes(btnName)) {
           return;
         }
 
         const el = ce("button");
 
+        const btnPrompt = btn.prompt;
+
         el.type = "button";
         el.innerHTML = btn.icon;
         // Delegated to component
         el.dataset.action = btn.customAction || "";
-        el.dataset.name = btn.name;
-        el.dataset.prompt = btn.prompt || "";
-        if (btn.action) {
+        el.dataset.name = btnName;
+        el.dataset.prompt = btnPrompt || "";
+
+        const btnAction = btn.action;
+        let btnParams = Object.assign({}, btn.params || {});
+        if (btnAction) {
           el.onclick = () => {
             if (editor.hasAttribute("hidden")) {
               return;
             }
-            // Prompt (if not active already)
-            if (btn.prompt && !this.tiptap.isActive(btn.name)) {
-              const v = prompt();
-              if (typeof btn.prompt === "string") {
-                btn.params[btn.prompt] = v;
+
+            const isActive = this.tiptap.isActive(btnName);
+
+            // Special case for links that are editable
+            if (btnAction == "toggleLink") {
+              const existingHref = isActive ? this.tiptap.getAttributes("link").href : "";
+              const href = window.prompt("URL", existingHref);
+              if (href) {
+                btnParams.href = href.trim();
+                // Update params
+                if (isExternalURL(href)) {
+                  Object.assign(btnParams, {
+                    rel: "noopener noreferrer nofollow",
+                    target: "_blank",
+                  });
+                }
+                this.tiptap.chain().focus().setLink(btnParams).run();
               } else {
-                btn.params = v;
+                this.tiptap.chain().focus().unsetLink().run();
               }
+            } else {
+              // Prompt (if not active already)
+              if (btnPrompt && !isActive) {
+                const v = prompt();
+                if (typeof btnPrompt === "string") {
+                  btnParams[btnPrompt] = v;
+                } else {
+                  btnParams = v;
+                }
+              }
+              this.tiptap.chain().focus()[btnAction](btnParams).run();
             }
-            this.tiptap.chain().focus()[btn.action](btn.params).run();
             checkButtonActive(btn, el, this.tiptap);
           };
         }
@@ -372,7 +420,15 @@ class TiptapEditor extends EventfulElement {
           ListItem,
           OrderedList,
           Typography,
-          Link,
+          Link.configure({
+            openOnClick: false,
+            // we will add it back later
+            HTMLAttributes: {
+              target: null,
+              rel: null,
+              class: null,
+            },
+          }),
           ImageExtension,
         ],
         element: editor,
