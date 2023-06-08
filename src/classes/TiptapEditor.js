@@ -607,6 +607,9 @@ class TiptapEditor extends EventfulElement {
           }
         });
       } else {
+        if (!textarea.dataset.fixedHeight) {
+          textarea.style.height = "";
+        }
         // Inject html back in
         this.tiptap.commands.setContent(textarea.value);
 
