@@ -121,7 +121,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-      "bytes": 26705,
+      "bytes": 30283,
       "imports": [],
       "format": "esm"
     },
@@ -168,7 +168,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags.js": {
-      "bytes": 61914,
+      "bytes": 63358,
       "imports": [],
       "format": "esm"
     },
@@ -350,7 +350,7 @@
       "format": "esm"
     },
     "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-      "bytes": 41807,
+      "bytes": 41901,
       "imports": [],
       "format": "esm"
     },
@@ -5037,8 +5037,13 @@
       ],
       "format": "esm"
     },
+    "src/utils/isExternalURL.js": {
+      "bytes": 493,
+      "imports": [],
+      "format": "esm"
+    },
     "src/classes/TiptapEditor.js": {
-      "bytes": 15137,
+      "bytes": 16775,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5179,6 +5184,11 @@
           "path": "src/utils/props.js",
           "kind": "import-statement",
           "original": "../utils/props.js"
+        },
+        {
+          "path": "src/utils/isExternalURL.js",
+          "kind": "import-statement",
+          "original": "../utils/isExternalURL.js"
         }
       ],
       "format": "esm"
@@ -5900,7 +5910,7 @@
       "entryPoint": "src/bs-autocomplete.js",
       "inputs": {
         "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-          "bytesInOutput": 11870
+          "bytesInOutput": 13136
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -5930,7 +5940,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 13056
+      "bytes": 14322
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -5938,7 +5948,7 @@
       "entryPoint": "src/bs-tags.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 24787
+          "bytesInOutput": 25147
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -5974,7 +5984,7 @@
           "bytesInOutput": 39
         }
       },
-      "bytes": 27117
+      "bytes": 27477
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -5982,7 +5992,7 @@
       "entryPoint": "src/bs-tags.raw.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 24783
+          "bytesInOutput": 25143
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6012,7 +6022,7 @@
           "bytesInOutput": 24
         }
       },
-      "bytes": 25909
+      "bytes": 26269
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -6099,7 +6109,7 @@
       "entryPoint": "src/coloris-input.js",
       "inputs": {
         "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-          "bytesInOutput": 14528
+          "bytesInOutput": 14529
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6138,7 +6148,7 @@
           "bytesInOutput": 247
         }
       },
-      "bytes": 25027
+      "bytes": 25028
     },
     "dist/coloris-input.raw.min.js": {
       "imports": [],
@@ -6146,7 +6156,7 @@
       "entryPoint": "src/coloris-input.raw.js",
       "inputs": {
         "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-          "bytesInOutput": 14528
+          "bytesInOutput": 14529
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6179,7 +6189,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 16169
+      "bytes": 16170
     },
     "dist/count-down.min.js": {
       "imports": [],
@@ -8465,8 +8475,11 @@
         "src/utils/props.js": {
           "bytesInOutput": 58
         },
+        "src/utils/isExternalURL.js": {
+          "bytesInOutput": 190
+        },
         "src/classes/TiptapEditor.js": {
-          "bytesInOutput": 5857
+          "bytesInOutput": 6354
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8481,7 +8494,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 307792
+      "bytes": 308479
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -8653,8 +8666,11 @@
         "src/utils/props.js": {
           "bytesInOutput": 58
         },
+        "src/utils/isExternalURL.js": {
+          "bytesInOutput": 190
+        },
         "src/classes/TiptapEditor.js": {
-          "bytesInOutput": 5857
+          "bytesInOutput": 6354
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8663,7 +8679,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 306748
+      "bytes": 307435
     },
     "dist/tom-select.min.js": {
       "imports": [],
