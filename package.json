@@ -34,7 +34,7 @@
     "filepond-plugin-image-transform": "^3.8.7",
     "filepond-plugin-image-validate-size": "^1.2.7",
     "flatpickr": "^4.6.13",
-    "inputmask": "^5.0.8",
+    "inputmask": "^5.0.9-beta.16",
     "intl-tel-input": "^18.1.6",
     "squire-rte": "^2.0.3",
     "superfile": "^1.2.1",
