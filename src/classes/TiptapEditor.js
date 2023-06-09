@@ -224,7 +224,6 @@ class TiptapEditor extends EventfulElement {
           },
           {
             name: "link",
-            action: "toggleLink",
             icon: icons.link,
           },
           {
@@ -285,7 +284,6 @@ class TiptapEditor extends EventfulElement {
           },
           {
             name: "image",
-            action: "setImage",
             icon: icons.image,
           },
         ],
@@ -302,16 +300,19 @@ class TiptapEditor extends EventfulElement {
           },
           {
             name: "html",
-            customAction: "html",
             icon: icons.html,
           },
         ],
       ];
 
       const allowedButtons = this.dataset.buttons ? this.dataset.buttons.split(",") : [];
+      const disallowedButtons = this.dataset.removeButtons ? this.dataset.removeButtons.split(",") : [];
       const makeButton = (btn, parent = toolbar) => {
         const btnName = btn.name;
         if (allowedButtons.length && !allowedButtons.includes(btnName)) {
+          return;
+        }
+        if (disallowedButtons.length && disallowedButtons.includes(btnName)) {
           return;
         }
 
@@ -319,33 +320,29 @@ class TiptapEditor extends EventfulElement {
 
         el.type = "button";
         el.innerHTML = btn.icon;
-        // Delegated to component
-        el.dataset.action = btn.customAction || "";
         el.dataset.name = btnName;
 
         const btnAction = btn.action;
-        let btnParams = Object.assign({}, btn.params || {});
-        if (btnAction) {
-          el.onclick = () => {
-            if (editor.hasAttribute("hidden")) {
-              return;
-            }
-
-            // Special case for links that are editable
-            if (btnName == "link") {
-              this._toggleLinkModal(el);
-            } else if (btnName == "image") {
-              this._toggleImageModal(el);
-            } else {
-              if (this._modalMenu) {
-                this._modalMenu.remove();
-                this._modalMenu = null;
-              }
-              this.tiptap.chain().focus()[btnAction](btnParams).run();
-            }
-            checkButtonActive(btn, el, this.tiptap);
-          };
-        }
+        const btnParams = Object.assign({}, btn.params || {});
+        el.onclick = () => {
+          if (editor.hasAttribute("hidden") && btnName != "html") {
+            return;
+          }
+          switch (btnName) {
+            case "link":
+              return this._toggleLinkModal(el);
+            case "image":
+              return this._toggleImageModal(el);
+            case "html":
+              return this._toggleHtmlView(el);
+          }
+          if (this._modalMenu) {
+            this._modalMenu.remove();
+            this._modalMenu = null;
+          }
+          this.tiptap.chain().focus()[btnAction](btnParams).run();
+          checkButtonActive(btn, el, this.tiptap);
+        };
         el.ariaLabel = btn.name; // to improve
         parent.appendChild(el);
 
@@ -475,7 +472,7 @@ class TiptapEditor extends EventfulElement {
   }
 
   get events() {
-    return ["click", "input"];
+    return ["input"];
   }
 
   connected() {
@@ -623,6 +620,42 @@ class TiptapEditor extends EventfulElement {
     }
   }
 
+  _toggleHtmlView(anchor) {
+    const editor = q("div", ".tiptap-input", this);
+    const textarea = q("textarea", null, this);
+    if (textarea.hasAttribute("hidden")) {
+      if (!textarea.dataset.fixedHeight) {
+        const h = Math.max(parseInt(window.getComputedStyle(editor).height), textarea.scrollHeight);
+        textarea.style.height = h + "px";
+      }
+      editor.setAttribute("hidden", "");
+      textarea.removeAttribute("hidden");
+
+      // disable all editor buttons
+      this.buttons.forEach((btn) => {
+        if (btn.btn.action) {
+          btn.el.setAttribute("disabled", "disabled");
+        }
+      });
+    } else {
+      if (!textarea.dataset.fixedHeight) {
+        textarea.style.height = "";
+      }
+      // Inject html back in
+      this.tiptap.commands.setContent(textarea.value);
+
+      textarea.setAttribute("hidden", "");
+      editor.removeAttribute("hidden");
+
+      // enable all editor buttons
+      this.buttons.forEach((obj) => {
+        if (obj.btn.action) {
+          obj.el.removeAttribute("disabled");
+        }
+      });
+    }
+  }
+
   destroyed() {
     if (this.tiptap) {
       this.tiptap.destroy();
@@ -637,53 +670,6 @@ class TiptapEditor extends EventfulElement {
       // auto growing textarea
       textarea.style.height = "0";
       textarea.style.height = textarea.scrollHeight + "px";
-    }
-  }
-
-  $click(ev) {
-    const btn = ev.target.closest("button");
-    if (!btn) {
-      return;
-    }
-
-    let action = btn.dataset.action;
-
-    // special html action
-    if (action === "html") {
-      const editor = q("div", ".tiptap-input", this);
-      const textarea = q("textarea", null, this);
-      if (textarea.hasAttribute("hidden")) {
-        if (!textarea.dataset.fixedHeight) {
-          const h = Math.max(parseInt(window.getComputedStyle(editor).height), textarea.scrollHeight);
-          textarea.style.height = h + "px";
-        }
-        editor.setAttribute("hidden", "");
-        textarea.removeAttribute("hidden");
-
-        // disable all editor buttons
-        this.buttons.forEach((btn) => {
-          if (btn.btn.action) {
-            btn.el.setAttribute("disabled", "disabled");
-          }
-        });
-      } else {
-        if (!textarea.dataset.fixedHeight) {
-          textarea.style.height = "";
-        }
-        // Inject html back in
-        this.tiptap.commands.setContent(textarea.value);
-
-        textarea.setAttribute("hidden", "");
-        editor.removeAttribute("hidden");
-
-        // enable all editor buttons
-        this.buttons.forEach((obj) => {
-          if (obj.btn.action) {
-            obj.el.removeAttribute("disabled");
-          }
-        });
-      }
-      return;
     }
   }
 }
