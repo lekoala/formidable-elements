@@ -333,6 +333,10 @@ class TiptapEditor extends EventfulElement {
             } else if (btnName == "image") {
               this._toggleImageModal(el);
             } else {
+              if (this._modalMenu) {
+                this._modalMenu.remove();
+                this._modalMenu = null;
+              }
               this.tiptap.chain().focus()[btnAction](btnParams).run();
             }
             checkButtonActive(btn, el, this.tiptap);
