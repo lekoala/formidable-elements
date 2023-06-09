@@ -1,4 +1,6 @@
 .tiptap-editor {
+    --tiptap-button-size: 32px;
+    --tiptap-focus-color: var(--bs-focus-ring-color, rgba(13, 110, 253, 0.25));
     position: relative;
     display: block;
 }
@@ -30,8 +32,8 @@
 
 .tiptap-editor .tiptap-toolbar-group>button {
     border: 0;
-    height: 38px;
-    width: 38px;
+    height: var(--tiptap-button-size);
+    width: var(--tiptap-button-size);
     background: transparent;
 }
 
@@ -41,5 +43,5 @@
 }
 
 .tiptap-editor .ProseMirror-selectednode {
-    border: 2px solid var(--bs-focus-ring-color, rgba(13, 110, 253, 0.25))
+    border: 2px solid var(--tiptap-focus-color)
 }

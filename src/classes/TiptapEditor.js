@@ -72,6 +72,9 @@ function adjustStyles(editor, toolbar, textarea) {
     textarea.style.borderBottomRightRadius = "0";
     textarea.style.overflowY = "scroll";
   }
+  if (textarea.style.minHeight) {
+    editor.style.minHeight = textarea.style.minHeight;
+  }
 
   if (!editor || !toolbar) {
     return;
@@ -169,6 +172,7 @@ class TiptapEditor extends EventfulElement {
     const el = this.el;
     el.setAttribute("hidden", "");
     el.spellcheck = false;
+    el.style.minHeight = `${el.rows * 16}px`;
 
     this.init();
   }
