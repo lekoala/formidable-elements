@@ -38,6 +38,18 @@
             </tel-input>
         </div>
         <div class="mb-3">
+            <label for="mphone" class="form-label">My mobile phone</label>
+            <tel-input type="MOBILE"><!-- or any other type from intl-tel-input -->
+                <input type="tel" id="mphone" name="mphone" class="form-control">
+            </tel-input>
+        </div>
+        <div class="mb-3">
+            <label for="mobile_phone" class="form-label">My mobile phone</label>
+            <tel-input><!-- type is auto detected -->
+                <input type="tel" id="mphone" name="mobile_phone" class="form-control">
+            </tel-input>
+        </div>
+        <div class="mb-3">
             <label for="limited" class="form-label">Limited countries (with value)</label>
             <tel-input data-config='{"onlyCountries": ["be","lu","nl"]}'>
                 <input type="tel" id="limited" name="limited" class="form-control" value="+32 0471 234 567">

@@ -20,11 +20,26 @@ class TelInput extends FormidableElement {
     return this.el.value;
   }
 
+  get type() {
+    const name = this.el.getAttribute("name").toLowerCase();
+
+    // Smarter default type based on field name
+    let defaultType = "FIXED_LINE_OR_MOBILE";
+    for (const k in intlTelInputUtils.numberType) {
+      if (name.includes(k.toLowerCase())) {
+        defaultType = k;
+      }
+    }
+    return this.getAttribute("type") || defaultType;
+  }
+
   created() {
     const input = this.el;
     const inputName = input.name;
 
     const systemLocale = navigator.languages ? navigator.languages[0] : "us";
+
+    const type = this.type;
 
     // Disable by default the flags, make it opt-in
     this.config = Object.assign(
@@ -35,6 +50,7 @@ class TelInput extends FormidableElement {
         preferredCountries: [systemLocale.split("-")[1]],
         localizedCountries: localeProvider(name),
         hiddenInput: inputName,
+        placeholderNumberType: type,
         // Only useful if it's not bundled
         // utilsScript : 'https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.5/build/js/utils.min.js'
       },

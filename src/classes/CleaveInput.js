@@ -24,9 +24,13 @@ class CleaveInput extends FormidableElement {
     return this.cleave.getRawValue(true);
   }
 
+  get type() {
+    return this.getAttribute("type");
+  }
+
   created() {
     // Add a custom type attribute for ease of use
-    const type = this.getAttribute("type");
+    const type = this.type;
     if (type === "datetime") {
       this.config.date = true;
       this.config.time = true;
