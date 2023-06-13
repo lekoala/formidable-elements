@@ -24,7 +24,7 @@ export default (input, v = undefined) => {
   // swap names, keep ids
   // keep formatted value (we use prefix for fields like name[arr][val])
   h.name = input.name;
-  input.name = `formatted_${input.name}`;
+  input.name = `_${input.name}`;
 
   return h;
 };

@@ -494,11 +494,11 @@
    ├ src/utils/hasBootstrap.js                                                                                  30b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/tel-input.min.js                                                                                      289.0kb  100.0%
-   ├ node_modules/intl-tel-input/build/js/utils.js                                                           245.4kb   84.9%
+  dist/tel-input.min.js                                                                                      289.3kb  100.0%
+   ├ node_modules/intl-tel-input/build/js/utils.js                                                           245.4kb   84.8%
    ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     36.8kb   12.7%
    ├ src/css/tel-input.min.css                                                                                 3.3kb    1.1%
-   ├ src/classes/TelInput.js                                                                                   849b     0.3%
+   ├ src/classes/TelInput.js                                                                                   1.1kb    0.4%
    ├ src/utils/FormidableElement.js                                                                            353b     0.1%
    ├ src/utils/fetchWrapper.js                                                                                 310b     0.1%
    ├ src/utils/jsonFetch.js                                                                                    310b     0.1%
@@ -513,10 +513,10 @@
    ├ node_modules/intl-tel-input/index.js                                                                       38b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/tel-input.raw.min.js                                                                                  285.4kb  100.0%
-   ├ node_modules/intl-tel-input/build/js/utils.js                                                           245.4kb   86.0%
+  dist/tel-input.raw.min.js                                                                                  285.6kb  100.0%
+   ├ node_modules/intl-tel-input/build/js/utils.js                                                           245.4kb   85.9%
    ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     36.8kb   12.9%
-   ├ src/classes/TelInput.js                                                                                   849b     0.3%
+   ├ src/classes/TelInput.js                                                                                   1.1kb    0.4%
    ├ src/utils/FormidableElement.js                                                                            353b     0.1%
    ├ src/utils/fetchWrapper.js                                                                                 310b     0.1%
    ├ src/utils/jsonFetch.js                                                                                    310b     0.1%
@@ -857,10 +857,10 @@
   dist/cleave-input.min.js                                                                                    17.7kb  100.0%
    ├ node_modules/cleave-es6/src/Cleave.js                                                                     7.2kb   40.8%
    ├ node_modules/cleave-es6/src/CleaveDate.js                                                                 2.8kb   16.0%
-   ├ node_modules/cleave-es6/src/CleaveUtils.js                                                                2.7kb   15.1%
+   ├ node_modules/cleave-es6/src/CleaveUtils.js                                                                2.7kb   15.0%
    ├ node_modules/cleave-es6/src/CleaveNumber.js                                                               2.0kb   11.3%
-   ├ node_modules/cleave-es6/src/CleaveTime.js                                                                 1.9kb   10.5%
-   ├ src/classes/CleaveInput.js                                                                                346b     1.9%
+   ├ node_modules/cleave-es6/src/CleaveTime.js                                                                 1.9kb   10.4%
+   ├ src/classes/CleaveInput.js                                                                                374b     2.1%
    ├ src/utils/FormidableElement.js                                                                            344b     1.9%
    ├ src/utils/replaceCallbacks.js                                                                             155b     0.9%
    ├ src/utils/whenParsed.js                                                                                   117b     0.6%
@@ -997,7 +997,7 @@
   dist\tabulator-grid.raw.min.js  399.1kb
   dist\tiptap-editor.min.js       304.3kb
   dist\tiptap-editor.raw.min.js   303.2kb
-  dist\tel-input.min.js           289.0kb
+  dist\tel-input.min.js           289.3kb
   ...and 27 more output files...
 
-Done in 109ms
+Done in 91ms

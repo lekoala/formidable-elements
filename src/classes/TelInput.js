@@ -1,19 +1,27 @@
 import intlTelInput from "intl-tel-input";
 // Include utils right away to make loading easier
 import "../../node_modules/intl-tel-input/build/js/utils.js";
-import FormidableElement from "../utils/FormidableElement.js";
+import EventfulElement from "../utils/EventfulElement.js";
 import localeProvider from "../utils/localeProvider.js";
 import Storage from "../utils/Storage.js";
 import jsonFetch from "../utils/jsonFetch.js";
+import insertHiddenInput from "../utils/insertHiddenInput.js";
 
 const name = "tel-input";
 
-class TelInput extends FormidableElement {
+class TelInput extends EventfulElement {
   /**
    * @returns {HTMLInputElement}
    */
   get el() {
     return this.querySelector("input");
+  }
+
+  /**
+   * @returns {HTMLDivElement}
+   */
+  get validationFeedback() {
+    return this.querySelector(".invalid-feedback");
   }
 
   get value() {
@@ -33,9 +41,83 @@ class TelInput extends FormidableElement {
     return this.getAttribute("type") || defaultType;
   }
 
+  get events() {
+    return ["focusout", "input"];
+  }
+
+  $input() {
+    if (this.dataset.updateOnInput) {
+      this._updateHiddenValue();
+      this._updateValidation();
+    }
+  }
+
+  $focusout() {
+    this._updateHiddenValue();
+    this._updateValidation();
+  }
+
+  _updateValidation() {
+    const div = this.validationFeedback;
+    if (!div) {
+      return;
+    }
+    const v = this.el.value;
+    this.el.parentElement.classList.remove("is-invalid");
+    if (!v) {
+      return;
+    }
+    const spans = div.querySelectorAll("span");
+    spans.forEach((span) => {
+      span.setAttribute("hidden", "");
+    });
+    if (!this.iti.isValidNumber()) {
+      const errCode = this.iti.getValidationError();
+      this.el.parentElement.classList.add("is-invalid");
+      let found = false;
+      spans.forEach((span) => {
+        if (parseInt(span.dataset.code) == errCode) {
+          span.removeAttribute("hidden");
+          found = true;
+        }
+      });
+      if (!found) {
+        const defaultSpan = div.querySelector(":not([data-code])");
+        if (defaultSpan) {
+          defaultSpan.removeAttribute("hidden");
+        }
+      }
+    }
+  }
+
+  _updateHiddenValue() {
+    let dataformat = 0;
+    switch (this.dataset.dataformat) {
+      case "E164":
+        dataformat = 0;
+        break;
+      case "INTERNATIONAL":
+        dataformat = 1;
+        break;
+      case "NATIONAL":
+        dataformat = 2;
+        break;
+      case "RFC3966":
+        dataformat = 3;
+        break;
+    }
+    if (this.iti.isValidNumber()) {
+      this.hiddenInput.setAttribute("value", this.iti.getNumber(dataformat));
+    } else {
+      this.hiddenInput.setAttribute("value", "");
+    }
+  }
+
   created() {
     const input = this.el;
-    const inputName = input.name;
+    // const inputName = input.name;
+
+    this.hiddenInput = insertHiddenInput(input);
 
     const systemLocale = navigator.languages ? navigator.languages[0] : "us";
 
@@ -49,7 +131,8 @@ class TelInput extends FormidableElement {
         separateDialCode: true,
         preferredCountries: [systemLocale.split("-")[1]],
         localizedCountries: localeProvider(name),
-        hiddenInput: inputName,
+        // we use or own live updating approach
+        // hiddenInput: inputName,
         placeholderNumberType: type,
         // Only useful if it's not bundled
         // utilsScript : 'https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.5/build/js/utils.min.js'

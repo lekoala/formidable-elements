@@ -291,7 +291,7 @@
       "format": "esm"
     },
     "src/classes/CleaveInput.js": {
-      "bytes": 1137,
+      "bytes": 1183,
       "imports": [
         {
           "path": "node_modules/cleave-es6/src/Cleave.js",
@@ -4370,7 +4370,7 @@
       "format": "esm"
     },
     "src/classes/TelInput.js": {
-      "bytes": 2273,
+      "bytes": 2719,
       "imports": [
         {
           "path": "node_modules/intl-tel-input/index.js",
@@ -6070,7 +6070,7 @@
           "bytesInOutput": 344
         },
         "src/classes/CleaveInput.js": {
-          "bytesInOutput": 346
+          "bytesInOutput": 374
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -6079,7 +6079,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 18132
+      "bytes": 18160
     },
     "dist/clipboard-copy.min.js": {
       "imports": [],
@@ -8212,7 +8212,7 @@
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 849
+          "bytesInOutput": 1083
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
           "bytesInOutput": 251322
@@ -8257,7 +8257,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 295966
+      "bytes": 296200
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8271,7 +8271,7 @@
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 849
+          "bytesInOutput": 1083
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
           "bytesInOutput": 251322
@@ -8310,7 +8310,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 292246
+      "bytes": 292480
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],

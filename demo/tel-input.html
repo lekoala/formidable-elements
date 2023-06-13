@@ -38,14 +38,19 @@
             </tel-input>
         </div>
         <div class="mb-3">
-            <label for="mphone" class="form-label">My mobile phone</label>
-            <tel-input type="MOBILE"><!-- or any other type from intl-tel-input -->
+            <label for="mphone" class="form-label">My mobile phone (live validation)</label>
+            <tel-input type="MOBILE" data-update-on-input="true"><!-- or any other type from intl-tel-input -->
                 <input type="tel" id="mphone" name="mphone" class="form-control">
+                <div class="invalid-feedback">
+                    <span>Invalid number</span>
+                    <span data-code="2">Number is too short</span>
+                    <span data-code="3">Number is too long</span>
+                </div>
             </tel-input>
         </div>
         <div class="mb-3">
-            <label for="mobile_phone" class="form-label">My mobile phone</label>
-            <tel-input><!-- type is auto detected -->
+            <label for="mobile_phone" class="form-label">My mobile phone (national hidden format)</label>
+            <tel-input data-dataformat="NATIONAL" data-update-on-input="true"><!-- type is auto detected -->
                 <input type="tel" id="mphone" name="mobile_phone" class="form-control">
             </tel-input>
         </div>
