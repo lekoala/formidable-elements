@@ -336,10 +336,7 @@ class TiptapEditor extends EventfulElement {
             case "html":
               return this._toggleHtmlView(el);
           }
-          if (this._modalMenu) {
-            this._modalMenu.remove();
-            this._modalMenu = null;
-          }
+          this._removeModalMenu();
           this.tiptap.chain().focus()[btnAction](btnParams).run();
           checkButtonActive(btn, el, this.tiptap);
         };
@@ -472,7 +469,7 @@ class TiptapEditor extends EventfulElement {
   }
 
   get events() {
-    return ["input"];
+    return ["input", "focusout"];
   }
 
   connected() {
@@ -487,11 +484,17 @@ class TiptapEditor extends EventfulElement {
     this.$input(ev);
   }
 
-  _toggleLinkModal(anchor) {
-    const isActive = this.tiptap.isActive("link");
+  _removeModalMenu() {
     if (this._modalMenu) {
       this._modalMenu.remove();
       this._modalMenu = null;
+    }
+  }
+
+  _toggleLinkModal(anchor) {
+    const isActive = this.tiptap.isActive("link");
+    if (this._modalMenu) {
+      this._removeModalMenu();
     } else {
       const { view, state } = this.tiptap;
       const { from, to } = view.state.selection;
@@ -549,8 +552,7 @@ class TiptapEditor extends EventfulElement {
               this.tiptap.chain().focus().unsetLink().run();
             }
 
-            this._modalMenu.remove();
-            this._modalMenu = null;
+            this._removeModalMenu();
           },
         }
       );
@@ -560,8 +562,7 @@ class TiptapEditor extends EventfulElement {
   _toggleImageModal(anchor) {
     const isActive = this.tiptap.isActive("image");
     if (this._modalMenu) {
-      this._modalMenu.remove();
-      this._modalMenu = null;
+      this._removeModalMenu();
     } else {
       let attrs = {};
       if (isActive) {
@@ -612,8 +613,7 @@ class TiptapEditor extends EventfulElement {
                 .run();
             }
 
-            this._modalMenu.remove();
-            this._modalMenu = null;
+            this._removeModalMenu();
           },
         }
       );
@@ -662,6 +662,13 @@ class TiptapEditor extends EventfulElement {
       this.tiptap = null;
     }
     this.buttons = null;
+  }
+
+  $focusout(ev) {
+    if (!ev.relatedTarget || !this.contains(ev.relatedTarget)) {
+      // clicked outside
+      this._removeModalMenu();
+    }
   }
 
   $input(ev) {
