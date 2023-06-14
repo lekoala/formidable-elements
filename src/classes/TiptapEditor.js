@@ -488,6 +488,7 @@ class TiptapEditor extends EventfulElement {
     if (this._modalMenu) {
       this._modalMenu.remove();
       this._modalMenu = null;
+      this.style.zIndex = "";
     }
   }
 
@@ -514,6 +515,7 @@ class TiptapEditor extends EventfulElement {
         attrs = this.tiptap.getAttributes("link");
       }
 
+      this.style.zIndex = "3";
       this._modalMenu = dropmenu(
         anchor,
         [
@@ -569,6 +571,9 @@ class TiptapEditor extends EventfulElement {
         attrs = this.tiptap.getAttributes("image");
       }
 
+      // since we have a z-index 2 for our toolbar, we need to set a higher index for our dropmenu container
+      // this is not ideal and will not work in all cases but it covers basic usage
+      this.style.zIndex = "3";
       this._modalMenu = dropmenu(
         anchor,
         [

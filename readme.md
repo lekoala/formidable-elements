@@ -83,7 +83,19 @@ Some elements have specific (data) attributes for some custom features, see dedi
 
 You can access the configuration using the `config` public property of the element.
 
-Some heavier elements support the `lazy` attribute to make them `created` once visible in the viewport.
+### Custom attributes
+
+- Some heavier elements support the `lazy` attribute to make them `created` once visible in the viewport.
+- Some elements have a `type` attribute
+- Formatters favor reflected properties instead of using the data-config
+
+### Custom data attributes and extra config
+
+Some elements have some extra features exposed as data attributes on the element itself. These
+features are added on top of the library being wrapped. See `dataset` usage for this.
+
+Some other features can also be passed in the config object with underscored keys (`_myprop`).
+These keys are not passed to the underlying library. See `getDelete` usage for this.
 
 ### Passing functions
 

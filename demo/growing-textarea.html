@@ -24,6 +24,18 @@
                 <textarea id="growing" name="growing" class="form-control" rows="1"></textarea>
             </growing-textarea>
         </div>
+        <div class="mb-3">
+            <label for="growing2" class="form-label">My entered text</label>
+            <growing-textarea data-trim="true">
+                <!-- it's better to have rows="4" to avoid layout shift -->
+                <textarea id="growing2" name="growing2" class="form-control" rows="1">
+                some
+                    rows
+                    with
+                    text
+                </textarea>
+            </growing-textarea>
+        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     <hr>
