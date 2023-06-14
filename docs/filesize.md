@@ -494,14 +494,16 @@
    ├ src/utils/hasBootstrap.js                                                                                  30b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/tel-input.min.js                                                                                      289.3kb  100.0%
-   ├ node_modules/intl-tel-input/build/js/utils.js                                                           245.4kb   84.8%
-   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     36.8kb   12.7%
+  dist/tel-input.min.js                                                                                      291.3kb  100.0%
+   ├ node_modules/intl-tel-input/build/js/utils.js                                                           245.4kb   84.3%
+   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     36.8kb   12.6%
    ├ src/css/tel-input.min.css                                                                                 3.3kb    1.1%
-   ├ src/classes/TelInput.js                                                                                   1.1kb    0.4%
+   ├ src/classes/TelInput.js                                                                                   2.1kb    0.7%
+   ├ src/utils/EventfulElement.js                                                                              736b     0.2%
    ├ src/utils/FormidableElement.js                                                                            353b     0.1%
    ├ src/utils/fetchWrapper.js                                                                                 310b     0.1%
    ├ src/utils/jsonFetch.js                                                                                    310b     0.1%
+   ├ src/utils/insertHiddenInput.js                                                                            229b     0.1%
    ├ src/utils/Storage.js                                                                                      227b     0.1%
    ├ src/tel-input.js                                                                                          225b     0.1%
    ├ src/utils/replaceCallbacks.js                                                                             163b     0.1%
@@ -509,22 +511,26 @@
    ├ src/utils/whenParsed.js                                                                                   121b     0.0%
    ├ src/utils/localeProvider.js                                                                               120b     0.0%
    ├ src/utils/defineEl.js                                                                                      60b     0.0%
+   ├ src/utils/insertAfter.js                                                                                   59b     0.0%
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.0%
    ├ node_modules/intl-tel-input/index.js                                                                       38b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/tel-input.raw.min.js                                                                                  285.6kb  100.0%
-   ├ node_modules/intl-tel-input/build/js/utils.js                                                           245.4kb   85.9%
-   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     36.8kb   12.9%
-   ├ src/classes/TelInput.js                                                                                   1.1kb    0.4%
+  dist/tel-input.raw.min.js                                                                                  287.7kb  100.0%
+   ├ node_modules/intl-tel-input/build/js/utils.js                                                           245.4kb   85.3%
+   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     36.8kb   12.8%
+   ├ src/classes/TelInput.js                                                                                   2.1kb    0.7%
+   ├ src/utils/EventfulElement.js                                                                              736b     0.2%
    ├ src/utils/FormidableElement.js                                                                            353b     0.1%
    ├ src/utils/fetchWrapper.js                                                                                 310b     0.1%
    ├ src/utils/jsonFetch.js                                                                                    310b     0.1%
+   ├ src/utils/insertHiddenInput.js                                                                            229b     0.1%
    ├ src/utils/Storage.js                                                                                      227b     0.1%
    ├ src/utils/replaceCallbacks.js                                                                             163b     0.1%
    ├ src/utils/whenParsed.js                                                                                   121b     0.0%
    ├ src/utils/localeProvider.js                                                                               120b     0.0%
    ├ src/utils/defineEl.js                                                                                      60b     0.0%
+   ├ src/utils/insertAfter.js                                                                                   59b     0.0%
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.0%
    ├ node_modules/intl-tel-input/index.js                                                                       38b     0.0%
    ├ src/tel-input.raw.js                                                                                       29b     0.0%
@@ -597,8 +603,8 @@
    ├ node_modules/inputmask/lib/dependencyLibs/inputmask.dependencyLib.js                                      364b     0.4%
    ├ src/utils/FormidableElement.js                                                                            353b     0.4%
    ├ node_modules/inputmask/lib/environment.js                                                                 256b     0.3%
-   ├ src/utils/insertHiddenInput.js                                                                            238b     0.3%
    ├ node_modules/inputmask/lib/definitions.js                                                                 230b     0.3%
+   ├ src/utils/insertHiddenInput.js                                                                            229b     0.3%
    ├ node_modules/inputmask/lib/masktoken.js                                                                   201b     0.2%
    ├ src/utils/replaceCallbacks.js                                                                             163b     0.2%
    ├ node_modules/inputmask/lib/escapeRegex.js                                                                 152b     0.2%
@@ -628,7 +634,7 @@
    ├ node_modules/flatpickr/dist/esm/utils/polyfills.js                                                        320b     0.4%
    ├ node_modules/flatpickr/dist/esm/utils/index.js                                                            282b     0.3%
    ├ src/utils/date.js                                                                                         272b     0.3%
-   ├ src/utils/insertHiddenInput.js                                                                            238b     0.3%
+   ├ src/utils/insertHiddenInput.js                                                                            229b     0.3%
    ├ src/flatpickr-input.js                                                                                    225b     0.3%
    ├ src/utils/replaceCallbacks.js                                                                             163b     0.2%
    ├ src/utils/injectStyles.js                                                                                 159b     0.2%
@@ -741,7 +747,7 @@
    ├ node_modules/flatpickr/dist/esm/utils/polyfills.js                                                        320b     0.5%
    ├ node_modules/flatpickr/dist/esm/utils/index.js                                                            282b     0.4%
    ├ src/utils/date.js                                                                                         272b     0.4%
-   ├ src/utils/insertHiddenInput.js                                                                            238b     0.4%
+   ├ src/utils/insertHiddenInput.js                                                                            229b     0.4%
    ├ src/utils/replaceCallbacks.js                                                                             163b     0.3%
    ├ src/utils/query.js                                                                                        135b     0.2%
    ├ src/utils/whenParsed.js                                                                                   121b     0.2%
@@ -997,7 +1003,7 @@
   dist\tabulator-grid.raw.min.js  399.1kb
   dist\tiptap-editor.min.js       304.3kb
   dist\tiptap-editor.raw.min.js   303.2kb
-  dist\tel-input.min.js           289.3kb
+  dist\tel-input.min.js           291.3kb
   ...and 27 more output files...
 
-Done in 91ms
+Done in 94ms

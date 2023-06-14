@@ -791,7 +791,7 @@
       "format": "esm"
     },
     "src/utils/insertHiddenInput.js": {
-      "bytes": 771,
+      "bytes": 762,
       "imports": [
         {
           "path": "src/utils/insertAfter.js",
@@ -4370,7 +4370,7 @@
       "format": "esm"
     },
     "src/classes/TelInput.js": {
-      "bytes": 2719,
+      "bytes": 4771,
       "imports": [
         {
           "path": "node_modules/intl-tel-input/index.js",
@@ -4383,9 +4383,9 @@
           "original": "../../node_modules/intl-tel-input/build/js/utils.js"
         },
         {
-          "path": "src/utils/FormidableElement.js",
+          "path": "src/utils/EventfulElement.js",
           "kind": "import-statement",
-          "original": "../utils/FormidableElement.js"
+          "original": "../utils/EventfulElement.js"
         },
         {
           "path": "src/utils/localeProvider.js",
@@ -4401,6 +4401,11 @@
           "path": "src/utils/jsonFetch.js",
           "kind": "import-statement",
           "original": "../utils/jsonFetch.js"
+        },
+        {
+          "path": "src/utils/insertHiddenInput.js",
+          "kind": "import-statement",
+          "original": "../utils/insertHiddenInput.js"
         }
       ],
       "format": "esm"
@@ -6441,7 +6446,7 @@
           "bytesInOutput": 59
         },
         "src/utils/insertHiddenInput.js": {
-          "bytesInOutput": 238
+          "bytesInOutput": 229
         },
         "src/utils/setId.js": {
           "bytesInOutput": 67
@@ -6477,7 +6482,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 84416
+      "bytes": 84407
     },
     "dist/flatpickr-input.raw.min.js": {
       "imports": [],
@@ -6536,7 +6541,7 @@
           "bytesInOutput": 59
         },
         "src/utils/insertHiddenInput.js": {
-          "bytesInOutput": 238
+          "bytesInOutput": 229
         },
         "src/utils/setId.js": {
           "bytesInOutput": 67
@@ -6560,7 +6565,7 @@
           "bytesInOutput": 35
         }
       },
-      "bytes": 64675
+      "bytes": 64666
     },
     "dist/floating-ui.min.js": {
       "imports": [],
@@ -6801,7 +6806,7 @@
           "bytesInOutput": 59
         },
         "src/utils/insertHiddenInput.js": {
-          "bytesInOutput": 238
+          "bytesInOutput": 229
         },
         "src/classes/InputmaskElement.js": {
           "bytesInOutput": 1021
@@ -6813,7 +6818,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 88350
+      "bytes": 88341
     },
     "dist/locale-provider.min.js": {
       "imports": [],
@@ -8212,7 +8217,7 @@
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 1083
+          "bytesInOutput": 2155
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
           "bytesInOutput": 251322
@@ -8232,6 +8237,9 @@
         "src/utils/FormidableElement.js": {
           "bytesInOutput": 353
         },
+        "src/utils/EventfulElement.js": {
+          "bytesInOutput": 736
+        },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
         },
@@ -8243,6 +8251,12 @@
         },
         "src/utils/jsonFetch.js": {
           "bytesInOutput": 310
+        },
+        "src/utils/insertAfter.js": {
+          "bytesInOutput": 59
+        },
+        "src/utils/insertHiddenInput.js": {
+          "bytesInOutput": 229
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8257,7 +8271,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 296200
+      "bytes": 298296
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8271,7 +8285,7 @@
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 1083
+          "bytesInOutput": 2155
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
           "bytesInOutput": 251322
@@ -8291,6 +8305,9 @@
         "src/utils/FormidableElement.js": {
           "bytesInOutput": 353
         },
+        "src/utils/EventfulElement.js": {
+          "bytesInOutput": 736
+        },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
         },
@@ -8303,6 +8320,12 @@
         "src/utils/jsonFetch.js": {
           "bytesInOutput": 310
         },
+        "src/utils/insertAfter.js": {
+          "bytesInOutput": 59
+        },
+        "src/utils/insertHiddenInput.js": {
+          "bytesInOutput": 229
+        },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
         },
@@ -8310,7 +8333,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 292480
+      "bytes": 294576
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],

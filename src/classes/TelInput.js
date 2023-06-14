@@ -38,7 +38,12 @@ class TelInput extends EventfulElement {
         defaultType = k;
       }
     }
-    return this.getAttribute("type") || defaultType;
+    let t = this.getAttribute("type") || defaultType;
+    t = t.toUpperCase();
+    if (t == "FIXED") {
+      t = "FIXED_LINE";
+    }
+    return t;
   }
 
   get events() {
