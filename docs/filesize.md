@@ -617,13 +617,13 @@
    ├ src/input-mask.js                                                                                          30b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/flatpickr-input.min.js                                                                                 82.4kb  100.0%
-   ├ node_modules/flatpickr/dist/esm/index.js                                                                 41.1kb   49.9%
-   ├ node_modules/flatpickr/dist/flatpickr.min.css                                                            15.8kb   19.2%
+  dist/flatpickr-input.min.js                                                                                 82.6kb  100.0%
+   ├ node_modules/flatpickr/dist/esm/index.js                                                                 41.1kb   49.8%
+   ├ node_modules/flatpickr/dist/flatpickr.min.css                                                            15.8kb   19.1%
    ├ node_modules/flatpickr/dist/plugins/monthSelect/index.js                                                  5.4kb    6.5%
-   ├ node_modules/flatpickr/dist/plugins/monthSelect/style.css                                                 2.8kb    3.4%
+   ├ node_modules/flatpickr/dist/plugins/monthSelect/style.css                                                 2.8kb    3.3%
    ├ node_modules/flatpickr/dist/esm/utils/formatting.js                                                       2.5kb    3.0%
-   ├ src/classes/FlatpickrInput.js                                                                             2.2kb    2.6%
+   ├ src/classes/FlatpickrInput.js                                                                             2.3kb    2.8%
    ├ node_modules/flatpickr/dist/esm/utils/dates.js                                                            2.0kb    2.5%
    ├ node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.js                                            1.8kb    2.2%
    ├ node_modules/flatpickr/dist/esm/types/options.js                                                          1.8kb    2.2%
@@ -733,11 +733,11 @@
    ├ src/utils/hasBootstrap.js                                                                                  30b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/flatpickr-input.raw.min.js                                                                             63.2kb  100.0%
-   ├ node_modules/flatpickr/dist/esm/index.js                                                                 41.1kb   65.1%
+  dist/flatpickr-input.raw.min.js                                                                             63.3kb  100.0%
+   ├ node_modules/flatpickr/dist/esm/index.js                                                                 41.1kb   64.9%
    ├ node_modules/flatpickr/dist/plugins/monthSelect/index.js                                                  5.4kb    8.5%
    ├ node_modules/flatpickr/dist/esm/utils/formatting.js                                                       2.5kb    4.0%
-   ├ src/classes/FlatpickrInput.js                                                                             2.2kb    3.4%
+   ├ src/classes/FlatpickrInput.js                                                                             2.3kb    3.6%
    ├ node_modules/flatpickr/dist/esm/utils/dates.js                                                            2.0kb    3.2%
    ├ node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.js                                            1.8kb    2.9%
    ├ node_modules/flatpickr/dist/esm/types/options.js                                                          1.8kb    2.8%
@@ -1007,4 +1007,4 @@
   dist\tel-input.min.js           291.4kb
   ...and 27 more output files...
 
-Done in 104ms
+Done in 92ms

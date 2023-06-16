@@ -807,7 +807,7 @@
       "format": "esm"
     },
     "src/classes/FlatpickrInput.js": {
-      "bytes": 6327,
+      "bytes": 6620,
       "imports": [
         {
           "path": "node_modules/flatpickr/dist/esm/index.js",
@@ -6431,7 +6431,7 @@
           "bytesInOutput": 42084
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 2216
+          "bytesInOutput": 2351
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6488,7 +6488,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 84407
+      "bytes": 84542
     },
     "dist/flatpickr-input.raw.min.js": {
       "imports": [],
@@ -6526,7 +6526,7 @@
           "bytesInOutput": 42084
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 2216
+          "bytesInOutput": 2351
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6571,7 +6571,7 @@
           "bytesInOutput": 35
         }
       },
-      "bytes": 64666
+      "bytes": 64801
     },
     "dist/floating-ui.min.js": {
       "imports": [],
