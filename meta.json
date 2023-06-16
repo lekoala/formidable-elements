@@ -121,7 +121,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-      "bytes": 30283,
+      "bytes": 29955,
       "imports": [],
       "format": "esm"
     },
@@ -168,7 +168,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags.js": {
-      "bytes": 63358,
+      "bytes": 67392,
       "imports": [],
       "format": "esm"
     },
@@ -194,7 +194,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags-pure.min.css": {
-      "bytes": 1022,
+      "bytes": 1114,
       "imports": []
     },
     "src/utils/injectStyles.js": {
@@ -245,7 +245,7 @@
       "format": "esm"
     },
     "node_modules/cleave-es6/src/CleaveUtils.js": {
-      "bytes": 8749,
+      "bytes": 9037,
       "imports": [],
       "format": "esm"
     },
@@ -265,7 +265,7 @@
       "format": "esm"
     },
     "node_modules/cleave-es6/src/Cleave.js": {
-      "bytes": 16485,
+      "bytes": 17016,
       "imports": [
         {
           "path": "node_modules/cleave-es6/src/CleaveUtils.js",
@@ -927,7 +927,7 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs": {
-      "bytes": 11634,
+      "bytes": 11714,
       "imports": [],
       "format": "esm"
     },
@@ -1084,8 +1084,14 @@
       "format": "esm"
     },
     "src/classes/GrowingTextarea.js": {
-      "bytes": 909,
-      "imports": [],
+      "bytes": 1221,
+      "imports": [
+        {
+          "path": "src/utils/whenParsed.js",
+          "kind": "import-statement",
+          "original": "../utils/whenParsed.js"
+        }
+      ],
       "format": "esm"
     },
     "src/growing-textarea.js": {
@@ -4370,7 +4376,7 @@
       "format": "esm"
     },
     "src/classes/TelInput.js": {
-      "bytes": 4771,
+      "bytes": 4870,
       "imports": [
         {
           "path": "node_modules/intl-tel-input/index.js",
@@ -5053,7 +5059,7 @@
       "format": "esm"
     },
     "src/classes/TiptapEditor.js": {
-      "bytes": 19474,
+      "bytes": 19764,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5925,7 +5931,7 @@
       "entryPoint": "src/bs-autocomplete.js",
       "inputs": {
         "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-          "bytesInOutput": 13136
+          "bytesInOutput": 12968
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -5955,7 +5961,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 14322
+      "bytes": 14154
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -5963,7 +5969,7 @@
       "entryPoint": "src/bs-tags.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 25147
+          "bytesInOutput": 25942
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -5987,19 +5993,19 @@
           "bytesInOutput": 223
         },
         "src/utils/defineEl.js": {
-          "bytesInOutput": 56
+          "bytesInOutput": 57
         },
         "node_modules/bootstrap5-tags/tags-pure.min.css": {
-          "bytesInOutput": 1031
+          "bytesInOutput": 1124
         },
         "src/utils/injectStyles.js": {
-          "bytesInOutput": 158
+          "bytesInOutput": 159
         },
         "src/bs-tags.js": {
-          "bytesInOutput": 39
+          "bytesInOutput": 42
         }
       },
-      "bytes": 27477
+      "bytes": 28370
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -6007,7 +6013,7 @@
       "entryPoint": "src/bs-tags.raw.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 25143
+          "bytesInOutput": 25942
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6031,13 +6037,13 @@
           "bytesInOutput": 223
         },
         "src/utils/defineEl.js": {
-          "bytesInOutput": 56
+          "bytesInOutput": 57
         },
         "src/bs-tags.raw.js": {
-          "bytesInOutput": 24
+          "bytesInOutput": 25
         }
       },
-      "bytes": 26269
+      "bytes": 27070
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -6045,7 +6051,7 @@
       "entryPoint": "src/cleave-input.js",
       "inputs": {
         "node_modules/cleave-es6/src/CleaveUtils.js": {
-          "bytesInOutput": 2732
+          "bytesInOutput": 2853
         },
         "node_modules/cleave-es6/src/CleaveDate.js": {
           "bytesInOutput": 2897
@@ -6057,7 +6063,7 @@
           "bytesInOutput": 2054
         },
         "node_modules/cleave-es6/src/Cleave.js": {
-          "bytesInOutput": 7403
+          "bytesInOutput": 7650
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6084,7 +6090,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 18160
+      "bytes": 18528
     },
     "dist/clipboard-copy.min.js": {
       "imports": [],
@@ -6573,7 +6579,7 @@
       "entryPoint": "src/floating-ui.js",
       "inputs": {
         "node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs": {
-          "bytesInOutput": 8110
+          "bytesInOutput": 8177
         },
         "node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs": {
           "bytesInOutput": 7213
@@ -6603,7 +6609,7 @@
           "bytesInOutput": 120
         },
         "src/classes/FloatingUi.js": {
-          "bytesInOutput": 4399
+          "bytesInOutput": 4402
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6615,7 +6621,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 21595
+      "bytes": 21665
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -6701,8 +6707,11 @@
       "exports": [],
       "entryPoint": "src/growing-textarea.js",
       "inputs": {
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 117
+        },
         "src/classes/GrowingTextarea.js": {
-          "bytesInOutput": 380
+          "bytesInOutput": 575
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -6711,7 +6720,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 493
+      "bytes": 805
     },
     "dist/input-mask.min.js": {
       "imports": [],
@@ -8217,7 +8226,7 @@
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 2155
+          "bytesInOutput": 2210
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
           "bytesInOutput": 251322
@@ -8271,7 +8280,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 298296
+      "bytes": 298351
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8285,7 +8294,7 @@
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 2155
+          "bytesInOutput": 2210
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
           "bytesInOutput": 251322
@@ -8333,7 +8342,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 294576
+      "bytes": 294631
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -8515,7 +8524,7 @@
           "bytesInOutput": 1568
         },
         "src/classes/TiptapEditor.js": {
-          "bytesInOutput": 7720
+          "bytesInOutput": 7785
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8530,7 +8539,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 311610
+      "bytes": 311675
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -8712,7 +8721,7 @@
           "bytesInOutput": 1568
         },
         "src/classes/TiptapEditor.js": {
-          "bytesInOutput": 7720
+          "bytesInOutput": 7785
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8721,7 +8730,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 310444
+      "bytes": 310509
     },
     "dist/tom-select.min.js": {
       "imports": [],
@@ -8729,19 +8738,19 @@
       "entryPoint": "src/tom-select.js",
       "inputs": {
         "node_modules/@orchidjs/sifter/dist/umd/sifter.js": {
-          "bytesInOutput": 7911
+          "bytesInOutput": 7897
         },
         "node_modules/@orchidjs/unicode-variants/dist/umd/index.js": {
-          "bytesInOutput": 4901
+          "bytesInOutput": 4903
         },
         "node_modules/tom-select/src/contrib/microevent.ts": {
-          "bytesInOutput": 462
+          "bytesInOutput": 470
         },
         "node_modules/tom-select/src/contrib/microplugin.ts": {
-          "bytesInOutput": 876
+          "bytesInOutput": 837
         },
         "node_modules/tom-select/src/tom-select.ts": {
-          "bytesInOutput": 26122
+          "bytesInOutput": 26168
         },
         "node_modules/@orchidjs/sifter/lib/utils.ts": {
           "bytesInOutput": 116
@@ -8858,7 +8867,7 @@
           "bytesInOutput": 122
         }
       },
-      "bytes": 73227
+      "bytes": 73230
     },
     "dist/tom-select.raw.min.js": {
       "imports": [],
@@ -8866,19 +8875,19 @@
       "entryPoint": "src/tom-select.raw.js",
       "inputs": {
         "node_modules/@orchidjs/sifter/dist/umd/sifter.js": {
-          "bytesInOutput": 7911
+          "bytesInOutput": 7897
         },
         "node_modules/@orchidjs/unicode-variants/dist/umd/index.js": {
-          "bytesInOutput": 4901
+          "bytesInOutput": 4903
         },
         "node_modules/tom-select/src/contrib/microevent.ts": {
-          "bytesInOutput": 462
+          "bytesInOutput": 470
         },
         "node_modules/tom-select/src/contrib/microplugin.ts": {
-          "bytesInOutput": 876
+          "bytesInOutput": 837
         },
         "node_modules/tom-select/src/tom-select.ts": {
-          "bytesInOutput": 26122
+          "bytesInOutput": 26168
         },
         "node_modules/@orchidjs/sifter/lib/utils.ts": {
           "bytesInOutput": 116
@@ -8989,7 +8998,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 58104
+      "bytes": 58107
     }
   }
 }
