@@ -43,6 +43,12 @@
             </input-mask>
         </div>
         <div class="mb-3">
+            <label for="datetime-input" class="form-label">Date time (alias)</label>
+            <input-mask data-config='{"alias": "datetime", "inputFormat": "dd/mm/yyyy HH:MM:ss"}'>
+                <input type="text" class="form-control" id="datetime-input" name="datetime">
+            </input-mask>
+        </div>
+        <div class="mb-3">
             <label for="date-input" class="form-label">Date (alias) but iso format</label>
             <input-mask data-config='{"alias": "datetime", "inputFormat": "dd/mm/yyyy", "outputFormat":"yyyy-mm-dd"}'>
                 <input type="text" class="form-control" id="date-input" name="date">

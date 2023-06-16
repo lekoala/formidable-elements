@@ -83,6 +83,11 @@ class InputmaskElement extends FormidableElement {
         if (this.config.radixPoint === ",") {
           val = val.replace(",", ".");
         }
+        // Make sure we get a valid date
+        // @ts-ignore
+        if (["time", "datetime"].includes(this.inputmask.userOptions.alias)) {
+          val = val.replace(/[a-zA-Z]/g, "0");
+        }
         this.hiddenInput.value = val;
       };
       this.handleEvent(); // run once to make sure value is set on hidden field
