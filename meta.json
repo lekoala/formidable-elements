@@ -1582,7 +1582,7 @@
       "format": "esm"
     },
     "src/classes/InputmaskElement.js": {
-      "bytes": 3441,
+      "bytes": 3645,
       "imports": [
         {
           "path": "node_modules/inputmask/lib/extensions/inputmask.extensions.js",
@@ -6818,7 +6818,7 @@
           "bytesInOutput": 229
         },
         "src/classes/InputmaskElement.js": {
-          "bytesInOutput": 1021
+          "bytesInOutput": 1116
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6827,7 +6827,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 88341
+      "bytes": 88436
     },
     "dist/locale-provider.min.js": {
       "imports": [],

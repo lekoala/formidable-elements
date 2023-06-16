@@ -582,7 +582,7 @@
    ├ src/filepond-input.raw.js                                                                                  34b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/input-mask.min.js                                                                                      86.3kb  100.0%
+  dist/input-mask.min.js                                                                                      86.4kb  100.0%
    ├ node_modules/inputmask/lib/extensions/inputmask.numeric.extensions.js                                    11.9kb   13.7%
    ├ node_modules/inputmask/lib/extensions/inputmask.date.extensions.js                                       10.1kb   11.7%
    ├ node_modules/inputmask/lib/validation.js                                                                  9.7kb   11.2%
@@ -595,9 +595,9 @@
    ├ node_modules/inputmask/lib/mask.js                                                                        4.1kb    4.8%
    ├ node_modules/inputmask/lib/dependencyLibs/events.js                                                       2.4kb    2.7%
    ├ node_modules/inputmask/lib/extensions/inputmask.extensions.js                                             1.7kb    1.9%
-   ├ node_modules/inputmask/lib/defaults.js                                                                    1.4kb    1.7%
+   ├ node_modules/inputmask/lib/defaults.js                                                                    1.4kb    1.6%
    ├ node_modules/inputmask/lib/eventruler.js                                                                  1.4kb    1.6%
-   ├ src/classes/InputmaskElement.js                                                                          1021b     1.2%
+   ├ src/classes/InputmaskElement.js                                                                           1.1kb    1.3%
    ├ node_modules/inputmask/lib/keycode.js                                                                     570b     0.6%
    ├ node_modules/inputmask/lib/dependencyLibs/extend.js                                                       479b     0.5%
    ├ node_modules/inputmask/lib/dependencyLibs/inputmask.dependencyLib.js                                      364b     0.4%
@@ -1007,4 +1007,4 @@
   dist\tel-input.min.js           291.4kb
   ...and 27 more output files...
 
-Done in 425ms
+Done in 104ms
