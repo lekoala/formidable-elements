@@ -104,6 +104,7 @@ class FlatpickrInput extends FormidableElement {
       // @link https://github.com/flatpickr/flatpickr/issues/1208
       const other = q("input", this.dataset.range);
       if (other) {
+        // If range is set on the first element determine the pair that will be called by set range
         this.el.dataset.rangeEnd = `${this.dataset.range}`;
         other.dataset.rangeStart = `#${id}`;
       }
@@ -172,6 +173,10 @@ class FlatpickrInput extends FormidableElement {
      */
     this.flatpickr = flatpickr(input, this.config);
 
+    if (this.el.value) {
+      this._setRange(this.flatpickr.selectedDates[0]);
+    }
+
     // Use arrow function to make sure that the scope is always this
     this.handleEvent = (ev) => {
       const d = this.flatpickr.selectedDates[0] || null;
@@ -186,17 +191,7 @@ class FlatpickrInput extends FormidableElement {
         this.hiddenInput.value = v;
       }
 
-      // range management
-      if (this.el.dataset.rangeStart) {
-        //@ts-ignore
-        let fp = q(this.el.dataset.rangeStart)._flatpickr;
-        fp.set("maxDate", d);
-      }
-      if (this.el.dataset.rangeEnd) {
-        //@ts-ignore
-        let fp = q(this.el.dataset.rangeEnd)._flatpickr;
-        fp.set("minDate", d);
-      }
+      this._setRange(d);
 
       // This can be useful to have one source of truth for the value when updated
       this.dispatchEvent(
@@ -208,6 +203,24 @@ class FlatpickrInput extends FormidableElement {
     events.forEach((type) => {
       input.addEventListener(type, this);
     });
+  }
+
+  _setRange(d) {
+    // range management
+    if (this.el.dataset.rangeStart) {
+      //@ts-ignore
+      let fp = q(this.el.dataset.rangeStart)._flatpickr || null;
+      if (fp) {
+        fp.set("maxDate", d);
+      }
+    }
+    if (this.el.dataset.rangeEnd) {
+      //@ts-ignore
+      let fp = q(this.el.dataset.rangeEnd)._flatpickr || null;
+      if (fp) {
+        fp.set("minDate", d);
+      }
+    }
   }
 
   destroyed() {
