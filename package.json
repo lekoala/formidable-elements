@@ -20,7 +20,7 @@
     "@tiptap/pm": "^2.0.3",
     "@tiptap/starter-kit": "^2.0.3",
     "bootstrap5-autocomplete": "^1.1.14",
-    "bootstrap5-tags": "^1.6.0",
+    "bootstrap5-tags": "^1.6.1",
     "cleave-es6": "^1.0.2",
     "filepond": "^4.30.4",
     "filepond-plugin-file-metadata": "^1.0.8",
@@ -42,7 +42,7 @@
     "tom-select": "^2.2.2"
   },
   "devDependencies": {
-    "esbuild": "^0.18.3"
+    "esbuild": "^0.18.4"
   },
   "keywords": [
     "form",
