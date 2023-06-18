@@ -168,7 +168,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags.js": {
-      "bytes": 67717,
+      "bytes": 68423,
       "imports": [],
       "format": "esm"
     },
@@ -194,7 +194,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags-pure.min.css": {
-      "bytes": 1114,
+      "bytes": 1165,
       "imports": []
     },
     "src/utils/injectStyles.js": {
@@ -265,7 +265,7 @@
       "format": "esm"
     },
     "node_modules/cleave-es6/src/Cleave.js": {
-      "bytes": 17016,
+      "bytes": 17131,
       "imports": [
         {
           "path": "node_modules/cleave-es6/src/CleaveUtils.js",
@@ -932,7 +932,7 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs": {
-      "bytes": 7606,
+      "bytes": 7969,
       "imports": [
         {
           "path": "node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs",
@@ -5969,7 +5969,7 @@
       "entryPoint": "src/bs-tags.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 26046
+          "bytesInOutput": 25724
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -5987,16 +5987,16 @@
           "bytesInOutput": 344
         },
         "src/utils/rmElements.js": {
-          "bytesInOutput": 105
+          "bytesInOutput": 106
         },
         "src/classes/BsTags.js": {
-          "bytesInOutput": 223
+          "bytesInOutput": 224
         },
         "src/utils/defineEl.js": {
-          "bytesInOutput": 57
+          "bytesInOutput": 60
         },
         "node_modules/bootstrap5-tags/tags-pure.min.css": {
-          "bytesInOutput": 1124
+          "bytesInOutput": 1175
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 159
@@ -6005,7 +6005,7 @@
           "bytesInOutput": 42
         }
       },
-      "bytes": 28474
+      "bytes": 28208
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -6013,7 +6013,7 @@
       "entryPoint": "src/bs-tags.raw.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 26046
+          "bytesInOutput": 25724
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6031,19 +6031,19 @@
           "bytesInOutput": 344
         },
         "src/utils/rmElements.js": {
-          "bytesInOutput": 105
+          "bytesInOutput": 106
         },
         "src/classes/BsTags.js": {
-          "bytesInOutput": 223
+          "bytesInOutput": 224
         },
         "src/utils/defineEl.js": {
-          "bytesInOutput": 57
+          "bytesInOutput": 60
         },
         "src/bs-tags.raw.js": {
           "bytesInOutput": 25
         }
       },
-      "bytes": 27174
+      "bytes": 26857
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -6063,7 +6063,7 @@
           "bytesInOutput": 2054
         },
         "node_modules/cleave-es6/src/Cleave.js": {
-          "bytesInOutput": 7650
+          "bytesInOutput": 7711
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6090,7 +6090,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 18528
+      "bytes": 18589
     },
     "dist/clipboard-copy.min.js": {
       "imports": [],
@@ -6582,7 +6582,7 @@
           "bytesInOutput": 8177
         },
         "node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs": {
-          "bytesInOutput": 7213
+          "bytesInOutput": 7578
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6621,7 +6621,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 21666
+      "bytes": 22031
     },
     "dist/format-date.min.js": {
       "imports": [],

@@ -803,28 +803,28 @@
    ├ src/tom-select.raw.js                                                                                      30b     0.1%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/bs-tags.min.js                                                                                         27.8kb  100.0%
-   ├ node_modules/bootstrap5-tags/tags.js                                                                     25.4kb   91.5%
-   ├ node_modules/bootstrap5-tags/tags-pure.min.css                                                            1.1kb    3.9%
+  dist/bs-tags.min.js                                                                                         27.5kb  100.0%
+   ├ node_modules/bootstrap5-tags/tags.js                                                                     25.1kb   91.2%
+   ├ node_modules/bootstrap5-tags/tags-pure.min.css                                                            1.1kb    4.2%
    ├ src/utils/FormidableElement.js                                                                            344b     1.2%
-   ├ src/classes/BsTags.js                                                                                     223b     0.8%
+   ├ src/classes/BsTags.js                                                                                     224b     0.8%
    ├ src/utils/injectStyles.js                                                                                 159b     0.6%
    ├ src/utils/replaceCallbacks.js                                                                             155b     0.5%
    ├ src/utils/whenParsed.js                                                                                   117b     0.4%
-   ├ src/utils/rmElements.js                                                                                   105b     0.4%
-   ├ src/utils/defineEl.js                                                                                      57b     0.2%
+   ├ src/utils/rmElements.js                                                                                   106b     0.4%
+   ├ src/utils/defineEl.js                                                                                      60b     0.2%
    ├ src/utils/getGlobalFn.js                                                                                   49b     0.2%
    ├ src/bs-tags.js                                                                                             42b     0.1%
    └ src/utils/isString.js                                                                                      28b     0.1%
 
-  dist/bs-tags.raw.min.js                                                                                     26.5kb  100.0%
-   ├ node_modules/bootstrap5-tags/tags.js                                                                     25.4kb   95.8%
+  dist/bs-tags.raw.min.js                                                                                     26.2kb  100.0%
+   ├ node_modules/bootstrap5-tags/tags.js                                                                     25.1kb   95.8%
    ├ src/utils/FormidableElement.js                                                                            344b     1.3%
-   ├ src/classes/BsTags.js                                                                                     223b     0.8%
+   ├ src/classes/BsTags.js                                                                                     224b     0.8%
    ├ src/utils/replaceCallbacks.js                                                                             155b     0.6%
    ├ src/utils/whenParsed.js                                                                                   117b     0.4%
-   ├ src/utils/rmElements.js                                                                                   105b     0.4%
-   ├ src/utils/defineEl.js                                                                                      57b     0.2%
+   ├ src/utils/rmElements.js                                                                                   106b     0.4%
+   ├ src/utils/defineEl.js                                                                                      60b     0.2%
    ├ src/utils/getGlobalFn.js                                                                                   49b     0.2%
    ├ src/utils/isString.js                                                                                      28b     0.1%
    └ src/bs-tags.raw.js                                                                                         25b     0.1%
@@ -844,27 +844,27 @@
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.2%
    └ src/utils/isString.js                                                                                      29b     0.1%
 
-  dist/floating-ui.min.js                                                                                     21.2kb  100.0%
-   ├ node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs                                      8.0kb   37.7%
-   ├ node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs                                        7.0kb   33.3%
-   ├ src/classes/FloatingUi.js                                                                                 4.3kb   20.3%
+  dist/floating-ui.min.js                                                                                     21.5kb  100.0%
+   ├ node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs                                      8.0kb   37.1%
+   ├ node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs                                        7.4kb   34.4%
+   ├ src/classes/FloatingUi.js                                                                                 4.3kb   20.0%
    ├ src/floating-ui.js                                                                                        410b     1.9%
    ├ src/utils/FormidableElement.js                                                                            353b     1.6%
    ├ src/utils/props.js                                                                                        308b     1.4%
-   ├ src/utils/replaceCallbacks.js                                                                             163b     0.8%
+   ├ src/utils/replaceCallbacks.js                                                                             163b     0.7%
    ├ src/utils/injectStyles.js                                                                                 159b     0.7%
-   ├ src/utils/whenParsed.js                                                                                   121b     0.6%
-   ├ src/utils/reflectedProperties.js                                                                          120b     0.6%
+   ├ src/utils/whenParsed.js                                                                                   121b     0.5%
+   ├ src/utils/reflectedProperties.js                                                                          120b     0.5%
    ├ src/utils/isRTL.js                                                                                         75b     0.3%
    ├ src/utils/defineEl.js                                                                                      60b     0.3%
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.2%
    └ src/utils/isString.js                                                                                      29b     0.1%
 
-  dist/cleave-input.min.js                                                                                    18.1kb  100.0%
-   ├ node_modules/cleave-es6/src/Cleave.js                                                                     7.5kb   41.3%
+  dist/cleave-input.min.js                                                                                    18.2kb  100.0%
+   ├ node_modules/cleave-es6/src/Cleave.js                                                                     7.5kb   41.5%
    ├ node_modules/cleave-es6/src/CleaveDate.js                                                                 2.8kb   15.6%
-   ├ node_modules/cleave-es6/src/CleaveUtils.js                                                                2.8kb   15.4%
-   ├ node_modules/cleave-es6/src/CleaveNumber.js                                                               2.0kb   11.1%
+   ├ node_modules/cleave-es6/src/CleaveUtils.js                                                                2.8kb   15.3%
+   ├ node_modules/cleave-es6/src/CleaveNumber.js                                                               2.0kb   11.0%
    ├ node_modules/cleave-es6/src/CleaveTime.js                                                                 1.9kb   10.2%
    ├ src/classes/CleaveInput.js                                                                                374b     2.0%
    ├ src/utils/FormidableElement.js                                                                            344b     1.9%
@@ -1007,4 +1007,4 @@
   dist\tel-input.min.js           291.4kb
   ...and 27 more output files...
 
-Done in 94ms
+Done in 88ms
