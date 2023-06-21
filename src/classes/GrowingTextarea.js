@@ -29,7 +29,7 @@ class GrowingTextarea extends HTMLElement {
       if ((!ev || ev.type == "focusout") && this.dataset.trim) {
         el.value = el.value.trim();
       }
-      if (el instanceof HTMLTextAreaElement) {
+      if (el instanceof HTMLTextAreaElement && el.scrollHeight > 0) {
         el.style.overflow = "hidden";
         el.style.height = "0";
         el.style.height = el.scrollHeight + "px";
