@@ -1084,7 +1084,7 @@
       "format": "esm"
     },
     "src/classes/GrowingTextarea.js": {
-      "bytes": 1221,
+      "bytes": 1244,
       "imports": [
         {
           "path": "src/utils/whenParsed.js",
@@ -6711,7 +6711,7 @@
           "bytesInOutput": 117
         },
         "src/classes/GrowingTextarea.js": {
-          "bytesInOutput": 575
+          "bytesInOutput": 593
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -6720,7 +6720,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 805
+      "bytes": 823
     },
     "dist/input-mask.min.js": {
       "imports": [],

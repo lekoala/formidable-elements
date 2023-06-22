@@ -156,6 +156,11 @@ class TabulatorGrid extends EventfulElement {
       const holder = tabulator.element.querySelector(".tabulator-tableholder");
       holder.style.minHeight = holder.clientHeight + "px";
       holder.style.overflowAnchor = "none"; // Without this, it jumps on firefox
+
+      // No overflow if responsive
+      if (config.responsiveLayout) {
+        holder.style.overflowY = "hidden";
+      }
     });
     tabulator.on("renderComplete", () => {
       const holder = tabulator.element.querySelector(".tabulator-tableholder");

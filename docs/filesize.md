@@ -983,11 +983,11 @@
    ├ src/format-number.js                                                                                       29b     1.7%
    └ src/utils/isString.js                                                                                      28b     1.6%
 
-  dist/growing-textarea.min.js                                                                                 805b   100.0%
-   ├ src/classes/GrowingTextarea.js                                                                            575b    71.4%
-   ├ src/utils/whenParsed.js                                                                                   117b    14.5%
-   ├ src/utils/defineEl.js                                                                                      56b     7.0%
-   └ src/growing-textarea.js                                                                                    32b     4.0%
+  dist/growing-textarea.min.js                                                                                 823b   100.0%
+   ├ src/classes/GrowingTextarea.js                                                                            593b    72.1%
+   ├ src/utils/whenParsed.js                                                                                   117b    14.2%
+   ├ src/utils/defineEl.js                                                                                      56b     6.8%
+   └ src/growing-textarea.js                                                                                    32b     3.9%
 
   dist/bound-input.min.js                                                                                      567b   100.0%
    ├ src/classes/BoundInput.js                                                                                 459b    81.0%
@@ -1007,4 +1007,4 @@
   dist\tel-input.min.js           291.4kb
   ...and 27 more output files...
 
-Done in 88ms
+Done in 1102ms
