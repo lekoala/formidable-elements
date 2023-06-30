@@ -1,5 +1,5 @@
 
-  dist/tabulator-grid.min.js                                                                                 443.7kb  100.0%
+  dist/tabulator-grid.min.js                                                                                 443.8kb  100.0%
    ├ node_modules/tabulator-tables/dist/css/tabulator_bootstrap5.min.css                                      35.0kb    7.9%
    ├ node_modules/tabulator-tables/src/js/core/RowManager.js                                                  15.5kb    3.5%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/List.js                                                15.3kb    3.4%
@@ -40,7 +40,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/ResizeTable/ResizeTable.js                                   2.9kb    0.7%
    ├ src/classes/tabulator/ResponsiveLayout/ResponsiveLayout.js                                                2.9kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/FrozenRows/FrozenRows.js                                     2.7kb    0.6%
-   ├ src/classes/TabulatorGrid.js                                                                              2.6kb    0.6%
+   ├ src/classes/TabulatorGrid.js                                                                              2.7kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/History/History.js                                           2.6kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/star.js                                2.5kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/Import/Import.js                                             2.3kb    0.5%
@@ -232,7 +232,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/ResizeTable/ResizeTable.js                                   2.9kb    0.7%
    ├ src/classes/tabulator/ResponsiveLayout/ResponsiveLayout.js                                                2.9kb    0.7%
    ├ node_modules/tabulator-tables/src/js/modules/FrozenRows/FrozenRows.js                                     2.7kb    0.7%
-   ├ src/classes/TabulatorGrid.js                                                                              2.6kb    0.7%
+   ├ src/classes/TabulatorGrid.js                                                                              2.7kb    0.7%
    ├ node_modules/tabulator-tables/src/js/modules/History/History.js                                           2.6kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/star.js                                2.5kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/Import/Import.js                                             2.3kb    0.6%
@@ -829,13 +829,13 @@
    ├ src/utils/isString.js                                                                                      28b     0.1%
    └ src/bs-tags.raw.js                                                                                         25b     0.1%
 
-  dist/coloris-input.min.js                                                                                   24.4kb  100.0%
-   ├ node_modules/@melloware/coloris/dist/esm/coloris.js                                                      14.2kb   58.1%
-   ├ node_modules/@melloware/coloris/dist/coloris.min.css                                                      8.3kb   33.9%
+  dist/coloris-input.min.js                                                                                   24.5kb  100.0%
+   ├ node_modules/@melloware/coloris/dist/esm/coloris.js                                                      14.3kb   58.2%
+   ├ node_modules/@melloware/coloris/dist/coloris.min.css                                                      8.3kb   33.8%
    ├ src/classes/ColorisInput.js                                                                               385b     1.5%
    ├ src/utils/FormidableElement.js                                                                            353b     1.4%
    ├ src/coloris-input.js                                                                                      247b     1.0%
-   ├ src/utils/replaceCallbacks.js                                                                             163b     0.7%
+   ├ src/utils/replaceCallbacks.js                                                                             163b     0.6%
    ├ src/utils/injectStyles.js                                                                                 159b     0.6%
    ├ src/utils/whenParsed.js                                                                                   121b     0.5%
    ├ src/utils/isRTL.js                                                                                         75b     0.3%
@@ -844,11 +844,11 @@
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.2%
    └ src/utils/isString.js                                                                                      29b     0.1%
 
-  dist/floating-ui.min.js                                                                                     21.5kb  100.0%
-   ├ node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs                                      8.0kb   37.1%
-   ├ node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs                                        7.4kb   34.4%
-   ├ src/classes/FloatingUi.js                                                                                 4.3kb   20.0%
-   ├ src/floating-ui.js                                                                                        410b     1.9%
+  dist/floating-ui.min.js                                                                                     21.9kb  100.0%
+   ├ node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs                                      8.0kb   36.5%
+   ├ node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs                                        7.8kb   35.5%
+   ├ src/classes/FloatingUi.js                                                                                 4.3kb   19.6%
+   ├ src/floating-ui.js                                                                                        410b     1.8%
    ├ src/utils/FormidableElement.js                                                                            353b     1.6%
    ├ src/utils/props.js                                                                                        308b     1.4%
    ├ src/utils/replaceCallbacks.js                                                                             163b     0.7%
@@ -875,8 +875,8 @@
    ├ src/cleave-input.js                                                                                        29b     0.2%
    └ src/utils/isString.js                                                                                      28b     0.2%
 
-  dist/coloris-input.raw.min.js                                                                               15.8kb  100.0%
-   ├ node_modules/@melloware/coloris/dist/esm/coloris.js                                                      14.2kb   89.9%
+  dist/coloris-input.raw.min.js                                                                               15.9kb  100.0%
+   ├ node_modules/@melloware/coloris/dist/esm/coloris.js                                                      14.3kb   89.9%
    ├ src/classes/ColorisInput.js                                                                               385b     2.4%
    ├ src/utils/FormidableElement.js                                                                            353b     2.2%
    ├ src/utils/replaceCallbacks.js                                                                             163b     1.0%
@@ -888,8 +888,8 @@
    ├ src/coloris-input.raw.js                                                                                   33b     0.2%
    └ src/utils/isString.js                                                                                      29b     0.2%
 
-  dist/bs-autocomplete.min.js                                                                                 13.8kb  100.0%
-   ├ node_modules/bootstrap5-autocomplete/autocomplete.js                                                     12.7kb   91.6%
+  dist/bs-autocomplete.min.js                                                                                 14.1kb  100.0%
+   ├ node_modules/bootstrap5-autocomplete/autocomplete.js                                                     12.9kb   91.8%
    ├ src/utils/FormidableElement.js                                                                            344b     2.4%
    ├ src/classes/BsAutocomplete.js                                                                             275b     1.9%
    ├ src/utils/replaceCallbacks.js                                                                             155b     1.1%
@@ -1000,11 +1000,11 @@
    └ src/locale-provider.js                                                                                     31b     7.9%
 
 
-  dist\tabulator-grid.min.js      443.7kb
+  dist\tabulator-grid.min.js      443.8kb
   dist\tabulator-grid.raw.min.js  399.1kb
   dist\tiptap-editor.min.js       304.4kb
   dist\tiptap-editor.raw.min.js   303.2kb
   dist\tel-input.min.js           291.4kb
   ...and 27 more output files...
 
-Done in 1102ms
+Done in 1131ms

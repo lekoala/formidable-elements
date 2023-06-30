@@ -121,7 +121,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-      "bytes": 29955,
+      "bytes": 30407,
       "imports": [],
       "format": "esm"
     },
@@ -350,7 +350,7 @@
       "format": "esm"
     },
     "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-      "bytes": 41901,
+      "bytes": 42070,
       "imports": [],
       "format": "esm"
     },
@@ -391,7 +391,7 @@
       "format": "esm"
     },
     "node_modules/@melloware/coloris/dist/coloris.min.css": {
-      "bytes": 8475,
+      "bytes": 8482,
       "imports": []
     },
     "src/coloris-input.js": {
@@ -932,7 +932,7 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs": {
-      "bytes": 7969,
+      "bytes": 8369,
       "imports": [
         {
           "path": "node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs",
@@ -4219,7 +4219,7 @@
       "format": "esm"
     },
     "src/classes/TabulatorGrid.js": {
-      "bytes": 8044,
+      "bytes": 8173,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Tabulator.js",
@@ -5931,7 +5931,7 @@
       "entryPoint": "src/bs-autocomplete.js",
       "inputs": {
         "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-          "bytesInOutput": 12968
+          "bytesInOutput": 13212
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -5961,7 +5961,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 14154
+      "bytes": 14398
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -6130,7 +6130,7 @@
       "entryPoint": "src/coloris-input.js",
       "inputs": {
         "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-          "bytesInOutput": 14529
+          "bytesInOutput": 14622
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6160,7 +6160,7 @@
           "bytesInOutput": 60
         },
         "node_modules/@melloware/coloris/dist/coloris.min.css": {
-          "bytesInOutput": 8485
+          "bytesInOutput": 8492
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 159
@@ -6169,7 +6169,7 @@
           "bytesInOutput": 247
         }
       },
-      "bytes": 25028
+      "bytes": 25128
     },
     "dist/coloris-input.raw.min.js": {
       "imports": [],
@@ -6177,7 +6177,7 @@
       "entryPoint": "src/coloris-input.raw.js",
       "inputs": {
         "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-          "bytesInOutput": 14529
+          "bytesInOutput": 14622
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6210,7 +6210,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 16170
+      "bytes": 16263
     },
     "dist/count-down.min.js": {
       "imports": [],
@@ -6582,7 +6582,7 @@
           "bytesInOutput": 8177
         },
         "node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs": {
-          "bytesInOutput": 7578
+          "bytesInOutput": 7970
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6621,7 +6621,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 22031
+      "bytes": 22423
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -6915,7 +6915,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 69647
+      "bytes": 69643
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -6980,7 +6980,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 68741
+      "bytes": 68737
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -7619,7 +7619,7 @@
           "bytesInOutput": 58
         },
         "src/classes/TabulatorGrid.js": {
-          "bytesInOutput": 2682
+          "bytesInOutput": 2731
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7637,7 +7637,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 454376
+      "bytes": 454425
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -8203,7 +8203,7 @@
           "bytesInOutput": 58
         },
         "src/classes/TabulatorGrid.js": {
-          "bytesInOutput": 2682
+          "bytesInOutput": 2731
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8212,7 +8212,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 408667
+      "bytes": 408716
     },
     "dist/tel-input.min.js": {
       "imports": [],
