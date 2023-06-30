@@ -807,11 +807,11 @@
    ├ node_modules/bootstrap5-tags/tags.js                                                                     25.1kb   91.2%
    ├ node_modules/bootstrap5-tags/tags-pure.min.css                                                            1.1kb    4.2%
    ├ src/utils/FormidableElement.js                                                                            344b     1.2%
-   ├ src/classes/BsTags.js                                                                                     224b     0.8%
+   ├ src/classes/BsTags.js                                                                                     223b     0.8%
    ├ src/utils/injectStyles.js                                                                                 159b     0.6%
    ├ src/utils/replaceCallbacks.js                                                                             155b     0.5%
    ├ src/utils/whenParsed.js                                                                                   117b     0.4%
-   ├ src/utils/rmElements.js                                                                                   106b     0.4%
+   ├ src/utils/rmElements.js                                                                                   105b     0.4%
    ├ src/utils/defineEl.js                                                                                      60b     0.2%
    ├ src/utils/getGlobalFn.js                                                                                   49b     0.2%
    ├ src/bs-tags.js                                                                                             42b     0.1%
@@ -820,10 +820,10 @@
   dist/bs-tags.raw.min.js                                                                                     26.2kb  100.0%
    ├ node_modules/bootstrap5-tags/tags.js                                                                     25.1kb   95.8%
    ├ src/utils/FormidableElement.js                                                                            344b     1.3%
-   ├ src/classes/BsTags.js                                                                                     224b     0.8%
+   ├ src/classes/BsTags.js                                                                                     223b     0.8%
    ├ src/utils/replaceCallbacks.js                                                                             155b     0.6%
    ├ src/utils/whenParsed.js                                                                                   117b     0.4%
-   ├ src/utils/rmElements.js                                                                                   106b     0.4%
+   ├ src/utils/rmElements.js                                                                                   105b     0.4%
    ├ src/utils/defineEl.js                                                                                      60b     0.2%
    ├ src/utils/getGlobalFn.js                                                                                   49b     0.2%
    ├ src/utils/isString.js                                                                                      28b     0.1%
@@ -1007,4 +1007,4 @@
   dist\tel-input.min.js           291.4kb
   ...and 27 more output files...
 
-Done in 1131ms
+Done in 91ms

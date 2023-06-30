@@ -20,7 +20,7 @@
     "@tiptap/pm": "^2.0.3",
     "@tiptap/starter-kit": "^2.0.3",
     "bootstrap5-autocomplete": "^1.1.15",
-    "bootstrap5-tags": "^1.6.2",
+    "bootstrap5-tags": "^1.6.3",
     "cleave-es6": "^1.0.3",
     "filepond": "^4.30.4",
     "filepond-plugin-file-metadata": "^1.0.8",

@@ -168,7 +168,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags.js": {
-      "bytes": 68423,
+      "bytes": 68381,
       "imports": [],
       "format": "esm"
     },
@@ -5969,7 +5969,7 @@
       "entryPoint": "src/bs-tags.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 25724
+          "bytesInOutput": 25715
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -5987,10 +5987,10 @@
           "bytesInOutput": 344
         },
         "src/utils/rmElements.js": {
-          "bytesInOutput": 106
+          "bytesInOutput": 105
         },
         "src/classes/BsTags.js": {
-          "bytesInOutput": 224
+          "bytesInOutput": 223
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6005,7 +6005,7 @@
           "bytesInOutput": 42
         }
       },
-      "bytes": 28208
+      "bytes": 28197
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -6013,7 +6013,7 @@
       "entryPoint": "src/bs-tags.raw.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 25724
+          "bytesInOutput": 25715
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6031,10 +6031,10 @@
           "bytesInOutput": 344
         },
         "src/utils/rmElements.js": {
-          "bytesInOutput": 106
+          "bytesInOutput": 105
         },
         "src/classes/BsTags.js": {
-          "bytesInOutput": 224
+          "bytesInOutput": 223
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6043,7 +6043,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 26857
+      "bytes": 26846
     },
     "dist/cleave-input.min.js": {
       "imports": [],
