@@ -23,21 +23,29 @@ class GrowingTextarea extends HTMLElement {
   }
 
   parsedCallback() {
-    const el = this.el;
     // Use arrow function to make sure that the scope is always this
     this.handleEvent = (ev) => {
-      if ((!ev || ev.type == "focusout") && this.dataset.trim) {
-        el.value = el.value.trim();
-      }
-      if (el instanceof HTMLTextAreaElement && el.scrollHeight > 0) {
-        el.style.overflow = "hidden";
-        el.style.height = "0";
-        el.style.height = el.scrollHeight + "px";
-      }
+      this._handleEvent(ev);
     };
-    this.handleEvent();
+    this._handleEvent();
     this.addEventListener("input", this);
     this.addEventListener("focusout", this);
+  }
+
+  handleEvent(ev) {
+    this._handleEvent(ev);
+  }
+
+  _handleEvent(ev = null) {
+    const el = this.el;
+    if ((!ev || ev.type == "focusout") && this.dataset.trim) {
+      el.value = el.value.trim();
+    }
+    if (el instanceof HTMLTextAreaElement && el.scrollHeight > 0) {
+      el.style.overflow = "hidden";
+      el.style.height = "0";
+      el.style.height = el.scrollHeight + "px";
+    }
   }
 
   disconnectedCallback() {

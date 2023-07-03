@@ -96,13 +96,22 @@ class TomSelectElement extends FormidableElement {
     const form = this.closest("form");
     if (form) {
       this.handleEvent = (ev) => {
-        this.tomselect.setValue(this.originalValue, true);
+        this._handleEvent(ev);
       };
       form.addEventListener("reset", this);
     }
 
     this.tomselect = new TomSelect(`#${id}`, config);
     this.originalValue = this.tomselect.items.slice(0);
+  }
+
+  handleEvent(ev) {
+    this._handleEvent(ev);
+  }
+
+  _handleEvent(ev) {
+    // reset
+    this.tomselect.setValue(this.originalValue, true);
   }
 
   destroyed() {

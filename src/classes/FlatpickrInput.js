@@ -179,30 +179,38 @@ class FlatpickrInput extends FormidableElement {
 
     // Use arrow function to make sure that the scope is always this
     this.handleEvent = (ev) => {
-      const d = this.flatpickr.selectedDates[0] || null;
-
-      let v = "";
-      if (d) {
-        v = this.convertDate(new Date(d));
-      }
-
-      // hidden value
-      if (this.hiddenInput) {
-        this.hiddenInput.value = v;
-      }
-
-      this._setRange(d);
-
-      // This can be useful to have one source of truth for the value when updated
-      this.dispatchEvent(
-        new CustomEvent("valueChanged", {
-          detail: v,
-        })
-      );
+      this._handleEvent(ev);
     };
     events.forEach((type) => {
       input.addEventListener(type, this);
     });
+  }
+
+  handleEvent(ev) {
+    this._handleEvent(ev);
+  }
+
+  _handleEvent(ev) {
+    const d = this.flatpickr.selectedDates[0] || null;
+
+    let v = "";
+    if (d) {
+      v = this.convertDate(new Date(d));
+    }
+
+    // hidden value
+    if (this.hiddenInput) {
+      this.hiddenInput.value = v;
+    }
+
+    this._setRange(d);
+
+    // This can be useful to have one source of truth for the value when updated
+    this.dispatchEvent(
+      new CustomEvent("valueChanged", {
+        detail: v,
+      })
+    );
   }
 
   _setRange(d) {

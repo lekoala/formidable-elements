@@ -54,12 +54,20 @@ class EventfulElement extends FormidableElement {
   connectedCallback() {
     // Use arrow function to make sure that the scope is always this
     this.handleEvent = (ev) => {
-      this[`$${ev.type}`](ev);
+      this._handleEvent(ev);
     };
     super.connectedCallback();
     this.events.forEach((type) => {
       this.addEventListener(type, this);
     });
+  }
+
+  handleEvent(ev) {
+    this._handleEvent(ev);
+  }
+
+  _handleEvent(ev) {
+    this[`$${ev.type}`](ev);
   }
 
   disconnectedCallback() {

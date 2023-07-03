@@ -42,8 +42,6 @@ class InputmaskElement extends FormidableElement {
     this.keepMask = !!this.dataset.keepMask;
 
     const isDecimal = !!this.dataset.decimal;
-    const dataformat = this.dataset.dataformat;
-
     if (isDecimal) {
       input.value = "" + decimalmultiply(input.value, 100);
     }
@@ -62,36 +60,47 @@ class InputmaskElement extends FormidableElement {
       // Use arrow function to make sure that the scope is always this
       // Replicate unmasked value to hidden field
       this.handleEvent = (ev) => {
-        // @ts-ignore
-        let val = this.inputmask.unmaskedvalue(input.value);
-        // Apply a given formatting (similar to outputFormat)
-        if (dataformat) {
-          // Keep the masked input in case you want it or use dataformat
-          if (dataformat != "masked") {
-            val = Inputmask.format(val, {
-              alias: dataformat,
-            });
-          }
-        }
-        // Decimal %
-        // Useful when you store a value between 0 and 1 in the db for %
-        if (isDecimal) {
-          val = "" + decimalmultiply(val, 0.01);
-        }
-        // Otherwise unmasked value is not using proper decimal separator
-        // Obviously, in the db, you want a dot as a decimal separator
-        if (this.config.radixPoint === ",") {
-          val = val.replace(",", ".");
-        }
-        // Make sure we get a valid date
-        // @ts-ignore
-        if (["time", "datetime"].includes(this.inputmask.userOptions.alias)) {
-          val = val.replace(/[a-zA-Z]/g, "0");
-        }
-        this.hiddenInput.value = val;
+        this._handleEvent(ev);
       };
       this.handleEvent(); // run once to make sure value is set on hidden field
     }
+  }
+
+  handleEvent(ev) {
+    this._handleEvent(ev);
+  }
+
+  _handleEvent(ev = null) {
+    const dataformat = this.dataset.dataformat;
+    const isDecimal = !!this.dataset.decimal;
+
+    // @ts-ignore
+    let val = this.inputmask.unmaskedvalue(input.value);
+    // Apply a given formatting (similar to outputFormat)
+    if (dataformat) {
+      // Keep the masked input in case you want it or use dataformat
+      if (dataformat != "masked") {
+        val = Inputmask.format(val, {
+          alias: dataformat,
+        });
+      }
+    }
+    // Decimal %
+    // Useful when you store a value between 0 and 1 in the db for %
+    if (isDecimal) {
+      val = "" + decimalmultiply(val, 0.01);
+    }
+    // Otherwise unmasked value is not using proper decimal separator
+    // Obviously, in the db, you want a dot as a decimal separator
+    if (this.config.radixPoint === ",") {
+      val = val.replace(",", ".");
+    }
+    // Make sure we get a valid date
+    // @ts-ignore
+    if (["time", "datetime"].includes(this.inputmask.userOptions.alias)) {
+      val = val.replace(/[a-zA-Z]/g, "0");
+    }
+    this.hiddenInput.value = val;
   }
 
   connected() {
