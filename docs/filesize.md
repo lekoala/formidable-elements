@@ -860,12 +860,12 @@
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.2%
    └ src/utils/isString.js                                                                                      29b     0.1%
 
-  dist/cleave-input.min.js                                                                                    18.3kb  100.0%
-   ├ node_modules/cleave-es6/src/Cleave.js                                                                     7.6kb   41.8%
-   ├ node_modules/cleave-es6/src/CleaveDate.js                                                                 2.8kb   15.5%
-   ├ node_modules/cleave-es6/src/CleaveUtils.js                                                                2.8kb   15.3%
-   ├ node_modules/cleave-es6/src/CleaveNumber.js                                                               2.0kb   11.0%
-   ├ node_modules/cleave-es6/src/CleaveTime.js                                                                 1.9kb   10.1%
+  dist/cleave-input.min.js                                                                                    18.7kb  100.0%
+   ├ node_modules/cleave-es6/src/Cleave.js                                                                     8.1kb   43.1%
+   ├ node_modules/cleave-es6/src/CleaveDate.js                                                                 2.8kb   15.2%
+   ├ node_modules/cleave-es6/src/CleaveUtils.js                                                                2.8kb   14.9%
+   ├ node_modules/cleave-es6/src/CleaveNumber.js                                                               2.0kb   10.7%
+   ├ node_modules/cleave-es6/src/CleaveTime.js                                                                 1.9kb    9.9%
    ├ src/classes/CleaveInput.js                                                                                374b     2.0%
    ├ src/utils/FormidableElement.js                                                                            344b     1.8%
    ├ src/utils/replaceCallbacks.js                                                                             155b     0.8%
@@ -1007,4 +1007,4 @@
   dist\tel-input.min.js           291.4kb
   ...and 27 more output files...
 
-Done in 93ms
+Done in 99ms
