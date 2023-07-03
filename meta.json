@@ -100,7 +100,7 @@
       "format": "esm"
     },
     "src/classes/BoundInput.js": {
-      "bytes": 1001,
+      "bytes": 1096,
       "imports": [],
       "format": "esm"
     },
@@ -121,7 +121,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-      "bytes": 30407,
+      "bytes": 30985,
       "imports": [],
       "format": "esm"
     },
@@ -168,7 +168,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags.js": {
-      "bytes": 68381,
+      "bytes": 68921,
       "imports": [],
       "format": "esm"
     },
@@ -323,7 +323,7 @@
       "format": "esm"
     },
     "src/classes/ClipboardCopy.js": {
-      "bytes": 2472,
+      "bytes": 2569,
       "imports": [
         {
           "path": "src/utils/FormidableElement.js",
@@ -807,7 +807,7 @@
       "format": "esm"
     },
     "src/classes/FlatpickrInput.js": {
-      "bytes": 6620,
+      "bytes": 6703,
       "imports": [
         {
           "path": "node_modules/flatpickr/dist/esm/index.js",
@@ -1084,7 +1084,7 @@
       "format": "esm"
     },
     "src/classes/GrowingTextarea.js": {
-      "bytes": 1244,
+      "bytes": 1351,
       "imports": [
         {
           "path": "src/utils/whenParsed.js",
@@ -1582,7 +1582,7 @@
       "format": "esm"
     },
     "src/classes/InputmaskElement.js": {
-      "bytes": 3645,
+      "bytes": 3708,
       "imports": [
         {
           "path": "node_modules/inputmask/lib/extensions/inputmask.extensions.js",
@@ -1660,7 +1660,7 @@
       "format": "esm"
     },
     "src/utils/EventfulElement.js": {
-      "bytes": 1833,
+      "bytes": 1946,
       "imports": [
         {
           "path": "src/utils/FormidableElement.js",
@@ -5782,7 +5782,7 @@
       "format": "esm"
     },
     "src/classes/TomSelectElement.js": {
-      "bytes": 3637,
+      "bytes": 3764,
       "imports": [
         {
           "path": "node_modules/tom-select/src/tom-select.complete.ts",
@@ -5914,7 +5914,7 @@
       "entryPoint": "src/bound-input.js",
       "inputs": {
         "src/classes/BoundInput.js": {
-          "bytesInOutput": 459
+          "bytesInOutput": 532
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -5923,7 +5923,7 @@
           "bytesInOutput": 27
         }
       },
-      "bytes": 567
+      "bytes": 640
     },
     "dist/bs-autocomplete.min.js": {
       "imports": [],
@@ -5931,7 +5931,7 @@
       "entryPoint": "src/bs-autocomplete.js",
       "inputs": {
         "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-          "bytesInOutput": 13212
+          "bytesInOutput": 13381
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -5961,7 +5961,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 14398
+      "bytes": 14567
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -5969,7 +5969,7 @@
       "entryPoint": "src/bs-tags.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 25715
+          "bytesInOutput": 25842
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6005,7 +6005,7 @@
           "bytesInOutput": 42
         }
       },
-      "bytes": 28197
+      "bytes": 28324
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -6013,7 +6013,7 @@
       "entryPoint": "src/bs-tags.raw.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 25715
+          "bytesInOutput": 25842
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6043,7 +6043,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 26846
+      "bytes": 26973
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -6113,7 +6113,7 @@
           "bytesInOutput": 344
         },
         "src/classes/ClipboardCopy.js": {
-          "bytesInOutput": 1100
+          "bytesInOutput": 1172
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -6122,7 +6122,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 1904
+      "bytes": 1976
     },
     "dist/coloris-input.min.js": {
       "imports": [],
@@ -6431,7 +6431,7 @@
           "bytesInOutput": 42084
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 2351
+          "bytesInOutput": 2424
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6488,7 +6488,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 84542
+      "bytes": 84615
     },
     "dist/flatpickr-input.raw.min.js": {
       "imports": [],
@@ -6526,7 +6526,7 @@
           "bytesInOutput": 42084
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 2351
+          "bytesInOutput": 2424
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6571,7 +6571,7 @@
           "bytesInOutput": 35
         }
       },
-      "bytes": 64801
+      "bytes": 64874
     },
     "dist/floating-ui.min.js": {
       "imports": [],
@@ -6711,7 +6711,7 @@
           "bytesInOutput": 117
         },
         "src/classes/GrowingTextarea.js": {
-          "bytesInOutput": 593
+          "bytesInOutput": 672
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -6720,7 +6720,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 823
+      "bytes": 902
     },
     "dist/input-mask.min.js": {
       "imports": [],
@@ -6818,7 +6818,7 @@
           "bytesInOutput": 229
         },
         "src/classes/InputmaskElement.js": {
-          "bytesInOutput": 1116
+          "bytesInOutput": 1215
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6827,7 +6827,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 88436
+      "bytes": 88535
     },
     "dist/locale-provider.min.js": {
       "imports": [],
@@ -6876,7 +6876,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 736
+          "bytesInOutput": 809
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
@@ -6915,7 +6915,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 69643
+      "bytes": 69716
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -6947,7 +6947,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 736
+          "bytesInOutput": 809
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
@@ -6980,7 +6980,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 68737
+      "bytes": 68810
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -7610,7 +7610,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 736
+          "bytesInOutput": 809
         },
         "src/utils/parseBool.js": {
           "bytesInOutput": 70
@@ -7637,7 +7637,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 454425
+      "bytes": 454498
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -8194,7 +8194,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 736
+          "bytesInOutput": 809
         },
         "src/utils/parseBool.js": {
           "bytesInOutput": 70
@@ -8212,7 +8212,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 408716
+      "bytes": 408789
     },
     "dist/tel-input.min.js": {
       "imports": [],
@@ -8247,7 +8247,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 736
+          "bytesInOutput": 809
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
@@ -8280,7 +8280,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 298351
+      "bytes": 298424
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8315,7 +8315,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 736
+          "bytesInOutput": 809
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
@@ -8342,7 +8342,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 294631
+      "bytes": 294704
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -8497,7 +8497,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 736
+          "bytesInOutput": 809
         },
         "src/utils/ce.js": {
           "bytesInOutput": 36
@@ -8539,7 +8539,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 311661
+      "bytes": 311734
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -8694,7 +8694,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 736
+          "bytesInOutput": 809
         },
         "src/utils/ce.js": {
           "bytesInOutput": 36
@@ -8730,7 +8730,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 310495
+      "bytes": 310568
     },
     "dist/tom-select.min.js": {
       "imports": [],
@@ -8852,7 +8852,7 @@
           "bytesInOutput": 310
         },
         "src/classes/TomSelectElement.js": {
-          "bytesInOutput": 1231
+          "bytesInOutput": 1304
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8867,7 +8867,7 @@
           "bytesInOutput": 122
         }
       },
-      "bytes": 73230
+      "bytes": 73303
     },
     "dist/tom-select.raw.min.js": {
       "imports": [],
@@ -8989,7 +8989,7 @@
           "bytesInOutput": 310
         },
         "src/classes/TomSelectElement.js": {
-          "bytesInOutput": 1231
+          "bytesInOutput": 1304
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8998,7 +8998,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 58107
+      "bytes": 58180
     }
   }
 }
