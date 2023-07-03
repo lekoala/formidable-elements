@@ -860,20 +860,20 @@
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.2%
    └ src/utils/isString.js                                                                                      29b     0.1%
 
-  dist/cleave-input.min.js                                                                                    18.2kb  100.0%
-   ├ node_modules/cleave-es6/src/Cleave.js                                                                     7.5kb   41.5%
-   ├ node_modules/cleave-es6/src/CleaveDate.js                                                                 2.8kb   15.6%
+  dist/cleave-input.min.js                                                                                    18.3kb  100.0%
+   ├ node_modules/cleave-es6/src/Cleave.js                                                                     7.6kb   41.8%
+   ├ node_modules/cleave-es6/src/CleaveDate.js                                                                 2.8kb   15.5%
    ├ node_modules/cleave-es6/src/CleaveUtils.js                                                                2.8kb   15.3%
    ├ node_modules/cleave-es6/src/CleaveNumber.js                                                               2.0kb   11.0%
-   ├ node_modules/cleave-es6/src/CleaveTime.js                                                                 1.9kb   10.2%
+   ├ node_modules/cleave-es6/src/CleaveTime.js                                                                 1.9kb   10.1%
    ├ src/classes/CleaveInput.js                                                                                374b     2.0%
-   ├ src/utils/FormidableElement.js                                                                            344b     1.9%
+   ├ src/utils/FormidableElement.js                                                                            344b     1.8%
    ├ src/utils/replaceCallbacks.js                                                                             155b     0.8%
    ├ src/utils/whenParsed.js                                                                                   117b     0.6%
    ├ src/utils/defineEl.js                                                                                      56b     0.3%
    ├ src/utils/getGlobalFn.js                                                                                   49b     0.3%
    ├ src/cleave-input.js                                                                                        29b     0.2%
-   └ src/utils/isString.js                                                                                      28b     0.2%
+   └ src/utils/isString.js                                                                                      28b     0.1%
 
   dist/coloris-input.raw.min.js                                                                               15.9kb  100.0%
    ├ node_modules/@melloware/coloris/dist/esm/coloris.js                                                      14.3kb   89.9%
@@ -1007,4 +1007,4 @@
   dist\tel-input.min.js           291.4kb
   ...and 27 more output files...
 
-Done in 443ms
+Done in 93ms

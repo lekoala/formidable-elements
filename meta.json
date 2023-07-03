@@ -265,7 +265,7 @@
       "format": "esm"
     },
     "node_modules/cleave-es6/src/Cleave.js": {
-      "bytes": 17131,
+      "bytes": 17399,
       "imports": [
         {
           "path": "node_modules/cleave-es6/src/CleaveUtils.js",
@@ -6063,7 +6063,7 @@
           "bytesInOutput": 2054
         },
         "node_modules/cleave-es6/src/Cleave.js": {
-          "bytesInOutput": 7711
+          "bytesInOutput": 7828
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6090,7 +6090,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 18589
+      "bytes": 18706
     },
     "dist/clipboard-copy.min.js": {
       "imports": [],
