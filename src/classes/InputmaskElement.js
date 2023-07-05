@@ -71,6 +71,7 @@ class InputmaskElement extends FormidableElement {
   }
 
   _handleEvent(ev = null) {
+    const input = this.el;
     const dataformat = this.dataset.dataformat;
     const isDecimal = !!this.dataset.decimal;
 
@@ -99,6 +100,10 @@ class InputmaskElement extends FormidableElement {
     // @ts-ignore
     if (["time", "datetime"].includes(this.inputmask.userOptions.alias)) {
       val = val.replace(/[a-zA-Z]/g, "0");
+    }
+    // Make sure it's not the placeholder
+    if (val == input.getAttribute("placeholder") || val == this.inputmask.getemptymask()) {
+      val = "";
     }
     this.hiddenInput.value = val;
   }
