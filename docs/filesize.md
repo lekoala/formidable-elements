@@ -592,12 +592,12 @@
    ├ node_modules/inputmask/lib/inputmask.js                                                                   5.8kb    6.7%
    ├ node_modules/inputmask/lib/positioning.js                                                                 5.1kb    5.9%
    ├ node_modules/inputmask/lib/inputHandling.js                                                               4.2kb    4.8%
-   ├ node_modules/inputmask/lib/mask.js                                                                        4.1kb    4.8%
+   ├ node_modules/inputmask/lib/mask.js                                                                        4.1kb    4.7%
    ├ node_modules/inputmask/lib/dependencyLibs/events.js                                                       2.4kb    2.7%
    ├ node_modules/inputmask/lib/extensions/inputmask.extensions.js                                             1.7kb    1.9%
    ├ node_modules/inputmask/lib/defaults.js                                                                    1.4kb    1.6%
    ├ node_modules/inputmask/lib/eventruler.js                                                                  1.4kb    1.6%
-   ├ src/classes/InputmaskElement.js                                                                           1.2kb    1.4%
+   ├ src/classes/InputmaskElement.js                                                                           1.3kb    1.5%
    ├ node_modules/inputmask/lib/keycode.js                                                                     570b     0.6%
    ├ node_modules/inputmask/lib/dependencyLibs/extend.js                                                       479b     0.5%
    ├ node_modules/inputmask/lib/dependencyLibs/inputmask.dependencyLib.js                                      364b     0.4%
@@ -1007,4 +1007,4 @@
   dist\tel-input.min.js           291.4kb
   ...and 27 more output files...
 
-Done in 99ms
+Done in 87ms
