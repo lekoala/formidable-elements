@@ -110,8 +110,9 @@ tabulator-grid {
 .tabulator .tabulator-header .tabulator-col .tabulator-col-content .tabulator-col-sorter .tabulator-arrow {
     --sorter-size: 4px;
     --sorter-active: var(--tabulator-primary-color);
-    --sorter-inactive: var(--tabulator-light-gray) border: 0;
+    --sorter-inactive: var(--tabulator-light-gray);
     height: 0;
+    border: 0;
     position: relative;
     margin-top: var(--sorter-size);
 }
