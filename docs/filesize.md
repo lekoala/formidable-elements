@@ -494,9 +494,9 @@
    ├ src/utils/hasBootstrap.js                                                                                  30b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/tel-input.min.js                                                                                      291.4kb  100.0%
+  dist/tel-input.min.js                                                                                      291.5kb  100.0%
    ├ node_modules/intl-tel-input/build/js/utils.js                                                           245.4kb   84.2%
-   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     36.8kb   12.6%
+   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     36.9kb   12.7%
    ├ src/css/tel-input.min.css                                                                                 3.3kb    1.1%
    ├ src/classes/TelInput.js                                                                                   2.2kb    0.7%
    ├ src/utils/EventfulElement.js                                                                              809b     0.3%
@@ -516,9 +516,9 @@
    ├ node_modules/intl-tel-input/index.js                                                                       38b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/tel-input.raw.min.js                                                                                  287.8kb  100.0%
-   ├ node_modules/intl-tel-input/build/js/utils.js                                                           245.4kb   85.3%
-   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     36.8kb   12.8%
+  dist/tel-input.raw.min.js                                                                                  287.9kb  100.0%
+   ├ node_modules/intl-tel-input/build/js/utils.js                                                           245.4kb   85.2%
+   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     36.9kb   12.8%
    ├ src/classes/TelInput.js                                                                                   2.2kb    0.7%
    ├ src/utils/EventfulElement.js                                                                              809b     0.3%
    ├ src/utils/FormidableElement.js                                                                            353b     0.1%
@@ -803,27 +803,27 @@
    ├ src/tom-select.raw.js                                                                                      30b     0.1%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/bs-tags.min.js                                                                                         27.7kb  100.0%
-   ├ node_modules/bootstrap5-tags/tags.js                                                                     25.2kb   91.2%
+  dist/bs-tags.min.js                                                                                         28.3kb  100.0%
+   ├ node_modules/bootstrap5-tags/tags.js                                                                     25.9kb   91.4%
    ├ node_modules/bootstrap5-tags/tags-pure.min.css                                                            1.1kb    4.1%
    ├ src/utils/FormidableElement.js                                                                            344b     1.2%
-   ├ src/classes/BsTags.js                                                                                     223b     0.8%
-   ├ src/utils/injectStyles.js                                                                                 159b     0.6%
+   ├ src/classes/BsTags.js                                                                                     224b     0.8%
+   ├ src/utils/injectStyles.js                                                                                 159b     0.5%
    ├ src/utils/replaceCallbacks.js                                                                             155b     0.5%
    ├ src/utils/whenParsed.js                                                                                   117b     0.4%
-   ├ src/utils/rmElements.js                                                                                   105b     0.4%
+   ├ src/utils/rmElements.js                                                                                   106b     0.4%
    ├ src/utils/defineEl.js                                                                                      60b     0.2%
    ├ src/utils/getGlobalFn.js                                                                                   49b     0.2%
    ├ src/bs-tags.js                                                                                             42b     0.1%
    └ src/utils/isString.js                                                                                      28b     0.1%
 
-  dist/bs-tags.raw.min.js                                                                                     26.3kb  100.0%
-   ├ node_modules/bootstrap5-tags/tags.js                                                                     25.2kb   95.8%
-   ├ src/utils/FormidableElement.js                                                                            344b     1.3%
-   ├ src/classes/BsTags.js                                                                                     223b     0.8%
+  dist/bs-tags.raw.min.js                                                                                     27.0kb  100.0%
+   ├ node_modules/bootstrap5-tags/tags.js                                                                     25.9kb   95.9%
+   ├ src/utils/FormidableElement.js                                                                            344b     1.2%
+   ├ src/classes/BsTags.js                                                                                     224b     0.8%
    ├ src/utils/replaceCallbacks.js                                                                             155b     0.6%
    ├ src/utils/whenParsed.js                                                                                   117b     0.4%
-   ├ src/utils/rmElements.js                                                                                   105b     0.4%
+   ├ src/utils/rmElements.js                                                                                   106b     0.4%
    ├ src/utils/defineEl.js                                                                                      60b     0.2%
    ├ src/utils/getGlobalFn.js                                                                                   49b     0.2%
    ├ src/utils/isString.js                                                                                      28b     0.1%
@@ -844,10 +844,10 @@
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.2%
    └ src/utils/isString.js                                                                                      29b     0.1%
 
-  dist/floating-ui.min.js                                                                                     21.9kb  100.0%
-   ├ node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs                                      8.0kb   36.5%
-   ├ node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs                                        7.8kb   35.5%
-   ├ src/classes/FloatingUi.js                                                                                 4.3kb   19.6%
+  dist/floating-ui.min.js                                                                                     22.0kb  100.0%
+   ├ node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs                                      8.0kb   36.3%
+   ├ node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs                                        7.9kb   35.9%
+   ├ src/classes/FloatingUi.js                                                                                 4.3kb   19.5%
    ├ src/floating-ui.js                                                                                        410b     1.8%
    ├ src/utils/FormidableElement.js                                                                            353b     1.6%
    ├ src/utils/props.js                                                                                        308b     1.4%
@@ -888,7 +888,7 @@
    ├ src/coloris-input.raw.js                                                                                   33b     0.2%
    └ src/utils/isString.js                                                                                      29b     0.2%
 
-  dist/bs-autocomplete.min.js                                                                                 14.2kb  100.0%
+  dist/bs-autocomplete.min.js                                                                                 14.3kb  100.0%
    ├ node_modules/bootstrap5-autocomplete/autocomplete.js                                                     13.1kb   91.9%
    ├ src/utils/FormidableElement.js                                                                            344b     2.4%
    ├ src/classes/BsAutocomplete.js                                                                             275b     1.9%
@@ -1004,7 +1004,7 @@
   dist\tabulator-grid.raw.min.js  399.2kb
   dist\tiptap-editor.min.js       304.4kb
   dist\tiptap-editor.raw.min.js   303.3kb
-  dist\tel-input.min.js           291.4kb
+  dist\tel-input.min.js           291.5kb
   ...and 27 more output files...
 
-Done in 86ms
+Done in 461ms

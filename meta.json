@@ -121,7 +121,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-      "bytes": 30985,
+      "bytes": 31568,
       "imports": [],
       "format": "esm"
     },
@@ -168,7 +168,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags.js": {
-      "bytes": 68921,
+      "bytes": 71374,
       "imports": [],
       "format": "esm"
     },
@@ -932,7 +932,7 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs": {
-      "bytes": 8369,
+      "bytes": 8481,
       "imports": [
         {
           "path": "node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs",
@@ -4335,7 +4335,7 @@
       "format": "esm"
     },
     "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-      "bytes": 96116,
+      "bytes": 96457,
       "imports": [],
       "format": "cjs"
     },
@@ -5931,7 +5931,7 @@
       "entryPoint": "src/bs-autocomplete.js",
       "inputs": {
         "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-          "bytesInOutput": 13381
+          "bytesInOutput": 13440
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -5961,7 +5961,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 14567
+      "bytes": 14626
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -5969,7 +5969,7 @@
       "entryPoint": "src/bs-tags.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 25842
+          "bytesInOutput": 26524
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -5987,10 +5987,10 @@
           "bytesInOutput": 344
         },
         "src/utils/rmElements.js": {
-          "bytesInOutput": 105
+          "bytesInOutput": 106
         },
         "src/classes/BsTags.js": {
-          "bytesInOutput": 223
+          "bytesInOutput": 224
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6005,7 +6005,7 @@
           "bytesInOutput": 42
         }
       },
-      "bytes": 28324
+      "bytes": 29008
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -6013,7 +6013,7 @@
       "entryPoint": "src/bs-tags.raw.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 25842
+          "bytesInOutput": 26524
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6031,10 +6031,10 @@
           "bytesInOutput": 344
         },
         "src/utils/rmElements.js": {
-          "bytesInOutput": 105
+          "bytesInOutput": 106
         },
         "src/classes/BsTags.js": {
-          "bytesInOutput": 223
+          "bytesInOutput": 224
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6043,7 +6043,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 26973
+      "bytes": 27657
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -6582,7 +6582,7 @@
           "bytesInOutput": 8177
         },
         "node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs": {
-          "bytesInOutput": 7970
+          "bytesInOutput": 8081
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6621,7 +6621,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 22423
+      "bytes": 22534
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -8220,7 +8220,7 @@
       "entryPoint": "src/tel-input.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 37702
+          "bytesInOutput": 37814
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
@@ -8280,7 +8280,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 298424
+      "bytes": 298536
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8288,7 +8288,7 @@
       "entryPoint": "src/tel-input.raw.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 37702
+          "bytesInOutput": 37814
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
@@ -8342,7 +8342,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 294704
+      "bytes": 294816
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
