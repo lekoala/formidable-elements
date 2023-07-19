@@ -4120,7 +4120,7 @@
       "format": "esm"
     },
     "src/utils/icons.js": {
-      "bytes": 2933,
+      "bytes": 3067,
       "imports": [],
       "format": "esm"
     },
@@ -4219,7 +4219,7 @@
       "format": "esm"
     },
     "src/classes/TabulatorGrid.js": {
-      "bytes": 8173,
+      "bytes": 8978,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Tabulator.js",
@@ -4284,7 +4284,7 @@
       "imports": []
     },
     "src/css/tabulator-grid.min.css": {
-      "bytes": 9551,
+      "bytes": 9921,
       "imports": []
     },
     "src/tabulator-grid.js": {
@@ -7577,7 +7577,7 @@
           "bytesInOutput": 1023
         },
         "src/utils/icons.js": {
-          "bytesInOutput": 1256
+          "bytesInOutput": 2004
         },
         "src/classes/tabulator/Format/formatters/customTickCross.js": {
           "bytesInOutput": 482
@@ -7619,7 +7619,7 @@
           "bytesInOutput": 58
         },
         "src/classes/TabulatorGrid.js": {
-          "bytesInOutput": 2731
+          "bytesInOutput": 3061
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7628,7 +7628,7 @@
           "bytesInOutput": 35890
         },
         "src/css/tabulator-grid.min.css": {
-          "bytesInOutput": 9561
+          "bytesInOutput": 9931
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 159
@@ -7637,7 +7637,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 454497
+      "bytes": 455945
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -8161,7 +8161,7 @@
           "bytesInOutput": 1023
         },
         "src/utils/icons.js": {
-          "bytesInOutput": 1256
+          "bytesInOutput": 2004
         },
         "src/classes/tabulator/Format/formatters/customTickCross.js": {
           "bytesInOutput": 482
@@ -8203,7 +8203,7 @@
           "bytesInOutput": 58
         },
         "src/classes/TabulatorGrid.js": {
-          "bytesInOutput": 2731
+          "bytesInOutput": 3061
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8212,7 +8212,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 408789
+      "bytes": 409867
     },
     "dist/tel-input.min.js": {
       "imports": [],
