@@ -12,15 +12,15 @@
   "dependencies": {
     "@floating-ui/dom": "^1.4.5",
     "@melloware/coloris": "^0.21.0",
-    "@tiptap/core": "^2.0.3",
-    "@tiptap/extension-image": "^2.0.3",
-    "@tiptap/extension-link": "^2.0.3",
-    "@tiptap/extension-typography": "^2.0.3",
-    "@tiptap/extension-underline": "^2.0.3",
-    "@tiptap/pm": "^2.0.3",
-    "@tiptap/starter-kit": "^2.0.3",
+    "@tiptap/core": "^2.0.4",
+    "@tiptap/extension-image": "^2.0.4",
+    "@tiptap/extension-link": "^2.0.4",
+    "@tiptap/extension-typography": "^2.0.4",
+    "@tiptap/extension-underline": "^2.0.4",
+    "@tiptap/pm": "^2.0.4",
+    "@tiptap/starter-kit": "^2.0.4",
     "bootstrap5-autocomplete": "^1.1.17",
-    "bootstrap5-tags": "^1.6.5",
+    "bootstrap5-tags": "^1.6.6",
     "cleave-es6": "^1.0.6",
     "filepond": "^4.30.4",
     "filepond-plugin-file-metadata": "^1.0.8",
@@ -42,7 +42,7 @@
     "tom-select": "^2.2.2"
   },
   "devDependencies": {
-    "esbuild": "^0.18.13"
+    "esbuild": "^0.18.14"
   },
   "overrides": {
     "semver": "^7.5.3"

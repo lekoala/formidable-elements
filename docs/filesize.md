@@ -384,9 +384,9 @@
    ├ node_modules/tabulator-tables/src/js/modules/Accessor/defaults/accessors.js                                10b     0.0%
    └ node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js                                  10b     0.0%
 
-  dist/tiptap-editor.min.js                                                                                  304.4kb  100.0%
+  dist/tiptap-editor.min.js                                                                                  304.5kb  100.0%
    ├ node_modules/prosemirror-view/dist/index.js                                                              87.7kb   28.8%
-   ├ node_modules/@tiptap/core/dist/index.js                                                                  48.8kb   16.0%
+   ├ node_modules/@tiptap/core/dist/index.js                                                                  48.9kb   16.0%
    ├ node_modules/prosemirror-model/dist/index.js                                                             42.2kb   13.9%
    ├ node_modules/prosemirror-transform/dist/index.js                                                         27.3kb    9.0%
    ├ node_modules/linkifyjs/dist/linkify.es.js                                                                19.0kb    6.2%
@@ -442,7 +442,7 @@
 
   dist/tiptap-editor.raw.min.js                                                                              303.3kb  100.0%
    ├ node_modules/prosemirror-view/dist/index.js                                                              87.7kb   28.9%
-   ├ node_modules/@tiptap/core/dist/index.js                                                                  48.8kb   16.1%
+   ├ node_modules/@tiptap/core/dist/index.js                                                                  48.9kb   16.1%
    ├ node_modules/prosemirror-model/dist/index.js                                                             42.2kb   13.9%
    ├ node_modules/prosemirror-transform/dist/index.js                                                         27.3kb    9.0%
    ├ node_modules/linkifyjs/dist/linkify.es.js                                                                19.0kb    6.3%
@@ -805,7 +805,7 @@
 
   dist/bs-tags.min.js                                                                                         28.3kb  100.0%
    ├ node_modules/bootstrap5-tags/tags.js                                                                     25.9kb   91.4%
-   ├ node_modules/bootstrap5-tags/tags-pure.min.css                                                            1.1kb    4.1%
+   ├ node_modules/bootstrap5-tags/tags-pure.min.css                                                            1.1kb    4.0%
    ├ src/utils/FormidableElement.js                                                                            344b     1.2%
    ├ src/classes/BsTags.js                                                                                     224b     0.8%
    ├ src/utils/injectStyles.js                                                                                 159b     0.5%
@@ -1002,9 +1002,9 @@
 
   dist\tabulator-grid.min.js      443.8kb
   dist\tabulator-grid.raw.min.js  399.2kb
-  dist\tiptap-editor.min.js       304.4kb
+  dist\tiptap-editor.min.js       304.5kb
   dist\tiptap-editor.raw.min.js   303.3kb
   dist\tel-input.min.js           291.5kb
   ...and 27 more output files...
 
-Done in 461ms
+Done in 356ms
