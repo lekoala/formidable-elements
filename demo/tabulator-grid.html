@@ -186,6 +186,91 @@
         });
     </script>
     <script type="module">
+
+        const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+
+        window['loadingGridConfig'] = {
+            autoColumns: false,
+            responsiveLayoutCollapseStartOpen: false,
+            columns: [
+                {
+                    formatter: "responsiveCollapse",
+                    headerSort: false,
+                    width: 50,
+                    resizable: false
+                },
+                { field: "id", title: "id", minWidth: "100", resizable: false },
+                { field: "email", title: "email", minWidth: "200", resizable: false },
+                {
+                    field: "car",
+                    title: "car",
+                    formatter: "customTickCross",
+                    minWidth: 60,
+                },
+                {
+                    field: "first_name",
+                    title: "first_name",
+                    resizable: false,
+                    editor: "input",
+                    minWidth: 150,
+                },
+                {
+                    field: "last_name",
+                    title: "last_name",
+                    minWidth: "200",
+                    resizable: false,
+                    editor: "input",
+                    minWidth: 150,
+                },
+            ],
+            pagination: true, //enable pagination
+            paginationSize: 200,
+            // debugEventsExternal: true,
+            layout: "fitColumns",
+            // height: "100%",
+            // maxHeight: "100%",
+            //renderVertical: "basic", // fix pagination
+            // responsiveLayout: "collapse",
+            responsiveLayout: "flexCollapse",
+            paginationMode: "remote", //enable remote pagination
+            ajaxURL: "https://reqres.in/api/users", //set url for ajax request
+            ajaxResponse: async function (url, params, response) {
+                var i = 0;
+                response.data = [];
+                while (response.data.length < 200) {
+                    i++;
+                    response.data.push({
+                        id: i + ((response.page - 1) * 200),
+                        email: "test" + i + "@test.com",
+                        first_name: "fn " + i,
+                        last_name: "ln " + i,
+                        car: Math.round(Math.random()) == 0 ? true : false,
+                    });
+                }
+
+                await sleep(50000);
+
+                response.total = 2000;
+                response.total_pages = 10;
+                return response;
+            },
+            dataSendParams: {
+                page: "page" //change page request parameter to "pageNo"
+            },
+            dataReceiveParams: {
+                last_page: "total_pages", //change last_page parameter name to "max_pages"
+                last_row: "total"
+            },
+            ajaxParams: { token: "ABC123" }, //set any standard parameters to pass with the request
+            paginationSize: 5, //optional parameter to request a certain number of rows per page
+            paginationInitialPage: 2 //optional parameter to set the initial page to load
+        };
+
+        document.getElementById("show-lazy").addEventListener('click', (ev) => {
+            document.getElementById("overflow-grid").removeAttribute("hidden");
+        });
+    </script>
+    <script type="module">
         window['editGridConfig'] = {
             columns: [
                 { field: "id", title: "id", minWidth: "100", resizable: false },
@@ -411,6 +496,13 @@
         <br />
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+
+    <hr>
+
+    <p>Revamp loading</p>
+
+    <tabulator-grid id="editable-grid" data-config="loadingGridConfig">
+    </tabulator-grid>
 
     <hr>
 

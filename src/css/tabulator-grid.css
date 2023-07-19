@@ -19,7 +19,22 @@ tabulator-grid {
     font-size: inherit;
 }
 
-/* Alert UI improvements - Only show alert after a 0.25s delay */
+/* Alert UI improvements */
+.tabulator .tabulator-alert {
+    /* Light UI */
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.tabulator .tabulator-alert .tabulator-alert-msg.tabulator-alert-state-msg {
+    border: 0;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+}
+
+
+/* Alert UI improvements - loading */
 @keyframes tabulatorShow {
     0% {
         opacity: 0;
@@ -30,26 +45,41 @@ tabulator-grid {
     }
 }
 
-.tabulator .tabulator-alert {
-    opacity: 0;
-    background: rgba(255, 255, 255, 0.6);
-    animation-name: tabulatorShow;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-    animation-duration: 0.25s;
+@keyframes tabulatorShowBg {
+    0% {
+        background: transparent;
+    }
+
+    100% {
+        background: rgba(255, 255, 255, 0.6);
+    }
 }
 
-.tabulator .tabulator-alert .tabulator-alert-msg.tabulator-alert-state-msg {
-    border: 0;
-    background-color: rgba(255, 255, 255, 0.85);
-    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%);
-    border-radius: 0.5rem;
-    /* Fade in after 0.25s */
-    opacity: 0;
+.tabulator.tabulator-loading .tabulator-alert {
+    background: transparent;
+
+    /* Show UI is disabled after 1s to avoid blinking backgrounds */
+    animation-name: tabulatorShowBg;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-duration: 0.5s;
+    animation-delay: 1s;
+}
+
+.tabulator.tabulator-loading .tabulator-alert .tabulator-alert-msg.tabulator-alert-state-msg {
+    min-height: 48px;
+    min-width: 48px;
+    padding: 0;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Fade in after 0.25s to avoid blinking when fast loading */
     animation-name: tabulatorShow;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
-    animation-duration: 0.25s;
+    animation-duration: 0.5s;
     animation-delay: 0.25s;
 }
 
@@ -426,7 +456,8 @@ em.tabulator-value-placeholder {
     display: inline-block;
     width: 0;
     height: 0;
-    margin-right: var(--tabulator-icon-size);;
+    margin-right: var(--tabulator-icon-size);
+    ;
     border-top: 6px solid transparent;
     border-bottom: 6px solid transparent;
     border-right: 0;
@@ -436,7 +467,8 @@ em.tabulator-value-placeholder {
 
 .tabulator-row.tabulator-group.tabulator-group-visible .tabulator-arrow {
     transform: rotate(90deg);
-    margin-right: var(--tabulator-icon-size);;
+    margin-right: var(--tabulator-icon-size);
+    ;
     border-top: 6px solid transparent;
     border-bottom: 6px solid transparent;
     border-right: 0;

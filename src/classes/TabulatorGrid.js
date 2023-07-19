@@ -17,7 +17,7 @@ TabulatorFull.extendModule("edit", "editors", editors);
 TabulatorFull.extendModule("format", "formatters", formatters);
 
 import EventfulElement from "../utils/EventfulElement.js";
-import { iconPrev, iconNext, iconFirst, iconLast } from "../utils/icons.js";
+import { iconPrev, iconNext, iconFirst, iconLast, iconLoader, iconError } from "../utils/icons.js";
 import parseBool from "../utils/parseBool.js";
 import getGlobalFn from "../utils/getGlobalFn.js";
 import getDelete from "../utils/getDelete.js";
@@ -72,14 +72,23 @@ class TabulatorGrid extends EventfulElement {
         config.langs = config.langs || {};
         config.langs[config.locale] = {
           pagination: {},
+          data: {},
         };
       }
-      Object.assign(config.langs[config.locale].pagination, {
-        first: iconFirst,
-        last: iconLast,
-        next: iconNext,
-        prev: iconPrev,
-      });
+      if (config.langs[config.locale].pagination) {
+        Object.assign(config.langs[config.locale].pagination, {
+          first: iconFirst,
+          last: iconLast,
+          next: iconNext,
+          prev: iconPrev,
+        });
+      }
+      if (config.langs[config.locale].data) {
+        Object.assign(config.langs[config.locale].data, {
+          loading: iconLoader,
+          error: iconError,
+        });
+      }
     }
 
     // init callback
@@ -147,6 +156,21 @@ class TabulatorGrid extends EventfulElement {
         // Set initial data from hidden input (eg: json saved from the db)
         tabulator.setData(JSON.parse(hiddenInput.value));
       }
+    });
+
+    // Loading classes
+    tabulator.on("dataLoading", (data) => {
+      //data - the data loading into the table
+      console.log(data);
+      el.classList.add(`tabulator-loading`);
+    });
+    tabulator.on("dataLoaded", (data) => {
+      //data - the data loaded into the table
+      el.classList.remove(`tabulator-loading`);
+    });
+    tabulator.on("dataLoadError", (error) => {
+      //error - the returned error object
+      el.classList.remove(`tabulator-loading`);
     });
 
     // Fix table size on full redraw
