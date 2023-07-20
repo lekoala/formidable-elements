@@ -803,8 +803,8 @@
    ├ src/tom-select.raw.js                                                                                      30b     0.1%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/bs-tags.min.js                                                                                         28.3kb  100.0%
-   ├ node_modules/bootstrap5-tags/tags.js                                                                     25.9kb   91.4%
+  dist/bs-tags.min.js                                                                                         28.7kb  100.0%
+   ├ node_modules/bootstrap5-tags/tags.js                                                                     26.3kb   91.5%
    ├ node_modules/bootstrap5-tags/tags-pure.min.css                                                            1.1kb    4.0%
    ├ src/utils/FormidableElement.js                                                                            344b     1.2%
    ├ src/classes/BsTags.js                                                                                     224b     0.8%
@@ -817,8 +817,8 @@
    ├ src/bs-tags.js                                                                                             42b     0.1%
    └ src/utils/isString.js                                                                                      28b     0.1%
 
-  dist/bs-tags.raw.min.js                                                                                     27.0kb  100.0%
-   ├ node_modules/bootstrap5-tags/tags.js                                                                     25.9kb   95.9%
+  dist/bs-tags.raw.min.js                                                                                     27.4kb  100.0%
+   ├ node_modules/bootstrap5-tags/tags.js                                                                     26.3kb   96.0%
    ├ src/utils/FormidableElement.js                                                                            344b     1.2%
    ├ src/classes/BsTags.js                                                                                     224b     0.8%
    ├ src/utils/replaceCallbacks.js                                                                             155b     0.6%
@@ -888,8 +888,8 @@
    ├ src/coloris-input.raw.js                                                                                   33b     0.2%
    └ src/utils/isString.js                                                                                      29b     0.2%
 
-  dist/bs-autocomplete.min.js                                                                                 14.3kb  100.0%
-   ├ node_modules/bootstrap5-autocomplete/autocomplete.js                                                     13.1kb   91.9%
+  dist/bs-autocomplete.min.js                                                                                 14.1kb  100.0%
+   ├ node_modules/bootstrap5-autocomplete/autocomplete.js                                                     12.9kb   91.8%
    ├ src/utils/FormidableElement.js                                                                            344b     2.4%
    ├ src/classes/BsAutocomplete.js                                                                             275b     1.9%
    ├ src/utils/replaceCallbacks.js                                                                             155b     1.1%
@@ -1007,4 +1007,4 @@
   dist\tel-input.min.js           291.5kb
   ...and 27 more output files...
 
-Done in 91ms
+Done in 1201ms

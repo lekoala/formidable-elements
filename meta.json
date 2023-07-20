@@ -121,7 +121,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-      "bytes": 31568,
+      "bytes": 31572,
       "imports": [],
       "format": "esm"
     },
@@ -168,7 +168,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags.js": {
-      "bytes": 71421,
+      "bytes": 72168,
       "imports": [],
       "format": "esm"
     },
@@ -5931,7 +5931,7 @@
       "entryPoint": "src/bs-autocomplete.js",
       "inputs": {
         "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-          "bytesInOutput": 13440
+          "bytesInOutput": 13233
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -5961,7 +5961,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 14626
+      "bytes": 14419
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -5969,7 +5969,7 @@
       "entryPoint": "src/bs-tags.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 26544
+          "bytesInOutput": 26893
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6005,7 +6005,7 @@
           "bytesInOutput": 42
         }
       },
-      "bytes": 29028
+      "bytes": 29377
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -6013,7 +6013,7 @@
       "entryPoint": "src/bs-tags.raw.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 26544
+          "bytesInOutput": 26893
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6043,7 +6043,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 27677
+      "bytes": 28026
     },
     "dist/cleave-input.min.js": {
       "imports": [],
