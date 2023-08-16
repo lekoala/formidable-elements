@@ -437,7 +437,7 @@ class Anchored extends FormidableElement {
    * Event handling can be left to anchored element for proper add/remove of listeners
    * @param {Event} ev
    */
-  handleEvent(ev) {
+  handleEvent = (ev) => {
     this._updateZindex();
     if (this._handler && ev.currentTarget == this) {
       this._handler(ev, this.el, this);
@@ -445,7 +445,7 @@ class Anchored extends FormidableElement {
     if (this._anchorHandler && ev.currentTarget == this.anchorEl) {
       this._anchorHandler(ev, this.el, this);
     }
-  }
+  };
 
   reposition() {
     const el = this.el;

@@ -58,7 +58,7 @@
       "format": "esm"
     },
     "src/classes/Anchored.js": {
-      "bytes": 16692,
+      "bytes": 16699,
       "imports": [
         {
           "path": "src/utils/FormidableElement.js",
@@ -100,7 +100,7 @@
       "format": "esm"
     },
     "src/classes/BoundInput.js": {
-      "bytes": 1096,
+      "bytes": 904,
       "imports": [],
       "format": "esm"
     },
@@ -121,7 +121,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-      "bytes": 31627,
+      "bytes": 32742,
       "imports": [],
       "format": "esm"
     },
@@ -323,7 +323,7 @@
       "format": "esm"
     },
     "src/classes/ClipboardCopy.js": {
-      "bytes": 2569,
+      "bytes": 2375,
       "imports": [
         {
           "path": "src/utils/FormidableElement.js",
@@ -807,7 +807,7 @@
       "format": "esm"
     },
     "src/classes/FlatpickrInput.js": {
-      "bytes": 6703,
+      "bytes": 6511,
       "imports": [
         {
           "path": "node_modules/flatpickr/dist/esm/index.js",
@@ -926,23 +926,59 @@
       ],
       "format": "esm"
     },
-    "node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs": {
-      "bytes": 11714,
+    "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
+      "bytes": 3915,
       "imports": [],
       "format": "esm"
     },
-    "node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs": {
-      "bytes": 8481,
+    "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
+      "bytes": 33693,
       "imports": [
         {
-          "path": "node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs",
+          "path": "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
+          "kind": "import-statement",
+          "original": "@floating-ui/utils"
+        },
+        {
+          "path": "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
+          "kind": "import-statement",
+          "original": "@floating-ui/utils"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@floating-ui/utils/dom/dist/floating-ui.utils.dom.mjs": {
+      "bytes": 4850,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
+      "bytes": 20299,
+      "imports": [
+        {
+          "path": "node_modules/@floating-ui/core/dist/floating-ui.core.mjs",
           "kind": "import-statement",
           "original": "@floating-ui/core"
         },
         {
-          "path": "node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs",
+          "path": "node_modules/@floating-ui/core/dist/floating-ui.core.mjs",
           "kind": "import-statement",
           "original": "@floating-ui/core"
+        },
+        {
+          "path": "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
+          "kind": "import-statement",
+          "original": "@floating-ui/utils"
+        },
+        {
+          "path": "node_modules/@floating-ui/utils/dom/dist/floating-ui.utils.dom.mjs",
+          "kind": "import-statement",
+          "original": "@floating-ui/utils/dom"
+        },
+        {
+          "path": "node_modules/@floating-ui/utils/dom/dist/floating-ui.utils.dom.mjs",
+          "kind": "import-statement",
+          "original": "@floating-ui/utils/dom"
         }
       ],
       "format": "esm"
@@ -951,7 +987,7 @@
       "bytes": 10956,
       "imports": [
         {
-          "path": "node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs",
+          "path": "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs",
           "kind": "import-statement",
           "original": "@floating-ui/dom"
         },
@@ -1084,7 +1120,7 @@
       "format": "esm"
     },
     "src/classes/GrowingTextarea.js": {
-      "bytes": 1351,
+      "bytes": 1184,
       "imports": [
         {
           "path": "src/utils/whenParsed.js",
@@ -1582,7 +1618,7 @@
       "format": "esm"
     },
     "src/classes/InputmaskElement.js": {
-      "bytes": 3896,
+      "bytes": 3645,
       "imports": [
         {
           "path": "node_modules/inputmask/lib/extensions/inputmask.extensions.js",
@@ -1660,7 +1696,7 @@
       "format": "esm"
     },
     "src/utils/EventfulElement.js": {
-      "bytes": 1946,
+      "bytes": 1951,
       "imports": [
         {
           "path": "src/utils/FormidableElement.js",
@@ -4335,7 +4371,7 @@
       "format": "esm"
     },
     "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-      "bytes": 96457,
+      "bytes": 96779,
       "imports": [],
       "format": "cjs"
     },
@@ -4351,7 +4387,7 @@
       "format": "cjs"
     },
     "node_modules/intl-tel-input/build/js/utils.js": {
-      "bytes": 253990,
+      "bytes": 254105,
       "imports": []
     },
     "src/utils/Storage.js": {
@@ -4667,7 +4703,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/core/dist/index.js": {
-      "bytes": 154992,
+      "bytes": 166799,
       "imports": [
         {
           "path": "node_modules/@tiptap/pm/state/dist/index.js",
@@ -4774,7 +4810,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-strike/dist/index.js": {
-      "bytes": 1925,
+      "bytes": 2122,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -4925,7 +4961,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-history/dist/index.js": {
-      "bytes": 1156,
+      "bytes": 1333,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -4941,7 +4977,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-horizontal-rule/dist/index.js": {
-      "bytes": 2115,
+      "bytes": 2990,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -4957,7 +4993,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-bullet-list/dist/index.js": {
-      "bytes": 3989,
+      "bytes": 4085,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -4968,7 +5004,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-list-item/dist/index.js": {
-      "bytes": 877,
+      "bytes": 973,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -4979,7 +5015,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-ordered-list/dist/index.js": {
-      "bytes": 4842,
+      "bytes": 4938,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -4990,7 +5026,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-typography/dist/index.js": {
-      "bytes": 4684,
+      "bytes": 6754,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5006,7 +5042,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-link/dist/index.js": {
-      "bytes": 10910,
+      "bytes": 11951,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5782,7 +5818,7 @@
       "format": "esm"
     },
     "src/classes/TomSelectElement.js": {
-      "bytes": 3764,
+      "bytes": 4046,
       "imports": [
         {
           "path": "node_modules/tom-select/src/tom-select.complete.ts",
@@ -5897,7 +5933,7 @@
           "bytesInOutput": 119
         },
         "src/classes/Anchored.js": {
-          "bytesInOutput": 6100
+          "bytesInOutput": 6102
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -5906,7 +5942,7 @@
           "bytesInOutput": 27
         }
       },
-      "bytes": 7294
+      "bytes": 7296
     },
     "dist/bound-input.min.js": {
       "imports": [],
@@ -5914,7 +5950,7 @@
       "entryPoint": "src/bound-input.js",
       "inputs": {
         "src/classes/BoundInput.js": {
-          "bytesInOutput": 532
+          "bytesInOutput": 454
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -5923,7 +5959,7 @@
           "bytesInOutput": 27
         }
       },
-      "bytes": 640
+      "bytes": 562
     },
     "dist/bs-autocomplete.min.js": {
       "imports": [],
@@ -5931,7 +5967,7 @@
       "entryPoint": "src/bs-autocomplete.js",
       "inputs": {
         "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-          "bytesInOutput": 13224
+          "bytesInOutput": 13634
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -5961,7 +5997,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 14410
+      "bytes": 14820
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -6113,7 +6149,7 @@
           "bytesInOutput": 344
         },
         "src/classes/ClipboardCopy.js": {
-          "bytesInOutput": 1172
+          "bytesInOutput": 1094
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -6122,7 +6158,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 1976
+      "bytes": 1898
     },
     "dist/coloris-input.min.js": {
       "imports": [],
@@ -6431,7 +6467,7 @@
           "bytesInOutput": 42084
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 2424
+          "bytesInOutput": 2346
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6488,7 +6524,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 84615
+      "bytes": 84537
     },
     "dist/flatpickr-input.raw.min.js": {
       "imports": [],
@@ -6526,7 +6562,7 @@
           "bytesInOutput": 42084
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 2424
+          "bytesInOutput": 2346
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6571,18 +6607,24 @@
           "bytesInOutput": 35
         }
       },
-      "bytes": 64874
+      "bytes": 64796
     },
     "dist/floating-ui.min.js": {
       "imports": [],
       "exports": [],
       "entryPoint": "src/floating-ui.js",
       "inputs": {
-        "node_modules/@floating-ui/core/dist/floating-ui.core.browser.min.mjs": {
-          "bytesInOutput": 8177
+        "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
+          "bytesInOutput": 1402
         },
-        "node_modules/@floating-ui/dom/dist/floating-ui.dom.browser.min.mjs": {
-          "bytesInOutput": 8081
+        "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
+          "bytesInOutput": 6815
+        },
+        "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
+          "bytesInOutput": 6111
+        },
+        "node_modules/@floating-ui/utils/dom/dist/floating-ui.utils.dom.mjs": {
+          "bytesInOutput": 1996
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6621,7 +6663,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 22534
+      "bytes": 22600
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -6711,7 +6753,7 @@
           "bytesInOutput": 117
         },
         "src/classes/GrowingTextarea.js": {
-          "bytesInOutput": 672
+          "bytesInOutput": 557
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -6720,7 +6762,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 902
+      "bytes": 787
     },
     "dist/input-mask.min.js": {
       "imports": [],
@@ -6818,7 +6860,7 @@
           "bytesInOutput": 229
         },
         "src/classes/InputmaskElement.js": {
-          "bytesInOutput": 1298
+          "bytesInOutput": 1222
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6827,7 +6869,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 88618
+      "bytes": 88542
     },
     "dist/locale-provider.min.js": {
       "imports": [],
@@ -6876,7 +6918,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 809
+          "bytesInOutput": 731
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
@@ -6915,7 +6957,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 69716
+      "bytes": 69638
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -6947,7 +6989,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 809
+          "bytesInOutput": 731
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
@@ -6980,7 +7022,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 68810
+      "bytes": 68732
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -7610,7 +7652,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 809
+          "bytesInOutput": 731
         },
         "src/utils/parseBool.js": {
           "bytesInOutput": 70
@@ -7637,7 +7679,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 456895
+      "bytes": 456817
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -8194,7 +8236,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 809
+          "bytesInOutput": 731
         },
         "src/utils/parseBool.js": {
           "bytesInOutput": 70
@@ -8212,7 +8254,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 410721
+      "bytes": 410643
     },
     "dist/tel-input.min.js": {
       "imports": [],
@@ -8220,7 +8262,7 @@
       "entryPoint": "src/tel-input.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 37814
+          "bytesInOutput": 37997
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
@@ -8229,7 +8271,7 @@
           "bytesInOutput": 2210
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 251322
+          "bytesInOutput": 251433
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8247,7 +8289,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 809
+          "bytesInOutput": 731
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
@@ -8280,7 +8322,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 298536
+      "bytes": 298752
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8288,7 +8330,7 @@
       "entryPoint": "src/tel-input.raw.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 37814
+          "bytesInOutput": 37997
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
@@ -8297,7 +8339,7 @@
           "bytesInOutput": 2210
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 251322
+          "bytesInOutput": 251433
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8315,7 +8357,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 809
+          "bytesInOutput": 731
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
@@ -8342,7 +8384,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 294816
+      "bytes": 295032
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -8398,7 +8440,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 50037
+          "bytesInOutput": 51304
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -8419,7 +8461,7 @@
           "bytesInOutput": 965
         },
         "node_modules/@tiptap/extension-strike/dist/index.js": {
-          "bytesInOutput": 754
+          "bytesInOutput": 830
         },
         "node_modules/@tiptap/extension-underline/dist/index.js": {
           "bytesInOutput": 596
@@ -8455,28 +8497,28 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/extension-history/dist/index.js": {
-          "bytesInOutput": 494
+          "bytesInOutput": 620
         },
         "node_modules/@tiptap/extension-horizontal-rule/dist/index.js": {
-          "bytesInOutput": 690
+          "bytesInOutput": 958
         },
         "node_modules/@tiptap/extension-bullet-list/dist/index.js": {
-          "bytesInOutput": 1850
+          "bytesInOutput": 1916
         },
         "node_modules/@tiptap/extension-list-item/dist/index.js": {
-          "bytesInOutput": 428
+          "bytesInOutput": 494
         },
         "node_modules/@tiptap/extension-ordered-list/dist/index.js": {
-          "bytesInOutput": 2205
+          "bytesInOutput": 2271
         },
         "node_modules/@tiptap/extension-typography/dist/index.js": {
-          "bytesInOutput": 1900
+          "bytesInOutput": 2606
         },
         "node_modules/linkifyjs/dist/linkify.es.js": {
-          "bytesInOutput": 19444
+          "bytesInOutput": 19343
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 3398
+          "bytesInOutput": 3751
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -8497,7 +8539,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 809
+          "bytesInOutput": 731
         },
         "src/utils/ce.js": {
           "bytesInOutput": 36
@@ -8539,7 +8581,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 311766
+      "bytes": 314581
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -8595,7 +8637,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 50037
+          "bytesInOutput": 51304
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -8616,7 +8658,7 @@
           "bytesInOutput": 965
         },
         "node_modules/@tiptap/extension-strike/dist/index.js": {
-          "bytesInOutput": 754
+          "bytesInOutput": 830
         },
         "node_modules/@tiptap/extension-underline/dist/index.js": {
           "bytesInOutput": 596
@@ -8652,28 +8694,28 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/extension-history/dist/index.js": {
-          "bytesInOutput": 494
+          "bytesInOutput": 620
         },
         "node_modules/@tiptap/extension-horizontal-rule/dist/index.js": {
-          "bytesInOutput": 690
+          "bytesInOutput": 958
         },
         "node_modules/@tiptap/extension-bullet-list/dist/index.js": {
-          "bytesInOutput": 1850
+          "bytesInOutput": 1916
         },
         "node_modules/@tiptap/extension-list-item/dist/index.js": {
-          "bytesInOutput": 428
+          "bytesInOutput": 494
         },
         "node_modules/@tiptap/extension-ordered-list/dist/index.js": {
-          "bytesInOutput": 2205
+          "bytesInOutput": 2271
         },
         "node_modules/@tiptap/extension-typography/dist/index.js": {
-          "bytesInOutput": 1900
+          "bytesInOutput": 2606
         },
         "node_modules/linkifyjs/dist/linkify.es.js": {
-          "bytesInOutput": 19444
+          "bytesInOutput": 19343
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 3398
+          "bytesInOutput": 3751
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -8694,7 +8736,7 @@
           "bytesInOutput": 353
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 809
+          "bytesInOutput": 731
         },
         "src/utils/ce.js": {
           "bytesInOutput": 36
@@ -8730,7 +8772,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 310600
+      "bytes": 313415
     },
     "dist/tom-select.min.js": {
       "imports": [],
@@ -8852,7 +8894,7 @@
           "bytesInOutput": 310
         },
         "src/classes/TomSelectElement.js": {
-          "bytesInOutput": 1304
+          "bytesInOutput": 1257
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8867,7 +8909,7 @@
           "bytesInOutput": 122
         }
       },
-      "bytes": 73303
+      "bytes": 73256
     },
     "dist/tom-select.raw.min.js": {
       "imports": [],
@@ -8989,7 +9031,7 @@
           "bytesInOutput": 310
         },
         "src/classes/TomSelectElement.js": {
-          "bytesInOutput": 1304
+          "bytesInOutput": 1257
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8998,7 +9040,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 58180
+      "bytes": 58133
     }
   }
 }

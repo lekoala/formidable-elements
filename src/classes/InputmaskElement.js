@@ -57,20 +57,11 @@ class InputmaskElement extends FormidableElement {
       // @ts-ignore
       this.hiddenInput = insertHiddenInput(input);
 
-      // Use arrow function to make sure that the scope is always this
-      // Replicate unmasked value to hidden field
-      this.handleEvent = (ev) => {
-        this._handleEvent(ev);
-      };
       this.handleEvent(); // run once to make sure value is set on hidden field
     }
   }
 
-  handleEvent(ev) {
-    this._handleEvent(ev);
-  }
-
-  _handleEvent(ev = null) {
+  handleEvent = (ev = null) => {
     const input = this.el;
     const dataformat = this.dataset.dataformat;
     const isDecimal = !!this.dataset.decimal;
@@ -106,7 +97,7 @@ class InputmaskElement extends FormidableElement {
       val = "";
     }
     this.hiddenInput.value = val;
-  }
+  };
 
   connected() {
     if (!this.keepMask) {

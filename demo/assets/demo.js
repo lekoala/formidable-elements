@@ -1,5 +1,5 @@
 // test disconnected
-document.querySelector(".delete-btn").addEventListener("click", (e) => {
+document.querySelector(".delete-btn")?.addEventListener("click", (e) => {
   const el = document.querySelector(e.currentTarget.dataset.name);
   if (el) {
     console.log("removing element", el);
@@ -12,7 +12,7 @@ document.querySelector(".delete-btn").addEventListener("click", (e) => {
 });
 
 // test move
-document.querySelector(".move-btn").addEventListener("click", (e) => {
+document.querySelector(".move-btn")?.addEventListener("click", (e) => {
   const el = document.querySelector(e.currentTarget.dataset.name);
   if (el) {
     const parent = el.parentElement;
@@ -27,7 +27,7 @@ document.querySelector(".move-btn").addEventListener("click", (e) => {
 
 // test connected / cloning
 let cloneCount = 0;
-document.querySelector(".copy-btn").addEventListener("click", (e) => {
+document.querySelector(".copy-btn")?.addEventListener("click", (e) => {
   const el = document.querySelector(e.currentTarget.dataset.name);
   if (el) {
     cloneCount++;

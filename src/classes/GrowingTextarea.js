@@ -1,5 +1,7 @@
 import whenParsed from "../utils/whenParsed.js";
 
+const events = ["input", "focusout"];
+
 /**
  * A growing text area
  * Doesn't inherit from FormidableElement since it's not configurable
@@ -23,20 +25,13 @@ class GrowingTextarea extends HTMLElement {
   }
 
   parsedCallback() {
-    // Use arrow function to make sure that the scope is always this
-    this.handleEvent = (ev) => {
-      this._handleEvent(ev);
-    };
-    this._handleEvent();
-    this.addEventListener("input", this);
-    this.addEventListener("focusout", this);
+    this.handleEvent();
+    events.forEach((type) => {
+      this.addEventListener(type, this);
+    });
   }
 
-  handleEvent(ev) {
-    this._handleEvent(ev);
-  }
-
-  _handleEvent(ev = null) {
+  handleEvent = (ev = null) => {
     const el = this.el;
     if ((!ev || ev.type == "focusout") && this.dataset.trim) {
       el.value = el.value.trim();
@@ -46,11 +41,12 @@ class GrowingTextarea extends HTMLElement {
       el.style.height = "0";
       el.style.height = el.scrollHeight + "px";
     }
-  }
+  };
 
   disconnectedCallback() {
-    this.removeEventListener("input", this);
-    this.removeEventListener("focusout", this);
+    events.forEach((type) => {
+      this.removeEventListener(type, this);
+    });
   }
 }
 

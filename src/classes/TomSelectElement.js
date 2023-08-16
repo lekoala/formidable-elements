@@ -86,7 +86,9 @@ class TomSelectElement extends FormidableElement {
         const totalHeight = rect.y + rect.height;
         const clientHeight = dropdown.ownerDocument.documentElement.clientHeight;
         if (totalHeight > clientHeight) {
-          dropdown.style.transform = `translateY(calc(-100% - ${control.offsetHeight + 2}px))`;
+          // In chrome, we need 100.1% to avoid blurry text
+          // @link https://stackoverflow.com/questions/32034574/font-looks-blurry-after-translate-in-chrome
+          dropdown.style.transform = `translateY(calc(-100.1% - ${control.offsetHeight + 2}px))`;
         } else if (totalHeight < clientHeight - rect.height) {
           dropdown.style.transform = "unset";
         }
@@ -95,9 +97,6 @@ class TomSelectElement extends FormidableElement {
     // https://github.com/orchidjs/tom-select/issues/544
     const form = this.closest("form");
     if (form) {
-      this.handleEvent = (ev) => {
-        this._handleEvent(ev);
-      };
       form.addEventListener("reset", this);
     }
 
@@ -105,12 +104,13 @@ class TomSelectElement extends FormidableElement {
     this.originalValue = this.tomselect.items.slice(0);
   }
 
-  handleEvent(ev) {
-    this._handleEvent(ev);
-  }
+  // Use arrow function to make sure that the scope is always this and cannot be rebound
+  // Automatically call any $event method (don't use "on" as prefix as it will collide with existing handler)
+  handleEvent = (ev) => {
+    this[`$${ev.type}`](ev);
+  };
 
-  _handleEvent(ev) {
-    // reset
+  $reset() {
     this.tomselect.setValue(this.originalValue, true);
   }
 

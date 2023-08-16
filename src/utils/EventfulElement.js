@@ -20,8 +20,7 @@ const observer = new window.IntersectionObserver((entries, observerRef) => {
 });
 
 /**
- * An extension of formidable element that can deal with events
- * and lazy loading
+ * An extension of formidable element that can deal with events and lazy loading
  */
 class EventfulElement extends FormidableElement {
   get events() {
@@ -52,23 +51,17 @@ class EventfulElement extends FormidableElement {
   }
 
   connectedCallback() {
-    // Use arrow function to make sure that the scope is always this
-    this.handleEvent = (ev) => {
-      this._handleEvent(ev);
-    };
     super.connectedCallback();
     this.events.forEach((type) => {
       this.addEventListener(type, this);
     });
   }
 
-  handleEvent(ev) {
-    this._handleEvent(ev);
-  }
-
-  _handleEvent(ev) {
+  // Use arrow function to make sure that the scope is always this and cannot be rebound
+  // Automatically call any $event method (don't use "on" as prefix as it will collide with existing handler)
+  handleEvent = (ev) => {
     this[`$${ev.type}`](ev);
-  }
+  };
 
   disconnectedCallback() {
     if (this.lazy && this.isCreated) {
