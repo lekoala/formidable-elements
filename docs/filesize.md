@@ -1,5 +1,5 @@
 
-  dist/tabulator-grid.min.js                                                                                 446.1kb  100.0%
+  dist/tabulator-grid.min.js                                                                                 446.3kb  100.0%
    ├ node_modules/tabulator-tables/dist/css/tabulator_bootstrap5.min.css                                      35.1kb    7.9%
    ├ node_modules/tabulator-tables/src/js/core/RowManager.js                                                  15.5kb    3.5%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/List.js                                                15.3kb    3.4%
@@ -36,8 +36,8 @@
    ├ node_modules/tabulator-tables/src/js/core/cell/Cell.js                                                    4.0kb    0.9%
    ├ node_modules/tabulator-tables/src/js/modules/Validate/Validate.js                                         3.9kb    0.9%
    ├ node_modules/tabulator-tables/src/js/modules/Format/Format.js                                             3.3kb    0.7%
+   ├ src/classes/TabulatorGrid.js                                                                              3.1kb    0.7%
    ├ node_modules/tabulator-tables/src/js/modules/Print/Print.js                                               3.0kb    0.7%
-   ├ src/classes/TabulatorGrid.js                                                                              3.0kb    0.7%
    ├ node_modules/tabulator-tables/src/js/modules/ResizeTable/ResizeTable.js                                   2.9kb    0.7%
    ├ src/classes/tabulator/ResponsiveLayout/ResponsiveLayout.js                                                2.9kb    0.6%
    ├ node_modules/tabulator-tables/src/js/modules/FrozenRows/FrozenRows.js                                     2.7kb    0.6%
@@ -193,7 +193,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/Accessor/defaults/accessors.js                                10b     0.0%
    └ node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js                                  10b     0.0%
 
-  dist/tabulator-grid.raw.min.js                                                                             401.0kb  100.0%
+  dist/tabulator-grid.raw.min.js                                                                             401.2kb  100.0%
    ├ node_modules/tabulator-tables/src/js/core/RowManager.js                                                  15.5kb    3.9%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/List.js                                                15.3kb    3.8%
    ├ node_modules/tabulator-tables/src/js/modules/Page/Page.js                                                15.0kb    3.7%
@@ -228,8 +228,8 @@
    ├ node_modules/tabulator-tables/src/js/core/cell/Cell.js                                                    4.0kb    1.0%
    ├ node_modules/tabulator-tables/src/js/modules/Validate/Validate.js                                         3.9kb    1.0%
    ├ node_modules/tabulator-tables/src/js/modules/Format/Format.js                                             3.3kb    0.8%
+   ├ src/classes/TabulatorGrid.js                                                                              3.1kb    0.8%
    ├ node_modules/tabulator-tables/src/js/modules/Print/Print.js                                               3.0kb    0.7%
-   ├ src/classes/TabulatorGrid.js                                                                              3.0kb    0.7%
    ├ node_modules/tabulator-tables/src/js/modules/ResizeTable/ResizeTable.js                                   2.9kb    0.7%
    ├ src/classes/tabulator/ResponsiveLayout/ResponsiveLayout.js                                                2.9kb    0.7%
    ├ node_modules/tabulator-tables/src/js/modules/FrozenRows/FrozenRows.js                                     2.7kb    0.7%
@@ -1002,11 +1002,11 @@
    └ src/locale-provider.js                                                                                     31b     7.9%
 
 
-  dist\tabulator-grid.min.js      446.1kb
-  dist\tabulator-grid.raw.min.js  401.0kb
+  dist\tabulator-grid.min.js      446.3kb
+  dist\tabulator-grid.raw.min.js  401.2kb
   dist\tiptap-editor.min.js       307.2kb
   dist\tiptap-editor.raw.min.js   306.1kb
   dist\tel-input.min.js           291.8kb
   ...and 27 more output files...
 
-Done in 85ms
+Done in 90ms

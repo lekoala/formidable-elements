@@ -498,10 +498,25 @@
     </form>
 
     <hr>
+    <form action="https://vercel-dumper.vercel.app" method="post">
+        <p>Add remove rows from an empty editable table</p>
+        <tabulator-grid id="editable-grid-not-empty" data-config="editEmptyGridConfig">
+            <div></div>
+            <input type="hidden" name="my-grid-data" value='[{"id": "1", "email": "test@test.com"}]'>
+            <div class="pt-3">
+                <button class="tabulator-add-row btn btn-success" type="button">Add row</button>
+                <button class="tabulator-remove-selected btn btn-danger" type="button">Remove rows</button>
+            </div>
+        </tabulator-grid>
+        <br />
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <hr>
 
     <p>Revamp loading</p>
 
-    <tabulator-grid id="editable-grid" data-config="loadingGridConfig">
+    <tabulator-grid id="editable-grid-loading" data-config="loadingGridConfig">
     </tabulator-grid>
 
     <hr>

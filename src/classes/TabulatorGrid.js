@@ -150,18 +150,30 @@ class TabulatorGrid extends EventfulElement {
         tabulator.setPage(state.page);
       }
       // Delay loading
+      let promise = null;
       if (ajaxURL) {
-        tabulator.setData(ajaxURL);
+        promise = tabulator.setData(ajaxURL);
       } else if (hiddenInput && hiddenInput.value) {
         // Set initial data from hidden input (eg: json saved from the db)
-        tabulator.setData(JSON.parse(hiddenInput.value));
+        promise = tabulator.setData(JSON.parse(hiddenInput.value));
+      }
+
+      // This is a basic safeguard, it's probably better to rely on lazy init
+      if (promise) {
+        promise.then(
+          setTimeout(() => {
+            const holder = tabulator.element.querySelector(".tabulator-tableholder");
+            if (holder.offsetHeight <= 0) {
+              tabulator.redraw(true);
+            }
+          }, 0)
+        );
       }
     });
 
     // Loading classes
     tabulator.on("dataLoading", (data) => {
       //data - the data loading into the table
-      console.log(data);
       el.classList.add(`tabulator-loading`);
     });
     tabulator.on("dataLoaded", (data) => {
@@ -178,7 +190,9 @@ class TabulatorGrid extends EventfulElement {
     const fixedPaginatedHeight = parseBool(this.dataset.fixedPaginatedHeight);
     tabulator.on("renderStarted", () => {
       const holder = tabulator.element.querySelector(".tabulator-tableholder");
-      holder.style.minHeight = holder.clientHeight + "px";
+      const height = holder.clientHeight || 1;
+
+      holder.style.minHeight = height + "px";
       holder.style.overflowAnchor = "none"; // Without this, it jumps on firefox
 
       // No overflow if responsive
@@ -197,9 +211,16 @@ class TabulatorGrid extends EventfulElement {
       if (tabulator.options.pagination && fixedPaginatedHeight && table.firstChild) {
         paginatedHeight = this.config.paginationSize * table.firstChild.offsetHeight;
       }
+      if (height <= 0) {
+        height = 45;
+      }
       // Replace height value computed by tabulator and remove minHeight
-      holder.style.height = `${height}px`;
-      holder.style.minHeight = `${paginatedHeight}px`;
+      if (height > 0) {
+        holder.style.height = `${height}px`;
+      }
+      if (paginatedHeight > 0) {
+        holder.style.minHeight = `${paginatedHeight}px`;
+      }
     });
 
     // Add desktop or mobile class
