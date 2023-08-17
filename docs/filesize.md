@@ -1009,4 +1009,4 @@
   dist\tel-input.min.js           291.8kb
   ...and 27 more output files...
 
-Done in 108ms
+Done in 85ms
