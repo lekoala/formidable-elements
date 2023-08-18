@@ -3584,17 +3584,17 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/Persistence/defaults/readers.js": {
-      "bytes": 636,
+      "bytes": 766,
       "imports": [],
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/Persistence/defaults/writers.js": {
-      "bytes": 392,
+      "bytes": 495,
       "imports": [],
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/Persistence/Persistence.js": {
-      "bytes": 12580,
+      "bytes": 12581,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
@@ -4056,7 +4056,7 @@
       "format": "esm"
     },
     "src/utils/safeGlobalFn.js": {
-      "bytes": 201,
+      "bytes": 296,
       "imports": [
         {
           "path": "src/utils/getGlobalFn.js",
@@ -4255,7 +4255,7 @@
       "format": "esm"
     },
     "src/classes/TabulatorGrid.js": {
-      "bytes": 9554,
+      "bytes": 9687,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Tabulator.js",
@@ -7508,10 +7508,10 @@
           "bytesInOutput": 15342
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/defaults/readers.js": {
-          "bytesInOutput": 278
+          "bytesInOutput": 365
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/defaults/writers.js": {
-          "bytesInOutput": 221
+          "bytesInOutput": 294
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/Persistence.js": {
           "bytesInOutput": 7841
@@ -7592,7 +7592,7 @@
           "bytesInOutput": 49
         },
         "src/utils/safeGlobalFn.js": {
-          "bytesInOutput": 37
+          "bytesInOutput": 74
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
@@ -7661,7 +7661,7 @@
           "bytesInOutput": 58
         },
         "src/classes/TabulatorGrid.js": {
-          "bytesInOutput": 3208
+          "bytesInOutput": 3246
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7679,7 +7679,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 456978
+      "bytes": 457213
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -8092,10 +8092,10 @@
           "bytesInOutput": 15342
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/defaults/readers.js": {
-          "bytesInOutput": 278
+          "bytesInOutput": 365
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/defaults/writers.js": {
-          "bytesInOutput": 221
+          "bytesInOutput": 294
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/Persistence.js": {
           "bytesInOutput": 7841
@@ -8176,7 +8176,7 @@
           "bytesInOutput": 49
         },
         "src/utils/safeGlobalFn.js": {
-          "bytesInOutput": 37
+          "bytesInOutput": 74
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
@@ -8245,7 +8245,7 @@
           "bytesInOutput": 58
         },
         "src/classes/TabulatorGrid.js": {
-          "bytesInOutput": 3208
+          "bytesInOutput": 3246
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8254,7 +8254,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 410790
+      "bytes": 411025
     },
     "dist/tel-input.min.js": {
       "imports": [],

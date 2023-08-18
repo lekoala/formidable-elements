@@ -93,6 +93,7 @@ class TabulatorGrid extends EventfulElement {
 
     // init callback
     const initCallback = getDelete(config, "_initCallback");
+    const configCallback = getDelete(config, "_configCallback");
 
     // Restore custom state (eg: server side set in session)
     // You can also use persistence module https://tabulator.info/docs/5.5/persist
@@ -103,6 +104,10 @@ class TabulatorGrid extends EventfulElement {
 
     const form = el.closest("form");
     let hiddenInput = this.querySelector("input");
+
+    if (configCallback) {
+      configCallback(config);
+    }
 
     const tabulator = new TabulatorFull(el, this.config);
 

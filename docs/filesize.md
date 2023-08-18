@@ -1,5 +1,5 @@
 
-  dist/tabulator-grid.min.js                                                                                 446.3kb  100.0%
+  dist/tabulator-grid.min.js                                                                                 446.5kb  100.0%
    ├ node_modules/tabulator-tables/dist/css/tabulator_bootstrap5.min.css                                      35.1kb    7.9%
    ├ node_modules/tabulator-tables/src/js/core/RowManager.js                                                  15.5kb    3.5%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/List.js                                                15.3kb    3.4%
@@ -36,7 +36,7 @@
    ├ node_modules/tabulator-tables/src/js/core/cell/Cell.js                                                    4.0kb    0.9%
    ├ node_modules/tabulator-tables/src/js/modules/Validate/Validate.js                                         3.9kb    0.9%
    ├ node_modules/tabulator-tables/src/js/modules/Format/Format.js                                             3.3kb    0.7%
-   ├ src/classes/TabulatorGrid.js                                                                              3.1kb    0.7%
+   ├ src/classes/TabulatorGrid.js                                                                              3.2kb    0.7%
    ├ node_modules/tabulator-tables/src/js/modules/Print/Print.js                                               3.0kb    0.7%
    ├ node_modules/tabulator-tables/src/js/modules/ResizeTable/ResizeTable.js                                   2.9kb    0.7%
    ├ src/classes/tabulator/ResponsiveLayout/ResponsiveLayout.js                                                2.9kb    0.6%
@@ -133,18 +133,18 @@
    ├ node_modules/tabulator-tables/src/js/modules/Ajax/defaults/contentTypeFormatters.js                       456b     0.1%
    ├ node_modules/tabulator-tables/src/js/modules/Localize/defaults/langs.js                                   432b     0.1%
    ├ node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters/number.js                              386b     0.1%
+   ├ node_modules/tabulator-tables/src/js/modules/Persistence/defaults/readers.js                              365b     0.1%
    ├ src/utils/FormidableElement.js                                                                            353b     0.1%
    ├ node_modules/tabulator-tables/src/js/modules/Import/defaults/importers/csv.js                             340b     0.1%
    ├ node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters/string.js                              337b     0.1%
    ├ node_modules/tabulator-tables/src/js/core/rendering/renderers/BasicHorizontal.js                          301b     0.1%
    ├ src/classes/tabulator/Format/formatters/external.js                                                       295b     0.1%
+   ├ node_modules/tabulator-tables/src/js/modules/Persistence/defaults/writers.js                              294b     0.1%
    ├ node_modules/tabulator-tables/src/js/core/column/defaults/options.js                                      283b     0.1%
-   ├ node_modules/tabulator-tables/src/js/modules/Persistence/defaults/readers.js                              278b     0.1%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/handle.js                         258b     0.1%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters.js                                246b     0.1%
    ├ node_modules/tabulator-tables/src/js/modules/Keybindings/defaults/bindings.js                             229b     0.1%
    ├ src/classes/tabulator/helpers.js                                                                          225b     0.0%
-   ├ node_modules/tabulator-tables/src/js/modules/Persistence/defaults/writers.js                              221b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/autocomplete.js                        219b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Layout/defaults/modes/fitData.js                             209b     0.0%
    ├ src/classes/tabulator/Format/formatters/flag.js                                                           191b     0.0%
@@ -173,6 +173,7 @@
    ├ node_modules/tabulator-tables/src/js/core/modules/core.js                                                  80b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters/exists.js                               80b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/plaintext.js                       77b     0.0%
+   ├ src/utils/safeGlobalFn.js                                                                                  74b     0.0%
    ├ src/utils/parseBool.js                                                                                     70b     0.0%
    ├ src/classes/tabulator/custom-editors.js                                                                    67b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/list.js                                 66b     0.0%
@@ -183,7 +184,6 @@
    ├ src/utils/getGlobalFn.js                                                                                   49b     0.0%
    ├ src/utils/isNumeric.js                                                                                     45b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/html.js                            39b     0.0%
-   ├ src/utils/safeGlobalFn.js                                                                                  37b     0.0%
    ├ src/utils/ce.js                                                                                            35b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Import/defaults/importers/array.js                            34b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Import/defaults/importers.js                                  33b     0.0%
@@ -193,7 +193,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/Accessor/defaults/accessors.js                                10b     0.0%
    └ node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js                                  10b     0.0%
 
-  dist/tabulator-grid.raw.min.js                                                                             401.2kb  100.0%
+  dist/tabulator-grid.raw.min.js                                                                             401.4kb  100.0%
    ├ node_modules/tabulator-tables/src/js/core/RowManager.js                                                  15.5kb    3.9%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/List.js                                                15.3kb    3.8%
    ├ node_modules/tabulator-tables/src/js/modules/Page/Page.js                                                15.0kb    3.7%
@@ -228,7 +228,7 @@
    ├ node_modules/tabulator-tables/src/js/core/cell/Cell.js                                                    4.0kb    1.0%
    ├ node_modules/tabulator-tables/src/js/modules/Validate/Validate.js                                         3.9kb    1.0%
    ├ node_modules/tabulator-tables/src/js/modules/Format/Format.js                                             3.3kb    0.8%
-   ├ src/classes/TabulatorGrid.js                                                                              3.1kb    0.8%
+   ├ src/classes/TabulatorGrid.js                                                                              3.2kb    0.8%
    ├ node_modules/tabulator-tables/src/js/modules/Print/Print.js                                               3.0kb    0.7%
    ├ node_modules/tabulator-tables/src/js/modules/ResizeTable/ResizeTable.js                                   2.9kb    0.7%
    ├ src/classes/tabulator/ResponsiveLayout/ResponsiveLayout.js                                                2.9kb    0.7%
@@ -325,18 +325,18 @@
    ├ node_modules/tabulator-tables/src/js/modules/Ajax/defaults/contentTypeFormatters.js                       456b     0.1%
    ├ node_modules/tabulator-tables/src/js/modules/Localize/defaults/langs.js                                   432b     0.1%
    ├ node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters/number.js                              386b     0.1%
+   ├ node_modules/tabulator-tables/src/js/modules/Persistence/defaults/readers.js                              365b     0.1%
    ├ src/utils/FormidableElement.js                                                                            353b     0.1%
    ├ node_modules/tabulator-tables/src/js/modules/Import/defaults/importers/csv.js                             340b     0.1%
    ├ node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters/string.js                              337b     0.1%
    ├ node_modules/tabulator-tables/src/js/core/rendering/renderers/BasicHorizontal.js                          301b     0.1%
    ├ src/classes/tabulator/Format/formatters/external.js                                                       295b     0.1%
+   ├ node_modules/tabulator-tables/src/js/modules/Persistence/defaults/writers.js                              294b     0.1%
    ├ node_modules/tabulator-tables/src/js/core/column/defaults/options.js                                      283b     0.1%
-   ├ node_modules/tabulator-tables/src/js/modules/Persistence/defaults/readers.js                              278b     0.1%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/handle.js                         258b     0.1%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters.js                                246b     0.1%
    ├ node_modules/tabulator-tables/src/js/modules/Keybindings/defaults/bindings.js                             229b     0.1%
    ├ src/classes/tabulator/helpers.js                                                                          225b     0.1%
-   ├ node_modules/tabulator-tables/src/js/modules/Persistence/defaults/writers.js                              221b     0.1%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/autocomplete.js                        219b     0.1%
    ├ node_modules/tabulator-tables/src/js/modules/Layout/defaults/modes/fitData.js                             209b     0.1%
    ├ src/classes/tabulator/Format/formatters/flag.js                                                           191b     0.0%
@@ -363,6 +363,7 @@
    ├ node_modules/tabulator-tables/src/js/core/modules/core.js                                                  80b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters/exists.js                               80b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/plaintext.js                       77b     0.0%
+   ├ src/utils/safeGlobalFn.js                                                                                  74b     0.0%
    ├ src/utils/parseBool.js                                                                                     70b     0.0%
    ├ src/classes/tabulator/custom-editors.js                                                                    67b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/list.js                                 66b     0.0%
@@ -373,7 +374,6 @@
    ├ src/utils/getGlobalFn.js                                                                                   49b     0.0%
    ├ src/utils/isNumeric.js                                                                                     45b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/html.js                            39b     0.0%
-   ├ src/utils/safeGlobalFn.js                                                                                  37b     0.0%
    ├ src/utils/ce.js                                                                                            35b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Import/defaults/importers/array.js                            34b     0.0%
    ├ src/tabulator-grid.raw.js                                                                                  34b     0.0%
@@ -1002,11 +1002,11 @@
    └ src/locale-provider.js                                                                                     31b     7.9%
 
 
-  dist\tabulator-grid.min.js      446.3kb
-  dist\tabulator-grid.raw.min.js  401.2kb
+  dist\tabulator-grid.min.js      446.5kb
+  dist\tabulator-grid.raw.min.js  401.4kb
   dist\tiptap-editor.min.js       307.2kb
   dist\tiptap-editor.raw.min.js   306.1kb
   dist\tel-input.min.js           291.8kb
   ...and 27 more output files...
 
-Done in 90ms
+Done in 84ms
