@@ -4320,7 +4320,7 @@
       "imports": []
     },
     "src/css/tabulator-grid.min.css": {
-      "bytes": 9935,
+      "bytes": 10109,
       "imports": []
     },
     "src/tabulator-grid.js": {
@@ -7670,7 +7670,7 @@
           "bytesInOutput": 35986
         },
         "src/css/tabulator-grid.min.css": {
-          "bytesInOutput": 9945
+          "bytesInOutput": 10119
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 159
@@ -7679,7 +7679,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 457213
+      "bytes": 457387
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],

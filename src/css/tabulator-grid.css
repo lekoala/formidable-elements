@@ -446,6 +446,14 @@ em.tabulator-value-placeholder {
     height: 2px;
 }
 
+.tabulator-row .tabulator-cell.tabulator-row-handle.tabulator-ui-sort {
+    max-width: 40px;
+}
+
+.tabulator-row .tabulator-cell.tabulator-row-handle .tabulator-row-handle-box {
+    width: 16px;
+}
+
 /* Improve row grouping ui */
 
 .tabulator-group {

@@ -1,5 +1,5 @@
 
-  dist/tabulator-grid.min.js                                                                                 446.5kb  100.0%
+  dist/tabulator-grid.min.js                                                                                 446.7kb  100.0%
    ├ node_modules/tabulator-tables/dist/css/tabulator_bootstrap5.min.css                                      35.1kb    7.9%
    ├ node_modules/tabulator-tables/src/js/core/RowManager.js                                                  15.5kb    3.5%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/List.js                                                15.3kb    3.4%
@@ -11,7 +11,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/Edit/Edit.js                                                11.0kb    2.5%
    ├ node_modules/tabulator-tables/src/js/modules/Export/Export.js                                            10.9kb    2.4%
    ├ node_modules/tabulator-tables/src/js/modules/DataTree/DataTree.js                                        10.3kb    2.3%
-   ├ src/css/tabulator-grid.min.css                                                                            9.7kb    2.2%
+   ├ src/css/tabulator-grid.min.css                                                                            9.9kb    2.2%
    ├ node_modules/tabulator-tables/src/js/modules/GroupRows/GroupRows.js                                       9.6kb    2.1%
    ├ node_modules/tabulator-tables/src/js/modules/GroupRows/Group.js                                           9.3kb    2.1%
    ├ node_modules/tabulator-tables/src/js/modules/ColumnCalcs/ColumnCalcs.js                                   9.1kb    2.0%
@@ -1002,11 +1002,11 @@
    └ src/locale-provider.js                                                                                     31b     7.9%
 
 
-  dist\tabulator-grid.min.js      446.5kb
+  dist\tabulator-grid.min.js      446.7kb
   dist\tabulator-grid.raw.min.js  401.4kb
   dist\tiptap-editor.min.js       307.2kb
   dist\tiptap-editor.raw.min.js   306.1kb
   dist\tel-input.min.js           291.8kb
   ...and 27 more output files...
 
-Done in 84ms
+Done in 144ms
