@@ -350,7 +350,7 @@
       "format": "esm"
     },
     "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-      "bytes": 42070,
+      "bytes": 42067,
       "imports": [],
       "format": "esm"
     },
@@ -2318,7 +2318,7 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/Layout/Layout.js": {
-      "bytes": 1131,
+      "bytes": 1453,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
@@ -3363,7 +3363,7 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/HtmlTableImport/HtmlTableImport.js": {
-      "bytes": 4052,
+      "bytes": 4056,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
@@ -3584,17 +3584,17 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/Persistence/defaults/readers.js": {
-      "bytes": 766,
+      "bytes": 636,
       "imports": [],
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/Persistence/defaults/writers.js": {
-      "bytes": 495,
+      "bytes": 392,
       "imports": [],
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/Persistence/Persistence.js": {
-      "bytes": 12581,
+      "bytes": 12580,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
@@ -3648,7 +3648,7 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/ResizeColumns/ResizeColumns.js": {
-      "bytes": 8518,
+      "bytes": 8575,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
@@ -4320,7 +4320,7 @@
       "imports": []
     },
     "src/css/tabulator-grid.min.css": {
-      "bytes": 10109,
+      "bytes": 10024,
       "imports": []
     },
     "src/tabulator-grid.js": {
@@ -4703,7 +4703,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/core/dist/index.js": {
-      "bytes": 166799,
+      "bytes": 159133,
       "imports": [
         {
           "path": "node_modules/@tiptap/pm/state/dist/index.js",
@@ -4977,7 +4977,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-horizontal-rule/dist/index.js": {
-      "bytes": 2990,
+      "bytes": 2926,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5042,7 +5042,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-link/dist/index.js": {
-      "bytes": 11951,
+      "bytes": 12080,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -6166,7 +6166,7 @@
       "entryPoint": "src/coloris-input.js",
       "inputs": {
         "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-          "bytesInOutput": 14622
+          "bytesInOutput": 14625
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6205,7 +6205,7 @@
           "bytesInOutput": 247
         }
       },
-      "bytes": 25128
+      "bytes": 25131
     },
     "dist/coloris-input.raw.min.js": {
       "imports": [],
@@ -6213,7 +6213,7 @@
       "entryPoint": "src/coloris-input.raw.js",
       "inputs": {
         "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-          "bytesInOutput": 14622
+          "bytesInOutput": 14625
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6246,7 +6246,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 16263
+      "bytes": 16266
     },
     "dist/count-down.min.js": {
       "imports": [],
@@ -7205,7 +7205,7 @@
           "bytesInOutput": 83
         },
         "node_modules/tabulator-tables/src/js/modules/Layout/Layout.js": {
-          "bytesInOutput": 707
+          "bytesInOutput": 956
         },
         "node_modules/tabulator-tables/src/js/modules/Localize/defaults/langs.js": {
           "bytesInOutput": 432
@@ -7451,7 +7451,7 @@
           "bytesInOutput": 2644
         },
         "node_modules/tabulator-tables/src/js/modules/HtmlTableImport/HtmlTableImport.js": {
-          "bytesInOutput": 2148
+          "bytesInOutput": 2151
         },
         "node_modules/tabulator-tables/src/js/modules/Import/defaults/importers/csv.js": {
           "bytesInOutput": 340
@@ -7508,10 +7508,10 @@
           "bytesInOutput": 15342
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/defaults/readers.js": {
-          "bytesInOutput": 365
+          "bytesInOutput": 278
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/defaults/writers.js": {
-          "bytesInOutput": 294
+          "bytesInOutput": 221
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/Persistence.js": {
           "bytesInOutput": 7841
@@ -7526,7 +7526,7 @@
           "bytesInOutput": 4977
         },
         "node_modules/tabulator-tables/src/js/modules/ResizeColumns/ResizeColumns.js": {
-          "bytesInOutput": 5374
+          "bytesInOutput": 5420
         },
         "node_modules/tabulator-tables/src/js/modules/ResizeRows/ResizeRows.js": {
           "bytesInOutput": 1772
@@ -7670,7 +7670,7 @@
           "bytesInOutput": 35986
         },
         "src/css/tabulator-grid.min.css": {
-          "bytesInOutput": 10119
+          "bytesInOutput": 10034
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 159
@@ -7679,7 +7679,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 457387
+      "bytes": 457440
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -7789,7 +7789,7 @@
           "bytesInOutput": 83
         },
         "node_modules/tabulator-tables/src/js/modules/Layout/Layout.js": {
-          "bytesInOutput": 707
+          "bytesInOutput": 956
         },
         "node_modules/tabulator-tables/src/js/modules/Localize/defaults/langs.js": {
           "bytesInOutput": 432
@@ -8035,7 +8035,7 @@
           "bytesInOutput": 2644
         },
         "node_modules/tabulator-tables/src/js/modules/HtmlTableImport/HtmlTableImport.js": {
-          "bytesInOutput": 2148
+          "bytesInOutput": 2151
         },
         "node_modules/tabulator-tables/src/js/modules/Import/defaults/importers/csv.js": {
           "bytesInOutput": 340
@@ -8092,10 +8092,10 @@
           "bytesInOutput": 15342
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/defaults/readers.js": {
-          "bytesInOutput": 365
+          "bytesInOutput": 278
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/defaults/writers.js": {
-          "bytesInOutput": 294
+          "bytesInOutput": 221
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/Persistence.js": {
           "bytesInOutput": 7841
@@ -8110,7 +8110,7 @@
           "bytesInOutput": 4977
         },
         "node_modules/tabulator-tables/src/js/modules/ResizeColumns/ResizeColumns.js": {
-          "bytesInOutput": 5374
+          "bytesInOutput": 5420
         },
         "node_modules/tabulator-tables/src/js/modules/ResizeRows/ResizeRows.js": {
           "bytesInOutput": 1772
@@ -8254,7 +8254,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 411025
+      "bytes": 411163
     },
     "dist/tel-input.min.js": {
       "imports": [],
@@ -8440,7 +8440,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 51304
+          "bytesInOutput": 50913
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -8500,7 +8500,7 @@
           "bytesInOutput": 620
         },
         "node_modules/@tiptap/extension-horizontal-rule/dist/index.js": {
-          "bytesInOutput": 958
+          "bytesInOutput": 935
         },
         "node_modules/@tiptap/extension-bullet-list/dist/index.js": {
           "bytesInOutput": 1916
@@ -8518,7 +8518,7 @@
           "bytesInOutput": 19343
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 3751
+          "bytesInOutput": 3774
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -8581,7 +8581,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 314581
+      "bytes": 314190
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -8637,7 +8637,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 51304
+          "bytesInOutput": 50913
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -8697,7 +8697,7 @@
           "bytesInOutput": 620
         },
         "node_modules/@tiptap/extension-horizontal-rule/dist/index.js": {
-          "bytesInOutput": 958
+          "bytesInOutput": 935
         },
         "node_modules/@tiptap/extension-bullet-list/dist/index.js": {
           "bytesInOutput": 1916
@@ -8715,7 +8715,7 @@
           "bytesInOutput": 19343
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 3751
+          "bytesInOutput": 3774
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -8772,7 +8772,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 313415
+      "bytes": 313024
     },
     "dist/tom-select.min.js": {
       "imports": [],
