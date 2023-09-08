@@ -384,7 +384,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/Accessor/defaults/accessors.js                                10b     0.0%
    └ node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js                                  10b     0.0%
 
-  dist/tiptap-editor.min.js                                                                                  306.8kb  100.0%
+  dist/tiptap-editor.min.js                                                                                  306.9kb  100.0%
    ├ node_modules/prosemirror-view/dist/index.js                                                              87.7kb   28.6%
    ├ node_modules/@tiptap/core/dist/index.js                                                                  49.7kb   16.2%
    ├ node_modules/prosemirror-model/dist/index.js                                                             42.2kb   13.8%
@@ -803,8 +803,8 @@
    ├ src/tom-select.raw.js                                                                                      30b     0.1%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/bs-tags.min.js                                                                                         28.7kb  100.0%
-   ├ node_modules/bootstrap5-tags/tags.js                                                                     26.3kb   91.5%
+  dist/bs-tags.min.js                                                                                         28.6kb  100.0%
+   ├ node_modules/bootstrap5-tags/tags.js                                                                     26.2kb   91.5%
    ├ node_modules/bootstrap5-tags/tags-pure.min.css                                                            1.1kb    4.0%
    ├ src/utils/FormidableElement.js                                                                            344b     1.2%
    ├ src/classes/BsTags.js                                                                                     224b     0.8%
@@ -817,8 +817,8 @@
    ├ src/bs-tags.js                                                                                             42b     0.1%
    └ src/utils/isString.js                                                                                      28b     0.1%
 
-  dist/bs-tags.raw.min.js                                                                                     27.4kb  100.0%
-   ├ node_modules/bootstrap5-tags/tags.js                                                                     26.3kb   96.0%
+  dist/bs-tags.raw.min.js                                                                                     27.3kb  100.0%
+   ├ node_modules/bootstrap5-tags/tags.js                                                                     26.2kb   95.9%
    ├ src/utils/FormidableElement.js                                                                            344b     1.2%
    ├ src/classes/BsTags.js                                                                                     224b     0.8%
    ├ src/utils/replaceCallbacks.js                                                                             155b     0.6%
@@ -1004,9 +1004,9 @@
 
   dist\tabulator-grid.min.js      446.7kb
   dist\tabulator-grid.raw.min.js  401.5kb
-  dist\tiptap-editor.min.js       306.8kb
+  dist\tiptap-editor.min.js       306.9kb
   dist\tiptap-editor.raw.min.js   305.7kb
   dist\tel-input.min.js           291.8kb
   ...and 27 more output files...
 
-Done in 872ms
+Done in 1293ms

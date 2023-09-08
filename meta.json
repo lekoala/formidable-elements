@@ -168,7 +168,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags.js": {
-      "bytes": 72168,
+      "bytes": 72230,
       "imports": [],
       "format": "esm"
     },
@@ -5042,7 +5042,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-link/dist/index.js": {
-      "bytes": 12080,
+      "bytes": 12238,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -6005,7 +6005,7 @@
       "entryPoint": "src/bs-tags.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 26893
+          "bytesInOutput": 26840
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6041,7 +6041,7 @@
           "bytesInOutput": 42
         }
       },
-      "bytes": 29377
+      "bytes": 29324
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -6049,7 +6049,7 @@
       "entryPoint": "src/bs-tags.raw.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 26893
+          "bytesInOutput": 26840
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6079,7 +6079,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 28026
+      "bytes": 27973
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -8518,7 +8518,7 @@
           "bytesInOutput": 19343
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 3774
+          "bytesInOutput": 3799
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -8581,7 +8581,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 314190
+      "bytes": 314215
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -8715,7 +8715,7 @@
           "bytesInOutput": 19343
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 3774
+          "bytesInOutput": 3799
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -8772,7 +8772,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 313024
+      "bytes": 313049
     },
     "dist/tom-select.min.js": {
       "imports": [],
