@@ -126,7 +126,7 @@ class TabulatorGrid extends EventfulElement {
     if (rowClickTriggersAction) {
       tabulator.on("rowClick", function (e, row) {
         const target = e.target.closest(".tabulator-cell");
-        if (!target || target.classList.contains("tabulator-cell-editable") || target.classList.contains("tabulator-cell-btn")) {
+        if (!target || target.classList.contains("tabulator-editable") || target.classList.contains("tabulator-cell-btn")) {
           return;
         }
         // don't trigger on interactive elements
