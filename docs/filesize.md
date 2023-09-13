@@ -582,23 +582,23 @@
    ├ src/filepond-input.raw.js                                                                                  34b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/input-mask.min.js                                                                                      86.5kb  100.0%
-   ├ node_modules/inputmask/lib/extensions/inputmask.numeric.extensions.js                                    11.9kb   13.7%
+  dist/input-mask.min.js                                                                                      86.6kb  100.0%
+   ├ node_modules/inputmask/lib/extensions/inputmask.numeric.extensions.js                                    12.0kb   13.8%
    ├ node_modules/inputmask/lib/extensions/inputmask.date.extensions.js                                       10.1kb   11.7%
-   ├ node_modules/inputmask/lib/validation.js                                                                  9.7kb   11.2%
+   ├ node_modules/inputmask/lib/validation.js                                                                  9.8kb   11.3%
    ├ node_modules/inputmask/lib/validation-tests.js                                                            9.3kb   10.8%
-   ├ node_modules/inputmask/lib/eventhandlers.js                                                               8.0kb    9.2%
+   ├ node_modules/inputmask/lib/eventhandlers.js                                                               8.0kb    9.3%
    ├ node_modules/inputmask/lib/mask-lexer.js                                                                  6.9kb    8.0%
    ├ node_modules/inputmask/lib/inputmask.js                                                                   5.8kb    6.7%
    ├ node_modules/inputmask/lib/positioning.js                                                                 5.1kb    5.9%
    ├ node_modules/inputmask/lib/inputHandling.js                                                               4.2kb    4.8%
-   ├ node_modules/inputmask/lib/mask.js                                                                        4.1kb    4.8%
+   ├ node_modules/inputmask/lib/mask.js                                                                        4.1kb    4.7%
    ├ node_modules/inputmask/lib/dependencyLibs/events.js                                                       2.4kb    2.7%
    ├ node_modules/inputmask/lib/extensions/inputmask.extensions.js                                             1.7kb    1.9%
-   ├ node_modules/inputmask/lib/defaults.js                                                                    1.4kb    1.6%
    ├ node_modules/inputmask/lib/eventruler.js                                                                  1.4kb    1.6%
    ├ src/classes/InputmaskElement.js                                                                           1.2kb    1.4%
-   ├ node_modules/inputmask/lib/keycode.js                                                                     570b     0.6%
+   ├ node_modules/inputmask/lib/defaults.js                                                                    1.2kb    1.3%
+   ├ node_modules/inputmask/lib/keycode.js                                                                     623b     0.7%
    ├ node_modules/inputmask/lib/dependencyLibs/extend.js                                                       479b     0.5%
    ├ node_modules/inputmask/lib/dependencyLibs/inputmask.dependencyLib.js                                      364b     0.4%
    ├ src/utils/FormidableElement.js                                                                            353b     0.4%
@@ -890,10 +890,10 @@
    ├ src/coloris-input.raw.js                                                                                   33b     0.2%
    └ src/utils/isString.js                                                                                      29b     0.2%
 
-  dist/bs-autocomplete.min.js                                                                                 14.5kb  100.0%
-   ├ node_modules/bootstrap5-autocomplete/autocomplete.js                                                     13.3kb   92.0%
+  dist/bs-autocomplete.min.js                                                                                 14.8kb  100.0%
+   ├ node_modules/bootstrap5-autocomplete/autocomplete.js                                                     13.7kb   92.2%
    ├ src/utils/FormidableElement.js                                                                            344b     2.3%
-   ├ src/classes/BsAutocomplete.js                                                                             275b     1.9%
+   ├ src/classes/BsAutocomplete.js                                                                             275b     1.8%
    ├ src/utils/replaceCallbacks.js                                                                             155b     1.0%
    ├ src/utils/whenParsed.js                                                                                   117b     0.8%
    ├ src/utils/rmElements.js                                                                                   105b     0.7%
@@ -1009,4 +1009,4 @@
   dist\tel-input.min.js           291.8kb
   ...and 27 more output files...
 
-Done in 95ms
+Done in 1375ms
