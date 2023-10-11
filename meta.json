@@ -168,7 +168,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags.js": {
-      "bytes": 72230,
+      "bytes": 73952,
       "imports": [],
       "format": "esm"
     },
@@ -932,7 +932,7 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
-      "bytes": 33693,
+      "bytes": 34237,
       "imports": [
         {
           "path": "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
@@ -948,12 +948,12 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/utils/dom/dist/floating-ui.utils.dom.mjs": {
-      "bytes": 4850,
+      "bytes": 5039,
       "imports": [],
       "format": "esm"
     },
     "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-      "bytes": 20299,
+      "bytes": 20310,
       "imports": [
         {
           "path": "node_modules/@floating-ui/core/dist/floating-ui.core.mjs",
@@ -1691,7 +1691,7 @@
       "format": "esm"
     },
     "node_modules/squire-rte/dist/squire-raw.mjs": {
-      "bytes": 119669,
+      "bytes": 119976,
       "imports": [],
       "format": "esm"
     },
@@ -4703,7 +4703,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/core/dist/index.js": {
-      "bytes": 159133,
+      "bytes": 159633,
       "imports": [
         {
           "path": "node_modules/@tiptap/pm/state/dist/index.js",
@@ -5042,7 +5042,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-link/dist/index.js": {
-      "bytes": 12238,
+      "bytes": 9735,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -6005,7 +6005,7 @@
       "entryPoint": "src/bs-tags.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 26840
+          "bytesInOutput": 27632
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6041,7 +6041,7 @@
           "bytesInOutput": 42
         }
       },
-      "bytes": 29324
+      "bytes": 30116
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -6049,7 +6049,7 @@
       "entryPoint": "src/bs-tags.raw.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 26840
+          "bytesInOutput": 27632
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6079,7 +6079,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 27973
+      "bytes": 28765
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -6615,16 +6615,16 @@
       "entryPoint": "src/floating-ui.js",
       "inputs": {
         "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
-          "bytesInOutput": 1402
+          "bytesInOutput": 1407
         },
         "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
-          "bytesInOutput": 6815
+          "bytesInOutput": 6928
         },
         "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-          "bytesInOutput": 6111
+          "bytesInOutput": 6118
         },
         "node_modules/@floating-ui/utils/dom/dist/floating-ui.utils.dom.mjs": {
-          "bytesInOutput": 1996
+          "bytesInOutput": 2059
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6663,7 +6663,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 22600
+      "bytes": 22788
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -6900,7 +6900,7 @@
       "entryPoint": "src/squire-editor.js",
       "inputs": {
         "node_modules/squire-rte/dist/squire-raw.mjs": {
-          "bytesInOutput": 51827
+          "bytesInOutput": 51727
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6957,7 +6957,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 69638
+      "bytes": 69538
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -6971,7 +6971,7 @@
       "entryPoint": "src/squire-editor.raw.js",
       "inputs": {
         "node_modules/squire-rte/dist/squire-raw.mjs": {
-          "bytesInOutput": 51827
+          "bytesInOutput": 51727
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7022,7 +7022,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 68732
+      "bytes": 68632
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -8440,7 +8440,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 50913
+          "bytesInOutput": 51123
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -8518,7 +8518,7 @@
           "bytesInOutput": 19343
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 3799
+          "bytesInOutput": 2969
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -8581,7 +8581,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 314215
+      "bytes": 313595
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -8637,7 +8637,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 50913
+          "bytesInOutput": 51123
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -8715,7 +8715,7 @@
           "bytesInOutput": 19343
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 3799
+          "bytesInOutput": 2969
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -8772,7 +8772,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 313049
+      "bytes": 312429
     },
     "dist/tom-select.min.js": {
       "imports": [],
