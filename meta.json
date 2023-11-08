@@ -121,7 +121,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-      "bytes": 33287,
+      "bytes": 33697,
       "imports": [],
       "format": "esm"
     },
@@ -350,7 +350,7 @@
       "format": "esm"
     },
     "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-      "bytes": 42067,
+      "bytes": 41494,
       "imports": [],
       "format": "esm"
     },
@@ -1691,7 +1691,7 @@
       "format": "esm"
     },
     "node_modules/squire-rte/dist/squire-raw.mjs": {
-      "bytes": 119976,
+      "bytes": 119992,
       "imports": [],
       "format": "esm"
     },
@@ -5042,7 +5042,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-link/dist/index.js": {
-      "bytes": 9735,
+      "bytes": 11299,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5360,12 +5360,12 @@
       "format": "esm"
     },
     "node_modules/tom-select/src/defaults.ts": {
-      "bytes": 2389,
+      "bytes": 2413,
       "imports": [],
       "format": "esm"
     },
     "node_modules/tom-select/src/utils.ts": {
-      "bytes": 4135,
+      "bytes": 4524,
       "imports": [
         {
           "path": "./tom-select",
@@ -5381,7 +5381,7 @@
       "format": "esm"
     },
     "node_modules/tom-select/src/getSettings.ts": {
-      "bytes": 5002,
+      "bytes": 5144,
       "imports": [
         {
           "path": "node_modules/tom-select/src/defaults.ts",
@@ -5412,7 +5412,7 @@
       "format": "esm"
     },
     "node_modules/tom-select/src/tom-select.ts": {
-      "bytes": 65357,
+      "bytes": 66505,
       "imports": [
         {
           "path": "node_modules/tom-select/src/contrib/microevent.ts",
@@ -5484,7 +5484,7 @@
       "format": "esm"
     },
     "node_modules/tom-select/src/plugins/checkbox_options/plugin.ts": {
-      "bytes": 2870,
+      "bytes": 3859,
       "imports": [
         {
           "path": "../../tom-select",
@@ -5500,12 +5500,17 @@
           "path": "node_modules/tom-select/src/vanilla.ts",
           "kind": "import-statement",
           "original": "../../vanilla"
+        },
+        {
+          "path": "./types",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
     },
     "node_modules/tom-select/src/plugins/clear_button/plugin.ts": {
-      "bytes": 1440,
+      "bytes": 1428,
       "imports": [
         {
           "path": "../../tom-select",
@@ -5526,12 +5531,27 @@
       "format": "esm"
     },
     "node_modules/tom-select/src/plugins/drag_drop/plugin.ts": {
-      "bytes": 1811,
+      "bytes": 3732,
       "imports": [
         {
           "path": "../../tom-select",
           "kind": "import-statement",
           "external": true
+        },
+        {
+          "path": "../../types/index",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/tom-select/src/utils.ts",
+          "kind": "import-statement",
+          "original": "../../utils"
+        },
+        {
+          "path": "node_modules/tom-select/src/vanilla.ts",
+          "kind": "import-statement",
+          "original": "../../vanilla"
         }
       ],
       "format": "esm"
@@ -5664,7 +5684,7 @@
       "format": "esm"
     },
     "node_modules/tom-select/src/plugins/remove_button/plugin.ts": {
-      "bytes": 2191,
+      "bytes": 2224,
       "imports": [
         {
           "path": "../../tom-select",
@@ -5711,7 +5731,7 @@
       "format": "esm"
     },
     "node_modules/tom-select/src/plugins/virtual_scroll/plugin.ts": {
-      "bytes": 5663,
+      "bytes": 5750,
       "imports": [
         {
           "path": "../../tom-select",
@@ -5859,7 +5879,7 @@
       "format": "esm"
     },
     "node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css": {
-      "bytes": 14862,
+      "bytes": 15345,
       "imports": []
     },
     "src/tom-select.js": {
@@ -5967,7 +5987,7 @@
       "entryPoint": "src/bs-autocomplete.js",
       "inputs": {
         "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-          "bytesInOutput": 13987
+          "bytesInOutput": 14101
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -5997,7 +6017,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 15173
+      "bytes": 15287
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -6166,7 +6186,7 @@
       "entryPoint": "src/coloris-input.js",
       "inputs": {
         "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-          "bytesInOutput": 14625
+          "bytesInOutput": 14113
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6205,7 +6225,7 @@
           "bytesInOutput": 247
         }
       },
-      "bytes": 25131
+      "bytes": 24619
     },
     "dist/coloris-input.raw.min.js": {
       "imports": [],
@@ -6213,7 +6233,7 @@
       "entryPoint": "src/coloris-input.raw.js",
       "inputs": {
         "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-          "bytesInOutput": 14625
+          "bytesInOutput": 14113
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6246,7 +6266,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 16266
+      "bytes": 15754
     },
     "dist/count-down.min.js": {
       "imports": [],
@@ -6900,7 +6920,7 @@
       "entryPoint": "src/squire-editor.js",
       "inputs": {
         "node_modules/squire-rte/dist/squire-raw.mjs": {
-          "bytesInOutput": 51727
+          "bytesInOutput": 51743
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6957,7 +6977,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 69538
+      "bytes": 69554
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -6971,7 +6991,7 @@
       "entryPoint": "src/squire-editor.raw.js",
       "inputs": {
         "node_modules/squire-rte/dist/squire-raw.mjs": {
-          "bytesInOutput": 51727
+          "bytesInOutput": 51743
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7022,7 +7042,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 68632
+      "bytes": 68648
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -8518,7 +8538,7 @@
           "bytesInOutput": 19343
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 2969
+          "bytesInOutput": 3487
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -8581,7 +8601,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 313595
+      "bytes": 314113
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -8715,7 +8735,7 @@
           "bytesInOutput": 19343
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 2969
+          "bytesInOutput": 3487
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -8772,7 +8792,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 312429
+      "bytes": 312947
     },
     "dist/tom-select.min.js": {
       "imports": [],
@@ -8780,10 +8800,10 @@
       "entryPoint": "src/tom-select.js",
       "inputs": {
         "node_modules/@orchidjs/sifter/dist/umd/sifter.js": {
-          "bytesInOutput": 7897
+          "bytesInOutput": 7896
         },
         "node_modules/@orchidjs/unicode-variants/dist/umd/index.js": {
-          "bytesInOutput": 4903
+          "bytesInOutput": 4904
         },
         "node_modules/tom-select/src/contrib/microevent.ts": {
           "bytesInOutput": 470
@@ -8792,7 +8812,7 @@
           "bytesInOutput": 837
         },
         "node_modules/tom-select/src/tom-select.ts": {
-          "bytesInOutput": 26168
+          "bytesInOutput": 26685
         },
         "node_modules/@orchidjs/sifter/lib/utils.ts": {
           "bytesInOutput": 116
@@ -8807,25 +8827,25 @@
           "bytesInOutput": 89
         },
         "node_modules/tom-select/src/defaults.ts": {
-          "bytesInOutput": 962
+          "bytesInOutput": 982
         },
         "node_modules/tom-select/src/utils.ts": {
-          "bytesInOutput": 1012
+          "bytesInOutput": 1061
         },
         "node_modules/tom-select/src/getSettings.ts": {
-          "bytesInOutput": 1496
+          "bytesInOutput": 1556
         },
         "node_modules/tom-select/src/plugins/change_listener/plugin.ts": {
           "bytesInOutput": 55
         },
         "node_modules/tom-select/src/plugins/checkbox_options/plugin.ts": {
-          "bytesInOutput": 889
+          "bytesInOutput": 1329
         },
         "node_modules/tom-select/src/plugins/clear_button/plugin.ts": {
-          "bytesInOutput": 400
+          "bytesInOutput": 398
         },
         "node_modules/tom-select/src/plugins/drag_drop/plugin.ts": {
-          "bytesInOutput": 736
+          "bytesInOutput": 1201
         },
         "node_modules/tom-select/src/plugins/dropdown_header/plugin.ts": {
           "bytesInOutput": 560
@@ -8849,13 +8869,13 @@
           "bytesInOutput": 402
         },
         "node_modules/tom-select/src/plugins/remove_button/plugin.ts": {
-          "bytesInOutput": 542
+          "bytesInOutput": 556
         },
         "node_modules/tom-select/src/plugins/restore_on_backspace/plugin.ts": {
           "bytesInOutput": 223
         },
         "node_modules/tom-select/src/plugins/virtual_scroll/plugin.ts": {
-          "bytesInOutput": 1730
+          "bytesInOutput": 1774
         },
         "node_modules/tom-select/src/tom-select.complete.ts": {
           "bytesInOutput": 439
@@ -8900,7 +8920,7 @@
           "bytesInOutput": 60
         },
         "node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css": {
-          "bytesInOutput": 14872
+          "bytesInOutput": 15355
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 159
@@ -8909,7 +8929,7 @@
           "bytesInOutput": 122
         }
       },
-      "bytes": 73256
+      "bytes": 75346
     },
     "dist/tom-select.raw.min.js": {
       "imports": [],
@@ -8917,10 +8937,10 @@
       "entryPoint": "src/tom-select.raw.js",
       "inputs": {
         "node_modules/@orchidjs/sifter/dist/umd/sifter.js": {
-          "bytesInOutput": 7897
+          "bytesInOutput": 7896
         },
         "node_modules/@orchidjs/unicode-variants/dist/umd/index.js": {
-          "bytesInOutput": 4903
+          "bytesInOutput": 4904
         },
         "node_modules/tom-select/src/contrib/microevent.ts": {
           "bytesInOutput": 470
@@ -8929,7 +8949,7 @@
           "bytesInOutput": 837
         },
         "node_modules/tom-select/src/tom-select.ts": {
-          "bytesInOutput": 26168
+          "bytesInOutput": 26685
         },
         "node_modules/@orchidjs/sifter/lib/utils.ts": {
           "bytesInOutput": 116
@@ -8944,25 +8964,25 @@
           "bytesInOutput": 89
         },
         "node_modules/tom-select/src/defaults.ts": {
-          "bytesInOutput": 962
+          "bytesInOutput": 982
         },
         "node_modules/tom-select/src/utils.ts": {
-          "bytesInOutput": 1012
+          "bytesInOutput": 1061
         },
         "node_modules/tom-select/src/getSettings.ts": {
-          "bytesInOutput": 1496
+          "bytesInOutput": 1556
         },
         "node_modules/tom-select/src/plugins/change_listener/plugin.ts": {
           "bytesInOutput": 55
         },
         "node_modules/tom-select/src/plugins/checkbox_options/plugin.ts": {
-          "bytesInOutput": 889
+          "bytesInOutput": 1329
         },
         "node_modules/tom-select/src/plugins/clear_button/plugin.ts": {
-          "bytesInOutput": 400
+          "bytesInOutput": 398
         },
         "node_modules/tom-select/src/plugins/drag_drop/plugin.ts": {
-          "bytesInOutput": 736
+          "bytesInOutput": 1201
         },
         "node_modules/tom-select/src/plugins/dropdown_header/plugin.ts": {
           "bytesInOutput": 560
@@ -8986,13 +9006,13 @@
           "bytesInOutput": 402
         },
         "node_modules/tom-select/src/plugins/remove_button/plugin.ts": {
-          "bytesInOutput": 542
+          "bytesInOutput": 556
         },
         "node_modules/tom-select/src/plugins/restore_on_backspace/plugin.ts": {
           "bytesInOutput": 223
         },
         "node_modules/tom-select/src/plugins/virtual_scroll/plugin.ts": {
-          "bytesInOutput": 1730
+          "bytesInOutput": 1774
         },
         "node_modules/tom-select/src/tom-select.complete.ts": {
           "bytesInOutput": 439
@@ -9040,7 +9060,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 58133
+      "bytes": 59740
     }
   }
 }
