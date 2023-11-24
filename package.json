@@ -20,7 +20,7 @@
     "@tiptap/pm": "^2.1.12",
     "@tiptap/starter-kit": "^2.1.12",
     "bootstrap5-autocomplete": "^1.1.23",
-    "bootstrap5-tags": "^1.6.11",
+    "bootstrap5-tags": "^1.6.13",
     "cleave-es6": "^1.0.6",
     "filepond": "^4.30.4",
     "filepond-plugin-file-metadata": "^1.0.8",
@@ -42,7 +42,7 @@
     "tom-select": "^2.3.1"
   },
   "devDependencies": {
-    "esbuild": "^0.19.5"
+    "esbuild": "^0.19.7"
   },
   "overrides": {
     "semver": "^7.5.3"
@@ -61,6 +61,7 @@
     "bump": "npm run build-all && npm version patch",
     "build-all": "esbuild ./src/*.js --bundle --minify --loader:.css=text --format=iife --outdir=dist --out-extension:.js=.min.js --metafile=meta.json --analyze 2> ./docs/filesize.md",
     "jsdoc": "npx jsdoc-to-markdown ./src/classes/*.js > ./docs/api.md",
-    "update-deps": "npx npm-check-updates -u"
+    "update-deps": "npx npm-check-updates -u",
+    "local-server": "php -S localhost:8002 -t ."
   }
 }

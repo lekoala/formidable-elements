@@ -24,17 +24,23 @@ export default (url, params = {}, options = {}) => {
     }
     ctrl = new AbortController();
     map.set(url, ctrl);
-
     base["signal"] = ctrl.signal;
   }
 
   // Create fetch options
   let fetchOptions = Object.assign(base, options);
 
+  // XMLHttpRequest compat
+  const headers = fetchOptions.headers || {};
+  headers["X-Requested-With"] = "XMLHttpRequest";
+  fetchOptions.headers = headers;
+
   const searchParams = new URLSearchParams(params);
-  // Append params for GET/POST
+
+  // For POST, set body and Content Type if no body is set explicitely
   if (fetchOptions.method === "POST" && !fetchOptions.body) {
     fetchOptions.body = searchParams;
+    fetchOptions.headers["Content-Type"] = "application/x-www-form-urlencoded";
   } else {
     url += "?" + searchParams.toString();
   }

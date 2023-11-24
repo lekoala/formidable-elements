@@ -4,7 +4,7 @@ import setId from "../utils/setId.js";
 import localeProvider from "../utils/localeProvider.js";
 import hasOverflowParent from "../utils/hasOverflowParent.js";
 import getDelete from "../utils/getDelete.js";
-import jsonFetch from "../utils/jsonFetch.js";
+import fetchJson from "../utils/fetchJson.js";
 
 const name = "tom-select";
 
@@ -55,7 +55,7 @@ class TomSelectElement extends FormidableElement {
       config.load = (query, callback) => {
         params[paramName] = query;
 
-        jsonFetch(url, params, fetchOptions)
+        fetchJson(url, params, fetchOptions)
           .then((json) => {
             const data = dataKey ? json[dataKey] || json : json;
             callback(data);

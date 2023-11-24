@@ -4,7 +4,7 @@ import "../../node_modules/intl-tel-input/build/js/utils.js";
 import EventfulElement from "../utils/EventfulElement.js";
 import localeProvider from "../utils/localeProvider.js";
 import Storage from "../utils/Storage.js";
-import jsonFetch from "../utils/jsonFetch.js";
+import fetchJson from "../utils/fetchJson.js";
 import insertHiddenInput from "../utils/insertHiddenInput.js";
 
 const name = "tel-input";
@@ -154,7 +154,7 @@ class TelInput extends EventfulElement {
           callback(result[field]);
           return;
         }
-        jsonFetch("https://ipapi.co/json")
+        fetchJson("https://ipapi.co/json")
           .then((data) => {
             Storage.set("ipapi", data);
             callback(data[field]);

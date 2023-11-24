@@ -1,8 +1,6 @@
 import replaceCallbacks from "./replaceCallbacks.js";
 import whenParsed from "./whenParsed.js";
 
-let t;
-
 /**
  * A minimalistic base class for your html elements
  *
@@ -23,8 +21,8 @@ class FormidableElement extends HTMLElement {
    */
   connectedCallback() {
     // Clear destroyed timeout if reconnected quickly (eg: when attaching to a new parent)
-    if (t) {
-      clearTimeout(t);
+    if (this._t) {
+      clearTimeout(this._t);
     }
     whenParsed(this);
   }
@@ -32,7 +30,7 @@ class FormidableElement extends HTMLElement {
   disconnectedCallback() {
     this.disconnected();
     // Schedule destroyed callback
-    t = setTimeout(() => {
+    this._t = setTimeout(() => {
       this.destroyed();
       this.config = null;
     }, 1000);

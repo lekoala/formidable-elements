@@ -32,6 +32,7 @@ And some custom made stuff as well:
 - format-number
 - anchor-ed, a simple alternative to floating ui
 - locale-provider
+- progress-button
 
 ## Documentation
 
