@@ -32,7 +32,7 @@
       "format": "esm"
     },
     "src/utils/FormidableElement.js": {
-      "bytes": 1837,
+      "bytes": 1845,
       "imports": [
         {
           "path": "src/utils/replaceCallbacks.js",
@@ -168,7 +168,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags.js": {
-      "bytes": 73952,
+      "bytes": 76351,
       "imports": [],
       "format": "esm"
     },
@@ -1690,11 +1690,6 @@
       ],
       "format": "esm"
     },
-    "node_modules/squire-rte/dist/squire-raw.mjs": {
-      "bytes": 119992,
-      "imports": [],
-      "format": "esm"
-    },
     "src/utils/EventfulElement.js": {
       "bytes": 1951,
       "imports": [
@@ -1713,6 +1708,74 @@
     },
     "src/utils/ce.js": {
       "bytes": 240,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/utils/fetchWrapper.js": {
+      "bytes": 1326,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/utils/fetchJson.js": {
+      "bytes": 1293,
+      "imports": [
+        {
+          "path": "src/utils/fetchWrapper.js",
+          "kind": "import-statement",
+          "original": "./fetchWrapper.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/formDataToObject.js": {
+      "bytes": 443,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/classes/ProgressButton.js": {
+      "bytes": 6240,
+      "imports": [
+        {
+          "path": "src/utils/EventfulElement.js",
+          "kind": "import-statement",
+          "original": "../utils/EventfulElement.js"
+        },
+        {
+          "path": "src/utils/ce.js",
+          "kind": "import-statement",
+          "original": "../utils/ce.js"
+        },
+        {
+          "path": "src/utils/fetchJson.js",
+          "kind": "import-statement",
+          "original": "../utils/fetchJson.js"
+        },
+        {
+          "path": "src/utils/formDataToObject.js",
+          "kind": "import-statement",
+          "original": "../utils/formDataToObject.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/progress-button.js": {
+      "bytes": 186,
+      "imports": [
+        {
+          "path": "src/classes/ProgressButton.js",
+          "kind": "import-statement",
+          "original": "./classes/ProgressButton.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/squire-rte/dist/squire-raw.mjs": {
+      "bytes": 119992,
       "imports": [],
       "format": "esm"
     },
@@ -4395,22 +4458,6 @@
       "imports": [],
       "format": "esm"
     },
-    "src/utils/fetchWrapper.js": {
-      "bytes": 1043,
-      "imports": [],
-      "format": "esm"
-    },
-    "src/utils/jsonFetch.js": {
-      "bytes": 951,
-      "imports": [
-        {
-          "path": "src/utils/fetchWrapper.js",
-          "kind": "import-statement",
-          "original": "./fetchWrapper.js"
-        }
-      ],
-      "format": "esm"
-    },
     "src/classes/TelInput.js": {
       "bytes": 4870,
       "imports": [
@@ -4440,9 +4487,9 @@
           "original": "../utils/Storage.js"
         },
         {
-          "path": "src/utils/jsonFetch.js",
+          "path": "src/utils/fetchJson.js",
           "kind": "import-statement",
-          "original": "../utils/jsonFetch.js"
+          "original": "../utils/fetchJson.js"
         },
         {
           "path": "src/utils/insertHiddenInput.js",
@@ -5871,9 +5918,9 @@
           "original": "../utils/getDelete.js"
         },
         {
-          "path": "src/utils/jsonFetch.js",
+          "path": "src/utils/fetchJson.js",
           "kind": "import-statement",
-          "original": "../utils/jsonFetch.js"
+          "original": "../utils/fetchJson.js"
         }
       ],
       "format": "esm"
@@ -5944,7 +5991,7 @@
           "bytesInOutput": 117
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 344
+          "bytesInOutput": 360
         },
         "src/utils/props.js": {
           "bytesInOutput": 270
@@ -5953,7 +6000,7 @@
           "bytesInOutput": 119
         },
         "src/classes/Anchored.js": {
-          "bytesInOutput": 6102
+          "bytesInOutput": 6099
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -5962,7 +6009,7 @@
           "bytesInOutput": 27
         }
       },
-      "bytes": 7296
+      "bytes": 7309
     },
     "dist/bound-input.min.js": {
       "imports": [],
@@ -6002,7 +6049,7 @@
           "bytesInOutput": 117
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 344
+          "bytesInOutput": 360
         },
         "src/utils/rmElements.js": {
           "bytesInOutput": 105
@@ -6017,7 +6064,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 15287
+      "bytes": 15303
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -6025,7 +6072,7 @@
       "entryPoint": "src/bs-tags.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 27632
+          "bytesInOutput": 28260
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6037,16 +6084,16 @@
           "bytesInOutput": 155
         },
         "src/utils/whenParsed.js": {
-          "bytesInOutput": 117
+          "bytesInOutput": 118
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 344
+          "bytesInOutput": 362
         },
         "src/utils/rmElements.js": {
           "bytesInOutput": 106
         },
         "src/classes/BsTags.js": {
-          "bytesInOutput": 224
+          "bytesInOutput": 225
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6061,7 +6108,7 @@
           "bytesInOutput": 42
         }
       },
-      "bytes": 30116
+      "bytes": 30764
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -6069,7 +6116,7 @@
       "entryPoint": "src/bs-tags.raw.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 27632
+          "bytesInOutput": 28260
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6081,16 +6128,16 @@
           "bytesInOutput": 155
         },
         "src/utils/whenParsed.js": {
-          "bytesInOutput": 117
+          "bytesInOutput": 118
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 344
+          "bytesInOutput": 362
         },
         "src/utils/rmElements.js": {
           "bytesInOutput": 106
         },
         "src/classes/BsTags.js": {
-          "bytesInOutput": 224
+          "bytesInOutput": 225
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6099,7 +6146,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 28765
+      "bytes": 29413
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -6134,7 +6181,7 @@
           "bytesInOutput": 117
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 344
+          "bytesInOutput": 360
         },
         "src/classes/CleaveInput.js": {
           "bytesInOutput": 374
@@ -6146,7 +6193,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 19122
+      "bytes": 19138
     },
     "dist/clipboard-copy.min.js": {
       "imports": [],
@@ -6166,7 +6213,7 @@
           "bytesInOutput": 117
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 344
+          "bytesInOutput": 360
         },
         "src/classes/ClipboardCopy.js": {
           "bytesInOutput": 1094
@@ -6178,7 +6225,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 1898
+      "bytes": 1914
     },
     "dist/coloris-input.min.js": {
       "imports": [],
@@ -6201,7 +6248,7 @@
           "bytesInOutput": 121
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 353
+          "bytesInOutput": 365
         },
         "src/utils/setId.js": {
           "bytesInOutput": 67
@@ -6225,7 +6272,7 @@
           "bytesInOutput": 247
         }
       },
-      "bytes": 24619
+      "bytes": 24631
     },
     "dist/coloris-input.raw.min.js": {
       "imports": [],
@@ -6248,7 +6295,7 @@
           "bytesInOutput": 121
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 353
+          "bytesInOutput": 365
         },
         "src/utils/setId.js": {
           "bytesInOutput": 67
@@ -6266,7 +6313,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 15754
+      "bytes": 15766
     },
     "dist/count-down.min.js": {
       "imports": [],
@@ -6286,7 +6333,7 @@
           "bytesInOutput": 117
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 344
+          "bytesInOutput": 360
         },
         "src/utils/date.js": {
           "bytesInOutput": 505
@@ -6307,7 +6354,7 @@
           "bytesInOutput": 26
         }
       },
-      "bytes": 3727
+      "bytes": 3743
     },
     "dist/filepond-input.min.js": {
       "imports": [],
@@ -6315,7 +6362,7 @@
       "entryPoint": "src/filepond-input.js",
       "inputs": {
         "node_modules/filepond/dist/filepond.esm.js": {
-          "bytesInOutput": 100838
+          "bytesInOutput": 100818
         },
         "node_modules/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.esm.js": {
           "bytesInOutput": 1781
@@ -6330,7 +6377,7 @@
           "bytesInOutput": 597
         },
         "node_modules/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.esm.js": {
-          "bytesInOutput": 1613
+          "bytesInOutput": 1605
         },
         "node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.esm.js": {
           "bytesInOutput": 20954
@@ -6342,7 +6389,7 @@
           "bytesInOutput": 1232
         },
         "node_modules/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.esm.js": {
-          "bytesInOutput": 21928
+          "bytesInOutput": 21920
         },
         "node_modules/filepond-plugin-image-validate-size/dist/filepond-plugin-image-validate-size.esm.js": {
           "bytesInOutput": 3185
@@ -6360,7 +6407,7 @@
           "bytesInOutput": 121
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 353
+          "bytesInOutput": 365
         },
         "src/classes/FilePondInput.js": {
           "bytesInOutput": 458
@@ -6384,7 +6431,7 @@
           "bytesInOutput": 64
         }
       },
-      "bytes": 189261
+      "bytes": 189237
     },
     "dist/filepond-input.raw.min.js": {
       "imports": [],
@@ -6392,7 +6439,7 @@
       "entryPoint": "src/filepond-input.raw.js",
       "inputs": {
         "node_modules/filepond/dist/filepond.esm.js": {
-          "bytesInOutput": 100838
+          "bytesInOutput": 100818
         },
         "node_modules/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.esm.js": {
           "bytesInOutput": 1781
@@ -6407,7 +6454,7 @@
           "bytesInOutput": 597
         },
         "node_modules/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.esm.js": {
-          "bytesInOutput": 1613
+          "bytesInOutput": 1605
         },
         "node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.esm.js": {
           "bytesInOutput": 20954
@@ -6419,7 +6466,7 @@
           "bytesInOutput": 1232
         },
         "node_modules/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.esm.js": {
-          "bytesInOutput": 21928
+          "bytesInOutput": 21920
         },
         "node_modules/filepond-plugin-image-validate-size/dist/filepond-plugin-image-validate-size.esm.js": {
           "bytesInOutput": 3185
@@ -6437,7 +6484,7 @@
           "bytesInOutput": 121
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 353
+          "bytesInOutput": 365
         },
         "src/classes/FilePondInput.js": {
           "bytesInOutput": 458
@@ -6449,7 +6496,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 165600
+      "bytes": 165576
     },
     "dist/flatpickr-input.min.js": {
       "imports": [],
@@ -6502,7 +6549,7 @@
           "bytesInOutput": 121
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 353
+          "bytesInOutput": 365
         },
         "src/utils/insertAfter.js": {
           "bytesInOutput": 59
@@ -6544,7 +6591,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 84537
+      "bytes": 84549
     },
     "dist/flatpickr-input.raw.min.js": {
       "imports": [],
@@ -6597,7 +6644,7 @@
           "bytesInOutput": 121
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 353
+          "bytesInOutput": 365
         },
         "src/utils/insertAfter.js": {
           "bytesInOutput": 59
@@ -6627,7 +6674,7 @@
           "bytesInOutput": 35
         }
       },
-      "bytes": 64796
+      "bytes": 64808
     },
     "dist/floating-ui.min.js": {
       "imports": [],
@@ -6659,7 +6706,7 @@
           "bytesInOutput": 121
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 353
+          "bytesInOutput": 365
         },
         "src/utils/props.js": {
           "bytesInOutput": 308
@@ -6683,7 +6730,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 22788
+      "bytes": 22800
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -6703,7 +6750,7 @@
           "bytesInOutput": 117
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 344
+          "bytesInOutput": 360
         },
         "src/utils/date.js": {
           "bytesInOutput": 265
@@ -6724,7 +6771,7 @@
           "bytesInOutput": 27
         }
       },
-      "bytes": 2335
+      "bytes": 2351
     },
     "dist/format-number.min.js": {
       "imports": [],
@@ -6744,7 +6791,7 @@
           "bytesInOutput": 117
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 344
+          "bytesInOutput": 360
         },
         "src/utils/defaultLang.js": {
           "bytesInOutput": 76
@@ -6762,7 +6809,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 1723
+      "bytes": 1739
     },
     "dist/growing-textarea.min.js": {
       "imports": [],
@@ -6871,7 +6918,7 @@
           "bytesInOutput": 121
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 353
+          "bytesInOutput": 365
         },
         "src/utils/insertAfter.js": {
           "bytesInOutput": 59
@@ -6889,7 +6936,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 88632
+      "bytes": 88644
     },
     "dist/locale-provider.min.js": {
       "imports": [],
@@ -6907,6 +6954,53 @@
         }
       },
       "bytes": 390
+    },
+    "dist/progress-button.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/progress-button.js",
+      "inputs": {
+        "src/utils/isString.js": {
+          "bytesInOutput": 28
+        },
+        "src/utils/getGlobalFn.js": {
+          "bytesInOutput": 49
+        },
+        "src/utils/replaceCallbacks.js": {
+          "bytesInOutput": 155
+        },
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 117
+        },
+        "src/utils/FormidableElement.js": {
+          "bytesInOutput": 360
+        },
+        "src/utils/EventfulElement.js": {
+          "bytesInOutput": 723
+        },
+        "src/utils/ce.js": {
+          "bytesInOutput": 35
+        },
+        "src/utils/fetchWrapper.js": {
+          "bytesInOutput": 441
+        },
+        "src/utils/fetchJson.js": {
+          "bytesInOutput": 405
+        },
+        "src/utils/formDataToObject.js": {
+          "bytesInOutput": 133
+        },
+        "src/classes/ProgressButton.js": {
+          "bytesInOutput": 2476
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 56
+        },
+        "src/progress-button.js": {
+          "bytesInOutput": 32
+        }
+      },
+      "bytes": 5035
     },
     "dist/squire-editor.min.js": {
       "imports": [
@@ -6935,7 +7029,7 @@
           "bytesInOutput": 121
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 353
+          "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
           "bytesInOutput": 731
@@ -6977,7 +7071,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 69554
+      "bytes": 69566
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -7006,7 +7100,7 @@
           "bytesInOutput": 121
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 353
+          "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
           "bytesInOutput": 731
@@ -7042,7 +7136,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 68648
+      "bytes": 68660
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -7065,7 +7159,7 @@
           "bytesInOutput": 117
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 344
+          "bytesInOutput": 360
         },
         "src/classes/SuperfileElement.js": {
           "bytesInOutput": 152
@@ -7080,7 +7174,7 @@
           "bytesInOutput": 245
         }
       },
-      "bytes": 5615
+      "bytes": 5631
     },
     "dist/superfile-input.raw.min.js": {
       "imports": [],
@@ -7103,7 +7197,7 @@
           "bytesInOutput": 117
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 344
+          "bytesInOutput": 360
         },
         "src/classes/SuperfileElement.js": {
           "bytesInOutput": 152
@@ -7115,7 +7209,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 5244
+      "bytes": 5260
     },
     "dist/tabulator-grid.min.js": {
       "imports": [],
@@ -7669,7 +7763,7 @@
           "bytesInOutput": 121
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 353
+          "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
           "bytesInOutput": 731
@@ -7699,7 +7793,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 457435
+      "bytes": 457447
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -8253,7 +8347,7 @@
           "bytesInOutput": 121
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 353
+          "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
           "bytesInOutput": 731
@@ -8274,7 +8368,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 411158
+      "bytes": 411170
     },
     "dist/tel-input.min.js": {
       "imports": [],
@@ -8306,7 +8400,7 @@
           "bytesInOutput": 121
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 353
+          "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
           "bytesInOutput": 731
@@ -8318,10 +8412,10 @@
           "bytesInOutput": 227
         },
         "src/utils/fetchWrapper.js": {
-          "bytesInOutput": 310
+          "bytesInOutput": 445
         },
-        "src/utils/jsonFetch.js": {
-          "bytesInOutput": 310
+        "src/utils/fetchJson.js": {
+          "bytesInOutput": 407
         },
         "src/utils/insertAfter.js": {
           "bytesInOutput": 59
@@ -8342,7 +8436,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 298752
+      "bytes": 298996
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8374,7 +8468,7 @@
           "bytesInOutput": 121
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 353
+          "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
           "bytesInOutput": 731
@@ -8386,10 +8480,10 @@
           "bytesInOutput": 227
         },
         "src/utils/fetchWrapper.js": {
-          "bytesInOutput": 310
+          "bytesInOutput": 445
         },
-        "src/utils/jsonFetch.js": {
-          "bytesInOutput": 310
+        "src/utils/fetchJson.js": {
+          "bytesInOutput": 407
         },
         "src/utils/insertAfter.js": {
           "bytesInOutput": 59
@@ -8404,7 +8498,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 295032
+      "bytes": 295276
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -8556,7 +8650,7 @@
           "bytesInOutput": 121
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 353
+          "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
           "bytesInOutput": 731
@@ -8601,7 +8695,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 314113
+      "bytes": 314125
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -8753,7 +8847,7 @@
           "bytesInOutput": 121
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 353
+          "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
           "bytesInOutput": 731
@@ -8792,7 +8886,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 312947
+      "bytes": 312959
     },
     "dist/tom-select.min.js": {
       "imports": [],
@@ -8893,7 +8987,7 @@
           "bytesInOutput": 121
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 353
+          "bytesInOutput": 365
         },
         "src/utils/setId.js": {
           "bytesInOutput": 67
@@ -8908,10 +9002,10 @@
           "bytesInOutput": 58
         },
         "src/utils/fetchWrapper.js": {
-          "bytesInOutput": 310
+          "bytesInOutput": 445
         },
-        "src/utils/jsonFetch.js": {
-          "bytesInOutput": 310
+        "src/utils/fetchJson.js": {
+          "bytesInOutput": 407
         },
         "src/classes/TomSelectElement.js": {
           "bytesInOutput": 1257
@@ -8929,7 +9023,7 @@
           "bytesInOutput": 122
         }
       },
-      "bytes": 75346
+      "bytes": 75590
     },
     "dist/tom-select.raw.min.js": {
       "imports": [],
@@ -9030,7 +9124,7 @@
           "bytesInOutput": 121
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 353
+          "bytesInOutput": 365
         },
         "src/utils/setId.js": {
           "bytesInOutput": 67
@@ -9045,10 +9139,10 @@
           "bytesInOutput": 58
         },
         "src/utils/fetchWrapper.js": {
-          "bytesInOutput": 310
+          "bytesInOutput": 445
         },
-        "src/utils/jsonFetch.js": {
-          "bytesInOutput": 310
+        "src/utils/fetchJson.js": {
+          "bytesInOutput": 407
         },
         "src/classes/TomSelectElement.js": {
           "bytesInOutput": 1257
@@ -9060,7 +9154,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 59740
+      "bytes": 59984
     }
   }
 }
