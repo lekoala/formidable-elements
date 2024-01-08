@@ -8,6 +8,7 @@
 - input-mask: https://github.com/RobinHerbots/Inputmask
 - flatpickr: https://github.com/flatpickr/flatpickr
 - coloris: https://github.com/mdbassit/Coloris
+- count up: https://github.com/inorganik/countUp.js
 - filepond: https://github.com/pqina/filepond
 - tel input: https://intl-tel-input.com/
 - tip tap: https://tiptap.dev/
