@@ -121,7 +121,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-      "bytes": 33697,
+      "bytes": 34864,
       "imports": [],
       "format": "esm"
     },
@@ -168,7 +168,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags.js": {
-      "bytes": 76351,
+      "bytes": 77066,
       "imports": [],
       "format": "esm"
     },
@@ -493,8 +493,50 @@
       ],
       "format": "esm"
     },
+    "node_modules/countup.js/dist/countUp.min.js": {
+      "bytes": 5697,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/utils/unformatNumber.js": {
+      "bytes": 624,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/classes/CountUpElement.js": {
+      "bytes": 966,
+      "imports": [
+        {
+          "path": "node_modules/countup.js/dist/countUp.min.js",
+          "kind": "import-statement",
+          "original": "countup.js"
+        },
+        {
+          "path": "src/utils/unformatNumber.js",
+          "kind": "import-statement",
+          "original": "../utils/unformatNumber"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/count-up.js": {
+      "bytes": 179,
+      "imports": [
+        {
+          "path": "src/classes/CountUpElement.js",
+          "kind": "import-statement",
+          "original": "./classes/CountUpElement.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        }
+      ],
+      "format": "esm"
+    },
     "node_modules/filepond/dist/filepond.esm.js": {
-      "bytes": 294864,
+      "bytes": 294950,
       "imports": [],
       "format": "esm"
     },
@@ -524,7 +566,7 @@
       "format": "esm"
     },
     "node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.esm.js": {
-      "bytes": 53516,
+      "bytes": 53543,
       "imports": [],
       "format": "esm"
     },
@@ -927,12 +969,12 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
-      "bytes": 3915,
+      "bytes": 4019,
       "imports": [],
       "format": "esm"
     },
     "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
-      "bytes": 34237,
+      "bytes": 34742,
       "imports": [
         {
           "path": "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
@@ -947,13 +989,13 @@
       ],
       "format": "esm"
     },
-    "node_modules/@floating-ui/utils/dom/dist/floating-ui.utils.dom.mjs": {
-      "bytes": 5039,
+    "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs": {
+      "bytes": 5031,
       "imports": [],
       "format": "esm"
     },
     "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-      "bytes": 20310,
+      "bytes": 22326,
       "imports": [
         {
           "path": "node_modules/@floating-ui/core/dist/floating-ui.core.mjs",
@@ -971,12 +1013,12 @@
           "original": "@floating-ui/utils"
         },
         {
-          "path": "node_modules/@floating-ui/utils/dom/dist/floating-ui.utils.dom.mjs",
+          "path": "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs",
           "kind": "import-statement",
           "original": "@floating-ui/utils/dom"
         },
         {
-          "path": "node_modules/@floating-ui/utils/dom/dist/floating-ui.utils.dom.mjs",
+          "path": "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs",
           "kind": "import-statement",
           "original": "@floating-ui/utils/dom"
         }
@@ -4434,7 +4476,7 @@
       "format": "esm"
     },
     "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-      "bytes": 96779,
+      "bytes": 94512,
       "imports": [],
       "format": "cjs"
     },
@@ -4450,7 +4492,7 @@
       "format": "cjs"
     },
     "node_modules/intl-tel-input/build/js/utils.js": {
-      "bytes": 254105,
+      "bytes": 253030,
       "imports": []
     },
     "src/utils/Storage.js": {
@@ -4750,7 +4792,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/core/dist/index.js": {
-      "bytes": 159633,
+      "bytes": 159756,
       "imports": [
         {
           "path": "node_modules/@tiptap/pm/state/dist/index.js",
@@ -5073,7 +5115,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-typography/dist/index.js": {
-      "bytes": 6754,
+      "bytes": 6760,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5089,7 +5131,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-link/dist/index.js": {
-      "bytes": 11299,
+      "bytes": 12237,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -6034,7 +6076,7 @@
       "entryPoint": "src/bs-autocomplete.js",
       "inputs": {
         "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-          "bytesInOutput": 14101
+          "bytesInOutput": 14822
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6064,7 +6106,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 15303
+      "bytes": 16024
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -6072,7 +6114,7 @@
       "entryPoint": "src/bs-tags.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 28260
+          "bytesInOutput": 28545
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6108,7 +6150,7 @@
           "bytesInOutput": 42
         }
       },
-      "bytes": 30764
+      "bytes": 31049
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -6116,7 +6158,7 @@
       "entryPoint": "src/bs-tags.raw.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 28260
+          "bytesInOutput": 28545
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6146,7 +6188,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 29413
+      "bytes": 29698
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -6356,13 +6398,36 @@
       },
       "bytes": 3743
     },
+    "dist/count-up.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/count-up.js",
+      "inputs": {
+        "node_modules/countup.js/dist/countUp.min.js": {
+          "bytesInOutput": 5639
+        },
+        "src/utils/unformatNumber.js": {
+          "bytesInOutput": 244
+        },
+        "src/classes/CountUpElement.js": {
+          "bytesInOutput": 399
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 56
+        },
+        "src/count-up.js": {
+          "bytesInOutput": 24
+        }
+      },
+      "bytes": 6387
+    },
     "dist/filepond-input.min.js": {
       "imports": [],
       "exports": [],
       "entryPoint": "src/filepond-input.js",
       "inputs": {
         "node_modules/filepond/dist/filepond.esm.js": {
-          "bytesInOutput": 100818
+          "bytesInOutput": 100841
         },
         "node_modules/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.esm.js": {
           "bytesInOutput": 1781
@@ -6380,7 +6445,7 @@
           "bytesInOutput": 1605
         },
         "node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.esm.js": {
-          "bytesInOutput": 20954
+          "bytesInOutput": 20967
         },
         "node_modules/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.esm.js": {
           "bytesInOutput": 1540
@@ -6431,7 +6496,7 @@
           "bytesInOutput": 64
         }
       },
-      "bytes": 189237
+      "bytes": 189273
     },
     "dist/filepond-input.raw.min.js": {
       "imports": [],
@@ -6439,7 +6504,7 @@
       "entryPoint": "src/filepond-input.raw.js",
       "inputs": {
         "node_modules/filepond/dist/filepond.esm.js": {
-          "bytesInOutput": 100818
+          "bytesInOutput": 100841
         },
         "node_modules/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.esm.js": {
           "bytesInOutput": 1781
@@ -6457,7 +6522,7 @@
           "bytesInOutput": 1605
         },
         "node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.esm.js": {
-          "bytesInOutput": 20954
+          "bytesInOutput": 20967
         },
         "node_modules/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.esm.js": {
           "bytesInOutput": 1540
@@ -6496,7 +6561,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 165576
+      "bytes": 165612
     },
     "dist/flatpickr-input.min.js": {
       "imports": [],
@@ -6685,12 +6750,12 @@
           "bytesInOutput": 1407
         },
         "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
-          "bytesInOutput": 6928
+          "bytesInOutput": 7068
         },
         "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-          "bytesInOutput": 6118
+          "bytesInOutput": 6196
         },
-        "node_modules/@floating-ui/utils/dom/dist/floating-ui.utils.dom.mjs": {
+        "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs": {
           "bytesInOutput": 2059
         },
         "src/utils/isString.js": {
@@ -6730,7 +6795,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 22800
+      "bytes": 23018
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -8376,7 +8441,7 @@
       "entryPoint": "src/tel-input.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 37997
+          "bytesInOutput": 34030
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
@@ -8385,7 +8450,7 @@
           "bytesInOutput": 2210
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 251433
+          "bytesInOutput": 250358
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8436,7 +8501,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 298996
+      "bytes": 293954
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8444,7 +8509,7 @@
       "entryPoint": "src/tel-input.raw.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 37997
+          "bytesInOutput": 34030
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
@@ -8453,7 +8518,7 @@
           "bytesInOutput": 2210
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 251433
+          "bytesInOutput": 250358
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8498,7 +8563,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 295276
+      "bytes": 290234
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -8554,7 +8619,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 51123
+          "bytesInOutput": 51154
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -8626,13 +8691,13 @@
           "bytesInOutput": 2271
         },
         "node_modules/@tiptap/extension-typography/dist/index.js": {
-          "bytesInOutput": 2606
+          "bytesInOutput": 2612
         },
         "node_modules/linkifyjs/dist/linkify.es.js": {
           "bytesInOutput": 19343
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 3487
+          "bytesInOutput": 3666
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -8695,7 +8760,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 314125
+      "bytes": 314341
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -8751,7 +8816,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 51123
+          "bytesInOutput": 51154
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -8823,13 +8888,13 @@
           "bytesInOutput": 2271
         },
         "node_modules/@tiptap/extension-typography/dist/index.js": {
-          "bytesInOutput": 2606
+          "bytesInOutput": 2612
         },
         "node_modules/linkifyjs/dist/linkify.es.js": {
           "bytesInOutput": 19343
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 3487
+          "bytesInOutput": 3666
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -8886,7 +8951,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 312959
+      "bytes": 313175
     },
     "dist/tom-select.min.js": {
       "imports": [],
