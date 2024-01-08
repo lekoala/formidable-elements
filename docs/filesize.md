@@ -914,11 +914,12 @@
    ├ src/utils/isString.js                                                                                      28b     0.4%
    └ src/anchor-ed.js                                                                                           27b     0.4%
 
-  dist/count-up.min.js                                                                                         6.2kb  100.0%
-   ├ node_modules/countup.js/dist/countUp.min.js                                                               5.5kb   88.3%
-   ├ src/classes/CountUpElement.js                                                                             399b     6.2%
-   ├ src/utils/unformatNumber.js                                                                               244b     3.8%
-   ├ src/utils/defineEl.js                                                                                      56b     0.9%
+  dist/count-up.min.js                                                                                         6.6kb  100.0%
+   ├ node_modules/countup.js/dist/countUp.min.js                                                               5.5kb   83.4%
+   ├ src/classes/CountUpElement.js                                                                             697b    10.3%
+   ├ src/utils/unformatNumber.js                                                                               244b     3.6%
+   ├ src/utils/defaultLang.js                                                                                   76b     1.1%
+   ├ src/utils/defineEl.js                                                                                      56b     0.8%
    └ src/count-up.js                                                                                            24b     0.4%
 
   dist/superfile-input.min.js                                                                                  5.5kb  100.0%
@@ -1031,4 +1032,4 @@
   dist\tel-input.min.js           287.1kb
   ...and 29 more output files...
 
-Done in 120ms
+Done in 87ms

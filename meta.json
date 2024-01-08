@@ -503,8 +503,13 @@
       "imports": [],
       "format": "esm"
     },
+    "src/utils/defaultLang.js": {
+      "bytes": 105,
+      "imports": [],
+      "format": "esm"
+    },
     "src/classes/CountUpElement.js": {
-      "bytes": 966,
+      "bytes": 1661,
       "imports": [
         {
           "path": "node_modules/countup.js/dist/countUp.min.js",
@@ -515,6 +520,11 @@
           "path": "src/utils/unformatNumber.js",
           "kind": "import-statement",
           "original": "../utils/unformatNumber"
+        },
+        {
+          "path": "src/utils/defaultLang.js",
+          "kind": "import-statement",
+          "original": "../utils/defaultLang"
         }
       ],
       "format": "esm"
@@ -1075,11 +1085,6 @@
           "original": "./utils/injectStyles.js"
         }
       ],
-      "format": "esm"
-    },
-    "src/utils/defaultLang.js": {
-      "bytes": 105,
-      "imports": [],
       "format": "esm"
     },
     "src/classes/DateFormatter.js": {
@@ -6409,8 +6414,11 @@
         "src/utils/unformatNumber.js": {
           "bytesInOutput": 244
         },
+        "src/utils/defaultLang.js": {
+          "bytesInOutput": 76
+        },
         "src/classes/CountUpElement.js": {
-          "bytesInOutput": 399
+          "bytesInOutput": 697
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -6419,7 +6427,7 @@
           "bytesInOutput": 24
         }
       },
-      "bytes": 6387
+      "bytes": 6761
     },
     "dist/filepond-input.min.js": {
       "imports": [],
