@@ -384,12 +384,12 @@
    ├ node_modules/tabulator-tables/src/js/modules/Accessor/defaults/accessors.js                                10b     0.0%
    └ node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js                                  10b     0.0%
 
-  dist/tiptap-editor.min.js                                                                                  307.0kb  100.0%
-   ├ node_modules/prosemirror-view/dist/index.js                                                              87.7kb   28.6%
-   ├ node_modules/@tiptap/core/dist/index.js                                                                  50.0kb   16.3%
-   ├ node_modules/prosemirror-model/dist/index.js                                                             42.2kb   13.8%
+  dist/tiptap-editor.min.js                                                                                  307.2kb  100.0%
+   ├ node_modules/prosemirror-view/dist/index.js                                                              87.7kb   28.5%
+   ├ node_modules/@tiptap/core/dist/index.js                                                                  50.1kb   16.3%
+   ├ node_modules/prosemirror-model/dist/index.js                                                             42.2kb   13.7%
    ├ node_modules/prosemirror-transform/dist/index.js                                                         27.3kb    8.9%
-   ├ node_modules/linkifyjs/dist/linkify.es.js                                                                18.9kb    6.2%
+   ├ node_modules/linkifyjs/dist/linkify.es.js                                                                18.9kb    6.1%
    ├ node_modules/prosemirror-state/dist/index.js                                                             11.6kb    3.8%
    ├ node_modules/prosemirror-commands/dist/index.js                                                           8.5kb    2.8%
    ├ src/utils/bootstrap-icons.js                                                                              8.1kb    2.6%
@@ -440,9 +440,9 @@
    ├ src/utils/hasBootstrap.js                                                                                  30b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/tiptap-editor.raw.min.js                                                                              305.8kb  100.0%
+  dist/tiptap-editor.raw.min.js                                                                              306.0kb  100.0%
    ├ node_modules/prosemirror-view/dist/index.js                                                              87.7kb   28.7%
-   ├ node_modules/@tiptap/core/dist/index.js                                                                  50.0kb   16.3%
+   ├ node_modules/@tiptap/core/dist/index.js                                                                  50.1kb   16.4%
    ├ node_modules/prosemirror-model/dist/index.js                                                             42.2kb   13.8%
    ├ node_modules/prosemirror-transform/dist/index.js                                                         27.3kb    8.9%
    ├ node_modules/linkifyjs/dist/linkify.es.js                                                                18.9kb    6.2%
@@ -494,11 +494,11 @@
    ├ src/utils/hasBootstrap.js                                                                                  30b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/tel-input.min.js                                                                                      287.1kb  100.0%
-   ├ node_modules/intl-tel-input/build/js/utils.js                                                           244.5kb   85.2%
-   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     33.2kb   11.6%
+  dist/tel-input.min.js                                                                                      289.1kb  100.0%
+   ├ node_modules/intl-tel-input/build/js/utils.js                                                           244.5kb   84.6%
+   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     35.3kb   12.2%
    ├ src/css/tel-input.min.css                                                                                 3.3kb    1.1%
-   ├ src/classes/TelInput.js                                                                                   2.2kb    0.8%
+   ├ src/classes/TelInput.js                                                                                   2.2kb    0.7%
    ├ src/utils/EventfulElement.js                                                                              731b     0.2%
    ├ src/utils/fetchWrapper.js                                                                                 445b     0.2%
    ├ src/utils/fetchJson.js                                                                                    407b     0.1%
@@ -516,9 +516,9 @@
    ├ node_modules/intl-tel-input/index.js                                                                       38b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/tel-input.raw.min.js                                                                                  283.4kb  100.0%
-   ├ node_modules/intl-tel-input/build/js/utils.js                                                           244.5kb   86.3%
-   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     33.2kb   11.7%
+  dist/tel-input.raw.min.js                                                                                  285.5kb  100.0%
+   ├ node_modules/intl-tel-input/build/js/utils.js                                                           244.5kb   85.7%
+   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     35.3kb   12.3%
    ├ src/classes/TelInput.js                                                                                   2.2kb    0.8%
    ├ src/utils/EventfulElement.js                                                                              731b     0.3%
    ├ src/utils/fetchWrapper.js                                                                                 445b     0.2%
@@ -1027,9 +1027,9 @@
 
   dist\tabulator-grid.min.js      446.7kb
   dist\tabulator-grid.raw.min.js  401.5kb
-  dist\tiptap-editor.min.js       307.0kb
-  dist\tiptap-editor.raw.min.js   305.8kb
-  dist\tel-input.min.js           287.1kb
+  dist\tiptap-editor.min.js       307.2kb
+  dist\tiptap-editor.raw.min.js   306.0kb
+  dist\tel-input.min.js           289.1kb
   ...and 29 more output files...
 
-Done in 87ms
+Done in 82ms

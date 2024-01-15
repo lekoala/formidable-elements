@@ -4,6 +4,7 @@ You can find one document per component. If the component is not documented, ple
 parameters through `data-config`.
 
 - [count-down](count-down.md)
+- [count-up](count-up.md)
 - [anchor-ed](anchor-ed.md)
 
 ## Api documentation

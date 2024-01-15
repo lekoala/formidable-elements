@@ -4481,7 +4481,7 @@
       "format": "esm"
     },
     "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-      "bytes": 94512,
+      "bytes": 101328,
       "imports": [],
       "format": "cjs"
     },
@@ -4497,7 +4497,7 @@
       "format": "cjs"
     },
     "node_modules/intl-tel-input/build/js/utils.js": {
-      "bytes": 253030,
+      "bytes": 253043,
       "imports": []
     },
     "src/utils/Storage.js": {
@@ -4797,7 +4797,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/core/dist/index.js": {
-      "bytes": 159756,
+      "bytes": 160257,
       "imports": [
         {
           "path": "node_modules/@tiptap/pm/state/dist/index.js",
@@ -8449,7 +8449,7 @@
       "entryPoint": "src/tel-input.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 34030
+          "bytesInOutput": 36100
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
@@ -8458,7 +8458,7 @@
           "bytesInOutput": 2210
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 250358
+          "bytesInOutput": 250370
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8509,7 +8509,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 293954
+      "bytes": 296036
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8517,7 +8517,7 @@
       "entryPoint": "src/tel-input.raw.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 34030
+          "bytesInOutput": 36100
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
@@ -8526,7 +8526,7 @@
           "bytesInOutput": 2210
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 250358
+          "bytesInOutput": 250370
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8571,7 +8571,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 290234
+      "bytes": 292316
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -8627,7 +8627,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 51154
+          "bytesInOutput": 51339
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -8768,7 +8768,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 314341
+      "bytes": 314526
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -8824,7 +8824,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 51154
+          "bytesInOutput": 51339
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -8959,7 +8959,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 313175
+      "bytes": 313360
     },
     "dist/tom-select.min.js": {
       "imports": [],
