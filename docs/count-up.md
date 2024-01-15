@@ -29,7 +29,7 @@ The element is bound to an IntersectionObserver by default and will only start c
 
 ## Features
 
-On top of what countUp.js provides and that can be configured through its data attribute (each attribute is pass as is as a parameter)
+On top of what countUp.js provides and that can be configured through its data attribute (each attribute is passed as-is as a parameter)
 You can also do the following:
 
 - Auto detect decimals (example 9999.99)
