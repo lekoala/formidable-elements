@@ -904,13 +904,13 @@
    ├ src/coloris-input.raw.js                                                                                   33b     0.2%
    └ src/utils/isString.js                                                                                      29b     0.2%
 
-  dist/count-up.min.js                                                                                         8.0kb  100.0%
-   ├ node_modules/countup.js/dist/countUp.min.js                                                               5.5kb   68.7%
-   ├ src/utils/EventfulElement.js                                                                              723b     8.8%
-   ├ src/classes/CountUpElement.js                                                                             623b     7.6%
-   ├ src/utils/FormidableElement.js                                                                            360b     4.4%
-   ├ src/utils/unformatNumber.js                                                                               244b     3.0%
-   ├ src/utils/replaceCallbacks.js                                                                             155b     1.9%
+  dist/count-up.min.js                                                                                         8.2kb  100.0%
+   ├ node_modules/countup.js/dist/countUp.min.js                                                               5.5kb   67.2%
+   ├ src/classes/CountUpElement.js                                                                             801b     9.5%
+   ├ src/utils/EventfulElement.js                                                                              723b     8.6%
+   ├ src/utils/FormidableElement.js                                                                            360b     4.3%
+   ├ src/utils/unformatNumber.js                                                                               244b     2.9%
+   ├ src/utils/replaceCallbacks.js                                                                             155b     1.8%
    ├ src/utils/whenParsed.js                                                                                   117b     1.4%
    ├ src/utils/defaultLang.js                                                                                   76b     0.9%
    ├ src/utils/parseBool.js                                                                                     69b     0.8%
@@ -1042,4 +1042,4 @@
   dist\tel-input.min.js           295.6kb
   ...and 29 more output files...
 
-Done in 89ms
+Done in 95ms
