@@ -15,6 +15,7 @@ class CountUpElement extends EventfulElement {
   created() {
     // Allow direct usage of data attributes on top of regular data-config
     const config = Object.assign(this.config, this.dataset);
+    const lang = this.getAttribute("lang") || defaultLang;
 
     // Ignore invalid chars
     const v = unformatNumber(this.getAttribute("value") || this.textContent);
@@ -28,18 +29,30 @@ class CountUpElement extends EventfulElement {
 
     // Format according to locale or using intl if needed
     if (this.getAttribute("lang") || this.hasAttribute("intl")) {
-      const lang = this.getAttribute("lang") || defaultLang;
       this.formatter = new Intl.NumberFormat(lang);
-      //@ts-ignore
-      config.formattingFn = (v) => {
-        return this.formatter.format(v);
-      };
+    }
+
+    // Currency
+    if (config.currency) {
+      this.formatter = new Intl.NumberFormat(lang, {
+        currency: config.currency,
+        style: "currency",
+        currencyDisplay: config.currencyDisplay || "narrowSymbol",
+      });
     }
 
     // format=false
     if (!isUndefined(config.format) && parseBool(config.format) == false) {
       config.formattingFn = (v) => {
         return v;
+      };
+    }
+
+    // We use a formatter
+    if (this.formatter) {
+      //@ts-ignore
+      config.formattingFn = (v) => {
+        return this.formatter.format(v);
       };
     }
 
@@ -52,6 +65,7 @@ class CountUpElement extends EventfulElement {
       this.countup.reset();
     }
     this.countup = null;
+    this.formatter = null;
   }
 }
 

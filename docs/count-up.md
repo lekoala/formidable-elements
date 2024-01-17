@@ -33,7 +33,7 @@ On top of what countUp.js provides and that can be configured through its data a
 You can also do the following:
 
 - Auto detect decimals (example 9999.99)
-- Format according to a given locale `<count up lang="fr">5000</count-up>` or `<count-up intl>5000</count-up` for document locale
+- Format according to a given locale `<count-up lang="fr">5000</count-up>` or `<count-up intl>5000</count-up` for document locale
 
 ## Demo
 
