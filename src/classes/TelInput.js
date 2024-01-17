@@ -6,6 +6,7 @@ import localeProvider from "../utils/localeProvider.js";
 import Storage from "../utils/Storage.js";
 import fetchJson from "../utils/fetchJson.js";
 import insertHiddenInput from "../utils/insertHiddenInput.js";
+import isRTL from "../utils/isRTL.js";
 
 const name = "tel-input";
 
@@ -111,16 +112,26 @@ class TelInput extends EventfulElement {
         dataformat = 3;
         break;
     }
+    let v = "";
     if (this.iti.isValidNumber()) {
-      this.hiddenInput.setAttribute("value", this.iti.getNumber(dataformat));
-    } else {
-      this.hiddenInput.setAttribute("value", "");
+      v = this.iti.getNumber(dataformat);
     }
+    this.hiddenInput.setAttribute("value", v);
+
+    // const selectedCountry = this.iti.getSelectedCountryData().iso2;
+    // if (selectedCountry != Storage.get("ipapi")) {
+    //   Storage.set("ipapi", selectedCountry);
+    // }
   }
 
   created() {
     const input = this.el;
     // const inputName = input.name;
+
+    // Force rtl styles
+    if (isRTL(this)) {
+      input.dir = "rtl";
+    }
 
     this.hiddenInput = insertHiddenInput(input);
 
@@ -133,14 +144,16 @@ class TelInput extends EventfulElement {
       {
         initialCountry: "auto",
         showFlags: false,
-        separateDialCode: true,
+        fixDropdownWidth: false,
+        showSelectedDialCode: true, // required when showFlags is false
+        formatAsYouType: false, // this doesn't work well with selected dial code, it's not using national format
         preferredCountries: [systemLocale.split("-")[1]],
-        localizedCountries: localeProvider(name),
+        i18n: localeProvider(name),
         // we use or own live updating approach
         // hiddenInput: inputName,
         placeholderNumberType: type,
         // Only useful if it's not bundled
-        // utilsScript : 'https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.5/build/js/utils.min.js'
+        // utilsScript : 'https://cdn.jsdelivr.net/npm/intl-tel-input@19/build/js/utils.min.js'
       },
       this.config
     );

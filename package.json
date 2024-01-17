@@ -36,7 +36,7 @@
     "filepond-plugin-image-validate-size": "^1.2.7",
     "flatpickr": "^4.6.13",
     "inputmask": "^5.0.9-beta.32",
-    "intl-tel-input": "^18.5.3",
+    "intl-tel-input": "^19.1.0",
     "squire-rte": "^2.2.5",
     "superfile": "^1.2.1",
     "tabulator-tables": "^5.5.2",

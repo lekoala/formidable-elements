@@ -10,6 +10,7 @@ import injectStyles from "./utils/injectStyles.js";
 injectStyles(
   "tel-input",
   `${styles}
+  .iti__flag + .iti__selected-dial-code { margin-inline-start: 6px }
   .iti__selected-dial-code { min-width: 3ch }
   .iti__arrow { border: none }
   .input-group .iti .form-control { border-top-right-radius: 0; border-bottom-right-radius: 0}`

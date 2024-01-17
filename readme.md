@@ -26,7 +26,7 @@ Bootstrap specific:
 And some custom made stuff as well:
 
 - clipboard-copy
-- countdown
+- count-down
 - growing-textarea
 - bound-input
 - format-date

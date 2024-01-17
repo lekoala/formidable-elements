@@ -15,9 +15,9 @@
     visibility: hidden
 }
 
-.iti input,
-.iti input[type=tel],
-.iti input[type=text] {
+.iti input.iti__tel-input,
+.iti input.iti__tel-input[type=tel],
+.iti input.iti__tel-input[type=text] {
     position: relative;
     z-index: 0;
     margin-top: 0 !important;
@@ -62,28 +62,40 @@
     border-bottom: 4px solid #555
 }
 
-.iti__country-list {
+.iti__dropdown-content {
     position: absolute;
     z-index: 2;
-    list-style: none;
-    padding: 0;
-    margin: 0 0 0 -1px;
+    margin-left: -1px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
     background-color: #fff;
     border: 1px solid #ccc;
-    white-space: nowrap;
     max-height: 200px;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch
 }
 
-.iti__country-list--dropup {
+.iti__dropdown-content--dropup {
     bottom: 100%;
     margin-bottom: -1px
 }
 
+.iti__search-input {
+    width: 100%;
+    border-width: 0
+}
+
+.iti__country-list {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.iti--flexible-dropdown-width .iti__country-list {
+    white-space: nowrap
+}
+
 @media (max-width:500px) {
-    .iti__country-list {
+    .iti--flexible-dropdown-width .iti__country-list {
         white-space: normal
     }
 }
@@ -125,23 +137,23 @@
     margin-left: 6px
 }
 
-.iti--allow-dropdown input,
-.iti--allow-dropdown input[type=tel],
-.iti--allow-dropdown input[type=text],
-.iti--separate-dial-code input,
-.iti--separate-dial-code input[type=tel],
-.iti--separate-dial-code input[type=text] {
+.iti--allow-dropdown input.iti__tel-input,
+.iti--allow-dropdown input.iti__tel-input[type=tel],
+.iti--allow-dropdown input.iti__tel-input[type=text],
+.iti--separate-dial-code input.iti__tel-input,
+.iti--separate-dial-code input.iti__tel-input[type=tel],
+.iti--separate-dial-code input.iti__tel-input[type=text] {
     padding-right: 6px;
     padding-left: 52px;
     margin-left: 0
 }
 
-[dir=rtl] .iti--allow-dropdown input,
-[dir=rtl] .iti--allow-dropdown input[type=tel],
-[dir=rtl] .iti--allow-dropdown input[type=text],
-[dir=rtl] .iti--separate-dial-code input,
-[dir=rtl] .iti--separate-dial-code input[type=tel],
-[dir=rtl] .iti--separate-dial-code input[type=text] {
+[dir=rtl] .iti--allow-dropdown input.iti__tel-input,
+[dir=rtl] .iti--allow-dropdown input.iti__tel-input[type=tel],
+[dir=rtl] .iti--allow-dropdown input.iti__tel-input[type=text],
+[dir=rtl] .iti--separate-dial-code input.iti__tel-input,
+[dir=rtl] .iti--separate-dial-code input.iti__tel-input[type=tel],
+[dir=rtl] .iti--separate-dial-code input.iti__tel-input[type=text] {
     padding-right: 52px;
     padding-left: 6px;
     margin-right: 0
@@ -167,13 +179,13 @@
     background-color: rgba(0, 0, 0, .05)
 }
 
-.iti--allow-dropdown input[disabled]+.iti__flag-container:hover,
-.iti--allow-dropdown input[readonly]+.iti__flag-container:hover {
+.iti--allow-dropdown .iti__flag-container:has(+input[disabled]):hover,
+.iti--allow-dropdown .iti__flag-container:has(+input[readonly]):hover {
     cursor: default
 }
 
-.iti--allow-dropdown input[disabled]+.iti__flag-container:hover .iti__selected-flag,
-.iti--allow-dropdown input[readonly]+.iti__flag-container:hover .iti__selected-flag {
+.iti--allow-dropdown .iti__flag-container:has(+input[disabled]):hover .iti__selected-flag,
+.iti--allow-dropdown .iti__flag-container:has(+input[readonly]):hover .iti__selected-flag {
     background-color: transparent
 }
 
@@ -183,6 +195,11 @@
 
 .iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
     margin-left: 6px
+}
+
+[dir=rtl] .iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
+    margin-left: 0;
+    margin-right: 6px
 }
 
 .iti--container {
@@ -197,20 +214,25 @@
     cursor: pointer
 }
 
-.iti-mobile .iti--container {
-    top: 30px;
-    bottom: 30px;
-    left: 30px;
-    right: 30px;
-    position: fixed
+.iti--fullscreen-popup.iti--container {
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center
 }
 
-.iti-mobile .iti__country-list {
+.iti--fullscreen-popup .iti__dropdown-content {
     max-height: 100%;
-    width: 100%
+    position: relative
 }
 
-.iti-mobile .iti__country {
+.iti--fullscreen-popup .iti__country {
     padding: 10px 10px;
     line-height: 1.5em
 }
