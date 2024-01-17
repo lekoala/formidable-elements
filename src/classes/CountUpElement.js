@@ -2,6 +2,8 @@ import { CountUp } from "countup.js";
 import EventfulElement from "../utils/EventfulElement.js";
 import unformatNumber from "../utils/unformatNumber.js";
 import defaultLang from "../utils/defaultLang.js";
+import parseBool from "../utils/parseBool.js";
+import isUndefined from "../utils/isUndefined.js";
 
 class CountUpElement extends EventfulElement {
   constructor() {
@@ -11,7 +13,8 @@ class CountUpElement extends EventfulElement {
   }
 
   created() {
-    const config = this.config;
+    // Allow direct usage of data attributes on top of regular data-config
+    const config = Object.assign(this.config, this.dataset);
 
     // Ignore invalid chars
     const v = unformatNumber(this.getAttribute("value") || this.textContent);
@@ -30,6 +33,13 @@ class CountUpElement extends EventfulElement {
       //@ts-ignore
       config.formattingFn = (v) => {
         return this.formatter.format(v);
+      };
+    }
+
+    // format=false
+    if (!isUndefined(config.format) && parseBool(config.format) == false) {
+      config.formattingFn = (v) => {
+        return v;
       };
     }
 
