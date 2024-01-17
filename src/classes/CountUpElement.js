@@ -1,36 +1,26 @@
 import { CountUp } from "countup.js";
-import unformatNumber from "../utils/unformatNumber";
-import defaultLang from "../utils/defaultLang";
+import EventfulElement from "../utils/EventfulElement.js";
+import unformatNumber from "../utils/unformatNumber.js";
+import defaultLang from "../utils/defaultLang.js";
 
-/**
- * @var {IntersectionObserver}
- */
-const observer = new window.IntersectionObserver((entries, observerRef) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      /**
-       * @type {CountUpElement}
-       */
-      //@ts-ignore
-      const target = entry.target;
-      observerRef.unobserve(target);
-      target.start();
-    }
-  });
-});
+class CountUpElement extends EventfulElement {
+  constructor() {
+    super();
+    // Lazy by default
+    this.setAttribute("lazy", "lazy");
+  }
 
-class CountUpElement extends HTMLElement {
-  connectedCallback() {
-    const options = Object.assign({}, this.dataset);
+  created() {
+    const config = this.config;
 
     // Ignore invalid chars
     const v = unformatNumber(this.getAttribute("value") || this.textContent);
     const vs = v.toString();
 
     // Auto determine . position
-    if (vs.includes(".") && !options.decimalPlaces) {
+    if (vs.includes(".") && !config.decimalPlaces) {
       //@ts-ignore
-      options.decimalPlaces = vs.split(".")[1].length;
+      config.decimalPlaces = vs.split(".")[1].length;
     }
 
     // Format according to locale or using intl if needed
@@ -38,27 +28,20 @@ class CountUpElement extends HTMLElement {
       const lang = this.getAttribute("lang") || defaultLang;
       this.formatter = new Intl.NumberFormat(lang);
       //@ts-ignore
-      options.formattingFn = (v) => {
+      config.formattingFn = (v) => {
         return this.formatter.format(v);
       };
     }
 
-    this.inst = new CountUp(this, v, options);
-    observer.observe(this);
+    this.countup = new CountUp(this, v, config);
+    this.countup.start();
   }
 
-  disconnectedCallback() {
-    observer.unobserve(this);
-    if (this.inst) {
-      this.inst.reset();
+  destroyed() {
+    if (this.countup) {
+      this.countup.reset();
     }
-    this.inst = null;
-  }
-
-  start() {
-    if (this.inst) {
-      this.inst.start();
-    }
+    this.countup = null;
   }
 }
 
