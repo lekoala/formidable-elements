@@ -498,6 +498,22 @@
       "imports": [],
       "format": "esm"
     },
+    "src/utils/EventfulElement.js": {
+      "bytes": 1951,
+      "imports": [
+        {
+          "path": "src/utils/FormidableElement.js",
+          "kind": "import-statement",
+          "original": "./FormidableElement.js"
+        },
+        {
+          "path": "src/utils/replaceCallbacks.js",
+          "kind": "import-statement",
+          "original": "./replaceCallbacks.js"
+        }
+      ],
+      "format": "esm"
+    },
     "src/utils/unformatNumber.js": {
       "bytes": 624,
       "imports": [],
@@ -508,8 +524,18 @@
       "imports": [],
       "format": "esm"
     },
+    "src/utils/parseBool.js": {
+      "bytes": 108,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/utils/isUndefined.js": {
+      "bytes": 115,
+      "imports": [],
+      "format": "esm"
+    },
     "src/classes/CountUpElement.js": {
-      "bytes": 1661,
+      "bytes": 1694,
       "imports": [
         {
           "path": "node_modules/countup.js/dist/countUp.min.js",
@@ -517,14 +543,29 @@
           "original": "countup.js"
         },
         {
+          "path": "src/utils/EventfulElement.js",
+          "kind": "import-statement",
+          "original": "../utils/EventfulElement.js"
+        },
+        {
           "path": "src/utils/unformatNumber.js",
           "kind": "import-statement",
-          "original": "../utils/unformatNumber"
+          "original": "../utils/unformatNumber.js"
         },
         {
           "path": "src/utils/defaultLang.js",
           "kind": "import-statement",
-          "original": "../utils/defaultLang"
+          "original": "../utils/defaultLang.js"
+        },
+        {
+          "path": "src/utils/parseBool.js",
+          "kind": "import-statement",
+          "original": "../utils/parseBool.js"
+        },
+        {
+          "path": "src/utils/isUndefined.js",
+          "kind": "import-statement",
+          "original": "../utils/isUndefined.js"
         }
       ],
       "format": "esm"
@@ -1733,22 +1774,6 @@
           "path": "src/utils/defineEl.js",
           "kind": "import-statement",
           "original": "./utils/defineEl.js"
-        }
-      ],
-      "format": "esm"
-    },
-    "src/utils/EventfulElement.js": {
-      "bytes": 1951,
-      "imports": [
-        {
-          "path": "src/utils/FormidableElement.js",
-          "kind": "import-statement",
-          "original": "./FormidableElement.js"
-        },
-        {
-          "path": "src/utils/replaceCallbacks.js",
-          "kind": "import-statement",
-          "original": "./replaceCallbacks.js"
         }
       ],
       "format": "esm"
@@ -4354,11 +4379,6 @@
       "imports": [],
       "format": "esm"
     },
-    "src/utils/parseBool.js": {
-      "bytes": 108,
-      "imports": [],
-      "format": "esm"
-    },
     "src/utils/getDelete.js": {
       "bytes": 115,
       "imports": [],
@@ -6416,23 +6436,47 @@
         "node_modules/countup.js/dist/countUp.min.js": {
           "bytesInOutput": 5639
         },
+        "src/utils/isString.js": {
+          "bytesInOutput": 28
+        },
+        "src/utils/getGlobalFn.js": {
+          "bytesInOutput": 49
+        },
+        "src/utils/replaceCallbacks.js": {
+          "bytesInOutput": 155
+        },
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 117
+        },
+        "src/utils/FormidableElement.js": {
+          "bytesInOutput": 360
+        },
+        "src/utils/EventfulElement.js": {
+          "bytesInOutput": 723
+        },
         "src/utils/unformatNumber.js": {
           "bytesInOutput": 244
         },
         "src/utils/defaultLang.js": {
           "bytesInOutput": 76
         },
+        "src/utils/parseBool.js": {
+          "bytesInOutput": 69
+        },
+        "src/utils/isUndefined.js": {
+          "bytesInOutput": 22
+        },
         "src/classes/CountUpElement.js": {
-          "bytesInOutput": 697
+          "bytesInOutput": 623
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
         },
         "src/count-up.js": {
-          "bytesInOutput": 24
+          "bytesInOutput": 25
         }
       },
-      "bytes": 6761
+      "bytes": 8211
     },
     "dist/filepond-input.min.js": {
       "imports": [],

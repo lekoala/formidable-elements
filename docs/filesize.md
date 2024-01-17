@@ -904,6 +904,22 @@
    ├ src/coloris-input.raw.js                                                                                   33b     0.2%
    └ src/utils/isString.js                                                                                      29b     0.2%
 
+  dist/count-up.min.js                                                                                         8.0kb  100.0%
+   ├ node_modules/countup.js/dist/countUp.min.js                                                               5.5kb   68.7%
+   ├ src/utils/EventfulElement.js                                                                              723b     8.8%
+   ├ src/classes/CountUpElement.js                                                                             623b     7.6%
+   ├ src/utils/FormidableElement.js                                                                            360b     4.4%
+   ├ src/utils/unformatNumber.js                                                                               244b     3.0%
+   ├ src/utils/replaceCallbacks.js                                                                             155b     1.9%
+   ├ src/utils/whenParsed.js                                                                                   117b     1.4%
+   ├ src/utils/defaultLang.js                                                                                   76b     0.9%
+   ├ src/utils/parseBool.js                                                                                     69b     0.8%
+   ├ src/utils/defineEl.js                                                                                      56b     0.7%
+   ├ src/utils/getGlobalFn.js                                                                                   49b     0.6%
+   ├ src/utils/isString.js                                                                                      28b     0.3%
+   ├ src/count-up.js                                                                                            25b     0.3%
+   └ src/utils/isUndefined.js                                                                                   22b     0.3%
+
   dist/anchor-ed.min.js                                                                                        7.1kb  100.0%
    ├ src/classes/Anchored.js                                                                                   6.0kb   83.4%
    ├ src/utils/FormidableElement.js                                                                            360b     4.9%
@@ -915,14 +931,6 @@
    ├ src/utils/getGlobalFn.js                                                                                   49b     0.7%
    ├ src/utils/isString.js                                                                                      28b     0.4%
    └ src/anchor-ed.js                                                                                           27b     0.4%
-
-  dist/count-up.min.js                                                                                         6.6kb  100.0%
-   ├ node_modules/countup.js/dist/countUp.min.js                                                               5.5kb   83.4%
-   ├ src/classes/CountUpElement.js                                                                             697b    10.3%
-   ├ src/utils/unformatNumber.js                                                                               244b     3.6%
-   ├ src/utils/defaultLang.js                                                                                   76b     1.1%
-   ├ src/utils/defineEl.js                                                                                      56b     0.8%
-   └ src/count-up.js                                                                                            24b     0.4%
 
   dist/superfile-input.min.js                                                                                  5.5kb  100.0%
    ├ node_modules/superfile/superfile.js                                                                       4.2kb   76.1%
@@ -1034,4 +1042,4 @@
   dist\tel-input.min.js           295.6kb
   ...and 29 more output files...
 
-Done in 99ms
+Done in 89ms
