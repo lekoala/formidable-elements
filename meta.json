@@ -4481,7 +4481,7 @@
       "format": "esm"
     },
     "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-      "bytes": 101328,
+      "bytes": 104990,
       "imports": [],
       "format": "cjs"
     },
@@ -4497,7 +4497,7 @@
       "format": "cjs"
     },
     "node_modules/intl-tel-input/build/js/utils.js": {
-      "bytes": 253043,
+      "bytes": 257451,
       "imports": []
     },
     "src/utils/Storage.js": {
@@ -4506,7 +4506,7 @@
       "format": "esm"
     },
     "src/classes/TelInput.js": {
-      "bytes": 4870,
+      "bytes": 5317,
       "imports": [
         {
           "path": "node_modules/intl-tel-input/index.js",
@@ -4542,16 +4542,21 @@
           "path": "src/utils/insertHiddenInput.js",
           "kind": "import-statement",
           "original": "../utils/insertHiddenInput.js"
+        },
+        {
+          "path": "src/utils/isRTL.js",
+          "kind": "import-statement",
+          "original": "../utils/isRTL.js"
         }
       ],
       "format": "esm"
     },
     "src/css/tel-input.min.css": {
-      "bytes": 3355,
+      "bytes": 4004,
       "imports": []
     },
     "src/tel-input.js": {
-      "bytes": 630,
+      "bytes": 700,
       "imports": [
         {
           "path": "src/classes/TelInput.js",
@@ -8449,16 +8454,16 @@
       "entryPoint": "src/tel-input.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 36100
+          "bytesInOutput": 37551
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 2210
+          "bytesInOutput": 2237
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 250370
+          "bytesInOutput": 254704
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8496,20 +8501,23 @@
         "src/utils/insertHiddenInput.js": {
           "bytesInOutput": 229
         },
+        "src/utils/isRTL.js": {
+          "bytesInOutput": 75
+        },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
         },
         "src/css/tel-input.min.css": {
-          "bytesInOutput": 3365
+          "bytesInOutput": 4014
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 159
         },
         "src/tel-input.js": {
-          "bytesInOutput": 225
+          "bytesInOutput": 294
         }
       },
-      "bytes": 296036
+      "bytes": 302641
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8517,16 +8525,16 @@
       "entryPoint": "src/tel-input.raw.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 36100
+          "bytesInOutput": 37551
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 2210
+          "bytesInOutput": 2237
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 250370
+          "bytesInOutput": 254704
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8563,6 +8571,9 @@
         },
         "src/utils/insertHiddenInput.js": {
           "bytesInOutput": 229
+        },
+        "src/utils/isRTL.js": {
+          "bytesInOutput": 75
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8571,7 +8582,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 292316
+      "bytes": 298203
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
