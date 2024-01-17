@@ -149,10 +149,9 @@ class TelInput extends EventfulElement {
       {
         initialCountry: "auto",
         showFlags: false,
-        // countrySearch: false,
+        countrySearch: false,
         fixDropdownWidth: false,
         showSelectedDialCode: true, // required when showFlags is false
-        formatAsYouType: false, // this doesn't work well with selected dial code, it's not using national format
         preferredCountries: [systemLocale.split("-")[1]],
         i18n: localeProvider(name),
         // we use or own live updating approach
