@@ -63,7 +63,7 @@ class TelInput extends EventfulElement {
     this._updateValidation();
 
     // show formatted value
-    if (this.iti.isValidNumber()) {
+    if (this.iti.isValidNumber() && !this.dataset.keepFormat) {
       this.iti.setNumber(this.iti.getNumber(2));
     }
   }
