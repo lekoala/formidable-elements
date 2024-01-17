@@ -61,6 +61,11 @@ class TelInput extends EventfulElement {
   $focusout() {
     this._updateHiddenValue();
     this._updateValidation();
+
+    // show formatted value
+    if (this.iti.isValidNumber()) {
+      this.iti.setNumber(this.iti.getNumber(2));
+    }
   }
 
   _updateValidation() {
@@ -144,6 +149,7 @@ class TelInput extends EventfulElement {
       {
         initialCountry: "auto",
         showFlags: false,
+        // countrySearch: false,
         fixDropdownWidth: false,
         showSelectedDialCode: true, // required when showFlags is false
         formatAsYouType: false, // this doesn't work well with selected dial code, it's not using national format
