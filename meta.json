@@ -4501,12 +4501,12 @@
       "format": "esm"
     },
     "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-      "bytes": 104990,
+      "bytes": 105517,
       "imports": [],
       "format": "cjs"
     },
     "node_modules/intl-tel-input/index.js": {
-      "bytes": 103,
+      "bytes": 53,
       "imports": [
         {
           "path": "node_modules/intl-tel-input/build/js/intlTelInput.js",
@@ -4526,7 +4526,7 @@
       "format": "esm"
     },
     "src/classes/TelInput.js": {
-      "bytes": 5504,
+      "bytes": 5386,
       "imports": [
         {
           "path": "node_modules/intl-tel-input/index.js",
@@ -8498,13 +8498,13 @@
       "entryPoint": "src/tel-input.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 37551
+          "bytesInOutput": 37754
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 2331
+          "bytesInOutput": 2329
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
           "bytesInOutput": 254704
@@ -8561,7 +8561,7 @@
           "bytesInOutput": 294
         }
       },
-      "bytes": 302735
+      "bytes": 302936
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8569,13 +8569,13 @@
       "entryPoint": "src/tel-input.raw.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 37551
+          "bytesInOutput": 37754
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 2331
+          "bytesInOutput": 2329
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
           "bytesInOutput": 254704
@@ -8626,7 +8626,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 298297
+      "bytes": 298498
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
