@@ -4501,7 +4501,7 @@
       "format": "esm"
     },
     "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-      "bytes": 105517,
+      "bytes": 105657,
       "imports": [],
       "format": "cjs"
     },
@@ -4526,7 +4526,7 @@
       "format": "esm"
     },
     "src/classes/TelInput.js": {
-      "bytes": 5386,
+      "bytes": 5631,
       "imports": [
         {
           "path": "node_modules/intl-tel-input/index.js",
@@ -8498,13 +8498,13 @@
       "entryPoint": "src/tel-input.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 37754
+          "bytesInOutput": 37742
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 2329
+          "bytesInOutput": 2431
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
           "bytesInOutput": 254704
@@ -8561,7 +8561,7 @@
           "bytesInOutput": 294
         }
       },
-      "bytes": 302936
+      "bytes": 303026
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8569,13 +8569,13 @@
       "entryPoint": "src/tel-input.raw.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 37754
+          "bytesInOutput": 37742
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 2329
+          "bytesInOutput": 2431
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
           "bytesInOutput": 254704
@@ -8626,7 +8626,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 298498
+      "bytes": 298588
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],

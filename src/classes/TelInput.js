@@ -48,7 +48,15 @@ class TelInput extends EventfulElement {
   }
 
   get events() {
-    return ["focusout", "input"];
+    return ["focusout", "input", "beforeinput"];
+  }
+
+  $beforeinput(e) {
+    // Prevent invalid input
+    // @link https://github.com/jackocnr/intl-tel-input/issues/1508
+    if (e.data && e.data.replace(/[^0-9\(\)\s+-]/, "") != e.data) {
+      e.preventDefault();
+    }
   }
 
   $input() {
@@ -64,7 +72,7 @@ class TelInput extends EventfulElement {
 
     // show formatted value
     if (this.iti.isValidNumber() && !this.dataset.keepFormat) {
-      this.iti.setNumber(this.iti.getNumber(2));
+      this.iti.setNumber(this.iti.getNumber(0));
     }
   }
 
