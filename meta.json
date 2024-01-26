@@ -499,7 +499,7 @@
       "format": "esm"
     },
     "src/utils/EventfulElement.js": {
-      "bytes": 1951,
+      "bytes": 1949,
       "imports": [
         {
           "path": "src/utils/FormidableElement.js",
@@ -1025,7 +1025,7 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
-      "bytes": 34742,
+      "bytes": 34697,
       "imports": [
         {
           "path": "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
@@ -1046,7 +1046,7 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-      "bytes": 22326,
+      "bytes": 23392,
       "imports": [
         {
           "path": "node_modules/@floating-ui/core/dist/floating-ui.core.mjs",
@@ -1225,6 +1225,68 @@
           "path": "src/classes/GrowingTextarea.js",
           "kind": "import-statement",
           "original": "./classes/GrowingTextarea.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/LazyElement.js": {
+      "bytes": 569,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/classes/HiMark.js": {
+      "bytes": 480,
+      "imports": [
+        {
+          "path": "src/utils/LazyElement.js",
+          "kind": "import-statement",
+          "original": "../utils/LazyElement.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/css/hi-mark.min.css": {
+      "bytes": 583,
+      "imports": []
+    },
+    "src/hi-mark.js": {
+      "bytes": 293,
+      "imports": [
+        {
+          "path": "src/classes/HiMark.js",
+          "kind": "import-statement",
+          "original": "./classes/HiMark.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        },
+        {
+          "path": "src/css/hi-mark.min.css",
+          "kind": "import-statement",
+          "original": "./css/hi-mark.min.css"
+        },
+        {
+          "path": "src/utils/injectStyles.js",
+          "kind": "import-statement",
+          "original": "./utils/injectStyles.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/hi-mark.raw.js": {
+      "bytes": 146,
+      "imports": [
+        {
+          "path": "src/classes/HiMark.js",
+          "kind": "import-statement",
+          "original": "./classes/HiMark.js"
         },
         {
           "path": "src/utils/defineEl.js",
@@ -2112,7 +2174,7 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/core/tools/Helpers.js": {
-      "bytes": 1079,
+      "bytes": 1377,
       "imports": [],
       "format": "esm"
     },
@@ -2160,7 +2222,7 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/core/ColumnManager.js": {
-      "bytes": 16732,
+      "bytes": 16818,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/CoreFeature.js",
@@ -2264,7 +2326,7 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/core/RowManager.js": {
-      "bytes": 27283,
+      "bytes": 27310,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/CoreFeature.js",
@@ -2681,7 +2743,7 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/Ajax/Ajax.js": {
-      "bytes": 3766,
+      "bytes": 3785,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
@@ -3091,7 +3153,7 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/Edit/Edit.js": {
-      "bytes": 18310,
+      "bytes": 18382,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
@@ -3184,8 +3246,14 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/link.js": {
-      "bytes": 1605,
-      "imports": [],
+      "bytes": 1734,
+      "imports": [
+        {
+          "path": "node_modules/tabulator-tables/src/js/core/tools/Helpers.js",
+          "kind": "import-statement",
+          "original": "../../../../core/tools/Helpers.js"
+        }
+      ],
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/image.js": {
@@ -3703,7 +3771,7 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/Page/Page.js": {
-      "bytes": 23404,
+      "bytes": 23410,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
@@ -3729,7 +3797,7 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/Persistence/Persistence.js": {
-      "bytes": 12580,
+      "bytes": 12659,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
@@ -4446,7 +4514,7 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/dist/css/tabulator_bootstrap5.min.css": {
-      "bytes": 35976,
+      "bytes": 35975,
       "imports": []
     },
     "src/css/tabulator-grid.min.css": {
@@ -4501,7 +4569,7 @@
       "format": "esm"
     },
     "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-      "bytes": 105657,
+      "bytes": 106928,
       "imports": [],
       "format": "cjs"
     },
@@ -4526,7 +4594,7 @@
       "format": "esm"
     },
     "src/classes/TelInput.js": {
-      "bytes": 5631,
+      "bytes": 5760,
       "imports": [
         {
           "path": "node_modules/intl-tel-input/index.js",
@@ -4572,11 +4640,11 @@
       "format": "esm"
     },
     "src/css/tel-input.min.css": {
-      "bytes": 4004,
+      "bytes": 4395,
       "imports": []
     },
     "src/tel-input.js": {
-      "bytes": 700,
+      "bytes": 1041,
       "imports": [
         {
           "path": "src/classes/TelInput.js",
@@ -6452,7 +6520,7 @@
           "bytesInOutput": 360
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 723
+          "bytesInOutput": 729
         },
         "src/utils/unformatNumber.js": {
           "bytesInOutput": 244
@@ -6476,7 +6544,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 8389
+      "bytes": 8395
     },
     "dist/filepond-input.min.js": {
       "imports": [],
@@ -6807,10 +6875,10 @@
           "bytesInOutput": 1407
         },
         "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
-          "bytesInOutput": 7068
+          "bytesInOutput": 7069
         },
         "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-          "bytesInOutput": 6196
+          "bytesInOutput": 6585
         },
         "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs": {
           "bytesInOutput": 2059
@@ -6852,7 +6920,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 23018
+      "bytes": 23408
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -6952,6 +7020,52 @@
         }
       },
       "bytes": 787
+    },
+    "dist/hi-mark.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/hi-mark.js",
+      "inputs": {
+        "src/utils/LazyElement.js": {
+          "bytesInOutput": 241
+        },
+        "src/classes/HiMark.js": {
+          "bytesInOutput": 222
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 56
+        },
+        "src/css/hi-mark.min.css": {
+          "bytesInOutput": 592
+        },
+        "src/utils/injectStyles.js": {
+          "bytesInOutput": 158
+        },
+        "src/hi-mark.js": {
+          "bytesInOutput": 38
+        }
+      },
+      "bytes": 1332
+    },
+    "dist/hi-mark.raw.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/hi-mark.raw.js",
+      "inputs": {
+        "src/utils/LazyElement.js": {
+          "bytesInOutput": 241
+        },
+        "src/classes/HiMark.js": {
+          "bytesInOutput": 222
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 56
+        },
+        "src/hi-mark.raw.js": {
+          "bytesInOutput": 23
+        }
+      },
+      "bytes": 567
     },
     "dist/input-mask.min.js": {
       "imports": [],
@@ -7098,7 +7212,7 @@
           "bytesInOutput": 360
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 723
+          "bytesInOutput": 729
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
@@ -7122,7 +7236,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 5035
+      "bytes": 5041
     },
     "dist/squire-editor.min.js": {
       "imports": [
@@ -7154,7 +7268,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 731
+          "bytesInOutput": 737
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
@@ -7193,7 +7307,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 69566
+      "bytes": 69572
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -7225,7 +7339,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 731
+          "bytesInOutput": 737
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
@@ -7258,7 +7372,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 68660
+      "bytes": 68666
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -7360,7 +7474,7 @@
           "bytesInOutput": 12916
         },
         "node_modules/tabulator-tables/src/js/core/tools/Helpers.js": {
-          "bytesInOutput": 637
+          "bytesInOutput": 757
         },
         "node_modules/tabulator-tables/src/js/core/tools/OptionsList.js": {
           "bytesInOutput": 588
@@ -7375,7 +7489,7 @@
           "bytesInOutput": 8028
         },
         "node_modules/tabulator-tables/src/js/core/ColumnManager.js": {
-          "bytesInOutput": 9171
+          "bytesInOutput": 9249
         },
         "node_modules/tabulator-tables/src/js/core/row/RowComponent.js": {
           "bytesInOutput": 1063
@@ -7390,7 +7504,7 @@
           "bytesInOutput": 7518
         },
         "node_modules/tabulator-tables/src/js/core/RowManager.js": {
-          "bytesInOutput": 15918
+          "bytesInOutput": 15950
         },
         "node_modules/tabulator-tables/src/js/core/FooterManager.js": {
           "bytesInOutput": 1457
@@ -7483,7 +7597,7 @@
           "bytesInOutput": 456
         },
         "node_modules/tabulator-tables/src/js/modules/Ajax/Ajax.js": {
-          "bytesInOutput": 2100
+          "bytesInOutput": 2118
         },
         "node_modules/tabulator-tables/src/js/modules/Clipboard/defaults/pasteActions.js": {
           "bytesInOutput": 165
@@ -7579,7 +7693,7 @@
           "bytesInOutput": 144
         },
         "node_modules/tabulator-tables/src/js/modules/Edit/Edit.js": {
-          "bytesInOutput": 11219
+          "bytesInOutput": 11239
         },
         "node_modules/tabulator-tables/src/js/modules/Export/ExportRow.js": {
           "bytesInOutput": 107
@@ -7609,7 +7723,7 @@
           "bytesInOutput": 502
         },
         "node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/link.js": {
-          "bytesInOutput": 759
+          "bytesInOutput": 820
         },
         "node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/image.js": {
           "bytesInOutput": 469
@@ -7741,7 +7855,7 @@
           "bytesInOutput": 26
         },
         "node_modules/tabulator-tables/src/js/modules/Page/Page.js": {
-          "bytesInOutput": 15342
+          "bytesInOutput": 15348
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/defaults/readers.js": {
           "bytesInOutput": 278
@@ -7750,7 +7864,7 @@
           "bytesInOutput": 221
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/Persistence.js": {
-          "bytesInOutput": 7841
+          "bytesInOutput": 7865
         },
         "node_modules/tabulator-tables/src/js/modules/Popup/Popup.js": {
           "bytesInOutput": 5335
@@ -7888,7 +8002,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 731
+          "bytesInOutput": 737
         },
         "src/utils/parseBool.js": {
           "bytesInOutput": 70
@@ -7903,7 +8017,7 @@
           "bytesInOutput": 60
         },
         "node_modules/tabulator-tables/dist/css/tabulator_bootstrap5.min.css": {
-          "bytesInOutput": 35986
+          "bytesInOutput": 35985
         },
         "src/css/tabulator-grid.min.css": {
           "bytesInOutput": 10034
@@ -7915,7 +8029,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 457447
+      "bytes": 457811
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -7944,7 +8058,7 @@
           "bytesInOutput": 12916
         },
         "node_modules/tabulator-tables/src/js/core/tools/Helpers.js": {
-          "bytesInOutput": 637
+          "bytesInOutput": 757
         },
         "node_modules/tabulator-tables/src/js/core/tools/OptionsList.js": {
           "bytesInOutput": 588
@@ -7959,7 +8073,7 @@
           "bytesInOutput": 8028
         },
         "node_modules/tabulator-tables/src/js/core/ColumnManager.js": {
-          "bytesInOutput": 9171
+          "bytesInOutput": 9249
         },
         "node_modules/tabulator-tables/src/js/core/row/RowComponent.js": {
           "bytesInOutput": 1063
@@ -7974,7 +8088,7 @@
           "bytesInOutput": 7518
         },
         "node_modules/tabulator-tables/src/js/core/RowManager.js": {
-          "bytesInOutput": 15918
+          "bytesInOutput": 15950
         },
         "node_modules/tabulator-tables/src/js/core/FooterManager.js": {
           "bytesInOutput": 1457
@@ -8067,7 +8181,7 @@
           "bytesInOutput": 456
         },
         "node_modules/tabulator-tables/src/js/modules/Ajax/Ajax.js": {
-          "bytesInOutput": 2100
+          "bytesInOutput": 2118
         },
         "node_modules/tabulator-tables/src/js/modules/Clipboard/defaults/pasteActions.js": {
           "bytesInOutput": 165
@@ -8163,7 +8277,7 @@
           "bytesInOutput": 144
         },
         "node_modules/tabulator-tables/src/js/modules/Edit/Edit.js": {
-          "bytesInOutput": 11219
+          "bytesInOutput": 11239
         },
         "node_modules/tabulator-tables/src/js/modules/Export/ExportRow.js": {
           "bytesInOutput": 107
@@ -8193,7 +8307,7 @@
           "bytesInOutput": 502
         },
         "node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/link.js": {
-          "bytesInOutput": 759
+          "bytesInOutput": 820
         },
         "node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/image.js": {
           "bytesInOutput": 469
@@ -8325,7 +8439,7 @@
           "bytesInOutput": 26
         },
         "node_modules/tabulator-tables/src/js/modules/Page/Page.js": {
-          "bytesInOutput": 15342
+          "bytesInOutput": 15348
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/defaults/readers.js": {
           "bytesInOutput": 278
@@ -8334,7 +8448,7 @@
           "bytesInOutput": 221
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/Persistence.js": {
-          "bytesInOutput": 7841
+          "bytesInOutput": 7865
         },
         "node_modules/tabulator-tables/src/js/modules/Popup/Popup.js": {
           "bytesInOutput": 5335
@@ -8472,7 +8586,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 731
+          "bytesInOutput": 737
         },
         "src/utils/parseBool.js": {
           "bytesInOutput": 70
@@ -8490,7 +8604,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 411170
+      "bytes": 411535
     },
     "dist/tel-input.min.js": {
       "imports": [],
@@ -8498,16 +8612,16 @@
       "entryPoint": "src/tel-input.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 37742
+          "bytesInOutput": 38134
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 2431
+          "bytesInOutput": 2493
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 254704
+          "bytesInOutput": 254708
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8525,7 +8639,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 731
+          "bytesInOutput": 737
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
@@ -8552,16 +8666,16 @@
           "bytesInOutput": 60
         },
         "src/css/tel-input.min.css": {
-          "bytesInOutput": 4014
+          "bytesInOutput": 4405
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 159
         },
         "src/tel-input.js": {
-          "bytesInOutput": 294
+          "bytesInOutput": 632
         }
       },
-      "bytes": 303026
+      "bytes": 304219
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8569,16 +8683,16 @@
       "entryPoint": "src/tel-input.raw.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 37742
+          "bytesInOutput": 38134
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 2431
+          "bytesInOutput": 2493
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 254704
+          "bytesInOutput": 254708
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8596,7 +8710,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 731
+          "bytesInOutput": 737
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
@@ -8626,7 +8740,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 298588
+      "bytes": 299052
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -8781,7 +8895,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 731
+          "bytesInOutput": 737
         },
         "src/utils/ce.js": {
           "bytesInOutput": 36
@@ -8823,7 +8937,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 314526
+      "bytes": 314532
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -8978,7 +9092,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 731
+          "bytesInOutput": 737
         },
         "src/utils/ce.js": {
           "bytesInOutput": 36
@@ -9014,7 +9128,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 313360
+      "bytes": 313366
     },
     "dist/tom-select.min.js": {
       "imports": [],
