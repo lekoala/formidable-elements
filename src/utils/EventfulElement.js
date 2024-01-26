@@ -4,19 +4,19 @@ import replaceCallbacks from "./replaceCallbacks.js";
 /**
  * @var {IntersectionObserver}
  */
-const observer = new window.IntersectionObserver((entries, observerRef) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
+const observer = new window.IntersectionObserver((entries, obs) => {
+  entries
+    .filter((entry) => entry.isIntersecting)
+    .forEach((entry) => {
       /**
        * @type {EventfulElement}
        */
       //@ts-ignore
       const target = entry.target;
-      observerRef.unobserve(target);
+      obs.unobserve(target);
       target.isCreated = true;
       target.created();
-    }
-  });
+    });
 });
 
 /**

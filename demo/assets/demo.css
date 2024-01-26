@@ -1,0 +1,10 @@
+header {
+    position: sticky;
+    background: #eee;
+    padding: 1em;
+    margin-bottom: 2rem;
+}
+
+header a {
+    color: #333;
+}

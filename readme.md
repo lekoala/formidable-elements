@@ -34,6 +34,7 @@ And some custom made stuff as well:
 - anchor-ed, a simple alternative to floating ui
 - locale-provider
 - progress-button
+- hi-mark
 
 ## Documentation
 
