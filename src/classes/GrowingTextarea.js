@@ -8,14 +8,6 @@ const events = ["input", "focusout"];
  * Set rows=1 to avoid layout shift in your html
  */
 class GrowingTextarea extends HTMLElement {
-  /**
-   * @returns {HTMLTextAreaElement}
-   */
-  get el() {
-    //@ts-ignore
-    return this.firstElementChild;
-  }
-
   get value() {
     return this.el.value;
   }
@@ -25,10 +17,9 @@ class GrowingTextarea extends HTMLElement {
   }
 
   parsedCallback() {
+    this.el = this.querySelector("textarea");
     this.handleEvent();
-    events.forEach((type) => {
-      this.addEventListener(type, this);
-    });
+    events.forEach((t) => this.addEventListener(t, this));
   }
 
   handleEvent = (ev = null) => {
@@ -37,16 +28,15 @@ class GrowingTextarea extends HTMLElement {
       el.value = el.value.trim();
     }
     if (el instanceof HTMLTextAreaElement && el.scrollHeight > 0) {
-      el.style.overflow = "hidden";
-      el.style.height = "0";
-      el.style.height = el.scrollHeight + "px";
+      const s = el.style;
+      s.overflow = "hidden";
+      s.height = "0";
+      s.height = el.scrollHeight + "px";
     }
   };
 
   disconnectedCallback() {
-    events.forEach((type) => {
-      this.removeEventListener(type, this);
-    });
+    events.forEach((t) => this.removeEventListener(t, this));
   }
 }
 

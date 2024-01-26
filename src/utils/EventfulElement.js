@@ -52,9 +52,7 @@ class EventfulElement extends FormidableElement {
 
   connectedCallback() {
     super.connectedCallback();
-    this.events.forEach((type) => {
-      this.addEventListener(type, this);
-    });
+    this.events.forEach((t) => this.addEventListener(t, this));
   }
 
   // Use arrow function to make sure that the scope is always this and cannot be rebound
@@ -67,9 +65,7 @@ class EventfulElement extends FormidableElement {
     if (this.lazy && this.isCreated) {
       observer.unobserve(this);
     }
-    this.events.forEach((type) => {
-      this.removeEventListener(type, this);
-    });
+    this.events.forEach((t) => this.removeEventListener(t, this));
     super.disconnectedCallback();
   }
 }
