@@ -72,7 +72,7 @@ class TelInput extends EventfulElement {
 
     // show formatted value
     if (this.iti.isValidNumber() && !this.dataset.keepFormat) {
-      this.iti.setNumber(this.iti.getNumber(0));
+      this.iti.setNumber(this.iti.getNumber());
     }
   }
 
@@ -152,13 +152,17 @@ class TelInput extends EventfulElement {
 
     const type = this.type;
 
+    // full screen for small screens
+    const fs = document.documentElement.clientWidth < 768;
+
     // Disable by default the flags, make it opt-in
     this.config = Object.assign(
       {
         initialCountry: "auto",
         showFlags: false,
-        countrySearch: false,
+        countrySearch: fs,
         fixDropdownWidth: false,
+        useFullscreenPopup: fs,
         showSelectedDialCode: true, // required when showFlags is false
         preferredCountries: [systemLocale.split("-")[1]],
         i18n: localeProvider(name),

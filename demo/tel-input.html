@@ -58,6 +58,12 @@
             </tel-input>
         </div>
         <div class="mb-3">
+            <label for="mobile_phone_intl" class="form-label">My mobile phone (international display format)</label>
+            <tel-input data-update-on-input="true" data-config='{"nationalMode": false}'><!-- type is auto detected -->
+                <input type="tel" id="mphone" name="mobile_phone_intl" class="form-control">
+            </tel-input>
+        </div>
+        <div class="mb-3">
             <label for="limited" class="form-label">Limited countries (with value)</label>
             <tel-input data-config='{"onlyCountries": ["be","lu","nl"]}'>
                 <input type="tel" id="limited" name="limited" class="form-control" value="+32 0471 234 567">

@@ -1,29 +1,29 @@
 .iti {
     position: relative;
-    display: inline-block
+    display: inline-block;
 }
 
 .iti * {
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 .iti__hide {
-    display: none
+    display: none;
 }
 
 .iti__v-hide {
-    visibility: hidden
+    visibility: hidden;
 }
 
 .iti input.iti__tel-input,
-.iti input.iti__tel-input[type=tel],
-.iti input.iti__tel-input[type=text] {
+.iti input.iti__tel-input[type=text],
+.iti input.iti__tel-input[type=tel] {
     position: relative;
     z-index: 0;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     padding-right: 36px;
-    margin-right: 0
+    margin-right: 0;
 }
 
 .iti__flag-container {
@@ -31,7 +31,7 @@
     top: 0;
     bottom: 0;
     right: 0;
-    padding: 1px
+    padding: 1px;
 }
 
 .iti__selected-flag {
@@ -40,7 +40,7 @@
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 0 6px 0 8px
+    padding: 0 6px 0 8px;
 }
 
 .iti__arrow {
@@ -49,157 +49,171 @@
     height: 0;
     border-left: 3px solid transparent;
     border-right: 3px solid transparent;
-    border-top: 4px solid #555
+    border-top: 4px solid #555;
 }
 
 [dir=rtl] .iti__arrow {
     margin-right: 6px;
-    margin-left: 0
+    margin-left: 0;
 }
 
 .iti__arrow--up {
     border-top: none;
-    border-bottom: 4px solid #555
+    border-bottom: 4px solid #555;
 }
 
 .iti__dropdown-content {
+    border-radius: 3px;
+    background-color: white;
+}
+
+.iti--inline-dropdown .iti__dropdown-content {
     position: absolute;
     z-index: 2;
+    margin-top: 3px;
     margin-left: -1px;
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
-    background-color: #fff;
     border: 1px solid #ccc;
-    max-height: 200px;
-    overflow-y: scroll;
-    -webkit-overflow-scrolling: touch
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 .iti__dropdown-content--dropup {
     bottom: 100%;
-    margin-bottom: -1px
+    margin-bottom: 3px;
 }
 
 .iti__search-input {
     width: 100%;
-    border-width: 0
+    border-width: 0;
+    border-radius: 3px;
+    padding: 9px 12px;
+}
+
+.iti__search-input+.iti__country-list {
+    border-top: 1px solid #ccc;
 }
 
 .iti__country-list {
     list-style: none;
     padding: 0;
-    margin: 0
+    margin: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.iti--inline-dropdown .iti__country-list {
+    max-height: 185px;
 }
 
 .iti--flexible-dropdown-width .iti__country-list {
-    white-space: nowrap
+    white-space: nowrap;
 }
 
-@media (max-width:500px) {
+@media (max-width: 500px) {
     .iti--flexible-dropdown-width .iti__country-list {
-        white-space: normal
+        white-space: normal;
     }
 }
 
 .iti__flag-box {
     display: inline-block;
-    width: 20px
+    width: 20px;
 }
 
 .iti__divider {
     padding-bottom: 5px;
     margin-bottom: 5px;
-    border-bottom: 1px solid #ccc
+    border-bottom: 1px solid #ccc;
 }
 
 .iti__country {
     display: flex;
     align-items: center;
-    padding: 5px 10px;
-    outline: 0
+    padding: 8px 8px;
+    outline: none;
 }
 
 .iti__dial-code {
-    color: #999
+    color: #999;
 }
 
 .iti__country.iti__highlight {
-    background-color: rgba(0, 0, 0, .05)
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
-.iti__country-name,
-.iti__flag-box {
-    margin-right: 6px
+.iti__flag-box,
+.iti__country-name {
+    margin-right: 8px;
 }
 
-[dir=rtl] .iti__country-name,
-[dir=rtl] .iti__flag-box {
+[dir=rtl] .iti__flag-box,
+[dir=rtl] .iti__country-name {
     margin-right: 0;
-    margin-left: 6px
+    margin-left: 8px;
 }
 
 .iti--allow-dropdown input.iti__tel-input,
-.iti--allow-dropdown input.iti__tel-input[type=tel],
 .iti--allow-dropdown input.iti__tel-input[type=text],
-.iti--separate-dial-code input.iti__tel-input,
-.iti--separate-dial-code input.iti__tel-input[type=tel],
-.iti--separate-dial-code input.iti__tel-input[type=text] {
+.iti--allow-dropdown input.iti__tel-input[type=tel],
+.iti--show-selected-dial-code input.iti__tel-input,
+.iti--show-selected-dial-code input.iti__tel-input[type=text],
+.iti--show-selected-dial-code input.iti__tel-input[type=tel] {
     padding-right: 6px;
     padding-left: 52px;
-    margin-left: 0
+    margin-left: 0;
 }
 
 [dir=rtl] .iti--allow-dropdown input.iti__tel-input,
-[dir=rtl] .iti--allow-dropdown input.iti__tel-input[type=tel],
 [dir=rtl] .iti--allow-dropdown input.iti__tel-input[type=text],
-[dir=rtl] .iti--separate-dial-code input.iti__tel-input,
-[dir=rtl] .iti--separate-dial-code input.iti__tel-input[type=tel],
-[dir=rtl] .iti--separate-dial-code input.iti__tel-input[type=text] {
+[dir=rtl] .iti--allow-dropdown input.iti__tel-input[type=tel],
+[dir=rtl] .iti--show-selected-dial-code input.iti__tel-input,
+[dir=rtl] .iti--show-selected-dial-code input.iti__tel-input[type=text],
+[dir=rtl] .iti--show-selected-dial-code input.iti__tel-input[type=tel] {
     padding-right: 52px;
     padding-left: 6px;
-    margin-right: 0
+    margin-right: 0;
 }
 
 .iti--allow-dropdown .iti__flag-container,
-.iti--separate-dial-code .iti__flag-container {
+.iti--show-selected-dial-code .iti__flag-container {
     right: auto;
-    left: 0
+    left: 0;
 }
 
 [dir=rtl] .iti--allow-dropdown .iti__flag-container,
-[dir=rtl] .iti--separate-dial-code .iti__flag-container {
+[dir=rtl] .iti--show-selected-dial-code .iti__flag-container {
     right: 0;
-    left: auto
+    left: auto;
 }
 
 .iti--allow-dropdown .iti__flag-container:hover {
-    cursor: pointer
+    cursor: pointer;
 }
 
 .iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
-    background-color: rgba(0, 0, 0, .05)
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
-.iti--allow-dropdown .iti__flag-container:has(+input[disabled]):hover,
-.iti--allow-dropdown .iti__flag-container:has(+input[readonly]):hover {
-    cursor: default
+.iti--allow-dropdown .iti__flag-container:has(+ input[disabled]):hover,
+.iti--allow-dropdown .iti__flag-container:has(+ input[readonly]):hover {
+    cursor: default;
 }
 
-.iti--allow-dropdown .iti__flag-container:has(+input[disabled]):hover .iti__selected-flag,
-.iti--allow-dropdown .iti__flag-container:has(+input[readonly]):hover .iti__selected-flag {
-    background-color: transparent
+.iti--allow-dropdown .iti__flag-container:has(+ input[disabled]):hover .iti__selected-flag,
+.iti--allow-dropdown .iti__flag-container:has(+ input[readonly]):hover .iti__selected-flag {
+    background-color: transparent;
 }
 
-.iti--separate-dial-code .iti__selected-flag {
-    background-color: rgba(0, 0, 0, .05)
+.iti--show-selected-dial-code .iti__selected-flag {
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
-.iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
-    margin-left: 6px
+.iti--show-selected-dial-code.iti--show-flags .iti__selected-dial-code {
+    margin-left: 6px;
 }
 
-[dir=rtl] .iti--separate-dial-code.iti--show-flags .iti__selected-dial-code {
+[dir=rtl] .iti--show-selected-dial-code.iti--show-flags .iti__selected-dial-code {
     margin-left: 0;
-    margin-right: 6px
+    margin-right: 6px;
 }
 
 .iti--container {
@@ -207,15 +221,15 @@
     top: -1000px;
     left: -1000px;
     z-index: 1060;
-    padding: 1px
+    padding: 1px;
 }
 
 .iti--container:hover {
-    cursor: pointer
+    cursor: pointer;
 }
 
 .iti--fullscreen-popup.iti--container {
-    background-color: rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     bottom: 0;
     left: 0;
@@ -224,15 +238,21 @@
     padding: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: center
+    justify-content: center;
+}
+
+.iti--fullscreen-popup.iti--container.iti--country-search {
+    justify-content: flex-start;
 }
 
 .iti--fullscreen-popup .iti__dropdown-content {
+    display: flex;
+    flex-direction: column;
     max-height: 100%;
-    position: relative
+    position: relative;
 }
 
 .iti--fullscreen-popup .iti__country {
     padding: 10px 10px;
-    line-height: 1.5em
+    line-height: 1.5em;
 }

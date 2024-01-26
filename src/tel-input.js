@@ -13,6 +13,9 @@ injectStyles(
   .iti__flag + .iti__selected-dial-code { margin-inline-start: 6px }
   .iti__selected-dial-code { min-width: 3ch }
   .iti__arrow { border: none }
+  .iti__dropdown-content { overflow: hidden }
+  .iti--allow-dropdown .iti__flag-container .iti__selected-flag { background-color: var(--bs-tertiary-bg, rgba(0,0,0,.05));}
+  .iti--allow-dropdown .iti__flag-container .iti__selected-flag { border-top-left-radius: var(--bs-border-radius); border-bottom-left-radius: var(--bs-border-radius)}
   .input-group .iti .form-control { border-top-right-radius: 0; border-bottom-right-radius: 0}`
 );
 
