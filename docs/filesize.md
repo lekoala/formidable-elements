@@ -101,7 +101,7 @@
    ├ src/classes/tabulator/Edit/editors/customInput.js                                                         791b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Download/defaults/downloaders/csv.js                         784b     0.2%
    ├ node_modules/tabulator-tables/src/js/core/tools/Helpers.js                                                757b     0.2%
-   ├ src/utils/EventfulElement.js                                                                              737b     0.2%
+   ├ src/utils/EventfulElement.js                                                                              733b     0.2%
    ├ node_modules/tabulator-tables/src/js/core/tools/DeprecationAdvisor.js                                     725b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/buttonCross.js                    724b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Page/defaults/pageCounters/rows.js                           710b     0.2%
@@ -293,7 +293,7 @@
    ├ src/classes/tabulator/Edit/editors/customInput.js                                                         791b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Download/defaults/downloaders/csv.js                         784b     0.2%
    ├ node_modules/tabulator-tables/src/js/core/tools/Helpers.js                                                757b     0.2%
-   ├ src/utils/EventfulElement.js                                                                              737b     0.2%
+   ├ src/utils/EventfulElement.js                                                                              733b     0.2%
    ├ node_modules/tabulator-tables/src/js/core/tools/DeprecationAdvisor.js                                     725b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/buttonCross.js                    724b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Page/defaults/pageCounters/rows.js                           710b     0.2%
@@ -414,7 +414,7 @@
    ├ node_modules/@tiptap/extension-italic/dist/index.js                                                       906b     0.3%
    ├ node_modules/@tiptap/extension-hard-break/dist/index.js                                                   882b     0.3%
    ├ node_modules/@tiptap/extension-strike/dist/index.js                                                       830b     0.3%
-   ├ src/utils/EventfulElement.js                                                                              737b     0.2%
+   ├ src/utils/EventfulElement.js                                                                              733b     0.2%
    ├ node_modules/@tiptap/extension-image/dist/index.js                                                        728b     0.2%
    ├ node_modules/@tiptap/extension-code/dist/index.js                                                         662b     0.2%
    ├ node_modules/@tiptap/extension-history/dist/index.js                                                      620b     0.2%
@@ -469,7 +469,7 @@
    ├ node_modules/@tiptap/extension-italic/dist/index.js                                                       906b     0.3%
    ├ node_modules/@tiptap/extension-hard-break/dist/index.js                                                   882b     0.3%
    ├ node_modules/@tiptap/extension-strike/dist/index.js                                                       830b     0.3%
-   ├ src/utils/EventfulElement.js                                                                              737b     0.2%
+   ├ src/utils/EventfulElement.js                                                                              733b     0.2%
    ├ node_modules/@tiptap/extension-image/dist/index.js                                                        728b     0.2%
    ├ node_modules/@tiptap/extension-code/dist/index.js                                                         662b     0.2%
    ├ node_modules/@tiptap/extension-history/dist/index.js                                                      620b     0.2%
@@ -499,7 +499,7 @@
    ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     37.2kb   12.5%
    ├ src/css/tel-input.min.css                                                                                 4.3kb    1.4%
    ├ src/classes/TelInput.js                                                                                   2.4kb    0.8%
-   ├ src/utils/EventfulElement.js                                                                              737b     0.2%
+   ├ src/utils/EventfulElement.js                                                                              733b     0.2%
    ├ src/tel-input.js                                                                                          632b     0.2%
    ├ src/utils/fetchWrapper.js                                                                                 445b     0.1%
    ├ src/utils/fetchJson.js                                                                                    407b     0.1%
@@ -521,7 +521,7 @@
    ├ node_modules/intl-tel-input/build/js/utils.js                                                           248.7kb   85.2%
    ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     37.2kb   12.8%
    ├ src/classes/TelInput.js                                                                                   2.4kb    0.8%
-   ├ src/utils/EventfulElement.js                                                                              737b     0.2%
+   ├ src/utils/EventfulElement.js                                                                              733b     0.2%
    ├ src/utils/fetchWrapper.js                                                                                 445b     0.1%
    ├ src/utils/fetchJson.js                                                                                    407b     0.1%
    ├ src/utils/FormidableElement.js                                                                            365b     0.1%
@@ -699,7 +699,7 @@
    ├ node_modules/squire-rte/dist/squire-raw.mjs                                                              50.5kb   74.4%
    ├ src/utils/bootstrap-icons.js                                                                              7.2kb   10.6%
    ├ src/classes/SquireEditor.js                                                                               6.4kb    9.5%
-   ├ src/utils/EventfulElement.js                                                                              737b     1.1%
+   ├ src/utils/EventfulElement.js                                                                              733b     1.1%
    ├ src/css/squire-editor.min.css                                                                             724b     1.0%
    ├ src/utils/FormidableElement.js                                                                            365b     0.5%
    ├ src/utils/setHTML.js                                                                                      320b     0.5%
@@ -720,7 +720,7 @@
    ├ node_modules/squire-rte/dist/squire-raw.mjs                                                              50.5kb   75.4%
    ├ src/utils/bootstrap-icons.js                                                                              7.2kb   10.7%
    ├ src/classes/SquireEditor.js                                                                               6.4kb    9.6%
-   ├ src/utils/EventfulElement.js                                                                              737b     1.1%
+   ├ src/utils/EventfulElement.js                                                                              733b     1.1%
    ├ src/utils/FormidableElement.js                                                                            365b     0.5%
    ├ src/utils/setHTML.js                                                                                      320b     0.5%
    ├ src/utils/replaceCallbacks.js                                                                             163b     0.2%
@@ -907,7 +907,7 @@
   dist/count-up.min.js                                                                                         8.2kb  100.0%
    ├ node_modules/countup.js/dist/countUp.min.js                                                               5.5kb   67.2%
    ├ src/classes/CountUpElement.js                                                                             801b     9.5%
-   ├ src/utils/EventfulElement.js                                                                              729b     8.7%
+   ├ src/utils/EventfulElement.js                                                                              725b     8.6%
    ├ src/utils/FormidableElement.js                                                                            360b     4.3%
    ├ src/utils/unformatNumber.js                                                                               244b     2.9%
    ├ src/utils/replaceCallbacks.js                                                                             155b     1.8%
@@ -956,9 +956,9 @@
    └ src/utils/isString.js                                                                                      28b     0.5%
 
   dist/progress-button.min.js                                                                                  4.9kb  100.0%
-   ├ src/classes/ProgressButton.js                                                                             2.4kb   49.1%
-   ├ src/utils/EventfulElement.js                                                                              729b    14.5%
-   ├ src/utils/fetchWrapper.js                                                                                 441b     8.7%
+   ├ src/classes/ProgressButton.js                                                                             2.4kb   49.2%
+   ├ src/utils/EventfulElement.js                                                                              725b    14.4%
+   ├ src/utils/fetchWrapper.js                                                                                 441b     8.8%
    ├ src/utils/fetchJson.js                                                                                    405b     8.0%
    ├ src/utils/FormidableElement.js                                                                            360b     7.1%
    ├ src/utils/replaceCallbacks.js                                                                             155b     3.1%
@@ -1026,10 +1026,10 @@
    ├ src/utils/defineEl.js                                                                                      56b     4.2%
    └ src/hi-mark.js                                                                                             38b     2.9%
 
-  dist/growing-textarea.min.js                                                                                 787b   100.0%
-   ├ src/classes/GrowingTextarea.js                                                                            557b    70.8%
-   ├ src/utils/whenParsed.js                                                                                   117b    14.9%
-   ├ src/utils/defineEl.js                                                                                      56b     7.1%
+  dist/growing-textarea.min.js                                                                                 781b   100.0%
+   ├ src/classes/GrowingTextarea.js                                                                            551b    70.6%
+   ├ src/utils/whenParsed.js                                                                                   117b    15.0%
+   ├ src/utils/defineEl.js                                                                                      56b     7.2%
    └ src/growing-textarea.js                                                                                    32b     4.1%
 
   dist/hi-mark.raw.min.js                                                                                      567b   100.0%
@@ -1056,4 +1056,4 @@
   dist\tel-input.min.js           297.1kb
   ...and 31 more output files...
 
-Done in 99ms
+Done in 977ms

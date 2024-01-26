@@ -499,7 +499,7 @@
       "format": "esm"
     },
     "src/utils/EventfulElement.js": {
-      "bytes": 1949,
+      "bytes": 1903,
       "imports": [
         {
           "path": "src/utils/FormidableElement.js",
@@ -1208,7 +1208,7 @@
       "format": "esm"
     },
     "src/classes/GrowingTextarea.js": {
-      "bytes": 1184,
+      "bytes": 1065,
       "imports": [
         {
           "path": "src/utils/whenParsed.js",
@@ -6520,7 +6520,7 @@
           "bytesInOutput": 360
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 729
+          "bytesInOutput": 725
         },
         "src/utils/unformatNumber.js": {
           "bytesInOutput": 244
@@ -6544,7 +6544,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 8395
+      "bytes": 8391
     },
     "dist/filepond-input.min.js": {
       "imports": [],
@@ -7010,7 +7010,7 @@
           "bytesInOutput": 117
         },
         "src/classes/GrowingTextarea.js": {
-          "bytesInOutput": 557
+          "bytesInOutput": 551
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -7019,7 +7019,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 787
+      "bytes": 781
     },
     "dist/hi-mark.min.js": {
       "imports": [],
@@ -7212,7 +7212,7 @@
           "bytesInOutput": 360
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 729
+          "bytesInOutput": 725
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
@@ -7236,7 +7236,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 5041
+      "bytes": 5037
     },
     "dist/squire-editor.min.js": {
       "imports": [
@@ -7268,7 +7268,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 737
+          "bytesInOutput": 733
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
@@ -7307,7 +7307,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 69572
+      "bytes": 69568
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -7339,7 +7339,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 737
+          "bytesInOutput": 733
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
@@ -7372,7 +7372,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 68666
+      "bytes": 68662
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -8002,7 +8002,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 737
+          "bytesInOutput": 733
         },
         "src/utils/parseBool.js": {
           "bytesInOutput": 70
@@ -8029,7 +8029,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 457811
+      "bytes": 457807
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -8586,7 +8586,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 737
+          "bytesInOutput": 733
         },
         "src/utils/parseBool.js": {
           "bytesInOutput": 70
@@ -8604,7 +8604,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 411535
+      "bytes": 411531
     },
     "dist/tel-input.min.js": {
       "imports": [],
@@ -8639,7 +8639,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 737
+          "bytesInOutput": 733
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
@@ -8675,7 +8675,7 @@
           "bytesInOutput": 632
         }
       },
-      "bytes": 304219
+      "bytes": 304215
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8710,7 +8710,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 737
+          "bytesInOutput": 733
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
@@ -8740,7 +8740,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 299052
+      "bytes": 299048
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -8895,7 +8895,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 737
+          "bytesInOutput": 733
         },
         "src/utils/ce.js": {
           "bytesInOutput": 36
@@ -8937,7 +8937,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 314532
+      "bytes": 314528
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -9092,7 +9092,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 737
+          "bytesInOutput": 733
         },
         "src/utils/ce.js": {
           "bytesInOutput": 36
@@ -9128,7 +9128,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 313366
+      "bytes": 313362
     },
     "dist/tom-select.min.js": {
       "imports": [],
