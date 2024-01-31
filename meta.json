@@ -168,7 +168,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags.js": {
-      "bytes": 77066,
+      "bytes": 75893,
       "imports": [],
       "format": "esm"
     },
@@ -1046,7 +1046,7 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-      "bytes": 23392,
+      "bytes": 23414,
       "imports": [
         {
           "path": "node_modules/@floating-ui/core/dist/floating-ui.core.mjs",
@@ -4569,7 +4569,7 @@
       "format": "esm"
     },
     "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-      "bytes": 106928,
+      "bytes": 106400,
       "imports": [],
       "format": "cjs"
     },
@@ -4691,7 +4691,7 @@
       "format": "esm"
     },
     "node_modules/prosemirror-model/dist/index.js": {
-      "bytes": 121049,
+      "bytes": 121075,
       "imports": [
         {
           "path": "node_modules/orderedmap/dist/index.js",
@@ -4702,7 +4702,7 @@
       "format": "esm"
     },
     "node_modules/prosemirror-transform/dist/index.js": {
-      "bytes": 76014,
+      "bytes": 78052,
       "imports": [
         {
           "path": "node_modules/prosemirror-model/dist/index.js",
@@ -4713,7 +4713,7 @@
       "format": "esm"
     },
     "node_modules/prosemirror-state/dist/index.js": {
-      "bytes": 36118,
+      "bytes": 36248,
       "imports": [
         {
           "path": "node_modules/prosemirror-model/dist/index.js",
@@ -4740,7 +4740,7 @@
       "format": "esm"
     },
     "node_modules/prosemirror-view/dist/index.js": {
-      "bytes": 228085,
+      "bytes": 233525,
       "imports": [
         {
           "path": "node_modules/prosemirror-state/dist/index.js",
@@ -4771,8 +4771,8 @@
       ],
       "format": "esm"
     },
-    "node_modules/w3c-keyname/index.es.js": {
-      "bytes": 2716,
+    "node_modules/w3c-keyname/index.js": {
+      "bytes": 2630,
       "imports": [],
       "format": "esm"
     },
@@ -4780,7 +4780,7 @@
       "bytes": 4730,
       "imports": [
         {
-          "path": "node_modules/w3c-keyname/index.es.js",
+          "path": "node_modules/w3c-keyname/index.js",
           "kind": "import-statement",
           "original": "w3c-keyname"
         },
@@ -4858,7 +4858,7 @@
       "format": "esm"
     },
     "node_modules/prosemirror-schema-list/dist/index.js": {
-      "bytes": 11818,
+      "bytes": 11880,
       "imports": [
         {
           "path": "node_modules/prosemirror-transform/dist/index.js",
@@ -4890,7 +4890,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/core/dist/index.js": {
-      "bytes": 160257,
+      "bytes": 167607,
       "imports": [
         {
           "path": "node_modules/@tiptap/pm/state/dist/index.js",
@@ -5110,8 +5110,8 @@
       ],
       "format": "esm"
     },
-    "node_modules/rope-sequence/dist/index.es.js": {
-      "bytes": 7344,
+    "node_modules/rope-sequence/dist/index.js": {
+      "bytes": 7310,
       "imports": [],
       "format": "esm"
     },
@@ -5119,7 +5119,7 @@
       "bytes": 17893,
       "imports": [
         {
-          "path": "node_modules/rope-sequence/dist/index.es.js",
+          "path": "node_modules/rope-sequence/dist/index.js",
           "kind": "import-statement",
           "original": "rope-sequence"
         },
@@ -5148,7 +5148,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-history/dist/index.js": {
-      "bytes": 1333,
+      "bytes": 1156,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5229,7 +5229,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-link/dist/index.js": {
-      "bytes": 12237,
+      "bytes": 12343,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -6212,7 +6212,7 @@
       "entryPoint": "src/bs-tags.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 28545
+          "bytesInOutput": 28210
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6224,16 +6224,16 @@
           "bytesInOutput": 155
         },
         "src/utils/whenParsed.js": {
-          "bytesInOutput": 118
+          "bytesInOutput": 117
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 362
+          "bytesInOutput": 360
         },
         "src/utils/rmElements.js": {
           "bytesInOutput": 106
         },
         "src/classes/BsTags.js": {
-          "bytesInOutput": 225
+          "bytesInOutput": 224
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6248,7 +6248,7 @@
           "bytesInOutput": 42
         }
       },
-      "bytes": 31049
+      "bytes": 30710
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -6256,7 +6256,7 @@
       "entryPoint": "src/bs-tags.raw.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 28545
+          "bytesInOutput": 28210
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6268,16 +6268,16 @@
           "bytesInOutput": 155
         },
         "src/utils/whenParsed.js": {
-          "bytesInOutput": 118
+          "bytesInOutput": 117
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 362
+          "bytesInOutput": 360
         },
         "src/utils/rmElements.js": {
           "bytesInOutput": 106
         },
         "src/classes/BsTags.js": {
-          "bytesInOutput": 225
+          "bytesInOutput": 224
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6286,7 +6286,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 29698
+      "bytes": 29359
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -6878,7 +6878,7 @@
           "bytesInOutput": 7069
         },
         "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-          "bytesInOutput": 6585
+          "bytesInOutput": 6589
         },
         "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs": {
           "bytesInOutput": 2059
@@ -6920,7 +6920,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 23408
+      "bytes": 23412
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -8612,7 +8612,7 @@
       "entryPoint": "src/tel-input.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 38134
+          "bytesInOutput": 38073
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
@@ -8675,7 +8675,7 @@
           "bytesInOutput": 632
         }
       },
-      "bytes": 304215
+      "bytes": 304154
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8683,7 +8683,7 @@
       "entryPoint": "src/tel-input.raw.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 38134
+          "bytesInOutput": 38073
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
@@ -8740,7 +8740,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 299048
+      "bytes": 298987
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -8751,25 +8751,25 @@
           "bytesInOutput": 1439
         },
         "node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 43238
+          "bytesInOutput": 43361
         },
         "node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 27949
+          "bytesInOutput": 28782
         },
         "node_modules/prosemirror-state/dist/index.js": {
-          "bytesInOutput": 11828
+          "bytesInOutput": 11827
         },
         "node_modules/@tiptap/pm/state/dist/index.js": {
           "bytesInOutput": 0
         },
         "node_modules/prosemirror-view/dist/index.js": {
-          "bytesInOutput": 89784
+          "bytesInOutput": 92049
         },
         "node_modules/@tiptap/pm/view/dist/index.js": {
           "bytesInOutput": 0
         },
-        "node_modules/w3c-keyname/index.es.js": {
-          "bytesInOutput": 1635
+        "node_modules/w3c-keyname/index.js": {
+          "bytesInOutput": 1495
         },
         "node_modules/prosemirror-keymap/dist/index.js": {
           "bytesInOutput": 1155
@@ -8784,7 +8784,7 @@
           "bytesInOutput": 0
         },
         "node_modules/prosemirror-commands/dist/index.js": {
-          "bytesInOutput": 8682
+          "bytesInOutput": 9292
         },
         "node_modules/@tiptap/pm/commands/dist/index.js": {
           "bytesInOutput": 0
@@ -8796,7 +8796,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 51339
+          "bytesInOutput": 54756
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -8843,8 +8843,8 @@
         "node_modules/@tiptap/extension-hard-break/dist/index.js": {
           "bytesInOutput": 882
         },
-        "node_modules/rope-sequence/dist/index.es.js": {
-          "bytesInOutput": 3400
+        "node_modules/rope-sequence/dist/index.js": {
+          "bytesInOutput": 3394
         },
         "node_modules/prosemirror-history/dist/index.js": {
           "bytesInOutput": 5707
@@ -8853,7 +8853,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/extension-history/dist/index.js": {
-          "bytesInOutput": 620
+          "bytesInOutput": 494
         },
         "node_modules/@tiptap/extension-horizontal-rule/dist/index.js": {
           "bytesInOutput": 935
@@ -8871,10 +8871,10 @@
           "bytesInOutput": 2612
         },
         "node_modules/linkifyjs/dist/linkify.es.js": {
-          "bytesInOutput": 19343
+          "bytesInOutput": 19344
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 3666
+          "bytesInOutput": 3740
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -8937,7 +8937,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 314528
+      "bytes": 321578
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -8948,25 +8948,25 @@
           "bytesInOutput": 1439
         },
         "node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 43238
+          "bytesInOutput": 43361
         },
         "node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 27949
+          "bytesInOutput": 28782
         },
         "node_modules/prosemirror-state/dist/index.js": {
-          "bytesInOutput": 11828
+          "bytesInOutput": 11827
         },
         "node_modules/@tiptap/pm/state/dist/index.js": {
           "bytesInOutput": 0
         },
         "node_modules/prosemirror-view/dist/index.js": {
-          "bytesInOutput": 89784
+          "bytesInOutput": 92049
         },
         "node_modules/@tiptap/pm/view/dist/index.js": {
           "bytesInOutput": 0
         },
-        "node_modules/w3c-keyname/index.es.js": {
-          "bytesInOutput": 1635
+        "node_modules/w3c-keyname/index.js": {
+          "bytesInOutput": 1495
         },
         "node_modules/prosemirror-keymap/dist/index.js": {
           "bytesInOutput": 1155
@@ -8981,7 +8981,7 @@
           "bytesInOutput": 0
         },
         "node_modules/prosemirror-commands/dist/index.js": {
-          "bytesInOutput": 8682
+          "bytesInOutput": 9292
         },
         "node_modules/@tiptap/pm/commands/dist/index.js": {
           "bytesInOutput": 0
@@ -8993,7 +8993,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 51339
+          "bytesInOutput": 54756
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -9040,8 +9040,8 @@
         "node_modules/@tiptap/extension-hard-break/dist/index.js": {
           "bytesInOutput": 882
         },
-        "node_modules/rope-sequence/dist/index.es.js": {
-          "bytesInOutput": 3400
+        "node_modules/rope-sequence/dist/index.js": {
+          "bytesInOutput": 3394
         },
         "node_modules/prosemirror-history/dist/index.js": {
           "bytesInOutput": 5707
@@ -9050,7 +9050,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/extension-history/dist/index.js": {
-          "bytesInOutput": 620
+          "bytesInOutput": 494
         },
         "node_modules/@tiptap/extension-horizontal-rule/dist/index.js": {
           "bytesInOutput": 935
@@ -9068,10 +9068,10 @@
           "bytesInOutput": 2612
         },
         "node_modules/linkifyjs/dist/linkify.es.js": {
-          "bytesInOutput": 19343
+          "bytesInOutput": 19344
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 3666
+          "bytesInOutput": 3740
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -9128,7 +9128,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 313362
+      "bytes": 320412
     },
     "dist/tom-select.min.js": {
       "imports": [],

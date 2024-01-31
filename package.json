@@ -10,17 +10,17 @@
   "author": "LeKoala",
   "license": "MIT",
   "dependencies": {
-    "@floating-ui/dom": "^1.6.0",
+    "@floating-ui/dom": "^1.6.1",
     "@melloware/coloris": "^0.22.0",
-    "@tiptap/core": "^2.1.16",
-    "@tiptap/extension-image": "^2.1.16",
-    "@tiptap/extension-link": "^2.1.16",
-    "@tiptap/extension-typography": "^2.1.16",
-    "@tiptap/extension-underline": "^2.1.16",
-    "@tiptap/pm": "^2.1.16",
-    "@tiptap/starter-kit": "^2.1.16",
+    "@tiptap/core": "^2.2.1",
+    "@tiptap/extension-image": "^2.2.1",
+    "@tiptap/extension-link": "^2.2.1",
+    "@tiptap/extension-typography": "^2.2.1",
+    "@tiptap/extension-underline": "^2.2.1",
+    "@tiptap/pm": "^2.2.1",
+    "@tiptap/starter-kit": "^2.2.1",
     "bootstrap5-autocomplete": "^1.1.25",
-    "bootstrap5-tags": "^1.6.15",
+    "bootstrap5-tags": "^1.6.16",
     "cleave-es6": "^1.0.6",
     "countup.js": "^2.8.0",
     "filepond": "^4.30.6",
@@ -36,14 +36,14 @@
     "filepond-plugin-image-validate-size": "^1.2.7",
     "flatpickr": "^4.6.13",
     "inputmask": "^5.0.9-beta.32",
-    "intl-tel-input": "^19.2.14",
+    "intl-tel-input": "^19.2.15",
     "squire-rte": "^2.2.5",
     "superfile": "^1.2.1",
-    "tabulator-tables": "^5.5.3",
+    "tabulator-tables": "^5.5.4",
     "tom-select": "^2.3.1"
   },
   "devDependencies": {
-    "esbuild": "^0.19.12"
+    "esbuild": "^0.20.0"
   },
   "overrides": {
     "semver": "^7.5.3"
