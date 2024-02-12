@@ -168,7 +168,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags.js": {
-      "bytes": 75893,
+      "bytes": 76769,
       "imports": [],
       "format": "esm"
     },
@@ -1046,7 +1046,7 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-      "bytes": 23414,
+      "bytes": 22857,
       "imports": [
         {
           "path": "node_modules/@floating-ui/core/dist/floating-ui.core.mjs",
@@ -1909,7 +1909,7 @@
       "format": "esm"
     },
     "node_modules/squire-rte/dist/squire-raw.mjs": {
-      "bytes": 119992,
+      "bytes": 119751,
       "imports": [],
       "format": "esm"
     },
@@ -6212,7 +6212,7 @@
       "entryPoint": "src/bs-tags.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 28210
+          "bytesInOutput": 28556
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6227,13 +6227,13 @@
           "bytesInOutput": 117
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 360
+          "bytesInOutput": 361
         },
         "src/utils/rmElements.js": {
           "bytesInOutput": 106
         },
         "src/classes/BsTags.js": {
-          "bytesInOutput": 224
+          "bytesInOutput": 225
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6248,7 +6248,7 @@
           "bytesInOutput": 42
         }
       },
-      "bytes": 30710
+      "bytes": 31058
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -6256,7 +6256,7 @@
       "entryPoint": "src/bs-tags.raw.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 28210
+          "bytesInOutput": 28556
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6271,13 +6271,13 @@
           "bytesInOutput": 117
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 360
+          "bytesInOutput": 361
         },
         "src/utils/rmElements.js": {
           "bytesInOutput": 106
         },
         "src/classes/BsTags.js": {
-          "bytesInOutput": 224
+          "bytesInOutput": 225
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6286,7 +6286,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 29359
+      "bytes": 29707
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -6878,7 +6878,7 @@
           "bytesInOutput": 7069
         },
         "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-          "bytesInOutput": 6589
+          "bytesInOutput": 6416
         },
         "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs": {
           "bytesInOutput": 2059
@@ -6920,7 +6920,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 23412
+      "bytes": 23239
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -7250,7 +7250,7 @@
       "entryPoint": "src/squire-editor.js",
       "inputs": {
         "node_modules/squire-rte/dist/squire-raw.mjs": {
-          "bytesInOutput": 51743
+          "bytesInOutput": 51557
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7307,7 +7307,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 69568
+      "bytes": 69382
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -7321,7 +7321,7 @@
       "entryPoint": "src/squire-editor.raw.js",
       "inputs": {
         "node_modules/squire-rte/dist/squire-raw.mjs": {
-          "bytesInOutput": 51743
+          "bytesInOutput": 51557
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7372,7 +7372,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 68662
+      "bytes": 68476
     },
     "dist/superfile-input.min.js": {
       "imports": [],

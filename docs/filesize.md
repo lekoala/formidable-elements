@@ -695,8 +695,8 @@
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.1%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/squire-editor.min.js                                                                                   67.9kb  100.0%
-   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                              50.5kb   74.4%
+  dist/squire-editor.min.js                                                                                   67.8kb  100.0%
+   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                              50.3kb   74.3%
    ├ src/utils/bootstrap-icons.js                                                                              7.2kb   10.6%
    ├ src/classes/SquireEditor.js                                                                               6.4kb    9.5%
    ├ src/utils/EventfulElement.js                                                                              733b     1.1%
@@ -716,9 +716,9 @@
    ├ src/utils/hasBootstrap.js                                                                                  30b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/squire-editor.raw.min.js                                                                               67.1kb  100.0%
-   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                              50.5kb   75.4%
-   ├ src/utils/bootstrap-icons.js                                                                              7.2kb   10.7%
+  dist/squire-editor.raw.min.js                                                                               66.9kb  100.0%
+   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                              50.3kb   75.3%
+   ├ src/utils/bootstrap-icons.js                                                                              7.2kb   10.8%
    ├ src/classes/SquireEditor.js                                                                               6.4kb    9.6%
    ├ src/utils/EventfulElement.js                                                                              733b     1.1%
    ├ src/utils/FormidableElement.js                                                                            365b     0.5%
@@ -805,11 +805,11 @@
    ├ src/tom-select.raw.js                                                                                      30b     0.1%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/bs-tags.min.js                                                                                         30.0kb  100.0%
-   ├ node_modules/bootstrap5-tags/tags.js                                                                     27.5kb   91.9%
+  dist/bs-tags.min.js                                                                                         30.3kb  100.0%
+   ├ node_modules/bootstrap5-tags/tags.js                                                                     27.9kb   91.9%
    ├ node_modules/bootstrap5-tags/tags-pure.min.css                                                            1.1kb    3.8%
-   ├ src/utils/FormidableElement.js                                                                            360b     1.2%
-   ├ src/classes/BsTags.js                                                                                     224b     0.7%
+   ├ src/utils/FormidableElement.js                                                                            361b     1.2%
+   ├ src/classes/BsTags.js                                                                                     225b     0.7%
    ├ src/utils/injectStyles.js                                                                                 159b     0.5%
    ├ src/utils/replaceCallbacks.js                                                                             155b     0.5%
    ├ src/utils/whenParsed.js                                                                                   117b     0.4%
@@ -819,10 +819,10 @@
    ├ src/bs-tags.js                                                                                             42b     0.1%
    └ src/utils/isString.js                                                                                      28b     0.1%
 
-  dist/bs-tags.raw.min.js                                                                                     28.7kb  100.0%
-   ├ node_modules/bootstrap5-tags/tags.js                                                                     27.5kb   96.1%
-   ├ src/utils/FormidableElement.js                                                                            360b     1.2%
-   ├ src/classes/BsTags.js                                                                                     224b     0.8%
+  dist/bs-tags.raw.min.js                                                                                     29.0kb  100.0%
+   ├ node_modules/bootstrap5-tags/tags.js                                                                     27.9kb   96.1%
+   ├ src/utils/FormidableElement.js                                                                            361b     1.2%
+   ├ src/classes/BsTags.js                                                                                     225b     0.8%
    ├ src/utils/replaceCallbacks.js                                                                             155b     0.5%
    ├ src/utils/whenParsed.js                                                                                   117b     0.4%
    ├ src/utils/rmElements.js                                                                                   106b     0.4%
@@ -846,12 +846,12 @@
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.2%
    └ src/utils/isString.js                                                                                      29b     0.1%
 
-  dist/floating-ui.min.js                                                                                     22.9kb  100.0%
-   ├ node_modules/@floating-ui/core/dist/floating-ui.core.mjs                                                  6.9kb   30.2%
-   ├ node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs                                                    6.4kb   28.1%
-   ├ src/classes/FloatingUi.js                                                                                 4.3kb   18.8%
-   ├ node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs                                            2.0kb    8.8%
-   ├ node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs                                                1.4kb    6.0%
+  dist/floating-ui.min.js                                                                                     22.7kb  100.0%
+   ├ node_modules/@floating-ui/core/dist/floating-ui.core.mjs                                                  6.9kb   30.4%
+   ├ node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs                                                    6.3kb   27.6%
+   ├ src/classes/FloatingUi.js                                                                                 4.3kb   18.9%
+   ├ node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs                                            2.0kb    8.9%
+   ├ node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs                                                1.4kb    6.1%
    ├ src/floating-ui.js                                                                                        410b     1.8%
    ├ src/utils/FormidableElement.js                                                                            365b     1.6%
    ├ src/utils/props.js                                                                                        308b     1.3%
@@ -1056,4 +1056,4 @@
   dist\tel-input.min.js           297.0kb
   ...and 31 more output files...
 
-Done in 605ms
+Done in 1200ms
