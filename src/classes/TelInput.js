@@ -213,6 +213,11 @@ class TelInput extends EventfulElement {
     // make sure we preserve initial styles
     const styles = window.getComputedStyle(input);
     input.parentElement.style.display = styles.display;
+
+    // init value
+    if (this.value) {
+      this.classList.add("has-value");
+    }
   }
 
   destroyed() {
