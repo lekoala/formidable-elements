@@ -9,7 +9,7 @@ export default (str) => {
     return {};
   }
   if (str.includes(":") && str[0] != "{") {
-    str = `{${str.replace(/([\w]*)\s*:\s*([\w"']*)/, (m, p1, p2) => `"${p1}":${p2.replace(/'/g, '"')}`)}}`;
+    str = `{${str.replace(/([\w]*)\s*:\s*([\w"'\[\]]*)/, (m, p1, p2) => `"${p1}":${p2.replace(/'/g, '"')}`)}}`;
   }
   return JSON.parse(str);
 };

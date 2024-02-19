@@ -27,7 +27,7 @@
       "format": "esm"
     },
     "src/utils/simpleConfig.js": {
-      "bytes": 424,
+      "bytes": 428,
       "imports": [],
       "format": "esm"
     },
@@ -509,7 +509,7 @@
       "format": "esm"
     },
     "src/utils/EventfulElement.js": {
-      "bytes": 2177,
+      "bytes": 2175,
       "imports": [
         {
           "path": "src/utils/FormidableElement.js",
@@ -4609,7 +4609,7 @@
       "format": "esm"
     },
     "src/classes/TelInput.js": {
-      "bytes": 5961,
+      "bytes": 5967,
       "imports": [
         {
           "path": "node_modules/intl-tel-input/index.js",
@@ -6143,7 +6143,7 @@
           "bytesInOutput": 155
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 147
+          "bytesInOutput": 151
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 117
@@ -6167,7 +6167,7 @@
           "bytesInOutput": 27
         }
       },
-      "bytes": 7458
+      "bytes": 7462
     },
     "dist/bound-input.min.js": {
       "imports": [],
@@ -6204,7 +6204,7 @@
           "bytesInOutput": 155
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 147
+          "bytesInOutput": 151
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 117
@@ -6225,7 +6225,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 16170
+      "bytes": 16174
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -6245,7 +6245,7 @@
           "bytesInOutput": 155
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 147
+          "bytesInOutput": 151
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 118
@@ -6272,7 +6272,7 @@
           "bytesInOutput": 42
         }
       },
-      "bytes": 31206
+      "bytes": 31210
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -6292,7 +6292,7 @@
           "bytesInOutput": 155
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 147
+          "bytesInOutput": 151
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 118
@@ -6313,7 +6313,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 29855
+      "bytes": 29859
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -6345,7 +6345,7 @@
           "bytesInOutput": 155
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 147
+          "bytesInOutput": 151
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 117
@@ -6363,7 +6363,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 19284
+      "bytes": 19288
     },
     "dist/clipboard-copy.min.js": {
       "imports": [],
@@ -6380,7 +6380,7 @@
           "bytesInOutput": 155
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 147
+          "bytesInOutput": 151
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 117
@@ -6398,7 +6398,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 2060
+      "bytes": 2064
     },
     "dist/coloris-input.min.js": {
       "imports": [],
@@ -6418,7 +6418,7 @@
           "bytesInOutput": 163
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 148
+          "bytesInOutput": 152
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 121
@@ -6448,7 +6448,7 @@
           "bytesInOutput": 247
         }
       },
-      "bytes": 24779
+      "bytes": 24783
     },
     "dist/coloris-input.raw.min.js": {
       "imports": [],
@@ -6468,7 +6468,7 @@
           "bytesInOutput": 163
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 148
+          "bytesInOutput": 152
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 121
@@ -6492,7 +6492,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 15914
+      "bytes": 15918
     },
     "dist/count-down.min.js": {
       "imports": [],
@@ -6509,7 +6509,7 @@
           "bytesInOutput": 155
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 147
+          "bytesInOutput": 151
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 117
@@ -6536,7 +6536,7 @@
           "bytesInOutput": 27
         }
       },
-      "bytes": 3890
+      "bytes": 3894
     },
     "dist/count-up.min.js": {
       "imports": [],
@@ -6556,7 +6556,7 @@
           "bytesInOutput": 155
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 147
+          "bytesInOutput": 151
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 117
@@ -6565,7 +6565,7 @@
           "bytesInOutput": 359
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 864
+          "bytesInOutput": 862
         },
         "src/utils/unformatNumber.js": {
           "bytesInOutput": 244
@@ -6589,7 +6589,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 8676
+      "bytes": 8678
     },
     "dist/filepond-input.min.js": {
       "imports": [],
@@ -6639,7 +6639,7 @@
           "bytesInOutput": 163
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 148
+          "bytesInOutput": 152
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 121
@@ -6669,7 +6669,7 @@
           "bytesInOutput": 64
         }
       },
-      "bytes": 189406
+      "bytes": 189410
     },
     "dist/filepond-input.raw.min.js": {
       "imports": [],
@@ -6719,7 +6719,7 @@
           "bytesInOutput": 163
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 148
+          "bytesInOutput": 152
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 121
@@ -6737,7 +6737,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 165745
+      "bytes": 165749
     },
     "dist/flatpickr-input.min.js": {
       "imports": [],
@@ -6787,7 +6787,7 @@
           "bytesInOutput": 163
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 148
+          "bytesInOutput": 152
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 121
@@ -6835,7 +6835,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 84697
+      "bytes": 84701
     },
     "dist/flatpickr-input.raw.min.js": {
       "imports": [],
@@ -6885,7 +6885,7 @@
           "bytesInOutput": 163
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 148
+          "bytesInOutput": 152
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 121
@@ -6921,7 +6921,7 @@
           "bytesInOutput": 35
         }
       },
-      "bytes": 64956
+      "bytes": 64960
     },
     "dist/floating-ui.min.js": {
       "imports": [],
@@ -6950,7 +6950,7 @@
           "bytesInOutput": 163
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 148
+          "bytesInOutput": 152
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 121
@@ -6980,7 +6980,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 23397
+      "bytes": 23401
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -6997,7 +6997,7 @@
           "bytesInOutput": 155
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 147
+          "bytesInOutput": 151
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 117
@@ -7024,7 +7024,7 @@
           "bytesInOutput": 27
         }
       },
-      "bytes": 2497
+      "bytes": 2501
     },
     "dist/format-number.min.js": {
       "imports": [],
@@ -7041,7 +7041,7 @@
           "bytesInOutput": 155
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 147
+          "bytesInOutput": 151
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 117
@@ -7065,7 +7065,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 1885
+      "bytes": 1889
     },
     "dist/growing-textarea.min.js": {
       "imports": [],
@@ -7217,7 +7217,7 @@
           "bytesInOutput": 163
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 148
+          "bytesInOutput": 152
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 121
@@ -7241,7 +7241,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 88792
+      "bytes": 88796
     },
     "dist/locale-provider.min.js": {
       "imports": [],
@@ -7275,7 +7275,7 @@
           "bytesInOutput": 155
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 147
+          "bytesInOutput": 151
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 117
@@ -7284,7 +7284,7 @@
           "bytesInOutput": 359
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 864
+          "bytesInOutput": 862
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
@@ -7308,7 +7308,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 5322
+      "bytes": 5324
     },
     "dist/squire-editor.min.js": {
       "imports": [
@@ -7334,7 +7334,7 @@
           "bytesInOutput": 163
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 148
+          "bytesInOutput": 152
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 121
@@ -7343,7 +7343,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 873
+          "bytesInOutput": 871
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
@@ -7382,7 +7382,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 69670
+      "bytes": 69672
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -7408,7 +7408,7 @@
           "bytesInOutput": 163
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 148
+          "bytesInOutput": 152
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 121
@@ -7417,7 +7417,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 873
+          "bytesInOutput": 871
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
@@ -7450,7 +7450,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 68764
+      "bytes": 68766
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -7470,7 +7470,7 @@
           "bytesInOutput": 155
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 147
+          "bytesInOutput": 151
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 117
@@ -7491,7 +7491,7 @@
           "bytesInOutput": 245
         }
       },
-      "bytes": 5777
+      "bytes": 5781
     },
     "dist/superfile-input.raw.min.js": {
       "imports": [],
@@ -7511,7 +7511,7 @@
           "bytesInOutput": 155
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 147
+          "bytesInOutput": 151
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 117
@@ -7529,7 +7529,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 5406
+      "bytes": 5410
     },
     "dist/tabulator-grid.min.js": {
       "imports": [],
@@ -8080,7 +8080,7 @@
           "bytesInOutput": 161
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 148
+          "bytesInOutput": 152
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 121
@@ -8089,7 +8089,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 873
+          "bytesInOutput": 871
         },
         "src/utils/parseBool.js": {
           "bytesInOutput": 70
@@ -8116,7 +8116,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 465718
+      "bytes": 465720
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -8667,7 +8667,7 @@
           "bytesInOutput": 161
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 148
+          "bytesInOutput": 152
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 121
@@ -8676,7 +8676,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 873
+          "bytesInOutput": 871
         },
         "src/utils/parseBool.js": {
           "bytesInOutput": 70
@@ -8694,7 +8694,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 417887
+      "bytes": 417889
     },
     "dist/tel-input.min.js": {
       "imports": [],
@@ -8708,7 +8708,7 @@
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 2594
+          "bytesInOutput": 2598
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
           "bytesInOutput": 254708
@@ -8723,7 +8723,7 @@
           "bytesInOutput": 163
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 148
+          "bytesInOutput": 152
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 121
@@ -8732,7 +8732,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 873
+          "bytesInOutput": 871
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
@@ -8768,7 +8768,7 @@
           "bytesInOutput": 632
         }
       },
-      "bytes": 305025
+      "bytes": 305031
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8782,7 +8782,7 @@
           "bytesInOutput": 38
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 2594
+          "bytesInOutput": 2598
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
           "bytesInOutput": 254708
@@ -8797,7 +8797,7 @@
           "bytesInOutput": 163
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 148
+          "bytesInOutput": 152
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 121
@@ -8806,7 +8806,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 873
+          "bytesInOutput": 871
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
@@ -8836,7 +8836,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 299858
+      "bytes": 299864
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -8985,7 +8985,7 @@
           "bytesInOutput": 163
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 148
+          "bytesInOutput": 152
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 121
@@ -8994,7 +8994,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 873
+          "bytesInOutput": 871
         },
         "src/utils/ce.js": {
           "bytesInOutput": 36
@@ -9036,7 +9036,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 321545
+      "bytes": 321547
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -9185,7 +9185,7 @@
           "bytesInOutput": 163
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 148
+          "bytesInOutput": 152
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 121
@@ -9194,7 +9194,7 @@
           "bytesInOutput": 365
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 873
+          "bytesInOutput": 871
         },
         "src/utils/ce.js": {
           "bytesInOutput": 36
@@ -9230,7 +9230,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 320379
+      "bytes": 320381
     },
     "dist/tom-select.min.js": {
       "imports": [],
@@ -9328,7 +9328,7 @@
           "bytesInOutput": 163
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 148
+          "bytesInOutput": 152
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 121
@@ -9370,7 +9370,7 @@
           "bytesInOutput": 122
         }
       },
-      "bytes": 75738
+      "bytes": 75742
     },
     "dist/tom-select.raw.min.js": {
       "imports": [],
@@ -9468,7 +9468,7 @@
           "bytesInOutput": 163
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 148
+          "bytesInOutput": 152
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 121
@@ -9504,7 +9504,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 60132
+      "bytes": 60136
     }
   }
 }

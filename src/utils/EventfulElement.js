@@ -58,9 +58,9 @@ class EventfulElement extends FormidableElement {
 
   trackFocus(ev) {
     if (ev.type == "focusin") {
-      this.classList.add("is-focused");
+      this.classList.add("has-focus");
     } else if (ev.type == "focusout") {
-      this.classList.remove("is-focused");
+      this.classList.remove("has-focus");
     }
   }
 

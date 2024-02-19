@@ -41,8 +41,8 @@
             pointer-events: none;
         }
 
-        .label-on-field tel-input.is-focused+label,
-        .label-on-field tel-input.is-filled+label {
+        .label-on-field tel-input.has-focus+label,
+        .label-on-field tel-input.has-value+label {
             display: none;
         }
     </style>
@@ -92,6 +92,12 @@
         <div class="mb-3">
             <label for="limited" class="form-label">Limited countries (with value)</label>
             <tel-input data-config='{"onlyCountries": ["be","lu","nl"]}'>
+                <input type="tel" id="limited" name="limited" class="form-control" value="+32 0471 234 567">
+            </tel-input>
+        </div>
+        <div class="mb-3">
+            <label for="limited" class="form-label">Preferred countries (with value)</label>
+            <tel-input data-config="preferredCountries: ['be']">
                 <input type="tel" id="limited" name="limited" class="form-control" value="+32 0471 234 567">
             </tel-input>
         </div>

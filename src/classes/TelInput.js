@@ -81,9 +81,9 @@ class TelInput extends EventfulElement {
 
     // Show filled
     if (this.value) {
-      this.classList.add("is-filled");
+      this.classList.add("has-value");
     } else {
-      this.classList.remove("is-filled");
+      this.classList.remove("has-value");
     }
   }
 
@@ -176,7 +176,7 @@ class TelInput extends EventfulElement {
         useFullscreenPopup: fs,
         showSelectedDialCode: true, // required when showFlags is false
         preferredCountries: [systemLocale.split("-")[1]],
-        i18n: localeProvider(name),
+        i18n: localeProvider(name) || {},
         // we use or own live updating approach
         // hiddenInput: inputName,
         placeholderNumberType: type,
