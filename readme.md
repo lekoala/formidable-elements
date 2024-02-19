@@ -70,10 +70,11 @@ node.removeChild), this library assume a delay of 1 second, after which the dest
 ## Configure elements
 
 Configure the underlying library by using the data-config attribute. Don't forget to use 'single quotes'
-for the attribute.
+for the attribute if using json. You can also pass a simple config notation, which will work ok for basic values
 
 ```html
 <my-elem data-config='{"test": true}'></my-elem>
+<my-elem data-config="test: true, otherparam:'test'"></my-elem>
 ```
 
 WARNING: this means that any value with a single quote needs to be escaped otherwise json will not be valid.

@@ -1,5 +1,6 @@
 import FormidableElement from "./FormidableElement.js";
 import replaceCallbacks from "./replaceCallbacks.js";
+import simpleConfig from "./simpleConfig.js";
 
 /**
  * @var {IntersectionObserver}
@@ -35,7 +36,7 @@ class EventfulElement extends FormidableElement {
        * The config object as parsed from data-config attribute
        * @type {Object}
        */
-      this.config = replaceCallbacks(this.dataset.config || {});
+      this.config = replaceCallbacks(simpleConfig(this.dataset.config));
     }
     if (!this.isCreated) {
       if (this.lazy) {
@@ -55,9 +56,18 @@ class EventfulElement extends FormidableElement {
     this.events.forEach((t) => this.addEventListener(t, this));
   }
 
+  trackFocus(ev) {
+    if (ev.type == "focusin") {
+      this.classList.add("is-focused");
+    } else if (ev.type == "focusout") {
+      this.classList.remove("is-focused");
+    }
+  }
+
   // Use arrow function to make sure that the scope is always this and cannot be rebound
   // Automatically call any $event method (don't use "on" as prefix as it will collide with existing handler)
   handleEvent = (ev) => {
+    this.trackFocus(ev);
     this[`$${ev.type}`](ev);
   };
 

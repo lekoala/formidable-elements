@@ -1,4 +1,5 @@
 import replaceCallbacks from "./replaceCallbacks.js";
+import simpleConfig from "./simpleConfig.js";
 import whenParsed from "./whenParsed.js";
 
 /**
@@ -42,7 +43,7 @@ class FormidableElement extends HTMLElement {
        * The config object as parsed from data-config attribute
        * @type {Object}
        */
-      this.config = replaceCallbacks(this.dataset.config || {});
+      this.config = replaceCallbacks(simpleConfig(this.dataset.config));
       this.created();
     }
     this.connected();

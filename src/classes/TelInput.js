@@ -48,7 +48,7 @@ class TelInput extends EventfulElement {
   }
 
   get events() {
-    return ["focusout", "input", "beforeinput"];
+    return ["focusout", "focusin", "input", "beforeinput"];
   }
 
   $beforeinput(e) {
@@ -66,13 +66,24 @@ class TelInput extends EventfulElement {
     }
   }
 
+  $focusin() {}
+
   $focusout() {
     this._updateHiddenValue();
     this._updateValidation();
 
     // show formatted value
-    if (this.iti.isValidNumber() && !this.dataset.keepFormat) {
-      this.iti.setNumber(this.iti.getNumber());
+    if (this.iti.isValidNumber()) {
+      if (!this.dataset.keepFormat) {
+        this.iti.setNumber(this.iti.getNumber());
+      }
+    }
+
+    // Show filled
+    if (this.value) {
+      this.classList.add("is-filled");
+    } else {
+      this.classList.remove("is-filled");
     }
   }
 

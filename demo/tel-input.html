@@ -27,6 +27,25 @@
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
     </script>
+
+    <style>
+        .label-on-field {
+            position: relative;
+        }
+
+        .label-on-field label {
+            position: absolute;
+            left: 56px;
+            top: 6px;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .label-on-field tel-input.is-focused+label,
+        .label-on-field tel-input.is-filled+label {
+            display: none;
+        }
+    </style>
 </head>
 
 <body class="p-3">
@@ -50,6 +69,13 @@
                     <span data-code="3">Number is too long</span>
                 </div>
             </tel-input>
+        </div>
+        <div class="mb-3 label-on-field">
+            <tel-input data-dataformat="NATIONAL" data-update-on-input="true"
+                data-config="placeholderNumberType: 'off'"><!-- type is auto detected -->
+                <input type="tel" id="mphone" name="mobile_phone_floating" class="form-control">
+            </tel-input>
+            <label for="mobile_phone_floating" class="form-label">My mobile phone floating label</label>
         </div>
         <div class="mb-3">
             <label for="mobile_phone" class="form-label">My mobile phone (national hidden format)</label>
