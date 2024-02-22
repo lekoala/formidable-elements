@@ -502,7 +502,7 @@
    ├ node_modules/intl-tel-input/build/js/utils.js                                                           248.7kb   83.5%
    ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     37.7kb   12.6%
    ├ src/css/tel-input.min.css                                                                                 4.3kb    1.4%
-   ├ src/classes/TelInput.js                                                                                   2.5kb    0.9%
+   ├ src/classes/TelInput.js                                                                                   2.6kb    0.9%
    ├ src/utils/EventfulElement.js                                                                              871b     0.3%
    ├ src/tel-input.js                                                                                          632b     0.2%
    ├ src/utils/fetchWrapper.js                                                                                 445b     0.1%
@@ -522,10 +522,10 @@
    ├ node_modules/intl-tel-input/index.js                                                                       38b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/tel-input.raw.min.js                                                                                  292.8kb  100.0%
+  dist/tel-input.raw.min.js                                                                                  292.9kb  100.0%
    ├ node_modules/intl-tel-input/build/js/utils.js                                                           248.7kb   84.9%
    ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     37.7kb   12.9%
-   ├ src/classes/TelInput.js                                                                                   2.5kb    0.9%
+   ├ src/classes/TelInput.js                                                                                   2.6kb    0.9%
    ├ src/utils/EventfulElement.js                                                                              871b     0.3%
    ├ src/utils/fetchWrapper.js                                                                                 445b     0.1%
    ├ src/utils/fetchJson.js                                                                                    407b     0.1%
@@ -706,11 +706,11 @@
    ├ src/utils/getGlobalFn.js                                                                                   50b     0.1%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/squire-editor.min.js                                                                                   68.0kb  100.0%
-   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                              50.3kb   74.0%
+  dist/squire-editor.min.js                                                                                   68.1kb  100.0%
+   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                              50.4kb   74.0%
    ├ src/utils/bootstrap-icons.js                                                                              7.2kb   10.6%
    ├ src/classes/SquireEditor.js                                                                               6.4kb    9.5%
-   ├ src/utils/EventfulElement.js                                                                              871b     1.3%
+   ├ src/utils/EventfulElement.js                                                                              871b     1.2%
    ├ src/css/squire-editor.min.css                                                                             724b     1.0%
    ├ src/utils/FormidableElement.js                                                                            365b     0.5%
    ├ src/utils/setHTML.js                                                                                      320b     0.5%
@@ -729,7 +729,7 @@
    └ src/utils/isString.js                                                                                      29b     0.0%
 
   dist/squire-editor.raw.min.js                                                                               67.2kb  100.0%
-   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                              50.3kb   75.0%
+   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                              50.4kb   75.0%
    ├ src/utils/bootstrap-icons.js                                                                              7.2kb   10.7%
    ├ src/classes/SquireEditor.js                                                                               6.4kb    9.6%
    ├ src/utils/EventfulElement.js                                                                              871b     1.3%
@@ -1087,4 +1087,4 @@
   dist\tel-input.min.js           297.9kb
   ...and 31 more output files...
 
-Done in 100ms
+Done in 394ms
