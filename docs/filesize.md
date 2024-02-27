@@ -386,11 +386,11 @@
    ├ node_modules/tabulator-tables/src/js/modules/Accessor/defaults/accessors.js                                10b     0.0%
    └ node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js                                  10b     0.0%
 
-  dist/tiptap-editor.min.js                                                                                  314.0kb  100.0%
+  dist/tiptap-editor.min.js                                                                                  314.1kb  100.0%
    ├ node_modules/prosemirror-view/dist/index.js                                                              89.9kb   28.6%
-   ├ node_modules/@tiptap/core/dist/index.js                                                                  53.5kb   17.0%
+   ├ node_modules/@tiptap/core/dist/index.js                                                                  53.6kb   17.1%
    ├ node_modules/prosemirror-model/dist/index.js                                                             42.3kb   13.5%
-   ├ node_modules/prosemirror-transform/dist/index.js                                                         28.1kb    9.0%
+   ├ node_modules/prosemirror-transform/dist/index.js                                                         28.1kb    8.9%
    ├ node_modules/linkifyjs/dist/linkify.es.js                                                                18.9kb    6.0%
    ├ node_modules/prosemirror-state/dist/index.js                                                             11.5kb    3.7%
    ├ node_modules/prosemirror-commands/dist/index.js                                                           9.1kb    2.9%
@@ -443,9 +443,9 @@
    ├ src/utils/hasBootstrap.js                                                                                  30b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/tiptap-editor.raw.min.js                                                                              312.9kb  100.0%
+  dist/tiptap-editor.raw.min.js                                                                              313.0kb  100.0%
    ├ node_modules/prosemirror-view/dist/index.js                                                              89.9kb   28.7%
-   ├ node_modules/@tiptap/core/dist/index.js                                                                  53.5kb   17.1%
+   ├ node_modules/@tiptap/core/dist/index.js                                                                  53.6kb   17.1%
    ├ node_modules/prosemirror-model/dist/index.js                                                             42.3kb   13.5%
    ├ node_modules/prosemirror-transform/dist/index.js                                                         28.1kb    9.0%
    ├ node_modules/linkifyjs/dist/linkify.es.js                                                                18.9kb    6.0%
@@ -498,9 +498,9 @@
    ├ src/utils/hasBootstrap.js                                                                                  30b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/tel-input.min.js                                                                                      297.9kb  100.0%
-   ├ node_modules/intl-tel-input/build/js/utils.js                                                           248.7kb   83.5%
-   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     37.7kb   12.6%
+  dist/tel-input.min.js                                                                                      299.0kb  100.0%
+   ├ node_modules/intl-tel-input/build/js/utils.js                                                           249.5kb   83.5%
+   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     37.9kb   12.7%
    ├ src/css/tel-input.min.css                                                                                 4.3kb    1.4%
    ├ src/classes/TelInput.js                                                                                   2.6kb    0.9%
    ├ src/utils/EventfulElement.js                                                                              871b     0.3%
@@ -522,9 +522,9 @@
    ├ node_modules/intl-tel-input/index.js                                                                       38b     0.0%
    └ src/utils/isString.js                                                                                      29b     0.0%
 
-  dist/tel-input.raw.min.js                                                                                  292.9kb  100.0%
-   ├ node_modules/intl-tel-input/build/js/utils.js                                                           248.7kb   84.9%
-   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     37.7kb   12.9%
+  dist/tel-input.raw.min.js                                                                                  293.9kb  100.0%
+   ├ node_modules/intl-tel-input/build/js/utils.js                                                           249.5kb   84.9%
+   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                     37.9kb   12.9%
    ├ src/classes/TelInput.js                                                                                   2.6kb    0.9%
    ├ src/utils/EventfulElement.js                                                                              871b     0.3%
    ├ src/utils/fetchWrapper.js                                                                                 445b     0.1%
@@ -1082,9 +1082,9 @@
 
   dist\tabulator-grid.min.js      454.8kb
   dist\tabulator-grid.raw.min.js  408.1kb
-  dist\tiptap-editor.min.js       314.0kb
-  dist\tiptap-editor.raw.min.js   312.9kb
-  dist\tel-input.min.js           297.9kb
+  dist\tiptap-editor.min.js       314.1kb
+  dist\tiptap-editor.raw.min.js   313.0kb
+  dist\tel-input.min.js           299.0kb
   ...and 31 more output files...
 
-Done in 394ms
+Done in 828ms
