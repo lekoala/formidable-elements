@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "@floating-ui/dom": "^1.6.3",
-    "@melloware/coloris": "^0.22.0",
+    "@melloware/coloris": "^0.23.0",
     "@tiptap/core": "^2.2.4",
     "@tiptap/extension-image": "^2.2.4",
     "@tiptap/extension-link": "^2.2.4",
@@ -36,8 +36,8 @@
     "filepond-plugin-image-validate-size": "^1.2.7",
     "flatpickr": "^4.6.13",
     "inputmask": "^5.0.9-beta.32",
-    "intl-tel-input": "^19.5.3",
-    "squire-rte": "^2.2.7",
+    "intl-tel-input": "^19.5.6",
+    "squire-rte": "^2.2.8",
     "superfile": "^1.2.1",
     "tabulator-tables": "^5.6.1",
     "tom-select": "^2.3.1"

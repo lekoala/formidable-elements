@@ -360,7 +360,7 @@
       "format": "esm"
     },
     "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-      "bytes": 41494,
+      "bytes": 41362,
       "imports": [],
       "format": "esm"
     },
@@ -401,7 +401,7 @@
       "format": "esm"
     },
     "node_modules/@melloware/coloris/dist/coloris.min.css": {
-      "bytes": 8482,
+      "bytes": 8506,
       "imports": []
     },
     "src/coloris-input.js": {
@@ -1924,7 +1924,7 @@
       "format": "esm"
     },
     "node_modules/squire-rte/dist/squire-raw.mjs": {
-      "bytes": 119722,
+      "bytes": 119885,
       "imports": [],
       "format": "esm"
     },
@@ -4584,7 +4584,7 @@
       "format": "esm"
     },
     "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-      "bytes": 109197,
+      "bytes": 109292,
       "imports": [],
       "format": "cjs"
     },
@@ -4600,7 +4600,7 @@
       "format": "cjs"
     },
     "node_modules/intl-tel-input/build/js/utils.js": {
-      "bytes": 258245,
+      "bytes": 258373,
       "imports": []
     },
     "src/utils/Storage.js": {
@@ -6406,7 +6406,7 @@
       "entryPoint": "src/coloris-input.js",
       "inputs": {
         "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-          "bytesInOutput": 14113
+          "bytesInOutput": 14091
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6439,7 +6439,7 @@
           "bytesInOutput": 60
         },
         "node_modules/@melloware/coloris/dist/coloris.min.css": {
-          "bytesInOutput": 8492
+          "bytesInOutput": 8516
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 159
@@ -6448,7 +6448,7 @@
           "bytesInOutput": 247
         }
       },
-      "bytes": 24783
+      "bytes": 24785
     },
     "dist/coloris-input.raw.min.js": {
       "imports": [],
@@ -6456,7 +6456,7 @@
       "entryPoint": "src/coloris-input.raw.js",
       "inputs": {
         "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-          "bytesInOutput": 14113
+          "bytesInOutput": 14091
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6492,7 +6492,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 15918
+      "bytes": 15896
     },
     "dist/count-down.min.js": {
       "imports": [],
@@ -7322,7 +7322,7 @@
       "entryPoint": "src/squire-editor.js",
       "inputs": {
         "node_modules/squire-rte/dist/squire-raw.mjs": {
-          "bytesInOutput": 51584
+          "bytesInOutput": 51569
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7382,7 +7382,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 69699
+      "bytes": 69684
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -7396,7 +7396,7 @@
       "entryPoint": "src/squire-editor.raw.js",
       "inputs": {
         "node_modules/squire-rte/dist/squire-raw.mjs": {
-          "bytesInOutput": 51584
+          "bytesInOutput": 51569
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7450,7 +7450,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 68793
+      "bytes": 68778
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -8702,7 +8702,7 @@
       "entryPoint": "src/tel-input.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 38825
+          "bytesInOutput": 38833
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
@@ -8711,7 +8711,7 @@
           "bytesInOutput": 2642
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 255508
+          "bytesInOutput": 255633
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8768,7 +8768,7 @@
           "bytesInOutput": 632
         }
       },
-      "bytes": 306145
+      "bytes": 306278
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8776,7 +8776,7 @@
       "entryPoint": "src/tel-input.raw.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 38825
+          "bytesInOutput": 38833
         },
         "node_modules/intl-tel-input/index.js": {
           "bytesInOutput": 38
@@ -8785,7 +8785,7 @@
           "bytesInOutput": 2642
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 255508
+          "bytesInOutput": 255633
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8836,7 +8836,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 300978
+      "bytes": 301111
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
