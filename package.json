@@ -36,14 +36,14 @@
     "filepond-plugin-image-validate-size": "^1.2.7",
     "flatpickr": "^4.6.13",
     "inputmask": "^5.0.9-beta.32",
-    "intl-tel-input": "^19.5.6",
+    "intl-tel-input": "^20.0.5",
     "squire-rte": "^2.2.8",
     "superfile": "^1.2.1",
-    "tabulator-tables": "^5.6.1",
+    "tabulator-tables": "5.5.4",
     "tom-select": "^2.3.1"
   },
   "devDependencies": {
-    "esbuild": "^0.20.1"
+    "esbuild": "^0.20.2"
   },
   "overrides": {
     "semver": "^7.5.3"

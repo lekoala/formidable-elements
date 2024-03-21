@@ -1,3 +1,5 @@
+import getGlobalFn from "./getGlobalFn";
+
 /**
  * Parses json like key: value strings into a proper json string
  * Does not support single quotes inside values
@@ -11,5 +13,5 @@ export default (str) => {
   if (str.includes(":") && str[0] != "{") {
     str = `{${str.replace(/([\w]*)\s*:\s*([\w"'\[\]]*)/, (m, p1, p2) => `"${p1}":${p2.replace(/'/g, '"')}`)}}`;
   }
-  return JSON.parse(str);
+  return str[0] == "{" ? JSON.parse(str) : getGlobalFn(str);
 };

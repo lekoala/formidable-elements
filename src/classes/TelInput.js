@@ -73,7 +73,7 @@ class TelInput extends EventfulElement {
     this._updateValidation();
 
     // show formatted value
-    if (this.iti.isValidNumber()) {
+    if (this._isValid()) {
       if (!this.dataset.keepFormat) {
         this.iti.setNumber(this.iti.getNumber());
       }
@@ -101,7 +101,7 @@ class TelInput extends EventfulElement {
     spans.forEach((span) => {
       span.setAttribute("hidden", "");
     });
-    if (!this.iti.isValidNumber()) {
+    if (!this._isValid()) {
       const errCode = this.iti.getValidationError();
       this.el.parentElement.classList.add("is-invalid");
       let found = false;
@@ -118,6 +118,14 @@ class TelInput extends EventfulElement {
         }
       }
     }
+  }
+
+  _isValid() {
+    // since 20.x, by default, calling isValidNumber will now default to mobile-only mode (it will only return true for valid mobile numbers), 
+    // which means it will be much more accurate - if you don't want this, you can pass false as an argument e.g. isValidNumber(false)
+
+    // @ts-ignore
+    return this.iti.isValidNumber(false);
   }
 
   _updateHiddenValue() {
@@ -137,7 +145,7 @@ class TelInput extends EventfulElement {
         break;
     }
     let v = "";
-    if (this.iti.isValidNumber()) {
+    if (this._isValid()) {
       v = this.iti.getNumber(dataformat);
     }
     this.hiddenInput.setAttribute("value", v);
