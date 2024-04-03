@@ -20,9 +20,6 @@
     </script>
     <script type="module" src="../dist/tel-input.min.js"></script>
 
-    <!-- only useful if you have flags -->
-    <link href="https://cdn.jsdelivr.net/npm/intl-tel-input@19/build/css/intlTelInput.min.css" rel="stylesheet">
-
     <script type="module">
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
         const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
@@ -102,13 +99,13 @@
             </tel-input>
         </div>
         <div class="mb-3">
-            <label for="withflags" class="form-label">With flags (require css, much larger)</label>
+            <label for="withflags" class="form-label">With flags (require css, much larger. If commented, asset is not downloaded)</label>
             <tel-input data-config='{"showFlags": true, "showSelectedDialCode": false}'>
                 <input type="tel" id="withflags" name="withflags" class="form-control">
             </tel-input>
         </div>
         <div class="mb-3" dir="rtl">
-            <label for="withflags2" class="form-label">With flags rtl (require css, much larger)</label>
+            <label for="withflags2" class="form-label">With flags rtl (require css, much larger. If commented, asset is not downloaded)</label>
             <tel-input data-config='{"showFlags": true, "showSelectedDialCode": true}'>
                 <input type="tel" id="withflags2" name="withflags2" class="form-control">
             </tel-input>

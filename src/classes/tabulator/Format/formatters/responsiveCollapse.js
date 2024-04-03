@@ -40,7 +40,7 @@ export default function (cell, formatterParams, onRendered) {
     // dispatch event for flexCollapse mode
     cell.getRow()._row.dispatch("row-responsive-toggled", cell.getRow(), config.open);
 
-    cell.getTable().rowManager.adjustTableSize();
+    // cell.getTable().rowManager.adjustTableSize();
   });
 
   toggleList(config.open);

@@ -1,15 +1,25 @@
 //tabulator with all modules installed
 import { default as Tabulator } from "../../node_modules/tabulator-tables/src/js/core/Tabulator.js";
-import * as modules from "./tabulator/optional.js";
+import * as allModules from "./tabulator/optional.js";
 import * as editors from "./tabulator/custom-editors.js";
 import * as formatters from "./tabulator/custom-formatters.js";
 import { simpleRowFormatter, expandTooltips } from "./tabulator/helpers.js";
-import ModuleBinder from "../../node_modules/tabulator-tables/src/js/core/tools/ModuleBinder.js";
 
-class TabulatorFull extends Tabulator {}
+class TabulatorFull extends Tabulator {
+  static extendModule() {
+    Tabulator.initializeModuleBinder(allModules);
+    Tabulator._extendModule(...arguments);
+  }
 
-//bind modules and static functionality
-new ModuleBinder(TabulatorFull, modules);
+  static registerModule() {
+    Tabulator.initializeModuleBinder(allModules);
+    Tabulator._registerModule(...arguments);
+  }
+
+  constructor(element, options, modules) {
+    super(element, options, allModules);
+  }
+}
 
 //@ts-ignore
 TabulatorFull.extendModule("edit", "editors", editors);
@@ -193,11 +203,15 @@ class TabulatorGrid extends EventfulElement {
     // Fix table size on full redraw
     // @link https://github.com/olifolkerd/tabulator/issues/4155
     const fixedPaginatedHeight = parseBool(this.dataset.fixedPaginatedHeight);
+
+    // TODO: check if this is still needed
     tabulator.on("renderStarted", () => {
       const holder = tabulator.element.querySelector(".tabulator-tableholder");
-      const height = holder.clientHeight || 1;
+      // const height = holder.clientHeight;
 
-      holder.style.minHeight = height + "px";
+      // if (height > 0) {
+      //   holder.style.minHeight = height + "px";
+      // }
       holder.style.overflowAnchor = "none"; // Without this, it jumps on firefox
 
       // No overflow if responsive

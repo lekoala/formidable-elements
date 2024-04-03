@@ -8,6 +8,8 @@ import ResponsiveLayout from "../../../../node_modules/tabulator-tables/src/js/m
  * Rows are toggled with row-responsive-toggled that is triggered by the updated responsiveCollapse formatter
  */
 class MyResponsiveLayout extends ResponsiveLayout {
+  static moduleName = "responsiveLayout";
+
   initialize() {
     super.initialize();
     if (this.table.options.responsiveLayout === "flexCollapse") {
@@ -163,7 +165,5 @@ class MyResponsiveLayout extends ResponsiveLayout {
     }
   }
 }
-
-MyResponsiveLayout.moduleName = "responsiveLayout";
 
 export default MyResponsiveLayout;
