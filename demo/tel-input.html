@@ -32,7 +32,7 @@
 
         .label-on-field label {
             position: absolute;
-            left: 56px;
+            left: calc(var(--iti-input-padding, 6px) + var(--tel-input-floating-offset, 60px));
             top: 6px;
             z-index: 1;
             pointer-events: none;
@@ -105,7 +105,8 @@
             </tel-input>
         </div>
         <div class="mb-3" dir="rtl">
-            <label for="withflags2" class="form-label">With flags rtl (require css, much larger. If commented, asset is not downloaded)</label>
+            <label for="withflags2" class="form-label">With flags rtl (require css, much larger. If commented, asset is not
+                downloaded)</label>
             <tel-input data-config='{"showFlags": true, "showSelectedDialCode": true}'>
                 <input type="tel" id="withflags2" name="withflags2" class="form-control">
             </tel-input>

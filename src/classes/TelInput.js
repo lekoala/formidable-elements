@@ -34,9 +34,13 @@ class TelInput extends EventfulElement {
 
     // Smarter default type based on field name
     let defaultType = "FIXED_LINE_OR_MOBILE";
-    for (const k in intlTelInputUtils.numberType) {
-      if (name.includes(k.toLowerCase())) {
-        defaultType = k;
+    //@ts-ignore intlTelInputUtils is a global function
+    if (intlTelInputUtils) {
+      //@ts-ignore
+      for (const k in intlTelInputUtils.numberType) {
+        if (name.includes(k.toLowerCase())) {
+          defaultType = k;
+        }
       }
     }
     let t = this.getAttribute("type") || defaultType;
@@ -121,7 +125,7 @@ class TelInput extends EventfulElement {
   }
 
   _isValid() {
-    // since 20.x, by default, calling isValidNumber will now default to mobile-only mode (it will only return true for valid mobile numbers), 
+    // since 20.x, by default, calling isValidNumber will now default to mobile-only mode (it will only return true for valid mobile numbers),
     // which means it will be much more accurate - if you don't want this, you can pass false as an argument e.g. isValidNumber(false)
 
     // @ts-ignore
@@ -213,6 +217,14 @@ class TelInput extends EventfulElement {
     }
 
     this.iti = intlTelInput(input, this.config);
+
+    input.addEventListener("countrychange", () => {
+      // Update size
+      //@ts-ignore
+      let width = this.querySelector(".iti__selected-country").offsetWidth;
+      let parent = this.parentElement;
+      parent.style.setProperty("--tel-input-floating-offset", `${width}px`);
+    });
 
     if (this.config.hiddenInput) {
       input.name = `_${input.name}`;
