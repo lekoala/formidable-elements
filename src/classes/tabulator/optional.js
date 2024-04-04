@@ -27,10 +27,13 @@ export { default as PrintModule } from "../../../node_modules/tabulator-tables/s
 export { default as ReactiveDataModule } from "../../../node_modules/tabulator-tables/src/js/modules/ReactiveData/ReactiveData.js";
 export { default as ResizeColumnsModule } from "../../../node_modules/tabulator-tables/src/js/modules/ResizeColumns/ResizeColumns.js";
 export { default as ResizeRowsModule } from "../../../node_modules/tabulator-tables/src/js/modules/ResizeRows/ResizeRows.js";
-export { default as ResizeTableModule } from "../../../node_modules/tabulator-tables/src/js/modules/ResizeTable/ResizeTable.js";
+// export { default as ResizeTableModule } from "../../../node_modules/tabulator-tables/src/js/modules/ResizeTable/ResizeTable.js";
+export { default as ResizeTableModule } from "./ResizeTable/ResizeTable.js";
 // export { default as ResponsiveLayoutModule } from "../../../node_modules/tabulator-tables/src/js/modules/ResponsiveLayout/ResponsiveLayout.js";
 export { default as ResponsiveLayoutModule } from "./ResponsiveLayout/ResponsiveLayout.js";
 export { default as SelectRowModule } from "../../../node_modules/tabulator-tables/src/js/modules/SelectRow/SelectRow.js";
+// export {default as SelectRangeModule} from '../../../node_modules/tabulator-tables/src/js/modules/modules/SelectRange/SelectRange.js';
 export { default as SortModule } from "../../../node_modules/tabulator-tables/src/js/modules/Sort/Sort.js";
+// export {default as SpreadsheetModule} from '../../../node_modules/tabulator-tables/src/js/modules/Spreadsheet/Spreadsheet.js';
 export { default as TooltipModule } from "../../../node_modules/tabulator-tables/src/js/modules/Tooltip/Tooltip.js";
 export { default as ValidateModule } from "../../../node_modules/tabulator-tables/src/js/modules/Validate/Validate.js";

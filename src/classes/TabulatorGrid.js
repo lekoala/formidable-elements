@@ -48,15 +48,15 @@ class TabulatorGrid extends EventfulElement {
     const el = this.el;
     const config = this.config;
 
-    //@link https://tabulator.info/docs/5.5/columns#autocolumns
+    //@link https://tabulator.info/docs/6.2/columns#autocolumns
     if (!config.columns) {
       config.autoColumns = true;
     }
 
-    //@link https://tabulator.info/docs/5.5/columns#defaults
+    //@link https://tabulator.info/docs/6.2/columns#defaults
     if (!config.columnDefaults) {
       config.columnDefaults = {
-        //@link https://tabulator.info/docs/5.5/menu#tooltips-cell
+        //@link https://tabulator.info/docs/6.2/menu#tooltips-cell
         tooltip: expandTooltips,
         headerFilter: parseBool(this.dataset.filter),
       };
@@ -74,6 +74,11 @@ class TabulatorGrid extends EventfulElement {
     // A built-in row formatter based on data (_color and _class)
     if (!config.rowFormatter) {
       config.rowFormatter = simpleRowFormatter;
+    }
+
+    // Disable the virtual rendering because it's mostly useless
+    if (!config.renderVertical) {
+      // config.renderVertical = "basic";
     }
 
     // Custom pagination icons
@@ -106,7 +111,7 @@ class TabulatorGrid extends EventfulElement {
     const configCallback = getDelete(config, "_configCallback");
 
     // Restore custom state (eg: server side set in session)
-    // You can also use persistence module https://tabulator.info/docs/5.5/persist
+    // You can also use persistence module https://tabulator.info/docs/6.2/persist
     const state = getDelete(config, "_state", {});
 
     // Delay loading to allow setting limit or page from state
@@ -203,19 +208,23 @@ class TabulatorGrid extends EventfulElement {
     // Fix table size on full redraw
     // @link https://github.com/olifolkerd/tabulator/issues/4155
     const fixedPaginatedHeight = parseBool(this.dataset.fixedPaginatedHeight);
+    const usePxHeight = config.height && config.height.includes("px");
 
-    // TODO: check if this is still needed
     tabulator.on("renderStarted", () => {
       const holder = tabulator.element.querySelector(".tabulator-tableholder");
-      // const height = holder.clientHeight;
+      const table = tabulator.element.querySelector(".tabulator-table");
 
-      // if (height > 0) {
-      //   holder.style.minHeight = height + "px";
+      // This can cause render loops
+      // if (holder.clientHeight > 45) {
+      //   holder.style.minHeight = holder.clientHeight + "px";
       // }
-      holder.style.overflowAnchor = "none"; // Without this, it jumps on firefox
 
-      // No overflow if responsive
-      if (config.responsiveLayout) {
+      // Without this, it jumps on firefox when replacing data
+      // This is also needed for pagination in all browsers for long tables
+      holder.style.overflowAnchor = "none";
+
+      // No overflow if responsive and no px height
+      if (config.responsiveLayout && !usePxHeight) {
         holder.style.overflowY = "hidden";
       }
     });
@@ -230,14 +239,11 @@ class TabulatorGrid extends EventfulElement {
       if (tabulator.options.pagination && fixedPaginatedHeight && table.firstChild) {
         paginatedHeight = this.config.paginationSize * table.firstChild.offsetHeight;
       }
-      if (height <= 0) {
-        height = 45;
-      }
-      // Replace height value computed by tabulator and remove minHeight
-      if (height > 0) {
-        holder.style.height = `${height}px`;
-      }
       if (paginatedHeight > 0) {
+        // Replace height value computed by tabulator and remove minHeight
+        if (height > 0) {
+          holder.style.height = `${height}px`;
+        }
         holder.style.minHeight = `${paginatedHeight}px`;
       }
     });
@@ -269,7 +275,7 @@ class TabulatorGrid extends EventfulElement {
     // Grid manipulation support
     const addRow = this.querySelector(".tabulator-add-row");
     const removeRow = this.querySelector(".tabulator-remove-selected");
-    //@link https://tabulator.info/docs/5.5/update#addrow
+    //@link https://tabulator.info/docs/6.2/update#addrow
     if (addRow) {
       addRow.addEventListener("click", (event) => {
         tabulator.addRow({}, false); // add to bottom

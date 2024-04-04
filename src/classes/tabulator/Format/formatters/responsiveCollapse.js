@@ -40,7 +40,14 @@ export default function (cell, formatterParams, onRendered) {
     // dispatch event for flexCollapse mode
     cell.getRow()._row.dispatch("row-responsive-toggled", cell.getRow(), config.open);
 
-    // cell.getTable().rowManager.adjustTableSize();
+    // Computing the new size triggers a full redraw of the table
+    cell.getTable().modules.resizeTable.blockRedraw();
+    cell.getTable().rowManager.adjustTableSize();
+
+    // With virtual rendering it triggers with a bit of delay...
+    setTimeout(() => {
+      cell.getTable().modules.resizeTable.restoreRedraw();
+    }, 250);
   });
 
   toggleList(config.open);
