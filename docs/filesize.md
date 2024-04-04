@@ -616,29 +616,30 @@
    ├ src/filepond-input.raw.js                                                                                     34b     0.0%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
-  dist/input-mask.min.js                                                                                         86.7kb  100.0%
-   ├ node_modules/inputmask/lib/extensions/inputmask.numeric.extensions.js                                       12.0kb   13.8%
-   ├ node_modules/inputmask/lib/extensions/inputmask.date.extensions.js                                          10.1kb   11.6%
-   ├ node_modules/inputmask/lib/validation.js                                                                     9.8kb   11.3%
-   ├ node_modules/inputmask/lib/validation-tests.js                                                               9.3kb   10.7%
-   ├ node_modules/inputmask/lib/eventhandlers.js                                                                  8.0kb    9.2%
-   ├ node_modules/inputmask/lib/mask-lexer.js                                                                     6.9kb    7.9%
-   ├ node_modules/inputmask/lib/inputmask.js                                                                      5.8kb    6.7%
-   ├ node_modules/inputmask/lib/positioning.js                                                                    5.1kb    5.8%
-   ├ node_modules/inputmask/lib/inputHandling.js                                                                  4.2kb    4.8%
-   ├ node_modules/inputmask/lib/mask.js                                                                           4.1kb    4.7%
-   ├ node_modules/inputmask/lib/dependencyLibs/events.js                                                          2.4kb    2.7%
-   ├ node_modules/inputmask/lib/extensions/inputmask.extensions.js                                                1.7kb    1.9%
+  dist/input-mask.min.js                                                                                         89.9kb  100.0%
+   ├ node_modules/inputmask/lib/extensions/inputmask.numeric.extensions.js                                       12.0kb   13.3%
+   ├ node_modules/inputmask/lib/extensions/inputmask.date.extensions.js                                          11.4kb   12.7%
+   ├ node_modules/inputmask/lib/validation-tests.js                                                              10.3kb   11.4%
+   ├ node_modules/inputmask/lib/validation.js                                                                     9.8kb   10.9%
+   ├ node_modules/inputmask/lib/eventhandlers.js                                                                  8.1kb    9.1%
+   ├ node_modules/inputmask/lib/mask-lexer.js                                                                     6.9kb    7.7%
+   ├ node_modules/inputmask/lib/inputmask.js                                                                      5.8kb    6.4%
+   ├ node_modules/inputmask/lib/positioning.js                                                                    5.2kb    5.7%
+   ├ node_modules/inputmask/lib/inputHandling.js                                                                  4.3kb    4.7%
+   ├ node_modules/inputmask/lib/mask.js                                                                           4.1kb    4.6%
+   ├ node_modules/inputmask/lib/dependencyLibs/events.js                                                          2.4kb    2.6%
+   ├ node_modules/inputmask/lib/extensions/inputmask.extensions.js                                                1.9kb    2.1%
    ├ node_modules/inputmask/lib/eventruler.js                                                                     1.4kb    1.6%
-   ├ src/classes/InputmaskElement.js                                                                              1.2kb    1.4%
-   ├ node_modules/inputmask/lib/defaults.js                                                                       1.2kb    1.3%
+   ├ src/classes/InputmaskElement.js                                                                              1.2kb    1.3%
+   ├ node_modules/inputmask/lib/defaults.js                                                                       1.1kb    1.3%
    ├ node_modules/inputmask/lib/keycode.js                                                                        623b     0.7%
    ├ node_modules/inputmask/lib/dependencyLibs/extend.js                                                          479b     0.5%
+   ├ node_modules/inputmask/lib/extensions/inputmask.date.i18n.js                                                 411b     0.4%
    ├ src/utils/FormidableElement.js                                                                               365b     0.4%
    ├ node_modules/inputmask/lib/dependencyLibs/inputmask.dependencyLib.js                                         364b     0.4%
    ├ node_modules/inputmask/lib/environment.js                                                                    256b     0.3%
-   ├ node_modules/inputmask/lib/definitions.js                                                                    230b     0.3%
-   ├ src/utils/insertHiddenInput.js                                                                               229b     0.3%
+   ├ node_modules/inputmask/lib/definitions.js                                                                    230b     0.2%
+   ├ src/utils/insertHiddenInput.js                                                                               229b     0.2%
    ├ node_modules/inputmask/lib/masktoken.js                                                                      201b     0.2%
    ├ src/utils/simpleConfig.js                                                                                    168b     0.2%
    ├ src/utils/replaceCallbacks.js                                                                                163b     0.2%
@@ -1111,4 +1112,4 @@
   dist\tiptap-editor.raw.min.js   313.0kb
   ...and 31 more output files...
 
-Done in 97ms
+Done in 105ms

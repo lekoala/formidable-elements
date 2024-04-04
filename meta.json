@@ -1318,7 +1318,7 @@
       "format": "esm"
     },
     "node_modules/inputmask/lib/keycode.js": {
-      "bytes": 1487,
+      "bytes": 1475,
       "imports": [],
       "format": "esm"
     },
@@ -1328,8 +1328,13 @@
       "format": "esm"
     },
     "node_modules/inputmask/lib/validation-tests.js": {
-      "bytes": 32296,
+      "bytes": 28304,
       "imports": [
+        {
+          "path": "node_modules/inputmask/lib/positioning.js",
+          "kind": "import-statement",
+          "original": "./positioning"
+        },
         {
           "path": "node_modules/inputmask/lib/inputmask.js",
           "kind": "import-statement",
@@ -1350,7 +1355,7 @@
       "format": "esm"
     },
     "node_modules/inputmask/lib/inputHandling.js": {
-      "bytes": 12878,
+      "bytes": 11368,
       "imports": [
         {
           "path": "node_modules/inputmask/lib/keycode.js",
@@ -1386,7 +1391,7 @@
       "format": "esm"
     },
     "node_modules/inputmask/lib/eventhandlers.js": {
-      "bytes": 24657,
+      "bytes": 20155,
       "imports": [
         {
           "path": "node_modules/inputmask/lib/positioning.js",
@@ -1427,7 +1432,7 @@
       "format": "esm"
     },
     "node_modules/inputmask/lib/validation.js": {
-      "bytes": 26064,
+      "bytes": 26174,
       "imports": [
         {
           "path": "node_modules/inputmask/lib/validation-tests.js",
@@ -1453,7 +1458,7 @@
       "format": "esm"
     },
     "node_modules/inputmask/lib/positioning.js": {
-      "bytes": 14818,
+      "bytes": 12728,
       "imports": [
         {
           "path": "node_modules/inputmask/lib/global/window.js",
@@ -1500,7 +1505,7 @@
       "format": "esm"
     },
     "node_modules/inputmask/lib/mask.js": {
-      "bytes": 12074,
+      "bytes": 12176,
       "imports": [
         {
           "path": "node_modules/inputmask/lib/keycode.js",
@@ -1608,7 +1613,7 @@
       "format": "esm"
     },
     "node_modules/inputmask/lib/mask-lexer.js": {
-      "bytes": 22190,
+      "bytes": 17692,
       "imports": [
         {
           "path": "node_modules/inputmask/lib/dependencyLibs/inputmask.dependencyLib.js",
@@ -1639,7 +1644,7 @@
       "format": "esm"
     },
     "node_modules/inputmask/lib/defaults.js": {
-      "bytes": 5311,
+      "bytes": 5106,
       "imports": [
         {
           "path": "node_modules/inputmask/lib/keycode.js",
@@ -1650,7 +1655,7 @@
       "format": "esm"
     },
     "node_modules/inputmask/lib/inputmask.js": {
-      "bytes": 14611,
+      "bytes": 12599,
       "imports": [
         {
           "path": "node_modules/inputmask/lib/mask.js",
@@ -1711,7 +1716,7 @@
       "format": "esm"
     },
     "node_modules/inputmask/lib/extensions/inputmask.extensions.js": {
-      "bytes": 4467,
+      "bytes": 3964,
       "imports": [
         {
           "path": "node_modules/inputmask/lib/inputmask.js",
@@ -1731,8 +1736,19 @@
       ],
       "format": "esm"
     },
+    "node_modules/inputmask/lib/extensions/inputmask.date.i18n.js": {
+      "bytes": 695,
+      "imports": [
+        {
+          "path": "node_modules/inputmask/lib/inputmask.js",
+          "kind": "import-statement",
+          "original": "../inputmask"
+        }
+      ],
+      "format": "esm"
+    },
     "node_modules/inputmask/lib/extensions/inputmask.date.extensions.js": {
-      "bytes": 27624,
+      "bytes": 25960,
       "imports": [
         {
           "path": "node_modules/inputmask/lib/inputmask.js",
@@ -1758,12 +1774,17 @@
           "path": "node_modules/inputmask/lib/validation-tests.js",
           "kind": "import-statement",
           "original": "../validation-tests"
+        },
+        {
+          "path": "node_modules/inputmask/lib/extensions/inputmask.date.i18n.js",
+          "kind": "import-statement",
+          "original": "./inputmask.date.i18n"
         }
       ],
       "format": "esm"
     },
     "node_modules/inputmask/lib/extensions/inputmask.numeric.extensions.js": {
-      "bytes": 24375,
+      "bytes": 24368,
       "imports": [
         {
           "path": "node_modules/inputmask/lib/inputmask.js",
@@ -7236,28 +7257,28 @@
           "bytesInOutput": 92
         },
         "node_modules/inputmask/lib/validation-tests.js": {
-          "bytesInOutput": 9542
+          "bytesInOutput": 10516
         },
         "node_modules/inputmask/lib/environment.js": {
           "bytesInOutput": 256
         },
         "node_modules/inputmask/lib/inputHandling.js": {
-          "bytesInOutput": 4280
+          "bytesInOutput": 4365
         },
         "node_modules/inputmask/lib/eventhandlers.js": {
-          "bytesInOutput": 8211
+          "bytesInOutput": 8344
         },
         "node_modules/inputmask/lib/validation.js": {
-          "bytesInOutput": 10040
+          "bytesInOutput": 10067
         },
         "node_modules/inputmask/lib/positioning.js": {
-          "bytesInOutput": 5189
+          "bytesInOutput": 5277
         },
         "node_modules/inputmask/lib/eventruler.js": {
-          "bytesInOutput": 1445
+          "bytesInOutput": 1446
         },
         "node_modules/inputmask/lib/mask.js": {
-          "bytesInOutput": 4208
+          "bytesInOutput": 4211
         },
         "node_modules/inputmask/lib/dependencyLibs/extend.js": {
           "bytesInOutput": 479
@@ -7278,22 +7299,25 @@
           "bytesInOutput": 152
         },
         "node_modules/inputmask/lib/mask-lexer.js": {
-          "bytesInOutput": 7048
+          "bytesInOutput": 7068
         },
         "node_modules/inputmask/lib/definitions.js": {
           "bytesInOutput": 230
         },
         "node_modules/inputmask/lib/defaults.js": {
-          "bytesInOutput": 1178
+          "bytesInOutput": 1151
         },
         "node_modules/inputmask/lib/inputmask.js": {
-          "bytesInOutput": 5911
+          "bytesInOutput": 5921
         },
         "node_modules/inputmask/lib/extensions/inputmask.extensions.js": {
-          "bytesInOutput": 1713
+          "bytesInOutput": 1901
+        },
+        "node_modules/inputmask/lib/extensions/inputmask.date.i18n.js": {
+          "bytesInOutput": 411
         },
         "node_modules/inputmask/lib/extensions/inputmask.date.extensions.js": {
-          "bytesInOutput": 10339
+          "bytesInOutput": 11683
         },
         "node_modules/inputmask/lib/extensions/inputmask.numeric.extensions.js": {
           "bytesInOutput": 12265
@@ -7332,7 +7356,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 88812
+      "bytes": 92069
     },
     "dist/locale-provider.min.js": {
       "imports": [],
