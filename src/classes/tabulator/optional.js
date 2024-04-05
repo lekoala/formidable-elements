@@ -2,7 +2,8 @@ export { default as AccessorModule } from "../../../node_modules/tabulator-table
 export { default as AjaxModule } from "../../../node_modules/tabulator-tables/src/js/modules/Ajax/Ajax.js";
 export { default as ClipboardModule } from "../../../node_modules/tabulator-tables/src/js/modules/Clipboard/Clipboard.js";
 export { default as ColumnCalcsModule } from "../../../node_modules/tabulator-tables/src/js/modules/ColumnCalcs/ColumnCalcs.js";
-export { default as DataTreeModule } from "../../../node_modules/tabulator-tables/src/js/modules/DataTree/DataTree.js";
+// export { default as DataTreeModule } from "../../../node_modules/tabulator-tables/src/js/modules/DataTree/DataTree.js";
+export { default as DataTreeModule } from "./DataTree/DataTree.js";
 export { default as DownloadModule } from "../../../node_modules/tabulator-tables/src/js/modules/Download/Download.js";
 export { default as EditModule } from "../../../node_modules/tabulator-tables/src/js/modules/Edit/Edit.js";
 export { default as ExportModule } from "../../../node_modules/tabulator-tables/src/js/modules/Export/Export.js";

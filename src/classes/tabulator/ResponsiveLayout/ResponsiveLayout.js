@@ -76,6 +76,11 @@ class MyResponsiveLayout extends ResponsiveLayout {
       row.getCells().forEach(function (cell) {
         var el = cell.getElement();
         var title = cell.getColumn().getDefinition().title;
+
+        if (!el) {
+          return;
+        }
+
         if (el.style.display === "none") {
           el.style.display = "block";
           el.style.width = "100%";
@@ -102,7 +107,7 @@ class MyResponsiveLayout extends ResponsiveLayout {
     var el;
 
     if (row.type !== "calc") {
-      if (this.table.options.responsiveLayout === "collapse") {
+      if (this.mode === "collapse" || this.mode === "flexCollapse") {
         el = document.createElement("div");
         el.classList.add("tabulator-responsive-collapse");
       }

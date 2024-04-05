@@ -81,16 +81,24 @@
             dataTree: true,
             // renderVertical: 'basic',
             dataTreeStartExpanded: false,
+            dataTreeElementColumn: 'name', // Without this, it could end up in the responsizeCollapse control...
             layout: "fitDataFill",
-            responsiveLayout: "hide",
+            responsiveLayout: "flexCollapse",
+            responsiveLayoutCollapseStartOpen: false,
             columns: [
+                {
+                    formatter: "responsiveCollapse",
+                    headerSort: false,
+                    width: 50,
+                    resizable: false,
+                },
                 { title: "Name", field: "name", width: 200, responsive: 0 }, //never hide this column
                 { title: "Location", field: "location", width: 150 },
                 { title: "Gender", field: "gender", width: 150, responsive: 2 }, //hide this column first
                 {
                     title: "Favourite Color", field: "col", minWidth: 150, formatter: "external", formatterParams: {
                         "function": (v) => {
-                            return `<span style="background:${v};display:block;width:8px;height:8px;border-radius:8px;"></span>`
+                            return `<span style="background:${v};display:inline-block;width:8px;height:8px;border-radius:8px;"></span>`
                         }
                     }
                 },

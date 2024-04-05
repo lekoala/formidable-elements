@@ -2,6 +2,11 @@ export default function (cell, formatterParams, onRendered) {
   var el = document.createElement("div"),
     config = cell.getRow()._row.modules.responsiveLayout;
 
+  if (!config) {
+    console.error("Invalid responsive mode");
+    return;
+  }
+
   el.classList.add("tabulator-responsive-collapse-toggle");
 
   // Add an extra div to make it fully clickable and style the circle

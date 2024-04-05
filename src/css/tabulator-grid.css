@@ -493,3 +493,21 @@ em.tabulator-value-placeholder {
 .tabulator-row:not(.tabulator-tree-level-1) .tree-1-only {
     visibility: hidden;
 }
+
+.tabulator-row .tabulator-cell .tabulator-data-tree-control {
+    background: rgba(0, 0, 0, .1);
+    border: 1px solid #666;
+    height: 14px;
+    margin-right: 6px;
+    width: 14px;
+}
+
+.tabulator-row .tabulator-cell .tabulator-data-tree-control .tabulator-data-tree-control-collapse:after,
+.tabulator-row .tabulator-cell .tabulator-data-tree-control .tabulator-data-tree-control-expand,
+.tabulator-row .tabulator-cell .tabulator-data-tree-control .tabulator-data-tree-control-expand:after {
+    background: #666;
+}
+
+.tabulator-row .tabulator-cell .tabulator-data-tree-control:hover {
+    background: #fff;
+}

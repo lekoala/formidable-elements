@@ -1112,4 +1112,4 @@
   dist\tiptap-editor.raw.min.js   313.0kb
   ...and 31 more output files...
 
-Done in 105ms
+Done in 627ms
