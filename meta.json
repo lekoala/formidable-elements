@@ -2902,7 +2902,7 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/DataTree/DataTree.js": {
-      "bytes": 16375,
+      "bytes": 16376,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
@@ -2918,6 +2918,17 @@
           "path": "node_modules/tabulator-tables/src/js/core/row/RowComponent.js",
           "kind": "import-statement",
           "original": "../../core/row/RowComponent.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/classes/tabulator/DataTree/DataTree.js": {
+      "bytes": 1695,
+      "imports": [
+        {
+          "path": "node_modules/tabulator-tables/src/js/modules/DataTree/DataTree.js",
+          "kind": "import-statement",
+          "original": "../../../../node_modules/tabulator-tables/src/js/modules/DataTree/DataTree.js"
         }
       ],
       "format": "esm"
@@ -4011,7 +4022,7 @@
       "format": "esm"
     },
     "src/classes/tabulator/ResponsiveLayout/ResponsiveLayout.js": {
-      "bytes": 5056,
+      "bytes": 5111,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/modules/ResponsiveLayout/ResponsiveLayout.js",
@@ -4221,7 +4232,7 @@
       "format": "esm"
     },
     "src/classes/tabulator/optional.js": {
-      "bytes": 4733,
+      "bytes": 4805,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/modules/Accessor/Accessor.js",
@@ -4244,9 +4255,9 @@
           "original": "../../../node_modules/tabulator-tables/src/js/modules/ColumnCalcs/ColumnCalcs.js"
         },
         {
-          "path": "node_modules/tabulator-tables/src/js/modules/DataTree/DataTree.js",
+          "path": "src/classes/tabulator/DataTree/DataTree.js",
           "kind": "import-statement",
-          "original": "../../../node_modules/tabulator-tables/src/js/modules/DataTree/DataTree.js"
+          "original": "./DataTree/DataTree.js"
         },
         {
           "path": "node_modules/tabulator-tables/src/js/modules/Download/Download.js",
@@ -4497,7 +4508,7 @@
       "format": "esm"
     },
     "src/classes/tabulator/Format/formatters/responsiveCollapse.js": {
-      "bytes": 1830,
+      "bytes": 1910,
       "imports": [],
       "format": "esm"
     },
@@ -4656,7 +4667,7 @@
       "imports": []
     },
     "src/css/tabulator-grid.min.css": {
-      "bytes": 10024,
+      "bytes": 10572,
       "imports": []
     },
     "src/tabulator-grid.js": {
@@ -7828,6 +7839,9 @@
         "node_modules/tabulator-tables/src/js/modules/DataTree/DataTree.js": {
           "bytesInOutput": 10610
         },
+        "src/classes/tabulator/DataTree/DataTree.js": {
+          "bytesInOutput": 999
+        },
         "node_modules/tabulator-tables/src/js/modules/Download/defaults/downloaders/csv.js": {
           "bytesInOutput": 784
         },
@@ -8120,7 +8134,7 @@
           "bytesInOutput": 5887
         },
         "src/classes/tabulator/ResponsiveLayout/ResponsiveLayout.js": {
-          "bytesInOutput": 2942
+          "bytesInOutput": 2949
         },
         "node_modules/tabulator-tables/src/js/modules/SelectRow/extensions/formatters/rowSelection.js": {
           "bytesInOutput": 866
@@ -8204,7 +8218,7 @@
           "bytesInOutput": 110
         },
         "src/classes/tabulator/Format/formatters/responsiveCollapse.js": {
-          "bytesInOutput": 1141
+          "bytesInOutput": 1196
         },
         "src/utils/icons.js": {
           "bytesInOutput": 2004
@@ -8261,7 +8275,7 @@
           "bytesInOutput": 39395
         },
         "src/css/tabulator-grid.min.css": {
-          "bytesInOutput": 10034
+          "bytesInOutput": 10582
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 159
@@ -8270,7 +8284,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 473347
+      "bytes": 474956
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -8454,6 +8468,9 @@
         "node_modules/tabulator-tables/src/js/modules/DataTree/DataTree.js": {
           "bytesInOutput": 10610
         },
+        "src/classes/tabulator/DataTree/DataTree.js": {
+          "bytesInOutput": 999
+        },
         "node_modules/tabulator-tables/src/js/modules/Download/defaults/downloaders/csv.js": {
           "bytesInOutput": 784
         },
@@ -8746,7 +8763,7 @@
           "bytesInOutput": 5887
         },
         "src/classes/tabulator/ResponsiveLayout/ResponsiveLayout.js": {
-          "bytesInOutput": 2942
+          "bytesInOutput": 2949
         },
         "node_modules/tabulator-tables/src/js/modules/SelectRow/extensions/formatters/rowSelection.js": {
           "bytesInOutput": 866
@@ -8830,7 +8847,7 @@
           "bytesInOutput": 110
         },
         "src/classes/tabulator/Format/formatters/responsiveCollapse.js": {
-          "bytesInOutput": 1141
+          "bytesInOutput": 1196
         },
         "src/utils/icons.js": {
           "bytesInOutput": 2004
@@ -8887,7 +8904,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 423661
+      "bytes": 424722
     },
     "dist/tel-input.min.js": {
       "imports": [],
