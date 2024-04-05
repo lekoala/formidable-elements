@@ -32,7 +32,10 @@ export default (url, params = {}, options = {}) => {
 
   // XMLHttpRequest compat
   const headers = fetchOptions.headers || {};
-  headers["X-Requested-With"] = "XMLHttpRequest";
+  // This can cause CORS issues witj jsdelivr
+  if (!url.includes("https://cdn.jsdelivr.net")) {
+    headers["X-Requested-With"] = "XMLHttpRequest";
+  }
   fetchOptions.headers = headers;
 
   const searchParams = new URLSearchParams(params);
