@@ -137,7 +137,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-      "bytes": 34864,
+      "bytes": 35165,
       "imports": [],
       "format": "esm"
     },
@@ -366,7 +366,7 @@
       "format": "esm"
     },
     "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-      "bytes": 41362,
+      "bytes": 43122,
       "imports": [],
       "format": "esm"
     },
@@ -607,8 +607,482 @@
       ],
       "format": "esm"
     },
+    "node_modules/jquery/dist/jquery.js": {
+      "bytes": 285314,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/datatables.net/js/dataTables.mjs": {
+      "bytes": 351780,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+      "bytes": 2276,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net/js/dataTables.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs": {
+      "bytes": 20460,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net/js/dataTables.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-fixedcolumns-bs5/js/fixedColumns.bootstrap5.mjs": {
+      "bytes": 322,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net-bs5"
+        },
+        {
+          "path": "node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net-fixedcolumns"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs": {
+      "bytes": 29433,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net/js/dataTables.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-fixedheader-bs5/js/fixedHeader.bootstrap5.mjs": {
+      "bytes": 311,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net-bs5"
+        },
+        {
+          "path": "node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net-fixedheader"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-buttons/js/dataTables.buttons.mjs": {
+      "bytes": 63854,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net/js/dataTables.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs": {
+      "bytes": 1640,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net-bs5"
+        },
+        {
+          "path": "node_modules/datatables.net-buttons/js/dataTables.buttons.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net-buttons"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-responsive/js/dataTables.responsive.mjs": {
+      "bytes": 45217,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net/js/dataTables.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs": {
+      "bytes": 2140,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net-bs5"
+        },
+        {
+          "path": "node_modules/datatables.net-responsive/js/dataTables.responsive.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net-responsive"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs": {
+      "bytes": 9812,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net/js/dataTables.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-rowgroup-bs5/js/rowGroup.bootstrap5.mjs": {
+      "bytes": 302,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net-bs5"
+        },
+        {
+          "path": "node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net-rowgroup"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-select/js/dataTables.select.mjs": {
+      "bytes": 39478,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net/js/dataTables.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-select-bs5/js/select.bootstrap5.mjs": {
+      "bytes": 296,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net-bs5"
+        },
+        {
+          "path": "node_modules/datatables.net-select/js/dataTables.select.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net-select"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/utils/icons.js": {
+      "bytes": 3067,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/utils/getDelete.js": {
+      "bytes": 115,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/utils/fetchWrapper.js": {
+      "bytes": 1432,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/utils/fetchJson.js": {
+      "bytes": 1293,
+      "imports": [
+        {
+          "path": "src/utils/fetchWrapper.js",
+          "kind": "import-statement",
+          "original": "./fetchWrapper.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/classes/DataTableElement.js": {
+      "bytes": 2703,
+      "imports": [
+        {
+          "path": "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net-bs5"
+        },
+        {
+          "path": "node_modules/datatables.net-fixedcolumns-bs5/js/fixedColumns.bootstrap5.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net-fixedcolumns-bs5"
+        },
+        {
+          "path": "node_modules/datatables.net-fixedheader-bs5/js/fixedHeader.bootstrap5.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net-fixedheader-bs5"
+        },
+        {
+          "path": "node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net-buttons-bs5"
+        },
+        {
+          "path": "node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net-responsive-bs5"
+        },
+        {
+          "path": "node_modules/datatables.net-rowgroup-bs5/js/rowGroup.bootstrap5.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net-rowgroup-bs5"
+        },
+        {
+          "path": "node_modules/datatables.net-select-bs5/js/select.bootstrap5.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net-select-bs5"
+        },
+        {
+          "path": "src/utils/EventfulElement.js",
+          "kind": "import-statement",
+          "original": "../utils/EventfulElement.js"
+        },
+        {
+          "path": "src/utils/icons.js",
+          "kind": "import-statement",
+          "original": "../utils/icons.js"
+        },
+        {
+          "path": "src/utils/parseBool.js",
+          "kind": "import-statement",
+          "original": "../utils/parseBool.js"
+        },
+        {
+          "path": "src/utils/getGlobalFn.js",
+          "kind": "import-statement",
+          "original": "../utils/getGlobalFn.js"
+        },
+        {
+          "path": "src/utils/getDelete.js",
+          "kind": "import-statement",
+          "original": "../utils/getDelete.js"
+        },
+        {
+          "path": "src/utils/fetchJson.js",
+          "kind": "import-statement",
+          "original": "../utils/fetchJson.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css": {
+      "bytes": 14423,
+      "imports": []
+    },
+    "node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css": {
+      "bytes": 7980,
+      "imports": []
+    },
+    "node_modules/datatables.net-fixedcolumns-bs5/css/fixedColumns.bootstrap5.min.css": {
+      "bytes": 3627,
+      "imports": []
+    },
+    "node_modules/datatables.net-fixedheader-bs5/css/fixedHeader.bootstrap5.min.css": {
+      "bytes": 380,
+      "imports": []
+    },
+    "node_modules/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css": {
+      "bytes": 6044,
+      "imports": []
+    },
+    "node_modules/datatables.net-rowgroup-bs5/css/rowGroup.bootstrap5.min.css": {
+      "bytes": 1969,
+      "imports": []
+    },
+    "node_modules/datatables.net-select-bs5/css/select.bootstrap5.min.css": {
+      "bytes": 2157,
+      "imports": []
+    },
+    "src/data-table.js": {
+      "bytes": 1212,
+      "imports": [
+        {
+          "path": "src/classes/DataTableElement.js",
+          "kind": "import-statement",
+          "original": "./classes/DataTableElement.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        },
+        {
+          "path": "node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css",
+          "kind": "import-statement",
+          "original": "../node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css"
+        },
+        {
+          "path": "node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css",
+          "kind": "import-statement",
+          "original": "../node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css"
+        },
+        {
+          "path": "node_modules/datatables.net-fixedcolumns-bs5/css/fixedColumns.bootstrap5.min.css",
+          "kind": "import-statement",
+          "original": "../node_modules/datatables.net-fixedcolumns-bs5/css/fixedColumns.bootstrap5.min.css"
+        },
+        {
+          "path": "node_modules/datatables.net-fixedheader-bs5/css/fixedHeader.bootstrap5.min.css",
+          "kind": "import-statement",
+          "original": "../node_modules/datatables.net-fixedheader-bs5/css/fixedHeader.bootstrap5.min.css"
+        },
+        {
+          "path": "node_modules/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css",
+          "kind": "import-statement",
+          "original": "../node_modules/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css"
+        },
+        {
+          "path": "node_modules/datatables.net-rowgroup-bs5/css/rowGroup.bootstrap5.min.css",
+          "kind": "import-statement",
+          "original": "../node_modules/datatables.net-rowgroup-bs5/css/rowGroup.bootstrap5.min.css"
+        },
+        {
+          "path": "node_modules/datatables.net-select-bs5/css/select.bootstrap5.min.css",
+          "kind": "import-statement",
+          "original": "../node_modules/datatables.net-select-bs5/css/select.bootstrap5.min.css"
+        },
+        {
+          "path": "src/utils/injectStyles.js",
+          "kind": "import-statement",
+          "original": "./utils/injectStyles.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/tabulator-tables/dist/css/tabulator_bootstrap5.min.css": {
+      "bytes": 39385,
+      "imports": []
+    },
+    "src/css/tabulator-grid.min.css": {
+      "bytes": 10572,
+      "imports": []
+    },
+    "src/data-table.raw.js": {
+      "bytes": 551,
+      "imports": [
+        {
+          "path": "src/classes/DataTableElement.js",
+          "kind": "import-statement",
+          "original": "./classes/DataTableElement.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        },
+        {
+          "path": "node_modules/tabulator-tables/dist/css/tabulator_bootstrap5.min.css",
+          "kind": "import-statement",
+          "original": "../node_modules/tabulator-tables/dist/css/tabulator_bootstrap5.min.css"
+        },
+        {
+          "path": "src/css/tabulator-grid.min.css",
+          "kind": "import-statement",
+          "original": "./css/tabulator-grid.min.css"
+        },
+        {
+          "path": "src/utils/injectStyles.js",
+          "kind": "import-statement",
+          "original": "./utils/injectStyles.js"
+        }
+      ],
+      "format": "esm"
+    },
     "node_modules/filepond/dist/filepond.esm.js": {
-      "bytes": 294950,
+      "bytes": 295479,
       "imports": [],
       "format": "esm"
     },
@@ -729,7 +1203,7 @@
       "format": "esm"
     },
     "node_modules/filepond/dist/filepond.min.css": {
-      "bytes": 17447,
+      "bytes": 17465,
       "imports": []
     },
     "node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.min.css": {
@@ -1885,22 +2359,6 @@
     "src/utils/ce.js": {
       "bytes": 240,
       "imports": [],
-      "format": "esm"
-    },
-    "src/utils/fetchWrapper.js": {
-      "bytes": 1326,
-      "imports": [],
-      "format": "esm"
-    },
-    "src/utils/fetchJson.js": {
-      "bytes": 1293,
-      "imports": [
-        {
-          "path": "src/utils/fetchWrapper.js",
-          "kind": "import-statement",
-          "original": "./fetchWrapper.js"
-        }
-      ],
       "format": "esm"
     },
     "src/utils/formDataToObject.js": {
@@ -4512,11 +4970,6 @@
       "imports": [],
       "format": "esm"
     },
-    "src/utils/icons.js": {
-      "bytes": 3067,
-      "imports": [],
-      "format": "esm"
-    },
     "src/classes/tabulator/Format/formatters/customTickCross.js": {
       "bytes": 1068,
       "imports": [
@@ -4601,11 +5054,6 @@
       "imports": [],
       "format": "esm"
     },
-    "src/utils/getDelete.js": {
-      "bytes": 115,
-      "imports": [],
-      "format": "esm"
-    },
     "src/classes/TabulatorGrid.js": {
       "bytes": 10308,
       "imports": [
@@ -4662,14 +5110,6 @@
       ],
       "format": "esm"
     },
-    "node_modules/tabulator-tables/dist/css/tabulator_bootstrap5.min.css": {
-      "bytes": 39385,
-      "imports": []
-    },
-    "src/css/tabulator-grid.min.css": {
-      "bytes": 10572,
-      "imports": []
-    },
     "src/tabulator-grid.js": {
       "bytes": 544,
       "imports": [
@@ -4718,12 +5158,12 @@
       "format": "esm"
     },
     "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-      "bytes": 74565,
+      "bytes": 76098,
       "imports": [],
       "format": "cjs"
     },
     "node_modules/intl-tel-input/build/js/utils.js": {
-      "bytes": 258579,
+      "bytes": 259573,
       "imports": []
     },
     "src/utils/Storage.js": {
@@ -5028,7 +5468,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/core/dist/index.js": {
-      "bytes": 167785,
+      "bytes": 170781,
       "imports": [
         {
           "path": "node_modules/@tiptap/pm/state/dist/index.js",
@@ -5113,7 +5553,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-italic/dist/index.js": {
-      "bytes": 2333,
+      "bytes": 2369,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5124,7 +5564,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-bold/dist/index.js": {
-      "bytes": 2417,
+      "bytes": 2463,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5135,7 +5575,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-strike/dist/index.js": {
-      "bytes": 2122,
+      "bytes": 2142,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5168,7 +5608,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-code/dist/index.js": {
-      "bytes": 1617,
+      "bytes": 1633,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5367,7 +5807,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-link/dist/index.js": {
-      "bytes": 11263,
+      "bytes": 12601,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -6315,7 +6755,7 @@
       "entryPoint": "src/bs-autocomplete.js",
       "inputs": {
         "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-          "bytesInOutput": 14822
+          "bytesInOutput": 14884
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6348,7 +6788,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 16189
+      "bytes": 16251
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -6529,7 +6969,7 @@
       "entryPoint": "src/coloris-input.js",
       "inputs": {
         "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-          "bytesInOutput": 14095
+          "bytesInOutput": 14555
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6571,7 +7011,7 @@
           "bytesInOutput": 247
         }
       },
-      "bytes": 24801
+      "bytes": 25261
     },
     "dist/coloris-input.raw.min.js": {
       "imports": [],
@@ -6579,7 +7019,7 @@
       "entryPoint": "src/coloris-input.raw.js",
       "inputs": {
         "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-          "bytesInOutput": 14095
+          "bytesInOutput": 14555
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -6615,7 +7055,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 15912
+      "bytes": 16372
     },
     "dist/count-down.min.js": {
       "imports": [],
@@ -6714,13 +7154,227 @@
       },
       "bytes": 8693
     },
+    "dist/data-table.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/data-table.js",
+      "inputs": {
+        "node_modules/jquery/dist/jquery.js": {
+          "bytesInOutput": 88040
+        },
+        "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+          "bytesInOutput": 1069
+        },
+        "node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92425
+        },
+        "node_modules/datatables.net-fixedcolumns-bs5/js/fixedColumns.bootstrap5.mjs": {
+          "bytesInOutput": 18
+        },
+        "node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs": {
+          "bytesInOutput": 7733
+        },
+        "node_modules/datatables.net-fixedheader-bs5/js/fixedHeader.bootstrap5.mjs": {
+          "bytesInOutput": 18
+        },
+        "node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs": {
+          "bytesInOutput": 11908
+        },
+        "node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs": {
+          "bytesInOutput": 1034
+        },
+        "node_modules/datatables.net-buttons/js/dataTables.buttons.mjs": {
+          "bytesInOutput": 26898
+        },
+        "node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs": {
+          "bytesInOutput": 1011
+        },
+        "node_modules/datatables.net-responsive/js/dataTables.responsive.mjs": {
+          "bytesInOutput": 15617
+        },
+        "node_modules/datatables.net-rowgroup-bs5/js/rowGroup.bootstrap5.mjs": {
+          "bytesInOutput": 18
+        },
+        "node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs": {
+          "bytesInOutput": 3639
+        },
+        "node_modules/datatables.net-select-bs5/js/select.bootstrap5.mjs": {
+          "bytesInOutput": 18
+        },
+        "node_modules/datatables.net-select/js/dataTables.select.mjs": {
+          "bytesInOutput": 16282
+        },
+        "src/utils/isString.js": {
+          "bytesInOutput": 29
+        },
+        "src/utils/getGlobalFn.js": {
+          "bytesInOutput": 50
+        },
+        "src/utils/replaceCallbacks.js": {
+          "bytesInOutput": 163
+        },
+        "src/utils/simpleConfig.js": {
+          "bytesInOutput": 168
+        },
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 121
+        },
+        "src/utils/FormidableElement.js": {
+          "bytesInOutput": 365
+        },
+        "src/utils/EventfulElement.js": {
+          "bytesInOutput": 871
+        },
+        "src/utils/icons.js": {
+          "bytesInOutput": 579
+        },
+        "src/utils/getDelete.js": {
+          "bytesInOutput": 58
+        },
+        "src/utils/fetchWrapper.js": {
+          "bytesInOutput": 487
+        },
+        "src/utils/fetchJson.js": {
+          "bytesInOutput": 407
+        },
+        "src/classes/DataTableElement.js": {
+          "bytesInOutput": 743
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 60
+        },
+        "node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css": {
+          "bytesInOutput": 14447
+        },
+        "node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css": {
+          "bytesInOutput": 7999
+        },
+        "node_modules/datatables.net-fixedcolumns-bs5/css/fixedColumns.bootstrap5.min.css": {
+          "bytesInOutput": 3637
+        },
+        "node_modules/datatables.net-fixedheader-bs5/css/fixedHeader.bootstrap5.min.css": {
+          "bytesInOutput": 390
+        },
+        "node_modules/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css": {
+          "bytesInOutput": 6054
+        },
+        "node_modules/datatables.net-rowgroup-bs5/css/rowGroup.bootstrap5.min.css": {
+          "bytesInOutput": 1979
+        },
+        "node_modules/datatables.net-select-bs5/css/select.bootstrap5.min.css": {
+          "bytesInOutput": 2173
+        },
+        "src/utils/injectStyles.js": {
+          "bytesInOutput": 159
+        },
+        "src/data-table.js": {
+          "bytesInOutput": 68
+        }
+      },
+      "bytes": 309647
+    },
+    "dist/data-table.raw.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/data-table.raw.js",
+      "inputs": {
+        "node_modules/jquery/dist/jquery.js": {
+          "bytesInOutput": 88040
+        },
+        "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+          "bytesInOutput": 1069
+        },
+        "node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92425
+        },
+        "node_modules/datatables.net-fixedcolumns-bs5/js/fixedColumns.bootstrap5.mjs": {
+          "bytesInOutput": 18
+        },
+        "node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs": {
+          "bytesInOutput": 7733
+        },
+        "node_modules/datatables.net-fixedheader-bs5/js/fixedHeader.bootstrap5.mjs": {
+          "bytesInOutput": 18
+        },
+        "node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs": {
+          "bytesInOutput": 11908
+        },
+        "node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs": {
+          "bytesInOutput": 1034
+        },
+        "node_modules/datatables.net-buttons/js/dataTables.buttons.mjs": {
+          "bytesInOutput": 26898
+        },
+        "node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs": {
+          "bytesInOutput": 1011
+        },
+        "node_modules/datatables.net-responsive/js/dataTables.responsive.mjs": {
+          "bytesInOutput": 15617
+        },
+        "node_modules/datatables.net-rowgroup-bs5/js/rowGroup.bootstrap5.mjs": {
+          "bytesInOutput": 18
+        },
+        "node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs": {
+          "bytesInOutput": 3639
+        },
+        "node_modules/datatables.net-select-bs5/js/select.bootstrap5.mjs": {
+          "bytesInOutput": 18
+        },
+        "node_modules/datatables.net-select/js/dataTables.select.mjs": {
+          "bytesInOutput": 16282
+        },
+        "src/utils/isString.js": {
+          "bytesInOutput": 29
+        },
+        "src/utils/getGlobalFn.js": {
+          "bytesInOutput": 50
+        },
+        "src/utils/replaceCallbacks.js": {
+          "bytesInOutput": 163
+        },
+        "src/utils/simpleConfig.js": {
+          "bytesInOutput": 168
+        },
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 121
+        },
+        "src/utils/FormidableElement.js": {
+          "bytesInOutput": 365
+        },
+        "src/utils/EventfulElement.js": {
+          "bytesInOutput": 871
+        },
+        "src/utils/icons.js": {
+          "bytesInOutput": 579
+        },
+        "src/utils/getDelete.js": {
+          "bytesInOutput": 58
+        },
+        "src/utils/fetchWrapper.js": {
+          "bytesInOutput": 487
+        },
+        "src/utils/fetchJson.js": {
+          "bytesInOutput": 407
+        },
+        "src/classes/DataTableElement.js": {
+          "bytesInOutput": 743
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 60
+        },
+        "src/data-table.raw.js": {
+          "bytesInOutput": 30
+        }
+      },
+      "bytes": 272771
+    },
     "dist/filepond-input.min.js": {
       "imports": [],
       "exports": [],
       "entryPoint": "src/filepond-input.js",
       "inputs": {
         "node_modules/filepond/dist/filepond.esm.js": {
-          "bytesInOutput": 100841
+          "bytesInOutput": 101065
         },
         "node_modules/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.esm.js": {
           "bytesInOutput": 1766
@@ -6777,7 +7431,7 @@
           "bytesInOutput": 60
         },
         "node_modules/filepond/dist/filepond.min.css": {
-          "bytesInOutput": 17457
+          "bytesInOutput": 17475
         },
         "node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.min.css": {
           "bytesInOutput": 2698
@@ -6792,7 +7446,7 @@
           "bytesInOutput": 64
         }
       },
-      "bytes": 189426
+      "bytes": 189668
     },
     "dist/filepond-input.raw.min.js": {
       "imports": [],
@@ -6800,7 +7454,7 @@
       "entryPoint": "src/filepond-input.raw.js",
       "inputs": {
         "node_modules/filepond/dist/filepond.esm.js": {
-          "bytesInOutput": 100841
+          "bytesInOutput": 101065
         },
         "node_modules/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.esm.js": {
           "bytesInOutput": 1766
@@ -6860,7 +7514,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 165765
+      "bytes": 165989
     },
     "dist/flatpickr-input.min.js": {
       "imports": [],
@@ -7416,7 +8070,7 @@
           "bytesInOutput": 35
         },
         "src/utils/fetchWrapper.js": {
-          "bytesInOutput": 441
+          "bytesInOutput": 483
         },
         "src/utils/fetchJson.js": {
           "bytesInOutput": 405
@@ -7434,7 +8088,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 5339
+      "bytes": 5381
     },
     "dist/squire-editor.min.js": {
       "imports": [
@@ -8912,13 +9566,13 @@
       "entryPoint": "src/tel-input.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 35968
+          "bytesInOutput": 37072
         },
         "src/classes/TelInput.js": {
           "bytesInOutput": 2863
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 255841
+          "bytesInOutput": 256804
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8948,7 +9602,7 @@
           "bytesInOutput": 227
         },
         "src/utils/fetchWrapper.js": {
-          "bytesInOutput": 445
+          "bytesInOutput": 487
         },
         "src/utils/fetchJson.js": {
           "bytesInOutput": 407
@@ -8975,7 +9629,7 @@
           "bytesInOutput": 601
         }
       },
-      "bytes": 322699
+      "bytes": 324808
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -8983,13 +9637,13 @@
       "entryPoint": "src/tel-input.raw.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 35968
+          "bytesInOutput": 37072
         },
         "src/classes/TelInput.js": {
           "bytesInOutput": 2863
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 255841
+          "bytesInOutput": 256804
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -9019,7 +9673,7 @@
           "bytesInOutput": 227
         },
         "src/utils/fetchWrapper.js": {
-          "bytesInOutput": 445
+          "bytesInOutput": 487
         },
         "src/utils/fetchJson.js": {
           "bytesInOutput": 407
@@ -9040,7 +9694,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 298653
+      "bytes": 300762
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -9096,7 +9750,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 54870
+          "bytesInOutput": 55776
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -9111,13 +9765,13 @@
           "bytesInOutput": 950
         },
         "node_modules/@tiptap/extension-italic/dist/index.js": {
-          "bytesInOutput": 906
+          "bytesInOutput": 942
         },
         "node_modules/@tiptap/extension-bold/dist/index.js": {
-          "bytesInOutput": 965
+          "bytesInOutput": 1011
         },
         "node_modules/@tiptap/extension-strike/dist/index.js": {
-          "bytesInOutput": 830
+          "bytesInOutput": 850
         },
         "node_modules/@tiptap/extension-underline/dist/index.js": {
           "bytesInOutput": 596
@@ -9126,7 +9780,7 @@
           "bytesInOutput": 598
         },
         "node_modules/@tiptap/extension-code/dist/index.js": {
-          "bytesInOutput": 662
+          "bytesInOutput": 678
         },
         "node_modules/@tiptap/extension-code-block/dist/index.js": {
           "bytesInOutput": 2502
@@ -9174,7 +9828,7 @@
           "bytesInOutput": 19344
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 3419
+          "bytesInOutput": 3679
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -9240,7 +9894,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 321677
+      "bytes": 322961
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -9296,7 +9950,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 54870
+          "bytesInOutput": 55776
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -9311,13 +9965,13 @@
           "bytesInOutput": 950
         },
         "node_modules/@tiptap/extension-italic/dist/index.js": {
-          "bytesInOutput": 906
+          "bytesInOutput": 942
         },
         "node_modules/@tiptap/extension-bold/dist/index.js": {
-          "bytesInOutput": 965
+          "bytesInOutput": 1011
         },
         "node_modules/@tiptap/extension-strike/dist/index.js": {
-          "bytesInOutput": 830
+          "bytesInOutput": 850
         },
         "node_modules/@tiptap/extension-underline/dist/index.js": {
           "bytesInOutput": 596
@@ -9326,7 +9980,7 @@
           "bytesInOutput": 598
         },
         "node_modules/@tiptap/extension-code/dist/index.js": {
-          "bytesInOutput": 662
+          "bytesInOutput": 678
         },
         "node_modules/@tiptap/extension-code-block/dist/index.js": {
           "bytesInOutput": 2502
@@ -9374,7 +10028,7 @@
           "bytesInOutput": 19344
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 3419
+          "bytesInOutput": 3679
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -9434,7 +10088,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 320511
+      "bytes": 321795
     },
     "dist/tom-select.min.js": {
       "imports": [],
@@ -9553,7 +10207,7 @@
           "bytesInOutput": 58
         },
         "src/utils/fetchWrapper.js": {
-          "bytesInOutput": 445
+          "bytesInOutput": 487
         },
         "src/utils/fetchJson.js": {
           "bytesInOutput": 407
@@ -9574,7 +10228,7 @@
           "bytesInOutput": 122
         }
       },
-      "bytes": 75758
+      "bytes": 75800
     },
     "dist/tom-select.raw.min.js": {
       "imports": [],
@@ -9693,7 +10347,7 @@
           "bytesInOutput": 58
         },
         "src/utils/fetchWrapper.js": {
-          "bytesInOutput": 445
+          "bytesInOutput": 487
         },
         "src/utils/fetchJson.js": {
           "bytesInOutput": 407
@@ -9708,7 +10362,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 60152
+      "bytes": 60194
     }
   }
 }
