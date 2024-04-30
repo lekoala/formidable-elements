@@ -10,7 +10,7 @@
   "author": "LeKoala",
   "license": "MIT",
   "dependencies": {
-    "@floating-ui/dom": "^1.6.3",
+    "@floating-ui/dom": "^1.6.4",
     "@melloware/coloris": "^0.24.0",
     "@tiptap/core": "^2.3.0",
     "@tiptap/extension-image": "^2.3.0",
@@ -44,10 +44,10 @@
     "filepond-plugin-image-validate-size": "^1.2.7",
     "flatpickr": "^4.6.13",
     "inputmask": "^5.0.9-beta.62",
-    "intl-tel-input": "^21.2.4",
+    "intl-tel-input": "^21.2.7",
     "squire-rte": "^2.2.8",
     "superfile": "^1.2.1",
-    "tabulator-tables": "6.2.0",
+    "tabulator-tables": "6.2.1",
     "tom-select": "^2.3.1"
   },
   "devDependencies": {
@@ -65,12 +65,12 @@
   ],
   "scripts": {
     "build": "esbuild ./src/*.js --bundle --minify --loader:.css=text --format=iife --outdir=dist --out-extension:.js=.min.js",
-    "start": "npm run build -- --servedir=.",
-    "watch": "npm run build -- --watch",
-    "bump": "npm run build-all && npm version patch",
+    "start": "bun run build -- --servedir=.",
+    "watch": "bun run build -- --watch",
+    "bump": "bun run build-all && bun version patch",
     "build-all": "esbuild ./src/*.js --bundle --minify --loader:.css=text --format=iife --outdir=dist --out-extension:.js=.min.js --metafile=meta.json --analyze 2> ./docs/filesize.md",
-    "jsdoc": "npx jsdoc-to-markdown ./src/classes/*.js > ./docs/api.md",
-    "update-deps": "npx npm-check-updates -u",
+    "jsdoc": "bunx jsdoc-to-markdown ./src/classes/*.js > ./docs/api.md",
+    "update-deps": "bunx npm-check-updates -u",
     "local-server": "php -S localhost:8002 -t ."
   }
 }

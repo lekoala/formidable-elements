@@ -1,0 +1,1 @@
+data-table{display:block;max-width:100%}data-table tbody td .btn{padding-block:0;width:100%}data-table table.dataTable input.dt-select-checkbox:checked:after{content:" ";background:currentColor;margin:2px;width:calc(100% - 4px);height:calc(100% - 4px);border-radius:3px}
