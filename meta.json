@@ -888,7 +888,7 @@
       "format": "esm"
     },
     "src/classes/DataTableElement.js": {
-      "bytes": 2703,
+      "bytes": 4525,
       "imports": [
         {
           "path": "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
@@ -986,8 +986,12 @@
       "bytes": 2157,
       "imports": []
     },
+    "src/css/datatables.min.css": {
+      "bytes": 270,
+      "imports": []
+    },
     "src/data-table.js": {
-      "bytes": 1212,
+      "bytes": 1407,
       "imports": [
         {
           "path": "src/classes/DataTableElement.js",
@@ -1035,6 +1039,11 @@
           "original": "../node_modules/datatables.net-select-bs5/css/select.bootstrap5.min.css"
         },
         {
+          "path": "src/css/datatables.min.css",
+          "kind": "import-statement",
+          "original": "./css/datatables.min"
+        },
+        {
           "path": "src/utils/injectStyles.js",
           "kind": "import-statement",
           "original": "./utils/injectStyles.js"
@@ -1042,16 +1051,8 @@
       ],
       "format": "esm"
     },
-    "node_modules/tabulator-tables/dist/css/tabulator_bootstrap5.min.css": {
-      "bytes": 39385,
-      "imports": []
-    },
-    "src/css/tabulator-grid.min.css": {
-      "bytes": 10572,
-      "imports": []
-    },
     "src/data-table.raw.js": {
-      "bytes": 551,
+      "bytes": 228,
       "imports": [
         {
           "path": "src/classes/DataTableElement.js",
@@ -1062,21 +1063,6 @@
           "path": "src/utils/defineEl.js",
           "kind": "import-statement",
           "original": "./utils/defineEl.js"
-        },
-        {
-          "path": "node_modules/tabulator-tables/dist/css/tabulator_bootstrap5.min.css",
-          "kind": "import-statement",
-          "original": "../node_modules/tabulator-tables/dist/css/tabulator_bootstrap5.min.css"
-        },
-        {
-          "path": "src/css/tabulator-grid.min.css",
-          "kind": "import-statement",
-          "original": "./css/tabulator-grid.min.css"
-        },
-        {
-          "path": "src/utils/injectStyles.js",
-          "kind": "import-statement",
-          "original": "./utils/injectStyles.js"
         }
       ],
       "format": "esm"
@@ -1541,13 +1527,8 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-      "bytes": 22928,
+      "bytes": 24021,
       "imports": [
-        {
-          "path": "node_modules/@floating-ui/core/dist/floating-ui.core.mjs",
-          "kind": "import-statement",
-          "original": "@floating-ui/core"
-        },
         {
           "path": "node_modules/@floating-ui/core/dist/floating-ui.core.mjs",
           "kind": "import-statement",
@@ -2920,7 +2901,7 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/core/tools/Popup.js": {
-      "bytes": 7450,
+      "bytes": 7439,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/CoreFeature.js",
@@ -3324,7 +3305,7 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/ColumnCalcs/ColumnCalcs.js": {
-      "bytes": 14157,
+      "bytes": 14156,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
@@ -3360,7 +3341,7 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/DataTree/DataTree.js": {
-      "bytes": 16376,
+      "bytes": 16375,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
@@ -4225,7 +4206,7 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/MoveColumns/MoveColumns.js": {
-      "bytes": 9012,
+      "bytes": 9334,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
@@ -4426,7 +4407,7 @@
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/modules/ResizeTable/ResizeTable.js": {
-      "bytes": 4503,
+      "bytes": 4502,
       "imports": [
         {
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
@@ -5110,6 +5091,14 @@
       ],
       "format": "esm"
     },
+    "node_modules/tabulator-tables/dist/css/tabulator_bootstrap5.min.css": {
+      "bytes": 39385,
+      "imports": []
+    },
+    "src/css/tabulator-grid.min.css": {
+      "bytes": 10572,
+      "imports": []
+    },
     "src/tabulator-grid.js": {
       "bytes": 544,
       "imports": [
@@ -5158,12 +5147,12 @@
       "format": "esm"
     },
     "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-      "bytes": 76098,
+      "bytes": 76138,
       "imports": [],
       "format": "cjs"
     },
     "node_modules/intl-tel-input/build/js/utils.js": {
-      "bytes": 259573,
+      "bytes": 259612,
       "imports": []
     },
     "src/utils/Storage.js": {
@@ -7238,7 +7227,7 @@
           "bytesInOutput": 407
         },
         "src/classes/DataTableElement.js": {
-          "bytesInOutput": 743
+          "bytesInOutput": 1545
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7264,14 +7253,17 @@
         "node_modules/datatables.net-select-bs5/css/select.bootstrap5.min.css": {
           "bytesInOutput": 2173
         },
+        "src/css/datatables.min.css": {
+          "bytesInOutput": 280
+        },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 159
         },
         "src/data-table.js": {
-          "bytesInOutput": 68
+          "bytesInOutput": 71
         }
       },
-      "bytes": 309647
+      "bytes": 310732
     },
     "dist/data-table.raw.min.js": {
       "imports": [],
@@ -7357,7 +7349,7 @@
           "bytesInOutput": 407
         },
         "src/classes/DataTableElement.js": {
-          "bytesInOutput": 743
+          "bytesInOutput": 1545
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7366,7 +7358,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 272771
+      "bytes": 273573
     },
     "dist/filepond-input.min.js": {
       "imports": [],
@@ -7709,13 +7701,13 @@
           "bytesInOutput": 1407
         },
         "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
-          "bytesInOutput": 7071
-        },
-        "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-          "bytesInOutput": 6424
+          "bytesInOutput": 7073
         },
         "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs": {
           "bytesInOutput": 2059
+        },
+        "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
+          "bytesInOutput": 6463
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7757,7 +7749,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 23417
+      "bytes": 23458
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -8395,7 +8387,7 @@
           "bytesInOutput": 80
         },
         "node_modules/tabulator-tables/src/js/core/tools/Popup.js": {
-          "bytesInOutput": 4870
+          "bytesInOutput": 4824
         },
         "node_modules/tabulator-tables/src/js/core/Module.js": {
           "bytesInOutput": 1421
@@ -8719,7 +8711,7 @@
           "bytesInOutput": 6011
         },
         "node_modules/tabulator-tables/src/js/modules/MoveColumns/MoveColumns.js": {
-          "bytesInOutput": 5414
+          "bytesInOutput": 5636
         },
         "node_modules/tabulator-tables/src/js/modules/MoveRows/defaults/senders.js": {
           "bytesInOutput": 44
@@ -8938,7 +8930,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 474956
+      "bytes": 475132
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -9024,7 +9016,7 @@
           "bytesInOutput": 80
         },
         "node_modules/tabulator-tables/src/js/core/tools/Popup.js": {
-          "bytesInOutput": 4870
+          "bytesInOutput": 4824
         },
         "node_modules/tabulator-tables/src/js/core/Module.js": {
           "bytesInOutput": 1421
@@ -9348,7 +9340,7 @@
           "bytesInOutput": 6011
         },
         "node_modules/tabulator-tables/src/js/modules/MoveColumns/MoveColumns.js": {
-          "bytesInOutput": 5414
+          "bytesInOutput": 5636
         },
         "node_modules/tabulator-tables/src/js/modules/MoveRows/defaults/senders.js": {
           "bytesInOutput": 44
@@ -9558,7 +9550,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 424722
+      "bytes": 424898
     },
     "dist/tel-input.min.js": {
       "imports": [],
@@ -9566,13 +9558,13 @@
       "entryPoint": "src/tel-input.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 37072
+          "bytesInOutput": 37108
         },
         "src/classes/TelInput.js": {
           "bytesInOutput": 2863
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 256804
+          "bytesInOutput": 256843
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -9629,7 +9621,7 @@
           "bytesInOutput": 601
         }
       },
-      "bytes": 324808
+      "bytes": 324883
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -9637,13 +9629,13 @@
       "entryPoint": "src/tel-input.raw.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 37072
+          "bytesInOutput": 37108
         },
         "src/classes/TelInput.js": {
           "bytesInOutput": 2863
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 256804
+          "bytesInOutput": 256843
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -9694,7 +9686,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 300762
+      "bytes": 300837
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],

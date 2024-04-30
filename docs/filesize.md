@@ -1,5 +1,5 @@
 
-  dist/tabulator-grid.min.js                                                                                    463.8kb  100.0%
+  dist/tabulator-grid.min.js                                                                                    464.0kb  100.0%
    ├ node_modules/tabulator-tables/dist/css/tabulator_bootstrap5.min.css                                         38.5kb    8.3%
    ├ node_modules/tabulator-tables/src/js/core/RowManager.js                                                     15.7kb    3.4%
    ├ node_modules/tabulator-tables/src/js/modules/Page/Page.js                                                   15.0kb    3.2%
@@ -26,11 +26,11 @@
    ├ node_modules/tabulator-tables/src/js/core/row/Row.js                                                         5.9kb    1.3%
    ├ node_modules/tabulator-tables/src/js/modules/Menu/Menu.js                                                    5.9kb    1.3%
    ├ node_modules/tabulator-tables/src/js/modules/ResponsiveLayout/ResponsiveLayout.js                            5.7kb    1.2%
-   ├ node_modules/tabulator-tables/src/js/modules/MoveColumns/MoveColumns.js                                      5.3kb    1.1%
+   ├ node_modules/tabulator-tables/src/js/modules/MoveColumns/MoveColumns.js                                      5.5kb    1.2%
    ├ node_modules/tabulator-tables/src/js/modules/Popup/Popup.js                                                  5.2kb    1.1%
    ├ node_modules/tabulator-tables/src/js/modules/FrozenColumns/FrozenColumns.js                                  5.1kb    1.1%
    ├ node_modules/tabulator-tables/src/js/modules/ReactiveData/ReactiveData.js                                    4.9kb    1.0%
-   ├ node_modules/tabulator-tables/src/js/core/tools/Popup.js                                                     4.8kb    1.0%
+   ├ node_modules/tabulator-tables/src/js/core/tools/Popup.js                                                     4.7kb    1.0%
    ├ node_modules/tabulator-tables/src/js/modules/Clipboard/Clipboard.js                                          4.4kb    1.0%
    ├ node_modules/tabulator-tables/src/js/core/cell/Cell.js                                                       4.1kb    0.9%
    ├ node_modules/tabulator-tables/src/js/core/tools/InteractionMonitor.js                                        4.0kb    0.9%
@@ -208,7 +208,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/Export/defaults/columnLookups.js                                 10b     0.0%
    └ node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js                                     10b     0.0%
 
-  dist/tabulator-grid.raw.min.js                                                                                414.8kb  100.0%
+  dist/tabulator-grid.raw.min.js                                                                                414.9kb  100.0%
    ├ node_modules/tabulator-tables/src/js/core/RowManager.js                                                     15.7kb    3.8%
    ├ node_modules/tabulator-tables/src/js/modules/Page/Page.js                                                   15.0kb    3.6%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/List.js                                                   14.5kb    3.5%
@@ -233,11 +233,11 @@
    ├ node_modules/tabulator-tables/src/js/core/row/Row.js                                                         5.9kb    1.4%
    ├ node_modules/tabulator-tables/src/js/modules/Menu/Menu.js                                                    5.9kb    1.4%
    ├ node_modules/tabulator-tables/src/js/modules/ResponsiveLayout/ResponsiveLayout.js                            5.7kb    1.4%
-   ├ node_modules/tabulator-tables/src/js/modules/MoveColumns/MoveColumns.js                                      5.3kb    1.3%
+   ├ node_modules/tabulator-tables/src/js/modules/MoveColumns/MoveColumns.js                                      5.5kb    1.3%
    ├ node_modules/tabulator-tables/src/js/modules/Popup/Popup.js                                                  5.2kb    1.3%
    ├ node_modules/tabulator-tables/src/js/modules/FrozenColumns/FrozenColumns.js                                  5.1kb    1.2%
    ├ node_modules/tabulator-tables/src/js/modules/ReactiveData/ReactiveData.js                                    4.9kb    1.2%
-   ├ node_modules/tabulator-tables/src/js/core/tools/Popup.js                                                     4.8kb    1.1%
+   ├ node_modules/tabulator-tables/src/js/core/tools/Popup.js                                                     4.7kb    1.1%
    ├ node_modules/tabulator-tables/src/js/modules/Clipboard/Clipboard.js                                          4.4kb    1.1%
    ├ node_modules/tabulator-tables/src/js/core/cell/Cell.js                                                       4.1kb    1.0%
    ├ node_modules/tabulator-tables/src/js/core/tools/InteractionMonitor.js                                        4.0kb    1.0%
@@ -414,7 +414,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/Export/defaults/columnLookups.js                                 10b     0.0%
    └ node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js                                     10b     0.0%
 
-  dist/tel-input.min.js                                                                                         317.2kb  100.0%
+  dist/tel-input.min.js                                                                                         317.3kb  100.0%
    ├ node_modules/intl-tel-input/build/js/utils.js                                                              250.8kb   79.1%
    ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                        36.2kb   11.4%
    ├ src/css/tel-input.min.css                                                                                   22.8kb    7.2%
@@ -549,36 +549,37 @@
    ├ src/utils/hasBootstrap.js                                                                                     30b     0.0%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
-  dist/data-table.min.js                                                                                        302.4kb  100.0%
-   ├ node_modules/datatables.net/js/dataTables.mjs                                                               90.3kb   29.8%
-   ├ node_modules/jquery/dist/jquery.js                                                                          86.0kb   28.4%
+  dist/data-table.min.js                                                                                        303.4kb  100.0%
+   ├ node_modules/datatables.net/js/dataTables.mjs                                                               90.3kb   29.7%
+   ├ node_modules/jquery/dist/jquery.js                                                                          86.0kb   28.3%
    ├ node_modules/datatables.net-buttons/js/dataTables.buttons.mjs                                               26.3kb    8.7%
-   ├ node_modules/datatables.net-select/js/dataTables.select.mjs                                                 15.9kb    5.3%
+   ├ node_modules/datatables.net-select/js/dataTables.select.mjs                                                 15.9kb    5.2%
    ├ node_modules/datatables.net-responsive/js/dataTables.responsive.mjs                                         15.3kb    5.0%
-   ├ node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css                                           14.1kb    4.7%
+   ├ node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css                                           14.1kb    4.6%
    ├ node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs                                       11.6kb    3.8%
    ├ node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css                                       7.8kb    2.6%
    ├ node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs                                      7.6kb    2.5%
-   ├ node_modules/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css                                 5.9kb    2.0%
+   ├ node_modules/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css                                 5.9kb    1.9%
    ├ node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs                                              3.6kb    1.2%
    ├ node_modules/datatables.net-fixedcolumns-bs5/css/fixedColumns.bootstrap5.min.css                             3.6kb    1.2%
    ├ node_modules/datatables.net-select-bs5/css/select.bootstrap5.min.css                                         2.1kb    0.7%
    ├ node_modules/datatables.net-rowgroup-bs5/css/rowGroup.bootstrap5.min.css                                     1.9kb    0.6%
+   ├ src/classes/DataTableElement.js                                                                              1.5kb    0.5%
    ├ node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs                                                 1.0kb    0.3%
    ├ node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs                                            1.0kb    0.3%
    ├ node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs                                     1011b     0.3%
    ├ src/utils/EventfulElement.js                                                                                 871b     0.3%
-   ├ src/classes/DataTableElement.js                                                                              743b     0.2%
    ├ src/utils/icons.js                                                                                           579b     0.2%
    ├ src/utils/fetchWrapper.js                                                                                    487b     0.2%
    ├ src/utils/fetchJson.js                                                                                       407b     0.1%
    ├ node_modules/datatables.net-fixedheader-bs5/css/fixedHeader.bootstrap5.min.css                               390b     0.1%
    ├ src/utils/FormidableElement.js                                                                               365b     0.1%
+   ├ src/css/datatables.min.css                                                                                   280b     0.1%
    ├ src/utils/simpleConfig.js                                                                                    168b     0.1%
    ├ src/utils/replaceCallbacks.js                                                                                163b     0.1%
    ├ src/utils/injectStyles.js                                                                                    159b     0.1%
    ├ src/utils/whenParsed.js                                                                                      121b     0.0%
-   ├ src/data-table.js                                                                                             68b     0.0%
+   ├ src/data-table.js                                                                                             71b     0.0%
    ├ src/utils/defineEl.js                                                                                         60b     0.0%
    ├ src/utils/getDelete.js                                                                                        58b     0.0%
    ├ src/utils/getGlobalFn.js                                                                                      50b     0.0%
@@ -588,7 +589,7 @@
    ├ node_modules/datatables.net-rowgroup-bs5/js/rowGroup.bootstrap5.mjs                                           18b     0.0%
    └ node_modules/datatables.net-select-bs5/js/select.bootstrap5.mjs                                               18b     0.0%
 
-  dist/tel-input.raw.min.js                                                                                     293.7kb  100.0%
+  dist/tel-input.raw.min.js                                                                                     293.8kb  100.0%
    ├ node_modules/intl-tel-input/build/js/utils.js                                                              250.8kb   85.4%
    ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                        36.2kb   12.3%
    ├ src/classes/TelInput.js                                                                                      2.8kb    1.0%
@@ -609,20 +610,20 @@
    ├ src/tel-input.raw.js                                                                                          29b     0.0%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
-  dist/data-table.raw.min.js                                                                                    266.4kb  100.0%
-   ├ node_modules/datatables.net/js/dataTables.mjs                                                               90.3kb   33.9%
-   ├ node_modules/jquery/dist/jquery.js                                                                          86.0kb   32.3%
-   ├ node_modules/datatables.net-buttons/js/dataTables.buttons.mjs                                               26.3kb    9.9%
+  dist/data-table.raw.min.js                                                                                    267.2kb  100.0%
+   ├ node_modules/datatables.net/js/dataTables.mjs                                                               90.3kb   33.8%
+   ├ node_modules/jquery/dist/jquery.js                                                                          86.0kb   32.2%
+   ├ node_modules/datatables.net-buttons/js/dataTables.buttons.mjs                                               26.3kb    9.8%
    ├ node_modules/datatables.net-select/js/dataTables.select.mjs                                                 15.9kb    6.0%
    ├ node_modules/datatables.net-responsive/js/dataTables.responsive.mjs                                         15.3kb    5.7%
    ├ node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs                                       11.6kb    4.4%
    ├ node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs                                      7.6kb    2.8%
    ├ node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs                                              3.6kb    1.3%
+   ├ src/classes/DataTableElement.js                                                                              1.5kb    0.6%
    ├ node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs                                                 1.0kb    0.4%
    ├ node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs                                            1.0kb    0.4%
    ├ node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs                                     1011b     0.4%
    ├ src/utils/EventfulElement.js                                                                                 871b     0.3%
-   ├ src/classes/DataTableElement.js                                                                              743b     0.3%
    ├ src/utils/icons.js                                                                                           579b     0.2%
    ├ src/utils/fetchWrapper.js                                                                                    487b     0.2%
    ├ src/utils/fetchJson.js                                                                                       407b     0.1%
@@ -963,11 +964,11 @@
 
   dist/floating-ui.min.js                                                                                        22.9kb  100.0%
    ├ node_modules/@floating-ui/core/dist/floating-ui.core.mjs                                                     6.9kb   30.2%
-   ├ node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs                                                       6.3kb   27.4%
+   ├ node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs                                                       6.3kb   27.6%
    ├ src/classes/FloatingUi.js                                                                                    4.3kb   18.8%
    ├ node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs                                               2.0kb    8.8%
    ├ node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs                                                   1.4kb    6.0%
-   ├ src/floating-ui.js                                                                                           410b     1.8%
+   ├ src/floating-ui.js                                                                                           410b     1.7%
    ├ src/utils/FormidableElement.js                                                                               365b     1.6%
    ├ src/utils/props.js                                                                                           308b     1.3%
    ├ src/utils/simpleConfig.js                                                                                    168b     0.7%
@@ -1177,11 +1178,11 @@
    └ src/locale-provider.js                                                                                        31b     7.9%
 
 
-  dist\tabulator-grid.min.js      463.8kb
-  dist\tabulator-grid.raw.min.js  414.8kb
-  dist\tel-input.min.js           317.2kb
+  dist\tabulator-grid.min.js      464.0kb
+  dist\tabulator-grid.raw.min.js  414.9kb
+  dist\tel-input.min.js           317.3kb
   dist\tiptap-editor.min.js       315.4kb
   dist\tiptap-editor.raw.min.js   314.3kb
   ...and 33 more output files...
 
-Done in 1653ms
+Done in 107ms
