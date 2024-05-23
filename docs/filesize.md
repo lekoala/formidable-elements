@@ -643,14 +643,14 @@
    ├ node_modules/tabulator-tables/src/js/modules/Export/defaults/columnLookups.js                                                  10b     0.0%
    └ node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js                                                      10b     0.0%
 
-  dist/tel-input.min.js                                                                                                          314.7kb  100.0%
-   ├ node_modules/intl-tel-input/build/js/utils.js                                                                               251.0kb   79.7%
-   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                                         33.6kb   10.7%
+  dist/tel-input.min.js                                                                                                          317.3kb  100.0%
+   ├ node_modules/intl-tel-input/build/js/utils.js                                                                               250.8kb   79.1%
+   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                                         36.2kb   11.4%
    ├ src/css/tel-input.min.css                                                                                                    22.8kb    7.2%
    ├ src/classes/TelInput.js                                                                                                       2.8kb    0.9%
    ├ src/utils/EventfulElement.js                                                                                                  871b     0.3%
    ├ src/tel-input.js                                                                                                              601b     0.2%
-   ├ src/utils/fetchWrapper.js                                                                                                     487b     0.2%
+   ├ src/utils/fetchWrapper.js                                                                                                     487b     0.1%
    ├ src/utils/fetchJson.js                                                                                                        407b     0.1%
    ├ src/utils/FormidableElement.js                                                                                                365b     0.1%
    ├ src/utils/insertHiddenInput.js                                                                                                229b     0.1%
@@ -666,9 +666,9 @@
    ├ src/utils/getGlobalFn.js                                                                                                       50b     0.0%
    └ src/utils/isString.js                                                                                                          29b     0.0%
 
-  dist/tel-input.raw.min.js                                                                                                      291.3kb  100.0%
-   ├ node_modules/intl-tel-input/build/js/utils.js                                                                               251.0kb   86.2%
-   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                                         33.6kb   11.5%
+  dist/tel-input.raw.min.js                                                                                                      293.8kb  100.0%
+   ├ node_modules/intl-tel-input/build/js/utils.js                                                                               250.8kb   85.4%
+   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                                         36.2kb   12.3%
    ├ src/classes/TelInput.js                                                                                                       2.8kb    1.0%
    ├ src/utils/EventfulElement.js                                                                                                  871b     0.3%
    ├ src/utils/fetchWrapper.js                                                                                                     487b     0.2%
@@ -1237,4 +1237,4 @@
   dist\tabulator-grid.min.js     464.0kb
   ...and 34 more output files...
 
-Done in 450ms
+Done in 139ms
