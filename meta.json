@@ -613,7 +613,7 @@
       "format": "cjs"
     },
     "node_modules/datatables.net/js/dataTables.mjs": {
-      "bytes": 351780,
+      "bytes": 352339,
       "imports": [
         {
           "path": "node_modules/jquery/dist/jquery.js",
@@ -639,6 +639,44 @@
       ],
       "format": "esm"
     },
+    "node_modules/datatables.net-fixedcolumns-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+      "bytes": 351780,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-fixedcolumns-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+      "bytes": 2276,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net-fixedcolumns-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-fixedcolumns/node_modules/datatables.net/js/dataTables.mjs": {
+      "bytes": 351780,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        }
+      ],
+      "format": "esm"
+    },
     "node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs": {
       "bytes": 20460,
       "imports": [
@@ -648,7 +686,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net/js/dataTables.mjs",
+          "path": "node_modules/datatables.net-fixedcolumns/node_modules/datatables.net/js/dataTables.mjs",
           "kind": "import-statement",
           "original": "datatables.net"
         }
@@ -664,7 +702,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
+          "path": "node_modules/datatables.net-fixedcolumns-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
           "kind": "import-statement",
           "original": "datatables.net-bs5"
         },
@@ -672,6 +710,44 @@
           "path": "node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs",
           "kind": "import-statement",
           "original": "datatables.net-fixedcolumns"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+      "bytes": 351780,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+      "bytes": 2276,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-fixedheader/node_modules/datatables.net/js/dataTables.mjs": {
+      "bytes": 351780,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
         }
       ],
       "format": "esm"
@@ -685,7 +761,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net/js/dataTables.mjs",
+          "path": "node_modules/datatables.net-fixedheader/node_modules/datatables.net/js/dataTables.mjs",
           "kind": "import-statement",
           "original": "datatables.net"
         }
@@ -701,7 +777,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
+          "path": "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
           "kind": "import-statement",
           "original": "datatables.net-bs5"
         },
@@ -709,6 +785,44 @@
           "path": "node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs",
           "kind": "import-statement",
           "original": "datatables.net-fixedheader"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-buttons-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+      "bytes": 351780,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-buttons-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+      "bytes": 2276,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net-buttons-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-buttons/node_modules/datatables.net/js/dataTables.mjs": {
+      "bytes": 351780,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
         }
       ],
       "format": "esm"
@@ -722,7 +836,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net/js/dataTables.mjs",
+          "path": "node_modules/datatables.net-buttons/node_modules/datatables.net/js/dataTables.mjs",
           "kind": "import-statement",
           "original": "datatables.net"
         }
@@ -738,7 +852,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
+          "path": "node_modules/datatables.net-buttons-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
           "kind": "import-statement",
           "original": "datatables.net-bs5"
         },
@@ -746,6 +860,44 @@
           "path": "node_modules/datatables.net-buttons/js/dataTables.buttons.mjs",
           "kind": "import-statement",
           "original": "datatables.net-buttons"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+      "bytes": 351780,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+      "bytes": 2276,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-responsive/node_modules/datatables.net/js/dataTables.mjs": {
+      "bytes": 351780,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
         }
       ],
       "format": "esm"
@@ -759,7 +911,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net/js/dataTables.mjs",
+          "path": "node_modules/datatables.net-responsive/node_modules/datatables.net/js/dataTables.mjs",
           "kind": "import-statement",
           "original": "datatables.net"
         }
@@ -775,7 +927,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
+          "path": "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
           "kind": "import-statement",
           "original": "datatables.net-bs5"
         },
@@ -783,6 +935,44 @@
           "path": "node_modules/datatables.net-responsive/js/dataTables.responsive.mjs",
           "kind": "import-statement",
           "original": "datatables.net-responsive"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-rowgroup-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+      "bytes": 351780,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-rowgroup-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+      "bytes": 2276,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net-rowgroup-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-rowgroup/node_modules/datatables.net/js/dataTables.mjs": {
+      "bytes": 351780,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
         }
       ],
       "format": "esm"
@@ -796,7 +986,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net/js/dataTables.mjs",
+          "path": "node_modules/datatables.net-rowgroup/node_modules/datatables.net/js/dataTables.mjs",
           "kind": "import-statement",
           "original": "datatables.net"
         }
@@ -812,7 +1002,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
+          "path": "node_modules/datatables.net-rowgroup-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
           "kind": "import-statement",
           "original": "datatables.net-bs5"
         },
@@ -825,7 +1015,7 @@
       "format": "esm"
     },
     "node_modules/datatables.net-select/js/dataTables.select.mjs": {
-      "bytes": 39478,
+      "bytes": 39728,
       "imports": [
         {
           "path": "node_modules/jquery/dist/jquery.js",
@@ -841,7 +1031,7 @@
       "format": "esm"
     },
     "node_modules/datatables.net-select-bs5/js/select.bootstrap5.mjs": {
-      "bytes": 296,
+      "bytes": 353,
       "imports": [
         {
           "path": "node_modules/jquery/dist/jquery.js",
@@ -1501,12 +1691,12 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
-      "bytes": 4019,
+      "bytes": 4071,
       "imports": [],
       "format": "esm"
     },
     "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
-      "bytes": 34697,
+      "bytes": 34837,
       "imports": [
         {
           "path": "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
@@ -1522,12 +1712,12 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs": {
-      "bytes": 5031,
+      "bytes": 5016,
       "imports": [],
       "format": "esm"
     },
     "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-      "bytes": 24021,
+      "bytes": 24224,
       "imports": [
         {
           "path": "node_modules/@floating-ui/core/dist/floating-ui.core.mjs",
@@ -1772,256 +1962,43 @@
       ],
       "format": "esm"
     },
-    "node_modules/inputmask/lib/keycode.js": {
-      "bytes": 1475,
+    "node_modules/inputmask/lib/defaults.js": {
+      "bytes": 5177,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/inputmask/lib/definitions.js": {
+      "bytes": 408,
       "imports": [],
       "format": "esm"
     },
     "node_modules/inputmask/lib/global/window.js": {
-      "bytes": 167,
-      "imports": [],
-      "format": "esm"
-    },
-    "node_modules/inputmask/lib/validation-tests.js": {
-      "bytes": 28304,
-      "imports": [
-        {
-          "path": "node_modules/inputmask/lib/positioning.js",
-          "kind": "import-statement",
-          "original": "./positioning"
-        },
-        {
-          "path": "node_modules/inputmask/lib/inputmask.js",
-          "kind": "import-statement",
-          "original": "./inputmask"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/inputmask/lib/environment.js": {
-      "bytes": 483,
-      "imports": [
-        {
-          "path": "node_modules/inputmask/lib/global/window.js",
-          "kind": "import-statement",
-          "original": "./global/window"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/inputmask/lib/inputHandling.js": {
-      "bytes": 11368,
-      "imports": [
-        {
-          "path": "node_modules/inputmask/lib/keycode.js",
-          "kind": "import-statement",
-          "original": "./keycode.js"
-        },
-        {
-          "path": "node_modules/inputmask/lib/validation-tests.js",
-          "kind": "import-statement",
-          "original": "./validation-tests"
-        },
-        {
-          "path": "node_modules/inputmask/lib/positioning.js",
-          "kind": "import-statement",
-          "original": "./positioning"
-        },
-        {
-          "path": "node_modules/inputmask/lib/validation.js",
-          "kind": "import-statement",
-          "original": "./validation"
-        },
-        {
-          "path": "node_modules/inputmask/lib/environment.js",
-          "kind": "import-statement",
-          "original": "./environment"
-        },
-        {
-          "path": "node_modules/inputmask/lib/eventhandlers.js",
-          "kind": "import-statement",
-          "original": "./eventhandlers"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/inputmask/lib/eventhandlers.js": {
-      "bytes": 20155,
-      "imports": [
-        {
-          "path": "node_modules/inputmask/lib/positioning.js",
-          "kind": "import-statement",
-          "original": "./positioning"
-        },
-        {
-          "path": "node_modules/inputmask/lib/keycode.js",
-          "kind": "import-statement",
-          "original": "./keycode.js"
-        },
-        {
-          "path": "node_modules/inputmask/lib/environment.js",
-          "kind": "import-statement",
-          "original": "./environment"
-        },
-        {
-          "path": "node_modules/inputmask/lib/validation.js",
-          "kind": "import-statement",
-          "original": "./validation"
-        },
-        {
-          "path": "node_modules/inputmask/lib/inputHandling.js",
-          "kind": "import-statement",
-          "original": "./inputHandling"
-        },
-        {
-          "path": "node_modules/inputmask/lib/validation-tests.js",
-          "kind": "import-statement",
-          "original": "./validation-tests"
-        },
-        {
-          "path": "node_modules/inputmask/lib/global/window.js",
-          "kind": "import-statement",
-          "original": "./global/window"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/inputmask/lib/validation.js": {
-      "bytes": 26174,
-      "imports": [
-        {
-          "path": "node_modules/inputmask/lib/validation-tests.js",
-          "kind": "import-statement",
-          "original": "./validation-tests"
-        },
-        {
-          "path": "node_modules/inputmask/lib/keycode.js",
-          "kind": "import-statement",
-          "original": "./keycode.js"
-        },
-        {
-          "path": "node_modules/inputmask/lib/positioning.js",
-          "kind": "import-statement",
-          "original": "./positioning"
-        },
-        {
-          "path": "node_modules/inputmask/lib/eventhandlers.js",
-          "kind": "import-statement",
-          "original": "./eventhandlers"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/inputmask/lib/positioning.js": {
-      "bytes": 12728,
-      "imports": [
-        {
-          "path": "node_modules/inputmask/lib/global/window.js",
-          "kind": "import-statement",
-          "original": "./global/window"
-        },
-        {
-          "path": "node_modules/inputmask/lib/validation-tests.js",
-          "kind": "import-statement",
-          "original": "./validation-tests"
-        },
-        {
-          "path": "node_modules/inputmask/lib/validation.js",
-          "kind": "import-statement",
-          "original": "./validation"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/inputmask/lib/eventruler.js": {
-      "bytes": 4984,
-      "imports": [
-        {
-          "path": "node_modules/inputmask/lib/inputmask.js",
-          "kind": "import-statement",
-          "original": "./inputmask"
-        },
-        {
-          "path": "node_modules/inputmask/lib/keycode.js",
-          "kind": "import-statement",
-          "original": "./keycode.js"
-        },
-        {
-          "path": "node_modules/inputmask/lib/positioning.js",
-          "kind": "import-statement",
-          "original": "./positioning"
-        },
-        {
-          "path": "node_modules/inputmask/lib/inputHandling.js",
-          "kind": "import-statement",
-          "original": "./inputHandling"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/inputmask/lib/mask.js": {
-      "bytes": 12176,
-      "imports": [
-        {
-          "path": "node_modules/inputmask/lib/keycode.js",
-          "kind": "import-statement",
-          "original": "./keycode.js"
-        },
-        {
-          "path": "node_modules/inputmask/lib/positioning.js",
-          "kind": "import-statement",
-          "original": "./positioning"
-        },
-        {
-          "path": "node_modules/inputmask/lib/inputHandling.js",
-          "kind": "import-statement",
-          "original": "./inputHandling"
-        },
-        {
-          "path": "node_modules/inputmask/lib/eventruler.js",
-          "kind": "import-statement",
-          "original": "./eventruler"
-        },
-        {
-          "path": "node_modules/inputmask/lib/environment.js",
-          "kind": "import-statement",
-          "original": "./environment"
-        },
-        {
-          "path": "node_modules/inputmask/lib/validation.js",
-          "kind": "import-statement",
-          "original": "./validation"
-        },
-        {
-          "path": "node_modules/inputmask/lib/eventhandlers.js",
-          "kind": "import-statement",
-          "original": "./eventhandlers"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/inputmask/lib/dependencyLibs/extend.js": {
-      "bytes": 1528,
+      "bytes": 161,
       "imports": [],
       "format": "esm"
     },
     "node_modules/inputmask/lib/dependencyLibs/data.js": {
-      "bytes": 211,
+      "bytes": 222,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/inputmask/lib/dependencyLibs/extend.js": {
+      "bytes": 1797,
       "imports": [],
       "format": "esm"
     },
     "node_modules/inputmask/lib/dependencyLibs/events.js": {
-      "bytes": 7341,
+      "bytes": 6666,
       "imports": [
-        {
-          "path": "node_modules/inputmask/lib/dependencyLibs/extend.js",
-          "kind": "import-statement",
-          "original": "./extend"
-        },
         {
           "path": "node_modules/inputmask/lib/global/window.js",
           "kind": "import-statement",
           "original": "../global/window"
+        },
+        {
+          "path": "node_modules/inputmask/lib/dependencyLibs/extend.js",
+          "kind": "import-statement",
+          "original": "./extend"
         },
         {
           "path": "node_modules/inputmask/lib/dependencyLibs/inputmask.dependencyLib.js",
@@ -2032,13 +2009,8 @@
       "format": "esm"
     },
     "node_modules/inputmask/lib/dependencyLibs/inputmask.dependencyLib.js": {
-      "bytes": 1039,
+      "bytes": 1073,
       "imports": [
-        {
-          "path": "node_modules/inputmask/lib/dependencyLibs/extend.js",
-          "kind": "import-statement",
-          "original": "./extend"
-        },
         {
           "path": "node_modules/inputmask/lib/global/window.js",
           "kind": "import-statement",
@@ -2053,74 +2025,101 @@
           "path": "node_modules/inputmask/lib/dependencyLibs/events.js",
           "kind": "import-statement",
           "original": "./events"
+        },
+        {
+          "path": "node_modules/inputmask/lib/dependencyLibs/extend.js",
+          "kind": "import-statement",
+          "original": "./extend"
         }
       ],
       "format": "esm"
     },
-    "node_modules/inputmask/lib/masktoken.js": {
-      "bytes": 382,
-      "imports": [],
-      "format": "esm"
-    },
-    "node_modules/inputmask/lib/escapeRegex.js": {
-      "bytes": 232,
-      "imports": [],
-      "format": "esm"
-    },
-    "node_modules/inputmask/lib/mask-lexer.js": {
-      "bytes": 17692,
+    "node_modules/inputmask/lib/environment.js": {
+      "bytes": 505,
       "imports": [
         {
-          "path": "node_modules/inputmask/lib/dependencyLibs/inputmask.dependencyLib.js",
+          "path": "node_modules/inputmask/lib/global/window.js",
           "kind": "import-statement",
-          "original": "./dependencyLibs/inputmask.dependencyLib"
-        },
-        {
-          "path": "node_modules/inputmask/lib/masktoken.js",
-          "kind": "import-statement",
-          "original": "./masktoken"
-        },
+          "original": "./global/window"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/inputmask/lib/keycode.js": {
+      "bytes": 1468,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/inputmask/lib/validation-tests.js": {
+      "bytes": 34891,
+      "imports": [
         {
           "path": "node_modules/inputmask/lib/inputmask.js",
           "kind": "import-statement",
           "original": "./inputmask"
         },
         {
-          "path": "node_modules/inputmask/lib/escapeRegex.js",
+          "path": "node_modules/inputmask/lib/positioning.js",
           "kind": "import-statement",
-          "original": "./escapeRegex"
+          "original": "./positioning"
         }
       ],
       "format": "esm"
     },
-    "node_modules/inputmask/lib/definitions.js": {
-      "bytes": 375,
-      "imports": [],
-      "format": "esm"
-    },
-    "node_modules/inputmask/lib/defaults.js": {
-      "bytes": 5106,
+    "node_modules/inputmask/lib/validation.js": {
+      "bytes": 31489,
       "imports": [
+        {
+          "path": "node_modules/inputmask/lib/eventhandlers.js",
+          "kind": "import-statement",
+          "original": "./eventhandlers"
+        },
         {
           "path": "node_modules/inputmask/lib/keycode.js",
           "kind": "import-statement",
           "original": "./keycode.js"
+        },
+        {
+          "path": "node_modules/inputmask/lib/positioning.js",
+          "kind": "import-statement",
+          "original": "./positioning"
+        },
+        {
+          "path": "node_modules/inputmask/lib/validation-tests.js",
+          "kind": "import-statement",
+          "original": "./validation-tests"
         }
       ],
       "format": "esm"
     },
-    "node_modules/inputmask/lib/inputmask.js": {
-      "bytes": 12599,
+    "node_modules/inputmask/lib/positioning.js": {
+      "bytes": 14872,
       "imports": [
         {
-          "path": "node_modules/inputmask/lib/mask.js",
+          "path": "node_modules/inputmask/lib/global/window.js",
           "kind": "import-statement",
-          "original": "./mask"
+          "original": "./global/window"
         },
         {
-          "path": "node_modules/inputmask/lib/dependencyLibs/inputmask.dependencyLib.js",
+          "path": "node_modules/inputmask/lib/validation.js",
           "kind": "import-statement",
-          "original": "./dependencyLibs/inputmask.dependencyLib"
+          "original": "./validation"
+        },
+        {
+          "path": "node_modules/inputmask/lib/validation-tests.js",
+          "kind": "import-statement",
+          "original": "./validation-tests"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/inputmask/lib/eventhandlers.js": {
+      "bytes": 24338,
+      "imports": [
+        {
+          "path": "node_modules/inputmask/lib/environment.js",
+          "kind": "import-statement",
+          "original": "./environment"
         },
         {
           "path": "node_modules/inputmask/lib/global/window.js",
@@ -2128,14 +2127,14 @@
           "original": "./global/window"
         },
         {
-          "path": "node_modules/inputmask/lib/mask-lexer.js",
+          "path": "node_modules/inputmask/lib/inputHandling.js",
           "kind": "import-statement",
-          "original": "./mask-lexer"
+          "original": "./inputHandling"
         },
         {
-          "path": "node_modules/inputmask/lib/validation-tests.js",
+          "path": "node_modules/inputmask/lib/keycode.js",
           "kind": "import-statement",
-          "original": "./validation-tests"
+          "original": "./keycode.js"
         },
         {
           "path": "node_modules/inputmask/lib/positioning.js",
@@ -2148,9 +2147,87 @@
           "original": "./validation"
         },
         {
+          "path": "node_modules/inputmask/lib/validation-tests.js",
+          "kind": "import-statement",
+          "original": "./validation-tests"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/inputmask/lib/inputHandling.js": {
+      "bytes": 13356,
+      "imports": [
+        {
+          "path": "node_modules/inputmask/lib/environment.js",
+          "kind": "import-statement",
+          "original": "./environment"
+        },
+        {
+          "path": "node_modules/inputmask/lib/eventhandlers.js",
+          "kind": "import-statement",
+          "original": "./eventhandlers"
+        },
+        {
+          "path": "node_modules/inputmask/lib/keycode.js",
+          "kind": "import-statement",
+          "original": "./keycode.js"
+        },
+        {
+          "path": "node_modules/inputmask/lib/positioning.js",
+          "kind": "import-statement",
+          "original": "./positioning"
+        },
+        {
+          "path": "node_modules/inputmask/lib/validation.js",
+          "kind": "import-statement",
+          "original": "./validation"
+        },
+        {
+          "path": "node_modules/inputmask/lib/validation-tests.js",
+          "kind": "import-statement",
+          "original": "./validation-tests"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/inputmask/lib/eventruler.js": {
+      "bytes": 4448,
+      "imports": [
+        {
           "path": "node_modules/inputmask/lib/inputHandling.js",
           "kind": "import-statement",
           "original": "./inputHandling"
+        },
+        {
+          "path": "node_modules/inputmask/lib/inputmask.js",
+          "kind": "import-statement",
+          "original": "./inputmask"
+        },
+        {
+          "path": "node_modules/inputmask/lib/keycode.js",
+          "kind": "import-statement",
+          "original": "./keycode.js"
+        },
+        {
+          "path": "node_modules/inputmask/lib/positioning.js",
+          "kind": "import-statement",
+          "original": "./positioning"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/inputmask/lib/mask.js": {
+      "bytes": 11362,
+      "imports": [
+        {
+          "path": "node_modules/inputmask/lib/environment.js",
+          "kind": "import-statement",
+          "original": "./environment"
+        },
+        {
+          "path": "node_modules/inputmask/lib/eventhandlers.js",
+          "kind": "import-statement",
+          "original": "./eventhandlers"
         },
         {
           "path": "node_modules/inputmask/lib/eventruler.js",
@@ -2158,20 +2235,122 @@
           "original": "./eventruler"
         },
         {
+          "path": "node_modules/inputmask/lib/inputHandling.js",
+          "kind": "import-statement",
+          "original": "./inputHandling"
+        },
+        {
+          "path": "node_modules/inputmask/lib/positioning.js",
+          "kind": "import-statement",
+          "original": "./positioning"
+        },
+        {
+          "path": "node_modules/inputmask/lib/validation.js",
+          "kind": "import-statement",
+          "original": "./validation"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/inputmask/lib/escapeRegex.js": {
+      "bytes": 365,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/inputmask/lib/masktoken.js": {
+      "bytes": 397,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/inputmask/lib/mask-lexer.js": {
+      "bytes": 20540,
+      "imports": [
+        {
+          "path": "node_modules/inputmask/lib/dependencyLibs/inputmask.dependencyLib.js",
+          "kind": "import-statement",
+          "original": "./dependencyLibs/inputmask.dependencyLib"
+        },
+        {
+          "path": "node_modules/inputmask/lib/escapeRegex.js",
+          "kind": "import-statement",
+          "original": "./escapeRegex"
+        },
+        {
+          "path": "node_modules/inputmask/lib/inputmask.js",
+          "kind": "import-statement",
+          "original": "./inputmask"
+        },
+        {
+          "path": "node_modules/inputmask/lib/masktoken.js",
+          "kind": "import-statement",
+          "original": "./masktoken"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/inputmask/lib/inputmask.js": {
+      "bytes": 14018,
+      "imports": [
+        {
+          "path": "node_modules/inputmask/lib/defaults.js",
+          "kind": "import-statement",
+          "original": "./defaults"
+        },
+        {
           "path": "node_modules/inputmask/lib/definitions.js",
           "kind": "import-statement",
           "original": "./definitions"
         },
         {
-          "path": "node_modules/inputmask/lib/defaults.js",
+          "path": "node_modules/inputmask/lib/dependencyLibs/inputmask.dependencyLib.js",
           "kind": "import-statement",
-          "original": "./defaults"
+          "original": "./dependencyLibs/inputmask.dependencyLib"
+        },
+        {
+          "path": "node_modules/inputmask/lib/eventruler.js",
+          "kind": "import-statement",
+          "original": "./eventruler"
+        },
+        {
+          "path": "node_modules/inputmask/lib/global/window.js",
+          "kind": "import-statement",
+          "original": "./global/window"
+        },
+        {
+          "path": "node_modules/inputmask/lib/inputHandling.js",
+          "kind": "import-statement",
+          "original": "./inputHandling"
+        },
+        {
+          "path": "node_modules/inputmask/lib/mask.js",
+          "kind": "import-statement",
+          "original": "./mask"
+        },
+        {
+          "path": "node_modules/inputmask/lib/mask-lexer.js",
+          "kind": "import-statement",
+          "original": "./mask-lexer"
+        },
+        {
+          "path": "node_modules/inputmask/lib/positioning.js",
+          "kind": "import-statement",
+          "original": "./positioning"
+        },
+        {
+          "path": "node_modules/inputmask/lib/validation.js",
+          "kind": "import-statement",
+          "original": "./validation"
+        },
+        {
+          "path": "node_modules/inputmask/lib/validation-tests.js",
+          "kind": "import-statement",
+          "original": "./validation-tests"
         }
       ],
       "format": "esm"
     },
     "node_modules/inputmask/lib/extensions/inputmask.extensions.js": {
-      "bytes": 3964,
+      "bytes": 4472,
       "imports": [
         {
           "path": "node_modules/inputmask/lib/inputmask.js",
@@ -2192,7 +2371,7 @@
       "format": "esm"
     },
     "node_modules/inputmask/lib/extensions/inputmask.date.i18n.js": {
-      "bytes": 695,
+      "bytes": 882,
       "imports": [
         {
           "path": "node_modules/inputmask/lib/inputmask.js",
@@ -2203,8 +2382,13 @@
       "format": "esm"
     },
     "node_modules/inputmask/lib/extensions/inputmask.date.extensions.js": {
-      "bytes": 25960,
+      "bytes": 31675,
       "imports": [
+        {
+          "path": "node_modules/inputmask/lib/escapeRegex.js",
+          "kind": "import-statement",
+          "original": "../escapeRegex"
+        },
         {
           "path": "node_modules/inputmask/lib/inputmask.js",
           "kind": "import-statement",
@@ -2214,11 +2398,6 @@
           "path": "node_modules/inputmask/lib/keycode.js",
           "kind": "import-statement",
           "original": "../keycode.js"
-        },
-        {
-          "path": "node_modules/inputmask/lib/escapeRegex.js",
-          "kind": "import-statement",
-          "original": "../escapeRegex"
         },
         {
           "path": "node_modules/inputmask/lib/positioning.js",
@@ -2239,27 +2418,27 @@
       "format": "esm"
     },
     "node_modules/inputmask/lib/extensions/inputmask.numeric.extensions.js": {
-      "bytes": 24368,
+      "bytes": 29583,
       "imports": [
-        {
-          "path": "node_modules/inputmask/lib/inputmask.js",
-          "kind": "import-statement",
-          "original": "../inputmask"
-        },
         {
           "path": "node_modules/inputmask/lib/escapeRegex.js",
           "kind": "import-statement",
           "original": "../escapeRegex"
         },
         {
-          "path": "node_modules/inputmask/lib/positioning.js",
+          "path": "node_modules/inputmask/lib/inputmask.js",
           "kind": "import-statement",
-          "original": "../positioning"
+          "original": "../inputmask"
         },
         {
           "path": "node_modules/inputmask/lib/keycode.js",
           "kind": "import-statement",
           "original": "../keycode"
+        },
+        {
+          "path": "node_modules/inputmask/lib/positioning.js",
+          "kind": "import-statement",
+          "original": "../positioning"
         }
       ],
       "format": "esm"
@@ -5174,13 +5353,14 @@
       "format": "esm"
     },
     "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-      "bytes": 76138,
+      "bytes": 71769,
       "imports": [],
       "format": "cjs"
     },
     "node_modules/intl-tel-input/build/js/utils.js": {
-      "bytes": 259612,
-      "imports": []
+      "bytes": 259783,
+      "imports": [],
+      "format": "esm"
     },
     "src/utils/Storage.js": {
       "bytes": 717,
@@ -5284,7 +5464,7 @@
       "imports": [],
       "format": "esm"
     },
-    "node_modules/prosemirror-model/dist/index.js": {
+    "node_modules/prosemirror-state/node_modules/prosemirror-model/dist/index.js": {
       "bytes": 121075,
       "imports": [
         {
@@ -5295,11 +5475,11 @@
       ],
       "format": "esm"
     },
-    "node_modules/prosemirror-transform/dist/index.js": {
+    "node_modules/prosemirror-state/node_modules/prosemirror-transform/dist/index.js": {
       "bytes": 78052,
       "imports": [
         {
-          "path": "node_modules/prosemirror-model/dist/index.js",
+          "path": "node_modules/prosemirror-state/node_modules/prosemirror-model/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-model"
         }
@@ -5310,12 +5490,12 @@
       "bytes": 36248,
       "imports": [
         {
-          "path": "node_modules/prosemirror-model/dist/index.js",
+          "path": "node_modules/prosemirror-state/node_modules/prosemirror-model/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-model"
         },
         {
-          "path": "node_modules/prosemirror-transform/dist/index.js",
+          "path": "node_modules/prosemirror-state/node_modules/prosemirror-transform/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-transform"
         }
@@ -5333,8 +5513,30 @@
       ],
       "format": "esm"
     },
+    "node_modules/prosemirror-model/dist/index.js": {
+      "bytes": 121816,
+      "imports": [
+        {
+          "path": "node_modules/orderedmap/dist/index.js",
+          "kind": "import-statement",
+          "original": "orderedmap"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/prosemirror-transform/dist/index.js": {
+      "bytes": 79607,
+      "imports": [
+        {
+          "path": "node_modules/prosemirror-model/dist/index.js",
+          "kind": "import-statement",
+          "original": "prosemirror-model"
+        }
+      ],
+      "format": "esm"
+    },
     "node_modules/prosemirror-view/dist/index.js": {
-      "bytes": 233525,
+      "bytes": 235417,
       "imports": [
         {
           "path": "node_modules/prosemirror-state/dist/index.js",
@@ -5419,16 +5621,38 @@
       ],
       "format": "esm"
     },
+    "node_modules/prosemirror-commands/node_modules/prosemirror-model/dist/index.js": {
+      "bytes": 121075,
+      "imports": [
+        {
+          "path": "node_modules/orderedmap/dist/index.js",
+          "kind": "import-statement",
+          "original": "orderedmap"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/prosemirror-commands/node_modules/prosemirror-transform/dist/index.js": {
+      "bytes": 78052,
+      "imports": [
+        {
+          "path": "node_modules/prosemirror-commands/node_modules/prosemirror-model/dist/index.js",
+          "kind": "import-statement",
+          "original": "prosemirror-model"
+        }
+      ],
+      "format": "esm"
+    },
     "node_modules/prosemirror-commands/dist/index.js": {
       "bytes": 31997,
       "imports": [
         {
-          "path": "node_modules/prosemirror-transform/dist/index.js",
+          "path": "node_modules/prosemirror-commands/node_modules/prosemirror-transform/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-transform"
         },
         {
-          "path": "node_modules/prosemirror-model/dist/index.js",
+          "path": "node_modules/prosemirror-commands/node_modules/prosemirror-model/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-model"
         },
@@ -5451,16 +5675,38 @@
       ],
       "format": "esm"
     },
+    "node_modules/prosemirror-schema-list/node_modules/prosemirror-model/dist/index.js": {
+      "bytes": 121075,
+      "imports": [
+        {
+          "path": "node_modules/orderedmap/dist/index.js",
+          "kind": "import-statement",
+          "original": "orderedmap"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/dist/index.js": {
+      "bytes": 78052,
+      "imports": [
+        {
+          "path": "node_modules/prosemirror-schema-list/node_modules/prosemirror-model/dist/index.js",
+          "kind": "import-statement",
+          "original": "prosemirror-model"
+        }
+      ],
+      "format": "esm"
+    },
     "node_modules/prosemirror-schema-list/dist/index.js": {
       "bytes": 11880,
       "imports": [
         {
-          "path": "node_modules/prosemirror-transform/dist/index.js",
+          "path": "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-transform"
         },
         {
-          "path": "node_modules/prosemirror-model/dist/index.js",
+          "path": "node_modules/prosemirror-schema-list/node_modules/prosemirror-model/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-model"
         },
@@ -5484,7 +5730,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/core/dist/index.js": {
-      "bytes": 170781,
+      "bytes": 179412,
       "imports": [
         {
           "path": "node_modules/@tiptap/pm/state/dist/index.js",
@@ -5525,7 +5771,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-document/dist/index.js": {
-      "bytes": 213,
+      "bytes": 351,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5536,7 +5782,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-paragraph/dist/index.js": {
-      "bytes": 889,
+      "bytes": 1003,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5547,7 +5793,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-text/dist/index.js": {
-      "bytes": 180,
+      "bytes": 289,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5558,7 +5804,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-heading/dist/index.js": {
-      "bytes": 2279,
+      "bytes": 2389,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5569,7 +5815,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-italic/dist/index.js": {
-      "bytes": 2369,
+      "bytes": 2705,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5580,7 +5826,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-bold/dist/index.js": {
-      "bytes": 2463,
+      "bytes": 2782,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5591,7 +5837,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-strike/dist/index.js": {
-      "bytes": 2142,
+      "bytes": 2171,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5602,7 +5848,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-underline/dist/index.js": {
-      "bytes": 1363,
+      "bytes": 1481,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5613,7 +5859,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-blockquote/dist/index.js": {
-      "bytes": 1410,
+      "bytes": 1576,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5624,7 +5870,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-code/dist/index.js": {
-      "bytes": 1633,
+      "bytes": 1829,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5635,7 +5881,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-code-block/dist/index.js": {
-      "bytes": 8168,
+      "bytes": 9011,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5650,6 +5896,28 @@
       ],
       "format": "esm"
     },
+    "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
+      "bytes": 121075,
+      "imports": [
+        {
+          "path": "node_modules/orderedmap/dist/index.js",
+          "kind": "import-statement",
+          "original": "orderedmap"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/dist/index.js": {
+      "bytes": 78052,
+      "imports": [
+        {
+          "path": "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js",
+          "kind": "import-statement",
+          "original": "prosemirror-model"
+        }
+      ],
+      "format": "esm"
+    },
     "node_modules/prosemirror-dropcursor/dist/index.js": {
       "bytes": 5767,
       "imports": [
@@ -5659,7 +5927,7 @@
           "original": "prosemirror-state"
         },
         {
-          "path": "node_modules/prosemirror-transform/dist/index.js",
+          "path": "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-transform"
         }
@@ -5678,7 +5946,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-dropcursor/dist/index.js": {
-      "bytes": 500,
+      "bytes": 724,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5694,7 +5962,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-hard-break/dist/index.js": {
-      "bytes": 2278,
+      "bytes": 2394,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5710,7 +5978,7 @@
       "format": "esm"
     },
     "node_modules/prosemirror-history/dist/index.js": {
-      "bytes": 17893,
+      "bytes": 18206,
       "imports": [
         {
           "path": "node_modules/rope-sequence/dist/index.js",
@@ -5742,7 +6010,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-history/dist/index.js": {
-      "bytes": 1156,
+      "bytes": 1553,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5758,7 +6026,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-horizontal-rule/dist/index.js": {
-      "bytes": 2926,
+      "bytes": 3052,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5774,7 +6042,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-bullet-list/dist/index.js": {
-      "bytes": 4085,
+      "bytes": 4662,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5785,7 +6053,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-list-item/dist/index.js": {
-      "bytes": 973,
+      "bytes": 1087,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5796,7 +6064,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-ordered-list/dist/index.js": {
-      "bytes": 4938,
+      "bytes": 5555,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5807,7 +6075,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-typography/dist/index.js": {
-      "bytes": 6760,
+      "bytes": 7689,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5818,12 +6086,12 @@
       "format": "esm"
     },
     "node_modules/linkifyjs/dist/linkify.es.js": {
-      "bytes": 63555,
+      "bytes": 62806,
       "imports": [],
       "format": "esm"
     },
     "node_modules/@tiptap/extension-link/dist/index.js": {
-      "bytes": 12601,
+      "bytes": 13294,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5844,7 +6112,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-image/dist/index.js": {
-      "bytes": 1846,
+      "bytes": 2020,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -7176,49 +7444,94 @@
       "entryPoint": "src/data-table.js",
       "inputs": {
         "node_modules/jquery/dist/jquery.js": {
-          "bytesInOutput": 88040
+          "bytesInOutput": 88851
         },
         "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
-          "bytesInOutput": 1069
+          "bytesInOutput": 1075
         },
         "node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 92425
+          "bytesInOutput": 92768
         },
         "node_modules/datatables.net-fixedcolumns-bs5/js/fixedColumns.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
+        "node_modules/datatables.net-fixedcolumns-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+          "bytesInOutput": 1065
+        },
+        "node_modules/datatables.net-fixedcolumns-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
+        },
         "node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs": {
-          "bytesInOutput": 7733
+          "bytesInOutput": 7724
+        },
+        "node_modules/datatables.net-fixedcolumns/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
         },
         "node_modules/datatables.net-fixedheader-bs5/js/fixedHeader.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
+        "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+          "bytesInOutput": 1065
+        },
+        "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
+        },
         "node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs": {
-          "bytesInOutput": 11908
+          "bytesInOutput": 11907
+        },
+        "node_modules/datatables.net-fixedheader/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
         },
         "node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs": {
           "bytesInOutput": 1034
         },
+        "node_modules/datatables.net-buttons-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+          "bytesInOutput": 1075
+        },
+        "node_modules/datatables.net-buttons-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
+        },
         "node_modules/datatables.net-buttons/js/dataTables.buttons.mjs": {
-          "bytesInOutput": 26898
+          "bytesInOutput": 26956
+        },
+        "node_modules/datatables.net-buttons/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
         },
         "node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs": {
           "bytesInOutput": 1011
         },
+        "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+          "bytesInOutput": 1075
+        },
+        "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
+        },
         "node_modules/datatables.net-responsive/js/dataTables.responsive.mjs": {
-          "bytesInOutput": 15617
+          "bytesInOutput": 15714
+        },
+        "node_modules/datatables.net-responsive/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
         },
         "node_modules/datatables.net-rowgroup-bs5/js/rowGroup.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
+        "node_modules/datatables.net-rowgroup-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+          "bytesInOutput": 1065
+        },
+        "node_modules/datatables.net-rowgroup-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
+        },
         "node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs": {
-          "bytesInOutput": 3639
+          "bytesInOutput": 3650
+        },
+        "node_modules/datatables.net-rowgroup/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
         },
         "node_modules/datatables.net-select-bs5/js/select.bootstrap5.mjs": {
-          "bytesInOutput": 18
+          "bytesInOutput": 64
         },
         "node_modules/datatables.net-select/js/dataTables.select.mjs": {
-          "bytesInOutput": 16282
+          "bytesInOutput": 16381
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7290,7 +7603,7 @@
           "bytesInOutput": 71
         }
       },
-      "bytes": 310732
+      "bytes": 1244698
     },
     "dist/data-table.raw.min.js": {
       "imports": [],
@@ -7298,49 +7611,94 @@
       "entryPoint": "src/data-table.raw.js",
       "inputs": {
         "node_modules/jquery/dist/jquery.js": {
-          "bytesInOutput": 88040
+          "bytesInOutput": 88851
         },
         "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
-          "bytesInOutput": 1069
+          "bytesInOutput": 1075
         },
         "node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 92425
+          "bytesInOutput": 92768
         },
         "node_modules/datatables.net-fixedcolumns-bs5/js/fixedColumns.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
+        "node_modules/datatables.net-fixedcolumns-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+          "bytesInOutput": 1065
+        },
+        "node_modules/datatables.net-fixedcolumns-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
+        },
         "node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs": {
-          "bytesInOutput": 7733
+          "bytesInOutput": 7724
+        },
+        "node_modules/datatables.net-fixedcolumns/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
         },
         "node_modules/datatables.net-fixedheader-bs5/js/fixedHeader.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
+        "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+          "bytesInOutput": 1065
+        },
+        "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
+        },
         "node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs": {
-          "bytesInOutput": 11908
+          "bytesInOutput": 11907
+        },
+        "node_modules/datatables.net-fixedheader/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
         },
         "node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs": {
           "bytesInOutput": 1034
         },
+        "node_modules/datatables.net-buttons-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+          "bytesInOutput": 1075
+        },
+        "node_modules/datatables.net-buttons-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
+        },
         "node_modules/datatables.net-buttons/js/dataTables.buttons.mjs": {
-          "bytesInOutput": 26898
+          "bytesInOutput": 26956
+        },
+        "node_modules/datatables.net-buttons/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
         },
         "node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs": {
           "bytesInOutput": 1011
         },
+        "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+          "bytesInOutput": 1075
+        },
+        "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
+        },
         "node_modules/datatables.net-responsive/js/dataTables.responsive.mjs": {
-          "bytesInOutput": 15617
+          "bytesInOutput": 15714
+        },
+        "node_modules/datatables.net-responsive/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
         },
         "node_modules/datatables.net-rowgroup-bs5/js/rowGroup.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
+        "node_modules/datatables.net-rowgroup-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+          "bytesInOutput": 1065
+        },
+        "node_modules/datatables.net-rowgroup-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
+        },
         "node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs": {
-          "bytesInOutput": 3639
+          "bytesInOutput": 3650
+        },
+        "node_modules/datatables.net-rowgroup/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92533
         },
         "node_modules/datatables.net-select-bs5/js/select.bootstrap5.mjs": {
-          "bytesInOutput": 18
+          "bytesInOutput": 64
         },
         "node_modules/datatables.net-select/js/dataTables.select.mjs": {
-          "bytesInOutput": 16282
+          "bytesInOutput": 16381
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7385,7 +7743,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 273573
+      "bytes": 1207539
     },
     "dist/filepond-input.min.js": {
       "imports": [],
@@ -7725,16 +8083,16 @@
       "entryPoint": "src/floating-ui.js",
       "inputs": {
         "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
-          "bytesInOutput": 1407
+          "bytesInOutput": 1438
         },
         "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
-          "bytesInOutput": 7073
+          "bytesInOutput": 7106
         },
         "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs": {
-          "bytesInOutput": 2059
+          "bytesInOutput": 2056
         },
         "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-          "bytesInOutput": 6463
+          "bytesInOutput": 6524
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7776,7 +8134,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 23458
+      "bytes": 23580
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -7934,77 +8292,77 @@
       "exports": [],
       "entryPoint": "src/input-mask.js",
       "inputs": {
-        "node_modules/inputmask/lib/keycode.js": {
-          "bytesInOutput": 623
-        },
-        "node_modules/inputmask/lib/global/window.js": {
-          "bytesInOutput": 92
-        },
-        "node_modules/inputmask/lib/validation-tests.js": {
-          "bytesInOutput": 10516
-        },
-        "node_modules/inputmask/lib/environment.js": {
-          "bytesInOutput": 256
-        },
-        "node_modules/inputmask/lib/inputHandling.js": {
-          "bytesInOutput": 4365
-        },
-        "node_modules/inputmask/lib/eventhandlers.js": {
-          "bytesInOutput": 8344
-        },
-        "node_modules/inputmask/lib/validation.js": {
-          "bytesInOutput": 10067
-        },
-        "node_modules/inputmask/lib/positioning.js": {
-          "bytesInOutput": 5277
-        },
-        "node_modules/inputmask/lib/eventruler.js": {
-          "bytesInOutput": 1446
-        },
-        "node_modules/inputmask/lib/mask.js": {
-          "bytesInOutput": 4211
-        },
-        "node_modules/inputmask/lib/dependencyLibs/extend.js": {
-          "bytesInOutput": 479
-        },
-        "node_modules/inputmask/lib/dependencyLibs/data.js": {
-          "bytesInOutput": 102
-        },
-        "node_modules/inputmask/lib/dependencyLibs/events.js": {
-          "bytesInOutput": 2423
-        },
-        "node_modules/inputmask/lib/dependencyLibs/inputmask.dependencyLib.js": {
-          "bytesInOutput": 364
-        },
-        "node_modules/inputmask/lib/masktoken.js": {
-          "bytesInOutput": 201
-        },
-        "node_modules/inputmask/lib/escapeRegex.js": {
-          "bytesInOutput": 152
-        },
-        "node_modules/inputmask/lib/mask-lexer.js": {
-          "bytesInOutput": 7068
+        "node_modules/inputmask/lib/defaults.js": {
+          "bytesInOutput": 1151
         },
         "node_modules/inputmask/lib/definitions.js": {
           "bytesInOutput": 230
         },
-        "node_modules/inputmask/lib/defaults.js": {
-          "bytesInOutput": 1151
+        "node_modules/inputmask/lib/global/window.js": {
+          "bytesInOutput": 92
+        },
+        "node_modules/inputmask/lib/dependencyLibs/data.js": {
+          "bytesInOutput": 102
+        },
+        "node_modules/inputmask/lib/dependencyLibs/extend.js": {
+          "bytesInOutput": 479
+        },
+        "node_modules/inputmask/lib/dependencyLibs/events.js": {
+          "bytesInOutput": 2427
+        },
+        "node_modules/inputmask/lib/dependencyLibs/inputmask.dependencyLib.js": {
+          "bytesInOutput": 364
+        },
+        "node_modules/inputmask/lib/environment.js": {
+          "bytesInOutput": 256
+        },
+        "node_modules/inputmask/lib/keycode.js": {
+          "bytesInOutput": 623
+        },
+        "node_modules/inputmask/lib/validation-tests.js": {
+          "bytesInOutput": 10430
+        },
+        "node_modules/inputmask/lib/validation.js": {
+          "bytesInOutput": 9919
+        },
+        "node_modules/inputmask/lib/positioning.js": {
+          "bytesInOutput": 5258
+        },
+        "node_modules/inputmask/lib/eventhandlers.js": {
+          "bytesInOutput": 8298
+        },
+        "node_modules/inputmask/lib/inputHandling.js": {
+          "bytesInOutput": 4357
+        },
+        "node_modules/inputmask/lib/eventruler.js": {
+          "bytesInOutput": 1441
+        },
+        "node_modules/inputmask/lib/mask.js": {
+          "bytesInOutput": 4189
+        },
+        "node_modules/inputmask/lib/escapeRegex.js": {
+          "bytesInOutput": 152
+        },
+        "node_modules/inputmask/lib/masktoken.js": {
+          "bytesInOutput": 201
+        },
+        "node_modules/inputmask/lib/mask-lexer.js": {
+          "bytesInOutput": 7049
         },
         "node_modules/inputmask/lib/inputmask.js": {
           "bytesInOutput": 5921
         },
         "node_modules/inputmask/lib/extensions/inputmask.extensions.js": {
-          "bytesInOutput": 1901
+          "bytesInOutput": 1889
         },
         "node_modules/inputmask/lib/extensions/inputmask.date.i18n.js": {
           "bytesInOutput": 411
         },
         "node_modules/inputmask/lib/extensions/inputmask.date.extensions.js": {
-          "bytesInOutput": 11683
+          "bytesInOutput": 11873
         },
         "node_modules/inputmask/lib/extensions/inputmask.numeric.extensions.js": {
-          "bytesInOutput": 12265
+          "bytesInOutput": 12260
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8040,7 +8398,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 92069
+      "bytes": 91893
     },
     "dist/limited-input.min.js": {
       "imports": [],
@@ -9605,13 +9963,13 @@
       "entryPoint": "src/tel-input.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 37108
+          "bytesInOutput": 34389
         },
         "src/classes/TelInput.js": {
           "bytesInOutput": 2863
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 256843
+          "bytesInOutput": 256975
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -9668,7 +10026,7 @@
           "bytesInOutput": 601
         }
       },
-      "bytes": 324883
+      "bytes": 322296
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -9676,13 +10034,13 @@
       "entryPoint": "src/tel-input.raw.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInput.js": {
-          "bytesInOutput": 37108
+          "bytesInOutput": 34389
         },
         "src/classes/TelInput.js": {
           "bytesInOutput": 2863
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 256843
+          "bytesInOutput": 256975
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -9733,7 +10091,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 300837
+      "bytes": 298250
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -9741,22 +10099,28 @@
       "entryPoint": "src/tiptap-editor.js",
       "inputs": {
         "node_modules/orderedmap/dist/index.js": {
-          "bytesInOutput": 1439
+          "bytesInOutput": 1456
         },
-        "node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 43361
+        "node_modules/prosemirror-state/node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 24431
         },
-        "node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 28782
+        "node_modules/prosemirror-state/node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 26203
         },
         "node_modules/prosemirror-state/dist/index.js": {
-          "bytesInOutput": 11827
+          "bytesInOutput": 11832
         },
         "node_modules/@tiptap/pm/state/dist/index.js": {
           "bytesInOutput": 0
         },
+        "node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 43710
+        },
+        "node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 29461
+        },
         "node_modules/prosemirror-view/dist/index.js": {
-          "bytesInOutput": 92049
+          "bytesInOutput": 92911
         },
         "node_modules/@tiptap/pm/view/dist/index.js": {
           "bytesInOutput": 0
@@ -9776,20 +10140,32 @@
         "node_modules/@tiptap/pm/transform/dist/index.js": {
           "bytesInOutput": 0
         },
+        "node_modules/prosemirror-commands/node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 23263
+        },
+        "node_modules/prosemirror-commands/node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 19065
+        },
         "node_modules/prosemirror-commands/dist/index.js": {
-          "bytesInOutput": 9292
+          "bytesInOutput": 9295
         },
         "node_modules/@tiptap/pm/commands/dist/index.js": {
           "bytesInOutput": 0
         },
+        "node_modules/prosemirror-schema-list/node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 23263
+        },
+        "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 13190
+        },
         "node_modules/prosemirror-schema-list/dist/index.js": {
-          "bytesInOutput": 2463
+          "bytesInOutput": 2467
         },
         "node_modules/@tiptap/pm/schema-list/dist/index.js": {
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 55776
+          "bytesInOutput": 55794
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -9810,7 +10186,7 @@
           "bytesInOutput": 1011
         },
         "node_modules/@tiptap/extension-strike/dist/index.js": {
-          "bytesInOutput": 850
+          "bytesInOutput": 774
         },
         "node_modules/@tiptap/extension-underline/dist/index.js": {
           "bytesInOutput": 596
@@ -9822,7 +10198,13 @@
           "bytesInOutput": 678
         },
         "node_modules/@tiptap/extension-code-block/dist/index.js": {
-          "bytesInOutput": 2502
+          "bytesInOutput": 2649
+        },
+        "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 23268
+        },
+        "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 11942
         },
         "node_modules/prosemirror-dropcursor/dist/index.js": {
           "bytesInOutput": 2909
@@ -9837,10 +10219,10 @@
           "bytesInOutput": 882
         },
         "node_modules/rope-sequence/dist/index.js": {
-          "bytesInOutput": 3394
+          "bytesInOutput": 3412
         },
         "node_modules/prosemirror-history/dist/index.js": {
-          "bytesInOutput": 5707
+          "bytesInOutput": 5736
         },
         "node_modules/@tiptap/pm/history/dist/index.js": {
           "bytesInOutput": 0
@@ -9861,13 +10243,13 @@
           "bytesInOutput": 2271
         },
         "node_modules/@tiptap/extension-typography/dist/index.js": {
-          "bytesInOutput": 2612
+          "bytesInOutput": 3076
         },
         "node_modules/linkifyjs/dist/linkify.es.js": {
-          "bytesInOutput": 19344
+          "bytesInOutput": 19439
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 3679
+          "bytesInOutput": 3682
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -9933,7 +10315,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 322961
+      "bytes": 490203
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -9941,22 +10323,28 @@
       "entryPoint": "src/tiptap-editor.raw.js",
       "inputs": {
         "node_modules/orderedmap/dist/index.js": {
-          "bytesInOutput": 1439
+          "bytesInOutput": 1456
         },
-        "node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 43361
+        "node_modules/prosemirror-state/node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 24431
         },
-        "node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 28782
+        "node_modules/prosemirror-state/node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 26203
         },
         "node_modules/prosemirror-state/dist/index.js": {
-          "bytesInOutput": 11827
+          "bytesInOutput": 11832
         },
         "node_modules/@tiptap/pm/state/dist/index.js": {
           "bytesInOutput": 0
         },
+        "node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 43710
+        },
+        "node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 29461
+        },
         "node_modules/prosemirror-view/dist/index.js": {
-          "bytesInOutput": 92049
+          "bytesInOutput": 92911
         },
         "node_modules/@tiptap/pm/view/dist/index.js": {
           "bytesInOutput": 0
@@ -9976,20 +10364,32 @@
         "node_modules/@tiptap/pm/transform/dist/index.js": {
           "bytesInOutput": 0
         },
+        "node_modules/prosemirror-commands/node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 23263
+        },
+        "node_modules/prosemirror-commands/node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 19065
+        },
         "node_modules/prosemirror-commands/dist/index.js": {
-          "bytesInOutput": 9292
+          "bytesInOutput": 9295
         },
         "node_modules/@tiptap/pm/commands/dist/index.js": {
           "bytesInOutput": 0
         },
+        "node_modules/prosemirror-schema-list/node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 23263
+        },
+        "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 13190
+        },
         "node_modules/prosemirror-schema-list/dist/index.js": {
-          "bytesInOutput": 2463
+          "bytesInOutput": 2467
         },
         "node_modules/@tiptap/pm/schema-list/dist/index.js": {
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 55776
+          "bytesInOutput": 55794
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -10010,7 +10410,7 @@
           "bytesInOutput": 1011
         },
         "node_modules/@tiptap/extension-strike/dist/index.js": {
-          "bytesInOutput": 850
+          "bytesInOutput": 774
         },
         "node_modules/@tiptap/extension-underline/dist/index.js": {
           "bytesInOutput": 596
@@ -10022,7 +10422,13 @@
           "bytesInOutput": 678
         },
         "node_modules/@tiptap/extension-code-block/dist/index.js": {
-          "bytesInOutput": 2502
+          "bytesInOutput": 2649
+        },
+        "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 23268
+        },
+        "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 11942
         },
         "node_modules/prosemirror-dropcursor/dist/index.js": {
           "bytesInOutput": 2909
@@ -10037,10 +10443,10 @@
           "bytesInOutput": 882
         },
         "node_modules/rope-sequence/dist/index.js": {
-          "bytesInOutput": 3394
+          "bytesInOutput": 3412
         },
         "node_modules/prosemirror-history/dist/index.js": {
-          "bytesInOutput": 5707
+          "bytesInOutput": 5736
         },
         "node_modules/@tiptap/pm/history/dist/index.js": {
           "bytesInOutput": 0
@@ -10061,13 +10467,13 @@
           "bytesInOutput": 2271
         },
         "node_modules/@tiptap/extension-typography/dist/index.js": {
-          "bytesInOutput": 2612
+          "bytesInOutput": 3076
         },
         "node_modules/linkifyjs/dist/linkify.es.js": {
-          "bytesInOutput": 19344
+          "bytesInOutput": 19439
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 3679
+          "bytesInOutput": 3682
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -10127,7 +10533,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 321795
+      "bytes": 489037
     },
     "dist/tom-select.min.js": {
       "imports": [],
