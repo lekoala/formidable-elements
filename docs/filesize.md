@@ -1155,6 +1155,12 @@
    ├ src/utils/defineEl.js                                                                                         56b     4.2%
    └ src/hi-mark.js                                                                                                38b     2.9%
 
+  dist/limited-input.min.js                                                                                       1.1kb  100.0%
+   ├ src/classes/LimitedInput.js                                                                                  934b    80.4%
+   ├ src/utils/whenParsed.js                                                                                      117b    10.1%
+   ├ src/utils/defineEl.js                                                                                         56b     4.8%
+   └ src/limited-input.js                                                                                          29b     2.5%
+
   dist/growing-textarea.min.js                                                                                    781b   100.0%
    ├ src/classes/GrowingTextarea.js                                                                               551b    70.6%
    ├ src/utils/whenParsed.js                                                                                      117b    15.0%
@@ -1183,6 +1189,6 @@
   dist\tel-input.min.js           317.3kb
   dist\tiptap-editor.min.js       315.4kb
   dist\tiptap-editor.raw.min.js   314.3kb
-  ...and 33 more output files...
+  ...and 34 more output files...
 
-Done in 107ms
+Done in 109ms

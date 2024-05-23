@@ -2316,6 +2316,33 @@
       ],
       "format": "esm"
     },
+    "src/classes/LimitedInput.js": {
+      "bytes": 1649,
+      "imports": [
+        {
+          "path": "src/utils/whenParsed.js",
+          "kind": "import-statement",
+          "original": "../utils/whenParsed.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/limited-input.js": {
+      "bytes": 176,
+      "imports": [
+        {
+          "path": "src/classes/LimitedInput.js",
+          "kind": "import-statement",
+          "original": "./classes/LimitedInput.js"
+        },
+        {
+          "path": "src/utils/defineEl.js",
+          "kind": "import-statement",
+          "original": "./utils/defineEl.js"
+        }
+      ],
+      "format": "esm"
+    },
     "src/classes/LocaleProvider.js": {
       "bytes": 1218,
       "imports": [],
@@ -8014,6 +8041,26 @@
         }
       },
       "bytes": 92069
+    },
+    "dist/limited-input.min.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/limited-input.js",
+      "inputs": {
+        "src/utils/whenParsed.js": {
+          "bytesInOutput": 117
+        },
+        "src/classes/LimitedInput.js": {
+          "bytesInOutput": 934
+        },
+        "src/utils/defineEl.js": {
+          "bytesInOutput": 56
+        },
+        "src/limited-input.js": {
+          "bytesInOutput": 29
+        }
+      },
+      "bytes": 1161
     },
     "dist/locale-provider.min.js": {
       "imports": [],
