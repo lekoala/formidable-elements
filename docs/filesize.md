@@ -1201,11 +1201,11 @@
    ├ src/utils/defineEl.js                                                                                                          56b     4.2%
    └ src/hi-mark.js                                                                                                                 38b     2.9%
 
-  dist/limited-input.min.js                                                                                                        1.1kb  100.0%
-   ├ src/classes/LimitedInput.js                                                                                                   934b    80.4%
-   ├ src/utils/whenParsed.js                                                                                                       117b    10.1%
-   ├ src/utils/defineEl.js                                                                                                          56b     4.8%
-   └ src/limited-input.js                                                                                                           29b     2.5%
+  dist/limited-input.min.js                                                                                                        1.2kb  100.0%
+   ├ src/classes/LimitedInput.js                                                                                                   1.0kb   82.2%
+   ├ src/utils/whenParsed.js                                                                                                       117b     9.2%
+   ├ src/utils/defineEl.js                                                                                                          56b     4.4%
+   └ src/limited-input.js                                                                                                           29b     2.3%
 
   dist/growing-textarea.min.js                                                                                                     781b   100.0%
    ├ src/classes/GrowingTextarea.js                                                                                                551b    70.6%
@@ -1237,4 +1237,4 @@
   dist\tabulator-grid.min.js     464.0kb
   ...and 34 more output files...
 
-Done in 139ms
+Done in 136ms
