@@ -18,6 +18,8 @@ class LimitedInput extends HTMLElement {
   parsedCallback() {
     this.el = this.querySelector("input");
     if (this.hasAttribute("source")) {
+      /** @type {HTMLInputElement} */
+      // @ts-ignore
       this.source = document.getElementById(this.getAttribute("source"));
       if (this.source) {
         this.source.addEventListener("keyup", this);
