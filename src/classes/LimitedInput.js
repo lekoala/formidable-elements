@@ -31,7 +31,7 @@ class LimitedInput extends HTMLElement {
   handleEvent = (ev = null) => {
     const el = this.el;
     if (el instanceof HTMLInputElement) {
-      if (this.hasAttribute("source")) {
+      if (this.hasAttribute("source") && this.source) {
         el.value = this.source.value;
       }
       if (this.hasAttribute("lower")) {
@@ -39,6 +39,9 @@ class LimitedInput extends HTMLElement {
       }
       if (this.hasAttribute("upper")) {
         el.value = el.value.toLocaleUpperCase();
+      }
+      if (this.hasAttribute("normalize")) {
+        el.value = el.value.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
       }
       if (this.hasAttribute("chars")) {
         const c = this.getAttribute("chars");
