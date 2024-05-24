@@ -15,6 +15,7 @@ class SuperfileElement extends FormidableElement {
   }
 
   destroyed() {
+    this.superfile.dispose();
     this.superfile = null;
   }
 }
