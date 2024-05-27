@@ -1100,30 +1100,30 @@
    ├ src/utils/isString.js                                                                                                          28b     0.4%
    └ src/anchor-ed.js                                                                                                               27b     0.4%
 
-  dist/superfile-input.min.js                                                                                                      5.7kb  100.0%
-   ├ node_modules/superfile/superfile.js                                                                                           4.2kb   73.9%
-   ├ src/utils/FormidableElement.js                                                                                                359b     6.2%
-   ├ src/superfile-input.js                                                                                                        245b     4.2%
-   ├ src/utils/simpleConfig.js                                                                                                     166b     2.9%
-   ├ src/utils/injectStyles.js                                                                                                     158b     2.7%
-   ├ src/utils/replaceCallbacks.js                                                                                                 155b     2.7%
-   ├ src/classes/SuperfileElement.js                                                                                               152b     2.6%
-   ├ src/utils/whenParsed.js                                                                                                       117b     2.0%
-   ├ src/utils/defineEl.js                                                                                                          56b     1.0%
-   ├ src/utils/getGlobalFn.js                                                                                                       49b     0.8%
-   └ src/utils/isString.js                                                                                                          28b     0.5%
+  dist/superfile-input.min.js                                                                                                      7.0kb  100.0%
+   ├ node_modules/superfile/superfile.js                                                                                           5.5kb   78.6%
+   ├ src/utils/FormidableElement.js                                                                                                359b     5.0%
+   ├ src/superfile-input.js                                                                                                        245b     3.4%
+   ├ src/classes/SuperfileElement.js                                                                                               177b     2.5%
+   ├ src/utils/simpleConfig.js                                                                                                     166b     2.3%
+   ├ src/utils/injectStyles.js                                                                                                     158b     2.2%
+   ├ src/utils/replaceCallbacks.js                                                                                                 155b     2.2%
+   ├ src/utils/whenParsed.js                                                                                                       117b     1.6%
+   ├ src/utils/defineEl.js                                                                                                          56b     0.8%
+   ├ src/utils/getGlobalFn.js                                                                                                       49b     0.7%
+   └ src/utils/isString.js                                                                                                          28b     0.4%
 
-  dist/superfile-input.raw.min.js                                                                                                  5.3kb  100.0%
-   ├ node_modules/superfile/superfile.js                                                                                           4.2kb   79.0%
-   ├ src/utils/FormidableElement.js                                                                                                359b     6.6%
-   ├ src/utils/simpleConfig.js                                                                                                     166b     3.1%
-   ├ src/utils/replaceCallbacks.js                                                                                                 155b     2.9%
-   ├ src/classes/SuperfileElement.js                                                                                               152b     2.8%
-   ├ src/utils/whenParsed.js                                                                                                       117b     2.2%
-   ├ src/utils/defineEl.js                                                                                                          56b     1.0%
-   ├ src/utils/getGlobalFn.js                                                                                                       49b     0.9%
-   ├ src/superfile-input.raw.js                                                                                                     32b     0.6%
-   └ src/utils/isString.js                                                                                                          28b     0.5%
+  dist/superfile-input.raw.min.js                                                                                                  6.6kb  100.0%
+   ├ node_modules/superfile/superfile.js                                                                                           5.5kb   82.9%
+   ├ src/utils/FormidableElement.js                                                                                                359b     5.3%
+   ├ src/classes/SuperfileElement.js                                                                                               177b     2.6%
+   ├ src/utils/simpleConfig.js                                                                                                     166b     2.4%
+   ├ src/utils/replaceCallbacks.js                                                                                                 155b     2.3%
+   ├ src/utils/whenParsed.js                                                                                                       117b     1.7%
+   ├ src/utils/defineEl.js                                                                                                          56b     0.8%
+   ├ src/utils/getGlobalFn.js                                                                                                       49b     0.7%
+   ├ src/superfile-input.raw.js                                                                                                     32b     0.5%
+   └ src/utils/isString.js                                                                                                          28b     0.4%
 
   dist/progress-button.min.js                                                                                                      5.3kb  100.0%
    ├ src/classes/ProgressButton.js                                                                                                 2.4kb   46.0%
@@ -1237,4 +1237,4 @@
   dist\tabulator-grid.min.js     464.0kb
   ...and 34 more output files...
 
-Done in 136ms
+Done in 984ms

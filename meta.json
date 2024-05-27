@@ -2730,12 +2730,12 @@
       "format": "esm"
     },
     "node_modules/superfile/superfile.js": {
-      "bytes": 11022,
+      "bytes": 12701,
       "imports": [],
       "format": "esm"
     },
     "src/classes/SuperfileElement.js": {
-      "bytes": 447,
+      "bytes": 478,
       "imports": [
         {
           "path": "node_modules/superfile/superfile.js",
@@ -8634,7 +8634,7 @@
       "entryPoint": "src/superfile-input.js",
       "inputs": {
         "node_modules/superfile/superfile.js": {
-          "bytesInOutput": 4286
+          "bytesInOutput": 5641
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -8655,7 +8655,7 @@
           "bytesInOutput": 359
         },
         "src/classes/SuperfileElement.js": {
-          "bytesInOutput": 152
+          "bytesInOutput": 177
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -8667,7 +8667,7 @@
           "bytesInOutput": 245
         }
       },
-      "bytes": 5796
+      "bytes": 7176
     },
     "dist/superfile-input.raw.min.js": {
       "imports": [],
@@ -8675,7 +8675,7 @@
       "entryPoint": "src/superfile-input.raw.js",
       "inputs": {
         "node_modules/superfile/superfile.js": {
-          "bytesInOutput": 4286
+          "bytesInOutput": 5641
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -8696,7 +8696,7 @@
           "bytesInOutput": 359
         },
         "src/classes/SuperfileElement.js": {
-          "bytesInOutput": 152
+          "bytesInOutput": 177
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -8705,7 +8705,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 5425
+      "bytes": 6805
     },
     "dist/tabulator-grid.min.js": {
       "imports": [],
