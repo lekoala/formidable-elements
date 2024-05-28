@@ -653,7 +653,7 @@
    ├ src/utils/fetchWrapper.js                                                                                                     487b     0.1%
    ├ src/utils/fetchJson.js                                                                                                        407b     0.1%
    ├ src/utils/FormidableElement.js                                                                                                365b     0.1%
-   ├ src/utils/insertHiddenInput.js                                                                                                229b     0.1%
+   ├ src/utils/insertHiddenInput.js                                                                                                240b     0.1%
    ├ src/utils/Storage.js                                                                                                          227b     0.1%
    ├ src/utils/simpleConfig.js                                                                                                     168b     0.1%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.1%
@@ -674,7 +674,7 @@
    ├ src/utils/fetchWrapper.js                                                                                                     487b     0.2%
    ├ src/utils/fetchJson.js                                                                                                        407b     0.1%
    ├ src/utils/FormidableElement.js                                                                                                365b     0.1%
-   ├ src/utils/insertHiddenInput.js                                                                                                229b     0.1%
+   ├ src/utils/insertHiddenInput.js                                                                                                240b     0.1%
    ├ src/utils/Storage.js                                                                                                          227b     0.1%
    ├ src/utils/simpleConfig.js                                                                                                     168b     0.1%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.1%
@@ -735,10 +735,10 @@
    ├ src/filepond-input.raw.js                                                                                                      34b     0.0%
    └ src/utils/isString.js                                                                                                          29b     0.0%
 
-  dist/input-mask.min.js                                                                                                          89.7kb  100.0%
+  dist/input-mask.min.js                                                                                                          89.8kb  100.0%
    ├ node_modules/inputmask/lib/extensions/inputmask.numeric.extensions.js                                                        12.0kb   13.3%
    ├ node_modules/inputmask/lib/extensions/inputmask.date.extensions.js                                                           11.6kb   12.9%
-   ├ node_modules/inputmask/lib/validation-tests.js                                                                               10.2kb   11.4%
+   ├ node_modules/inputmask/lib/validation-tests.js                                                                               10.2kb   11.3%
    ├ node_modules/inputmask/lib/validation.js                                                                                      9.7kb   10.8%
    ├ node_modules/inputmask/lib/eventhandlers.js                                                                                   8.1kb    9.0%
    ├ node_modules/inputmask/lib/mask-lexer.js                                                                                      6.9kb    7.7%
@@ -757,8 +757,8 @@
    ├ src/utils/FormidableElement.js                                                                                                365b     0.4%
    ├ node_modules/inputmask/lib/dependencyLibs/inputmask.dependencyLib.js                                                          364b     0.4%
    ├ node_modules/inputmask/lib/environment.js                                                                                     256b     0.3%
+   ├ src/utils/insertHiddenInput.js                                                                                                240b     0.3%
    ├ node_modules/inputmask/lib/definitions.js                                                                                     230b     0.3%
-   ├ src/utils/insertHiddenInput.js                                                                                                229b     0.2%
    ├ node_modules/inputmask/lib/masktoken.js                                                                                       201b     0.2%
    ├ src/utils/simpleConfig.js                                                                                                     168b     0.2%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.2%
@@ -789,7 +789,7 @@
    ├ node_modules/flatpickr/dist/esm/utils/polyfills.js                                                                            320b     0.4%
    ├ node_modules/flatpickr/dist/esm/utils/index.js                                                                                282b     0.3%
    ├ src/utils/date.js                                                                                                             272b     0.3%
-   ├ src/utils/insertHiddenInput.js                                                                                                229b     0.3%
+   ├ src/utils/insertHiddenInput.js                                                                                                240b     0.3%
    ├ src/flatpickr-input.js                                                                                                        225b     0.3%
    ├ src/utils/simpleConfig.js                                                                                                     168b     0.2%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.2%
@@ -906,7 +906,7 @@
    ├ node_modules/flatpickr/dist/esm/utils/polyfills.js                                                                            320b     0.5%
    ├ node_modules/flatpickr/dist/esm/utils/index.js                                                                                282b     0.4%
    ├ src/utils/date.js                                                                                                             272b     0.4%
-   ├ src/utils/insertHiddenInput.js                                                                                                229b     0.4%
+   ├ src/utils/insertHiddenInput.js                                                                                                240b     0.4%
    ├ src/utils/simpleConfig.js                                                                                                     168b     0.3%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.3%
    ├ src/utils/query.js                                                                                                            135b     0.2%
