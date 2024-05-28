@@ -2496,7 +2496,7 @@
       "format": "esm"
     },
     "src/classes/LimitedInput.js": {
-      "bytes": 1857,
+      "bytes": 2324,
       "imports": [
         {
           "path": "src/utils/whenParsed.js",
@@ -8408,7 +8408,7 @@
           "bytesInOutput": 117
         },
         "src/classes/LimitedInput.js": {
-          "bytesInOutput": 1045
+          "bytesInOutput": 1151
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -8417,7 +8417,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 1272
+      "bytes": 1378
     },
     "dist/locale-provider.min.js": {
       "imports": [],

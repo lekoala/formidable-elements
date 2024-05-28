@@ -1193,6 +1193,12 @@
    ├ src/format-number.js                                                                                                           29b     1.5%
    └ src/utils/isString.js                                                                                                          28b     1.5%
 
+  dist/limited-input.min.js                                                                                                        1.3kb  100.0%
+   ├ src/classes/LimitedInput.js                                                                                                   1.1kb   83.5%
+   ├ src/utils/whenParsed.js                                                                                                       117b     8.5%
+   ├ src/utils/defineEl.js                                                                                                          56b     4.1%
+   └ src/limited-input.js                                                                                                           29b     2.1%
+
   dist/hi-mark.min.js                                                                                                              1.3kb  100.0%
    ├ src/css/hi-mark.min.css                                                                                                       592b    44.4%
    ├ src/utils/LazyElement.js                                                                                                      241b    18.1%
@@ -1200,12 +1206,6 @@
    ├ src/utils/injectStyles.js                                                                                                     158b    11.9%
    ├ src/utils/defineEl.js                                                                                                          56b     4.2%
    └ src/hi-mark.js                                                                                                                 38b     2.9%
-
-  dist/limited-input.min.js                                                                                                        1.2kb  100.0%
-   ├ src/classes/LimitedInput.js                                                                                                   1.0kb   82.2%
-   ├ src/utils/whenParsed.js                                                                                                       117b     9.2%
-   ├ src/utils/defineEl.js                                                                                                          56b     4.4%
-   └ src/limited-input.js                                                                                                           29b     2.3%
 
   dist/growing-textarea.min.js                                                                                                     781b   100.0%
    ├ src/classes/GrowingTextarea.js                                                                                                551b    70.6%
@@ -1237,4 +1237,4 @@
   dist\tabulator-grid.min.js     464.0kb
   ...and 34 more output files...
 
-Done in 984ms
+Done in 135ms
