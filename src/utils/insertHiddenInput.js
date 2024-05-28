@@ -23,8 +23,10 @@ export default (input, v = undefined) => {
   }
   // swap names, keep ids
   // keep formatted value (we use prefix for fields like name[arr][val])
-  // to string is required otherwise sometimes we end up with __ due to order of assignments when minifying
-  h.name = input.name.toString();
+  // avoid multiple __ when connecting/disconnecting nodes
+  input.name = input.dataset.originalName || input.name;
+  h.name = input.name;
+  input.dataset.originalName = input.name;
   input.name = `_${input.name}`;
 
   return h;
