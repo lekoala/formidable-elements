@@ -1555,7 +1555,7 @@
       "format": "esm"
     },
     "src/utils/insertHiddenInput.js": {
-      "bytes": 882,
+      "bytes": 924,
       "imports": [
         {
           "path": "src/utils/insertAfter.js",
@@ -7952,7 +7952,7 @@
           "bytesInOutput": 59
         },
         "src/utils/insertHiddenInput.js": {
-          "bytesInOutput": 240
+          "bytesInOutput": 297
         },
         "src/utils/setId.js": {
           "bytesInOutput": 67
@@ -7988,7 +7988,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 84728
+      "bytes": 84785
     },
     "dist/flatpickr-input.raw.min.js": {
       "imports": [],
@@ -8050,7 +8050,7 @@
           "bytesInOutput": 59
         },
         "src/utils/insertHiddenInput.js": {
-          "bytesInOutput": 240
+          "bytesInOutput": 297
         },
         "src/utils/setId.js": {
           "bytesInOutput": 67
@@ -8074,7 +8074,7 @@
           "bytesInOutput": 35
         }
       },
-      "bytes": 64987
+      "bytes": 65044
     },
     "dist/floating-ui.min.js": {
       "imports": [],
@@ -8385,7 +8385,7 @@
           "bytesInOutput": 59
         },
         "src/utils/insertHiddenInput.js": {
-          "bytesInOutput": 240
+          "bytesInOutput": 297
         },
         "src/classes/InputmaskElement.js": {
           "bytesInOutput": 1222
@@ -8397,7 +8397,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 91904
+      "bytes": 91961
     },
     "dist/limited-input.min.js": {
       "imports": [],
@@ -10007,7 +10007,7 @@
           "bytesInOutput": 59
         },
         "src/utils/insertHiddenInput.js": {
-          "bytesInOutput": 240
+          "bytesInOutput": 297
         },
         "src/utils/isRTL.js": {
           "bytesInOutput": 75
@@ -10025,7 +10025,7 @@
           "bytesInOutput": 601
         }
       },
-      "bytes": 324894
+      "bytes": 324951
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -10078,7 +10078,7 @@
           "bytesInOutput": 59
         },
         "src/utils/insertHiddenInput.js": {
-          "bytesInOutput": 240
+          "bytesInOutput": 297
         },
         "src/utils/isRTL.js": {
           "bytesInOutput": 75
@@ -10090,7 +10090,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 300848
+      "bytes": 300905
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],

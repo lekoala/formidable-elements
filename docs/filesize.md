@@ -644,7 +644,7 @@
    └ node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js                                                      10b     0.0%
 
   dist/tel-input.min.js                                                                                                          317.3kb  100.0%
-   ├ node_modules/intl-tel-input/build/js/utils.js                                                                               250.8kb   79.1%
+   ├ node_modules/intl-tel-input/build/js/utils.js                                                                               250.8kb   79.0%
    ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                                         36.2kb   11.4%
    ├ src/css/tel-input.min.css                                                                                                    22.8kb    7.2%
    ├ src/classes/TelInput.js                                                                                                       2.8kb    0.9%
@@ -653,7 +653,7 @@
    ├ src/utils/fetchWrapper.js                                                                                                     487b     0.1%
    ├ src/utils/fetchJson.js                                                                                                        407b     0.1%
    ├ src/utils/FormidableElement.js                                                                                                365b     0.1%
-   ├ src/utils/insertHiddenInput.js                                                                                                240b     0.1%
+   ├ src/utils/insertHiddenInput.js                                                                                                297b     0.1%
    ├ src/utils/Storage.js                                                                                                          227b     0.1%
    ├ src/utils/simpleConfig.js                                                                                                     168b     0.1%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.1%
@@ -666,7 +666,7 @@
    ├ src/utils/getGlobalFn.js                                                                                                       50b     0.0%
    └ src/utils/isString.js                                                                                                          29b     0.0%
 
-  dist/tel-input.raw.min.js                                                                                                      293.8kb  100.0%
+  dist/tel-input.raw.min.js                                                                                                      293.9kb  100.0%
    ├ node_modules/intl-tel-input/build/js/utils.js                                                                               250.8kb   85.4%
    ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                                         36.2kb   12.3%
    ├ src/classes/TelInput.js                                                                                                       2.8kb    1.0%
@@ -674,7 +674,7 @@
    ├ src/utils/fetchWrapper.js                                                                                                     487b     0.2%
    ├ src/utils/fetchJson.js                                                                                                        407b     0.1%
    ├ src/utils/FormidableElement.js                                                                                                365b     0.1%
-   ├ src/utils/insertHiddenInput.js                                                                                                240b     0.1%
+   ├ src/utils/insertHiddenInput.js                                                                                                297b     0.1%
    ├ src/utils/Storage.js                                                                                                          227b     0.1%
    ├ src/utils/simpleConfig.js                                                                                                     168b     0.1%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.1%
@@ -756,8 +756,8 @@
    ├ node_modules/inputmask/lib/extensions/inputmask.date.i18n.js                                                                  411b     0.4%
    ├ src/utils/FormidableElement.js                                                                                                365b     0.4%
    ├ node_modules/inputmask/lib/dependencyLibs/inputmask.dependencyLib.js                                                          364b     0.4%
+   ├ src/utils/insertHiddenInput.js                                                                                                297b     0.3%
    ├ node_modules/inputmask/lib/environment.js                                                                                     256b     0.3%
-   ├ src/utils/insertHiddenInput.js                                                                                                240b     0.3%
    ├ node_modules/inputmask/lib/definitions.js                                                                                     230b     0.3%
    ├ node_modules/inputmask/lib/masktoken.js                                                                                       201b     0.2%
    ├ src/utils/simpleConfig.js                                                                                                     168b     0.2%
@@ -772,8 +772,8 @@
    ├ src/input-mask.js                                                                                                              30b     0.0%
    └ src/utils/isString.js                                                                                                          29b     0.0%
 
-  dist/flatpickr-input.min.js                                                                                                     82.7kb  100.0%
-   ├ node_modules/flatpickr/dist/esm/index.js                                                                                     41.1kb   49.7%
+  dist/flatpickr-input.min.js                                                                                                     82.8kb  100.0%
+   ├ node_modules/flatpickr/dist/esm/index.js                                                                                     41.1kb   49.6%
    ├ node_modules/flatpickr/dist/flatpickr.min.css                                                                                15.8kb   19.1%
    ├ node_modules/flatpickr/dist/plugins/monthSelect/index.js                                                                      5.4kb    6.5%
    ├ node_modules/flatpickr/dist/plugins/monthSelect/style.css                                                                     2.8kb    3.3%
@@ -787,9 +787,9 @@
    ├ node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.css                                                               383b     0.5%
    ├ src/utils/FormidableElement.js                                                                                                365b     0.4%
    ├ node_modules/flatpickr/dist/esm/utils/polyfills.js                                                                            320b     0.4%
+   ├ src/utils/insertHiddenInput.js                                                                                                297b     0.4%
    ├ node_modules/flatpickr/dist/esm/utils/index.js                                                                                282b     0.3%
    ├ src/utils/date.js                                                                                                             272b     0.3%
-   ├ src/utils/insertHiddenInput.js                                                                                                240b     0.3%
    ├ src/flatpickr-input.js                                                                                                        225b     0.3%
    ├ src/utils/simpleConfig.js                                                                                                     168b     0.2%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.2%
@@ -893,9 +893,9 @@
    └ src/utils/isString.js                                                                                                          29b     0.0%
 
   dist/flatpickr-input.raw.min.js                                                                                                 63.5kb  100.0%
-   ├ node_modules/flatpickr/dist/esm/index.js                                                                                     41.1kb   64.8%
+   ├ node_modules/flatpickr/dist/esm/index.js                                                                                     41.1kb   64.7%
    ├ node_modules/flatpickr/dist/plugins/monthSelect/index.js                                                                      5.4kb    8.5%
-   ├ node_modules/flatpickr/dist/esm/utils/formatting.js                                                                           2.5kb    4.0%
+   ├ node_modules/flatpickr/dist/esm/utils/formatting.js                                                                           2.5kb    3.9%
    ├ src/classes/FlatpickrInput.js                                                                                                 2.3kb    3.6%
    ├ node_modules/flatpickr/dist/esm/utils/dates.js                                                                                2.0kb    3.2%
    ├ node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.js                                                                1.8kb    2.9%
@@ -904,9 +904,9 @@
    ├ node_modules/flatpickr/dist/esm/utils/dom.js                                                                                  799b     1.2%
    ├ src/utils/FormidableElement.js                                                                                                365b     0.6%
    ├ node_modules/flatpickr/dist/esm/utils/polyfills.js                                                                            320b     0.5%
+   ├ src/utils/insertHiddenInput.js                                                                                                297b     0.5%
    ├ node_modules/flatpickr/dist/esm/utils/index.js                                                                                282b     0.4%
    ├ src/utils/date.js                                                                                                             272b     0.4%
-   ├ src/utils/insertHiddenInput.js                                                                                                240b     0.4%
    ├ src/utils/simpleConfig.js                                                                                                     168b     0.3%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.3%
    ├ src/utils/query.js                                                                                                            135b     0.2%
@@ -1237,4 +1237,4 @@
   dist\tabulator-grid.min.js     464.0kb
   ...and 34 more output files...
 
-Done in 135ms
+Done in 134ms
