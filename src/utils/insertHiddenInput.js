@@ -23,7 +23,8 @@ export default (input, v = undefined) => {
   }
   // swap names, keep ids
   // keep formatted value (we use prefix for fields like name[arr][val])
-  h.name = input.name;
+  // to string is required otherwise sometimes we end up with __ due to order of assignments when minifying
+  h.name = input.name.toString();
   input.name = `_${input.name}`;
 
   return h;

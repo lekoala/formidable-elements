@@ -34,6 +34,20 @@
             </input-mask>
         </div>
         <div class="mb-3">
+            <div class="mb-1">
+                <input-mask data-config='{"alias":"datetime","inputFormat":"dd\/mm\/yyyy"}'>
+                    <label for="form_add-start_date">Start Date</label>
+                    <input type="text" name="start_date" id="form_add-start_date" inputmode="numeric" value="" required="required" />
+                </input-mask>
+            </div>
+            <div class="mb-1">
+                <input-mask data-config='{"alias":"datetime","inputFormat":"dd\/mm\/yyyy"}'>
+                    <label for="form_add-end_date">End Date</label>
+                    <input type="text" name="end_date" id="form_add-end_date" inputmode="numeric" value="" required="required" />
+                </input-mask>
+            </div>
+        </div>
+        <div class="mb-3">
             <label for="masknohidden-input" class="form-label">Simple mask (no hidden)</label>
             <input-mask data-config='{"mask": "aa-9999", "placeholder":"aa-9999"}' data-keep-mask="true">
                 <input type="text" class="form-control" id="masknohidden-input" name="masknohidden" value="BB-1234">
