@@ -13,6 +13,8 @@
     <script type="module" src="./assets/demo.js"></script>
     <script type="module" src="../dist/tiptap-editor.min.js"></script>
 
+    <script type="module" src="https://cdn.jsdelivr.net/npm/pop-modal-dialog/pop-modal.styled.min.js"></script>
+
     <style>
         blockquote {
             border-left: 2px solid #ccc;
@@ -45,6 +47,15 @@
         <div class="mb-3">
             <tiptap-editor name="unsafe" value='<em>hello world</em><img src="" onerror=alert(0)>'>
             </tiptap-editor>
+        </div>
+        <div class="mb-3">
+            <button type="button" data-dialog="megaModal" class="btn btn-primary">Editor in a modal</button>
+            <pop-modal id="megaModal" mega>
+                <tiptap-editor data-allow-paste="true" style="min-width: 400px">
+                    <textarea id="modaleditor" name="modaleditor" class="form-control" style="height:200px; min-width: 400px;">
+                    </textarea>
+                </tiptap-editor>
+            </pop-modal>
         </div>
         <div class="mb-3">
             <tiptap-editor data-toolbar="false" data-allow-paste="true">

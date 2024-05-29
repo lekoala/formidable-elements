@@ -28,8 +28,9 @@ const whenParsed = (el) => {
     }
     ref = ref.parentNode;
   } while (ref);
+  // This is a simple fallback if the do/while did not return
   setTimeout(() => {
-    whenParsed(el);
+    el.parsedCallback();
   });
 };
 export default whenParsed;

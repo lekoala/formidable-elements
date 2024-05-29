@@ -15,8 +15,7 @@ const observer = new window.IntersectionObserver((entries, obs) => {
       //@ts-ignore
       const target = entry.target;
       obs.unobserve(target);
-      target.isCreated = true;
-      target.created();
+      target.doCreate();
     });
 });
 
@@ -30,28 +29,31 @@ class EventfulElement extends FormidableElement {
 
   parsedCallback() {
     this.lazy = this.hasAttribute("lazy");
-    this.isCreated = false;
+    // Observe until config is set
     if (!this.config) {
-      /**
-       * The config object as parsed from data-config attribute
-       * @type {Object}
-       */
-      this.config = replaceCallbacks(simpleConfig(this.dataset.config));
-    }
-    if (!this.isCreated) {
       if (this.lazy) {
         observer.observe(this);
       } else {
-        this.isCreated = true;
-        this.created();
+        this.doCreate();
       }
     }
-    if (this.isCreated) {
+    // Do not trigger connect until created
+    if (this.config) {
       this.connected();
     }
   }
 
+  doCreate() {
+    /**
+     * The config object as parsed from data-config attribute
+     * @type {Object}
+     */
+    this.config = replaceCallbacks(simpleConfig(this.dataset.config));
+    this.created();
+  }
+
   connectedCallback() {
+    // Triggers parsedCallback()
     super.connectedCallback();
     this.events.forEach((t) => this.addEventListener(t, this));
   }
@@ -72,7 +74,7 @@ class EventfulElement extends FormidableElement {
   };
 
   disconnectedCallback() {
-    if (this.lazy && this.isCreated) {
+    if (this.lazy && this.config) {
       observer.unobserve(this);
     }
     this.events.forEach((t) => this.removeEventListener(t, this));

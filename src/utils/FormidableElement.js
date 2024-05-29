@@ -2,6 +2,11 @@ import replaceCallbacks from "./replaceCallbacks.js";
 import simpleConfig from "./simpleConfig.js";
 import whenParsed from "./whenParsed.js";
 
+// Global id counter
+const ID_KEY = "__id";
+window[ID_KEY] = window[ID_KEY] || 0;
+const m = new Map();
+
 /**
  * A minimalistic base class for your html elements
  *
@@ -17,6 +22,23 @@ import whenParsed from "./whenParsed.js";
  * for more than 1 second
  */
 class FormidableElement extends HTMLElement {
+  constructor() {
+    super();
+    // Assign unique id to the html node
+    this.id = this.id || `ce-${window[ID_KEY]++}`;
+
+    // Restore original html state.
+    // Constructor can be called multiple times on the same html node, which may be altered by underlying lib
+    // For example, when appending element to body
+    // Since it creates a new instance, we cannot use a WeakMap, but we clear based on id
+    // The id is always set and will be the same even if this class is instantiated multiple times
+    if (m.has(this.id)) {
+      this.innerHTML = m.get(this.id);
+    } else {
+      m.set(this.id, this.innerHTML);
+    }
+  }
+
   /**
    * This can get called multiple times
    */
@@ -34,6 +56,10 @@ class FormidableElement extends HTMLElement {
     this._t = setTimeout(() => {
       this.destroyed();
       this.config = null;
+      // The dom doesn't contain this id anymore, we can clear the map
+      if (!document.getElementById(this.id)) {
+        m.delete(this.id);
+      }
     }, 1000);
   }
 

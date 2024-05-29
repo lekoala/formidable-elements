@@ -45,6 +45,7 @@
     "flatpickr": "^4.6.13",
     "inputmask": "^5.0.9-beta.70",
     "intl-tel-input": "^21",
+    "prosemirror-model": "^1.21.0",
     "squire-rte": "^2.2.8",
     "superfile": "^1.3.0",
     "tabulator-tables": "6.2.1",

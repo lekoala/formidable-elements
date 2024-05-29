@@ -19,6 +19,7 @@
         });
     </script>
     <script type="module" src="../dist/tel-input.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/pop-modal-dialog/pop-modal.styled.min.js"></script>
 
     <script type="module">
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
@@ -55,6 +56,17 @@
             <tel-input>
                 <input type="tel" id="phone" name="phone" class="form-control">
             </tel-input>
+        </div>
+        <div class="mb-3">
+            <button type="button" data-dialog="megaModal" class="btn btn-primary">Input in a modal</button>
+            <pop-modal id="megaModal" mega>
+                <!-- this is not working outside the modal -->
+                <div style="min-width: 400px; min-height: 400px;">
+                    <tel-input id="in-modal">
+                        <input type="tel" id="phonemodal" name="phonemodal" class="form-control">
+                    </tel-input>
+                </div>
+            </pop-modal>
         </div>
         <div class="mb-3">
             <label for="mphone" class="form-label">My mobile phone (live validation)</label>
