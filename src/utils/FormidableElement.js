@@ -37,6 +37,7 @@ class FormidableElement extends HTMLElement {
     } else {
       m.set(this.id, this.innerHTML);
     }
+    console.log("created",this.id);
   }
 
   /**
@@ -51,6 +52,7 @@ class FormidableElement extends HTMLElement {
   }
 
   disconnectedCallback() {
+    console.log("disco",this.id);
     this.disconnected();
     // Schedule destroyed callback
     this._t = setTimeout(() => {

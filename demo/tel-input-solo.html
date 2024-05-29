@@ -52,6 +52,14 @@
     </header>
     <form action="https://vercel-dumper.vercel.app" method="post">
         <div class="mb-3">
+            <!--
+                due to pop-modal, this will trigger the constructor two times and the disconnect/destroy once
+﻿
+tel-input.min.js:1 created ce-0
+tel-input.min.js:1 created ce-0
+tel-input.min.js:1 disco ce-0
+
+            -->
             <button type="button" data-dialog="megaModal" class="btn btn-primary">Input in a modal</button>
             <pop-modal id="megaModal" mega>
                 <!-- this is not working outside the modal -->
