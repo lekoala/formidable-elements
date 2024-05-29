@@ -32,25 +32,6 @@ import dropmenu from "../utils/dropmenu.js";
 
 const name = "tiptap-editor";
 
-//@link https://github.com/ueberdosis/tiptap/pull/4112
-//@ts-ignore
-Link.config.addAttributes = function () {
-  return {
-    href: {
-      default: null,
-    },
-    rel: {
-      default: null,
-    },
-    target: {
-      default: null,
-    },
-    class: {
-      default: null,
-    },
-  };
-};
-
 /**
  * @param {HTMLElement} editor
  * @param {HTMLElement} toolbar
