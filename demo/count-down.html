@@ -19,21 +19,25 @@
         // });
 
         window['app'] = {
-            onComplete: () => {
-                console.log("COMPLETE");
+            onCompleteFiveSeconds: () => {
+                console.log("COMPLETE AFTER FIVE");
+            },
+            completePast: () => {
+                console.log("ALREADY COMPLETE BECAUSE IN THE PAST");
             }
         }
     </script>
     <script type="module" src="../dist/count-down.min.js"></script>
     <style>
         .layout .unit {
-            display:inline-block;
+            display: inline-block;
             text-align: center;
-            padding:1em;
-            border:1px solid #ccc;
+            padding: 1em;
+            border: 1px solid #ccc;
         }
+
         .layout .label {
-            display:block;
+            display: block;
             font-weight: bold;
         }
     </style>
@@ -44,22 +48,33 @@
         <a href="../index.html">Back to index</a>
     </header>
     <div class="mb-3">
-        Static timer to 01/01/2025 <count-down data-config='{"end": "2025-01-01", "timer": false}'></count-down>
+        <!-- end is expanded to yyyy-mm-dd 00:00:00-->
+        Static timer to 01/01/2025 (using current timezone as reference) <count-down
+            data-config='{"end": "2025-01-01", "timer": false}'></count-down>
+    </div>
+    <div class="mb-3">
+        Static timer with timezone GMT+9 vs your current timezone to 01/01/2025 <count-down
+            data-config='{"end": "2025-01-01T00:00:00+09:00", "timer": false}'></count-down>
+    </div>
+    <div class="mb-3">
+        Static timer in the past 01/01/2023 <count-down
+            data-config='{"end": "2023-01-01T00:00:00+02:00", "onComplete": {"__fn": "app.completePast"}}'></count-down>
     </div>
     <div class="mb-3">
         Dynamic timer to 01/01/2025 + log <count-down data-config='{"end": "2025-01-01", "onTick": {"__fn": "console.log"}}'></count-down>
     </div>
     <div class="mb-3">
         Custom start date (2024-12-30 > 2025-01-01) <count-down
-            data-config='{"start": "2024-12-30 20:00:00", "end": "2025-01-01 14:00:00"}'></count-down>
+            data-config='{"start": "2024-12-30", "end": "2025-01-01"}'></count-down>
     </div>
     <div class="mb-3">
-        Custom start date (2024-12-30 > 2025-01-01) with padding <count-down class="layout"
+        Custom start date (2024-12-30 20:00:00 > 2025-01-01 14:00:00) with padding <count-down class="layout"
             data-config='{"start": "2024-12-30 20:00:00", "end": "2025-01-01 14:00:00", "pad": true}'>
-            <span class="unit days"><span class="value"></span><span class="label" data-singular="jour" data-plural="jours"> jours</span></span> <span class="unit hours"><span
-                class="value"></span><span class="label"> heures</span></span> <span class="unit minutes"><span class="value"></span><span
-                class="label"> minutes</span></span> <span class="unit seconds"><span class="value"></span><span class="label">
-                seconds</span></span>
+            <span class="unit days"><span class="value"></span><span class="label" data-singular="jour" data-plural="jours">
+                    jours</span></span> <span class="unit hours"><span class="value"></span><span class="label"> heures</span></span> <span
+                class="unit minutes"><span class="value"></span><span class="label"> minutes</span></span> <span class="unit seconds"><span
+                    class="value"></span><span class="label">
+                    seconds</span></span>
         </count-down>
     </div>
     <div class="mb-3">
@@ -94,7 +109,7 @@
         +30 minutes (full display) <count-down data-config='{"end": {"minutes": 30}}'></count-down>
     </div>
     <div class="mb-3">
-        +5 seconds and on complete <count-down data-config='{"end": {"seconds": 5}, "onComplete": {"__fn": "app.onComplete"}}'>
+        +5 seconds and on complete <count-down data-config='{"end": {"seconds": 5}, "onComplete": {"__fn": "app.onCompleteFiveSeconds"}}'>
             <span class="minutes"><span class="value"></span><span class="label"> minutes</span></span> <span class="seconds"><span
                     class="value"></span><span class="label">
                     seconds</span></span>

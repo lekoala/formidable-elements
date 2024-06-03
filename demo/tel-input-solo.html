@@ -19,7 +19,9 @@
         });
     </script>
     <script type="module" src="../dist/tel-input.min.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/pop-modal-dialog/pop-modal.styled.min.js"></script>
+    <!-- issue is solved in 1.1.1 by not using innerHTML -->
+    <!-- <script type="module" src="https://cdn.jsdelivr.net/npm/pop-modal-dialog@1.1.1/pop-modal.styled.min.js"></script> -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/pop-modal-dialog@1.1.0/pop-modal.styled.min.js"></script>
 
     <script type="module">
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')

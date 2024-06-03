@@ -3,7 +3,7 @@ import simpleConfig from "./simpleConfig.js";
 import whenParsed from "./whenParsed.js";
 
 // Global id counter
-const ID_KEY = "__id";
+const ID_KEY = "__fe_id";
 window[ID_KEY] = window[ID_KEY] || 0;
 const m = new Map();
 
@@ -25,19 +25,20 @@ class FormidableElement extends HTMLElement {
   constructor() {
     super();
     // Assign unique id to the html node
-    this.id = this.id || `ce-${window[ID_KEY]++}`;
+    this.id = this.id || `fe-${window[ID_KEY]++}`;
 
     // Restore original html state.
-    // Constructor can be called multiple times on the same html node, which may be altered by underlying lib
-    // For example, when appending element to body
-    // Since it creates a new instance, we cannot use a WeakMap, but we clear based on id
-    // The id is always set and will be the same even if this class is instantiated multiple times
-    if (m.has(this.id)) {
-      this.innerHTML = m.get(this.id);
+    // See also /demo/tel-input-solo.html
+    // Fixes this : https://codepen.io/lekoalabe/pen/JjqEgxE
+    const o = m.get(this.id);
+    if (o) {
+      // Only restore html state if necessary
+      if (o != this.innerHTML) {
+        this.innerHTML = o;
+      }
     } else {
       m.set(this.id, this.innerHTML);
     }
-    console.log("created",this.id);
   }
 
   /**
@@ -52,7 +53,6 @@ class FormidableElement extends HTMLElement {
   }
 
   disconnectedCallback() {
-    console.log("disco",this.id);
     this.disconnected();
     // Schedule destroyed callback
     this._t = setTimeout(() => {

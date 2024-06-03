@@ -1,5 +1,5 @@
 import FormidableElement from "../utils/FormidableElement.js";
-import { asDate, dateParts, changeDate } from "../utils/date.js";
+import { asDate, dateParts, changeDate, isDay, currentDay } from "../utils/date.js";
 import { q } from "../utils/query.js";
 import localeProvider from "../utils/localeProvider.js";
 
@@ -8,9 +8,9 @@ import localeProvider from "../utils/localeProvider.js";
  * @property {string|Object|Date} start Start time or date expression
  * @property {string|Object|Date} end End time or date expression
  * @property {string} url Url on complete
- * @property {string} unit Unit to use instead of various components
+ * @property {string} unit Unit to use instead of various components (could be one of days|hours|minutes|seconds)
  * @property {string} locale Locale
- * @property {Boolean} timer Self updating timer (true by default)
+ * @property {Boolean} timer Self updating timer (true by default). If false, disable callbacks (onXYZ functions).
  * @property {Boolean} pad Pad h/m/s with 0
  * @property {Number} decimalDigits Number of decimals to show for fractional numbers
  * @property {Object} labels Units labels
@@ -22,10 +22,21 @@ import localeProvider from "../utils/localeProvider.js";
  */
 const name = "count-down";
 
+/**
+ * @param {*} v
+ * @param {Number} qt
+ * @returns {string}
+ */
 function pad(v, qt = 2) {
   return v.toString().padStart(qt, "0");
 }
 
+/**
+ * @param {Object} parts with days, hours, minutes, seconds
+ * @param {string} toUnit
+ * @param {Number} digits
+ * @returns {string}
+ */
 function fraction(parts, toUnit, digits = 2) {
   const units = {
     seconds: 60,
@@ -51,12 +62,18 @@ function fraction(parts, toUnit, digits = 2) {
   return (Math.round(v * 100) / 100).toFixed(digits);
 }
 
+/**
+ * @param {Object} data
+ * @param {CountdownElement} inst
+ */
 function computeData(data, inst) {
   const parts = dateParts(data.diff);
 
+  // We want a specific unit
   if (inst.config.unit) {
     data[inst.config.unit] = fraction(parts, inst.config.unit, inst.config.decimalDigits);
   } else {
+    // Display in days/hours/minutes/seconds
     const qt = inst.config.pad ? 2 : 1;
     data.days = parts.days.toString();
     data.hours = pad(parts.hours, qt);
@@ -87,9 +104,37 @@ function computeData(data, inst) {
 }
 
 /**
+ * @param {Object} data
+ * @param {CountdownElement} inst
+ * @returns {Boolean}
+ */
+function checkFinished(data, inst) {
+  if (data.diff > 0) {
+    return false;
+  }
+  clearInterval(inst.interval);
+
+  // Refresh display
+  data.diff = 0;
+  computeData(data, inst);
+
+  // Trigger on complete
+  if (inst.config.onComplete) {
+    inst.config.onComplete(inst);
+  }
+  // Reload or replace
+  if (inst.config.reloadOnComplete) {
+    window.location.reload();
+  } else if (inst.config.url) {
+    window.location.replace(inst.config.url);
+  }
+  return true;
+}
+
+/**
  * This is a simple coutdown elements
  * It's not meant to compute more than days (weeks, months, etc)
- * Because that is not very convenient due to months not having the same number of days, 2 weeks sometimes meaning 15 days
+ * Because that is not very convenient due to months not having the same number of days, 2 weeks sometimes meaning 15 days...
  */
 class CountdownElement extends FormidableElement {
   created() {
@@ -133,11 +178,17 @@ class CountdownElement extends FormidableElement {
 
     const start = asDate(this.config.start);
     const end = asDate(this.config.end);
-
     // Keep default state
     if (!start || !end) {
       return;
     }
+
+    // Is day comparison
+    let isDayComparison = false;
+    if (isDay(start) && isDay(end)) {
+      isDayComparison = true;
+    }
+    let base = isDayComparison ? currentDay() : new Date();
 
     // Create template if needed
     if (!this.firstChild) {
@@ -149,16 +200,23 @@ class CountdownElement extends FormidableElement {
       }, "");
     }
 
-    // Compute our initial difference based on current time (useful for interval)
-    const initDiff = new Date().getTime() - start.getTime();
+    // Compute our initial difference based on current time
+    // This amount will be substracted from current time to compute interval
+    const initDiff = base.getTime() - start.getTime();
 
     // Compute difference between end and start time
     const data = {};
     data.diff = end.getTime() - start.getTime();
 
+    // It's in the past
+    if (checkFinished(data, this)) {
+      return;
+    }
+
+    // Show computed timer
     computeData(data, this);
 
-    // Static timer
+    // Static timer, no init or tick or on complete
     if (!this.config.timer) {
       return;
     }
@@ -168,24 +226,12 @@ class CountdownElement extends FormidableElement {
     }
 
     this.interval = setInterval(() => {
+      // It's not started yet
+      if (start.getTime() > new Date().getTime()) {
+        return;
+      }
       // Reached the end
-      if (data.diff <= 0) {
-        clearInterval(this.interval);
-
-        // Refresh display
-        data.diff = 0;
-        computeData(data, this);
-
-        // Trigger on complete
-        if (this.config.onComplete) {
-          this.config.onComplete(this);
-        }
-        // Reload or replace
-        if (this.config.reloadOnComplete) {
-          window.location.reload();
-        } else if (this.config.url) {
-          window.location.replace(this.config.url);
-        }
+      if (checkFinished(data, this)) {
         return;
       }
 
@@ -195,8 +241,10 @@ class CountdownElement extends FormidableElement {
         this.config.onTick(this, data);
       }
 
-      // Update time
-      const now = new Date();
+      // Update time based on current time
+      // Take into account if we work between dates or datetimes
+      // Since we start from current date, initDiff is substracted
+      const now = isDayComparison ? currentDay() : new Date();
       data.diff = end.getTime() - now.getTime() + initDiff;
     }, this.config.interval);
   }
