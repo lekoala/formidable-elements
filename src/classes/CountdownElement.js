@@ -183,12 +183,7 @@ class CountdownElement extends FormidableElement {
       return;
     }
 
-    // Is day comparison
-    let isDayComparison = false;
-    if (isDay(start) && isDay(end)) {
-      isDayComparison = true;
-    }
-    let base = isDayComparison ? currentDay() : new Date();
+    let base = new Date();
 
     // Create template if needed
     if (!this.firstChild) {
@@ -242,9 +237,8 @@ class CountdownElement extends FormidableElement {
       }
 
       // Update time based on current time
-      // Take into account if we work between dates or datetimes
       // Since we start from current date, initDiff is substracted
-      const now = isDayComparison ? currentDay() : new Date();
+      const now = new Date();
       data.diff = end.getTime() - now.getTime() + initDiff;
     }, this.config.interval);
   }

@@ -53,7 +53,7 @@
             data-config='{"end": "2025-01-01", "timer": false}'></count-down>
     </div>
     <div class="mb-3">
-        Static timer with timezone GMT+9 vs your current timezone to 01/01/2025 <count-down
+        Static timer to 01/01/2025 (using gmt+09 as reference)<count-down
             data-config='{"end": "2025-01-01T00:00:00+09:00", "timer": false}'></count-down>
     </div>
     <div class="mb-3">
@@ -64,8 +64,8 @@
         Dynamic timer to 01/01/2025 + log <count-down data-config='{"end": "2025-01-01", "onTick": {"__fn": "console.log"}}'></count-down>
     </div>
     <div class="mb-3">
-        Custom start date (2024-12-30 > 2025-01-01) <count-down
-            data-config='{"start": "2024-12-30", "end": "2025-01-01"}'></count-down>
+        Custom start date <count-down data-config='{"start": "2024-06-06 15:32", "end": "2024-06-07"}'></count-down>
+        <p>This can be very useful for example when providing time from the server instead of relying on user data</p>
     </div>
     <div class="mb-3">
         Custom start date (2024-12-30 20:00:00 > 2025-01-01 14:00:00) with padding <count-down class="layout"
@@ -109,10 +109,9 @@
         +30 minutes (full display) <count-down data-config='{"end": {"minutes": 30}}'></count-down>
     </div>
     <div class="mb-3">
-        +5 seconds and on complete <count-down data-config='{"end": {"seconds": 5}, "onComplete": {"__fn": "app.onCompleteFiveSeconds"}}'>
-            <span class="minutes"><span class="value"></span><span class="label"> minutes</span></span> <span class="seconds"><span
-                    class="value"></span><span class="label">
-                    seconds</span></span>
+        +5 seconds and on complete <count-down
+            data-config='{"end": {"seconds": 5}, "unit": "seconds", "onComplete": {"__fn": "app.onCompleteFiveSeconds"}}'>
+            <span class="seconds"><span class="value"></span><span class="label"> seconds</span></span>
         </count-down>
     </div>
     <hr>
