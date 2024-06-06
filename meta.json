@@ -468,7 +468,7 @@
       "format": "esm"
     },
     "src/classes/CountdownElement.js": {
-      "bytes": 7561,
+      "bytes": 7292,
       "imports": [
         {
           "path": "src/utils/FormidableElement.js",
@@ -7086,7 +7086,7 @@
           "bytesInOutput": 610
         },
         "src/utils/date.js": {
-          "bytesInOutput": 742
+          "bytesInOutput": 603
         },
         "src/utils/query.js": {
           "bytesInOutput": 132
@@ -7095,7 +7095,7 @@
           "bytesInOutput": 119
         },
         "src/classes/CountdownElement.js": {
-          "bytesInOutput": 2280
+          "bytesInOutput": 2240
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -7104,7 +7104,7 @@
           "bytesInOutput": 27
         }
       },
-      "bytes": 4520
+      "bytes": 4341
     },
     "dist/count-up.min.js": {
       "imports": [],

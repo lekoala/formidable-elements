@@ -1095,16 +1095,16 @@
    ├ src/progress-button.js                                                                                        32b     0.6%
    └ src/utils/isString.js                                                                                         28b     0.5%
 
-  dist/count-down.min.js                                                                                          4.4kb  100.0%
-   ├ src/classes/CountdownElement.js                                                                              2.2kb   50.4%
-   ├ src/utils/date.js                                                                                            742b    16.4%
-   ├ src/utils/FormidableElement.js                                                                               610b    13.5%
-   ├ src/utils/simpleConfig.js                                                                                    166b     3.7%
-   ├ src/utils/replaceCallbacks.js                                                                                155b     3.4%
-   ├ src/utils/query.js                                                                                           132b     2.9%
-   ├ src/utils/whenParsed.js                                                                                      131b     2.9%
-   ├ src/utils/localeProvider.js                                                                                  119b     2.6%
-   ├ src/utils/defineEl.js                                                                                         56b     1.2%
+  dist/count-down.min.js                                                                                          4.2kb  100.0%
+   ├ src/classes/CountdownElement.js                                                                              2.2kb   51.6%
+   ├ src/utils/FormidableElement.js                                                                               610b    14.1%
+   ├ src/utils/date.js                                                                                            603b    13.9%
+   ├ src/utils/simpleConfig.js                                                                                    166b     3.8%
+   ├ src/utils/replaceCallbacks.js                                                                                155b     3.6%
+   ├ src/utils/query.js                                                                                           132b     3.0%
+   ├ src/utils/whenParsed.js                                                                                      131b     3.0%
+   ├ src/utils/localeProvider.js                                                                                  119b     2.7%
+   ├ src/utils/defineEl.js                                                                                         56b     1.3%
    ├ src/utils/getGlobalFn.js                                                                                      49b     1.1%
    ├ src/utils/isString.js                                                                                         28b     0.6%
    └ src/count-down.js                                                                                             27b     0.6%
@@ -1191,4 +1191,4 @@
   dist\tiptap-editor.raw.min.js   315.3kb
   ...and 34 more output files...
 
-Done in 615ms
+Done in 108ms
