@@ -137,7 +137,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-      "bytes": 35165,
+      "bytes": 35522,
       "imports": [],
       "format": "esm"
     },
@@ -184,7 +184,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags.js": {
-      "bytes": 77188,
+      "bytes": 77809,
       "imports": [],
       "format": "esm"
     },
@@ -613,7 +613,7 @@
       "format": "cjs"
     },
     "node_modules/datatables.net/js/dataTables.mjs": {
-      "bytes": 352888,
+      "bytes": 361759,
       "imports": [
         {
           "path": "node_modules/jquery/dist/jquery.js",
@@ -624,7 +624,7 @@
       "format": "esm"
     },
     "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
-      "bytes": 2276,
+      "bytes": 2659,
       "imports": [
         {
           "path": "node_modules/jquery/dist/jquery.js",
@@ -825,7 +825,7 @@
       "format": "esm"
     },
     "node_modules/datatables.net-select/js/dataTables.select.mjs": {
-      "bytes": 40452,
+      "bytes": 41471,
       "imports": [
         {
           "path": "node_modules/jquery/dist/jquery.js",
@@ -959,7 +959,7 @@
       "format": "esm"
     },
     "node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css": {
-      "bytes": 14423,
+      "bytes": 15055,
       "imports": []
     },
     "node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css": {
@@ -1068,7 +1068,7 @@
       "format": "esm"
     },
     "node_modules/filepond/dist/filepond.esm.js": {
-      "bytes": 295479,
+      "bytes": 295156,
       "imports": [],
       "format": "esm"
     },
@@ -1501,7 +1501,7 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
-      "bytes": 4019,
+      "bytes": 4071,
       "imports": [],
       "format": "esm"
     },
@@ -1522,12 +1522,12 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs": {
-      "bytes": 5031,
+      "bytes": 5495,
       "imports": [],
       "format": "esm"
     },
     "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-      "bytes": 24224,
+      "bytes": 24026,
       "imports": [
         {
           "path": "node_modules/@floating-ui/core/dist/floating-ui.core.mjs",
@@ -2406,7 +2406,7 @@
       "format": "esm"
     },
     "node_modules/squire-rte/dist/squire-raw.mjs": {
-      "bytes": 119885,
+      "bytes": 120361,
       "imports": [],
       "format": "esm"
     },
@@ -5274,7 +5274,7 @@
       "format": "esm"
     },
     "node_modules/prosemirror-model/dist/index.js": {
-      "bytes": 121816,
+      "bytes": 122705,
       "imports": [
         {
           "path": "node_modules/orderedmap/dist/index.js",
@@ -5285,7 +5285,7 @@
       "format": "esm"
     },
     "node_modules/prosemirror-transform/dist/index.js": {
-      "bytes": 78052,
+      "bytes": 79701,
       "imports": [
         {
           "path": "node_modules/prosemirror-model/dist/index.js",
@@ -5323,7 +5323,7 @@
       "format": "esm"
     },
     "node_modules/prosemirror-view/dist/index.js": {
-      "bytes": 233525,
+      "bytes": 237342,
       "imports": [
         {
           "path": "node_modules/prosemirror-state/dist/index.js",
@@ -5441,7 +5441,7 @@
       "format": "esm"
     },
     "node_modules/prosemirror-schema-list/dist/index.js": {
-      "bytes": 11880,
+      "bytes": 12496,
       "imports": [
         {
           "path": "node_modules/prosemirror-transform/dist/index.js",
@@ -5473,7 +5473,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/core/dist/index.js": {
-      "bytes": 179412,
+      "bytes": 181789,
       "imports": [
         {
           "path": "node_modules/@tiptap/pm/state/dist/index.js",
@@ -5514,7 +5514,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-document/dist/index.js": {
-      "bytes": 351,
+      "bytes": 343,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5525,7 +5525,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-paragraph/dist/index.js": {
-      "bytes": 1003,
+      "bytes": 969,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5536,7 +5536,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-text/dist/index.js": {
-      "bytes": 289,
+      "bytes": 282,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5547,7 +5547,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-heading/dist/index.js": {
-      "bytes": 2389,
+      "bytes": 2317,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5558,7 +5558,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-italic/dist/index.js": {
-      "bytes": 2705,
+      "bytes": 2618,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5569,7 +5569,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-bold/dist/index.js": {
-      "bytes": 2782,
+      "bytes": 2694,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5580,7 +5580,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-strike/dist/index.js": {
-      "bytes": 2171,
+      "bytes": 2097,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5591,7 +5591,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-underline/dist/index.js": {
-      "bytes": 1481,
+      "bytes": 1436,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5602,7 +5602,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-blockquote/dist/index.js": {
-      "bytes": 1576,
+      "bytes": 1524,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5613,7 +5613,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-code/dist/index.js": {
-      "bytes": 1829,
+      "bytes": 1765,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5624,7 +5624,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-code-block/dist/index.js": {
-      "bytes": 9011,
+      "bytes": 8627,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5667,7 +5667,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-dropcursor/dist/index.js": {
-      "bytes": 724,
+      "bytes": 704,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5683,7 +5683,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-hard-break/dist/index.js": {
-      "bytes": 2394,
+      "bytes": 2332,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5699,7 +5699,7 @@
       "format": "esm"
     },
     "node_modules/prosemirror-history/dist/index.js": {
-      "bytes": 17893,
+      "bytes": 18242,
       "imports": [
         {
           "path": "node_modules/rope-sequence/dist/index.js",
@@ -5731,7 +5731,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-history/dist/index.js": {
-      "bytes": 1553,
+      "bytes": 1511,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5747,7 +5747,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-horizontal-rule/dist/index.js": {
-      "bytes": 3052,
+      "bytes": 3408,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5763,7 +5763,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-bullet-list/dist/index.js": {
-      "bytes": 4662,
+      "bytes": 4542,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5774,7 +5774,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-list-item/dist/index.js": {
-      "bytes": 1087,
+      "bytes": 1055,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5785,7 +5785,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-ordered-list/dist/index.js": {
-      "bytes": 5555,
+      "bytes": 5554,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5796,7 +5796,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-typography/dist/index.js": {
-      "bytes": 7689,
+      "bytes": 7499,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5812,7 +5812,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-link/dist/index.js": {
-      "bytes": 13294,
+      "bytes": 14176,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5833,7 +5833,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-image/dist/index.js": {
-      "bytes": 2020,
+      "bytes": 1949,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -6760,7 +6760,7 @@
       "entryPoint": "src/bs-autocomplete.js",
       "inputs": {
         "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-          "bytesInOutput": 14884
+          "bytesInOutput": 15005
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6793,7 +6793,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 16516
+      "bytes": 16831
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -6801,7 +6801,7 @@
       "entryPoint": "src/bs-tags.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 28684
+          "bytesInOutput": 28931
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6840,7 +6840,7 @@
           "bytesInOutput": 42
         }
       },
-      "bytes": 31622
+      "bytes": 32040
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -6848,7 +6848,7 @@
       "entryPoint": "src/bs-tags.raw.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 28684
+          "bytesInOutput": 28931
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6881,7 +6881,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 30271
+      "bytes": 30689
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -7165,13 +7165,13 @@
       "entryPoint": "src/data-table.js",
       "inputs": {
         "node_modules/jquery/dist/jquery.js": {
-          "bytesInOutput": 88040
+          "bytesInOutput": 88017
         },
         "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
-          "bytesInOutput": 1069
+          "bytesInOutput": 935
         },
         "node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 92801
+          "bytesInOutput": 95726
         },
         "node_modules/datatables.net-fixedcolumns-bs5/js/fixedColumns.bootstrap5.mjs": {
           "bytesInOutput": 18
@@ -7189,7 +7189,7 @@
           "bytesInOutput": 1034
         },
         "node_modules/datatables.net-buttons/js/dataTables.buttons.mjs": {
-          "bytesInOutput": 26898
+          "bytesInOutput": 26917
         },
         "node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs": {
           "bytesInOutput": 1011
@@ -7207,7 +7207,7 @@
           "bytesInOutput": 64
         },
         "node_modules/datatables.net-select/js/dataTables.select.mjs": {
-          "bytesInOutput": 16593
+          "bytesInOutput": 16893
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7249,7 +7249,7 @@
           "bytesInOutput": 60
         },
         "node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css": {
-          "bytesInOutput": 14447
+          "bytesInOutput": 15079
         },
         "node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css": {
           "bytesInOutput": 7999
@@ -7279,7 +7279,7 @@
           "bytesInOutput": 71
         }
       },
-      "bytes": 311688
+      "bytes": 315407
     },
     "dist/data-table.raw.min.js": {
       "imports": [],
@@ -7287,13 +7287,13 @@
       "entryPoint": "src/data-table.raw.js",
       "inputs": {
         "node_modules/jquery/dist/jquery.js": {
-          "bytesInOutput": 88040
+          "bytesInOutput": 88017
         },
         "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
-          "bytesInOutput": 1069
+          "bytesInOutput": 935
         },
         "node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 92801
+          "bytesInOutput": 95726
         },
         "node_modules/datatables.net-fixedcolumns-bs5/js/fixedColumns.bootstrap5.mjs": {
           "bytesInOutput": 18
@@ -7311,7 +7311,7 @@
           "bytesInOutput": 1034
         },
         "node_modules/datatables.net-buttons/js/dataTables.buttons.mjs": {
-          "bytesInOutput": 26898
+          "bytesInOutput": 26917
         },
         "node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs": {
           "bytesInOutput": 1011
@@ -7329,7 +7329,7 @@
           "bytesInOutput": 64
         },
         "node_modules/datatables.net-select/js/dataTables.select.mjs": {
-          "bytesInOutput": 16593
+          "bytesInOutput": 16893
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7374,7 +7374,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 274529
+      "bytes": 277616
     },
     "dist/filepond-input.min.js": {
       "imports": [],
@@ -7382,7 +7382,7 @@
       "entryPoint": "src/filepond-input.js",
       "inputs": {
         "node_modules/filepond/dist/filepond.esm.js": {
-          "bytesInOutput": 101065
+          "bytesInOutput": 101002
         },
         "node_modules/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.esm.js": {
           "bytesInOutput": 1766
@@ -7454,7 +7454,7 @@
           "bytesInOutput": 64
         }
       },
-      "bytes": 189940
+      "bytes": 189877
     },
     "dist/filepond-input.raw.min.js": {
       "imports": [],
@@ -7462,7 +7462,7 @@
       "entryPoint": "src/filepond-input.raw.js",
       "inputs": {
         "node_modules/filepond/dist/filepond.esm.js": {
-          "bytesInOutput": 101065
+          "bytesInOutput": 101002
         },
         "node_modules/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.esm.js": {
           "bytesInOutput": 1766
@@ -7522,7 +7522,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 166261
+      "bytes": 166198
     },
     "dist/flatpickr-input.min.js": {
       "imports": [],
@@ -7714,16 +7714,16 @@
       "entryPoint": "src/floating-ui.js",
       "inputs": {
         "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
-          "bytesInOutput": 1407
+          "bytesInOutput": 1438
         },
         "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
           "bytesInOutput": 7079
         },
         "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs": {
-          "bytesInOutput": 2056
+          "bytesInOutput": 2256
         },
         "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-          "bytesInOutput": 6524
+          "bytesInOutput": 6396
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7765,7 +7765,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 23794
+      "bytes": 23897
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -8130,7 +8130,7 @@
       "entryPoint": "src/squire-editor.js",
       "inputs": {
         "node_modules/squire-rte/dist/squire-raw.mjs": {
-          "bytesInOutput": 51569
+          "bytesInOutput": 51843
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8190,7 +8190,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 69923
+      "bytes": 70197
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -8204,7 +8204,7 @@
       "entryPoint": "src/squire-editor.raw.js",
       "inputs": {
         "node_modules/squire-rte/dist/squire-raw.mjs": {
-          "bytesInOutput": 51569
+          "bytesInOutput": 51843
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8258,7 +8258,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 69017
+      "bytes": 69291
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -9733,10 +9733,10 @@
           "bytesInOutput": 1439
         },
         "node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 43710
+          "bytesInOutput": 43853
         },
         "node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 28782
+          "bytesInOutput": 29463
         },
         "node_modules/prosemirror-state/dist/index.js": {
           "bytesInOutput": 11827
@@ -9745,7 +9745,7 @@
           "bytesInOutput": 0
         },
         "node_modules/prosemirror-view/dist/index.js": {
-          "bytesInOutput": 92033
+          "bytesInOutput": 93662
         },
         "node_modules/@tiptap/pm/view/dist/index.js": {
           "bytesInOutput": 0
@@ -9778,7 +9778,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 55787
+          "bytesInOutput": 58220
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -9811,7 +9811,7 @@
           "bytesInOutput": 678
         },
         "node_modules/@tiptap/extension-code-block/dist/index.js": {
-          "bytesInOutput": 2648
+          "bytesInOutput": 2668
         },
         "node_modules/prosemirror-dropcursor/dist/index.js": {
           "bytesInOutput": 2909
@@ -9829,7 +9829,7 @@
           "bytesInOutput": 3394
         },
         "node_modules/prosemirror-history/dist/index.js": {
-          "bytesInOutput": 5707
+          "bytesInOutput": 5744
         },
         "node_modules/@tiptap/pm/history/dist/index.js": {
           "bytesInOutput": 0
@@ -9838,25 +9838,25 @@
           "bytesInOutput": 494
         },
         "node_modules/@tiptap/extension-horizontal-rule/dist/index.js": {
-          "bytesInOutput": 935
+          "bytesInOutput": 1013
         },
         "node_modules/@tiptap/extension-bullet-list/dist/index.js": {
-          "bytesInOutput": 1916
+          "bytesInOutput": 1929
         },
         "node_modules/@tiptap/extension-list-item/dist/index.js": {
           "bytesInOutput": 494
         },
         "node_modules/@tiptap/extension-ordered-list/dist/index.js": {
-          "bytesInOutput": 2271
+          "bytesInOutput": 2342
         },
         "node_modules/@tiptap/extension-typography/dist/index.js": {
           "bytesInOutput": 3076
         },
         "node_modules/linkifyjs/dist/linkify.es.js": {
-          "bytesInOutput": 19439
+          "bytesInOutput": 19436
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 3679
+          "bytesInOutput": 4221
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -9922,7 +9922,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 324031
+      "bytes": 329675
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -9933,10 +9933,10 @@
           "bytesInOutput": 1439
         },
         "node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 43710
+          "bytesInOutput": 43853
         },
         "node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 28782
+          "bytesInOutput": 29463
         },
         "node_modules/prosemirror-state/dist/index.js": {
           "bytesInOutput": 11827
@@ -9945,7 +9945,7 @@
           "bytesInOutput": 0
         },
         "node_modules/prosemirror-view/dist/index.js": {
-          "bytesInOutput": 92033
+          "bytesInOutput": 93662
         },
         "node_modules/@tiptap/pm/view/dist/index.js": {
           "bytesInOutput": 0
@@ -9978,7 +9978,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 55787
+          "bytesInOutput": 58220
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -10011,7 +10011,7 @@
           "bytesInOutput": 678
         },
         "node_modules/@tiptap/extension-code-block/dist/index.js": {
-          "bytesInOutput": 2648
+          "bytesInOutput": 2668
         },
         "node_modules/prosemirror-dropcursor/dist/index.js": {
           "bytesInOutput": 2909
@@ -10029,7 +10029,7 @@
           "bytesInOutput": 3394
         },
         "node_modules/prosemirror-history/dist/index.js": {
-          "bytesInOutput": 5707
+          "bytesInOutput": 5744
         },
         "node_modules/@tiptap/pm/history/dist/index.js": {
           "bytesInOutput": 0
@@ -10038,25 +10038,25 @@
           "bytesInOutput": 494
         },
         "node_modules/@tiptap/extension-horizontal-rule/dist/index.js": {
-          "bytesInOutput": 935
+          "bytesInOutput": 1013
         },
         "node_modules/@tiptap/extension-bullet-list/dist/index.js": {
-          "bytesInOutput": 1916
+          "bytesInOutput": 1929
         },
         "node_modules/@tiptap/extension-list-item/dist/index.js": {
           "bytesInOutput": 494
         },
         "node_modules/@tiptap/extension-ordered-list/dist/index.js": {
-          "bytesInOutput": 2271
+          "bytesInOutput": 2342
         },
         "node_modules/@tiptap/extension-typography/dist/index.js": {
           "bytesInOutput": 3076
         },
         "node_modules/linkifyjs/dist/linkify.es.js": {
-          "bytesInOutput": 19439
+          "bytesInOutput": 19436
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 3679
+          "bytesInOutput": 4221
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -10116,7 +10116,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 322865
+      "bytes": 328509
     },
     "dist/tom-select.min.js": {
       "imports": [],

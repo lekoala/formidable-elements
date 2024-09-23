@@ -414,6 +414,118 @@
    ├ node_modules/tabulator-tables/src/js/modules/Export/defaults/columnLookups.js                                 10b     0.0%
    └ node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js                                     10b     0.0%
 
+  dist/tiptap-editor.min.js                                                                                     321.9kb  100.0%
+   ├ node_modules/prosemirror-view/dist/index.js                                                                 91.5kb   28.4%
+   ├ node_modules/@tiptap/core/dist/index.js                                                                     56.9kb   17.7%
+   ├ node_modules/prosemirror-model/dist/index.js                                                                42.8kb   13.3%
+   ├ node_modules/prosemirror-transform/dist/index.js                                                            28.8kb    8.9%
+   ├ node_modules/linkifyjs/dist/linkify.es.js                                                                   19.0kb    5.9%
+   ├ node_modules/prosemirror-state/dist/index.js                                                                11.5kb    3.6%
+   ├ node_modules/prosemirror-commands/dist/index.js                                                              9.1kb    2.8%
+   ├ src/utils/bootstrap-icons.js                                                                                 8.1kb    2.5%
+   ├ src/classes/TiptapEditor.js                                                                                  7.5kb    2.3%
+   ├ node_modules/prosemirror-history/dist/index.js                                                               5.6kb    1.7%
+   ├ node_modules/@tiptap/extension-link/dist/index.js                                                            4.1kb    1.3%
+   ├ node_modules/rope-sequence/dist/index.js                                                                     3.3kb    1.0%
+   ├ node_modules/@tiptap/extension-typography/dist/index.js                                                      3.0kb    0.9%
+   ├ node_modules/prosemirror-dropcursor/dist/index.js                                                            2.8kb    0.9%
+   ├ node_modules/@tiptap/extension-code-block/dist/index.js                                                      2.6kb    0.8%
+   ├ node_modules/prosemirror-schema-list/dist/index.js                                                           2.4kb    0.7%
+   ├ node_modules/@tiptap/extension-ordered-list/dist/index.js                                                    2.3kb    0.7%
+   ├ node_modules/@tiptap/extension-bullet-list/dist/index.js                                                     1.9kb    0.6%
+   ├ src/utils/dropmenu.js                                                                                        1.5kb    0.5%
+   ├ node_modules/w3c-keyname/index.js                                                                            1.5kb    0.5%
+   ├ node_modules/orderedmap/dist/index.js                                                                        1.4kb    0.4%
+   ├ node_modules/prosemirror-keymap/dist/index.js                                                                1.1kb    0.4%
+   ├ node_modules/@tiptap/extension-horizontal-rule/dist/index.js                                                1013b     0.3%
+   ├ node_modules/@tiptap/extension-bold/dist/index.js                                                           1011b     0.3%
+   ├ src/css/tiptap-editor.min.css                                                                                984b     0.3%
+   ├ node_modules/@tiptap/extension-heading/dist/index.js                                                         950b     0.3%
+   ├ node_modules/@tiptap/extension-italic/dist/index.js                                                          942b     0.3%
+   ├ node_modules/@tiptap/extension-hard-break/dist/index.js                                                      882b     0.3%
+   ├ src/utils/EventfulElement.js                                                                                 822b     0.2%
+   ├ node_modules/@tiptap/extension-strike/dist/index.js                                                          774b     0.2%
+   ├ node_modules/@tiptap/extension-image/dist/index.js                                                           728b     0.2%
+   ├ node_modules/@tiptap/extension-code/dist/index.js                                                            678b     0.2%
+   ├ src/utils/FormidableElement.js                                                                               624b     0.2%
+   ├ node_modules/@tiptap/extension-blockquote/dist/index.js                                                      598b     0.2%
+   ├ node_modules/@tiptap/extension-underline/dist/index.js                                                       596b     0.2%
+   ├ node_modules/@tiptap/extension-history/dist/index.js                                                         494b     0.1%
+   ├ node_modules/@tiptap/extension-list-item/dist/index.js                                                       494b     0.1%
+   ├ node_modules/@tiptap/extension-paragraph/dist/index.js                                                       392b     0.1%
+   ├ src/utils/isExternalURL.js                                                                                   190b     0.1%
+   ├ src/utils/simpleConfig.js                                                                                    168b     0.1%
+   ├ src/utils/replaceCallbacks.js                                                                                163b     0.0%
+   ├ src/utils/injectStyles.js                                                                                    159b     0.0%
+   ├ node_modules/@tiptap/extension-dropcursor/dist/index.js                                                      152b     0.0%
+   ├ src/utils/query.js                                                                                           135b     0.0%
+   ├ src/utils/whenParsed.js                                                                                      134b     0.0%
+   ├ src/utils/isRTL.js                                                                                            75b     0.0%
+   ├ src/utils/defineEl.js                                                                                         60b     0.0%
+   ├ node_modules/@tiptap/extension-document/dist/index.js                                                         58b     0.0%
+   ├ src/utils/props.js                                                                                            58b     0.0%
+   ├ src/tiptap-editor.js                                                                                          56b     0.0%
+   ├ src/utils/getGlobalFn.js                                                                                      50b     0.0%
+   ├ node_modules/@tiptap/extension-text/dist/index.js                                                             46b     0.0%
+   ├ src/utils/ce.js                                                                                               36b     0.0%
+   ├ src/utils/hasBootstrap.js                                                                                     30b     0.0%
+   └ src/utils/isString.js                                                                                         29b     0.0%
+
+  dist/tiptap-editor.raw.min.js                                                                                 320.8kb  100.0%
+   ├ node_modules/prosemirror-view/dist/index.js                                                                 91.5kb   28.5%
+   ├ node_modules/@tiptap/core/dist/index.js                                                                     56.9kb   17.7%
+   ├ node_modules/prosemirror-model/dist/index.js                                                                42.8kb   13.3%
+   ├ node_modules/prosemirror-transform/dist/index.js                                                            28.8kb    9.0%
+   ├ node_modules/linkifyjs/dist/linkify.es.js                                                                   19.0kb    5.9%
+   ├ node_modules/prosemirror-state/dist/index.js                                                                11.5kb    3.6%
+   ├ node_modules/prosemirror-commands/dist/index.js                                                              9.1kb    2.8%
+   ├ src/utils/bootstrap-icons.js                                                                                 8.1kb    2.5%
+   ├ src/classes/TiptapEditor.js                                                                                  7.5kb    2.3%
+   ├ node_modules/prosemirror-history/dist/index.js                                                               5.6kb    1.7%
+   ├ node_modules/@tiptap/extension-link/dist/index.js                                                            4.1kb    1.3%
+   ├ node_modules/rope-sequence/dist/index.js                                                                     3.3kb    1.0%
+   ├ node_modules/@tiptap/extension-typography/dist/index.js                                                      3.0kb    0.9%
+   ├ node_modules/prosemirror-dropcursor/dist/index.js                                                            2.8kb    0.9%
+   ├ node_modules/@tiptap/extension-code-block/dist/index.js                                                      2.6kb    0.8%
+   ├ node_modules/prosemirror-schema-list/dist/index.js                                                           2.4kb    0.7%
+   ├ node_modules/@tiptap/extension-ordered-list/dist/index.js                                                    2.3kb    0.7%
+   ├ node_modules/@tiptap/extension-bullet-list/dist/index.js                                                     1.9kb    0.6%
+   ├ src/utils/dropmenu.js                                                                                        1.5kb    0.5%
+   ├ node_modules/w3c-keyname/index.js                                                                            1.5kb    0.5%
+   ├ node_modules/orderedmap/dist/index.js                                                                        1.4kb    0.4%
+   ├ node_modules/prosemirror-keymap/dist/index.js                                                                1.1kb    0.4%
+   ├ node_modules/@tiptap/extension-horizontal-rule/dist/index.js                                                1013b     0.3%
+   ├ node_modules/@tiptap/extension-bold/dist/index.js                                                           1011b     0.3%
+   ├ node_modules/@tiptap/extension-heading/dist/index.js                                                         950b     0.3%
+   ├ node_modules/@tiptap/extension-italic/dist/index.js                                                          942b     0.3%
+   ├ node_modules/@tiptap/extension-hard-break/dist/index.js                                                      882b     0.3%
+   ├ src/utils/EventfulElement.js                                                                                 822b     0.3%
+   ├ node_modules/@tiptap/extension-strike/dist/index.js                                                          774b     0.2%
+   ├ node_modules/@tiptap/extension-image/dist/index.js                                                           728b     0.2%
+   ├ node_modules/@tiptap/extension-code/dist/index.js                                                            678b     0.2%
+   ├ src/utils/FormidableElement.js                                                                               624b     0.2%
+   ├ node_modules/@tiptap/extension-blockquote/dist/index.js                                                      598b     0.2%
+   ├ node_modules/@tiptap/extension-underline/dist/index.js                                                       596b     0.2%
+   ├ node_modules/@tiptap/extension-history/dist/index.js                                                         494b     0.2%
+   ├ node_modules/@tiptap/extension-list-item/dist/index.js                                                       494b     0.2%
+   ├ node_modules/@tiptap/extension-paragraph/dist/index.js                                                       392b     0.1%
+   ├ src/utils/isExternalURL.js                                                                                   190b     0.1%
+   ├ src/utils/simpleConfig.js                                                                                    168b     0.1%
+   ├ src/utils/replaceCallbacks.js                                                                                163b     0.0%
+   ├ node_modules/@tiptap/extension-dropcursor/dist/index.js                                                      152b     0.0%
+   ├ src/utils/query.js                                                                                           135b     0.0%
+   ├ src/utils/whenParsed.js                                                                                      134b     0.0%
+   ├ src/utils/isRTL.js                                                                                            75b     0.0%
+   ├ src/utils/defineEl.js                                                                                         60b     0.0%
+   ├ node_modules/@tiptap/extension-document/dist/index.js                                                         58b     0.0%
+   ├ src/utils/props.js                                                                                            58b     0.0%
+   ├ src/utils/getGlobalFn.js                                                                                      50b     0.0%
+   ├ node_modules/@tiptap/extension-text/dist/index.js                                                             46b     0.0%
+   ├ src/utils/ce.js                                                                                               36b     0.0%
+   ├ src/tiptap-editor.raw.js                                                                                      33b     0.0%
+   ├ src/utils/hasBootstrap.js                                                                                     30b     0.0%
+   └ src/utils/isString.js                                                                                         29b     0.0%
+
   dist/tel-input.min.js                                                                                         317.6kb  100.0%
    ├ node_modules/intl-tel-input/build/js/utils.js                                                              250.8kb   79.0%
    ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                        36.2kb   11.4%
@@ -437,127 +549,15 @@
    ├ src/utils/getGlobalFn.js                                                                                      50b     0.0%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
-  dist/tiptap-editor.min.js                                                                                     316.4kb  100.0%
-   ├ node_modules/prosemirror-view/dist/index.js                                                                 89.9kb   28.4%
-   ├ node_modules/@tiptap/core/dist/index.js                                                                     54.5kb   17.2%
-   ├ node_modules/prosemirror-model/dist/index.js                                                                42.7kb   13.5%
-   ├ node_modules/prosemirror-transform/dist/index.js                                                            28.1kb    8.9%
-   ├ node_modules/linkifyjs/dist/linkify.es.js                                                                   19.0kb    6.0%
-   ├ node_modules/prosemirror-state/dist/index.js                                                                11.5kb    3.6%
-   ├ node_modules/prosemirror-commands/dist/index.js                                                              9.1kb    2.9%
-   ├ src/utils/bootstrap-icons.js                                                                                 8.1kb    2.5%
-   ├ src/classes/TiptapEditor.js                                                                                  7.5kb    2.4%
-   ├ node_modules/prosemirror-history/dist/index.js                                                               5.6kb    1.8%
-   ├ node_modules/@tiptap/extension-link/dist/index.js                                                            3.6kb    1.1%
-   ├ node_modules/rope-sequence/dist/index.js                                                                     3.3kb    1.0%
-   ├ node_modules/@tiptap/extension-typography/dist/index.js                                                      3.0kb    0.9%
-   ├ node_modules/prosemirror-dropcursor/dist/index.js                                                            2.8kb    0.9%
-   ├ node_modules/@tiptap/extension-code-block/dist/index.js                                                      2.6kb    0.8%
-   ├ node_modules/prosemirror-schema-list/dist/index.js                                                           2.4kb    0.8%
-   ├ node_modules/@tiptap/extension-ordered-list/dist/index.js                                                    2.2kb    0.7%
-   ├ node_modules/@tiptap/extension-bullet-list/dist/index.js                                                     1.9kb    0.6%
-   ├ src/utils/dropmenu.js                                                                                        1.5kb    0.5%
-   ├ node_modules/w3c-keyname/index.js                                                                            1.5kb    0.5%
-   ├ node_modules/orderedmap/dist/index.js                                                                        1.4kb    0.4%
-   ├ node_modules/prosemirror-keymap/dist/index.js                                                                1.1kb    0.4%
-   ├ node_modules/@tiptap/extension-bold/dist/index.js                                                           1011b     0.3%
-   ├ src/css/tiptap-editor.min.css                                                                                984b     0.3%
-   ├ node_modules/@tiptap/extension-heading/dist/index.js                                                         950b     0.3%
-   ├ node_modules/@tiptap/extension-italic/dist/index.js                                                          942b     0.3%
-   ├ node_modules/@tiptap/extension-horizontal-rule/dist/index.js                                                 935b     0.3%
-   ├ node_modules/@tiptap/extension-hard-break/dist/index.js                                                      882b     0.3%
-   ├ src/utils/EventfulElement.js                                                                                 822b     0.3%
-   ├ node_modules/@tiptap/extension-strike/dist/index.js                                                          774b     0.2%
-   ├ node_modules/@tiptap/extension-image/dist/index.js                                                           728b     0.2%
-   ├ node_modules/@tiptap/extension-code/dist/index.js                                                            678b     0.2%
-   ├ src/utils/FormidableElement.js                                                                               624b     0.2%
-   ├ node_modules/@tiptap/extension-blockquote/dist/index.js                                                      598b     0.2%
-   ├ node_modules/@tiptap/extension-underline/dist/index.js                                                       596b     0.2%
-   ├ node_modules/@tiptap/extension-history/dist/index.js                                                         494b     0.2%
-   ├ node_modules/@tiptap/extension-list-item/dist/index.js                                                       494b     0.2%
-   ├ node_modules/@tiptap/extension-paragraph/dist/index.js                                                       392b     0.1%
-   ├ src/utils/isExternalURL.js                                                                                   190b     0.1%
-   ├ src/utils/simpleConfig.js                                                                                    168b     0.1%
-   ├ src/utils/replaceCallbacks.js                                                                                163b     0.1%
-   ├ src/utils/injectStyles.js                                                                                    159b     0.0%
-   ├ node_modules/@tiptap/extension-dropcursor/dist/index.js                                                      152b     0.0%
-   ├ src/utils/query.js                                                                                           135b     0.0%
-   ├ src/utils/whenParsed.js                                                                                      134b     0.0%
-   ├ src/utils/isRTL.js                                                                                            75b     0.0%
-   ├ src/utils/defineEl.js                                                                                         60b     0.0%
-   ├ node_modules/@tiptap/extension-document/dist/index.js                                                         58b     0.0%
-   ├ src/utils/props.js                                                                                            58b     0.0%
-   ├ src/tiptap-editor.js                                                                                          56b     0.0%
-   ├ src/utils/getGlobalFn.js                                                                                      50b     0.0%
-   ├ node_modules/@tiptap/extension-text/dist/index.js                                                             46b     0.0%
-   ├ src/utils/ce.js                                                                                               36b     0.0%
-   ├ src/utils/hasBootstrap.js                                                                                     30b     0.0%
-   └ src/utils/isString.js                                                                                         29b     0.0%
-
-  dist/tiptap-editor.raw.min.js                                                                                 315.3kb  100.0%
-   ├ node_modules/prosemirror-view/dist/index.js                                                                 89.9kb   28.5%
-   ├ node_modules/@tiptap/core/dist/index.js                                                                     54.5kb   17.3%
-   ├ node_modules/prosemirror-model/dist/index.js                                                                42.7kb   13.5%
-   ├ node_modules/prosemirror-transform/dist/index.js                                                            28.1kb    8.9%
-   ├ node_modules/linkifyjs/dist/linkify.es.js                                                                   19.0kb    6.0%
-   ├ node_modules/prosemirror-state/dist/index.js                                                                11.5kb    3.7%
-   ├ node_modules/prosemirror-commands/dist/index.js                                                              9.1kb    2.9%
-   ├ src/utils/bootstrap-icons.js                                                                                 8.1kb    2.6%
-   ├ src/classes/TiptapEditor.js                                                                                  7.5kb    2.4%
-   ├ node_modules/prosemirror-history/dist/index.js                                                               5.6kb    1.8%
-   ├ node_modules/@tiptap/extension-link/dist/index.js                                                            3.6kb    1.1%
-   ├ node_modules/rope-sequence/dist/index.js                                                                     3.3kb    1.1%
-   ├ node_modules/@tiptap/extension-typography/dist/index.js                                                      3.0kb    1.0%
-   ├ node_modules/prosemirror-dropcursor/dist/index.js                                                            2.8kb    0.9%
-   ├ node_modules/@tiptap/extension-code-block/dist/index.js                                                      2.6kb    0.8%
-   ├ node_modules/prosemirror-schema-list/dist/index.js                                                           2.4kb    0.8%
-   ├ node_modules/@tiptap/extension-ordered-list/dist/index.js                                                    2.2kb    0.7%
-   ├ node_modules/@tiptap/extension-bullet-list/dist/index.js                                                     1.9kb    0.6%
-   ├ src/utils/dropmenu.js                                                                                        1.5kb    0.5%
-   ├ node_modules/w3c-keyname/index.js                                                                            1.5kb    0.5%
-   ├ node_modules/orderedmap/dist/index.js                                                                        1.4kb    0.4%
-   ├ node_modules/prosemirror-keymap/dist/index.js                                                                1.1kb    0.4%
-   ├ node_modules/@tiptap/extension-bold/dist/index.js                                                           1011b     0.3%
-   ├ node_modules/@tiptap/extension-heading/dist/index.js                                                         950b     0.3%
-   ├ node_modules/@tiptap/extension-italic/dist/index.js                                                          942b     0.3%
-   ├ node_modules/@tiptap/extension-horizontal-rule/dist/index.js                                                 935b     0.3%
-   ├ node_modules/@tiptap/extension-hard-break/dist/index.js                                                      882b     0.3%
-   ├ src/utils/EventfulElement.js                                                                                 822b     0.3%
-   ├ node_modules/@tiptap/extension-strike/dist/index.js                                                          774b     0.2%
-   ├ node_modules/@tiptap/extension-image/dist/index.js                                                           728b     0.2%
-   ├ node_modules/@tiptap/extension-code/dist/index.js                                                            678b     0.2%
-   ├ src/utils/FormidableElement.js                                                                               624b     0.2%
-   ├ node_modules/@tiptap/extension-blockquote/dist/index.js                                                      598b     0.2%
-   ├ node_modules/@tiptap/extension-underline/dist/index.js                                                       596b     0.2%
-   ├ node_modules/@tiptap/extension-history/dist/index.js                                                         494b     0.2%
-   ├ node_modules/@tiptap/extension-list-item/dist/index.js                                                       494b     0.2%
-   ├ node_modules/@tiptap/extension-paragraph/dist/index.js                                                       392b     0.1%
-   ├ src/utils/isExternalURL.js                                                                                   190b     0.1%
-   ├ src/utils/simpleConfig.js                                                                                    168b     0.1%
-   ├ src/utils/replaceCallbacks.js                                                                                163b     0.1%
-   ├ node_modules/@tiptap/extension-dropcursor/dist/index.js                                                      152b     0.0%
-   ├ src/utils/query.js                                                                                           135b     0.0%
-   ├ src/utils/whenParsed.js                                                                                      134b     0.0%
-   ├ src/utils/isRTL.js                                                                                            75b     0.0%
-   ├ src/utils/defineEl.js                                                                                         60b     0.0%
-   ├ node_modules/@tiptap/extension-document/dist/index.js                                                         58b     0.0%
-   ├ src/utils/props.js                                                                                            58b     0.0%
-   ├ src/utils/getGlobalFn.js                                                                                      50b     0.0%
-   ├ node_modules/@tiptap/extension-text/dist/index.js                                                             46b     0.0%
-   ├ src/utils/ce.js                                                                                               36b     0.0%
-   ├ src/tiptap-editor.raw.js                                                                                      33b     0.0%
-   ├ src/utils/hasBootstrap.js                                                                                     30b     0.0%
-   └ src/utils/isString.js                                                                                         29b     0.0%
-
-  dist/data-table.min.js                                                                                        304.4kb  100.0%
-   ├ node_modules/datatables.net/js/dataTables.mjs                                                               90.6kb   29.8%
-   ├ node_modules/jquery/dist/jquery.js                                                                          86.0kb   28.2%
-   ├ node_modules/datatables.net-buttons/js/dataTables.buttons.mjs                                               26.3kb    8.6%
-   ├ node_modules/datatables.net-select/js/dataTables.select.mjs                                                 16.2kb    5.3%
+  dist/data-table.min.js                                                                                        308.0kb  100.0%
+   ├ node_modules/datatables.net/js/dataTables.mjs                                                               93.5kb   30.3%
+   ├ node_modules/jquery/dist/jquery.js                                                                          86.0kb   27.9%
+   ├ node_modules/datatables.net-buttons/js/dataTables.buttons.mjs                                               26.3kb    8.5%
+   ├ node_modules/datatables.net-select/js/dataTables.select.mjs                                                 16.5kb    5.4%
    ├ node_modules/datatables.net-responsive/js/dataTables.responsive.mjs                                         15.3kb    5.0%
-   ├ node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css                                           14.1kb    4.6%
+   ├ node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css                                           14.7kb    4.8%
    ├ node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs                                       11.6kb    3.8%
-   ├ node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css                                       7.8kb    2.6%
+   ├ node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css                                       7.8kb    2.5%
    ├ node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs                                      7.6kb    2.5%
    ├ node_modules/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css                                 5.9kb    1.9%
    ├ node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs                                              3.6kb    1.2%
@@ -565,9 +565,9 @@
    ├ node_modules/datatables.net-select-bs5/css/select.bootstrap5.min.css                                         2.1kb    0.7%
    ├ node_modules/datatables.net-rowgroup-bs5/css/rowGroup.bootstrap5.min.css                                     1.9kb    0.6%
    ├ src/classes/DataTableElement.js                                                                              1.5kb    0.5%
-   ├ node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs                                                 1.0kb    0.3%
    ├ node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs                                            1.0kb    0.3%
    ├ node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs                                     1011b     0.3%
+   ├ node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs                                                 935b     0.3%
    ├ src/utils/EventfulElement.js                                                                                 822b     0.3%
    ├ src/utils/FormidableElement.js                                                                               624b     0.2%
    ├ src/utils/icons.js                                                                                           579b     0.2%
@@ -610,19 +610,19 @@
    ├ src/tel-input.raw.js                                                                                          29b     0.0%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
-  dist/data-table.raw.min.js                                                                                    268.1kb  100.0%
-   ├ node_modules/datatables.net/js/dataTables.mjs                                                               90.6kb   33.8%
-   ├ node_modules/jquery/dist/jquery.js                                                                          86.0kb   32.1%
-   ├ node_modules/datatables.net-buttons/js/dataTables.buttons.mjs                                               26.3kb    9.8%
-   ├ node_modules/datatables.net-select/js/dataTables.select.mjs                                                 16.2kb    6.0%
-   ├ node_modules/datatables.net-responsive/js/dataTables.responsive.mjs                                         15.3kb    5.7%
+  dist/data-table.raw.min.js                                                                                    271.1kb  100.0%
+   ├ node_modules/datatables.net/js/dataTables.mjs                                                               93.5kb   34.5%
+   ├ node_modules/jquery/dist/jquery.js                                                                          86.0kb   31.7%
+   ├ node_modules/datatables.net-buttons/js/dataTables.buttons.mjs                                               26.3kb    9.7%
+   ├ node_modules/datatables.net-select/js/dataTables.select.mjs                                                 16.5kb    6.1%
+   ├ node_modules/datatables.net-responsive/js/dataTables.responsive.mjs                                         15.3kb    5.6%
    ├ node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs                                       11.6kb    4.3%
    ├ node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs                                      7.6kb    2.8%
    ├ node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs                                              3.6kb    1.3%
    ├ src/classes/DataTableElement.js                                                                              1.5kb    0.6%
-   ├ node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs                                                 1.0kb    0.4%
    ├ node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs                                            1.0kb    0.4%
    ├ node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs                                     1011b     0.4%
+   ├ node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs                                                 935b     0.3%
    ├ src/utils/EventfulElement.js                                                                                 822b     0.3%
    ├ src/utils/FormidableElement.js                                                                               624b     0.2%
    ├ src/utils/icons.js                                                                                           579b     0.2%
@@ -641,8 +641,8 @@
    ├ node_modules/datatables.net-fixedheader-bs5/js/fixedHeader.bootstrap5.mjs                                     18b     0.0%
    └ node_modules/datatables.net-rowgroup-bs5/js/rowGroup.bootstrap5.mjs                                           18b     0.0%
 
-  dist/filepond-input.min.js                                                                                    185.5kb  100.0%
-   ├ node_modules/filepond/dist/filepond.esm.js                                                                  98.7kb   53.2%
+  dist/filepond-input.min.js                                                                                    185.4kb  100.0%
+   ├ node_modules/filepond/dist/filepond.esm.js                                                                  98.6kb   53.2%
    ├ node_modules/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.esm.js                    21.4kb   11.5%
    ├ node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.esm.js                        20.5kb   11.0%
    ├ node_modules/filepond/dist/filepond.min.css                                                                 17.1kb    9.2%
@@ -667,8 +667,8 @@
    ├ src/utils/getGlobalFn.js                                                                                      50b     0.0%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
-  dist/filepond-input.raw.min.js                                                                                162.4kb  100.0%
-   ├ node_modules/filepond/dist/filepond.esm.js                                                                  98.7kb   60.8%
+  dist/filepond-input.raw.min.js                                                                                162.3kb  100.0%
+   ├ node_modules/filepond/dist/filepond.esm.js                                                                  98.6kb   60.8%
    ├ node_modules/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.esm.js                    21.4kb   13.2%
    ├ node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.esm.js                        20.5kb   12.6%
    ├ node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.esm.js                             5.9kb    3.6%
@@ -804,9 +804,9 @@
    ├ src/utils/getGlobalFn.js                                                                                      50b     0.1%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
-  dist/squire-editor.min.js                                                                                      68.3kb  100.0%
-   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                                 50.4kb   73.8%
-   ├ src/utils/bootstrap-icons.js                                                                                 7.2kb   10.6%
+  dist/squire-editor.min.js                                                                                      68.6kb  100.0%
+   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                                 50.6kb   73.9%
+   ├ src/utils/bootstrap-icons.js                                                                                 7.2kb   10.5%
    ├ src/classes/SquireEditor.js                                                                                  6.4kb    9.4%
    ├ src/utils/EventfulElement.js                                                                                 822b     1.2%
    ├ src/css/squire-editor.min.css                                                                                724b     1.0%
@@ -822,14 +822,14 @@
    ├ src/utils/props.js                                                                                            58b     0.1%
    ├ src/squire-editor.js                                                                                          56b     0.1%
    ├ src/utils/getGlobalFn.js                                                                                      50b     0.1%
-   ├ src/utils/ce.js                                                                                               35b     0.1%
+   ├ src/utils/ce.js                                                                                               35b     0.0%
    ├ src/utils/hasBootstrap.js                                                                                     30b     0.0%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
-  dist/squire-editor.raw.min.js                                                                                  67.4kb  100.0%
-   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                                 50.4kb   74.7%
-   ├ src/utils/bootstrap-icons.js                                                                                 7.2kb   10.7%
-   ├ src/classes/SquireEditor.js                                                                                  6.4kb    9.6%
+  dist/squire-editor.raw.min.js                                                                                  67.7kb  100.0%
+   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                                 50.6kb   74.8%
+   ├ src/utils/bootstrap-icons.js                                                                                 7.2kb   10.6%
+   ├ src/classes/SquireEditor.js                                                                                  6.4kb    9.5%
    ├ src/utils/EventfulElement.js                                                                                 822b     1.2%
    ├ src/utils/FormidableElement.js                                                                               624b     0.9%
    ├ src/utils/setHTML.js                                                                                         320b     0.5%
@@ -918,8 +918,8 @@
    ├ src/tom-select.raw.js                                                                                         30b     0.0%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
-  dist/bs-tags.min.js                                                                                            30.9kb  100.0%
-   ├ node_modules/bootstrap5-tags/tags.js                                                                        28.0kb   90.7%
+  dist/bs-tags.min.js                                                                                            31.3kb  100.0%
+   ├ node_modules/bootstrap5-tags/tags.js                                                                        28.3kb   90.3%
    ├ node_modules/bootstrap5-tags/tags-pure.min.css                                                               1.1kb    3.7%
    ├ src/utils/FormidableElement.js                                                                               613b     1.9%
    ├ src/classes/BsTags.js                                                                                        225b     0.7%
@@ -933,14 +933,14 @@
    ├ src/bs-tags.js                                                                                                42b     0.1%
    └ src/utils/isString.js                                                                                         28b     0.1%
 
-  dist/bs-tags.raw.min.js                                                                                        29.6kb  100.0%
-   ├ node_modules/bootstrap5-tags/tags.js                                                                        28.0kb   94.8%
+  dist/bs-tags.raw.min.js                                                                                        30.0kb  100.0%
+   ├ node_modules/bootstrap5-tags/tags.js                                                                        28.3kb   94.3%
    ├ src/utils/FormidableElement.js                                                                               613b     2.0%
    ├ src/classes/BsTags.js                                                                                        225b     0.7%
-   ├ src/utils/simpleConfig.js                                                                                    167b     0.6%
+   ├ src/utils/simpleConfig.js                                                                                    167b     0.5%
    ├ src/utils/replaceCallbacks.js                                                                                155b     0.5%
    ├ src/utils/whenParsed.js                                                                                      134b     0.4%
-   ├ src/utils/rmElements.js                                                                                      106b     0.4%
+   ├ src/utils/rmElements.js                                                                                      106b     0.3%
    ├ src/utils/defineEl.js                                                                                         60b     0.2%
    ├ src/utils/getGlobalFn.js                                                                                      49b     0.2%
    ├ src/utils/isString.js                                                                                         28b     0.1%
@@ -962,12 +962,12 @@
    ├ src/utils/getGlobalFn.js                                                                                      49b     0.2%
    └ src/utils/isString.js                                                                                         29b     0.1%
 
-  dist/floating-ui.min.js                                                                                        23.2kb  100.0%
-   ├ node_modules/@floating-ui/core/dist/floating-ui.core.mjs                                                     6.9kb   29.8%
-   ├ node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs                                                       6.4kb   27.4%
-   ├ src/classes/FloatingUi.js                                                                                    4.3kb   18.5%
-   ├ node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs                                               2.0kb    8.6%
-   ├ node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs                                                   1.4kb    5.9%
+  dist/floating-ui.min.js                                                                                        23.3kb  100.0%
+   ├ node_modules/@floating-ui/core/dist/floating-ui.core.mjs                                                     6.9kb   29.6%
+   ├ node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs                                                       6.2kb   26.8%
+   ├ src/classes/FloatingUi.js                                                                                    4.3kb   18.4%
+   ├ node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs                                               2.2kb    9.4%
+   ├ node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs                                                   1.4kb    6.0%
    ├ src/utils/FormidableElement.js                                                                               624b     2.6%
    ├ src/floating-ui.js                                                                                           410b     1.7%
    ├ src/utils/props.js                                                                                           308b     1.3%
@@ -997,6 +997,19 @@
    ├ src/cleave-input.js                                                                                           29b     0.1%
    └ src/utils/isString.js                                                                                         28b     0.1%
 
+  dist/bs-autocomplete.min.js                                                                                    16.4kb  100.0%
+   ├ node_modules/bootstrap5-autocomplete/autocomplete.js                                                        14.7kb   89.2%
+   ├ src/utils/FormidableElement.js                                                                               610b     3.6%
+   ├ src/classes/BsAutocomplete.js                                                                                275b     1.6%
+   ├ src/utils/simpleConfig.js                                                                                    166b     1.0%
+   ├ src/utils/replaceCallbacks.js                                                                                155b     0.9%
+   ├ src/utils/whenParsed.js                                                                                      131b     0.8%
+   ├ src/utils/rmElements.js                                                                                      105b     0.6%
+   ├ src/utils/defineEl.js                                                                                         56b     0.3%
+   ├ src/utils/getGlobalFn.js                                                                                      49b     0.3%
+   ├ src/bs-autocomplete.js                                                                                        32b     0.2%
+   └ src/utils/isString.js                                                                                         28b     0.2%
+
   dist/coloris-input.raw.min.js                                                                                  16.3kb  100.0%
    ├ node_modules/@melloware/coloris/dist/esm/coloris.js                                                         14.2kb   87.4%
    ├ src/utils/FormidableElement.js                                                                               624b     3.7%
@@ -1010,19 +1023,6 @@
    ├ src/utils/getGlobalFn.js                                                                                      49b     0.3%
    ├ src/coloris-input.raw.js                                                                                      33b     0.2%
    └ src/utils/isString.js                                                                                         29b     0.2%
-
-  dist/bs-autocomplete.min.js                                                                                    16.1kb  100.0%
-   ├ node_modules/bootstrap5-autocomplete/autocomplete.js                                                        14.5kb   90.1%
-   ├ src/utils/FormidableElement.js                                                                               610b     3.7%
-   ├ src/classes/BsAutocomplete.js                                                                                275b     1.7%
-   ├ src/utils/simpleConfig.js                                                                                    166b     1.0%
-   ├ src/utils/replaceCallbacks.js                                                                                155b     0.9%
-   ├ src/utils/whenParsed.js                                                                                      131b     0.8%
-   ├ src/utils/rmElements.js                                                                                      105b     0.6%
-   ├ src/utils/defineEl.js                                                                                         56b     0.3%
-   ├ src/utils/getGlobalFn.js                                                                                      49b     0.3%
-   ├ src/bs-autocomplete.js                                                                                        32b     0.2%
-   └ src/utils/isString.js                                                                                         28b     0.2%
 
   dist/count-up.min.js                                                                                            8.7kb  100.0%
    ├ node_modules/countup.js/dist/countUp.min.js                                                                  5.5kb   63.3%
@@ -1186,9 +1186,9 @@
 
   dist\tabulator-grid.min.js      464.2kb
   dist\tabulator-grid.raw.min.js  415.2kb
+  dist\tiptap-editor.min.js       321.9kb
+  dist\tiptap-editor.raw.min.js   320.8kb
   dist\tel-input.min.js           317.6kb
-  dist\tiptap-editor.min.js       316.4kb
-  dist\tiptap-editor.raw.min.js   315.3kb
   ...and 34 more output files...
 
-Done in 108ms
+Done in 107ms
