@@ -1,6 +1,8 @@
-import intlTelInput from "intl-tel-input";
+// import intlTelInput from "intl-tel-input";
+import intlTelInput from "intl-tel-input/intlTelInputWithUtils";
 // Include utils right away to make loading easier
-import "../../node_modules/intl-tel-input/build/js/utils.js";
+// see https://github.com/jackocnr/intl-tel-input?tab=readme-ov-file#loading-the-utilities-script
+// import utils from "../../node_modules/intl-tel-input/build/js/utils.js";
 import EventfulElement from "../utils/EventfulElement.js";
 import localeProvider from "../utils/localeProvider.js";
 import Storage from "../utils/Storage.js";
@@ -35,9 +37,10 @@ class TelInput extends EventfulElement {
     // Smarter default type based on field name
     let defaultType = "FIXED_LINE_OR_MOBILE";
     //@ts-ignore intlTelInputUtils is a global function
-    if (intlTelInputUtils) {
+    //see v22 Moved global variables window.intlTelInputGlobals and window.intlTelInputUtils to static variables on intlTelInput object e.g. intlTelInput.getCountryData() and intlTelInput.utils.getValidationError()
+    if (window.intlTelInputUtils) {
       //@ts-ignore
-      for (const k in intlTelInputUtils.numberType) {
+      for (const k in window.intlTelInputUtils.numberType) {
         if (name.includes(k.toLowerCase())) {
           defaultType = k;
         }
@@ -182,18 +185,24 @@ class TelInput extends EventfulElement {
     this.config = Object.assign(
       {
         initialCountry: "auto",
-        showFlags: false,
+        showFlags: true,
+        // if false, we can prevent loading cdn asset but the globe icon is a bit ugly
+        // showFlags: false,
         countrySearch: fs,
         fixDropdownWidth: false,
         useFullscreenPopup: fs,
-        showSelectedDialCode: true, // required when showFlags is false
-        preferredCountries: [systemLocale.split("-")[1]],
+        // see v22 Dropped showSelectedDialCode in favour of new separateDialCode option
+        // showSelectedDialCode: true, // required when showFlags is false
+        separateDialCode: false,
+        // see v22 Dropped preferredCountries option in favour of new countryOrder option
+        // preferredCountries: [systemLocale.split("-")[1]],
+        countryOrder: [systemLocale.split("-")[1]],
         i18n: localeProvider(name) || {},
         // we use or own live updating approach
         // hiddenInput: inputName,
         placeholderNumberType: type,
         // Only useful if it's not bundled
-        // utilsScript : 'https://cdn.jsdelivr.net/npm/intl-tel-input@19/build/js/utils.min.js'
+        // utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@24/build/js/utils.min.js",
       },
       this.config
     );
@@ -218,14 +227,14 @@ class TelInput extends EventfulElement {
 
     this.iti = intlTelInput(input, this.config);
 
-    input.addEventListener("countrychange", () => {
-      // Update size
+    // helps placing floating labels
+    const computeFloatingSize = () => {
       //@ts-ignore
-      let width = this.querySelector(".iti__selected-country").offsetWidth;
-      let parent = this.parentElement;
-      parent.style.setProperty("--tel-input-floating-offset", `${width}px`);
-    });
-
+      let width = this.querySelector(".iti__country-container").offsetWidth;
+      this.parentElement.style.setProperty("--tel-input-floating-offset", `${width}px`);
+    };
+    input.addEventListener("countrychange", computeFloatingSize);
+    computeFloatingSize();
     if (this.config.hiddenInput) {
       input.name = `_${input.name}`;
     }

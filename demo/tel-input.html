@@ -33,7 +33,7 @@
 
         .label-on-field label {
             position: absolute;
-            left: calc(var(--iti-input-padding, 6px) + var(--tel-input-floating-offset, 60px));
+            left: calc(var(--iti-arrow-padding, 6px) + var(--tel-input-floating-offset, 42px));
             top: 6px;
             z-index: 1;
             pointer-events: none;
@@ -86,6 +86,13 @@
             </tel-input>
             <label for="mobile_phone_floating" class="form-label">My mobile phone floating label</label>
         </div>
+        <div class="mb-3 label-on-field">
+            <tel-input data-dataformat="NATIONAL" data-update-on-input="true"
+                data-config="placeholderNumberType: 'off', separateDialCode: true"><!-- type is auto detected -->
+                <input type="tel" id="mphone" name="mobile_phone_floating" class="form-control">
+            </tel-input>
+            <label for="mobile_phone_floating" class="form-label">My mobile phone floating label</label>
+        </div>
         <div class="mb-3">
             <label for="mobile_phone" class="form-label">My mobile phone (national hidden format)</label>
             <tel-input data-dataformat="NATIONAL" data-update-on-input="true"><!-- type is auto detected -->
@@ -110,16 +117,16 @@
                 <input type="tel" id="limited" name="limited" class="form-control" value="+32 0471 234 567">
             </tel-input>
         </div>
+        <p>Note: flags require an external image. If commented, asset is not downloaded because css var is not interpreted</p>
         <div class="mb-3">
-            <label for="withflags" class="form-label">With flags (require css, much larger. If commented, asset is not downloaded)</label>
-            <tel-input data-config='{"showFlags": true, "showSelectedDialCode": false}'>
+            <label for="withflags" class="form-label">Without flags </label>
+            <tel-input data-config='{"showFlags": false, "separateDialCode": true}'>
                 <input type="tel" id="withflags" name="withflags" class="form-control">
             </tel-input>
         </div>
         <div class="mb-3" dir="rtl">
-            <label for="withflags2" class="form-label">With flags rtl (require css, much larger. If commented, asset is not
-                downloaded)</label>
-            <tel-input data-config='{"showFlags": true, "showSelectedDialCode": true}'>
+            <label for="withflags2" class="form-label">Without flags rtl</label>
+            <tel-input data-config='{"showFlags": false, "separateDialCode": true}'>
                 <input type="tel" id="withflags2" name="withflags2" class="form-control">
             </tel-input>
         </div>

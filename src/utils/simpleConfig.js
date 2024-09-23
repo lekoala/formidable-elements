@@ -11,7 +11,7 @@ export default (str) => {
     return {};
   }
   if (str[0] != "{" && str.includes(":")) {
-    str = `{${str.replace(/([\w]*)\s*:\s*([\w"'\[\]]*)/, (m, p1, p2) => `"${p1}":${p2.replace(/'/g, '"')}`)}}`;
+    str = `{${str.replace(/([\w]*)\s*:\s*([\w"'\[\]]*)/g, (m, p1, p2) => `"${p1}":${p2.replace(/'/g, '"')}`)}}`;
   }
   return str[0] == "{" ? JSON.parse(str) : getGlobalFn(str);
 };

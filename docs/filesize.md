@@ -34,7 +34,7 @@
    ├ src/utils/fetchJson.js                                                                                                        407b     0.0%
    ├ node_modules/datatables.net-fixedheader-bs5/css/fixedHeader.bootstrap5.min.css                                                390b     0.0%
    ├ src/css/datatables.min.css                                                                                                    280b     0.0%
-   ├ src/utils/simpleConfig.js                                                                                                     168b     0.0%
+   ├ src/utils/simpleConfig.js                                                                                                     169b     0.0%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.0%
    ├ src/utils/injectStyles.js                                                                                                     159b     0.0%
    ├ src/utils/whenParsed.js                                                                                                       134b     0.0%
@@ -75,7 +75,7 @@
    ├ src/utils/icons.js                                                                                                            579b     0.1%
    ├ src/utils/fetchWrapper.js                                                                                                     487b     0.1%
    ├ src/utils/fetchJson.js                                                                                                        407b     0.0%
-   ├ src/utils/simpleConfig.js                                                                                                     168b     0.0%
+   ├ src/utils/simpleConfig.js                                                                                                     169b     0.0%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.0%
    ├ src/utils/whenParsed.js                                                                                                       134b     0.0%
    ├ node_modules/datatables.net-select-bs5/js/select.bootstrap5.mjs                                                                64b     0.0%
@@ -138,7 +138,7 @@
    ├ node_modules/@tiptap/extension-list-item/dist/index.js                                                                        494b     0.1%
    ├ node_modules/@tiptap/extension-paragraph/dist/index.js                                                                        392b     0.1%
    ├ src/utils/isExternalURL.js                                                                                                    190b     0.0%
-   ├ src/utils/simpleConfig.js                                                                                                     168b     0.0%
+   ├ src/utils/simpleConfig.js                                                                                                     169b     0.0%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.0%
    ├ src/utils/injectStyles.js                                                                                                     159b     0.0%
    ├ node_modules/@tiptap/extension-dropcursor/dist/index.js                                                                       152b     0.0%
@@ -204,7 +204,7 @@
    ├ node_modules/@tiptap/extension-list-item/dist/index.js                                                                        494b     0.1%
    ├ node_modules/@tiptap/extension-paragraph/dist/index.js                                                                        392b     0.1%
    ├ src/utils/isExternalURL.js                                                                                                    190b     0.0%
-   ├ src/utils/simpleConfig.js                                                                                                     168b     0.0%
+   ├ src/utils/simpleConfig.js                                                                                                     169b     0.0%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.0%
    ├ node_modules/@tiptap/extension-dropcursor/dist/index.js                                                                       152b     0.0%
    ├ src/utils/query.js                                                                                                            135b     0.0%
@@ -375,7 +375,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/Layout/defaults/modes/fitData.js                                                 209b     0.0%
    ├ src/classes/tabulator/Format/formatters/flag.js                                                                               191b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Layout/defaults/modes/fitDataGeneral.js                                          190b     0.0%
-   ├ src/utils/simpleConfig.js                                                                                                     167b     0.0%
+   ├ src/utils/simpleConfig.js                                                                                                     168b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Clipboard/defaults/pasteActions.js                                               165b     0.0%
    ├ src/utils/replaceCallbacks.js                                                                                                 161b     0.0%
    ├ src/utils/injectStyles.js                                                                                                     159b     0.0%
@@ -582,7 +582,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/Layout/defaults/modes/fitData.js                                                 209b     0.0%
    ├ src/classes/tabulator/Format/formatters/flag.js                                                                               191b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Layout/defaults/modes/fitDataGeneral.js                                          190b     0.0%
-   ├ src/utils/simpleConfig.js                                                                                                     167b     0.0%
+   ├ src/utils/simpleConfig.js                                                                                                     168b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Clipboard/defaults/pasteActions.js                                               165b     0.0%
    ├ src/utils/replaceCallbacks.js                                                                                                 161b     0.0%
    ├ node_modules/tabulator-tables/src/js/modules/Clipboard/extensions/keybindings/actions.js                                      154b     0.0%
@@ -635,19 +635,18 @@
    ├ node_modules/tabulator-tables/src/js/modules/Export/defaults/columnLookups.js                                                  10b     0.0%
    └ node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js                                                      10b     0.0%
 
-  dist/tel-input.min.js                                                                                                          317.6kb  100.0%
-   ├ node_modules/intl-tel-input/build/js/utils.js                                                                               250.8kb   79.0%
-   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                                         36.2kb   11.4%
-   ├ src/css/tel-input.min.css                                                                                                    22.8kb    7.2%
+  dist/tel-input.min.js                                                                                                          314.5kb  100.0%
+   ├ node_modules/intl-tel-input/build/js/intlTelInputWithUtils.js                                                               291.0kb   92.5%
+   ├ src/css/tel-input.min.css                                                                                                    15.8kb    5.0%
    ├ src/classes/TelInput.js                                                                                                       2.8kb    0.9%
    ├ src/utils/EventfulElement.js                                                                                                  822b     0.3%
    ├ src/utils/FormidableElement.js                                                                                                624b     0.2%
-   ├ src/tel-input.js                                                                                                              601b     0.2%
-   ├ src/utils/fetchWrapper.js                                                                                                     487b     0.1%
+   ├ src/tel-input.js                                                                                                              520b     0.2%
+   ├ src/utils/fetchWrapper.js                                                                                                     487b     0.2%
    ├ src/utils/fetchJson.js                                                                                                        407b     0.1%
    ├ src/utils/insertHiddenInput.js                                                                                                297b     0.1%
    ├ src/utils/Storage.js                                                                                                          227b     0.1%
-   ├ src/utils/simpleConfig.js                                                                                                     168b     0.1%
+   ├ src/utils/simpleConfig.js                                                                                                     169b     0.1%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.1%
    ├ src/utils/injectStyles.js                                                                                                     159b     0.0%
    ├ src/utils/whenParsed.js                                                                                                       134b     0.0%
@@ -658,17 +657,16 @@
    ├ src/utils/getGlobalFn.js                                                                                                       50b     0.0%
    └ src/utils/isString.js                                                                                                          29b     0.0%
 
-  dist/tel-input.raw.min.js                                                                                                      294.1kb  100.0%
-   ├ node_modules/intl-tel-input/build/js/utils.js                                                                               250.8kb   85.3%
-   ├ node_modules/intl-tel-input/build/js/intlTelInput.js                                                                         36.2kb   12.3%
-   ├ src/classes/TelInput.js                                                                                                       2.8kb    1.0%
+  dist/tel-input.raw.min.js                                                                                                      298.1kb  100.0%
+   ├ node_modules/intl-tel-input/build/js/intlTelInputWithUtils.js                                                               291.0kb   97.6%
+   ├ src/classes/TelInput.js                                                                                                       2.8kb    0.9%
    ├ src/utils/EventfulElement.js                                                                                                  822b     0.3%
    ├ src/utils/FormidableElement.js                                                                                                624b     0.2%
    ├ src/utils/fetchWrapper.js                                                                                                     487b     0.2%
    ├ src/utils/fetchJson.js                                                                                                        407b     0.1%
    ├ src/utils/insertHiddenInput.js                                                                                                297b     0.1%
    ├ src/utils/Storage.js                                                                                                          227b     0.1%
-   ├ src/utils/simpleConfig.js                                                                                                     168b     0.1%
+   ├ src/utils/simpleConfig.js                                                                                                     169b     0.1%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.1%
    ├ src/utils/whenParsed.js                                                                                                       134b     0.0%
    ├ src/utils/localeProvider.js                                                                                                   120b     0.0%
@@ -696,7 +694,7 @@
    ├ src/utils/FormidableElement.js                                                                                                624b     0.3%
    ├ node_modules/filepond-plugin-file-metadata/dist/filepond-plugin-file-metadata.esm.js                                          597b     0.3%
    ├ src/classes/FilePondInput.js                                                                                                  458b     0.2%
-   ├ src/utils/simpleConfig.js                                                                                                     168b     0.1%
+   ├ src/utils/simpleConfig.js                                                                                                     169b     0.1%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.1%
    ├ src/utils/injectStyles.js                                                                                                     159b     0.1%
    ├ src/utils/whenParsed.js                                                                                                       134b     0.1%
@@ -719,7 +717,7 @@
    ├ src/utils/FormidableElement.js                                                                                                624b     0.4%
    ├ node_modules/filepond-plugin-file-metadata/dist/filepond-plugin-file-metadata.esm.js                                          597b     0.4%
    ├ src/classes/FilePondInput.js                                                                                                  458b     0.3%
-   ├ src/utils/simpleConfig.js                                                                                                     168b     0.1%
+   ├ src/utils/simpleConfig.js                                                                                                     169b     0.1%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.1%
    ├ src/utils/whenParsed.js                                                                                                       134b     0.1%
    ├ src/utils/defineEl.js                                                                                                          60b     0.0%
@@ -752,7 +750,7 @@
    ├ node_modules/inputmask/lib/environment.js                                                                                     256b     0.3%
    ├ node_modules/inputmask/lib/definitions.js                                                                                     230b     0.2%
    ├ node_modules/inputmask/lib/masktoken.js                                                                                       201b     0.2%
-   ├ src/utils/simpleConfig.js                                                                                                     168b     0.2%
+   ├ src/utils/simpleConfig.js                                                                                                     169b     0.2%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.2%
    ├ node_modules/inputmask/lib/escapeRegex.js                                                                                     152b     0.2%
    ├ src/utils/whenParsed.js                                                                                                       134b     0.1%
@@ -783,7 +781,7 @@
    ├ src/utils/insertHiddenInput.js                                                                                                297b     0.3%
    ├ node_modules/flatpickr/dist/esm/utils/index.js                                                                                282b     0.3%
    ├ src/flatpickr-input.js                                                                                                        225b     0.3%
-   ├ src/utils/simpleConfig.js                                                                                                     168b     0.2%
+   ├ src/utils/simpleConfig.js                                                                                                     169b     0.2%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.2%
    ├ src/utils/injectStyles.js                                                                                                     159b     0.2%
    ├ src/utils/query.js                                                                                                            135b     0.2%
@@ -825,7 +823,7 @@
    ├ node_modules/tom-select/src/plugins/clear_button/plugin.ts                                                                    398b     0.5%
    ├ node_modules/tom-select/src/plugins/restore_on_backspace/plugin.ts                                                            223b     0.3%
    ├ src/utils/hasOverflowParent.js                                                                                                208b     0.3%
-   ├ src/utils/simpleConfig.js                                                                                                     168b     0.2%
+   ├ src/utils/simpleConfig.js                                                                                                     169b     0.2%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.2%
    ├ src/utils/injectStyles.js                                                                                                     159b     0.2%
    ├ src/utils/whenParsed.js                                                                                                       134b     0.2%
@@ -850,7 +848,7 @@
    ├ src/css/squire-editor.min.css                                                                                                 724b     1.0%
    ├ src/utils/FormidableElement.js                                                                                                624b     0.9%
    ├ src/utils/setHTML.js                                                                                                          320b     0.5%
-   ├ src/utils/simpleConfig.js                                                                                                     168b     0.2%
+   ├ src/utils/simpleConfig.js                                                                                                     169b     0.2%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.2%
    ├ src/utils/injectStyles.js                                                                                                     159b     0.2%
    ├ src/utils/query.js                                                                                                            134b     0.2%
@@ -871,7 +869,7 @@
    ├ src/utils/EventfulElement.js                                                                                                  822b     1.2%
    ├ src/utils/FormidableElement.js                                                                                                624b     0.9%
    ├ src/utils/setHTML.js                                                                                                          320b     0.5%
-   ├ src/utils/simpleConfig.js                                                                                                     168b     0.2%
+   ├ src/utils/simpleConfig.js                                                                                                     169b     0.2%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.2%
    ├ src/utils/query.js                                                                                                            134b     0.2%
    ├ src/utils/whenParsed.js                                                                                                       134b     0.2%
@@ -899,7 +897,7 @@
    ├ node_modules/flatpickr/dist/esm/utils/polyfills.js                                                                            320b     0.5%
    ├ src/utils/insertHiddenInput.js                                                                                                297b     0.5%
    ├ node_modules/flatpickr/dist/esm/utils/index.js                                                                                282b     0.4%
-   ├ src/utils/simpleConfig.js                                                                                                     168b     0.3%
+   ├ src/utils/simpleConfig.js                                                                                                     169b     0.3%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.2%
    ├ src/utils/query.js                                                                                                            135b     0.2%
    ├ src/utils/whenParsed.js                                                                                                       134b     0.2%
@@ -940,7 +938,7 @@
    ├ node_modules/tom-select/src/plugins/clear_button/plugin.ts                                                                    398b     0.7%
    ├ node_modules/tom-select/src/plugins/restore_on_backspace/plugin.ts                                                            223b     0.4%
    ├ src/utils/hasOverflowParent.js                                                                                                208b     0.3%
-   ├ src/utils/simpleConfig.js                                                                                                     168b     0.3%
+   ├ src/utils/simpleConfig.js                                                                                                     169b     0.3%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.3%
    ├ src/utils/whenParsed.js                                                                                                       134b     0.2%
    ├ node_modules/tom-select/src/plugins/no_backspace_delete/plugin.ts                                                             123b     0.2%
@@ -961,7 +959,7 @@
    ├ node_modules/bootstrap5-tags/tags-pure.min.css                                                                                1.1kb    3.7%
    ├ src/utils/FormidableElement.js                                                                                                613b     1.9%
    ├ src/classes/BsTags.js                                                                                                         225b     0.7%
-   ├ src/utils/simpleConfig.js                                                                                                     167b     0.5%
+   ├ src/utils/simpleConfig.js                                                                                                     168b     0.5%
    ├ src/utils/injectStyles.js                                                                                                     159b     0.5%
    ├ src/utils/replaceCallbacks.js                                                                                                 155b     0.5%
    ├ src/utils/whenParsed.js                                                                                                       134b     0.4%
@@ -975,7 +973,7 @@
    ├ node_modules/bootstrap5-tags/tags.js                                                                                         28.3kb   94.3%
    ├ src/utils/FormidableElement.js                                                                                                613b     2.0%
    ├ src/classes/BsTags.js                                                                                                         225b     0.7%
-   ├ src/utils/simpleConfig.js                                                                                                     167b     0.5%
+   ├ src/utils/simpleConfig.js                                                                                                     168b     0.5%
    ├ src/utils/replaceCallbacks.js                                                                                                 155b     0.5%
    ├ src/utils/whenParsed.js                                                                                                       134b     0.4%
    ├ src/utils/rmElements.js                                                                                                       106b     0.3%
@@ -990,7 +988,7 @@
    ├ src/utils/FormidableElement.js                                                                                                624b     2.4%
    ├ src/classes/ColorisInput.js                                                                                                   385b     1.5%
    ├ src/coloris-input.js                                                                                                          247b     1.0%
-   ├ src/utils/simpleConfig.js                                                                                                     167b     0.7%
+   ├ src/utils/simpleConfig.js                                                                                                     168b     0.7%
    ├ src/utils/replaceCallbacks.js                                                                                                 161b     0.6%
    ├ src/utils/injectStyles.js                                                                                                     159b     0.6%
    ├ src/utils/whenParsed.js                                                                                                       134b     0.5%
@@ -1002,14 +1000,14 @@
 
   dist/floating-ui.min.js                                                                                                         23.7kb  100.0%
    ├ node_modules/@floating-ui/core/dist/floating-ui.core.mjs                                                                      6.9kb   29.3%
-   ├ node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs                                                                        6.4kb   27.3%
+   ├ node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs                                                                        6.4kb   27.2%
    ├ src/classes/FloatingUi.js                                                                                                     4.3kb   18.2%
    ├ node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs                                                                2.3kb    9.6%
    ├ node_modules/@floating-ui/core/node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs                                     1.4kb    5.8%
    ├ src/utils/FormidableElement.js                                                                                                624b     2.6%
    ├ src/floating-ui.js                                                                                                            410b     1.7%
    ├ src/utils/props.js                                                                                                            308b     1.3%
-   ├ src/utils/simpleConfig.js                                                                                                     168b     0.7%
+   ├ src/utils/simpleConfig.js                                                                                                     169b     0.7%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.7%
    ├ src/utils/injectStyles.js                                                                                                     159b     0.7%
    ├ src/utils/whenParsed.js                                                                                                       134b     0.6%
@@ -1028,7 +1026,7 @@
    ├ node_modules/cleave-es6/src/CleaveTime.js                                                                                     1.9kb    9.7%
    ├ src/utils/FormidableElement.js                                                                                                610b     3.1%
    ├ src/classes/CleaveInput.js                                                                                                    374b     1.9%
-   ├ src/utils/simpleConfig.js                                                                                                     166b     0.8%
+   ├ src/utils/simpleConfig.js                                                                                                     167b     0.9%
    ├ src/utils/replaceCallbacks.js                                                                                                 155b     0.8%
    ├ src/utils/whenParsed.js                                                                                                       131b     0.7%
    ├ src/utils/defineEl.js                                                                                                          56b     0.3%
@@ -1040,7 +1038,7 @@
    ├ node_modules/bootstrap5-autocomplete/autocomplete.js                                                                         14.8kb   89.2%
    ├ src/utils/FormidableElement.js                                                                                                610b     3.6%
    ├ src/classes/BsAutocomplete.js                                                                                                 275b     1.6%
-   ├ src/utils/simpleConfig.js                                                                                                     166b     1.0%
+   ├ src/utils/simpleConfig.js                                                                                                     167b     1.0%
    ├ src/utils/replaceCallbacks.js                                                                                                 155b     0.9%
    ├ src/utils/whenParsed.js                                                                                                       131b     0.8%
    ├ src/utils/rmElements.js                                                                                                       105b     0.6%
@@ -1053,7 +1051,7 @@
    ├ node_modules/@melloware/coloris/dist/esm/coloris.js                                                                          14.2kb   87.4%
    ├ src/utils/FormidableElement.js                                                                                                624b     3.7%
    ├ src/classes/ColorisInput.js                                                                                                   385b     2.3%
-   ├ src/utils/simpleConfig.js                                                                                                     167b     1.0%
+   ├ src/utils/simpleConfig.js                                                                                                     168b     1.0%
    ├ src/utils/replaceCallbacks.js                                                                                                 161b     1.0%
    ├ src/utils/whenParsed.js                                                                                                       134b     0.8%
    ├ src/utils/isRTL.js                                                                                                             75b     0.5%
@@ -1069,13 +1067,13 @@
    ├ src/classes/CountUpElement.js                                                                                                 801b     9.0%
    ├ src/utils/FormidableElement.js                                                                                                610b     6.8%
    ├ src/utils/unformatNumber.js                                                                                                   244b     2.7%
-   ├ src/utils/simpleConfig.js                                                                                                     166b     1.9%
+   ├ src/utils/simpleConfig.js                                                                                                     167b     1.9%
    ├ src/utils/replaceCallbacks.js                                                                                                 155b     1.7%
    ├ src/utils/whenParsed.js                                                                                                       131b     1.5%
    ├ src/utils/defaultLang.js                                                                                                       76b     0.9%
    ├ src/utils/parseBool.js                                                                                                         69b     0.8%
    ├ src/utils/defineEl.js                                                                                                          56b     0.6%
-   ├ src/utils/getGlobalFn.js                                                                                                       49b     0.6%
+   ├ src/utils/getGlobalFn.js                                                                                                       49b     0.5%
    ├ src/utils/isString.js                                                                                                          28b     0.3%
    ├ src/count-up.js                                                                                                                25b     0.3%
    └ src/utils/isUndefined.js                                                                                                       22b     0.2%
@@ -1084,7 +1082,7 @@
    ├ src/classes/Anchored.js                                                                                                       6.0kb   78.8%
    ├ src/utils/FormidableElement.js                                                                                                610b     7.9%
    ├ src/utils/props.js                                                                                                            270b     3.5%
-   ├ src/utils/simpleConfig.js                                                                                                     166b     2.1%
+   ├ src/utils/simpleConfig.js                                                                                                     167b     2.2%
    ├ src/utils/replaceCallbacks.js                                                                                                 155b     2.0%
    ├ src/utils/whenParsed.js                                                                                                       133b     1.7%
    ├ src/utils/reflectedProperties.js                                                                                              119b     1.5%
@@ -1098,7 +1096,7 @@
    ├ src/utils/FormidableElement.js                                                                                                610b     8.2%
    ├ src/superfile-input.js                                                                                                        245b     3.3%
    ├ src/classes/SuperfileElement.js                                                                                               177b     2.4%
-   ├ src/utils/simpleConfig.js                                                                                                     166b     2.2%
+   ├ src/utils/simpleConfig.js                                                                                                     167b     2.2%
    ├ src/utils/injectStyles.js                                                                                                     158b     2.1%
    ├ src/utils/replaceCallbacks.js                                                                                                 155b     2.1%
    ├ src/utils/whenParsed.js                                                                                                       131b     1.8%
@@ -1110,7 +1108,7 @@
    ├ node_modules/superfile/superfile.js                                                                                           5.5kb   79.8%
    ├ src/utils/FormidableElement.js                                                                                                610b     8.6%
    ├ src/classes/SuperfileElement.js                                                                                               177b     2.5%
-   ├ src/utils/simpleConfig.js                                                                                                     166b     2.3%
+   ├ src/utils/simpleConfig.js                                                                                                     167b     2.4%
    ├ src/utils/replaceCallbacks.js                                                                                                 155b     2.2%
    ├ src/utils/whenParsed.js                                                                                                       131b     1.9%
    ├ src/utils/defineEl.js                                                                                                          56b     0.8%
@@ -1124,7 +1122,7 @@
    ├ src/utils/FormidableElement.js                                                                                                610b    10.9%
    ├ src/utils/fetchWrapper.js                                                                                                     483b     8.6%
    ├ src/utils/fetchJson.js                                                                                                        405b     7.2%
-   ├ src/utils/simpleConfig.js                                                                                                     166b     3.0%
+   ├ src/utils/simpleConfig.js                                                                                                     167b     3.0%
    ├ src/utils/replaceCallbacks.js                                                                                                 155b     2.8%
    ├ src/utils/formDataToObject.js                                                                                                 133b     2.4%
    ├ src/utils/whenParsed.js                                                                                                       131b     2.3%
@@ -1136,9 +1134,9 @@
 
   dist/count-down.min.js                                                                                                           4.2kb  100.0%
    ├ src/classes/CountdownElement.js                                                                                               2.2kb   51.6%
-   ├ src/utils/FormidableElement.js                                                                                                610b    14.1%
+   ├ src/utils/FormidableElement.js                                                                                                610b    14.0%
    ├ src/utils/date.js                                                                                                             603b    13.9%
-   ├ src/utils/simpleConfig.js                                                                                                     166b     3.8%
+   ├ src/utils/simpleConfig.js                                                                                                     167b     3.8%
    ├ src/utils/replaceCallbacks.js                                                                                                 155b     3.6%
    ├ src/utils/query.js                                                                                                            132b     3.0%
    ├ src/utils/whenParsed.js                                                                                                       131b     3.0%
@@ -1152,9 +1150,9 @@
    ├ src/classes/DateFormatter.js                                                                                                  1.0kb   37.3%
    ├ src/utils/FormidableElement.js                                                                                                610b    21.2%
    ├ src/utils/date.js                                                                                                             363b    12.6%
-   ├ src/utils/simpleConfig.js                                                                                                     166b     5.8%
+   ├ src/utils/simpleConfig.js                                                                                                     167b     5.8%
    ├ src/utils/replaceCallbacks.js                                                                                                 155b     5.4%
-   ├ src/utils/whenParsed.js                                                                                                       131b     4.6%
+   ├ src/utils/whenParsed.js                                                                                                       131b     4.5%
    ├ src/utils/reflectedProperties.js                                                                                              119b     4.1%
    ├ src/utils/defaultLang.js                                                                                                       76b     2.6%
    ├ src/utils/defineEl.js                                                                                                          56b     1.9%
@@ -1165,7 +1163,7 @@
   dist/clipboard-copy.min.js                                                                                                       2.3kb  100.0%
    ├ src/classes/ClipboardCopy.js                                                                                                  1.1kb   46.7%
    ├ src/utils/FormidableElement.js                                                                                                610b    26.0%
-   ├ src/utils/simpleConfig.js                                                                                                     166b     7.1%
+   ├ src/utils/simpleConfig.js                                                                                                     167b     7.1%
    ├ src/utils/replaceCallbacks.js                                                                                                 155b     6.6%
    ├ src/utils/whenParsed.js                                                                                                       131b     5.6%
    ├ src/utils/defineEl.js                                                                                                          56b     2.4%
@@ -1176,7 +1174,7 @@
   dist/format-number.min.js                                                                                                        2.1kb  100.0%
    ├ src/classes/NumberFormatter.js                                                                                                725b    33.4%
    ├ src/utils/FormidableElement.js                                                                                                610b    28.1%
-   ├ src/utils/simpleConfig.js                                                                                                     166b     7.7%
+   ├ src/utils/simpleConfig.js                                                                                                     167b     7.7%
    ├ src/utils/replaceCallbacks.js                                                                                                 155b     7.1%
    ├ src/utils/whenParsed.js                                                                                                       131b     6.0%
    ├ src/utils/reflectedProperties.js                                                                                              119b     5.5%
@@ -1230,4 +1228,4 @@
   dist\tabulator-grid.min.js     464.2kb
   ...and 34 more output files...
 
-Done in 300ms
+Done in 131ms
