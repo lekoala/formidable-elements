@@ -9,7 +9,7 @@
     "noEmit": true,
     "strict": false,
     "noImplicitThis": true,
-    "alwaysStrict": true,
+    "alwaysStrict": false,
     "esModuleInterop": true,
     "skipLibCheck": true
   },

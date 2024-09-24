@@ -6955,7 +6955,7 @@
           "bytesInOutput": 27
         }
       },
-      "bytes": 7748
+      "bytes": 7735
     },
     "dist/bound-input.min.js": {
       "imports": [],
@@ -6972,7 +6972,7 @@
           "bytesInOutput": 27
         }
       },
-      "bytes": 562
+      "bytes": 549
     },
     "dist/bs-autocomplete.min.js": {
       "imports": [],
@@ -7013,7 +7013,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 16981
+      "bytes": 16968
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -7060,7 +7060,7 @@
           "bytesInOutput": 42
         }
       },
-      "bytes": 32041
+      "bytes": 32028
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -7101,7 +7101,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 30690
+      "bytes": 30677
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -7151,7 +7151,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 19569
+      "bytes": 19556
     },
     "dist/clipboard-copy.min.js": {
       "imports": [],
@@ -7186,7 +7186,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 2345
+      "bytes": 2332
     },
     "dist/coloris-input.min.js": {
       "imports": [],
@@ -7236,7 +7236,7 @@
           "bytesInOutput": 247
         }
       },
-      "bytes": 25534
+      "bytes": 25521
     },
     "dist/coloris-input.raw.min.js": {
       "imports": [],
@@ -7280,7 +7280,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 16645
+      "bytes": 16632
     },
     "dist/count-down.min.js": {
       "imports": [],
@@ -7324,7 +7324,7 @@
           "bytesInOutput": 27
         }
       },
-      "bytes": 4342
+      "bytes": 4329
     },
     "dist/count-up.min.js": {
       "imports": [],
@@ -7377,7 +7377,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 8910
+      "bytes": 8897
     },
     "dist/data-table.min.js": {
       "imports": [],
@@ -7526,7 +7526,7 @@
           "bytesInOutput": 71
         }
       },
-      "bytes": 877237
+      "bytes": 877224
     },
     "dist/data-table.raw.min.js": {
       "imports": [],
@@ -7648,7 +7648,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 839446
+      "bytes": 839433
     },
     "dist/filepond-input.min.js": {
       "imports": [],
@@ -7728,7 +7728,7 @@
           "bytesInOutput": 64
         }
       },
-      "bytes": 189889
+      "bytes": 189876
     },
     "dist/filepond-input.raw.min.js": {
       "imports": [],
@@ -7796,7 +7796,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 166210
+      "bytes": 166197
     },
     "dist/flatpickr-input.min.js": {
       "imports": [],
@@ -7894,7 +7894,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 85158
+      "bytes": 85145
     },
     "dist/flatpickr-input.raw.min.js": {
       "imports": [],
@@ -7980,7 +7980,7 @@
           "bytesInOutput": 35
         }
       },
-      "bytes": 65417
+      "bytes": 65404
     },
     "dist/floating-ui.min.js": {
       "imports": [],
@@ -8042,7 +8042,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 24232
+      "bytes": 24219
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -8086,7 +8086,7 @@
           "bytesInOutput": 27
         }
       },
-      "bytes": 2880
+      "bytes": 2867
     },
     "dist/format-number.min.js": {
       "imports": [],
@@ -8127,7 +8127,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 2170
+      "bytes": 2157
     },
     "dist/growing-textarea.min.js": {
       "imports": [],
@@ -8147,7 +8147,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 795
+      "bytes": 782
     },
     "dist/hi-mark.min.js": {
       "imports": [],
@@ -8173,7 +8173,7 @@
           "bytesInOutput": 38
         }
       },
-      "bytes": 1332
+      "bytes": 1319
     },
     "dist/hi-mark.raw.min.js": {
       "imports": [],
@@ -8193,7 +8193,7 @@
           "bytesInOutput": 23
         }
       },
-      "bytes": 567
+      "bytes": 554
     },
     "dist/input-mask.min.js": {
       "imports": [],
@@ -8306,7 +8306,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 92297
+      "bytes": 92284
     },
     "dist/limited-input.min.js": {
       "imports": [],
@@ -8326,7 +8326,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 1392
+      "bytes": 1379
     },
     "dist/locale-provider.min.js": {
       "imports": [],
@@ -8343,7 +8343,7 @@
           "bytesInOutput": 31
         }
       },
-      "bytes": 390
+      "bytes": 377
     },
     "dist/progress-button.min.js": {
       "imports": [],
@@ -8393,7 +8393,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 5598
+      "bytes": 5585
     },
     "dist/squire-editor.min.js": {
       "imports": [
@@ -8467,7 +8467,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 70198
+      "bytes": 70185
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -8535,7 +8535,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 69292
+      "bytes": 69279
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -8576,7 +8576,7 @@
           "bytesInOutput": 245
         }
       },
-      "bytes": 7442
+      "bytes": 7429
     },
     "dist/superfile-input.raw.min.js": {
       "imports": [],
@@ -8614,7 +8614,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 7071
+      "bytes": 7058
     },
     "dist/tabulator-grid.min.js": {
       "imports": [],
@@ -9243,7 +9243,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 475356
+      "bytes": 475343
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -9863,7 +9863,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 425122
+      "bytes": 425109
     },
     "dist/tel-input.min.js": {
       "imports": [],
@@ -9931,7 +9931,7 @@
           "bytesInOutput": 520
         }
       },
-      "bytes": 322045
+      "bytes": 322032
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -9993,7 +9993,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 305236
+      "bytes": 305223
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -10223,7 +10223,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 524078
+      "bytes": 524065
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -10447,7 +10447,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 522912
+      "bytes": 522899
     },
     "dist/tom-select.min.js": {
       "imports": [],
@@ -10587,7 +10587,7 @@
           "bytesInOutput": 122
         }
       },
-      "bytes": 76073
+      "bytes": 76060
     },
     "dist/tom-select.raw.min.js": {
       "imports": [],
@@ -10721,7 +10721,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 60467
+      "bytes": 60454
     }
   }
 }
