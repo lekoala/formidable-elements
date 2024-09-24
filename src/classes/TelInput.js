@@ -209,19 +209,19 @@ class TelInput extends EventfulElement {
 
     // Provide a cached ip lookup
     if (this.config.initialCountry == "auto" && !this.config.geoIpLookup) {
-      this.config.geoIpLookup = (callback) => {
+      this.config.geoIpLookup = (success, failure) => {
         const field = "country_code";
         const result = Storage.get("ipapi");
         if (result) {
-          callback(result[field]);
-          return;
+          success(result[field] || "");
+        } else {
+          fetchJson("https://ipapi.co/json")
+            .then((data) => {
+              Storage.set("ipapi", data);
+              success(data[field] || "");
+            })
+            .catch(() => success("us"));
         }
-        fetchJson("https://ipapi.co/json")
-          .then((data) => {
-            Storage.set("ipapi", data);
-            callback(data[field]);
-          })
-          .catch(() => callback("us"));
       };
     }
 

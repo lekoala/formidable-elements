@@ -643,7 +643,7 @@
    ├ src/utils/FormidableElement.js                                                                                                624b     0.2%
    ├ src/tel-input.js                                                                                                              520b     0.2%
    ├ src/utils/fetchWrapper.js                                                                                                     487b     0.2%
-   ├ src/utils/fetchJson.js                                                                                                        407b     0.1%
+   ├ src/utils/fetchJson.js                                                                                                        409b     0.1%
    ├ src/utils/insertHiddenInput.js                                                                                                297b     0.1%
    ├ src/utils/Storage.js                                                                                                          227b     0.1%
    ├ src/utils/simpleConfig.js                                                                                                     169b     0.1%
@@ -663,7 +663,7 @@
    ├ src/utils/EventfulElement.js                                                                                                  864b     0.3%
    ├ src/utils/FormidableElement.js                                                                                                624b     0.2%
    ├ src/utils/fetchWrapper.js                                                                                                     487b     0.2%
-   ├ src/utils/fetchJson.js                                                                                                        407b     0.1%
+   ├ src/utils/fetchJson.js                                                                                                        409b     0.1%
    ├ src/utils/insertHiddenInput.js                                                                                                297b     0.1%
    ├ src/utils/Storage.js                                                                                                          227b     0.1%
    ├ src/utils/simpleConfig.js                                                                                                     169b     0.1%
@@ -1228,4 +1228,4 @@
   dist\tabulator-grid.min.js     464.2kb
   ...and 34 more output files...
 
-Done in 151ms
+Done in 141ms
