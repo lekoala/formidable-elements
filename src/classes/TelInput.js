@@ -207,6 +207,8 @@ class TelInput extends EventfulElement {
       this.config
     );
 
+    console.log(systemLocale, this.config);
+
     // Provide a cached ip lookup
     if (this.config.initialCountry == "auto" && !this.config.geoIpLookup) {
       this.config.geoIpLookup = (success, failure) => {
