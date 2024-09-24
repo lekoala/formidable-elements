@@ -21,6 +21,11 @@ class TomSelectElement extends FormidableElement {
   }
 
   created() {
+    // Use arrow function to make sure that the scope is always this
+    this.handleEvent = (ev) => {
+      this._handleEvent(ev);
+    };
+
     const input = this.el;
     const id = setId(input, name);
 
@@ -104,11 +109,10 @@ class TomSelectElement extends FormidableElement {
     this.originalValue = this.tomselect.items.slice(0);
   }
 
-  // Use arrow function to make sure that the scope is always this and cannot be rebound
   // Automatically call any $event method (don't use "on" as prefix as it will collide with existing handler)
-  handleEvent = (ev) => {
+  _handleEvent(ev) {
     this[`$${ev.type}`](ev);
-  };
+  }
 
   $reset() {
     this.tomselect.setValue(this.originalValue, true);

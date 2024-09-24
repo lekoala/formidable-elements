@@ -27,7 +27,7 @@
    ├ node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs                                                             1.0kb    0.1%
    ├ node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs                                                      1011b     0.1%
    ├ node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs                                                                  940b     0.1%
-   ├ src/utils/EventfulElement.js                                                                                                  822b     0.1%
+   ├ src/utils/EventfulElement.js                                                                                                  864b     0.1%
    ├ src/utils/FormidableElement.js                                                                                                624b     0.1%
    ├ src/utils/icons.js                                                                                                            579b     0.1%
    ├ src/utils/fetchWrapper.js                                                                                                     487b     0.1%
@@ -70,7 +70,7 @@
    ├ node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs                                                             1.0kb    0.1%
    ├ node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs                                                      1011b     0.1%
    ├ node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs                                                                  940b     0.1%
-   ├ src/utils/EventfulElement.js                                                                                                  822b     0.1%
+   ├ src/utils/EventfulElement.js                                                                                                  864b     0.1%
    ├ src/utils/FormidableElement.js                                                                                                624b     0.1%
    ├ src/utils/icons.js                                                                                                            579b     0.1%
    ├ src/utils/fetchWrapper.js                                                                                                     487b     0.1%
@@ -127,7 +127,7 @@
    ├ node_modules/@tiptap/extension-heading/dist/index.js                                                                          950b     0.2%
    ├ node_modules/@tiptap/extension-italic/dist/index.js                                                                           942b     0.2%
    ├ node_modules/@tiptap/extension-hard-break/dist/index.js                                                                       882b     0.2%
-   ├ src/utils/EventfulElement.js                                                                                                  822b     0.2%
+   ├ src/utils/EventfulElement.js                                                                                                  864b     0.2%
    ├ node_modules/@tiptap/extension-strike/dist/index.js                                                                           774b     0.1%
    ├ node_modules/@tiptap/extension-image/dist/index.js                                                                            728b     0.1%
    ├ node_modules/@tiptap/extension-code/dist/index.js                                                                             678b     0.1%
@@ -155,7 +155,7 @@
    ├ src/utils/hasBootstrap.js                                                                                                      30b     0.0%
    └ src/utils/isString.js                                                                                                          29b     0.0%
 
-  dist/tiptap-editor.raw.min.js                                                                                                  510.6kb  100.0%
+  dist/tiptap-editor.raw.min.js                                                                                                  510.7kb  100.0%
    ├ node_modules/prosemirror-view/dist/index.js                                                                                  91.5kb   17.9%
    ├ node_modules/@tiptap/core/dist/index.js                                                                                      57.8kb   11.3%
    ├ node_modules/prosemirror-model/dist/index.js                                                                                 42.8kb    8.4%
@@ -193,7 +193,7 @@
    ├ node_modules/@tiptap/extension-heading/dist/index.js                                                                          950b     0.2%
    ├ node_modules/@tiptap/extension-italic/dist/index.js                                                                           942b     0.2%
    ├ node_modules/@tiptap/extension-hard-break/dist/index.js                                                                       882b     0.2%
-   ├ src/utils/EventfulElement.js                                                                                                  822b     0.2%
+   ├ src/utils/EventfulElement.js                                                                                                  864b     0.2%
    ├ node_modules/@tiptap/extension-strike/dist/index.js                                                                           774b     0.1%
    ├ node_modules/@tiptap/extension-image/dist/index.js                                                                            728b     0.1%
    ├ node_modules/@tiptap/extension-code/dist/index.js                                                                             678b     0.1%
@@ -316,9 +316,9 @@
    ├ src/classes/tabulator/Format/formatters/button.js                                                                             879b     0.2%
    ├ node_modules/tabulator-tables/src/js/core/cell/CellComponent.js                                                               876b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/SelectRow/extensions/formatters/rowSelection.js                                  866b     0.2%
+   ├ src/utils/EventfulElement.js                                                                                                  864b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/inputMask.js                                                                862b     0.2%
    ├ node_modules/tabulator-tables/src/js/core/defaults/options.js                                                                 858b     0.2%
-   ├ src/utils/EventfulElement.js                                                                                                  822b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/link.js                                               820b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/GroupRows/GroupComponent.js                                                      806b     0.2%
    ├ src/classes/tabulator/optional.js                                                                                             806b     0.2%
@@ -429,7 +429,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/Export/defaults/columnLookups.js                                                  10b     0.0%
    └ node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js                                                      10b     0.0%
 
-  dist/tabulator-grid.raw.min.js                                                                                                 415.1kb  100.0%
+  dist/tabulator-grid.raw.min.js                                                                                                 415.2kb  100.0%
    ├ node_modules/tabulator-tables/src/js/core/RowManager.js                                                                      15.7kb    3.8%
    ├ node_modules/tabulator-tables/src/js/modules/Page/Page.js                                                                    15.0kb    3.6%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/List.js                                                                    14.5kb    3.5%
@@ -523,9 +523,9 @@
    ├ src/classes/tabulator/Format/formatters/button.js                                                                             879b     0.2%
    ├ node_modules/tabulator-tables/src/js/core/cell/CellComponent.js                                                               876b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/SelectRow/extensions/formatters/rowSelection.js                                  866b     0.2%
+   ├ src/utils/EventfulElement.js                                                                                                  864b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Edit/inputMask.js                                                                862b     0.2%
    ├ node_modules/tabulator-tables/src/js/core/defaults/options.js                                                                 858b     0.2%
-   ├ src/utils/EventfulElement.js                                                                                                  822b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/link.js                                               820b     0.2%
    ├ node_modules/tabulator-tables/src/js/modules/GroupRows/GroupComponent.js                                                      806b     0.2%
    ├ src/classes/tabulator/optional.js                                                                                             806b     0.2%
@@ -639,7 +639,7 @@
    ├ node_modules/intl-tel-input/build/js/intlTelInputWithUtils.js                                                               291.0kb   92.5%
    ├ src/css/tel-input.min.css                                                                                                    15.8kb    5.0%
    ├ src/classes/TelInput.js                                                                                                       2.8kb    0.9%
-   ├ src/utils/EventfulElement.js                                                                                                  822b     0.3%
+   ├ src/utils/EventfulElement.js                                                                                                  864b     0.3%
    ├ src/utils/FormidableElement.js                                                                                                624b     0.2%
    ├ src/tel-input.js                                                                                                              520b     0.2%
    ├ src/utils/fetchWrapper.js                                                                                                     487b     0.2%
@@ -660,7 +660,7 @@
   dist/tel-input.raw.min.js                                                                                                      298.1kb  100.0%
    ├ node_modules/intl-tel-input/build/js/intlTelInputWithUtils.js                                                               291.0kb   97.6%
    ├ src/classes/TelInput.js                                                                                                       2.8kb    0.9%
-   ├ src/utils/EventfulElement.js                                                                                                  822b     0.3%
+   ├ src/utils/EventfulElement.js                                                                                                  864b     0.3%
    ├ src/utils/FormidableElement.js                                                                                                624b     0.2%
    ├ src/utils/fetchWrapper.js                                                                                                     487b     0.2%
    ├ src/utils/fetchJson.js                                                                                                        407b     0.1%
@@ -762,7 +762,7 @@
    ├ src/input-mask.js                                                                                                              30b     0.0%
    └ src/utils/isString.js                                                                                                          29b     0.0%
 
-  dist/flatpickr-input.min.js                                                                                                     83.1kb  100.0%
+  dist/flatpickr-input.min.js                                                                                                     83.2kb  100.0%
    ├ node_modules/flatpickr/dist/esm/index.js                                                                                     41.1kb   49.4%
    ├ node_modules/flatpickr/dist/flatpickr.min.css                                                                                15.8kb   19.0%
    ├ node_modules/flatpickr/dist/plugins/monthSelect/index.js                                                                      5.4kb    6.5%
@@ -802,7 +802,7 @@
    ├ node_modules/tom-select/src/plugins/virtual_scroll/plugin.ts                                                                  1.7kb    2.3%
    ├ node_modules/tom-select/src/getSettings.ts                                                                                    1.5kb    2.0%
    ├ node_modules/tom-select/src/plugins/checkbox_options/plugin.ts                                                                1.3kb    1.7%
-   ├ src/classes/TomSelectElement.js                                                                                               1.2kb    1.7%
+   ├ src/classes/TomSelectElement.js                                                                                               1.3kb    1.7%
    ├ node_modules/tom-select/src/plugins/drag_drop/plugin.ts                                                                       1.2kb    1.6%
    ├ node_modules/tom-select/src/vanilla.ts                                                                                        1.1kb    1.5%
    ├ node_modules/tom-select/src/utils.ts                                                                                          1.0kb    1.4%
@@ -840,11 +840,11 @@
    ├ src/utils/getGlobalFn.js                                                                                                       50b     0.1%
    └ src/utils/isString.js                                                                                                          29b     0.0%
 
-  dist/squire-editor.min.js                                                                                                       68.5kb  100.0%
-   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                                                  50.6kb   73.9%
+  dist/squire-editor.min.js                                                                                                       68.6kb  100.0%
+   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                                                  50.6kb   73.8%
    ├ src/utils/bootstrap-icons.js                                                                                                  7.2kb   10.5%
    ├ src/classes/SquireEditor.js                                                                                                   6.4kb    9.4%
-   ├ src/utils/EventfulElement.js                                                                                                  822b     1.2%
+   ├ src/utils/EventfulElement.js                                                                                                  864b     1.2%
    ├ src/css/squire-editor.min.css                                                                                                 724b     1.0%
    ├ src/utils/FormidableElement.js                                                                                                624b     0.9%
    ├ src/utils/setHTML.js                                                                                                          320b     0.5%
@@ -866,7 +866,7 @@
    ├ node_modules/squire-rte/dist/squire-raw.mjs                                                                                  50.6kb   74.8%
    ├ src/utils/bootstrap-icons.js                                                                                                  7.2kb   10.6%
    ├ src/classes/SquireEditor.js                                                                                                   6.4kb    9.5%
-   ├ src/utils/EventfulElement.js                                                                                                  822b     1.2%
+   ├ src/utils/EventfulElement.js                                                                                                  864b     1.2%
    ├ src/utils/FormidableElement.js                                                                                                624b     0.9%
    ├ src/utils/setHTML.js                                                                                                          320b     0.5%
    ├ src/utils/simpleConfig.js                                                                                                     169b     0.2%
@@ -910,14 +910,14 @@
    ├ src/flatpickr-input.raw.js                                                                                                     35b     0.1%
    └ src/utils/isString.js                                                                                                          29b     0.0%
 
-  dist/tom-select.raw.min.js                                                                                                      59.0kb  100.0%
+  dist/tom-select.raw.min.js                                                                                                      59.1kb  100.0%
    ├ node_modules/tom-select/src/tom-select.ts                                                                                    26.1kb   44.1%
    ├ node_modules/@orchidjs/sifter/dist/umd/sifter.js                                                                              7.7kb   13.1%
    ├ node_modules/@orchidjs/unicode-variants/dist/umd/index.js                                                                     4.8kb    8.1%
    ├ node_modules/tom-select/src/plugins/virtual_scroll/plugin.ts                                                                  1.7kb    2.9%
    ├ node_modules/tom-select/src/getSettings.ts                                                                                    1.5kb    2.6%
    ├ node_modules/tom-select/src/plugins/checkbox_options/plugin.ts                                                                1.3kb    2.2%
-   ├ src/classes/TomSelectElement.js                                                                                               1.2kb    2.1%
+   ├ src/classes/TomSelectElement.js                                                                                               1.3kb    2.1%
    ├ node_modules/tom-select/src/plugins/drag_drop/plugin.ts                                                                       1.2kb    2.0%
    ├ node_modules/tom-select/src/vanilla.ts                                                                                        1.1kb    1.9%
    ├ node_modules/tom-select/src/utils.ts                                                                                          1.0kb    1.8%
@@ -1062,10 +1062,10 @@
    └ src/utils/isString.js                                                                                                          29b     0.2%
 
   dist/count-up.min.js                                                                                                             8.7kb  100.0%
-   ├ node_modules/countup.js/dist/countUp.min.js                                                                                   5.5kb   63.4%
-   ├ src/utils/EventfulElement.js                                                                                                  813b     9.1%
+   ├ node_modules/countup.js/dist/countUp.min.js                                                                                   5.5kb   63.1%
+   ├ src/utils/EventfulElement.js                                                                                                  855b     9.6%
    ├ src/classes/CountUpElement.js                                                                                                 801b     9.0%
-   ├ src/utils/FormidableElement.js                                                                                                610b     6.9%
+   ├ src/utils/FormidableElement.js                                                                                                610b     6.8%
    ├ src/utils/unformatNumber.js                                                                                                   244b     2.7%
    ├ src/utils/simpleConfig.js                                                                                                     167b     1.9%
    ├ src/utils/replaceCallbacks.js                                                                                                 155b     1.7%
@@ -1073,16 +1073,16 @@
    ├ src/utils/defaultLang.js                                                                                                       76b     0.9%
    ├ src/utils/parseBool.js                                                                                                         69b     0.8%
    ├ src/utils/defineEl.js                                                                                                          56b     0.6%
-   ├ src/utils/getGlobalFn.js                                                                                                       49b     0.6%
+   ├ src/utils/getGlobalFn.js                                                                                                       49b     0.5%
    ├ src/utils/isString.js                                                                                                          28b     0.3%
    ├ src/count-up.js                                                                                                                25b     0.3%
    └ src/utils/isUndefined.js                                                                                                       22b     0.2%
 
   dist/anchor-ed.min.js                                                                                                            7.6kb  100.0%
-   ├ src/classes/Anchored.js                                                                                                       6.0kb   78.9%
-   ├ src/utils/FormidableElement.js                                                                                                610b     7.9%
+   ├ src/classes/Anchored.js                                                                                                       6.0kb   79.0%
+   ├ src/utils/FormidableElement.js                                                                                                610b     7.8%
    ├ src/utils/props.js                                                                                                            270b     3.5%
-   ├ src/utils/simpleConfig.js                                                                                                     167b     2.2%
+   ├ src/utils/simpleConfig.js                                                                                                     167b     2.1%
    ├ src/utils/replaceCallbacks.js                                                                                                 155b     2.0%
    ├ src/utils/whenParsed.js                                                                                                       133b     1.7%
    ├ src/utils/reflectedProperties.js                                                                                              119b     1.5%
@@ -1117,11 +1117,11 @@
    └ src/utils/isString.js                                                                                                          28b     0.4%
 
   dist/progress-button.min.js                                                                                                      5.5kb  100.0%
-   ├ src/classes/ProgressButton.js                                                                                                 2.4kb   44.3%
-   ├ src/utils/EventfulElement.js                                                                                                  813b    14.6%
-   ├ src/utils/FormidableElement.js                                                                                                610b    10.9%
+   ├ src/classes/ProgressButton.js                                                                                                 2.4kb   44.0%
+   ├ src/utils/EventfulElement.js                                                                                                  855b    15.2%
+   ├ src/utils/FormidableElement.js                                                                                                610b    10.8%
    ├ src/utils/fetchWrapper.js                                                                                                     483b     8.6%
-   ├ src/utils/fetchJson.js                                                                                                        405b     7.3%
+   ├ src/utils/fetchJson.js                                                                                                        405b     7.2%
    ├ src/utils/simpleConfig.js                                                                                                     167b     3.0%
    ├ src/utils/replaceCallbacks.js                                                                                                 155b     2.8%
    ├ src/utils/formDataToObject.js                                                                                                 133b     2.4%
@@ -1161,11 +1161,11 @@
    └ src/format-date.js                                                                                                             27b     0.9%
 
   dist/clipboard-copy.min.js                                                                                                       2.3kb  100.0%
-   ├ src/classes/ClipboardCopy.js                                                                                                  1.1kb   46.9%
-   ├ src/utils/FormidableElement.js                                                                                                610b    26.2%
-   ├ src/utils/simpleConfig.js                                                                                                     167b     7.2%
-   ├ src/utils/replaceCallbacks.js                                                                                                 155b     6.6%
-   ├ src/utils/whenParsed.js                                                                                                       131b     5.6%
+   ├ src/classes/ClipboardCopy.js                                                                                                  1.1kb   47.9%
+   ├ src/utils/FormidableElement.js                                                                                                610b    25.7%
+   ├ src/utils/simpleConfig.js                                                                                                     167b     7.0%
+   ├ src/utils/replaceCallbacks.js                                                                                                 155b     6.5%
+   ├ src/utils/whenParsed.js                                                                                                       131b     5.5%
    ├ src/utils/defineEl.js                                                                                                          56b     2.4%
    ├ src/utils/getGlobalFn.js                                                                                                       49b     2.1%
    ├ src/clipboard-copy.js                                                                                                          30b     1.3%
@@ -1204,16 +1204,16 @@
    ├ src/utils/defineEl.js                                                                                                          56b     7.2%
    └ src/growing-textarea.js                                                                                                        32b     4.1%
 
+  dist/bound-input.min.js                                                                                                          591b   100.0%
+   ├ src/classes/BoundInput.js                                                                                                     496b    83.9%
+   ├ src/utils/defineEl.js                                                                                                          56b     9.5%
+   └ src/bound-input.js                                                                                                             27b     4.6%
+
   dist/hi-mark.raw.min.js                                                                                                          554b   100.0%
    ├ src/utils/LazyElement.js                                                                                                      241b    43.5%
    ├ src/classes/HiMark.js                                                                                                         222b    40.1%
    ├ src/utils/defineEl.js                                                                                                          56b    10.1%
    └ src/hi-mark.raw.js                                                                                                             23b     4.2%
-
-  dist/bound-input.min.js                                                                                                          549b   100.0%
-   ├ src/classes/BoundInput.js                                                                                                     454b    82.7%
-   ├ src/utils/defineEl.js                                                                                                          56b    10.2%
-   └ src/bound-input.js                                                                                                             27b     4.9%
 
   dist/locale-provider.min.js                                                                                                      377b   100.0%
    ├ src/classes/LocaleProvider.js                                                                                                 278b    73.7%
@@ -1224,8 +1224,8 @@
   dist\data-table.min.js         856.7kb
   dist\data-table.raw.min.js     819.8kb
   dist\tiptap-editor.min.js      511.8kb
-  dist\tiptap-editor.raw.min.js  510.6kb
+  dist\tiptap-editor.raw.min.js  510.7kb
   dist\tabulator-grid.min.js     464.2kb
   ...and 34 more output files...
 
-Done in 236ms
+Done in 151ms

@@ -53,6 +53,10 @@ class EventfulElement extends FormidableElement {
   }
 
   connectedCallback() {
+    // Use arrow function to make sure that the scope is always this
+    this.handleEvent = (ev) => {
+      this._handleEvent(ev);
+    };
     // Triggers parsedCallback()
     super.connectedCallback();
     this.events.forEach((t) => this.addEventListener(t, this));
@@ -66,12 +70,13 @@ class EventfulElement extends FormidableElement {
     }
   }
 
-  // Use arrow function to make sure that the scope is always this and cannot be rebound
+  // We cannot use handleEvent = (ev) => {} ... because we want to support safari 13
+  // see https://caniuse.com/mdn-javascript_classes_public_class_fields
   // Automatically call any $event method (don't use "on" as prefix as it will collide with existing handler)
-  handleEvent = (ev) => {
+  _handleEvent(ev) {
     this.trackFocus(ev);
     this[`$${ev.type}`](ev);
-  };
+  }
 
   disconnectedCallback() {
     if (this.lazy && this.config) {

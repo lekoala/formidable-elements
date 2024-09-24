@@ -399,6 +399,10 @@ class Anchored extends FormidableElement {
   }
 
   connected() {
+    // Use arrow function to make sure that the scope is always this
+    this.handleEvent = (ev) => {
+      this._handleEvent(ev);
+    };
     const target = this.anchorEl;
     if (!target) {
       console.error(`${this.anchor} is invalid`, this);
@@ -437,7 +441,7 @@ class Anchored extends FormidableElement {
    * Event handling can be left to anchored element for proper add/remove of listeners
    * @param {Event} ev
    */
-  handleEvent = (ev) => {
+  _handleEvent(ev) {
     this._updateZindex();
     if (this._handler && ev.currentTarget == this) {
       this._handler(ev, this.el, this);
@@ -445,7 +449,7 @@ class Anchored extends FormidableElement {
     if (this._anchorHandler && ev.currentTarget == this.anchorEl) {
       this._anchorHandler(ev, this.el, this);
     }
-  };
+  }
 
   reposition() {
     const el = this.el;

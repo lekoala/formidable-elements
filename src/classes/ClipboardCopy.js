@@ -19,7 +19,7 @@ class ClipboardCopy extends FormidableElement {
     this.errorMessage = this.dataset.error || "Failed to copy data to the clipboard";
   }
 
-  handleEvent = (ev) => {
+  _handleEvent(ev) {
     let text = this.dataset.value;
     // Get value from a form element instead (eg: a textarea)
     if (this.dataset.selector) {
@@ -30,9 +30,13 @@ class ClipboardCopy extends FormidableElement {
       text = input.value;
     }
     this.copyTextToClipboard(text);
-  };
+  }
 
   connected() {
+    // Use arrow function to make sure that the scope is always this
+    this.handleEvent = (ev) => {
+      this._handleEvent(ev);
+    };
     this.el.addEventListener("click", this);
   }
 

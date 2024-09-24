@@ -74,7 +74,7 @@
       "format": "esm"
     },
     "src/classes/Anchored.js": {
-      "bytes": 16699,
+      "bytes": 16835,
       "imports": [
         {
           "path": "src/utils/FormidableElement.js",
@@ -116,7 +116,7 @@
       "format": "esm"
     },
     "src/classes/BoundInput.js": {
-      "bytes": 904,
+      "bytes": 1040,
       "imports": [],
       "format": "esm"
     },
@@ -339,7 +339,7 @@
       "format": "esm"
     },
     "src/classes/ClipboardCopy.js": {
-      "bytes": 2375,
+      "bytes": 2511,
       "imports": [
         {
           "path": "src/utils/FormidableElement.js",
@@ -515,7 +515,7 @@
       "format": "esm"
     },
     "src/utils/EventfulElement.js": {
-      "bytes": 2192,
+      "bytes": 2397,
       "imports": [
         {
           "path": "src/utils/FormidableElement.js",
@@ -1495,7 +1495,7 @@
       "format": "esm"
     },
     "src/classes/FlatpickrInput.js": {
-      "bytes": 6511,
+      "bytes": 6649,
       "imports": [
         {
           "path": "node_modules/flatpickr/dist/esm/index.js",
@@ -6828,7 +6828,7 @@
       "format": "esm"
     },
     "src/classes/TomSelectElement.js": {
-      "bytes": 4046,
+      "bytes": 4094,
       "imports": [
         {
           "path": "node_modules/tom-select/src/tom-select.complete.ts",
@@ -6946,7 +6946,7 @@
           "bytesInOutput": 119
         },
         "src/classes/Anchored.js": {
-          "bytesInOutput": 6105
+          "bytesInOutput": 6147
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6955,7 +6955,7 @@
           "bytesInOutput": 27
         }
       },
-      "bytes": 7735
+      "bytes": 7777
     },
     "dist/bound-input.min.js": {
       "imports": [],
@@ -6963,7 +6963,7 @@
       "entryPoint": "src/bound-input.js",
       "inputs": {
         "src/classes/BoundInput.js": {
-          "bytesInOutput": 454
+          "bytesInOutput": 496
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -6972,7 +6972,7 @@
           "bytesInOutput": 27
         }
       },
-      "bytes": 549
+      "bytes": 591
     },
     "dist/bs-autocomplete.min.js": {
       "imports": [],
@@ -7177,7 +7177,7 @@
           "bytesInOutput": 610
         },
         "src/classes/ClipboardCopy.js": {
-          "bytesInOutput": 1094
+          "bytesInOutput": 1136
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -7186,7 +7186,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 2332
+      "bytes": 2374
     },
     "dist/coloris-input.min.js": {
       "imports": [],
@@ -7353,7 +7353,7 @@
           "bytesInOutput": 610
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 813
+          "bytesInOutput": 855
         },
         "src/utils/unformatNumber.js": {
           "bytesInOutput": 244
@@ -7377,7 +7377,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 8897
+      "bytes": 8939
     },
     "dist/data-table.min.js": {
       "imports": [],
@@ -7475,7 +7475,7 @@
           "bytesInOutput": 624
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 822
+          "bytesInOutput": 864
         },
         "src/utils/icons.js": {
           "bytesInOutput": 579
@@ -7526,7 +7526,7 @@
           "bytesInOutput": 71
         }
       },
-      "bytes": 877224
+      "bytes": 877266
     },
     "dist/data-table.raw.min.js": {
       "imports": [],
@@ -7624,7 +7624,7 @@
           "bytesInOutput": 624
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 822
+          "bytesInOutput": 864
         },
         "src/utils/icons.js": {
           "bytesInOutput": 579
@@ -7648,7 +7648,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 839433
+      "bytes": 839475
     },
     "dist/filepond-input.min.js": {
       "imports": [],
@@ -7834,7 +7834,7 @@
           "bytesInOutput": 42084
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 2346
+          "bytesInOutput": 2388
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7894,7 +7894,7 @@
           "bytesInOutput": 225
         }
       },
-      "bytes": 85145
+      "bytes": 85187
     },
     "dist/flatpickr-input.raw.min.js": {
       "imports": [],
@@ -7932,7 +7932,7 @@
           "bytesInOutput": 42084
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 2346
+          "bytesInOutput": 2388
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7980,7 +7980,7 @@
           "bytesInOutput": 35
         }
       },
-      "bytes": 65404
+      "bytes": 65446
     },
     "dist/floating-ui.min.js": {
       "imports": [],
@@ -8369,7 +8369,7 @@
           "bytesInOutput": 610
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 813
+          "bytesInOutput": 855
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
@@ -8393,7 +8393,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 5585
+      "bytes": 5627
     },
     "dist/squire-editor.min.js": {
       "imports": [
@@ -8428,7 +8428,7 @@
           "bytesInOutput": 624
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 822
+          "bytesInOutput": 864
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
@@ -8467,7 +8467,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 70185
+      "bytes": 70227
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -8502,7 +8502,7 @@
           "bytesInOutput": 624
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 822
+          "bytesInOutput": 864
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
@@ -8535,7 +8535,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 69279
+      "bytes": 69321
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -9216,7 +9216,7 @@
           "bytesInOutput": 624
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 822
+          "bytesInOutput": 864
         },
         "src/utils/parseBool.js": {
           "bytesInOutput": 70
@@ -9243,7 +9243,7 @@
           "bytesInOutput": 132
         }
       },
-      "bytes": 475343
+      "bytes": 475385
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -9845,7 +9845,7 @@
           "bytesInOutput": 624
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 822
+          "bytesInOutput": 864
         },
         "src/utils/parseBool.js": {
           "bytesInOutput": 70
@@ -9863,7 +9863,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 425109
+      "bytes": 425151
     },
     "dist/tel-input.min.js": {
       "imports": [],
@@ -9895,7 +9895,7 @@
           "bytesInOutput": 624
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 822
+          "bytesInOutput": 864
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
@@ -9931,7 +9931,7 @@
           "bytesInOutput": 520
         }
       },
-      "bytes": 322032
+      "bytes": 322074
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -9963,7 +9963,7 @@
           "bytesInOutput": 624
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 822
+          "bytesInOutput": 864
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
@@ -9993,7 +9993,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 305223
+      "bytes": 305265
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -10181,7 +10181,7 @@
           "bytesInOutput": 624
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 822
+          "bytesInOutput": 864
         },
         "src/utils/ce.js": {
           "bytesInOutput": 36
@@ -10223,7 +10223,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 524065
+      "bytes": 524107
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -10411,7 +10411,7 @@
           "bytesInOutput": 624
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 822
+          "bytesInOutput": 864
         },
         "src/utils/ce.js": {
           "bytesInOutput": 36
@@ -10447,7 +10447,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 522899
+      "bytes": 522941
     },
     "dist/tom-select.min.js": {
       "imports": [],
@@ -10572,7 +10572,7 @@
           "bytesInOutput": 407
         },
         "src/classes/TomSelectElement.js": {
-          "bytesInOutput": 1257
+          "bytesInOutput": 1299
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -10587,7 +10587,7 @@
           "bytesInOutput": 122
         }
       },
-      "bytes": 76060
+      "bytes": 76102
     },
     "dist/tom-select.raw.min.js": {
       "imports": [],
@@ -10712,7 +10712,7 @@
           "bytesInOutput": 407
         },
         "src/classes/TomSelectElement.js": {
-          "bytesInOutput": 1257
+          "bytesInOutput": 1299
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -10721,7 +10721,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 60454
+      "bytes": 60496
     }
   }
 }

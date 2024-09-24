@@ -166,6 +166,11 @@ class FlatpickrInput extends FormidableElement {
   }
 
   init() {
+    // Use arrow function to make sure that the scope is always this
+    this.handleEvent = (ev) => {
+      this._handleEvent(ev);
+    };
+
     const input = this.el;
 
     /**
@@ -182,7 +187,7 @@ class FlatpickrInput extends FormidableElement {
     });
   }
 
-  handleEvent = (ev) => {
+  _handleEvent(ev) {
     const d = this.flatpickr.selectedDates[0] || null;
 
     let v = "";
@@ -203,7 +208,7 @@ class FlatpickrInput extends FormidableElement {
         detail: v,
       })
     );
-  };
+  }
 
   _setRange(d) {
     // range management
