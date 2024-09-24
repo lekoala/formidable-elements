@@ -211,3 +211,7 @@ This can be fixed by using bash as script shell if you have git for windows inst
 Revert if needed
 
     npm config delete script-shell
+
+## Credits
+
+This project is tested with BrowserStack
