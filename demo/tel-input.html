@@ -16,17 +16,20 @@
             alert('JavaScript error: ' + message + ' on line ' + linenumber + ' for ' + url);
         }
     </script>
-    
+
     <script type="module" src="./assets/demo.js"></script>
 
-    <script type="module" src="../dist/locale-provider.min.js"></script>
+    <!-- <script type="module" src="../dist/locale-provider.min.js"></script> -->
     <script type="module">
-        customElements.get('locale-provider').set('tel-input', 'default', {
-            be: "Belgique"
-        });
+        let provider = customElements.get('locale-provider');
+        if(provider) {
+            provider.set('tel-input', 'default', {
+                be: "Belgique"
+            });
+        }
     </script>
     <script type="module" src="../dist/tel-input.min.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/npm/pop-modal-dialog/pop-modal.styled.min.js"></script>
+    <!-- <script type="module" src="https://cdn.jsdelivr.net/npm/pop-modal-dialog/pop-modal.styled.min.js"></script> -->
 
     <script type="module">
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
