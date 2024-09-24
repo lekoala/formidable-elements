@@ -215,3 +215,5 @@ Revert if needed
 ## Credits
 
 This project is tested with BrowserStack
+
+Thanks to all original creators of the underlying libraries
