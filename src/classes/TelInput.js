@@ -207,7 +207,10 @@ class TelInput extends EventfulElement {
       this.config
     );
 
-    console.log(systemLocale, this.config);
+    // Check country is defined
+    if (this.config.countryOrder[0] === undefined) {
+      delete this.config.countryOrder[0];
+    }
 
     // Provide a cached ip lookup
     if (this.config.initialCountry == "auto" && !this.config.geoIpLookup) {

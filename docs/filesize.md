@@ -638,7 +638,7 @@
   dist/tel-input.min.js                                                                                                          314.6kb  100.0%
    ├ node_modules/intl-tel-input/build/js/intlTelInputWithUtils.js                                                               291.0kb   92.5%
    ├ src/css/tel-input.min.css                                                                                                    15.8kb    5.0%
-   ├ src/classes/TelInput.js                                                                                                       2.8kb    0.9%
+   ├ src/classes/TelInput.js                                                                                                       2.9kb    0.9%
    ├ src/utils/EventfulElement.js                                                                                                  864b     0.3%
    ├ src/utils/FormidableElement.js                                                                                                624b     0.2%
    ├ src/tel-input.js                                                                                                              520b     0.2%
@@ -657,9 +657,9 @@
    ├ src/utils/getGlobalFn.js                                                                                                       50b     0.0%
    └ src/utils/isString.js                                                                                                          29b     0.0%
 
-  dist/tel-input.raw.min.js                                                                                                      298.1kb  100.0%
+  dist/tel-input.raw.min.js                                                                                                      298.2kb  100.0%
    ├ node_modules/intl-tel-input/build/js/intlTelInputWithUtils.js                                                               291.0kb   97.6%
-   ├ src/classes/TelInput.js                                                                                                       2.8kb    1.0%
+   ├ src/classes/TelInput.js                                                                                                       2.9kb    1.0%
    ├ src/utils/EventfulElement.js                                                                                                  864b     0.3%
    ├ src/utils/FormidableElement.js                                                                                                624b     0.2%
    ├ src/utils/fetchWrapper.js                                                                                                     487b     0.2%
@@ -1228,4 +1228,4 @@
   dist\tabulator-grid.min.js     464.2kb
   ...and 34 more output files...
 
-Done in 162ms
+Done in 229ms
