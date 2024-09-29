@@ -79,12 +79,13 @@ class TelInput extends EventfulElement {
     this._updateHiddenValue();
     this._updateValidation();
 
+    // This breaks ios 18
     // show formatted value
-    if (this._isValid()) {
-      if (!this.dataset.keepFormat) {
-        this.iti.setNumber(this.iti.getNumber());
-      }
-    }
+    // if (this._isValid()) {
+    //   if (!this.dataset.keepFormat) {
+    //     this.iti.setNumber(this.iti.getNumber());
+    //   }
+    // }
 
     // Show filled
     if (this.value) {
@@ -128,11 +129,12 @@ class TelInput extends EventfulElement {
   }
 
   _isValid() {
-    // since 20.x, by default, calling isValidNumber will now default to mobile-only mode (it will only return true for valid mobile numbers),
-    // which means it will be much more accurate - if you don't want this, you can pass false as an argument e.g. isValidNumber(false)
-
-    // @ts-ignore
-    return this.iti.isValidNumber(false);
+    // New option validationNumberType which defaults to "MOBILE" - 
+    // this determines the number type to enforce during validation 
+    // with isValidNumber, as well as the number length to enforce with strictMode. 
+    // This replaces the mobileOnly argument which you could previously pass 
+    // to isValidNumber.
+    return this.iti.isValidNumber();
   }
 
   _updateHiddenValue() {
