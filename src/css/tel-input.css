@@ -240,13 +240,10 @@
     width: var(--iti-flag-width);
     border-radius: 1px;
     box-shadow: 0px 0px 1px 0px #888;
+    background-image: var(--iti-path-flags-1x);
     background-repeat: no-repeat;
     background-position: var(--iti-flag-offset) 0;
     background-size: var(--iti-flag-sprite-width) var(--iti-flag-sprite-height);
-  }
-
-  .iti--show-flags .iti__flag {
-    background-image: var(--iti-path-flags-1x);
   }
 
   .iti__ac {
@@ -1234,7 +1231,7 @@
   }
 
   @media (min-resolution: 2x) {
-    .iti--show-flags .iti__flag {
+    .iti__flag {
       background-image: var(--iti-path-flags-2x);
     }
 
