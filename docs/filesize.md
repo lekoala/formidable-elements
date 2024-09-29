@@ -1228,4 +1228,4 @@
   dist\tabulator-grid.min.js     464.2kb
   ...and 34 more output files...
 
-Done in 142ms
+Done in 128ms

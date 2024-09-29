@@ -5333,7 +5333,7 @@
       "format": "esm"
     },
     "src/css/tel-input.min.css": {
-      "bytes": 16149,
+      "bytes": 16143,
       "imports": []
     },
     "src/tel-input.js": {
@@ -9922,7 +9922,7 @@
           "bytesInOutput": 60
         },
         "src/css/tel-input.min.css": {
-          "bytesInOutput": 16159
+          "bytesInOutput": 16153
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 159
@@ -9931,7 +9931,7 @@
           "bytesInOutput": 520
         }
       },
-      "bytes": 322146
+      "bytes": 322140
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
