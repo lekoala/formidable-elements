@@ -12,13 +12,13 @@
   "dependencies": {
     "@floating-ui/dom": "^1.6.11",
     "@melloware/coloris": "^0.24.0",
-    "@tiptap/core": "^2.7.2",
-    "@tiptap/extension-image": "^2.7.2",
-    "@tiptap/extension-link": "^2.7.2",
-    "@tiptap/extension-typography": "^2.7.2",
-    "@tiptap/extension-underline": "^2.7.2",
-    "@tiptap/pm": "^2.7.2",
-    "@tiptap/starter-kit": "^2.7.2",
+    "@tiptap/core": "^2.7.4",
+    "@tiptap/extension-image": "^2.7.4",
+    "@tiptap/extension-link": "^2.7.4",
+    "@tiptap/extension-typography": "^2.7.4",
+    "@tiptap/extension-underline": "^2.7.4",
+    "@tiptap/pm": "^2.7.4",
+    "@tiptap/starter-kit": "^2.7.4",
     "bootstrap5-autocomplete": "^1.1.31",
     "bootstrap5-tags": "^1.7.5",
     "cleave-es6": "^1.0.6",
@@ -26,7 +26,7 @@
     "datatables.net": "^2.1.7",
     "datatables.net-bs5": "^2.1.7",
     "datatables.net-buttons-bs5": "^3.1.2",
-    "datatables.net-fixedcolumns-bs5": "^5.0.0",
+    "datatables.net-fixedcolumns-bs5": "^5.0.2",
     "datatables.net-fixedheader-bs5": "^4.0.1",
     "datatables.net-responsive-bs5": "^3.0.3",
     "datatables.net-rowgroup-bs5": "^1.5.0",
@@ -55,6 +55,9 @@
   },
   "overrides": {
     "semver": "^7.5.3"
+  },
+  "resolutions": {
+    "prosemirror-model": "1.9.1"
   },
   "keywords": [
     "form",

@@ -120,6 +120,8 @@ const resizeObserver = new ResizeObserver((entries) => {
 });
 
 /**
+ * Warning: loading prose mirror is tricky
+ * https://github.com/ueberdosis/tiptap/issues/577
  */
 class TiptapEditor extends EventfulElement {
   /**
