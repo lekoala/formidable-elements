@@ -107,6 +107,12 @@
             </tel-input>
         </div>
         <div class="mb-3">
+            <label for="provided_phone" class="form-label">My invalid phone (provided number)</label>
+            <tel-input data-allow-invalid-value="true">
+                <input type="text" id="provided_phone" name="provided_phone" value="+32 (0)3 200 11" class="form-control">
+            </tel-input>
+        </div>
+        <div class="mb-3">
             <label for="mobile_phone_intl" class="form-label">My mobile phone (international display format)</label>
             <tel-input data-update-on-input="true" data-config='{"nationalMode": false}'><!-- type is auto detected -->
                 <input type="tel" id="mphone" name="mobile_phone_intl" class="form-control">

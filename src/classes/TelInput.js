@@ -12,6 +12,9 @@ import isRTL from "../utils/isRTL.js";
 
 const name = "tel-input";
 
+const HAS_VALUE_CLASS = "has-value";
+const IS_INVALID_CLASS = "is-invalid";
+
 class TelInput extends EventfulElement {
   /**
    * @returns {HTMLInputElement}
@@ -89,9 +92,9 @@ class TelInput extends EventfulElement {
 
     // Show filled
     if (this.value) {
-      this.classList.add("has-value");
+      this.classList.add(HAS_VALUE_CLASS);
     } else {
-      this.classList.remove("has-value");
+      this.classList.remove(HAS_VALUE_CLASS);
     }
   }
 
@@ -101,7 +104,7 @@ class TelInput extends EventfulElement {
       return;
     }
     const v = this.el.value;
-    this.el.parentElement.classList.remove("is-invalid");
+    this.el.parentElement.classList.remove(HAS_VALUE_CLASS);
     if (!v) {
       return;
     }
@@ -111,7 +114,7 @@ class TelInput extends EventfulElement {
     });
     if (!this._isValid()) {
       const errCode = this.iti.getValidationError();
-      this.el.parentElement.classList.add("is-invalid");
+      this.el.parentElement.classList.add(HAS_VALUE_CLASS);
       let found = false;
       spans.forEach((span) => {
         if (parseInt(span.dataset.code) == errCode) {
@@ -129,10 +132,10 @@ class TelInput extends EventfulElement {
   }
 
   _isValid() {
-    // New option validationNumberType which defaults to "MOBILE" - 
-    // this determines the number type to enforce during validation 
-    // with isValidNumber, as well as the number length to enforce with strictMode. 
-    // This replaces the mobileOnly argument which you could previously pass 
+    // New option validationNumberType which defaults to "MOBILE" -
+    // this determines the number type to enforce during validation
+    // with isValidNumber, as well as the number length to enforce with strictMode.
+    // This replaces the mobileOnly argument which you could previously pass
     // to isValidNumber.
     return this.iti.isValidNumber();
   }
@@ -153,9 +156,14 @@ class TelInput extends EventfulElement {
         dataformat = 3;
         break;
     }
+
     let v = "";
     if (this._isValid()) {
       v = this.iti.getNumber(dataformat);
+    }
+    // Restore original value if could not been formatted
+    if (!v && (this.el.value == this.dataset.originalValue || this.dataset.allowInvalidValue === "true")) {
+      v = this.el.value;
     }
     this.hiddenInput.setAttribute("value", v);
 
@@ -193,6 +201,7 @@ class TelInput extends EventfulElement {
         countrySearch: fs,
         fixDropdownWidth: false,
         useFullscreenPopup: fs,
+        validationNumberType: "FIXED_LINE_OR_MOBILE",
         // see v22 Dropped showSelectedDialCode in favour of new separateDialCode option
         // showSelectedDialCode: true, // required when showFlags is false
         separateDialCode: false,
@@ -252,7 +261,9 @@ class TelInput extends EventfulElement {
 
     // init value
     if (this.value) {
-      this.classList.add("has-value");
+      this.classList.add(HAS_VALUE_CLASS);
+      this.dataset.originalValue = this.value;
+      this._updateHiddenValue();
     }
   }
 
