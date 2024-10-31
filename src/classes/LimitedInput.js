@@ -45,7 +45,7 @@ class LimitedInput extends HTMLElement {
   handleEvent = (ev = null) => {
     const el = this.el;
     if (el instanceof HTMLInputElement) {
-      if (this.hasAttribute("source") && this.source) {
+      if (this.hasAttribute("source") && this.source && ev.type === "keyup") {
         el.value = this.source.value;
       }
       if (this.hasAttribute("lower")) {
