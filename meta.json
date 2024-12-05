@@ -137,7 +137,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-      "bytes": 35886,
+      "bytes": 37853,
       "imports": [],
       "format": "esm"
     },
@@ -184,7 +184,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags.js": {
-      "bytes": 77809,
+      "bytes": 78018,
       "imports": [],
       "format": "esm"
     },
@@ -613,7 +613,7 @@
       "format": "cjs"
     },
     "node_modules/datatables.net/js/dataTables.mjs": {
-      "bytes": 362817,
+      "bytes": 362773,
       "imports": [
         {
           "path": "node_modules/jquery/dist/jquery.js",
@@ -676,6 +676,44 @@
       ],
       "format": "esm"
     },
+    "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+      "bytes": 351780,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+      "bytes": 2276,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-fixedheader/node_modules/datatables.net/js/dataTables.mjs": {
+      "bytes": 351780,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        }
+      ],
+      "format": "esm"
+    },
     "node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs": {
       "bytes": 29433,
       "imports": [
@@ -685,7 +723,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net/js/dataTables.mjs",
+          "path": "node_modules/datatables.net-fixedheader/node_modules/datatables.net/js/dataTables.mjs",
           "kind": "import-statement",
           "original": "datatables.net"
         }
@@ -701,7 +739,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
+          "path": "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
           "kind": "import-statement",
           "original": "datatables.net-bs5"
         },
@@ -714,7 +752,7 @@
       "format": "esm"
     },
     "node_modules/datatables.net-buttons/js/dataTables.buttons.mjs": {
-      "bytes": 63854,
+      "bytes": 66398,
       "imports": [
         {
           "path": "node_modules/jquery/dist/jquery.js",
@@ -730,7 +768,7 @@
       "format": "esm"
     },
     "node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs": {
-      "bytes": 1640,
+      "bytes": 1554,
       "imports": [
         {
           "path": "node_modules/jquery/dist/jquery.js",
@@ -750,6 +788,44 @@
       ],
       "format": "esm"
     },
+    "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+      "bytes": 362817,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+      "bytes": 2659,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-responsive/node_modules/datatables.net/js/dataTables.mjs": {
+      "bytes": 362817,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        }
+      ],
+      "format": "esm"
+    },
     "node_modules/datatables.net-responsive/js/dataTables.responsive.mjs": {
       "bytes": 45537,
       "imports": [
@@ -759,7 +835,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net/js/dataTables.mjs",
+          "path": "node_modules/datatables.net-responsive/node_modules/datatables.net/js/dataTables.mjs",
           "kind": "import-statement",
           "original": "datatables.net"
         }
@@ -775,7 +851,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
+          "path": "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
           "kind": "import-statement",
           "original": "datatables.net-bs5"
         },
@@ -824,6 +900,44 @@
       ],
       "format": "esm"
     },
+    "node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+      "bytes": 362817,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+      "bytes": 2659,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        },
+        {
+          "path": "node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs",
+          "kind": "import-statement",
+          "original": "datatables.net"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/datatables.net-select/node_modules/datatables.net/js/dataTables.mjs": {
+      "bytes": 362817,
+      "imports": [
+        {
+          "path": "node_modules/jquery/dist/jquery.js",
+          "kind": "import-statement",
+          "original": "jquery"
+        }
+      ],
+      "format": "esm"
+    },
     "node_modules/datatables.net-select/js/dataTables.select.mjs": {
       "bytes": 44325,
       "imports": [
@@ -833,7 +947,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net/js/dataTables.mjs",
+          "path": "node_modules/datatables.net-select/node_modules/datatables.net/js/dataTables.mjs",
           "kind": "import-statement",
           "original": "datatables.net"
         }
@@ -849,7 +963,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
+          "path": "node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
           "kind": "import-statement",
           "original": "datatables.net-bs5"
         },
@@ -963,7 +1077,7 @@
       "imports": []
     },
     "node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css": {
-      "bytes": 7980,
+      "bytes": 7900,
       "imports": []
     },
     "node_modules/datatables.net-fixedcolumns-bs5/css/fixedColumns.bootstrap5.min.css": {
@@ -1068,7 +1182,7 @@
       "format": "esm"
     },
     "node_modules/filepond/dist/filepond.esm.js": {
-      "bytes": 295246,
+      "bytes": 295547,
       "imports": [],
       "format": "esm"
     },
@@ -1189,7 +1303,7 @@
       "format": "esm"
     },
     "node_modules/filepond/dist/filepond.min.css": {
-      "bytes": 17465,
+      "bytes": 17463,
       "imports": []
     },
     "node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.min.css": {
@@ -1500,25 +1614,30 @@
       ],
       "format": "esm"
     },
-    "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
+    "node_modules/@floating-ui/core/node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
       "bytes": 4071,
       "imports": [],
       "format": "esm"
     },
     "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
-      "bytes": 34697,
+      "bytes": 34837,
       "imports": [
         {
-          "path": "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
+          "path": "node_modules/@floating-ui/core/node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
           "kind": "import-statement",
           "original": "@floating-ui/utils"
         },
         {
-          "path": "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
+          "path": "node_modules/@floating-ui/core/node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
           "kind": "import-statement",
           "original": "@floating-ui/utils"
         }
       ],
+      "format": "esm"
+    },
+    "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
+      "bytes": 4071,
+      "imports": [],
       "format": "esm"
     },
     "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs": {
@@ -1527,7 +1646,7 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-      "bytes": 25042,
+      "bytes": 25502,
       "imports": [
         {
           "path": "node_modules/@floating-ui/core/dist/floating-ui.core.mjs",
@@ -2306,7 +2425,7 @@
       "format": "esm"
     },
     "src/classes/LimitedInput.js": {
-      "bytes": 2324,
+      "bytes": 2347,
       "imports": [
         {
           "path": "src/utils/whenParsed.js",
@@ -5163,7 +5282,7 @@
       "format": "esm"
     },
     "node_modules/intl-tel-input/build/js/intlTelInputWithUtils.js": {
-      "bytes": 436470,
+      "bytes": 438180,
       "imports": [],
       "format": "cjs"
     },
@@ -5264,8 +5383,8 @@
       "imports": [],
       "format": "esm"
     },
-    "node_modules/prosemirror-model/dist/index.js": {
-      "bytes": 122705,
+    "node_modules/prosemirror-state/node_modules/prosemirror-model/dist/index.js": {
+      "bytes": 121075,
       "imports": [
         {
           "path": "node_modules/orderedmap/dist/index.js",
@@ -5275,11 +5394,11 @@
       ],
       "format": "esm"
     },
-    "node_modules/prosemirror-transform/dist/index.js": {
-      "bytes": 79701,
+    "node_modules/prosemirror-state/node_modules/prosemirror-transform/dist/index.js": {
+      "bytes": 78052,
       "imports": [
         {
-          "path": "node_modules/prosemirror-model/dist/index.js",
+          "path": "node_modules/prosemirror-state/node_modules/prosemirror-model/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-model"
         }
@@ -5290,12 +5409,12 @@
       "bytes": 36248,
       "imports": [
         {
-          "path": "node_modules/prosemirror-model/dist/index.js",
+          "path": "node_modules/prosemirror-state/node_modules/prosemirror-model/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-model"
         },
         {
-          "path": "node_modules/prosemirror-transform/dist/index.js",
+          "path": "node_modules/prosemirror-state/node_modules/prosemirror-transform/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-transform"
         }
@@ -5313,8 +5432,30 @@
       ],
       "format": "esm"
     },
+    "node_modules/prosemirror-model/dist/index.js": {
+      "bytes": 123105,
+      "imports": [
+        {
+          "path": "node_modules/orderedmap/dist/index.js",
+          "kind": "import-statement",
+          "original": "orderedmap"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/prosemirror-transform/dist/index.js": {
+      "bytes": 81572,
+      "imports": [
+        {
+          "path": "node_modules/prosemirror-model/dist/index.js",
+          "kind": "import-statement",
+          "original": "prosemirror-model"
+        }
+      ],
+      "format": "esm"
+    },
     "node_modules/prosemirror-view/dist/index.js": {
-      "bytes": 237342,
+      "bytes": 239538,
       "imports": [
         {
           "path": "node_modules/prosemirror-state/dist/index.js",
@@ -5400,7 +5541,7 @@
       "format": "esm"
     },
     "node_modules/prosemirror-commands/dist/index.js": {
-      "bytes": 34016,
+      "bytes": 34318,
       "imports": [
         {
           "path": "node_modules/prosemirror-transform/dist/index.js",
@@ -5431,16 +5572,49 @@
       ],
       "format": "esm"
     },
+    "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
+      "bytes": 121816,
+      "imports": [
+        {
+          "path": "node_modules/orderedmap/dist/index.js",
+          "kind": "import-statement",
+          "original": "orderedmap"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/dist/index.js": {
+      "bytes": 79607,
+      "imports": [
+        {
+          "path": "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js",
+          "kind": "import-statement",
+          "original": "prosemirror-model"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/prosemirror-schema-list/node_modules/prosemirror-model/dist/index.js": {
+      "bytes": 122705,
+      "imports": [
+        {
+          "path": "node_modules/orderedmap/dist/index.js",
+          "kind": "import-statement",
+          "original": "orderedmap"
+        }
+      ],
+      "format": "esm"
+    },
     "node_modules/prosemirror-schema-list/dist/index.js": {
       "bytes": 12496,
       "imports": [
         {
-          "path": "node_modules/prosemirror-transform/dist/index.js",
+          "path": "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-transform"
         },
         {
-          "path": "node_modules/prosemirror-model/dist/index.js",
+          "path": "node_modules/prosemirror-schema-list/node_modules/prosemirror-model/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-model"
         },
@@ -5464,7 +5638,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/core/dist/index.js": {
-      "bytes": 185742,
+      "bytes": 192172,
       "imports": [
         {
           "path": "node_modules/@tiptap/pm/state/dist/index.js",
@@ -5549,7 +5723,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-italic/dist/index.js": {
-      "bytes": 2618,
+      "bytes": 2756,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5560,7 +5734,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-bold/dist/index.js": {
-      "bytes": 2694,
+      "bytes": 2830,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5604,7 +5778,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-code/dist/index.js": {
-      "bytes": 1765,
+      "bytes": 2101,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5630,6 +5804,28 @@
       ],
       "format": "esm"
     },
+    "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
+      "bytes": 121075,
+      "imports": [
+        {
+          "path": "node_modules/orderedmap/dist/index.js",
+          "kind": "import-statement",
+          "original": "orderedmap"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/dist/index.js": {
+      "bytes": 78052,
+      "imports": [
+        {
+          "path": "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js",
+          "kind": "import-statement",
+          "original": "prosemirror-model"
+        }
+      ],
+      "format": "esm"
+    },
     "node_modules/prosemirror-dropcursor/dist/index.js": {
       "bytes": 5767,
       "imports": [
@@ -5639,7 +5835,7 @@
           "original": "prosemirror-state"
         },
         {
-          "path": "node_modules/prosemirror-transform/dist/index.js",
+          "path": "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-transform"
         }
@@ -5674,7 +5870,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-hard-break/dist/index.js": {
-      "bytes": 2332,
+      "bytes": 2364,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5689,6 +5885,28 @@
       "imports": [],
       "format": "esm"
     },
+    "node_modules/prosemirror-history/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
+      "bytes": 121816,
+      "imports": [
+        {
+          "path": "node_modules/orderedmap/dist/index.js",
+          "kind": "import-statement",
+          "original": "orderedmap"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/prosemirror-history/node_modules/prosemirror-transform/dist/index.js": {
+      "bytes": 79607,
+      "imports": [
+        {
+          "path": "node_modules/prosemirror-history/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js",
+          "kind": "import-statement",
+          "original": "prosemirror-model"
+        }
+      ],
+      "format": "esm"
+    },
     "node_modules/prosemirror-history/dist/index.js": {
       "bytes": 18242,
       "imports": [
@@ -5698,7 +5916,7 @@
           "original": "rope-sequence"
         },
         {
-          "path": "node_modules/prosemirror-transform/dist/index.js",
+          "path": "node_modules/prosemirror-history/node_modules/prosemirror-transform/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-transform"
         },
@@ -5754,7 +5972,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-bullet-list/dist/index.js": {
-      "bytes": 4542,
+      "bytes": 2359,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5776,7 +5994,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-ordered-list/dist/index.js": {
-      "bytes": 5554,
+      "bytes": 3371,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -5803,7 +6021,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/extension-link/dist/index.js": {
-      "bytes": 14176,
+      "bytes": 16024,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -6067,26 +6285,74 @@
       "imports": [],
       "format": "esm"
     },
-    "node_modules/@orchidjs/sifter/dist/umd/sifter.js": {
-      "bytes": 29391,
+    "node_modules/@orchidjs/unicode-variants/dist/esm/regex.js": {
+      "bytes": 1875,
       "imports": [],
-      "format": "cjs"
+      "format": "esm"
     },
-    "node_modules/@orchidjs/unicode-variants/dist/umd/index.js": {
-      "bytes": 17097,
+    "node_modules/@orchidjs/unicode-variants/dist/esm/strings.js": {
+      "bytes": 710,
       "imports": [],
-      "format": "cjs"
+      "format": "esm"
     },
-    "node_modules/@orchidjs/sifter/lib/utils.ts": {
-      "bytes": 2358,
+    "node_modules/@orchidjs/unicode-variants/dist/esm/index.js": {
+      "bytes": 12443,
       "imports": [
         {
-          "path": "node_modules/@orchidjs/unicode-variants/dist/umd/index.js",
+          "path": "node_modules/@orchidjs/unicode-variants/dist/esm/regex.js",
+          "kind": "import-statement",
+          "original": "./regex.js"
+        },
+        {
+          "path": "node_modules/@orchidjs/unicode-variants/dist/esm/strings.js",
+          "kind": "import-statement",
+          "original": "./strings.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@orchidjs/sifter/dist/esm/utils.js": {
+      "bytes": 2370,
+      "imports": [
+        {
+          "path": "node_modules/@orchidjs/unicode-variants/dist/esm/index.js",
+          "kind": "import-statement",
+          "original": "@orchidjs/unicode-variants"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@orchidjs/sifter/dist/esm/types.js": {
+      "bytes": 44,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/@orchidjs/sifter/dist/esm/sifter.js": {
+      "bytes": 10439,
+      "imports": [
+        {
+          "path": "node_modules/@orchidjs/sifter/dist/esm/utils.js",
+          "kind": "import-statement",
+          "original": "./utils.js"
+        },
+        {
+          "path": "node_modules/@orchidjs/unicode-variants/dist/esm/index.js",
           "kind": "import-statement",
           "original": "@orchidjs/unicode-variants"
         },
         {
-          "path": "./types",
+          "path": "node_modules/@orchidjs/sifter/dist/esm/types.js",
+          "kind": "import-statement",
+          "original": "./types.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/tom-select/src/utils.ts": {
+      "bytes": 4980,
+      "imports": [
+        {
+          "path": "./types/index.ts",
           "kind": "import-statement",
           "external": true
         }
@@ -6094,23 +6360,23 @@
       "format": "esm"
     },
     "node_modules/tom-select/src/vanilla.ts": {
-      "bytes": 4208,
+      "bytes": 4187,
       "imports": [
         {
-          "path": "node_modules/@orchidjs/sifter/lib/utils.ts",
+          "path": "node_modules/tom-select/src/utils.ts",
           "kind": "import-statement",
-          "original": "@orchidjs/sifter/lib/utils"
+          "original": "./utils.ts"
         }
       ],
       "format": "esm"
     },
     "node_modules/tom-select/src/contrib/highlight.ts": {
-      "bytes": 2286,
+      "bytes": 2289,
       "imports": [
         {
           "path": "node_modules/tom-select/src/vanilla.ts",
           "kind": "import-statement",
-          "original": "../vanilla"
+          "original": "../vanilla.ts"
         }
       ],
       "format": "esm"
@@ -6125,47 +6391,26 @@
       "imports": [],
       "format": "esm"
     },
-    "node_modules/tom-select/src/utils.ts": {
-      "bytes": 4524,
-      "imports": [
-        {
-          "path": "./tom-select",
-          "kind": "import-statement",
-          "external": true
-        },
-        {
-          "path": "./types/index",
-          "kind": "import-statement",
-          "external": true
-        }
-      ],
-      "format": "esm"
-    },
     "node_modules/tom-select/src/getSettings.ts": {
-      "bytes": 5144,
+      "bytes": 5111,
       "imports": [
         {
           "path": "node_modules/tom-select/src/defaults.ts",
           "kind": "import-statement",
-          "original": "./defaults"
+          "original": "./defaults.ts"
         },
         {
           "path": "node_modules/tom-select/src/utils.ts",
           "kind": "import-statement",
-          "original": "./utils"
+          "original": "./utils.ts"
         },
         {
-          "path": "./types/index",
+          "path": "./types/index.ts",
           "kind": "import-statement",
           "external": true
         },
         {
-          "path": "node_modules/@orchidjs/sifter/lib/utils.ts",
-          "kind": "import-statement",
-          "original": "@orchidjs/sifter/lib/utils"
-        },
-        {
-          "path": "./types/index",
+          "path": "./types/index.ts",
           "kind": "import-statement",
           "external": true
         }
@@ -6173,97 +6418,92 @@
       "format": "esm"
     },
     "node_modules/tom-select/src/tom-select.ts": {
-      "bytes": 66505,
+      "bytes": 66530,
       "imports": [
         {
           "path": "node_modules/tom-select/src/contrib/microevent.ts",
           "kind": "import-statement",
-          "original": "./contrib/microevent"
+          "original": "./contrib/microevent.ts"
         },
         {
           "path": "node_modules/tom-select/src/contrib/microplugin.ts",
           "kind": "import-statement",
-          "original": "./contrib/microplugin"
+          "original": "./contrib/microplugin.ts"
         },
         {
-          "path": "node_modules/@orchidjs/sifter/dist/umd/sifter.js",
+          "path": "node_modules/@orchidjs/sifter/dist/esm/sifter.js",
           "kind": "import-statement",
           "original": "@orchidjs/sifter"
         },
         {
-          "path": "node_modules/@orchidjs/unicode-variants/dist/umd/index.js",
+          "path": "node_modules/@orchidjs/unicode-variants/dist/esm/index.js",
           "kind": "import-statement",
           "original": "@orchidjs/unicode-variants"
         },
         {
-          "path": "./types/index",
+          "path": "./types/index.ts",
           "kind": "import-statement",
           "external": true
         },
         {
           "path": "node_modules/tom-select/src/contrib/highlight.ts",
           "kind": "import-statement",
-          "original": "./contrib/highlight"
+          "original": "./contrib/highlight.ts"
         },
         {
           "path": "node_modules/tom-select/src/constants.ts",
           "kind": "import-statement",
-          "original": "./constants"
+          "original": "./constants.ts"
         },
         {
           "path": "node_modules/tom-select/src/getSettings.ts",
           "kind": "import-statement",
-          "original": "./getSettings"
+          "original": "./getSettings.ts"
         },
         {
           "path": "node_modules/tom-select/src/utils.ts",
           "kind": "import-statement",
-          "original": "./utils"
+          "original": "./utils.ts"
         },
         {
           "path": "node_modules/tom-select/src/vanilla.ts",
           "kind": "import-statement",
-          "original": "./vanilla"
+          "original": "./vanilla.ts"
         }
       ],
       "format": "esm"
     },
     "node_modules/tom-select/src/plugins/change_listener/plugin.ts": {
-      "bytes": 814,
+      "bytes": 825,
       "imports": [
-        {
-          "path": "../../tom-select",
-          "kind": "import-statement",
-          "external": true
-        },
         {
           "path": "node_modules/tom-select/src/utils.ts",
           "kind": "import-statement",
-          "original": "../../utils"
+          "original": "../../utils.ts"
         }
       ],
       "format": "esm"
     },
     "node_modules/tom-select/src/plugins/checkbox_options/plugin.ts": {
-      "bytes": 3859,
+      "bytes": 3952,
       "imports": [
         {
-          "path": "../../tom-select",
+          "path": "../../types/index.ts",
           "kind": "import-statement",
           "external": true
         },
         {
           "path": "node_modules/tom-select/src/utils.ts",
           "kind": "import-statement",
-          "original": "../../utils"
+          "original": "../../utils.ts"
         },
         {
           "path": "node_modules/tom-select/src/vanilla.ts",
           "kind": "import-statement",
-          "original": "../../vanilla"
+          "original": "../../vanilla.ts"
         },
         {
-          "path": "./types",
+          "path": "./types.ts",
           "kind": "import-statement",
           "external": true
         }
@@ -6271,20 +6511,15 @@
       "format": "esm"
     },
     "node_modules/tom-select/src/plugins/clear_button/plugin.ts": {
-      "bytes": 1428,
+      "bytes": 1442,
       "imports": [
-        {
-          "path": "../../tom-select",
-          "kind": "import-statement",
-          "external": true
-        },
         {
           "path": "node_modules/tom-select/src/vanilla.ts",
           "kind": "import-statement",
-          "original": "../../vanilla"
+          "original": "../../vanilla.ts"
         },
         {
-          "path": "./types",
+          "path": "./types.ts",
           "kind": "import-statement",
           "external": true
         }
@@ -6292,51 +6527,41 @@
       "format": "esm"
     },
     "node_modules/tom-select/src/plugins/drag_drop/plugin.ts": {
-      "bytes": 3732,
+      "bytes": 3749,
       "imports": [
         {
-          "path": "../../tom-select",
-          "kind": "import-statement",
-          "external": true
-        },
-        {
-          "path": "../../types/index",
+          "path": "../../types/index.ts",
           "kind": "import-statement",
           "external": true
         },
         {
           "path": "node_modules/tom-select/src/utils.ts",
           "kind": "import-statement",
-          "original": "../../utils"
+          "original": "../../utils.ts"
         },
         {
           "path": "node_modules/tom-select/src/vanilla.ts",
           "kind": "import-statement",
-          "original": "../../vanilla"
+          "original": "../../vanilla.ts"
         }
       ],
       "format": "esm"
     },
     "node_modules/tom-select/src/plugins/dropdown_header/plugin.ts": {
-      "bytes": 1781,
+      "bytes": 1798,
       "imports": [
-        {
-          "path": "../../tom-select",
-          "kind": "import-statement",
-          "external": true
-        },
         {
           "path": "node_modules/tom-select/src/vanilla.ts",
           "kind": "import-statement",
-          "original": "../../vanilla"
+          "original": "../../vanilla.ts"
         },
         {
           "path": "node_modules/tom-select/src/utils.ts",
           "kind": "import-statement",
-          "original": "../../utils"
+          "original": "../../utils.ts"
         },
         {
-          "path": "./types",
+          "path": "./types.ts",
           "kind": "import-statement",
           "external": true
         }
@@ -6344,131 +6569,94 @@
       "format": "esm"
     },
     "node_modules/tom-select/src/plugins/caret_position/plugin.ts": {
-      "bytes": 2088,
+      "bytes": 2099,
       "imports": [
-        {
-          "path": "../../tom-select",
-          "kind": "import-statement",
-          "external": true
-        },
         {
           "path": "node_modules/tom-select/src/vanilla.ts",
           "kind": "import-statement",
-          "original": "../../vanilla"
+          "original": "../../vanilla.ts"
         }
       ],
       "format": "esm"
     },
     "node_modules/tom-select/src/plugins/dropdown_input/plugin.ts": {
-      "bytes": 2874,
+      "bytes": 2891,
       "imports": [
-        {
-          "path": "../../tom-select",
-          "kind": "import-statement",
-          "external": true
-        },
         {
           "path": "node_modules/tom-select/src/constants.ts",
           "kind": "import-statement",
-          "original": "../../constants"
+          "original": "../../constants.ts"
         },
         {
           "path": "node_modules/tom-select/src/vanilla.ts",
           "kind": "import-statement",
-          "original": "../../vanilla"
+          "original": "../../vanilla.ts"
         },
         {
           "path": "node_modules/tom-select/src/utils.ts",
           "kind": "import-statement",
-          "original": "../../utils"
+          "original": "../../utils.ts"
         }
       ],
       "format": "esm"
     },
     "node_modules/tom-select/src/plugins/input_autogrow/plugin.ts": {
-      "bytes": 1712,
+      "bytes": 1723,
       "imports": [
-        {
-          "path": "../../tom-select",
-          "kind": "import-statement",
-          "external": true
-        },
         {
           "path": "node_modules/tom-select/src/utils.ts",
           "kind": "import-statement",
-          "original": "../../utils"
+          "original": "../../utils.ts"
         }
       ],
       "format": "esm"
     },
     "node_modules/tom-select/src/plugins/no_backspace_delete/plugin.ts": {
-      "bytes": 929,
-      "imports": [
-        {
-          "path": "../../tom-select",
-          "kind": "import-statement",
-          "external": true
-        }
-      ],
+      "bytes": 937,
+      "imports": [],
       "format": "esm"
     },
     "node_modules/tom-select/src/plugins/no_active_items/plugin.ts": {
-      "bytes": 780,
-      "imports": [
-        {
-          "path": "../../tom-select",
-          "kind": "import-statement",
-          "external": true
-        }
-      ],
+      "bytes": 788,
+      "imports": [],
       "format": "esm"
     },
     "node_modules/tom-select/src/plugins/optgroup_columns/plugin.ts": {
-      "bytes": 1706,
+      "bytes": 1720,
       "imports": [
-        {
-          "path": "../../tom-select",
-          "kind": "import-statement",
-          "external": true
-        },
         {
           "path": "node_modules/tom-select/src/constants.ts",
           "kind": "import-statement",
-          "original": "../../constants"
+          "original": "../../constants.ts"
         },
         {
           "path": "node_modules/tom-select/src/vanilla.ts",
           "kind": "import-statement",
-          "original": "../../vanilla"
+          "original": "../../vanilla.ts"
         }
       ],
       "format": "esm"
     },
     "node_modules/tom-select/src/plugins/remove_button/plugin.ts": {
-      "bytes": 2224,
+      "bytes": 2244,
       "imports": [
-        {
-          "path": "../../tom-select",
-          "kind": "import-statement",
-          "external": true
-        },
         {
           "path": "node_modules/tom-select/src/vanilla.ts",
           "kind": "import-statement",
-          "original": "../../vanilla"
+          "original": "../../vanilla.ts"
         },
         {
           "path": "node_modules/tom-select/src/utils.ts",
           "kind": "import-statement",
-          "original": "../../utils"
+          "original": "../../utils.ts"
         },
         {
-          "path": "../../types/index",
+          "path": "../../types/index.ts",
           "kind": "import-statement",
           "external": true
         },
         {
-          "path": "./types",
+          "path": "./types.ts",
           "kind": "import-statement",
           "external": true
         }
@@ -6476,15 +6664,10 @@
       "format": "esm"
     },
     "node_modules/tom-select/src/plugins/restore_on_backspace/plugin.ts": {
-      "bytes": 1276,
+      "bytes": 1287,
       "imports": [
         {
-          "path": "../../tom-select",
-          "kind": "import-statement",
-          "external": true
-        },
-        {
-          "path": "../../types/index",
+          "path": "../../types/index.ts",
           "kind": "import-statement",
           "external": true
         }
@@ -6492,103 +6675,98 @@
       "format": "esm"
     },
     "node_modules/tom-select/src/plugins/virtual_scroll/plugin.ts": {
-      "bytes": 5750,
+      "bytes": 5764,
       "imports": [
         {
-          "path": "../../tom-select",
-          "kind": "import-statement",
-          "external": true
-        },
-        {
-          "path": "../../types/index",
+          "path": "../../types/index.ts",
           "kind": "import-statement",
           "external": true
         },
         {
           "path": "node_modules/tom-select/src/vanilla.ts",
           "kind": "import-statement",
-          "original": "../../vanilla"
+          "original": "../../vanilla.ts"
         }
       ],
       "format": "esm"
     },
     "node_modules/tom-select/src/tom-select.complete.ts": {
-      "bytes": 1703,
+      "bytes": 1748,
       "imports": [
         {
           "path": "node_modules/tom-select/src/tom-select.ts",
           "kind": "import-statement",
-          "original": "./tom-select"
+          "original": "./tom-select.ts"
         },
         {
           "path": "node_modules/tom-select/src/plugins/change_listener/plugin.ts",
           "kind": "import-statement",
-          "original": "./plugins/change_listener/plugin"
+          "original": "./plugins/change_listener/plugin.ts"
         },
         {
           "path": "node_modules/tom-select/src/plugins/checkbox_options/plugin.ts",
           "kind": "import-statement",
-          "original": "./plugins/checkbox_options/plugin"
+          "original": "./plugins/checkbox_options/plugin.ts"
         },
         {
           "path": "node_modules/tom-select/src/plugins/clear_button/plugin.ts",
           "kind": "import-statement",
-          "original": "./plugins/clear_button/plugin"
+          "original": "./plugins/clear_button/plugin.ts"
         },
         {
           "path": "node_modules/tom-select/src/plugins/drag_drop/plugin.ts",
           "kind": "import-statement",
-          "original": "./plugins/drag_drop/plugin"
+          "original": "./plugins/drag_drop/plugin.ts"
         },
         {
           "path": "node_modules/tom-select/src/plugins/dropdown_header/plugin.ts",
           "kind": "import-statement",
-          "original": "./plugins/dropdown_header/plugin"
+          "original": "./plugins/dropdown_header/plugin.ts"
         },
         {
           "path": "node_modules/tom-select/src/plugins/caret_position/plugin.ts",
           "kind": "import-statement",
-          "original": "./plugins/caret_position/plugin"
+          "original": "./plugins/caret_position/plugin.ts"
         },
         {
           "path": "node_modules/tom-select/src/plugins/dropdown_input/plugin.ts",
           "kind": "import-statement",
-          "original": "./plugins/dropdown_input/plugin"
+          "original": "./plugins/dropdown_input/plugin.ts"
         },
         {
           "path": "node_modules/tom-select/src/plugins/input_autogrow/plugin.ts",
           "kind": "import-statement",
-          "original": "./plugins/input_autogrow/plugin"
+          "original": "./plugins/input_autogrow/plugin.ts"
         },
         {
           "path": "node_modules/tom-select/src/plugins/no_backspace_delete/plugin.ts",
           "kind": "import-statement",
-          "original": "./plugins/no_backspace_delete/plugin"
+          "original": "./plugins/no_backspace_delete/plugin.ts"
         },
         {
           "path": "node_modules/tom-select/src/plugins/no_active_items/plugin.ts",
           "kind": "import-statement",
-          "original": "./plugins/no_active_items/plugin"
+          "original": "./plugins/no_active_items/plugin.ts"
         },
         {
           "path": "node_modules/tom-select/src/plugins/optgroup_columns/plugin.ts",
           "kind": "import-statement",
-          "original": "./plugins/optgroup_columns/plugin"
+          "original": "./plugins/optgroup_columns/plugin.ts"
         },
         {
           "path": "node_modules/tom-select/src/plugins/remove_button/plugin.ts",
           "kind": "import-statement",
-          "original": "./plugins/remove_button/plugin"
+          "original": "./plugins/remove_button/plugin.ts"
         },
         {
           "path": "node_modules/tom-select/src/plugins/restore_on_backspace/plugin.ts",
           "kind": "import-statement",
-          "original": "./plugins/restore_on_backspace/plugin"
+          "original": "./plugins/restore_on_backspace/plugin.ts"
         },
         {
           "path": "node_modules/tom-select/src/plugins/virtual_scroll/plugin.ts",
           "kind": "import-statement",
-          "original": "./plugins/virtual_scroll/plugin"
+          "original": "./plugins/virtual_scroll/plugin.ts"
         }
       ],
       "format": "esm"
@@ -6640,7 +6818,7 @@
       "format": "esm"
     },
     "node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css": {
-      "bytes": 15345,
+      "bytes": 15382,
       "imports": []
     },
     "src/tom-select.js": {
@@ -6751,7 +6929,7 @@
       "entryPoint": "src/bs-autocomplete.js",
       "inputs": {
         "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-          "bytesInOutput": 15154
+          "bytesInOutput": 15387
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6784,7 +6962,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 16968
+      "bytes": 17201
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -6792,7 +6970,7 @@
       "entryPoint": "src/bs-tags.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 28931
+          "bytesInOutput": 29002
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6831,7 +7009,7 @@
           "bytesInOutput": 42
         }
       },
-      "bytes": 32028
+      "bytes": 32099
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -6839,7 +7017,7 @@
       "entryPoint": "src/bs-tags.raw.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 28931
+          "bytesInOutput": 29002
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6872,7 +7050,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 30677
+      "bytes": 30748
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -7156,49 +7334,76 @@
       "entryPoint": "src/data-table.js",
       "inputs": {
         "node_modules/jquery/dist/jquery.js": {
-          "bytesInOutput": 88067
+          "bytesInOutput": 88476
         },
         "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
-          "bytesInOutput": 935
+          "bytesInOutput": 940
         },
         "node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 96046
+          "bytesInOutput": 96059
         },
         "node_modules/datatables.net-fixedcolumns-bs5/js/fixedColumns.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
         "node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs": {
-          "bytesInOutput": 7731
+          "bytesInOutput": 7729
         },
         "node_modules/datatables.net-fixedheader-bs5/js/fixedHeader.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
+        "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+          "bytesInOutput": 1065
+        },
+        "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92544
+        },
         "node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs": {
-          "bytesInOutput": 11903
+          "bytesInOutput": 11910
+        },
+        "node_modules/datatables.net-fixedheader/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92544
         },
         "node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs": {
-          "bytesInOutput": 1034
+          "bytesInOutput": 969
         },
         "node_modules/datatables.net-buttons/js/dataTables.buttons.mjs": {
-          "bytesInOutput": 26901
+          "bytesInOutput": 28150
         },
         "node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs": {
           "bytesInOutput": 1011
         },
+        "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+          "bytesInOutput": 940
+        },
+        "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 96189
+        },
         "node_modules/datatables.net-responsive/js/dataTables.responsive.mjs": {
-          "bytesInOutput": 15721
+          "bytesInOutput": 15820
+        },
+        "node_modules/datatables.net-responsive/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 96189
         },
         "node_modules/datatables.net-rowgroup-bs5/js/rowGroup.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
         "node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs": {
-          "bytesInOutput": 3639
+          "bytesInOutput": 3650
         },
         "node_modules/datatables.net-select-bs5/js/select.bootstrap5.mjs": {
           "bytesInOutput": 64
         },
+        "node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+          "bytesInOutput": 940
+        },
+        "node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 96189
+        },
         "node_modules/datatables.net-select/js/dataTables.select.mjs": {
-          "bytesInOutput": 18168
+          "bytesInOutput": 18203
+        },
+        "node_modules/datatables.net-select/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 96189
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7243,7 +7448,7 @@
           "bytesInOutput": 15079
         },
         "node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css": {
-          "bytesInOutput": 7999
+          "bytesInOutput": 7919
         },
         "node_modules/datatables.net-fixedcolumns-bs5/css/fixedColumns.bootstrap5.min.css": {
           "bytesInOutput": 3363
@@ -7270,7 +7475,7 @@
           "bytesInOutput": 71
         }
       },
-      "bytes": 316889
+      "bytes": 892457
     },
     "dist/data-table.raw.min.js": {
       "imports": [],
@@ -7278,49 +7483,76 @@
       "entryPoint": "src/data-table.raw.js",
       "inputs": {
         "node_modules/jquery/dist/jquery.js": {
-          "bytesInOutput": 88067
+          "bytesInOutput": 88476
         },
         "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
-          "bytesInOutput": 935
+          "bytesInOutput": 940
         },
         "node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 96046
+          "bytesInOutput": 96059
         },
         "node_modules/datatables.net-fixedcolumns-bs5/js/fixedColumns.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
         "node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs": {
-          "bytesInOutput": 7731
+          "bytesInOutput": 7729
         },
         "node_modules/datatables.net-fixedheader-bs5/js/fixedHeader.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
+        "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+          "bytesInOutput": 1065
+        },
+        "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92544
+        },
         "node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs": {
-          "bytesInOutput": 11903
+          "bytesInOutput": 11910
+        },
+        "node_modules/datatables.net-fixedheader/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 92544
         },
         "node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs": {
-          "bytesInOutput": 1034
+          "bytesInOutput": 969
         },
         "node_modules/datatables.net-buttons/js/dataTables.buttons.mjs": {
-          "bytesInOutput": 26901
+          "bytesInOutput": 28150
         },
         "node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs": {
           "bytesInOutput": 1011
         },
+        "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+          "bytesInOutput": 940
+        },
+        "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 96189
+        },
         "node_modules/datatables.net-responsive/js/dataTables.responsive.mjs": {
-          "bytesInOutput": 15721
+          "bytesInOutput": 15820
+        },
+        "node_modules/datatables.net-responsive/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 96189
         },
         "node_modules/datatables.net-rowgroup-bs5/js/rowGroup.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
         "node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs": {
-          "bytesInOutput": 3639
+          "bytesInOutput": 3650
         },
         "node_modules/datatables.net-select-bs5/js/select.bootstrap5.mjs": {
           "bytesInOutput": 64
         },
+        "node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
+          "bytesInOutput": 940
+        },
+        "node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 96189
+        },
         "node_modules/datatables.net-select/js/dataTables.select.mjs": {
-          "bytesInOutput": 18168
+          "bytesInOutput": 18203
+        },
+        "node_modules/datatables.net-select/node_modules/datatables.net/js/dataTables.mjs": {
+          "bytesInOutput": 96189
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7365,7 +7597,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 279372
+      "bytes": 855020
     },
     "dist/filepond-input.min.js": {
       "imports": [],
@@ -7373,7 +7605,7 @@
       "entryPoint": "src/filepond-input.js",
       "inputs": {
         "node_modules/filepond/dist/filepond.esm.js": {
-          "bytesInOutput": 101013
+          "bytesInOutput": 101151
         },
         "node_modules/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.esm.js": {
           "bytesInOutput": 1766
@@ -7430,7 +7662,7 @@
           "bytesInOutput": 60
         },
         "node_modules/filepond/dist/filepond.min.css": {
-          "bytesInOutput": 17475
+          "bytesInOutput": 17473
         },
         "node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.min.css": {
           "bytesInOutput": 2698
@@ -7445,7 +7677,7 @@
           "bytesInOutput": 64
         }
       },
-      "bytes": 189876
+      "bytes": 190012
     },
     "dist/filepond-input.raw.min.js": {
       "imports": [],
@@ -7453,7 +7685,7 @@
       "entryPoint": "src/filepond-input.raw.js",
       "inputs": {
         "node_modules/filepond/dist/filepond.esm.js": {
-          "bytesInOutput": 101013
+          "bytesInOutput": 101151
         },
         "node_modules/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.esm.js": {
           "bytesInOutput": 1766
@@ -7513,7 +7745,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 166197
+      "bytes": 166335
     },
     "dist/flatpickr-input.min.js": {
       "imports": [],
@@ -7704,17 +7936,20 @@
       "exports": [],
       "entryPoint": "src/floating-ui.js",
       "inputs": {
-        "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
-          "bytesInOutput": 1438
+        "node_modules/@floating-ui/core/node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
+          "bytesInOutput": 1397
         },
         "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
-          "bytesInOutput": 7079
+          "bytesInOutput": 7106
+        },
+        "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
+          "bytesInOutput": 72
         },
         "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs": {
           "bytesInOutput": 2325
         },
         "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-          "bytesInOutput": 6593
+          "bytesInOutput": 6731
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7756,7 +7991,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 24151
+      "bytes": 24347
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -8031,7 +8266,7 @@
           "bytesInOutput": 131
         },
         "src/classes/LimitedInput.js": {
-          "bytesInOutput": 1151
+          "bytesInOutput": 1169
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -8040,7 +8275,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 1379
+      "bytes": 1397
     },
     "dist/locale-provider.min.js": {
       "imports": [],
@@ -9585,7 +9820,7 @@
       "entryPoint": "src/tel-input.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInputWithUtils.js": {
-          "bytesInOutput": 298030
+          "bytesInOutput": 300049
         },
         "src/classes/TelInput.js": {
           "bytesInOutput": 3064
@@ -9645,7 +9880,7 @@
           "bytesInOutput": 520
         }
       },
-      "bytes": 322198
+      "bytes": 324217
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -9653,7 +9888,7 @@
       "entryPoint": "src/tel-input.raw.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInputWithUtils.js": {
-          "bytesInOutput": 298030
+          "bytesInOutput": 300049
         },
         "src/classes/TelInput.js": {
           "bytesInOutput": 3064
@@ -9707,7 +9942,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 305440
+      "bytes": 307459
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -9715,22 +9950,28 @@
       "entryPoint": "src/tiptap-editor.js",
       "inputs": {
         "node_modules/orderedmap/dist/index.js": {
-          "bytesInOutput": 1439
+          "bytesInOutput": 1456
         },
-        "node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 43853
+        "node_modules/prosemirror-state/node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 24431
         },
-        "node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 29463
+        "node_modules/prosemirror-state/node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 26203
         },
         "node_modules/prosemirror-state/dist/index.js": {
-          "bytesInOutput": 11827
+          "bytesInOutput": 11831
         },
         "node_modules/@tiptap/pm/state/dist/index.js": {
           "bytesInOutput": 0
         },
+        "node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 43950
+        },
+        "node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 30360
+        },
         "node_modules/prosemirror-view/dist/index.js": {
-          "bytesInOutput": 93662
+          "bytesInOutput": 94741
         },
         "node_modules/@tiptap/pm/view/dist/index.js": {
           "bytesInOutput": 0
@@ -9751,19 +9992,28 @@
           "bytesInOutput": 0
         },
         "node_modules/prosemirror-commands/dist/index.js": {
-          "bytesInOutput": 9374
+          "bytesInOutput": 9445
         },
         "node_modules/@tiptap/pm/commands/dist/index.js": {
           "bytesInOutput": 0
         },
+        "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 23263
+        },
+        "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 13246
+        },
+        "node_modules/prosemirror-schema-list/node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 23494
+        },
         "node_modules/prosemirror-schema-list/dist/index.js": {
-          "bytesInOutput": 2463
+          "bytesInOutput": 2471
         },
         "node_modules/@tiptap/pm/schema-list/dist/index.js": {
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 59260
+          "bytesInOutput": 60754
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -9778,25 +10028,31 @@
           "bytesInOutput": 950
         },
         "node_modules/@tiptap/extension-italic/dist/index.js": {
-          "bytesInOutput": 942
+          "bytesInOutput": 1008
         },
         "node_modules/@tiptap/extension-bold/dist/index.js": {
-          "bytesInOutput": 1011
+          "bytesInOutput": 1075
         },
         "node_modules/@tiptap/extension-strike/dist/index.js": {
-          "bytesInOutput": 774
+          "bytesInOutput": 775
         },
         "node_modules/@tiptap/extension-underline/dist/index.js": {
-          "bytesInOutput": 596
+          "bytesInOutput": 597
         },
         "node_modules/@tiptap/extension-blockquote/dist/index.js": {
           "bytesInOutput": 598
         },
         "node_modules/@tiptap/extension-code/dist/index.js": {
-          "bytesInOutput": 678
+          "bytesInOutput": 640
         },
         "node_modules/@tiptap/extension-code-block/dist/index.js": {
           "bytesInOutput": 2668
+        },
+        "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 23263
+        },
+        "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 11931
         },
         "node_modules/prosemirror-dropcursor/dist/index.js": {
           "bytesInOutput": 2909
@@ -9808,10 +10064,16 @@
           "bytesInOutput": 152
         },
         "node_modules/@tiptap/extension-hard-break/dist/index.js": {
-          "bytesInOutput": 882
+          "bytesInOutput": 906
         },
         "node_modules/rope-sequence/dist/index.js": {
-          "bytesInOutput": 3394
+          "bytesInOutput": 3412
+        },
+        "node_modules/prosemirror-history/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 23280
+        },
+        "node_modules/prosemirror-history/node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 12832
         },
         "node_modules/prosemirror-history/dist/index.js": {
           "bytesInOutput": 5744
@@ -9826,13 +10088,13 @@
           "bytesInOutput": 1013
         },
         "node_modules/@tiptap/extension-bullet-list/dist/index.js": {
-          "bytesInOutput": 1929
+          "bytesInOutput": 1045
         },
         "node_modules/@tiptap/extension-list-item/dist/index.js": {
           "bytesInOutput": 494
         },
         "node_modules/@tiptap/extension-ordered-list/dist/index.js": {
-          "bytesInOutput": 2342
+          "bytesInOutput": 1458
         },
         "node_modules/@tiptap/extension-typography/dist/index.js": {
           "bytesInOutput": 3076
@@ -9841,7 +10103,7 @@
           "bytesInOutput": 19436
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 4221
+          "bytesInOutput": 5049
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -9907,7 +10169,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 330827
+      "bytes": 515633
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -9915,22 +10177,28 @@
       "entryPoint": "src/tiptap-editor.raw.js",
       "inputs": {
         "node_modules/orderedmap/dist/index.js": {
-          "bytesInOutput": 1439
+          "bytesInOutput": 1456
         },
-        "node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 43853
+        "node_modules/prosemirror-state/node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 24431
         },
-        "node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 29463
+        "node_modules/prosemirror-state/node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 26203
         },
         "node_modules/prosemirror-state/dist/index.js": {
-          "bytesInOutput": 11827
+          "bytesInOutput": 11831
         },
         "node_modules/@tiptap/pm/state/dist/index.js": {
           "bytesInOutput": 0
         },
+        "node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 43950
+        },
+        "node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 30360
+        },
         "node_modules/prosemirror-view/dist/index.js": {
-          "bytesInOutput": 93662
+          "bytesInOutput": 94741
         },
         "node_modules/@tiptap/pm/view/dist/index.js": {
           "bytesInOutput": 0
@@ -9951,19 +10219,28 @@
           "bytesInOutput": 0
         },
         "node_modules/prosemirror-commands/dist/index.js": {
-          "bytesInOutput": 9374
+          "bytesInOutput": 9445
         },
         "node_modules/@tiptap/pm/commands/dist/index.js": {
           "bytesInOutput": 0
         },
+        "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 23263
+        },
+        "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 13246
+        },
+        "node_modules/prosemirror-schema-list/node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 23494
+        },
         "node_modules/prosemirror-schema-list/dist/index.js": {
-          "bytesInOutput": 2463
+          "bytesInOutput": 2471
         },
         "node_modules/@tiptap/pm/schema-list/dist/index.js": {
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 59260
+          "bytesInOutput": 60754
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -9978,25 +10255,31 @@
           "bytesInOutput": 950
         },
         "node_modules/@tiptap/extension-italic/dist/index.js": {
-          "bytesInOutput": 942
+          "bytesInOutput": 1008
         },
         "node_modules/@tiptap/extension-bold/dist/index.js": {
-          "bytesInOutput": 1011
+          "bytesInOutput": 1075
         },
         "node_modules/@tiptap/extension-strike/dist/index.js": {
-          "bytesInOutput": 774
+          "bytesInOutput": 775
         },
         "node_modules/@tiptap/extension-underline/dist/index.js": {
-          "bytesInOutput": 596
+          "bytesInOutput": 597
         },
         "node_modules/@tiptap/extension-blockquote/dist/index.js": {
           "bytesInOutput": 598
         },
         "node_modules/@tiptap/extension-code/dist/index.js": {
-          "bytesInOutput": 678
+          "bytesInOutput": 640
         },
         "node_modules/@tiptap/extension-code-block/dist/index.js": {
           "bytesInOutput": 2668
+        },
+        "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 23263
+        },
+        "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 11931
         },
         "node_modules/prosemirror-dropcursor/dist/index.js": {
           "bytesInOutput": 2909
@@ -10008,10 +10291,16 @@
           "bytesInOutput": 152
         },
         "node_modules/@tiptap/extension-hard-break/dist/index.js": {
-          "bytesInOutput": 882
+          "bytesInOutput": 906
         },
         "node_modules/rope-sequence/dist/index.js": {
-          "bytesInOutput": 3394
+          "bytesInOutput": 3412
+        },
+        "node_modules/prosemirror-history/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
+          "bytesInOutput": 23280
+        },
+        "node_modules/prosemirror-history/node_modules/prosemirror-transform/dist/index.js": {
+          "bytesInOutput": 12832
         },
         "node_modules/prosemirror-history/dist/index.js": {
           "bytesInOutput": 5744
@@ -10026,13 +10315,13 @@
           "bytesInOutput": 1013
         },
         "node_modules/@tiptap/extension-bullet-list/dist/index.js": {
-          "bytesInOutput": 1929
+          "bytesInOutput": 1045
         },
         "node_modules/@tiptap/extension-list-item/dist/index.js": {
           "bytesInOutput": 494
         },
         "node_modules/@tiptap/extension-ordered-list/dist/index.js": {
-          "bytesInOutput": 2342
+          "bytesInOutput": 1458
         },
         "node_modules/@tiptap/extension-typography/dist/index.js": {
           "bytesInOutput": 3076
@@ -10041,7 +10330,7 @@
           "bytesInOutput": 19436
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 4221
+          "bytesInOutput": 5049
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -10101,48 +10390,54 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 329661
+      "bytes": 514467
     },
     "dist/tom-select.min.js": {
       "imports": [],
       "exports": [],
       "entryPoint": "src/tom-select.js",
       "inputs": {
-        "node_modules/@orchidjs/sifter/dist/umd/sifter.js": {
-          "bytesInOutput": 7896
-        },
-        "node_modules/@orchidjs/unicode-variants/dist/umd/index.js": {
-          "bytesInOutput": 4904
-        },
         "node_modules/tom-select/src/contrib/microevent.ts": {
-          "bytesInOutput": 470
+          "bytesInOutput": 469
         },
         "node_modules/tom-select/src/contrib/microplugin.ts": {
           "bytesInOutput": 837
         },
-        "node_modules/tom-select/src/tom-select.ts": {
-          "bytesInOutput": 26685
+        "node_modules/@orchidjs/unicode-variants/dist/esm/regex.js": {
+          "bytesInOutput": 458
         },
-        "node_modules/@orchidjs/sifter/lib/utils.ts": {
-          "bytesInOutput": 116
+        "node_modules/@orchidjs/unicode-variants/dist/esm/strings.js": {
+          "bytesInOutput": 198
+        },
+        "node_modules/@orchidjs/unicode-variants/dist/esm/index.js": {
+          "bytesInOutput": 3792
+        },
+        "node_modules/@orchidjs/sifter/dist/esm/utils.js": {
+          "bytesInOutput": 560
+        },
+        "node_modules/@orchidjs/sifter/dist/esm/sifter.js": {
+          "bytesInOutput": 2587
+        },
+        "node_modules/tom-select/src/utils.ts": {
+          "bytesInOutput": 1158
         },
         "node_modules/tom-select/src/vanilla.ts": {
-          "bytesInOutput": 1165
+          "bytesInOutput": 1153
         },
         "node_modules/tom-select/src/contrib/highlight.ts": {
-          "bytesInOutput": 697
+          "bytesInOutput": 696
         },
         "node_modules/tom-select/src/constants.ts": {
-          "bytesInOutput": 89
+          "bytesInOutput": 88
         },
         "node_modules/tom-select/src/defaults.ts": {
           "bytesInOutput": 982
         },
-        "node_modules/tom-select/src/utils.ts": {
-          "bytesInOutput": 1061
-        },
         "node_modules/tom-select/src/getSettings.ts": {
-          "bytesInOutput": 1556
+          "bytesInOutput": 1547
+        },
+        "node_modules/tom-select/src/tom-select.ts": {
+          "bytesInOutput": 26439
         },
         "node_modules/tom-select/src/plugins/change_listener/plugin.ts": {
           "bytesInOutput": 55
@@ -10160,7 +10455,7 @@
           "bytesInOutput": 560
         },
         "node_modules/tom-select/src/plugins/caret_position/plugin.ts": {
-          "bytesInOutput": 539
+          "bytesInOutput": 537
         },
         "node_modules/tom-select/src/plugins/dropdown_input/plugin.ts": {
           "bytesInOutput": 954
@@ -10175,10 +10470,10 @@
           "bytesInOutput": 98
         },
         "node_modules/tom-select/src/plugins/optgroup_columns/plugin.ts": {
-          "bytesInOutput": 402
+          "bytesInOutput": 400
         },
         "node_modules/tom-select/src/plugins/remove_button/plugin.ts": {
-          "bytesInOutput": 556
+          "bytesInOutput": 555
         },
         "node_modules/tom-select/src/plugins/restore_on_backspace/plugin.ts": {
           "bytesInOutput": 223
@@ -10193,13 +10488,13 @@
           "bytesInOutput": 29
         },
         "src/utils/getGlobalFn.js": {
-          "bytesInOutput": 50
+          "bytesInOutput": 49
         },
         "src/utils/replaceCallbacks.js": {
-          "bytesInOutput": 163
+          "bytesInOutput": 161
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 169
+          "bytesInOutput": 168
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
@@ -10232,7 +10527,7 @@
           "bytesInOutput": 60
         },
         "node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css": {
-          "bytesInOutput": 15355
+          "bytesInOutput": 15392
         },
         "src/utils/injectStyles.js": {
           "bytesInOutput": 159
@@ -10241,48 +10536,54 @@
           "bytesInOutput": 122
         }
       },
-      "bytes": 76102
+      "bytes": 69686
     },
     "dist/tom-select.raw.min.js": {
       "imports": [],
       "exports": [],
       "entryPoint": "src/tom-select.raw.js",
       "inputs": {
-        "node_modules/@orchidjs/sifter/dist/umd/sifter.js": {
-          "bytesInOutput": 7896
-        },
-        "node_modules/@orchidjs/unicode-variants/dist/umd/index.js": {
-          "bytesInOutput": 4904
-        },
         "node_modules/tom-select/src/contrib/microevent.ts": {
-          "bytesInOutput": 470
+          "bytesInOutput": 469
         },
         "node_modules/tom-select/src/contrib/microplugin.ts": {
           "bytesInOutput": 837
         },
-        "node_modules/tom-select/src/tom-select.ts": {
-          "bytesInOutput": 26685
+        "node_modules/@orchidjs/unicode-variants/dist/esm/regex.js": {
+          "bytesInOutput": 458
         },
-        "node_modules/@orchidjs/sifter/lib/utils.ts": {
-          "bytesInOutput": 116
+        "node_modules/@orchidjs/unicode-variants/dist/esm/strings.js": {
+          "bytesInOutput": 198
+        },
+        "node_modules/@orchidjs/unicode-variants/dist/esm/index.js": {
+          "bytesInOutput": 3792
+        },
+        "node_modules/@orchidjs/sifter/dist/esm/utils.js": {
+          "bytesInOutput": 560
+        },
+        "node_modules/@orchidjs/sifter/dist/esm/sifter.js": {
+          "bytesInOutput": 2587
+        },
+        "node_modules/tom-select/src/utils.ts": {
+          "bytesInOutput": 1158
         },
         "node_modules/tom-select/src/vanilla.ts": {
-          "bytesInOutput": 1165
+          "bytesInOutput": 1153
         },
         "node_modules/tom-select/src/contrib/highlight.ts": {
-          "bytesInOutput": 697
+          "bytesInOutput": 696
         },
         "node_modules/tom-select/src/constants.ts": {
-          "bytesInOutput": 89
+          "bytesInOutput": 88
         },
         "node_modules/tom-select/src/defaults.ts": {
           "bytesInOutput": 982
         },
-        "node_modules/tom-select/src/utils.ts": {
-          "bytesInOutput": 1061
-        },
         "node_modules/tom-select/src/getSettings.ts": {
-          "bytesInOutput": 1556
+          "bytesInOutput": 1547
+        },
+        "node_modules/tom-select/src/tom-select.ts": {
+          "bytesInOutput": 26439
         },
         "node_modules/tom-select/src/plugins/change_listener/plugin.ts": {
           "bytesInOutput": 55
@@ -10300,7 +10601,7 @@
           "bytesInOutput": 560
         },
         "node_modules/tom-select/src/plugins/caret_position/plugin.ts": {
-          "bytesInOutput": 539
+          "bytesInOutput": 537
         },
         "node_modules/tom-select/src/plugins/dropdown_input/plugin.ts": {
           "bytesInOutput": 954
@@ -10315,10 +10616,10 @@
           "bytesInOutput": 98
         },
         "node_modules/tom-select/src/plugins/optgroup_columns/plugin.ts": {
-          "bytesInOutput": 402
+          "bytesInOutput": 400
         },
         "node_modules/tom-select/src/plugins/remove_button/plugin.ts": {
-          "bytesInOutput": 556
+          "bytesInOutput": 555
         },
         "node_modules/tom-select/src/plugins/restore_on_backspace/plugin.ts": {
           "bytesInOutput": 223
@@ -10333,13 +10634,13 @@
           "bytesInOutput": 29
         },
         "src/utils/getGlobalFn.js": {
-          "bytesInOutput": 50
+          "bytesInOutput": 49
         },
         "src/utils/replaceCallbacks.js": {
-          "bytesInOutput": 163
+          "bytesInOutput": 161
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 169
+          "bytesInOutput": 168
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
@@ -10375,7 +10676,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 60496
+      "bytes": 54043
     }
   }
 }
