@@ -676,44 +676,6 @@
       ],
       "format": "esm"
     },
-    "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
-      "bytes": 351780,
-      "imports": [
-        {
-          "path": "node_modules/jquery/dist/jquery.js",
-          "kind": "import-statement",
-          "original": "jquery"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
-      "bytes": 2276,
-      "imports": [
-        {
-          "path": "node_modules/jquery/dist/jquery.js",
-          "kind": "import-statement",
-          "original": "jquery"
-        },
-        {
-          "path": "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs",
-          "kind": "import-statement",
-          "original": "datatables.net"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/datatables.net-fixedheader/node_modules/datatables.net/js/dataTables.mjs": {
-      "bytes": 351780,
-      "imports": [
-        {
-          "path": "node_modules/jquery/dist/jquery.js",
-          "kind": "import-statement",
-          "original": "jquery"
-        }
-      ],
-      "format": "esm"
-    },
     "node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs": {
       "bytes": 29433,
       "imports": [
@@ -723,7 +685,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net-fixedheader/node_modules/datatables.net/js/dataTables.mjs",
+          "path": "node_modules/datatables.net/js/dataTables.mjs",
           "kind": "import-statement",
           "original": "datatables.net"
         }
@@ -739,7 +701,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
+          "path": "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
           "kind": "import-statement",
           "original": "datatables.net-bs5"
         },
@@ -788,44 +750,6 @@
       ],
       "format": "esm"
     },
-    "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
-      "bytes": 362817,
-      "imports": [
-        {
-          "path": "node_modules/jquery/dist/jquery.js",
-          "kind": "import-statement",
-          "original": "jquery"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
-      "bytes": 2659,
-      "imports": [
-        {
-          "path": "node_modules/jquery/dist/jquery.js",
-          "kind": "import-statement",
-          "original": "jquery"
-        },
-        {
-          "path": "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs",
-          "kind": "import-statement",
-          "original": "datatables.net"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/datatables.net-responsive/node_modules/datatables.net/js/dataTables.mjs": {
-      "bytes": 362817,
-      "imports": [
-        {
-          "path": "node_modules/jquery/dist/jquery.js",
-          "kind": "import-statement",
-          "original": "jquery"
-        }
-      ],
-      "format": "esm"
-    },
     "node_modules/datatables.net-responsive/js/dataTables.responsive.mjs": {
       "bytes": 45537,
       "imports": [
@@ -835,7 +759,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net-responsive/node_modules/datatables.net/js/dataTables.mjs",
+          "path": "node_modules/datatables.net/js/dataTables.mjs",
           "kind": "import-statement",
           "original": "datatables.net"
         }
@@ -851,7 +775,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
+          "path": "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
           "kind": "import-statement",
           "original": "datatables.net-bs5"
         },
@@ -900,44 +824,6 @@
       ],
       "format": "esm"
     },
-    "node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
-      "bytes": 362817,
-      "imports": [
-        {
-          "path": "node_modules/jquery/dist/jquery.js",
-          "kind": "import-statement",
-          "original": "jquery"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
-      "bytes": 2659,
-      "imports": [
-        {
-          "path": "node_modules/jquery/dist/jquery.js",
-          "kind": "import-statement",
-          "original": "jquery"
-        },
-        {
-          "path": "node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs",
-          "kind": "import-statement",
-          "original": "datatables.net"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/datatables.net-select/node_modules/datatables.net/js/dataTables.mjs": {
-      "bytes": 362817,
-      "imports": [
-        {
-          "path": "node_modules/jquery/dist/jquery.js",
-          "kind": "import-statement",
-          "original": "jquery"
-        }
-      ],
-      "format": "esm"
-    },
     "node_modules/datatables.net-select/js/dataTables.select.mjs": {
       "bytes": 44325,
       "imports": [
@@ -947,7 +833,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net-select/node_modules/datatables.net/js/dataTables.mjs",
+          "path": "node_modules/datatables.net/js/dataTables.mjs",
           "kind": "import-statement",
           "original": "datatables.net"
         }
@@ -963,7 +849,7 @@
           "original": "jquery"
         },
         {
-          "path": "node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
+          "path": "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs",
           "kind": "import-statement",
           "original": "datatables.net-bs5"
         },
@@ -1614,30 +1500,25 @@
       ],
       "format": "esm"
     },
-    "node_modules/@floating-ui/core/node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
+    "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
       "bytes": 4071,
       "imports": [],
       "format": "esm"
     },
     "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
-      "bytes": 34837,
+      "bytes": 34697,
       "imports": [
         {
-          "path": "node_modules/@floating-ui/core/node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
+          "path": "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
           "kind": "import-statement",
           "original": "@floating-ui/utils"
         },
         {
-          "path": "node_modules/@floating-ui/core/node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
+          "path": "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
           "kind": "import-statement",
           "original": "@floating-ui/utils"
         }
       ],
-      "format": "esm"
-    },
-    "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
-      "bytes": 4071,
-      "imports": [],
       "format": "esm"
     },
     "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs": {
@@ -5383,55 +5264,6 @@
       "imports": [],
       "format": "esm"
     },
-    "node_modules/prosemirror-state/node_modules/prosemirror-model/dist/index.js": {
-      "bytes": 121075,
-      "imports": [
-        {
-          "path": "node_modules/orderedmap/dist/index.js",
-          "kind": "import-statement",
-          "original": "orderedmap"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/prosemirror-state/node_modules/prosemirror-transform/dist/index.js": {
-      "bytes": 78052,
-      "imports": [
-        {
-          "path": "node_modules/prosemirror-state/node_modules/prosemirror-model/dist/index.js",
-          "kind": "import-statement",
-          "original": "prosemirror-model"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/prosemirror-state/dist/index.js": {
-      "bytes": 36248,
-      "imports": [
-        {
-          "path": "node_modules/prosemirror-state/node_modules/prosemirror-model/dist/index.js",
-          "kind": "import-statement",
-          "original": "prosemirror-model"
-        },
-        {
-          "path": "node_modules/prosemirror-state/node_modules/prosemirror-transform/dist/index.js",
-          "kind": "import-statement",
-          "original": "prosemirror-transform"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/@tiptap/pm/state/dist/index.js": {
-      "bytes": 53,
-      "imports": [
-        {
-          "path": "node_modules/prosemirror-state/dist/index.js",
-          "kind": "import-statement",
-          "original": "prosemirror-state"
-        }
-      ],
-      "format": "esm"
-    },
     "node_modules/prosemirror-model/dist/index.js": {
       "bytes": 123105,
       "imports": [
@@ -5450,6 +5282,33 @@
           "path": "node_modules/prosemirror-model/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-model"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/prosemirror-state/dist/index.js": {
+      "bytes": 36248,
+      "imports": [
+        {
+          "path": "node_modules/prosemirror-model/dist/index.js",
+          "kind": "import-statement",
+          "original": "prosemirror-model"
+        },
+        {
+          "path": "node_modules/prosemirror-transform/dist/index.js",
+          "kind": "import-statement",
+          "original": "prosemirror-transform"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/@tiptap/pm/state/dist/index.js": {
+      "bytes": 53,
+      "imports": [
+        {
+          "path": "node_modules/prosemirror-state/dist/index.js",
+          "kind": "import-statement",
+          "original": "prosemirror-state"
         }
       ],
       "format": "esm"
@@ -5572,49 +5431,16 @@
       ],
       "format": "esm"
     },
-    "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
-      "bytes": 121816,
-      "imports": [
-        {
-          "path": "node_modules/orderedmap/dist/index.js",
-          "kind": "import-statement",
-          "original": "orderedmap"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/dist/index.js": {
-      "bytes": 79607,
-      "imports": [
-        {
-          "path": "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js",
-          "kind": "import-statement",
-          "original": "prosemirror-model"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/prosemirror-schema-list/node_modules/prosemirror-model/dist/index.js": {
-      "bytes": 122705,
-      "imports": [
-        {
-          "path": "node_modules/orderedmap/dist/index.js",
-          "kind": "import-statement",
-          "original": "orderedmap"
-        }
-      ],
-      "format": "esm"
-    },
     "node_modules/prosemirror-schema-list/dist/index.js": {
       "bytes": 12496,
       "imports": [
         {
-          "path": "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/dist/index.js",
+          "path": "node_modules/prosemirror-transform/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-transform"
         },
         {
-          "path": "node_modules/prosemirror-schema-list/node_modules/prosemirror-model/dist/index.js",
+          "path": "node_modules/prosemirror-model/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-model"
         },
@@ -5804,28 +5630,6 @@
       ],
       "format": "esm"
     },
-    "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
-      "bytes": 121075,
-      "imports": [
-        {
-          "path": "node_modules/orderedmap/dist/index.js",
-          "kind": "import-statement",
-          "original": "orderedmap"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/dist/index.js": {
-      "bytes": 78052,
-      "imports": [
-        {
-          "path": "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js",
-          "kind": "import-statement",
-          "original": "prosemirror-model"
-        }
-      ],
-      "format": "esm"
-    },
     "node_modules/prosemirror-dropcursor/dist/index.js": {
       "bytes": 5767,
       "imports": [
@@ -5835,7 +5639,7 @@
           "original": "prosemirror-state"
         },
         {
-          "path": "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/dist/index.js",
+          "path": "node_modules/prosemirror-transform/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-transform"
         }
@@ -5885,28 +5689,6 @@
       "imports": [],
       "format": "esm"
     },
-    "node_modules/prosemirror-history/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
-      "bytes": 121816,
-      "imports": [
-        {
-          "path": "node_modules/orderedmap/dist/index.js",
-          "kind": "import-statement",
-          "original": "orderedmap"
-        }
-      ],
-      "format": "esm"
-    },
-    "node_modules/prosemirror-history/node_modules/prosemirror-transform/dist/index.js": {
-      "bytes": 79607,
-      "imports": [
-        {
-          "path": "node_modules/prosemirror-history/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js",
-          "kind": "import-statement",
-          "original": "prosemirror-model"
-        }
-      ],
-      "format": "esm"
-    },
     "node_modules/prosemirror-history/dist/index.js": {
       "bytes": 18242,
       "imports": [
@@ -5916,7 +5698,7 @@
           "original": "rope-sequence"
         },
         {
-          "path": "node_modules/prosemirror-history/node_modules/prosemirror-transform/dist/index.js",
+          "path": "node_modules/prosemirror-transform/dist/index.js",
           "kind": "import-statement",
           "original": "prosemirror-transform"
         },
@@ -7334,76 +7116,49 @@
       "entryPoint": "src/data-table.js",
       "inputs": {
         "node_modules/jquery/dist/jquery.js": {
-          "bytesInOutput": 88476
+          "bytesInOutput": 88096
         },
         "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
-          "bytesInOutput": 940
+          "bytesInOutput": 935
         },
         "node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 96059
+          "bytesInOutput": 96023
         },
         "node_modules/datatables.net-fixedcolumns-bs5/js/fixedColumns.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
         "node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs": {
-          "bytesInOutput": 7729
+          "bytesInOutput": 7731
         },
         "node_modules/datatables.net-fixedheader-bs5/js/fixedHeader.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
-        "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
-          "bytesInOutput": 1065
-        },
-        "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 92544
-        },
         "node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs": {
-          "bytesInOutput": 11910
-        },
-        "node_modules/datatables.net-fixedheader/node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 92544
+          "bytesInOutput": 11903
         },
         "node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs": {
           "bytesInOutput": 969
         },
         "node_modules/datatables.net-buttons/js/dataTables.buttons.mjs": {
-          "bytesInOutput": 28150
+          "bytesInOutput": 28172
         },
         "node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs": {
           "bytesInOutput": 1011
         },
-        "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
-          "bytesInOutput": 940
-        },
-        "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 96189
-        },
         "node_modules/datatables.net-responsive/js/dataTables.responsive.mjs": {
-          "bytesInOutput": 15820
-        },
-        "node_modules/datatables.net-responsive/node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 96189
+          "bytesInOutput": 15721
         },
         "node_modules/datatables.net-rowgroup-bs5/js/rowGroup.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
         "node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs": {
-          "bytesInOutput": 3650
+          "bytesInOutput": 3639
         },
         "node_modules/datatables.net-select-bs5/js/select.bootstrap5.mjs": {
           "bytesInOutput": 64
         },
-        "node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
-          "bytesInOutput": 940
-        },
-        "node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 96189
-        },
         "node_modules/datatables.net-select/js/dataTables.select.mjs": {
-          "bytesInOutput": 18203
-        },
-        "node_modules/datatables.net-select/node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 96189
+          "bytesInOutput": 18168
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7475,7 +7230,7 @@
           "bytesInOutput": 71
         }
       },
-      "bytes": 892457
+      "bytes": 318021
     },
     "dist/data-table.raw.min.js": {
       "imports": [],
@@ -7483,76 +7238,49 @@
       "entryPoint": "src/data-table.raw.js",
       "inputs": {
         "node_modules/jquery/dist/jquery.js": {
-          "bytesInOutput": 88476
+          "bytesInOutput": 88096
         },
         "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
-          "bytesInOutput": 940
+          "bytesInOutput": 935
         },
         "node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 96059
+          "bytesInOutput": 96023
         },
         "node_modules/datatables.net-fixedcolumns-bs5/js/fixedColumns.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
         "node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs": {
-          "bytesInOutput": 7729
+          "bytesInOutput": 7731
         },
         "node_modules/datatables.net-fixedheader-bs5/js/fixedHeader.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
-        "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
-          "bytesInOutput": 1065
-        },
-        "node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 92544
-        },
         "node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs": {
-          "bytesInOutput": 11910
-        },
-        "node_modules/datatables.net-fixedheader/node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 92544
+          "bytesInOutput": 11903
         },
         "node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs": {
           "bytesInOutput": 969
         },
         "node_modules/datatables.net-buttons/js/dataTables.buttons.mjs": {
-          "bytesInOutput": 28150
+          "bytesInOutput": 28172
         },
         "node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs": {
           "bytesInOutput": 1011
         },
-        "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
-          "bytesInOutput": 940
-        },
-        "node_modules/datatables.net-responsive-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 96189
-        },
         "node_modules/datatables.net-responsive/js/dataTables.responsive.mjs": {
-          "bytesInOutput": 15820
-        },
-        "node_modules/datatables.net-responsive/node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 96189
+          "bytesInOutput": 15721
         },
         "node_modules/datatables.net-rowgroup-bs5/js/rowGroup.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
         "node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs": {
-          "bytesInOutput": 3650
+          "bytesInOutput": 3639
         },
         "node_modules/datatables.net-select-bs5/js/select.bootstrap5.mjs": {
           "bytesInOutput": 64
         },
-        "node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
-          "bytesInOutput": 940
-        },
-        "node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 96189
-        },
         "node_modules/datatables.net-select/js/dataTables.select.mjs": {
-          "bytesInOutput": 18203
-        },
-        "node_modules/datatables.net-select/node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 96189
+          "bytesInOutput": 18168
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7597,7 +7325,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 855020
+      "bytes": 280584
     },
     "dist/filepond-input.min.js": {
       "imports": [],
@@ -7936,20 +7664,17 @@
       "exports": [],
       "entryPoint": "src/floating-ui.js",
       "inputs": {
-        "node_modules/@floating-ui/core/node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
-          "bytesInOutput": 1397
+        "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
+          "bytesInOutput": 1438
         },
         "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
-          "bytesInOutput": 7106
-        },
-        "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
-          "bytesInOutput": 72
+          "bytesInOutput": 7079
         },
         "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs": {
           "bytesInOutput": 2325
         },
         "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-          "bytesInOutput": 6731
+          "bytesInOutput": 6721
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7991,7 +7716,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 24347
+      "bytes": 24279
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -9950,28 +9675,22 @@
       "entryPoint": "src/tiptap-editor.js",
       "inputs": {
         "node_modules/orderedmap/dist/index.js": {
-          "bytesInOutput": 1456
-        },
-        "node_modules/prosemirror-state/node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 24431
-        },
-        "node_modules/prosemirror-state/node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 26203
-        },
-        "node_modules/prosemirror-state/dist/index.js": {
-          "bytesInOutput": 11831
-        },
-        "node_modules/@tiptap/pm/state/dist/index.js": {
-          "bytesInOutput": 0
+          "bytesInOutput": 1439
         },
         "node_modules/prosemirror-model/dist/index.js": {
           "bytesInOutput": 43950
         },
         "node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 30360
+          "bytesInOutput": 30328
+        },
+        "node_modules/prosemirror-state/dist/index.js": {
+          "bytesInOutput": 11827
+        },
+        "node_modules/@tiptap/pm/state/dist/index.js": {
+          "bytesInOutput": 0
         },
         "node_modules/prosemirror-view/dist/index.js": {
-          "bytesInOutput": 94741
+          "bytesInOutput": 94689
         },
         "node_modules/@tiptap/pm/view/dist/index.js": {
           "bytesInOutput": 0
@@ -9992,28 +9711,19 @@
           "bytesInOutput": 0
         },
         "node_modules/prosemirror-commands/dist/index.js": {
-          "bytesInOutput": 9445
+          "bytesInOutput": 9442
         },
         "node_modules/@tiptap/pm/commands/dist/index.js": {
           "bytesInOutput": 0
         },
-        "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 23263
-        },
-        "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 13246
-        },
-        "node_modules/prosemirror-schema-list/node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 23494
-        },
         "node_modules/prosemirror-schema-list/dist/index.js": {
-          "bytesInOutput": 2471
+          "bytesInOutput": 2463
         },
         "node_modules/@tiptap/pm/schema-list/dist/index.js": {
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 60754
+          "bytesInOutput": 60743
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -10048,12 +9758,6 @@
         "node_modules/@tiptap/extension-code-block/dist/index.js": {
           "bytesInOutput": 2668
         },
-        "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 23263
-        },
-        "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 11931
-        },
         "node_modules/prosemirror-dropcursor/dist/index.js": {
           "bytesInOutput": 2909
         },
@@ -10061,19 +9765,13 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/extension-dropcursor/dist/index.js": {
-          "bytesInOutput": 152
+          "bytesInOutput": 151
         },
         "node_modules/@tiptap/extension-hard-break/dist/index.js": {
           "bytesInOutput": 906
         },
         "node_modules/rope-sequence/dist/index.js": {
-          "bytesInOutput": 3412
-        },
-        "node_modules/prosemirror-history/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 23280
-        },
-        "node_modules/prosemirror-history/node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 12832
+          "bytesInOutput": 3394
         },
         "node_modules/prosemirror-history/dist/index.js": {
           "bytesInOutput": 5744
@@ -10082,7 +9780,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/extension-history/dist/index.js": {
-          "bytesInOutput": 494
+          "bytesInOutput": 493
         },
         "node_modules/@tiptap/extension-horizontal-rule/dist/index.js": {
           "bytesInOutput": 1013
@@ -10097,7 +9795,7 @@
           "bytesInOutput": 1458
         },
         "node_modules/@tiptap/extension-typography/dist/index.js": {
-          "bytesInOutput": 3076
+          "bytesInOutput": 3075
         },
         "node_modules/linkifyjs/dist/linkify.es.js": {
           "bytesInOutput": 19436
@@ -10169,7 +9867,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 515633
+      "bytes": 333542
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -10177,28 +9875,22 @@
       "entryPoint": "src/tiptap-editor.raw.js",
       "inputs": {
         "node_modules/orderedmap/dist/index.js": {
-          "bytesInOutput": 1456
-        },
-        "node_modules/prosemirror-state/node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 24431
-        },
-        "node_modules/prosemirror-state/node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 26203
-        },
-        "node_modules/prosemirror-state/dist/index.js": {
-          "bytesInOutput": 11831
-        },
-        "node_modules/@tiptap/pm/state/dist/index.js": {
-          "bytesInOutput": 0
+          "bytesInOutput": 1439
         },
         "node_modules/prosemirror-model/dist/index.js": {
           "bytesInOutput": 43950
         },
         "node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 30360
+          "bytesInOutput": 30328
+        },
+        "node_modules/prosemirror-state/dist/index.js": {
+          "bytesInOutput": 11827
+        },
+        "node_modules/@tiptap/pm/state/dist/index.js": {
+          "bytesInOutput": 0
         },
         "node_modules/prosemirror-view/dist/index.js": {
-          "bytesInOutput": 94741
+          "bytesInOutput": 94689
         },
         "node_modules/@tiptap/pm/view/dist/index.js": {
           "bytesInOutput": 0
@@ -10219,28 +9911,19 @@
           "bytesInOutput": 0
         },
         "node_modules/prosemirror-commands/dist/index.js": {
-          "bytesInOutput": 9445
+          "bytesInOutput": 9442
         },
         "node_modules/@tiptap/pm/commands/dist/index.js": {
           "bytesInOutput": 0
         },
-        "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 23263
-        },
-        "node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 13246
-        },
-        "node_modules/prosemirror-schema-list/node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 23494
-        },
         "node_modules/prosemirror-schema-list/dist/index.js": {
-          "bytesInOutput": 2471
+          "bytesInOutput": 2463
         },
         "node_modules/@tiptap/pm/schema-list/dist/index.js": {
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 60754
+          "bytesInOutput": 60743
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -10275,12 +9958,6 @@
         "node_modules/@tiptap/extension-code-block/dist/index.js": {
           "bytesInOutput": 2668
         },
-        "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 23263
-        },
-        "node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 11931
-        },
         "node_modules/prosemirror-dropcursor/dist/index.js": {
           "bytesInOutput": 2909
         },
@@ -10288,19 +9965,13 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/extension-dropcursor/dist/index.js": {
-          "bytesInOutput": 152
+          "bytesInOutput": 151
         },
         "node_modules/@tiptap/extension-hard-break/dist/index.js": {
           "bytesInOutput": 906
         },
         "node_modules/rope-sequence/dist/index.js": {
-          "bytesInOutput": 3412
-        },
-        "node_modules/prosemirror-history/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 23280
-        },
-        "node_modules/prosemirror-history/node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 12832
+          "bytesInOutput": 3394
         },
         "node_modules/prosemirror-history/dist/index.js": {
           "bytesInOutput": 5744
@@ -10309,7 +9980,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/extension-history/dist/index.js": {
-          "bytesInOutput": 494
+          "bytesInOutput": 493
         },
         "node_modules/@tiptap/extension-horizontal-rule/dist/index.js": {
           "bytesInOutput": 1013
@@ -10324,7 +9995,7 @@
           "bytesInOutput": 1458
         },
         "node_modules/@tiptap/extension-typography/dist/index.js": {
-          "bytesInOutput": 3076
+          "bytesInOutput": 3075
         },
         "node_modules/linkifyjs/dist/linkify.es.js": {
           "bytesInOutput": 19436
@@ -10390,7 +10061,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 514467
+      "bytes": 332376
     },
     "dist/tom-select.min.js": {
       "imports": [],

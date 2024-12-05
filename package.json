@@ -57,7 +57,7 @@
     "semver": "^7.5.3"
   },
   "resolutions": {
-    "prosemirror-model": "1.9.1"
+    "prosemirror-model": "1.22.3"
   },
   "keywords": [
     "form",
