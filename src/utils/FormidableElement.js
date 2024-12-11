@@ -52,6 +52,9 @@ class FormidableElement extends HTMLElement {
     whenParsed(this);
   }
 
+  /**
+   * @link https://nolanlawson.com/2024/12/01/avoiding-unnecessary-cleanup-work-in-disconnectedcallback/
+   */
   disconnectedCallback() {
     this.disconnected();
     // Schedule destroyed callback
