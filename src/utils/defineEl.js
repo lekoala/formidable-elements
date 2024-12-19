@@ -7,7 +7,7 @@ const registry = customElements;
  * @param {Object} cls
  */
 export default (name, cls) => {
-  if (!registry.get(name)) {
-    registry.define(name, cls);
-  }
+	if (!registry.get(name)) {
+		registry.define(name, cls);
+	}
 };

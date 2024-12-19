@@ -13,8 +13,11 @@ const extraStyles = `
   .iti--allow-dropdown .iti__country-container .iti__selected-country { border-top-left-radius: var(--bs-border-radius); border-bottom-left-radius: var(--bs-border-radius)}
   .input-group .iti .form-control { border-top-right-radius: 0; border-bottom-right-radius: 0}`;
 
-injectStyles("tel-input", `${styles}
-${extraStyles}`);
+injectStyles(
+    "tel-input",
+    `${styles}
+${extraStyles}`,
+);
 
 defineEl("tel-input", TelInput);
 
