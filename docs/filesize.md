@@ -1,39 +1,36 @@
 
-  dist/data-table.min.js                                                                                                           1.0mb  100.0%
-   ├ node_modules/datatables.net/js/dataTables.mjs                                                                                96.1kb    9.0%
-   ├ node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs         93.9kb    8.8%
-   ├ node_modules/datatables.net-select/node_modules/datatables.net/js/dataTables.mjs                                             93.9kb    8.8%
-   ├ node_modules/datatables.net-fixedcolumns-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs   93.9kb    8.8%
-   ├ node_modules/datatables.net-fixedcolumns/node_modules/datatables.net/js/dataTables.mjs                                       93.9kb    8.8%
-   ├ node_modules/datatables.net-rowgroup-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs       93.9kb    8.8%
-   ├ node_modules/datatables.net-rowgroup/node_modules/datatables.net/js/dataTables.mjs                                           93.9kb    8.8%
-   ├ node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs    90.4kb    8.5%
-   ├ node_modules/datatables.net-fixedheader/node_modules/datatables.net/js/dataTables.mjs                                        90.4kb    8.5%
-   ├ node_modules/jquery/dist/jquery.js                                                                                           86.6kb    8.1%
-   ├ node_modules/datatables.net-buttons/js/dataTables.buttons.mjs                                                                27.7kb    2.6%
-   ├ node_modules/datatables.net-select/js/dataTables.select.mjs                                                                  17.8kb    1.7%
-   ├ node_modules/datatables.net-responsive/js/dataTables.responsive.mjs                                                          15.6kb    1.5%
-   ├ node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css                                                            14.8kb    1.4%
-   ├ node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs                                                        11.6kb    1.1%
-   ├ node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css                                                        8.0kb    0.7%
-   ├ node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs                                                       7.5kb    0.7%
-   ├ node_modules/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css                                                  5.9kb    0.6%
-   ├ node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs                                                               3.6kb    0.3%
-   ├ node_modules/datatables.net-fixedcolumns-bs5/css/fixedColumns.bootstrap5.min.css                                              3.3kb    0.3%
+  dist/data-table.min.js                                                                                                         876.0kb  100.0%
+   ├ node_modules/datatables.net/js/dataTables.mjs                                                                                96.1kb   11.0%
+   ├ node_modules/datatables.net-fixedcolumns-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs   93.9kb   10.7%
+   ├ node_modules/datatables.net-fixedcolumns/node_modules/datatables.net/js/dataTables.mjs                                       93.9kb   10.7%
+   ├ node_modules/datatables.net-rowgroup-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs       93.9kb   10.7%
+   ├ node_modules/datatables.net-rowgroup/node_modules/datatables.net/js/dataTables.mjs                                           93.9kb   10.7%
+   ├ node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs    90.4kb   10.3%
+   ├ node_modules/datatables.net-fixedheader/node_modules/datatables.net/js/dataTables.mjs                                        90.4kb   10.3%
+   ├ node_modules/jquery/dist/jquery.js                                                                                           86.4kb    9.9%
+   ├ node_modules/datatables.net-buttons/js/dataTables.buttons.mjs                                                                27.6kb    3.1%
+   ├ node_modules/datatables.net-select/js/dataTables.select.mjs                                                                  20.0kb    2.3%
+   ├ node_modules/datatables.net-responsive/js/dataTables.responsive.mjs                                                          15.6kb    1.8%
+   ├ node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css                                                            14.8kb    1.7%
+   ├ node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs                                                        11.6kb    1.3%
+   ├ node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css                                                        8.0kb    0.9%
+   ├ node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs                                                       7.5kb    0.9%
+   ├ node_modules/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css                                                  5.9kb    0.7%
+   ├ node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs                                                               3.6kb    0.4%
+   ├ node_modules/datatables.net-fixedcolumns-bs5/css/fixedColumns.bootstrap5.min.css                                              3.3kb    0.4%
    ├ node_modules/datatables.net-select-bs5/css/select.bootstrap5.min.css                                                          2.1kb    0.2%
    ├ node_modules/datatables.net-rowgroup-bs5/css/rowGroup.bootstrap5.min.css                                                      1.9kb    0.2%
-   ├ src/classes/DataTableElement.js                                                                                               1.5kb    0.1%
+   ├ src/classes/DataTableElement.js                                                                                               1.5kb    0.2%
    ├ node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs                                                       1.1kb    0.1%
    ├ node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs                      1.0kb    0.1%
    ├ node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs                                                             969b     0.1%
    ├ node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs                                                                  940b     0.1%
-   ├ node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs                           940b     0.1%
    ├ node_modules/datatables.net-fixedcolumns-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs                     930b     0.1%
    ├ node_modules/datatables.net-rowgroup-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs                         930b     0.1%
    ├ src/utils/EventfulElement.js                                                                                                  869b     0.1%
    ├ src/utils/FormidableElement.js                                                                                                625b     0.1%
    ├ src/utils/icons.js                                                                                                            579b     0.1%
-   ├ src/utils/fetchWrapper.js                                                                                                     487b     0.0%
+   ├ src/utils/fetchWrapper.js                                                                                                     487b     0.1%
    ├ src/utils/fetchJson.js                                                                                                        407b     0.0%
    ├ node_modules/datatables.net-fixedheader-bs5/css/fixedHeader.bootstrap5.min.css                                                390b     0.0%
    ├ src/css/datatables.min.css                                                                                                    280b     0.0%
@@ -51,35 +48,32 @@
    ├ node_modules/datatables.net-fixedheader-bs5/js/fixedHeader.bootstrap5.mjs                                                      18b     0.0%
    └ node_modules/datatables.net-rowgroup-bs5/js/rowGroup.bootstrap5.mjs                                                            18b     0.0%
 
-  dist/data-table.raw.min.js                                                                                                       1.0mb  100.0%
-   ├ node_modules/datatables.net/js/dataTables.mjs                                                                                96.1kb    9.4%
-   ├ node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs         93.9kb    9.1%
-   ├ node_modules/datatables.net-select/node_modules/datatables.net/js/dataTables.mjs                                             93.9kb    9.1%
-   ├ node_modules/datatables.net-fixedcolumns-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs   93.9kb    9.1%
-   ├ node_modules/datatables.net-fixedcolumns/node_modules/datatables.net/js/dataTables.mjs                                       93.9kb    9.1%
-   ├ node_modules/datatables.net-rowgroup-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs       93.9kb    9.1%
-   ├ node_modules/datatables.net-rowgroup/node_modules/datatables.net/js/dataTables.mjs                                           93.9kb    9.1%
-   ├ node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs    90.4kb    8.8%
-   ├ node_modules/datatables.net-fixedheader/node_modules/datatables.net/js/dataTables.mjs                                        90.4kb    8.8%
-   ├ node_modules/jquery/dist/jquery.js                                                                                           86.6kb    8.4%
-   ├ node_modules/datatables.net-buttons/js/dataTables.buttons.mjs                                                                27.7kb    2.7%
-   ├ node_modules/datatables.net-select/js/dataTables.select.mjs                                                                  17.8kb    1.7%
-   ├ node_modules/datatables.net-responsive/js/dataTables.responsive.mjs                                                          15.6kb    1.5%
-   ├ node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs                                                        11.6kb    1.1%
-   ├ node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs                                                       7.5kb    0.7%
-   ├ node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs                                                               3.6kb    0.3%
-   ├ src/classes/DataTableElement.js                                                                                               1.5kb    0.1%
+  dist/data-table.raw.min.js                                                                                                     839.2kb  100.0%
+   ├ node_modules/datatables.net/js/dataTables.mjs                                                                                96.1kb   11.4%
+   ├ node_modules/datatables.net-fixedcolumns-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs   93.9kb   11.2%
+   ├ node_modules/datatables.net-fixedcolumns/node_modules/datatables.net/js/dataTables.mjs                                       93.9kb   11.2%
+   ├ node_modules/datatables.net-rowgroup-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs       93.9kb   11.2%
+   ├ node_modules/datatables.net-rowgroup/node_modules/datatables.net/js/dataTables.mjs                                           93.9kb   11.2%
+   ├ node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/node_modules/datatables.net/js/dataTables.mjs    90.4kb   10.8%
+   ├ node_modules/datatables.net-fixedheader/node_modules/datatables.net/js/dataTables.mjs                                        90.4kb   10.8%
+   ├ node_modules/jquery/dist/jquery.js                                                                                           86.4kb   10.3%
+   ├ node_modules/datatables.net-buttons/js/dataTables.buttons.mjs                                                                27.6kb    3.3%
+   ├ node_modules/datatables.net-select/js/dataTables.select.mjs                                                                  20.0kb    2.4%
+   ├ node_modules/datatables.net-responsive/js/dataTables.responsive.mjs                                                          15.6kb    1.9%
+   ├ node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs                                                        11.6kb    1.4%
+   ├ node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs                                                       7.5kb    0.9%
+   ├ node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs                                                               3.6kb    0.4%
+   ├ src/classes/DataTableElement.js                                                                                               1.5kb    0.2%
    ├ node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs                                                       1.1kb    0.1%
    ├ node_modules/datatables.net-fixedheader-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs                      1.0kb    0.1%
    ├ node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs                                                             969b     0.1%
    ├ node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs                                                                  940b     0.1%
-   ├ node_modules/datatables.net-select-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs                           940b     0.1%
    ├ node_modules/datatables.net-fixedcolumns-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs                     930b     0.1%
    ├ node_modules/datatables.net-rowgroup-bs5/node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs                         930b     0.1%
    ├ src/utils/EventfulElement.js                                                                                                  869b     0.1%
    ├ src/utils/FormidableElement.js                                                                                                625b     0.1%
    ├ src/utils/icons.js                                                                                                            579b     0.1%
-   ├ src/utils/fetchWrapper.js                                                                                                     487b     0.0%
+   ├ src/utils/fetchWrapper.js                                                                                                     487b     0.1%
    ├ src/utils/fetchJson.js                                                                                                        407b     0.0%
    ├ src/utils/simpleConfig.js                                                                                                     169b     0.0%
    ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.0%
@@ -94,7 +88,7 @@
    ├ node_modules/datatables.net-fixedheader-bs5/js/fixedHeader.bootstrap5.mjs                                                      18b     0.0%
    └ node_modules/datatables.net-rowgroup-bs5/js/rowGroup.bootstrap5.mjs                                                            18b     0.0%
 
-  dist/tel-input.min.js                                                                                                          573.4kb  100.0%
+  dist/tel-input.min.js                                                                                                          573.5kb  100.0%
    ├ node_modules/intl-tel-input/build/js/intlTelInputWithUtils.js                                                               293.3kb   51.1%
    ├ node_modules/intl-tel-input/build/js/utils.js                                                                               256.6kb   44.7%
    ├ src/css/tel-input.min.css                                                                                                    15.7kb    2.7%
@@ -117,7 +111,7 @@
    ├ src/utils/getGlobalFn.js                                                                                                       50b     0.0%
    └ src/utils/isString.js                                                                                                          29b     0.0%
 
-  dist/tel-input.raw.min.js                                                                                                      557.1kb  100.0%
+  dist/tel-input.raw.min.js                                                                                                      557.2kb  100.0%
    ├ node_modules/intl-tel-input/build/js/intlTelInputWithUtils.js                                                               293.3kb   52.6%
    ├ node_modules/intl-tel-input/build/js/utils.js                                                                               256.6kb   46.1%
    ├ src/classes/TelInput.js                                                                                                       3.0kb    0.5%
@@ -138,32 +132,34 @@
    ├ src/tel-input.raw.js                                                                                                           29b     0.0%
    └ src/utils/isString.js                                                                                                          29b     0.0%
 
-  dist/tiptap-editor.min.js                                                                                                      504.6kb  100.0%
-   ├ node_modules/prosemirror-view/dist/index.js                                                                                  92.5kb   18.3%
-   ├ node_modules/@tiptap/core/dist/index.js                                                                                      59.7kb   11.8%
-   ├ node_modules/prosemirror-model/dist/index.js                                                                                 42.9kb    8.5%
-   ├ node_modules/prosemirror-transform/dist/index.js                                                                             29.6kb    5.9%
-   ├ node_modules/prosemirror-state/node_modules/prosemirror-transform/dist/index.js                                              25.6kb    5.1%
-   ├ node_modules/prosemirror-state/node_modules/prosemirror-model/dist/index.js                                                  23.9kb    4.7%
-   ├ node_modules/prosemirror-schema-list/node_modules/prosemirror-model/dist/index.js                                            22.9kb    4.5%
-   ├ node_modules/prosemirror-history/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js             22.7kb    4.5%
-   ├ node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js          22.7kb    4.5%
-   ├ node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js         22.7kb    4.5%
-   ├ node_modules/linkifyjs/dist/linkify.es.js                                                                                    19.2kb    3.8%
-   ├ node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/dist/index.js                                        12.9kb    2.6%
-   ├ node_modules/prosemirror-history/node_modules/prosemirror-transform/dist/index.js                                            12.5kb    2.5%
-   ├ node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/dist/index.js                                         11.7kb    2.3%
-   ├ node_modules/prosemirror-state/dist/index.js                                                                                 11.6kb    2.3%
-   ├ node_modules/prosemirror-commands/dist/index.js                                                                               9.2kb    1.8%
-   ├ src/utils/bootstrap-icons.js                                                                                                  8.1kb    1.6%
-   ├ src/classes/TiptapEditor.js                                                                                                   7.5kb    1.5%
-   ├ node_modules/prosemirror-history/dist/index.js                                                                                5.6kb    1.1%
+  dist/tiptap-editor.min.js                                                                                                      552.6kb  100.0%
+   ├ node_modules/prosemirror-view/dist/index.js                                                                                  92.7kb   16.8%
+   ├ node_modules/@tiptap/core/dist/index.js                                                                                      59.7kb   10.8%
+   ├ node_modules/prosemirror-model/dist/index.js                                                                                 43.2kb    7.8%
+   ├ node_modules/prosemirror-transform/dist/index.js                                                                             29.6kb    5.4%
+   ├ node_modules/prosemirror-state/node_modules/prosemirror-transform/dist/index.js                                              25.6kb    4.6%
+   ├ node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js                                              24.6kb    4.5%
+   ├ node_modules/prosemirror-state/node_modules/prosemirror-model/dist/index.js                                                  23.9kb    4.3%
+   ├ node_modules/prosemirror-commands/node_modules/prosemirror-model/dist/index.js                                               23.0kb    4.2%
+   ├ node_modules/prosemirror-schema-list/node_modules/prosemirror-model/dist/index.js                                            22.9kb    4.2%
+   ├ node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js          22.7kb    4.1%
+   ├ node_modules/prosemirror-history/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js             22.7kb    4.1%
+   ├ node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js         22.7kb    4.1%
+   ├ node_modules/linkifyjs/dist/linkify.es.js                                                                                    19.2kb    3.5%
+   ├ node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/dist/index.js                                        12.9kb    2.3%
+   ├ node_modules/prosemirror-history/node_modules/prosemirror-transform/dist/index.js                                            12.5kb    2.3%
+   ├ node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/dist/index.js                                         11.7kb    2.1%
+   ├ node_modules/prosemirror-state/dist/index.js                                                                                 11.6kb    2.1%
+   ├ node_modules/prosemirror-commands/dist/index.js                                                                               9.2kb    1.7%
+   ├ src/utils/bootstrap-icons.js                                                                                                  8.1kb    1.5%
+   ├ src/classes/TiptapEditor.js                                                                                                   7.5kb    1.4%
+   ├ node_modules/prosemirror-history/dist/index.js                                                                                5.6kb    1.0%
    ├ node_modules/@tiptap/extension-link/dist/index.js                                                                             5.3kb    1.0%
-   ├ node_modules/rope-sequence/dist/index.js                                                                                      3.3kb    0.7%
-   ├ node_modules/@tiptap/extension-typography/dist/index.js                                                                       3.0kb    0.6%
-   ├ node_modules/prosemirror-dropcursor/dist/index.js                                                                             2.8kb    0.6%
+   ├ node_modules/rope-sequence/dist/index.js                                                                                      3.3kb    0.6%
+   ├ node_modules/@tiptap/extension-typography/dist/index.js                                                                       3.0kb    0.5%
+   ├ node_modules/prosemirror-dropcursor/dist/index.js                                                                             2.8kb    0.5%
    ├ node_modules/@tiptap/extension-code-block/dist/index.js                                                                       2.6kb    0.5%
-   ├ node_modules/prosemirror-schema-list/dist/index.js                                                                            2.4kb    0.5%
+   ├ node_modules/prosemirror-schema-list/dist/index.js                                                                            2.4kb    0.4%
    ├ src/utils/dropmenu.js                                                                                                         1.5kb    0.3%
    ├ node_modules/w3c-keyname/index.js                                                                                             1.5kb    0.3%
    ├ node_modules/@tiptap/extension-ordered-list/dist/index.js                                                                     1.4kb    0.3%
@@ -204,32 +200,34 @@
    ├ src/utils/hasBootstrap.js                                                                                                      30b     0.0%
    └ src/utils/isString.js                                                                                                          29b     0.0%
 
-  dist/tiptap-editor.raw.min.js                                                                                                  503.4kb  100.0%
-   ├ node_modules/prosemirror-view/dist/index.js                                                                                  92.5kb   18.4%
-   ├ node_modules/@tiptap/core/dist/index.js                                                                                      59.7kb   11.9%
-   ├ node_modules/prosemirror-model/dist/index.js                                                                                 42.9kb    8.5%
-   ├ node_modules/prosemirror-transform/dist/index.js                                                                             29.6kb    5.9%
-   ├ node_modules/prosemirror-state/node_modules/prosemirror-transform/dist/index.js                                              25.6kb    5.1%
-   ├ node_modules/prosemirror-state/node_modules/prosemirror-model/dist/index.js                                                  23.9kb    4.7%
-   ├ node_modules/prosemirror-schema-list/node_modules/prosemirror-model/dist/index.js                                            22.9kb    4.6%
-   ├ node_modules/prosemirror-history/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js             22.7kb    4.5%
-   ├ node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js          22.7kb    4.5%
-   ├ node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js         22.7kb    4.5%
-   ├ node_modules/linkifyjs/dist/linkify.es.js                                                                                    19.2kb    3.8%
-   ├ node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/dist/index.js                                        12.9kb    2.6%
-   ├ node_modules/prosemirror-history/node_modules/prosemirror-transform/dist/index.js                                            12.5kb    2.5%
-   ├ node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/dist/index.js                                         11.7kb    2.3%
-   ├ node_modules/prosemirror-state/dist/index.js                                                                                 11.6kb    2.3%
-   ├ node_modules/prosemirror-commands/dist/index.js                                                                               9.2kb    1.8%
-   ├ src/utils/bootstrap-icons.js                                                                                                  8.1kb    1.6%
-   ├ src/classes/TiptapEditor.js                                                                                                   7.5kb    1.5%
-   ├ node_modules/prosemirror-history/dist/index.js                                                                                5.6kb    1.1%
-   ├ node_modules/@tiptap/extension-link/dist/index.js                                                                             5.3kb    1.1%
-   ├ node_modules/rope-sequence/dist/index.js                                                                                      3.3kb    0.7%
-   ├ node_modules/@tiptap/extension-typography/dist/index.js                                                                       3.0kb    0.6%
-   ├ node_modules/prosemirror-dropcursor/dist/index.js                                                                             2.8kb    0.6%
+  dist/tiptap-editor.raw.min.js                                                                                                  551.5kb  100.0%
+   ├ node_modules/prosemirror-view/dist/index.js                                                                                  92.7kb   16.8%
+   ├ node_modules/@tiptap/core/dist/index.js                                                                                      59.7kb   10.8%
+   ├ node_modules/prosemirror-model/dist/index.js                                                                                 43.2kb    7.8%
+   ├ node_modules/prosemirror-transform/dist/index.js                                                                             29.6kb    5.4%
+   ├ node_modules/prosemirror-state/node_modules/prosemirror-transform/dist/index.js                                              25.6kb    4.6%
+   ├ node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js                                              24.6kb    4.5%
+   ├ node_modules/prosemirror-state/node_modules/prosemirror-model/dist/index.js                                                  23.9kb    4.3%
+   ├ node_modules/prosemirror-commands/node_modules/prosemirror-model/dist/index.js                                               23.0kb    4.2%
+   ├ node_modules/prosemirror-schema-list/node_modules/prosemirror-model/dist/index.js                                            22.9kb    4.2%
+   ├ node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js          22.7kb    4.1%
+   ├ node_modules/prosemirror-history/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js             22.7kb    4.1%
+   ├ node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/node_modules/prosemirror-model/dist/index.js         22.7kb    4.1%
+   ├ node_modules/linkifyjs/dist/linkify.es.js                                                                                    19.2kb    3.5%
+   ├ node_modules/prosemirror-schema-list/node_modules/prosemirror-transform/dist/index.js                                        12.9kb    2.3%
+   ├ node_modules/prosemirror-history/node_modules/prosemirror-transform/dist/index.js                                            12.5kb    2.3%
+   ├ node_modules/prosemirror-dropcursor/node_modules/prosemirror-transform/dist/index.js                                         11.7kb    2.1%
+   ├ node_modules/prosemirror-state/dist/index.js                                                                                 11.6kb    2.1%
+   ├ node_modules/prosemirror-commands/dist/index.js                                                                               9.2kb    1.7%
+   ├ src/utils/bootstrap-icons.js                                                                                                  8.1kb    1.5%
+   ├ src/classes/TiptapEditor.js                                                                                                   7.5kb    1.4%
+   ├ node_modules/prosemirror-history/dist/index.js                                                                                5.6kb    1.0%
+   ├ node_modules/@tiptap/extension-link/dist/index.js                                                                             5.3kb    1.0%
+   ├ node_modules/rope-sequence/dist/index.js                                                                                      3.3kb    0.6%
+   ├ node_modules/@tiptap/extension-typography/dist/index.js                                                                       3.0kb    0.5%
+   ├ node_modules/prosemirror-dropcursor/dist/index.js                                                                             2.8kb    0.5%
    ├ node_modules/@tiptap/extension-code-block/dist/index.js                                                                       2.6kb    0.5%
-   ├ node_modules/prosemirror-schema-list/dist/index.js                                                                            2.4kb    0.5%
+   ├ node_modules/prosemirror-schema-list/dist/index.js                                                                            2.4kb    0.4%
    ├ src/utils/dropmenu.js                                                                                                         1.5kb    0.3%
    ├ node_modules/w3c-keyname/index.js                                                                                             1.5kb    0.3%
    ├ node_modules/@tiptap/extension-ordered-list/dist/index.js                                                                     1.4kb    0.3%
@@ -242,7 +240,7 @@
    ├ node_modules/@tiptap/extension-heading/dist/index.js                                                                          984b     0.2%
    ├ node_modules/@tiptap/extension-hard-break/dist/index.js                                                                       906b     0.2%
    ├ src/utils/EventfulElement.js                                                                                                  869b     0.2%
-   ├ node_modules/@tiptap/extension-strike/dist/index.js                                                                           775b     0.2%
+   ├ node_modules/@tiptap/extension-strike/dist/index.js                                                                           775b     0.1%
    ├ node_modules/@tiptap/extension-image/dist/index.js                                                                            728b     0.1%
    ├ node_modules/@tiptap/extension-code/dist/index.js                                                                             644b     0.1%
    ├ src/utils/FormidableElement.js                                                                                                625b     0.1%
@@ -683,7 +681,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/Export/defaults/columnLookups.js                                                  10b     0.0%
    └ node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js                                                      10b     0.0%
 
-  dist/filepond-input.min.js                                                                                                     185.7kb  100.0%
+  dist/filepond-input.min.js                                                                                                     185.8kb  100.0%
    ├ node_modules/filepond/dist/filepond.esm.js                                                                                   99.0kb   53.3%
    ├ node_modules/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.esm.js                                     21.4kb   11.5%
    ├ node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.esm.js                                         20.5kb   11.0%
@@ -710,7 +708,7 @@
    └ src/utils/isString.js                                                                                                          29b     0.0%
 
   dist/filepond-input.raw.min.js                                                                                                 162.6kb  100.0%
-   ├ node_modules/filepond/dist/filepond.esm.js                                                                                   99.0kb   60.9%
+   ├ node_modules/filepond/dist/filepond.esm.js                                                                                   99.0kb   60.8%
    ├ node_modules/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.esm.js                                     21.4kb   13.2%
    ├ node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.esm.js                                         20.5kb   12.6%
    ├ node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.esm.js                                              5.9kb    3.6%
@@ -768,11 +766,11 @@
    ├ src/input-mask.js                                                                                                              30b     0.0%
    └ src/utils/isString.js                                                                                                          29b     0.0%
 
-  dist/flatpickr-input.min.js                                                                                                     83.2kb  100.0%
-   ├ node_modules/flatpickr/dist/esm/index.js                                                                                     41.1kb   49.4%
-   ├ node_modules/flatpickr/dist/flatpickr.min.css                                                                                15.8kb   19.0%
+  dist/flatpickr-input.min.js                                                                                                     82.3kb  100.0%
+   ├ node_modules/flatpickr/dist/esm/index.js                                                                                     41.1kb   49.9%
+   ├ node_modules/flatpickr/dist/flatpickr.min.css                                                                                15.8kb   19.2%
    ├ node_modules/flatpickr/dist/plugins/monthSelect/index.js                                                                      5.4kb    6.5%
-   ├ node_modules/flatpickr/dist/plugins/monthSelect/style.css                                                                     2.8kb    3.3%
+   ├ node_modules/flatpickr/dist/plugins/monthSelect/style.css                                                                     2.8kb    3.4%
    ├ node_modules/flatpickr/dist/esm/utils/formatting.js                                                                           2.5kb    3.0%
    ├ src/classes/FlatpickrInput.js                                                                                                 2.3kb    2.8%
    ├ node_modules/flatpickr/dist/esm/utils/dates.js                                                                                2.0kb    2.5%
@@ -781,10 +779,10 @@
    ├ node_modules/flatpickr/dist/esm/l10n/default.js                                                                               815b     1.0%
    ├ node_modules/flatpickr/dist/esm/utils/dom.js                                                                                  799b     0.9%
    ├ src/utils/FormidableElement.js                                                                                                625b     0.7%
-   ├ node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.css                                                               383b     0.4%
+   ├ node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.css                                                               383b     0.5%
    ├ src/utils/date.js                                                                                                             372b     0.4%
    ├ node_modules/flatpickr/dist/esm/utils/polyfills.js                                                                            320b     0.4%
-   ├ src/utils/insertHiddenInput.js                                                                                                297b     0.3%
+   ├ src/utils/insertHiddenInput.js                                                                                                297b     0.4%
    ├ node_modules/flatpickr/dist/esm/utils/index.js                                                                                282b     0.3%
    ├ src/flatpickr-input.js                                                                                                        225b     0.3%
    ├ src/utils/simpleConfig.js                                                                                                     169b     0.2%
@@ -890,15 +888,15 @@
    ├ src/utils/hasBootstrap.js                                                                                                      30b     0.0%
    └ src/utils/isString.js                                                                                                          29b     0.0%
 
-  dist/flatpickr-input.raw.min.js                                                                                                 63.9kb  100.0%
-   ├ node_modules/flatpickr/dist/esm/index.js                                                                                     41.1kb   64.3%
-   ├ node_modules/flatpickr/dist/plugins/monthSelect/index.js                                                                      5.4kb    8.4%
-   ├ node_modules/flatpickr/dist/esm/utils/formatting.js                                                                           2.5kb    3.9%
-   ├ src/classes/FlatpickrInput.js                                                                                                 2.3kb    3.6%
+  dist/flatpickr-input.raw.min.js                                                                                                 63.1kb  100.0%
+   ├ node_modules/flatpickr/dist/esm/index.js                                                                                     41.1kb   65.2%
+   ├ node_modules/flatpickr/dist/plugins/monthSelect/index.js                                                                      5.4kb    8.5%
+   ├ node_modules/flatpickr/dist/esm/utils/formatting.js                                                                           2.5kb    4.0%
+   ├ src/classes/FlatpickrInput.js                                                                                                 2.3kb    3.7%
    ├ node_modules/flatpickr/dist/esm/utils/dates.js                                                                                2.0kb    3.2%
    ├ node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.js                                                                1.8kb    2.9%
    ├ node_modules/flatpickr/dist/esm/types/options.js                                                                              1.8kb    2.8%
-   ├ node_modules/flatpickr/dist/esm/l10n/default.js                                                                               815b     1.2%
+   ├ node_modules/flatpickr/dist/esm/l10n/default.js                                                                               815b     1.3%
    ├ node_modules/flatpickr/dist/esm/utils/dom.js                                                                                  799b     1.2%
    ├ src/utils/FormidableElement.js                                                                                                625b     1.0%
    ├ src/utils/date.js                                                                                                             372b     0.6%
@@ -906,7 +904,7 @@
    ├ src/utils/insertHiddenInput.js                                                                                                297b     0.5%
    ├ node_modules/flatpickr/dist/esm/utils/index.js                                                                                282b     0.4%
    ├ src/utils/simpleConfig.js                                                                                                     169b     0.3%
-   ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.2%
+   ├ src/utils/replaceCallbacks.js                                                                                                 163b     0.3%
    ├ src/utils/query.js                                                                                                            135b     0.2%
    ├ src/utils/whenParsed.js                                                                                                       134b     0.2%
    ├ src/utils/localeProvider.js                                                                                                   120b     0.2%
@@ -964,14 +962,14 @@
    ├ src/tom-select.raw.js                                                                                                          30b     0.1%
    └ src/utils/isString.js                                                                                                          29b     0.1%
 
-  dist/bs-tags.min.js                                                                                                             31.3kb  100.0%
-   ├ node_modules/bootstrap5-tags/tags.js                                                                                         28.3kb   90.3%
-   ├ node_modules/bootstrap5-tags/tags-pure.min.css                                                                                1.1kb    3.7%
-   ├ src/utils/FormidableElement.js                                                                                                614b     1.9%
+  dist/bs-tags.min.js                                                                                                             31.5kb  100.0%
+   ├ node_modules/bootstrap5-tags/tags.js                                                                                         28.5kb   90.4%
+   ├ node_modules/bootstrap5-tags/tags-pure.min.css                                                                                1.1kb    3.6%
+   ├ src/utils/FormidableElement.js                                                                                                615b     1.9%
    ├ src/classes/BsTags.js                                                                                                         225b     0.7%
    ├ src/utils/simpleConfig.js                                                                                                     168b     0.5%
    ├ src/utils/injectStyles.js                                                                                                     159b     0.5%
-   ├ src/utils/replaceCallbacks.js                                                                                                 155b     0.5%
+   ├ src/utils/replaceCallbacks.js                                                                                                 156b     0.5%
    ├ src/utils/whenParsed.js                                                                                                       134b     0.4%
    ├ src/utils/rmElements.js                                                                                                       106b     0.3%
    ├ src/utils/defineEl.js                                                                                                          60b     0.2%
@@ -979,12 +977,12 @@
    ├ src/bs-tags.js                                                                                                                 42b     0.1%
    └ src/utils/isString.js                                                                                                          28b     0.1%
 
-  dist/bs-tags.raw.min.js                                                                                                         30.0kb  100.0%
-   ├ node_modules/bootstrap5-tags/tags.js                                                                                         28.3kb   94.3%
-   ├ src/utils/FormidableElement.js                                                                                                614b     2.0%
+  dist/bs-tags.raw.min.js                                                                                                         30.2kb  100.0%
+   ├ node_modules/bootstrap5-tags/tags.js                                                                                         28.5kb   94.3%
+   ├ src/utils/FormidableElement.js                                                                                                615b     2.0%
    ├ src/classes/BsTags.js                                                                                                         225b     0.7%
    ├ src/utils/simpleConfig.js                                                                                                     168b     0.5%
-   ├ src/utils/replaceCallbacks.js                                                                                                 155b     0.5%
+   ├ src/utils/replaceCallbacks.js                                                                                                 156b     0.5%
    ├ src/utils/whenParsed.js                                                                                                       134b     0.4%
    ├ src/utils/rmElements.js                                                                                                       106b     0.3%
    ├ src/utils/defineEl.js                                                                                                          60b     0.2%
@@ -1044,8 +1042,8 @@
    ├ src/cleave-input.js                                                                                                            29b     0.1%
    └ src/utils/isString.js                                                                                                          28b     0.1%
 
-  dist/bs-autocomplete.min.js                                                                                                     16.9kb  100.0%
-   ├ node_modules/bootstrap5-autocomplete/autocomplete.js                                                                         15.1kb   89.5%
+  dist/bs-autocomplete.min.js                                                                                                     17.0kb  100.0%
+   ├ node_modules/bootstrap5-autocomplete/autocomplete.js                                                                         15.2kb   89.6%
    ├ src/utils/FormidableElement.js                                                                                                611b     3.5%
    ├ src/classes/BsAutocomplete.js                                                                                                 275b     1.6%
    ├ src/utils/simpleConfig.js                                                                                                     167b     1.0%
@@ -1231,11 +1229,11 @@
    └ src/locale-provider.js                                                                                                         31b     8.2%
 
 
-  dist\data-table.min.js        1.0mb
-  dist\data-table.raw.min.js    1.0mb
-  dist\tel-input.min.js       573.4kb
-  dist\tel-input.raw.min.js   557.1kb
-  dist\tiptap-editor.min.js   504.6kb
+  dist\data-table.min.js      876.0kb
+  dist\data-table.raw.min.js  839.2kb
+  dist\tel-input.min.js       573.5kb
+  dist\tel-input.raw.min.js   557.2kb
+  dist\tiptap-editor.min.js   552.6kb
   ...and 34 more output files...
 
-Done in 151ms
+Done in 139ms
