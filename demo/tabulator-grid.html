@@ -159,14 +159,16 @@
             // responsiveLayout: "collapse",
             responsiveLayout: "flexCollapse",
             paginationMode: "remote", //enable remote pagination
-            ajaxURL: "https://reqres.in/api/users", //set url for ajax request
+            ajaxURL: "https://jsonplaceholder.typicode.com/users", //set url for ajax request
             ajaxResponse: function (url, params, response) {
                 var i = 0;
                 response.data = [];
+
+                // fill with fake data
                 while (response.data.length < 200) {
                     i++;
                     response.data.push({
-                        id: i + ((response.page - 1) * 200),
+                        id: i * 200,
                         email: "test" + i + "@test.com",
                         first_name: "fn " + i,
                         last_name: "ln " + i,
@@ -241,14 +243,14 @@
             // responsiveLayout: "collapse",
             responsiveLayout: "flexCollapse",
             paginationMode: "remote", //enable remote pagination
-            ajaxURL: "https://reqres.in/api/users", //set url for ajax request
+            ajaxURL: "https://jsonplaceholder.typicode.com/users", //set url for ajax request
             ajaxResponse: async function (url, params, response) {
                 var i = 0;
                 response.data = [];
                 while (response.data.length < 200) {
                     i++;
                     response.data.push({
-                        id: i + ((response.page - 1) * 200),
+                        id: i * 200,
                         email: "test" + i + "@test.com",
                         first_name: "fn " + i,
                         last_name: "ln " + i,
@@ -323,14 +325,14 @@
             paginationSize: 10,
             layout: "fitColumns",
             paginationMode: "remote", //enable remote pagination
-            ajaxURL: "https://reqres.in/api/users", //set url for ajax request
+            ajaxURL: "https://jsonplaceholder.typicode.com/users", //set url for ajax request
             ajaxResponse: function (url, params, response) {
                 var i = 0;
                 response.data = [];
                 while (response.data.length < 10) {
                     i++;
                     response.data.push({
-                        id: i + ((response.page - 1) * 200),
+                        id: i * 200,
                         email: "test" + i + "@test.com",
                         name: "name " + i,
                         amount: Math.round(Math.random() * 1000),

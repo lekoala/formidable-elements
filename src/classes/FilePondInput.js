@@ -13,7 +13,7 @@ import FilePondPluginImageValidateSize from "../../node_modules/filepond-plugin-
 import FormidableElement from "../utils/FormidableElement.js";
 
 // Example
-/*            
+/*
 <label for="file-input" class="form-label">File</label>
 <filepond-input data-config='{}'>
   <input type="file" class="filepond" name="file" id="file-input" data-allow-reorder="true" data-max-file-size="3MB">
@@ -22,64 +22,64 @@ import FormidableElement from "../utils/FormidableElement.js";
 
 // plugins represents more or less 50kb out of 180kb
 FilePond.registerPlugin(
-  FilePondPluginFileValidateType,
-  FilePondPluginFileValidateSize,
-  FilePondPluginFileMetadata,
-  FilePondPluginFilePoster,
-  FilePondPluginImageExifOrientation,
-  FilePondPluginImagePreview,
-  FilePondPluginImageCrop,
-  FilePondPluginImageResize,
-  FilePondPluginImageTransform,
-  FilePondPluginImageValidateSize
+    FilePondPluginFileValidateType,
+    FilePondPluginFileValidateSize,
+    FilePondPluginFileMetadata,
+    FilePondPluginFilePoster,
+    FilePondPluginImageExifOrientation,
+    FilePondPluginImagePreview,
+    FilePondPluginImageCrop,
+    FilePondPluginImageResize,
+    FilePondPluginImageTransform,
+    FilePondPluginImageValidateSize,
 );
 
 class FilePondInput extends FormidableElement {
-  /**
-   * @returns {HTMLInputElement}
-   */
-  get el() {
-    return this.querySelector("input");
-  }
-
-  created() {
-    const el = this.el;
-    // Credits
-    this.config = Object.assign(
-      {
-        credits: false,
-      },
-      this.config
-    );
-    // Add name
-    if (this.dataset.name) {
-      this.config["name"] = el.getAttribute("name");
-    }
-    // Specific renamer override
-    // Frontend alternative to https://pqina.nl/filepond/docs/api/plugins/file-rename/
-    const renamer = this.config["fileRenameFunction"];
-    if (typeof renamer === "string") {
-      this.config["fileRenameFunction"] =
-        /**
-         * @param {Object} file
-         * @returns {string}
-         */
-        (file) => {
-          return renamer + file.extension;
-        };
+    /**
+     * @returns {HTMLInputElement}
+     */
+    get el() {
+        return this.querySelector("input");
     }
 
-    //@ts-ignore
-    this.filepond = FilePond.create(el, this.config);
-  }
+    created() {
+        const el = this.el;
+        // Credits
+        this.config = Object.assign(
+            {
+                credits: false,
+            },
+            this.config,
+        );
+        // Add name
+        if (this.dataset.name) {
+            this.config.name = el.getAttribute("name");
+        }
+        // Specific renamer override
+        // Frontend alternative to https://pqina.nl/filepond/docs/api/plugins/file-rename/
+        const renamer = this.config.fileRenameFunction;
+        if (typeof renamer === "string") {
+            this.config.fileRenameFunction =
+                /**
+                 * @param {Object} file
+                 * @returns {string}
+                 */
+                (file) => {
+                    return renamer + file.extension;
+                };
+        }
 
-  destroyed() {
-    if (this.filepond) {
-      //@ts-ignore
-      this.filepond.destroy();
-      this.filepond = null;
+        //@ts-ignore
+        this.filepond = FilePond.create(el, this.config);
     }
-  }
+
+    destroyed() {
+        if (this.filepond) {
+            //@ts-ignore
+            this.filepond.destroy();
+            this.filepond = null;
+        }
+    }
 }
 
 export default FilePondInput;

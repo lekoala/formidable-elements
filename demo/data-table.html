@@ -21,6 +21,8 @@
         <a href="../index.html">Back to index</a>
     </header>
 
+    <p>Wraps datatables v2 in a custom element</p>
+
     <p>An html table, responsive based on markup</p>
     <data-table>
         <table id="myTable" class="table responsive nowrap" width="100%">
@@ -582,7 +584,7 @@
     </data-table>
     <hr>
     <p>Selectable</p>
-    <button id="getselected">Get selected data</button>
+    <button id="getselected">Get selected data (see console)</button>
     <script>
         document.getElementById('getselected').addEventListener('click', (ev) => {
             const dt = document.getElementById('selectableTableDt');

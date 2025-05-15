@@ -32,7 +32,8 @@
                 "noDelete": "off"
             },
             "style": {
-                "noParameterAssign": "off"
+                "noParameterAssign": "off",
+                "useNumberNamespace": "off"
             }
         },
         "include": [
