@@ -108,8 +108,8 @@
             <label for="nn-input" class="form-label">Belgian National Number (with hidden input + validation)</label>
             <cleave-input
                 data-config="{&quot;numericOnly&quot;: true, &quot;blocks&quot;: [2 ,2 ,2, 3, 3],&quot;uppercase&quot;: true, &quot;delimiters&quot;: [&quot;.&quot;, &quot;.&quot;, &quot;-&quot;, &quot;.&quot;], &quot;swapHiddenInput&quot;: true}">
-                <input type="text" class="form-control" id="nn-input" name="cleave_nn" placeholder="YY.MM.DD-XXX.YYY" minlength="16"
-                    size="16" required="" inputmode="decimal"><input type="hidden" name="nn" value="">
+                <input type="text" class="form-control" id="nn-input" name="nn" placeholder="YY.MM.DD-XXX.YYY" minlength="16" size="16"
+                    required="" inputmode="decimal">
             </cleave-input>
         </div>
         <div class="mb-3">
@@ -129,25 +129,23 @@
             <label for="prefixcurrency-input" class="form-label">Prefix currency (with hidden input and no prefix)</label>
             <cleave-input type="numeral"
                 data-config="{&quot;prefix&quot;: &quot;£ &quot;, &quot;swapHiddenInput&quot;: true, &quot;rawValueTrimPrefix&quot;: true, &quot;stripLeadingZeroes&quot;: true}">
-                <input type="text" class="form-control" id="prefixcurrency-input" name="cleave_prefixcurrency[value]" placeholder=""
-                    inputmode="decimal"><input type="hidden" name="prefixcurrency[value]" value="">
+                <input type="text" class="form-control" id="prefixcurrency-input" name="prefixcurrency" placeholder=""
+                    inputmode="decimal">
             </cleave-input>
         </div>
         <div class="mb-3">
             <label for="prefixcurrencydollar-input" class="form-label">Prefix currency (with hidden input + pad decimals)</label>
             <cleave-input type="numeral"
                 data-config="{&quot;prefix&quot;: &quot;$&quot;, &quot;swapHiddenInput&quot;: true, &quot;stripLeadingZeroes&quot;: true, &quot;numeralDecimalPadding&quot;: true}">
-                <input type="text" class="form-control" id="prefixcurrencydollar-input" value="1255"
-                    name="cleave_prefixcurrencydollar[value]" placeholder="" inputmode="decimal"><input type="hidden"
-                    name="prefixcurrencydollar[value]" value="$1255.00">
+                <input type="text" class="form-control" id="prefixcurrencydollar-input" value="1255" name="prefixcurrencydollar"
+                    placeholder="" inputmode="decimal">
             </cleave-input>
         </div>
         <div class="mb-3">
-            <label for="prefixtail-input" class="form-label">Suffix currency (with hidden input)</label>
-            <cleave-input type="numeral"
-                data-config="{&quot;prefix&quot;: &quot; €&quot;, &quot;swapHiddenInput&quot;: true, &quot;tailPrefix&quot;: true, &quot;stripLeadingZeroes&quot;: true}">
-                <input type="text" class="form-control" id="prefixtail-input" value="1255" name="cleave_prefixtail[value]" placeholder=""
-                    inputmode="decimal"><input type="hidden" name="prefixtail[value]" value="1255 €">
+            <label for="suffixcurrency-input" class="form-label">Suffix currency (with hidden input)</label>
+            <cleave-input type="numeral" data-config="prefix: ' €', swapHiddenInput: true, tailPrefix: true, stripLeadingZeroes: true">
+                <input type="text" class="form-control" id="suffixcurrency-input" value="1255" name="suffixcurrency"
+                    placeholder="" inputmode="decimal">
             </cleave-input>
         </div>
         <div class="mb-3">
