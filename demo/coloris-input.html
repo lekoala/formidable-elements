@@ -34,23 +34,29 @@
             <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
         <div class="mb-3">
-            <label for="primary_color-input" class="form-label">Primary color</label>
+            <label for="primary_color-input" class="form-label">Primary color with swatches</label>
             <coloris-input data-config='{"theme":"polaroid", "swatches": ["#fff", "#000"]}'>
                 <input type="text" class="form-control" id="primary_color-input" name="primary_color">
             </coloris-input>
             <!-- add form control to have consistent height -->
         </div>
         <div class="mb-3">
-            <label for="secondary_color-input" class="form-label">Secondary color</label>
-            <coloris-input>
+            <label for="secondary_color-input" class="form-label">Secondary color (no alpha)</label>
+            <coloris-input data-config='{"alpha":false}'>
                 <input type="text" class="form-control" id="secondary_color-input" name="secondary_color" value="#CC0000">
             </coloris-input>
         </div>
-        <div class="mb-3 d-flex align-items-center">
-            <coloris-input class="d-inline-block me-2">
-                <input type="text" class="form-control" id="inline_color-input" name="inline_color" value="">
+        <div class="mb-3">
+            <label for="swatch-input" class="form-label">Swatches color with simple config syntax</label>
+            <coloris-input data-config="swatches: ['#fff', '#000'], swatchesOnly: true">
+                <input type="text" class="form-control" id="swatch-input" name="swatch" value="#CC0000">
             </coloris-input>
-            <label for="inline_color-input" class="form-label">Inline color</label>
+        </div>
+        <div class="mb-3">
+            <label for="swatch-input2" class="form-label">Swatches color shortcut</label>
+            <coloris-input data-swatches='#fff,#000,#ccc,#ddd'>
+                <input type="text" class="form-control" id="swatch-input2" name="swatch2" value="#000">
+            </coloris-input>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>

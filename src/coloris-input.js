@@ -7,7 +7,8 @@ import injectStyles from "./utils/injectStyles.js";
 // Inject styles + init once
 injectStyles(
   "coloris-input",
-  `${styles} 
+  `${styles}
+    .clr-picker {width:auto;max-width:200px}
     .clr-field {display: block;width: 4em;border-radius: var(--bs-border-radius, 0.25rem);overflow: hidden;}
     .clr-field input {cursor: pointer;}
     .clr-field button {width:100%;}`
