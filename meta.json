@@ -184,7 +184,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags.js": {
-      "bytes": 72806,
+      "bytes": 73413,
       "imports": [],
       "format": "esm"
     },
@@ -2406,7 +2406,7 @@
       "format": "esm"
     },
     "node_modules/squire-rte/dist/squire-raw.mjs": {
-      "bytes": 120361,
+      "bytes": 120467,
       "imports": [],
       "format": "esm"
     },
@@ -6830,7 +6830,7 @@
       "entryPoint": "src/bs-tags.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 29926
+          "bytesInOutput": 30257
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6869,7 +6869,7 @@
           "bytesInOutput": 42
         }
       },
-      "bytes": 33119
+      "bytes": 33450
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -6877,7 +6877,7 @@
       "entryPoint": "src/bs-tags.raw.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 29926
+          "bytesInOutput": 30257
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6910,7 +6910,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 31768
+      "bytes": 32099
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -8159,7 +8159,7 @@
       "entryPoint": "src/squire-editor.js",
       "inputs": {
         "node_modules/squire-rte/dist/squire-raw.mjs": {
-          "bytesInOutput": 51843
+          "bytesInOutput": 51904
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8219,7 +8219,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 70326
+      "bytes": 70387
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -8233,7 +8233,7 @@
       "entryPoint": "src/squire-editor.raw.js",
       "inputs": {
         "node_modules/squire-rte/dist/squire-raw.mjs": {
-          "bytesInOutput": 51843
+          "bytesInOutput": 51904
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8287,7 +8287,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 69420
+      "bytes": 69481
     },
     "dist/superfile-input.min.js": {
       "imports": [],

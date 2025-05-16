@@ -769,7 +769,7 @@
    └ src/utils/isString.js                                                                                         29b     0.0%
 
   dist/squire-editor.min.js                                                                                      68.7kb  100.0%
-   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                                 50.6kb   73.7%
+   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                                 50.7kb   73.7%
    ├ src/utils/bootstrap-icons.js                                                                                 7.2kb   10.5%
    ├ src/classes/SquireEditor.js                                                                                  6.4kb    9.4%
    ├ src/utils/EventfulElement.js                                                                                 869b     1.2%
@@ -838,8 +838,8 @@
    ├ src/utils/getGlobalFn.js                                                                                      49b     0.1%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
-  dist/squire-editor.raw.min.js                                                                                  67.8kb  100.0%
-   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                                 50.6kb   74.7%
+  dist/squire-editor.raw.min.js                                                                                  67.9kb  100.0%
+   ├ node_modules/squire-rte/dist/squire-raw.mjs                                                                 50.7kb   74.7%
    ├ src/utils/bootstrap-icons.js                                                                                 7.2kb   10.6%
    ├ src/classes/SquireEditor.js                                                                                  6.4kb    9.5%
    ├ src/utils/EventfulElement.js                                                                                 869b     1.3%
@@ -932,8 +932,8 @@
    ├ src/tom-select.raw.js                                                                                         30b     0.1%
    └ src/utils/isString.js                                                                                         29b     0.1%
 
-  dist/bs-tags.min.js                                                                                            32.3kb  100.0%
-   ├ node_modules/bootstrap5-tags/tags.js                                                                        29.2kb   90.4%
+  dist/bs-tags.min.js                                                                                            32.7kb  100.0%
+   ├ node_modules/bootstrap5-tags/tags.js                                                                        29.5kb   90.5%
    ├ node_modules/bootstrap5-tags/tags-pure.min.css                                                               1.1kb    3.5%
    ├ src/utils/FormidableElement.js                                                                               634b     1.9%
    ├ src/utils/simpleConfig.js                                                                                    241b     0.7%
@@ -947,8 +947,8 @@
    ├ src/bs-tags.js                                                                                                42b     0.1%
    └ src/utils/isString.js                                                                                         28b     0.1%
 
-  dist/bs-tags.raw.min.js                                                                                        31.0kb  100.0%
-   ├ node_modules/bootstrap5-tags/tags.js                                                                        29.2kb   94.2%
+  dist/bs-tags.raw.min.js                                                                                        31.3kb  100.0%
+   ├ node_modules/bootstrap5-tags/tags.js                                                                        29.5kb   94.3%
    ├ src/utils/FormidableElement.js                                                                               634b     2.0%
    ├ src/utils/simpleConfig.js                                                                                    241b     0.8%
    ├ src/classes/BsTags.js                                                                                        225b     0.7%
@@ -1205,4 +1205,4 @@
   dist\tiptap-editor.min.js       327.8kb
   ...and 34 more output files...
 
-Done in 147ms
+Done in 319ms

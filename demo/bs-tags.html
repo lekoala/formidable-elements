@@ -40,18 +40,15 @@
             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
             <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
+
         <div class="mb-3">
-            <label for="showDisabled" class="form-label">Tags (show disabled)</label>
+            <label for="preselectedRemote" class="form-label">Tags (preselect + remote)</label>
             <!-- you can pass functions as json as well -->
             <bs-tags
-                data-config='{"allowClear": true, "showDisabled": true, "onFocus": {"__fn": "app.myFocus"}, "arr": [1,2,3], "nested": {"func": {"__fn": "console.log"}}}'>
-                <select class="form-select" id="showDisabled" name="showDisabled[]" multiple data-show-disabled="true">
-                    <option disabled hidden value="">Choose a tag...</option>
-                    <option value="1" selected="selected">Apple</option>
-                    <option value="2">Banana</option>
-                    <option value="3" disabled selected="selected">Banana (disabled)</option>
-                    <option value="4">Orange</option>
-                    <option value="5" disabled>Orange (disabled)</option>
+                  data-config='{"server": "https://api.github.com/search/repositories", "queryParam": "q", "liveServer": true, "serverDataKey": "items"}'>
+                <select class="form-select" id="preselectedRemote" name="preselectedRemote[]" multiple>
+                    <option disabled hidden value="">Choose repos...</option>
+                    <option value="my_repo" selected="selected">My repo</option>
                 </select>
             </bs-tags>
             <div class="invalid-feedback">Please select a valid tag.</div>
