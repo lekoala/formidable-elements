@@ -184,7 +184,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags.js": {
-      "bytes": 73413,
+      "bytes": 73690,
       "imports": [],
       "format": "esm"
     },
@@ -613,7 +613,7 @@
       "format": "cjs"
     },
     "node_modules/datatables.net/js/dataTables.mjs": {
-      "bytes": 375236,
+      "bytes": 375377,
       "imports": [
         {
           "path": "node_modules/jquery/dist/jquery.js",
@@ -677,7 +677,7 @@
       "format": "esm"
     },
     "node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs": {
-      "bytes": 29433,
+      "bytes": 29585,
       "imports": [
         {
           "path": "node_modules/jquery/dist/jquery.js",
@@ -959,7 +959,7 @@
       "format": "esm"
     },
     "node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css": {
-      "bytes": 17568,
+      "bytes": 19315,
       "imports": []
     },
     "node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css": {
@@ -6830,7 +6830,7 @@
       "entryPoint": "src/bs-tags.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 30257
+          "bytesInOutput": 30350
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6869,7 +6869,7 @@
           "bytesInOutput": 42
         }
       },
-      "bytes": 33450
+      "bytes": 33543
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -6877,7 +6877,7 @@
       "entryPoint": "src/bs-tags.raw.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 30257
+          "bytesInOutput": 30350
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6910,7 +6910,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 32099
+      "bytes": 32192
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -7200,7 +7200,7 @@
           "bytesInOutput": 935
         },
         "node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 100240
+          "bytesInOutput": 100324
         },
         "node_modules/datatables.net-fixedcolumns-bs5/js/fixedColumns.bootstrap5.mjs": {
           "bytesInOutput": 18
@@ -7212,7 +7212,7 @@
           "bytesInOutput": 18
         },
         "node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs": {
-          "bytesInOutput": 11903
+          "bytesInOutput": 12027
         },
         "node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs": {
           "bytesInOutput": 969
@@ -7278,7 +7278,7 @@
           "bytesInOutput": 60
         },
         "node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css": {
-          "bytesInOutput": 17592
+          "bytesInOutput": 19339
         },
         "node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css": {
           "bytesInOutput": 8155
@@ -7308,7 +7308,7 @@
           "bytesInOutput": 71
         }
       },
-      "bytes": 327870
+      "bytes": 329825
     },
     "dist/data-table.raw.min.js": {
       "imports": [],
@@ -7322,7 +7322,7 @@
           "bytesInOutput": 935
         },
         "node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 100240
+          "bytesInOutput": 100324
         },
         "node_modules/datatables.net-fixedcolumns-bs5/js/fixedColumns.bootstrap5.mjs": {
           "bytesInOutput": 18
@@ -7334,7 +7334,7 @@
           "bytesInOutput": 18
         },
         "node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs": {
-          "bytesInOutput": 11903
+          "bytesInOutput": 12027
         },
         "node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs": {
           "bytesInOutput": 969
@@ -7403,7 +7403,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 287684
+      "bytes": 287892
     },
     "dist/filepond-input.min.js": {
       "imports": [],

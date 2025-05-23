@@ -580,16 +580,16 @@
    ├ src/utils/hasBootstrap.js                                                                                     30b     0.0%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
-  dist/data-table.min.js                                                                                        320.2kb  100.0%
-   ├ node_modules/datatables.net/js/dataTables.mjs                                                               97.9kb   30.6%
-   ├ node_modules/jquery/dist/jquery.js                                                                          86.1kb   26.9%
+  dist/data-table.min.js                                                                                        322.1kb  100.0%
+   ├ node_modules/datatables.net/js/dataTables.mjs                                                               98.0kb   30.4%
+   ├ node_modules/jquery/dist/jquery.js                                                                          86.1kb   26.7%
    ├ node_modules/datatables.net-buttons/js/dataTables.buttons.mjs                                               27.7kb    8.6%
    ├ node_modules/datatables.net-select/js/dataTables.select.mjs                                                 19.9kb    6.2%
-   ├ node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css                                           17.2kb    5.4%
+   ├ node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css                                           18.9kb    5.9%
    ├ node_modules/datatables.net-responsive/js/dataTables.responsive.mjs                                         15.5kb    4.8%
-   ├ node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs                                       11.6kb    3.6%
+   ├ node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs                                       11.7kb    3.6%
    ├ node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css                                       8.0kb    2.5%
-   ├ node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs                                      7.5kb    2.4%
+   ├ node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs                                      7.5kb    2.3%
    ├ node_modules/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css                                 5.9kb    1.8%
    ├ node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs                                              3.6kb    1.1%
    ├ node_modules/datatables.net-fixedcolumns-bs5/css/fixedColumns.bootstrap5.min.css                             3.3kb    1.0%
@@ -607,7 +607,7 @@
    ├ node_modules/datatables.net-fixedheader-bs5/css/fixedHeader.bootstrap5.min.css                               390b     0.1%
    ├ src/css/datatables.min.css                                                                                   280b     0.1%
    ├ src/utils/simpleConfig.js                                                                                    242b     0.1%
-   ├ src/utils/replaceCallbacks.js                                                                                164b     0.1%
+   ├ src/utils/replaceCallbacks.js                                                                                164b     0.0%
    ├ src/utils/injectStyles.js                                                                                    159b     0.0%
    ├ src/utils/whenParsed.js                                                                                      134b     0.0%
    ├ src/data-table.js                                                                                             71b     0.0%
@@ -620,13 +620,13 @@
    ├ node_modules/datatables.net-fixedheader-bs5/js/fixedHeader.bootstrap5.mjs                                     18b     0.0%
    └ node_modules/datatables.net-rowgroup-bs5/js/rowGroup.bootstrap5.mjs                                           18b     0.0%
 
-  dist/data-table.raw.min.js                                                                                    280.9kb  100.0%
-   ├ node_modules/datatables.net/js/dataTables.mjs                                                               97.9kb   34.8%
+  dist/data-table.raw.min.js                                                                                    281.1kb  100.0%
+   ├ node_modules/datatables.net/js/dataTables.mjs                                                               98.0kb   34.8%
    ├ node_modules/jquery/dist/jquery.js                                                                          86.1kb   30.6%
    ├ node_modules/datatables.net-buttons/js/dataTables.buttons.mjs                                               27.7kb    9.8%
    ├ node_modules/datatables.net-select/js/dataTables.select.mjs                                                 19.9kb    7.1%
    ├ node_modules/datatables.net-responsive/js/dataTables.responsive.mjs                                         15.5kb    5.5%
-   ├ node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs                                       11.6kb    4.1%
+   ├ node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs                                       11.7kb    4.2%
    ├ node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs                                      7.5kb    2.7%
    ├ node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs                                              3.6kb    1.3%
    ├ src/classes/DataTableElement.js                                                                              1.5kb    0.5%
@@ -932,8 +932,8 @@
    ├ src/tom-select.raw.js                                                                                         30b     0.1%
    └ src/utils/isString.js                                                                                         29b     0.1%
 
-  dist/bs-tags.min.js                                                                                            32.7kb  100.0%
-   ├ node_modules/bootstrap5-tags/tags.js                                                                        29.5kb   90.5%
+  dist/bs-tags.min.js                                                                                            32.8kb  100.0%
+   ├ node_modules/bootstrap5-tags/tags.js                                                                        29.6kb   90.5%
    ├ node_modules/bootstrap5-tags/tags-pure.min.css                                                               1.1kb    3.5%
    ├ src/utils/FormidableElement.js                                                                               634b     1.9%
    ├ src/utils/simpleConfig.js                                                                                    241b     0.7%
@@ -947,10 +947,10 @@
    ├ src/bs-tags.js                                                                                                42b     0.1%
    └ src/utils/isString.js                                                                                         28b     0.1%
 
-  dist/bs-tags.raw.min.js                                                                                        31.3kb  100.0%
-   ├ node_modules/bootstrap5-tags/tags.js                                                                        29.5kb   94.3%
+  dist/bs-tags.raw.min.js                                                                                        31.4kb  100.0%
+   ├ node_modules/bootstrap5-tags/tags.js                                                                        29.6kb   94.3%
    ├ src/utils/FormidableElement.js                                                                               634b     2.0%
-   ├ src/utils/simpleConfig.js                                                                                    241b     0.8%
+   ├ src/utils/simpleConfig.js                                                                                    241b     0.7%
    ├ src/classes/BsTags.js                                                                                        225b     0.7%
    ├ src/utils/replaceCallbacks.js                                                                                157b     0.5%
    ├ src/utils/whenParsed.js                                                                                      134b     0.4%
@@ -1205,4 +1205,4 @@
   dist\tiptap-editor.min.js       327.8kb
   ...and 34 more output files...
 
-Done in 319ms
+Done in 116ms
