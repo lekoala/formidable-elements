@@ -34,6 +34,9 @@
             "style": {
                 "noParameterAssign": "off",
                 "useNumberNamespace": "off"
+            },
+            "complexity": {
+                "useLiteralKeys": "off"
             }
         },
         "include": [

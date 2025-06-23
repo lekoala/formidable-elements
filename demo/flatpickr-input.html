@@ -98,6 +98,14 @@
                 <input type="text" class="form-control" id="enddatev-input" name="enddatev" value="2023-06-20">
             </flatpickr-input>
         </div>
+        <div class="mb-3">
+            <label for="inline-input" class="form-label me-3">Inline picker with custom features</label>
+            <flatpickr-input data-config='inline:true '>
+                <!-- flatpickr will always need a text input, this can be hidden visually -->
+                <input type="text" class="form-control" id="inline-input" name="inline" value="" style="display:none">
+            </flatpickr-input>
+        </div>
+
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     <hr>
