@@ -5,12 +5,32 @@ import FormidableElement from "../utils/FormidableElement.js";
 import insertHiddenInput from "../utils/insertHiddenInput.js";
 import setId from "../utils/setId.js";
 import waitDefined from "../utils/waitDefined.js";
-import { q } from "../utils/query.js";
+import { q, qq } from "../utils/query.js";
 import { toDateTime, toDate, toTime } from "../utils/date.js";
 import localeProvider from "../utils/localeProvider.js";
+import getGlobalFn from "../utils/getGlobalFn.js";
+import debounce from "../utils/debounce.js";
+import fetchJson from "../utils/fetchJson.js";
+import ce from "../utils/ce.js";
+
+/**
+ * @typedef FlatpickrInputConfig
+ * @property {Array} enable
+ * @property {Array} disable
+ * @property {Array} events
+ */
 
 const events = ["change", "blur"];
 const name = "flatpickr-input";
+const DEFAULT_CONFIG = {
+    enable: [],
+    disable: [],
+    events: [],
+};
+const DEAULT_EVENT = {
+    date: null,
+    class: "",
+};
 
 // Global localization without passing locale based on navigator language or set default
 const globalLocale = localeProvider(name);
@@ -61,6 +81,102 @@ class FlatpickrInput extends FormidableElement {
             },
             this.config,
         );
+
+        /**
+         * @type {FlatpickrInputConfig}
+         */
+        this.statefulConfig = Object.assign({}, DEFAULT_CONFIG);
+        const disableHook = (date, prevHandler) => {
+            const isoDate = toDate(date);
+            if (this.statefulConfig.disable.indexOf(isoDate) > -1) {
+                return true;
+            }
+            if (this.statefulConfig.enable.indexOf(isoDate) > -1) {
+                return false;
+            }
+            if (prevHandler && typeof prevHandler === "function") {
+                return prevHandler(date);
+            }
+            return false;
+        };
+
+        // allow custom config when navigating
+        // config can be loaded through ajax calls or returned by a onNavigate function
+        // config allows to display extra information per date and call enable/disable methods
+        // onMonthChange fire twice so we debounce https://github.com/flatpickr/flatpickr/issues/2398
+        const onNavigate =
+            typeof this.config.onNavigate === "string" ? getGlobalFn(this.config.onNavigate) : this.config.onNavigate;
+        const navigationHandler = debounce(async (selectedDates, dateStr, instance) => {
+            if (onNavigate) {
+                onNavigate(selectedDates, dateStr, instance);
+            }
+            this.loadConfig(instance);
+        }, 12);
+        const originalMonthHandler = this.config.onMonthChange;
+        const customMonthHandler = (selectedDates, dateStr, instance) => {
+            //@ts-ignore
+            navigationHandler(selectedDates, dateStr, instance);
+            if (originalMonthHandler) {
+                originalMonthHandler(selectedDates, dateStr, instance);
+            }
+        };
+        this.config.onMonthChange = customMonthHandler;
+        const originalYearHandler = this.config.onYearChange;
+        const customYearHandler = (selectedDates, dateStr, instance) => {
+            //@ts-ignore
+            navigationHandler(selectedDates, dateStr, instance);
+            if (originalYearHandler) {
+                originalYearHandler(selectedDates, dateStr, instance);
+            }
+        };
+        this.config.onYearChange = customYearHandler;
+        const originalChangeHandler = this.config.onChange;
+        const customChangeHandler = (selectedDates, dateStr, instance) => {
+            if (originalChangeHandler) {
+                originalChangeHandler(selectedDates, dateStr, instance);
+            }
+            // flatpickr redraws all cells on select
+            this._drawEvents();
+        };
+        this.config.onChange = customChangeHandler;
+
+        // otherwise you need to use a function inside an array, which is ugly notation
+        if (this.config.disable) {
+            if (typeof this.config.disable === "function") {
+                this.config.disable = [this.config.disable];
+            }
+            if (typeof this.config.disable === "string") {
+                this.config.disable = [getGlobalFn(this.config.disable)];
+            }
+        }
+        if (this.config.enable) {
+            if (typeof this.config.enable === "function") {
+                this.config.enable = [this.config.enable];
+            }
+            if (typeof this.config.enable === "string") {
+                this.config.enable = [getGlobalFn(this.config.enable)];
+            }
+        }
+
+        const fnOrArray = (v) => {
+            if (Array.isArray(v)) {
+                if (v.length && typeof v[0] === "function") {
+                    return v[0];
+                }
+                return v;
+            }
+            return null;
+        };
+
+        // allow disabled config hook
+        if (this.config.configUrl) {
+            const prevDisable = this.config.disable;
+            this.config.disable = [
+                (date) => {
+                    return disableHook(date, fnOrArray(prevDisable));
+                },
+            ];
+        }
 
         // use locale string by default as a nice format
         if (!this.keepFormat) {
@@ -147,6 +263,59 @@ class FlatpickrInput extends FormidableElement {
         );
     }
 
+    async loadConfig(instance) {
+        if (!this.config.configUrl) {
+            return;
+        }
+        const abortController = new AbortController();
+        const configData = await fetchJson(
+            this.config.configUrl,
+            {},
+            {
+                signal: abortController.signal,
+            },
+        );
+        this.statefulConfig = Object.assign({}, DEFAULT_CONFIG, configData);
+        instance.redraw();
+        this._drawEvents();
+    }
+
+    _drawEvents() {
+        const config = this.statefulConfig;
+        for (const bar of qq("span", ".fp-bar", this)) {
+            bar.remove();
+        }
+        if (config.events) {
+            for (let def of config.events) {
+                if (typeof def === "string") {
+                    def = Object.assign({}, DEAULT_EVENT, {
+                        date: def,
+                    });
+                }
+
+                const cell = this.getDaySpan(def.date);
+                if (cell) {
+                    const el = ce("span");
+                    el.classList.add("flatpickr-event");
+                    if (def.class) {
+                        el.classList.add(def.class);
+                    }
+
+                    cell.appendChild(el);
+                }
+            }
+        }
+    }
+
+    /**
+     * @param {Date} date
+     * @returns {HTMLSpanElement|null}
+     */
+    getDaySpan(date) {
+        const d = this.flatpickr.formatDate(date, this.config.ariaDateFormat || "F j, Y");
+        return q("span", `span[aria-label="${d}"]`, this);
+    }
+
     /**
      * @returns {String}
      */
@@ -182,6 +351,7 @@ class FlatpickrInput extends FormidableElement {
          * @type {flatpickr.Instance}
          */
         this.flatpickr = flatpickr(input, this.config);
+        this.loadConfig(this.flatpickr);
 
         if (this.el.value) {
             this._setRange(this.flatpickr.selectedDates[0]);

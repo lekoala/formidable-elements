@@ -1,6 +1,6 @@
 /**
  * Any property will work with attributes instead
- * 
+ *
  * @param {HTMLElement} obj
  * @param {Array} props
  */

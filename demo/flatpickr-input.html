@@ -37,6 +37,78 @@
     <!-- or you can load stuff afterwards and leverage our waitDefined feature -->
     <script src="https://npmcdn.com/flatpickr@4.6.13/dist/l10n/fr.js"></script>
     <script src="https://npmcdn.com/flatpickr@4.6.13/dist/l10n/es.js"></script>
+
+    <style>
+        .flatpickr-square {
+            --lighter: #f3f3f3;
+            --light: #e1e1e1;
+            --hover: #e6e6e6;
+            --accent: #03CBC8;
+        }
+
+        .flatpickr-square .flatpickr-months {
+            min-height: 39px;
+        }
+
+        .flatpickr-square .flatpickr-weekdays {
+            height: 39px;
+            border-top: 1px solid var(--light);
+        }
+
+        .flatpickr-square .flatpickr-weekday {
+            border: 1px solid var(--light);
+            line-height: 39px;
+        }
+
+        .flatpickr-square .flatpickr-weekday {
+            border: 1px solid var(--light);
+            line-height: 39px;
+        }
+
+        .flatpickr-square .flatpickr-months .flatpickr-prev-month:hover svg,
+        .flatpickr-months .flatpickr-next-month:hover svg {
+            fill: var(--accent);
+        }
+
+        .flatpickr-square .flatpickr-day {
+            border: 1px solid var(--light);
+            width: auto;
+            max-width: none;
+            line-height: 39px;
+            border-radius: 0;
+        }
+
+        .flatpickr-square .flatpickr-day.flatpickr-disabled {
+            border: 1px solid var(--light);
+            background: var(--lighter);
+        }
+
+        .flatpickr-square .flatpickr-day.today {
+            color: var(--accent);
+        }
+
+        .flatpickr-square .flatpickr-day.today:hover {
+            color: var(--accent);
+            background: var(--hover);
+        }
+
+        .flatpickr-square .flatpickr-day.selected {
+            border-color: var(--accent);
+            background: var(--accent);
+            color: #fff;
+        }
+
+        /* event supports */
+        .flatpickr-square .flatpickr-event {
+            position: absolute;
+            height: 2px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--accent);
+            opacity: 0.4;
+        }
+    </style>
 </head>
 
 <body class="p-3">
@@ -99,11 +171,23 @@
             </flatpickr-input>
         </div>
         <div class="mb-3">
-            <label for="inline-input" class="form-label me-3">Inline picker with custom features</label>
-            <flatpickr-input data-config='inline:true '>
+            <script>
+                var app = {};
+                app.disableDate = function (date) {
+                    return (date.getDay() === 0 || date.getDay() === 6);
+                }
+                app.navigate = function (selectedDates, dateStr, instance) {
+                    return {};
+                }
+            </script>
+            <label for="inline-input" class="form-label me-3">Inline picker with custom features and square theme</label>
+            <flatpickr-input
+                data-config="inline:true, disable: 'app.disableDate', locale: { firstDayOfWeek: 1}, onNavigate: 'app.navigate', configUrl: './data/flatpickr-config.json'"
+                class="flatpickr-square">
                 <!-- flatpickr will always need a text input, this can be hidden visually -->
-                <input type="text" class="form-control" id="inline-input" name="inline" value="" style="display:none">
+                <input type="text" class="form-control" id="inline-input" name="inline" style="display:none" value="2025-06-02">
             </flatpickr-input>
+            <p class="mt-3"><em>Weekends are disabled by default, but custom dates can be enabled with configUrl. Bars can be draw on top of the calendar to add extra information.</em></p>
         </div>
 
         <button type="submit" class="btn btn-primary">Submit</button>

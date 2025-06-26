@@ -13,15 +13,15 @@
  * @returns {Date}
  */
 export function changeDate(expr, dateOrTime = null) {
-  if (!dateOrTime) {
-    dateOrTime = new Date();
-  }
-  let t = dateOrTime instanceof Date ? dateOrTime.getTime() : dateOrTime;
-  if (expr.seconds) t += 1000 * expr.seconds;
-  if (expr.minutes) t += 1000 * 60 * expr.minutes;
-  if (expr.hours) t += 1000 * 60 * 60 * expr.hours;
-  if (expr.days) t += 1000 * 60 * 60 * 24 * expr.days;
-  return new Date(t);
+    if (!dateOrTime) {
+        dateOrTime = new Date();
+    }
+    let t = dateOrTime instanceof Date ? dateOrTime.getTime() : dateOrTime;
+    if (expr.seconds) t += 1000 * expr.seconds;
+    if (expr.minutes) t += 1000 * 60 * expr.minutes;
+    if (expr.hours) t += 1000 * 60 * 60 * expr.hours;
+    if (expr.days) t += 1000 * 60 * 60 * 24 * expr.days;
+    return new Date(t);
 }
 
 /**
@@ -29,14 +29,14 @@ export function changeDate(expr, dateOrTime = null) {
  * @returns {DateExpression}
  */
 export function dateParts(dateOrTime) {
-  const t = dateOrTime instanceof Date ? dateOrTime.getTime() : dateOrTime;
-  const expr = {
-    days: Math.floor(t / (1000 * 60 * 60 * 24)),
-    hours: Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-    minutes: Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)),
-    seconds: Math.floor((t % (1000 * 60)) / 1000),
-  };
-  return expr;
+    const t = dateOrTime instanceof Date ? dateOrTime.getTime() : dateOrTime;
+    const expr = {
+        days: Math.floor(t / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes: Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)),
+        seconds: Math.floor((t % (1000 * 60)) / 1000),
+    };
+    return expr;
 }
 
 /**
@@ -45,13 +45,13 @@ export function dateParts(dateOrTime) {
  * @returns {Date}
  */
 export function asDate(str = null) {
-  if (!str) {
-    return new Date();
-  }
-  if (str instanceof Date) {
-    return str;
-  }
-  return new Date(expandDate(str));
+    if (!str) {
+        return new Date();
+    }
+    if (str instanceof Date) {
+        return str;
+    }
+    return new Date(expandDate(str));
 }
 
 /**
@@ -65,11 +65,11 @@ export function asDate(str = null) {
  * @returns {string}
  */
 export function expandDate(str) {
-  const s = "0000-01-01 00:00:00";
-  while (str.length < s.length) {
-    str += s[str.length];
-  }
-  return str;
+    const s = "0000-01-01 00:00:00";
+    while (str.length < s.length) {
+        str += s[str.length];
+    }
+    return str;
 }
 
 /**
@@ -77,17 +77,17 @@ export function expandDate(str) {
  * @returns {Boolean}
  */
 export function isDay(date) {
-  date = asDate(date);
-  return date.getHours() == 0 && date.getMinutes() == 0 && date.getSeconds() == 0;
+    date = asDate(date);
+    return date.getHours() === 0 && date.getMinutes() === 0 && date.getSeconds() === 0;
 }
 
 /**
  * @returns {Date}
  */
 export function currentDay() {
-  const day = new Date();
-  day.setHours(0, 0, 0, 0);
-  return day;
+    const day = new Date();
+    day.setHours(0, 0, 0, 0);
+    return day;
 }
 
 /**
@@ -96,8 +96,8 @@ export function currentDay() {
  * @returns {string} YYYY-MM-DD HH:MM:SS
  */
 export function toDateTime(date) {
-  date = asDate(date);
-  return new Date(date.getTime() - date.getTimezoneOffset() * 60000).toISOString().split(".")[0].replace("T", " ");
+    date = asDate(date);
+    return new Date(date.getTime() - date.getTimezoneOffset() * 60000).toISOString().split(".")[0].replace("T", " ");
 }
 
 /**
@@ -105,7 +105,7 @@ export function toDateTime(date) {
  * @returns {string} YYYY-MM-DD
  */
 export function toDate(date) {
-  return toDateTime(date).split(" ")[0];
+    return toDateTime(date).split(" ")[0];
 }
 
 /**
@@ -113,7 +113,7 @@ export function toDate(date) {
  * @returns {string} HH:MM:SS
  */
 export function toTime(date) {
-  return toDateTime(date).split(" ")[1];
+    return toDateTime(date).split(" ")[1];
 }
 
 /**
@@ -121,8 +121,8 @@ export function toTime(date) {
  * @returns {Number}
  */
 export function ts(date = null) {
-  if (!date) {
-    return 0;
-  }
-  return asDate(date).getTime();
+    if (!date) {
+        return 0;
+    }
+    return asDate(date).getTime();
 }
