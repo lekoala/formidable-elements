@@ -736,36 +736,40 @@
    ├ src/input-mask.js                                                                                             30b     0.0%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
-  dist/flatpickr-input.min.js                                                                                    82.5kb  100.0%
-   ├ node_modules/flatpickr/dist/esm/index.js                                                                    41.1kb   49.8%
-   ├ node_modules/flatpickr/dist/flatpickr.min.css                                                               15.8kb   19.1%
-   ├ node_modules/flatpickr/dist/plugins/monthSelect/index.js                                                     5.4kb    6.5%
-   ├ node_modules/flatpickr/dist/plugins/monthSelect/style.css                                                    2.8kb    3.4%
-   ├ node_modules/flatpickr/dist/esm/utils/formatting.js                                                          2.5kb    3.0%
-   ├ src/classes/FlatpickrInput.js                                                                                2.3kb    2.7%
-   ├ node_modules/flatpickr/dist/esm/utils/dates.js                                                               2.0kb    2.5%
+  dist/flatpickr-input.min.js                                                                                    85.5kb  100.0%
+   ├ node_modules/flatpickr/dist/esm/index.js                                                                    41.1kb   48.1%
+   ├ node_modules/flatpickr/dist/flatpickr.min.css                                                               15.8kb   18.5%
+   ├ node_modules/flatpickr/dist/plugins/monthSelect/index.js                                                     5.4kb    6.3%
+   ├ src/classes/FlatpickrInput.js                                                                                4.1kb    4.8%
+   ├ node_modules/flatpickr/dist/plugins/monthSelect/style.css                                                    2.8kb    3.2%
+   ├ node_modules/flatpickr/dist/esm/utils/formatting.js                                                          2.5kb    2.9%
+   ├ node_modules/flatpickr/dist/esm/utils/dates.js                                                               2.0kb    2.4%
    ├ node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.js                                               1.8kb    2.2%
-   ├ node_modules/flatpickr/dist/esm/types/options.js                                                             1.8kb    2.2%
-   ├ node_modules/flatpickr/dist/esm/l10n/default.js                                                              815b     1.0%
+   ├ node_modules/flatpickr/dist/esm/types/options.js                                                             1.8kb    2.1%
+   ├ node_modules/flatpickr/dist/esm/l10n/default.js                                                              815b     0.9%
    ├ node_modules/flatpickr/dist/esm/utils/dom.js                                                                 799b     0.9%
-   ├ src/utils/FormidableElement.js                                                                               644b     0.8%
+   ├ src/utils/FormidableElement.js                                                                               644b     0.7%
+   ├ src/utils/fetchWrapper.js                                                                                    487b     0.6%
    ├ src/flatpickr-input.js                                                                                       419b     0.5%
-   ├ node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.css                                              383b     0.5%
+   ├ src/utils/fetchJson.js                                                                                       407b     0.5%
+   ├ node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.css                                              383b     0.4%
    ├ src/utils/date.js                                                                                            372b     0.4%
    ├ node_modules/flatpickr/dist/esm/utils/polyfills.js                                                           320b     0.4%
-   ├ src/utils/insertHiddenInput.js                                                                               297b     0.4%
+   ├ src/utils/insertHiddenInput.js                                                                               297b     0.3%
    ├ node_modules/flatpickr/dist/esm/utils/index.js                                                               282b     0.3%
-   ├ src/utils/simpleConfig.js                                                                                    242b     0.3%
-   ├ src/utils/replaceCallbacks.js                                                                                164b     0.2%
+   ├ src/utils/simpleConfig.js                                                                                    241b     0.3%
+   ├ src/utils/query.js                                                                                           217b     0.2%
+   ├ src/utils/replaceCallbacks.js                                                                                162b     0.2%
    ├ src/utils/injectStyles.js                                                                                    159b     0.2%
-   ├ src/utils/query.js                                                                                           135b     0.2%
    ├ src/utils/whenParsed.js                                                                                      134b     0.2%
    ├ src/utils/localeProvider.js                                                                                  120b     0.1%
    ├ src/utils/waitDefined.js                                                                                     107b     0.1%
+   ├ src/utils/debounce.js                                                                                        103b     0.1%
    ├ src/utils/setId.js                                                                                            67b     0.1%
    ├ src/utils/defineEl.js                                                                                         60b     0.1%
    ├ src/utils/insertAfter.js                                                                                      59b     0.1%
-   ├ src/utils/getGlobalFn.js                                                                                      50b     0.1%
+   ├ src/utils/getGlobalFn.js                                                                                      49b     0.1%
+   ├ src/utils/ce.js                                                                                               36b     0.0%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
   dist/squire-editor.min.js                                                                                      68.7kb  100.0%
@@ -858,31 +862,35 @@
    ├ src/utils/hasBootstrap.js                                                                                     30b     0.0%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
-  dist/flatpickr-input.raw.min.js                                                                                63.1kb  100.0%
-   ├ node_modules/flatpickr/dist/esm/index.js                                                                    41.1kb   65.2%
-   ├ node_modules/flatpickr/dist/plugins/monthSelect/index.js                                                     5.4kb    8.5%
-   ├ node_modules/flatpickr/dist/esm/utils/formatting.js                                                          2.5kb    4.0%
-   ├ src/classes/FlatpickrInput.js                                                                                2.3kb    3.6%
-   ├ node_modules/flatpickr/dist/esm/utils/dates.js                                                               2.0kb    3.2%
-   ├ node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.js                                               1.8kb    2.9%
-   ├ node_modules/flatpickr/dist/esm/types/options.js                                                             1.8kb    2.8%
-   ├ node_modules/flatpickr/dist/esm/l10n/default.js                                                              815b     1.3%
+  dist/flatpickr-input.raw.min.js                                                                                66.0kb  100.0%
+   ├ node_modules/flatpickr/dist/esm/index.js                                                                    41.1kb   62.3%
+   ├ node_modules/flatpickr/dist/plugins/monthSelect/index.js                                                     5.4kb    8.1%
+   ├ src/classes/FlatpickrInput.js                                                                                4.1kb    6.2%
+   ├ node_modules/flatpickr/dist/esm/utils/formatting.js                                                          2.5kb    3.8%
+   ├ node_modules/flatpickr/dist/esm/utils/dates.js                                                               2.0kb    3.1%
+   ├ node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.js                                               1.8kb    2.8%
+   ├ node_modules/flatpickr/dist/esm/types/options.js                                                             1.8kb    2.7%
+   ├ node_modules/flatpickr/dist/esm/l10n/default.js                                                              815b     1.2%
    ├ node_modules/flatpickr/dist/esm/utils/dom.js                                                                 799b     1.2%
    ├ src/utils/FormidableElement.js                                                                               644b     1.0%
+   ├ src/utils/fetchWrapper.js                                                                                    487b     0.7%
+   ├ src/utils/fetchJson.js                                                                                       407b     0.6%
    ├ src/utils/date.js                                                                                            372b     0.6%
    ├ node_modules/flatpickr/dist/esm/utils/polyfills.js                                                           320b     0.5%
-   ├ src/utils/insertHiddenInput.js                                                                               297b     0.5%
+   ├ src/utils/insertHiddenInput.js                                                                               297b     0.4%
    ├ node_modules/flatpickr/dist/esm/utils/index.js                                                               282b     0.4%
-   ├ src/utils/simpleConfig.js                                                                                    242b     0.4%
-   ├ src/utils/replaceCallbacks.js                                                                                164b     0.3%
-   ├ src/utils/query.js                                                                                           135b     0.2%
+   ├ src/utils/simpleConfig.js                                                                                    241b     0.4%
+   ├ src/utils/query.js                                                                                           217b     0.3%
+   ├ src/utils/replaceCallbacks.js                                                                                162b     0.2%
    ├ src/utils/whenParsed.js                                                                                      134b     0.2%
    ├ src/utils/localeProvider.js                                                                                  120b     0.2%
    ├ src/utils/waitDefined.js                                                                                     107b     0.2%
+   ├ src/utils/debounce.js                                                                                        103b     0.2%
    ├ src/utils/setId.js                                                                                            67b     0.1%
    ├ src/utils/defineEl.js                                                                                         60b     0.1%
    ├ src/utils/insertAfter.js                                                                                      59b     0.1%
-   ├ src/utils/getGlobalFn.js                                                                                      50b     0.1%
+   ├ src/utils/getGlobalFn.js                                                                                      49b     0.1%
+   ├ src/utils/ce.js                                                                                               36b     0.1%
    ├ src/flatpickr-input.raw.js                                                                                    35b     0.1%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
@@ -1205,4 +1213,4 @@
   dist\tiptap-editor.min.js       328.3kb
   ...and 34 more output files...
 
-Done in 121ms
+Done in 119ms

@@ -69,7 +69,7 @@
       "format": "esm"
     },
     "src/utils/reflectedProperties.js": {
-      "bytes": 374,
+      "bytes": 355,
       "imports": [],
       "format": "esm"
     },
@@ -453,7 +453,7 @@
       "format": "esm"
     },
     "src/utils/date.js": {
-      "bytes": 3034,
+      "bytes": 3011,
       "imports": [],
       "format": "esm"
     },
@@ -1380,8 +1380,18 @@
       "imports": [],
       "format": "esm"
     },
+    "src/utils/debounce.js": {
+      "bytes": 556,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/utils/ce.js": {
+      "bytes": 240,
+      "imports": [],
+      "format": "esm"
+    },
     "src/classes/FlatpickrInput.js": {
-      "bytes": 7462,
+      "bytes": 13381,
       "imports": [
         {
           "path": "node_modules/flatpickr/dist/esm/index.js",
@@ -1432,6 +1442,26 @@
           "path": "src/utils/localeProvider.js",
           "kind": "import-statement",
           "original": "../utils/localeProvider.js"
+        },
+        {
+          "path": "src/utils/getGlobalFn.js",
+          "kind": "import-statement",
+          "original": "../utils/getGlobalFn.js"
+        },
+        {
+          "path": "src/utils/debounce.js",
+          "kind": "import-statement",
+          "original": "../utils/debounce.js"
+        },
+        {
+          "path": "src/utils/fetchJson.js",
+          "kind": "import-statement",
+          "original": "../utils/fetchJson.js"
+        },
+        {
+          "path": "src/utils/ce.js",
+          "kind": "import-statement",
+          "original": "../utils/ce.js"
         }
       ],
       "format": "esm"
@@ -2351,11 +2381,6 @@
           "original": "./utils/defineEl.js"
         }
       ],
-      "format": "esm"
-    },
-    "src/utils/ce.js": {
-      "bytes": 240,
-      "imports": [],
       "format": "esm"
     },
     "src/utils/formDataToObject.js": {
@@ -7562,10 +7587,10 @@
           "bytesInOutput": 1892
         },
         "node_modules/flatpickr/dist/plugins/monthSelect/index.js": {
-          "bytesInOutput": 5505
+          "bytesInOutput": 5504
         },
         "node_modules/flatpickr/dist/esm/types/options.js": {
-          "bytesInOutput": 1837
+          "bytesInOutput": 1838
         },
         "node_modules/flatpickr/dist/esm/l10n/default.js": {
           "bytesInOutput": 815
@@ -7580,28 +7605,28 @@
           "bytesInOutput": 2567
         },
         "node_modules/flatpickr/dist/esm/utils/dates.js": {
-          "bytesInOutput": 2092
+          "bytesInOutput": 2094
         },
         "node_modules/flatpickr/dist/esm/utils/polyfills.js": {
           "bytesInOutput": 320
         },
         "node_modules/flatpickr/dist/esm/index.js": {
-          "bytesInOutput": 42084
+          "bytesInOutput": 42094
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 2316
+          "bytesInOutput": 4225
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
         },
         "src/utils/getGlobalFn.js": {
-          "bytesInOutput": 50
+          "bytesInOutput": 49
         },
         "src/utils/replaceCallbacks.js": {
-          "bytesInOutput": 164
+          "bytesInOutput": 162
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 242
+          "bytesInOutput": 241
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
@@ -7622,13 +7647,25 @@
           "bytesInOutput": 107
         },
         "src/utils/query.js": {
-          "bytesInOutput": 135
+          "bytesInOutput": 217
         },
         "src/utils/date.js": {
           "bytesInOutput": 372
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
+        },
+        "src/utils/debounce.js": {
+          "bytesInOutput": 103
+        },
+        "src/utils/fetchWrapper.js": {
+          "bytesInOutput": 487
+        },
+        "src/utils/fetchJson.js": {
+          "bytesInOutput": 407
+        },
+        "src/utils/ce.js": {
+          "bytesInOutput": 36
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7649,7 +7686,7 @@
           "bytesInOutput": 419
         }
       },
-      "bytes": 84522
+      "bytes": 87554
     },
     "dist/flatpickr-input.raw.min.js": {
       "imports": [],
@@ -7660,10 +7697,10 @@
           "bytesInOutput": 1892
         },
         "node_modules/flatpickr/dist/plugins/monthSelect/index.js": {
-          "bytesInOutput": 5505
+          "bytesInOutput": 5504
         },
         "node_modules/flatpickr/dist/esm/types/options.js": {
-          "bytesInOutput": 1837
+          "bytesInOutput": 1838
         },
         "node_modules/flatpickr/dist/esm/l10n/default.js": {
           "bytesInOutput": 815
@@ -7678,28 +7715,28 @@
           "bytesInOutput": 2567
         },
         "node_modules/flatpickr/dist/esm/utils/dates.js": {
-          "bytesInOutput": 2092
+          "bytesInOutput": 2094
         },
         "node_modules/flatpickr/dist/esm/utils/polyfills.js": {
           "bytesInOutput": 320
         },
         "node_modules/flatpickr/dist/esm/index.js": {
-          "bytesInOutput": 42084
+          "bytesInOutput": 42094
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 2316
+          "bytesInOutput": 4225
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
         },
         "src/utils/getGlobalFn.js": {
-          "bytesInOutput": 50
+          "bytesInOutput": 49
         },
         "src/utils/replaceCallbacks.js": {
-          "bytesInOutput": 164
+          "bytesInOutput": 162
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 242
+          "bytesInOutput": 241
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
@@ -7720,13 +7757,25 @@
           "bytesInOutput": 107
         },
         "src/utils/query.js": {
-          "bytesInOutput": 135
+          "bytesInOutput": 217
         },
         "src/utils/date.js": {
           "bytesInOutput": 372
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
+        },
+        "src/utils/debounce.js": {
+          "bytesInOutput": 103
+        },
+        "src/utils/fetchWrapper.js": {
+          "bytesInOutput": 487
+        },
+        "src/utils/fetchJson.js": {
+          "bytesInOutput": 407
+        },
+        "src/utils/ce.js": {
+          "bytesInOutput": 36
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7735,7 +7784,7 @@
           "bytesInOutput": 35
         }
       },
-      "bytes": 64587
+      "bytes": 67619
     },
     "dist/floating-ui.min.js": {
       "imports": [],
