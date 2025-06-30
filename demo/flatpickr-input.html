@@ -179,10 +179,13 @@
                 app.navigate = function (selectedDates, dateStr, instance) {
                     return {};
                 }
+                app.click = function(v){
+                    console.log(`click ${v}`);
+                }
             </script>
             <label for="inline-input" class="form-label me-3">Inline picker with custom features and square theme</label>
             <flatpickr-input
-                data-config="inline:true, disable: 'app.disableDate', locale: { firstDayOfWeek: 1}, onNavigate: 'app.navigate', configUrl: './data/flatpickr-config.json'"
+                data-config="inline:true, disable: 'app.disableDate', locale: { firstDayOfWeek: 1}, onValueUpdate: { __fn: 'app.click'}, onNavigate: 'app.navigate', configUrl: './data/flatpickr-config.json'"
                 class="flatpickr-square">
                 <!-- flatpickr will always need a text input, this can be hidden visually -->
                 <input type="text" class="form-control" id="inline-input" name="inline" style="display:none" value="2025-06-02">

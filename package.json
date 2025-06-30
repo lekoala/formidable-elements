@@ -10,15 +10,15 @@
   "author": "LeKoala",
   "license": "MIT",
   "dependencies": {
-    "@floating-ui/dom": "^1.7.1",
+    "@floating-ui/dom": "^1.7.2",
     "@melloware/coloris": "^0.25.0",
-    "@tiptap/core": "^2.22.3",
-    "@tiptap/extension-image": "^2.22.3",
-    "@tiptap/extension-link": "^2.22.3",
-    "@tiptap/extension-typography": "^2.22.3",
-    "@tiptap/extension-underline": "^2.22.3",
-    "@tiptap/pm": "^2.22.3",
-    "@tiptap/starter-kit": "^2.22.3",
+    "@tiptap/core": "^2.23.0",
+    "@tiptap/extension-image": "^2.23.0",
+    "@tiptap/extension-link": "^2.23.0",
+    "@tiptap/extension-typography": "^2.23.0",
+    "@tiptap/extension-underline": "^2.23.0",
+    "@tiptap/pm": "^2.23.0",
+    "@tiptap/starter-kit": "^2.23.0",
     "bootstrap5-autocomplete": "^1.1.39",
     "bootstrap5-tags": "^1.7.15",
     "cleave-es6": "^1.0.6",
@@ -51,7 +51,9 @@
     "tom-select": "^2.4.3"
   },
   "devDependencies": {
-    "esbuild": "^0.25.5"
+    "esbuild": "^0.25.5",
+    "@biomejs/biome": "^2.0.0",
+    "@types/bun": "^1.2.16"
   },
   "overrides": {
     "semver": "^7.5.3"
