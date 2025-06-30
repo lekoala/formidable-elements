@@ -1391,7 +1391,7 @@
       "format": "esm"
     },
     "src/classes/FlatpickrInput.js": {
-      "bytes": 13381,
+      "bytes": 10835,
       "imports": [
         {
           "path": "node_modules/flatpickr/dist/esm/index.js",
@@ -1531,12 +1531,12 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
-      "bytes": 4071,
+      "bytes": 4201,
       "imports": [],
       "format": "esm"
     },
     "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
-      "bytes": 36119,
+      "bytes": 36161,
       "imports": [
         {
           "path": "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
@@ -1552,12 +1552,12 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs": {
-      "bytes": 5830,
+      "bytes": 6219,
       "imports": [],
       "format": "esm"
     },
     "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-      "bytes": 26403,
+      "bytes": 26461,
       "imports": [
         {
           "path": "node_modules/@floating-ui/core/dist/floating-ui.core.mjs",
@@ -5567,7 +5567,7 @@
       "format": "esm"
     },
     "node_modules/@tiptap/core/dist/index.js": {
-      "bytes": 197964,
+      "bytes": 198049,
       "imports": [
         {
           "path": "node_modules/@tiptap/pm/state/dist/index.js",
@@ -7614,7 +7614,7 @@
           "bytesInOutput": 42094
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 4225
+          "bytesInOutput": 4300
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7686,7 +7686,7 @@
           "bytesInOutput": 419
         }
       },
-      "bytes": 87554
+      "bytes": 87629
     },
     "dist/flatpickr-input.raw.min.js": {
       "imports": [],
@@ -7724,7 +7724,7 @@
           "bytesInOutput": 42094
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 4225
+          "bytesInOutput": 4300
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7784,7 +7784,7 @@
           "bytesInOutput": 35
         }
       },
-      "bytes": 67619
+      "bytes": 67694
     },
     "dist/floating-ui.min.js": {
       "imports": [],
@@ -7792,16 +7792,16 @@
       "entryPoint": "src/floating-ui.js",
       "inputs": {
         "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs": {
-          "bytesInOutput": 1438
+          "bytesInOutput": 1463
         },
         "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
-          "bytesInOutput": 7399
+          "bytesInOutput": 7396
         },
         "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs": {
-          "bytesInOutput": 2402
+          "bytesInOutput": 2480
         },
         "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-          "bytesInOutput": 6844
+          "bytesInOutput": 6858
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7843,7 +7843,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 24894
+      "bytes": 25008
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -9886,7 +9886,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 61634
+          "bytesInOutput": 61646
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -10030,7 +10030,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 336155
+      "bytes": 336167
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -10086,7 +10086,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 61634
+          "bytesInOutput": 61646
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -10224,7 +10224,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 334989
+      "bytes": 335001
     },
     "dist/tom-select.min.js": {
       "imports": [],

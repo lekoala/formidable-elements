@@ -736,11 +736,11 @@
    ├ src/input-mask.js                                                                                             30b     0.0%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
-  dist/flatpickr-input.min.js                                                                                    85.5kb  100.0%
-   ├ node_modules/flatpickr/dist/esm/index.js                                                                    41.1kb   48.1%
+  dist/flatpickr-input.min.js                                                                                    85.6kb  100.0%
+   ├ node_modules/flatpickr/dist/esm/index.js                                                                    41.1kb   48.0%
    ├ node_modules/flatpickr/dist/flatpickr.min.css                                                               15.8kb   18.5%
    ├ node_modules/flatpickr/dist/plugins/monthSelect/index.js                                                     5.4kb    6.3%
-   ├ src/classes/FlatpickrInput.js                                                                                4.1kb    4.8%
+   ├ src/classes/FlatpickrInput.js                                                                                4.2kb    4.9%
    ├ node_modules/flatpickr/dist/plugins/monthSelect/style.css                                                    2.8kb    3.2%
    ├ node_modules/flatpickr/dist/esm/utils/formatting.js                                                          2.5kb    2.9%
    ├ node_modules/flatpickr/dist/esm/utils/dates.js                                                               2.0kb    2.4%
@@ -862,10 +862,10 @@
    ├ src/utils/hasBootstrap.js                                                                                     30b     0.0%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
-  dist/flatpickr-input.raw.min.js                                                                                66.0kb  100.0%
-   ├ node_modules/flatpickr/dist/esm/index.js                                                                    41.1kb   62.3%
+  dist/flatpickr-input.raw.min.js                                                                                66.1kb  100.0%
+   ├ node_modules/flatpickr/dist/esm/index.js                                                                    41.1kb   62.2%
    ├ node_modules/flatpickr/dist/plugins/monthSelect/index.js                                                     5.4kb    8.1%
-   ├ src/classes/FlatpickrInput.js                                                                                4.1kb    6.2%
+   ├ src/classes/FlatpickrInput.js                                                                                4.2kb    6.4%
    ├ node_modules/flatpickr/dist/esm/utils/formatting.js                                                          2.5kb    3.8%
    ├ node_modules/flatpickr/dist/esm/utils/dates.js                                                               2.0kb    3.1%
    ├ node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.js                                               1.8kb    2.8%
@@ -875,7 +875,7 @@
    ├ src/utils/FormidableElement.js                                                                               644b     1.0%
    ├ src/utils/fetchWrapper.js                                                                                    487b     0.7%
    ├ src/utils/fetchJson.js                                                                                       407b     0.6%
-   ├ src/utils/date.js                                                                                            372b     0.6%
+   ├ src/utils/date.js                                                                                            372b     0.5%
    ├ node_modules/flatpickr/dist/esm/utils/polyfills.js                                                           320b     0.5%
    ├ src/utils/insertHiddenInput.js                                                                               297b     0.4%
    ├ node_modules/flatpickr/dist/esm/utils/index.js                                                               282b     0.4%
@@ -984,12 +984,12 @@
    ├ src/utils/getGlobalFn.js                                                                                      49b     0.2%
    └ src/utils/isString.js                                                                                         29b     0.1%
 
-  dist/floating-ui.min.js                                                                                        24.3kb  100.0%
-   ├ node_modules/@floating-ui/core/dist/floating-ui.core.mjs                                                     7.2kb   29.7%
-   ├ node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs                                                       6.7kb   27.5%
-   ├ src/classes/FloatingUi.js                                                                                    4.3kb   17.7%
-   ├ node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs                                               2.3kb    9.6%
-   ├ node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs                                                   1.4kb    5.8%
+  dist/floating-ui.min.js                                                                                        24.4kb  100.0%
+   ├ node_modules/@floating-ui/core/dist/floating-ui.core.mjs                                                     7.2kb   29.6%
+   ├ node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs                                                       6.7kb   27.4%
+   ├ src/classes/FloatingUi.js                                                                                    4.3kb   17.6%
+   ├ node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs                                               2.4kb    9.9%
+   ├ node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs                                                   1.4kb    5.9%
    ├ src/utils/FormidableElement.js                                                                               644b     2.6%
    ├ src/floating-ui.js                                                                                           410b     1.6%
    ├ src/utils/props.js                                                                                           308b     1.2%
@@ -1213,4 +1213,4 @@
   dist\tiptap-editor.min.js       328.3kb
   ...and 34 more output files...
 
-Done in 119ms
+Done in 125ms
