@@ -377,13 +377,21 @@ class TiptapEditor extends EventfulElement {
 					HardBreak,
 					History,
 					HorizontalRule,
-					BulletList,
-					ListItem.configure({
+					BulletList.configure({
 						HTMLAttributes: {
 							class: `${CLASS_PREFIX}list`,
 						},
 					}),
-					OrderedList,
+					ListItem.configure({
+						HTMLAttributes: {
+							class: `${CLASS_PREFIX}list-item`,
+						},
+					}),
+					OrderedList.configure({
+						HTMLAttributes: {
+							class: `${CLASS_PREFIX}list`,
+						},
+					}),
 					Typography,
 					Link.configure({
 						openOnClick: false,

@@ -5959,7 +5959,7 @@
       "format": "esm"
     },
     "src/classes/TiptapEditor.js": {
-      "bytes": 16737,
+      "bytes": 16922,
       "imports": [
         {
           "path": "node_modules/@tiptap/core/dist/index.js",
@@ -10015,7 +10015,7 @@
           "bytesInOutput": 1568
         },
         "src/classes/TiptapEditor.js": {
-          "bytesInOutput": 7721
+          "bytesInOutput": 7822
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -10030,7 +10030,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 337007
+      "bytes": 337108
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -10215,7 +10215,7 @@
           "bytesInOutput": 1568
         },
         "src/classes/TiptapEditor.js": {
-          "bytesInOutput": 7721
+          "bytesInOutput": 7822
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -10224,7 +10224,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 335841
+      "bytes": 335942
     },
     "dist/tom-select.min.js": {
       "imports": [],

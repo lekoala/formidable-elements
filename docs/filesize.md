@@ -468,7 +468,7 @@
    ├ node_modules/tabulator-tables/src/js/modules/Export/defaults/columnLookups.js                                 10b     0.0%
    └ node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js                                     10b     0.0%
 
-  dist/tiptap-editor.min.js                                                                                     329.1kb  100.0%
+  dist/tiptap-editor.min.js                                                                                     329.2kb  100.0%
    ├ node_modules/prosemirror-view/dist/index.js                                                                 93.3kb   28.3%
    ├ node_modules/@tiptap/core/dist/index.js                                                                     60.2kb   18.3%
    ├ node_modules/prosemirror-model/dist/index.js                                                                43.2kb   13.1%
@@ -477,7 +477,7 @@
    ├ node_modules/prosemirror-state/dist/index.js                                                                11.5kb    3.5%
    ├ node_modules/prosemirror-commands/dist/index.js                                                              9.2kb    2.8%
    ├ src/utils/bootstrap-icons.js                                                                                 8.1kb    2.4%
-   ├ src/classes/TiptapEditor.js                                                                                  7.5kb    2.3%
+   ├ src/classes/TiptapEditor.js                                                                                  7.6kb    2.3%
    ├ node_modules/prosemirror-history/dist/index.js                                                               5.6kb    1.7%
    ├ node_modules/@tiptap/extension-link/dist/index.js                                                            5.4kb    1.6%
    ├ node_modules/rope-sequence/dist/index.js                                                                     3.3kb    1.0%
@@ -525,7 +525,7 @@
    ├ src/utils/hasBootstrap.js                                                                                     30b     0.0%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
-  dist/tiptap-editor.raw.min.js                                                                                 328.0kb  100.0%
+  dist/tiptap-editor.raw.min.js                                                                                 328.1kb  100.0%
    ├ node_modules/prosemirror-view/dist/index.js                                                                 93.3kb   28.4%
    ├ node_modules/@tiptap/core/dist/index.js                                                                     60.2kb   18.4%
    ├ node_modules/prosemirror-model/dist/index.js                                                                43.2kb   13.2%
@@ -534,7 +534,7 @@
    ├ node_modules/prosemirror-state/dist/index.js                                                                11.5kb    3.5%
    ├ node_modules/prosemirror-commands/dist/index.js                                                              9.2kb    2.8%
    ├ src/utils/bootstrap-icons.js                                                                                 8.1kb    2.5%
-   ├ src/classes/TiptapEditor.js                                                                                  7.5kb    2.3%
+   ├ src/classes/TiptapEditor.js                                                                                  7.6kb    2.3%
    ├ node_modules/prosemirror-history/dist/index.js                                                               5.6kb    1.7%
    ├ node_modules/@tiptap/extension-link/dist/index.js                                                            5.4kb    1.6%
    ├ node_modules/rope-sequence/dist/index.js                                                                     3.3kb    1.0%
@@ -1210,7 +1210,7 @@
   dist\tel-input.raw.min.js       557.3kb
   dist\tabulator-grid.min.js      469.2kb
   dist\tabulator-grid.raw.min.js  420.1kb
-  dist\tiptap-editor.min.js       329.1kb
+  dist\tiptap-editor.min.js       329.2kb
   ...and 34 more output files...
 
-Done in 3531ms
+Done in 232ms
