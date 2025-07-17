@@ -468,28 +468,28 @@
    ├ node_modules/tabulator-tables/src/js/modules/Export/defaults/columnLookups.js                                 10b     0.0%
    └ node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js                                     10b     0.0%
 
-  dist/tiptap-editor.min.js                                                                                     328.3kb  100.0%
-   ├ node_modules/prosemirror-view/dist/index.js                                                                 92.9kb   28.3%
+  dist/tiptap-editor.min.js                                                                                     329.1kb  100.0%
+   ├ node_modules/prosemirror-view/dist/index.js                                                                 93.3kb   28.3%
    ├ node_modules/@tiptap/core/dist/index.js                                                                     60.2kb   18.3%
-   ├ node_modules/prosemirror-model/dist/index.js                                                                43.2kb   13.2%
+   ├ node_modules/prosemirror-model/dist/index.js                                                                43.2kb   13.1%
    ├ node_modules/prosemirror-transform/dist/index.js                                                            29.8kb    9.1%
-   ├ node_modules/linkifyjs/dist/linkify.es.js                                                                   19.2kb    5.8%
+   ├ node_modules/linkifyjs/dist/linkify.mjs                                                                     19.2kb    5.8%
    ├ node_modules/prosemirror-state/dist/index.js                                                                11.5kb    3.5%
    ├ node_modules/prosemirror-commands/dist/index.js                                                              9.2kb    2.8%
-   ├ src/utils/bootstrap-icons.js                                                                                 8.1kb    2.5%
+   ├ src/utils/bootstrap-icons.js                                                                                 8.1kb    2.4%
    ├ src/classes/TiptapEditor.js                                                                                  7.5kb    2.3%
    ├ node_modules/prosemirror-history/dist/index.js                                                               5.6kb    1.7%
-   ├ node_modules/@tiptap/extension-link/dist/index.js                                                            5.3kb    1.6%
+   ├ node_modules/@tiptap/extension-link/dist/index.js                                                            5.4kb    1.6%
    ├ node_modules/rope-sequence/dist/index.js                                                                     3.3kb    1.0%
    ├ node_modules/@tiptap/extension-typography/dist/index.js                                                      3.0kb    0.9%
-   ├ node_modules/prosemirror-dropcursor/dist/index.js                                                            2.8kb    0.9%
+   ├ node_modules/prosemirror-dropcursor/dist/index.js                                                            3.0kb    0.9%
    ├ node_modules/@tiptap/extension-code-block/dist/index.js                                                      2.6kb    0.8%
-   ├ node_modules/prosemirror-schema-list/dist/index.js                                                           2.4kb    0.7%
+   ├ node_modules/prosemirror-schema-list/dist/index.js                                                           2.6kb    0.8%
    ├ src/utils/dropmenu.js                                                                                        1.5kb    0.5%
    ├ node_modules/w3c-keyname/index.js                                                                            1.5kb    0.4%
    ├ node_modules/@tiptap/extension-ordered-list/dist/index.js                                                    1.4kb    0.4%
    ├ node_modules/orderedmap/dist/index.js                                                                        1.4kb    0.4%
-   ├ node_modules/prosemirror-keymap/dist/index.js                                                                1.1kb    0.3%
+   ├ node_modules/prosemirror-keymap/dist/index.js                                                                1.2kb    0.4%
    ├ node_modules/@tiptap/extension-bold/dist/index.js                                                            1.0kb    0.3%
    ├ node_modules/@tiptap/extension-horizontal-rule/dist/index.js                                                 1.0kb    0.3%
    ├ node_modules/@tiptap/extension-bullet-list/dist/index.js                                                     1.0kb    0.3%
@@ -525,28 +525,28 @@
    ├ src/utils/hasBootstrap.js                                                                                     30b     0.0%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
-  dist/tiptap-editor.raw.min.js                                                                                 327.1kb  100.0%
-   ├ node_modules/prosemirror-view/dist/index.js                                                                 92.9kb   28.4%
+  dist/tiptap-editor.raw.min.js                                                                                 328.0kb  100.0%
+   ├ node_modules/prosemirror-view/dist/index.js                                                                 93.3kb   28.4%
    ├ node_modules/@tiptap/core/dist/index.js                                                                     60.2kb   18.4%
    ├ node_modules/prosemirror-model/dist/index.js                                                                43.2kb   13.2%
    ├ node_modules/prosemirror-transform/dist/index.js                                                            29.8kb    9.1%
-   ├ node_modules/linkifyjs/dist/linkify.es.js                                                                   19.2kb    5.9%
+   ├ node_modules/linkifyjs/dist/linkify.mjs                                                                     19.2kb    5.8%
    ├ node_modules/prosemirror-state/dist/index.js                                                                11.5kb    3.5%
    ├ node_modules/prosemirror-commands/dist/index.js                                                              9.2kb    2.8%
    ├ src/utils/bootstrap-icons.js                                                                                 8.1kb    2.5%
    ├ src/classes/TiptapEditor.js                                                                                  7.5kb    2.3%
    ├ node_modules/prosemirror-history/dist/index.js                                                               5.6kb    1.7%
-   ├ node_modules/@tiptap/extension-link/dist/index.js                                                            5.3kb    1.6%
+   ├ node_modules/@tiptap/extension-link/dist/index.js                                                            5.4kb    1.6%
    ├ node_modules/rope-sequence/dist/index.js                                                                     3.3kb    1.0%
    ├ node_modules/@tiptap/extension-typography/dist/index.js                                                      3.0kb    0.9%
-   ├ node_modules/prosemirror-dropcursor/dist/index.js                                                            2.8kb    0.9%
+   ├ node_modules/prosemirror-dropcursor/dist/index.js                                                            3.0kb    0.9%
    ├ node_modules/@tiptap/extension-code-block/dist/index.js                                                      2.6kb    0.8%
-   ├ node_modules/prosemirror-schema-list/dist/index.js                                                           2.4kb    0.7%
+   ├ node_modules/prosemirror-schema-list/dist/index.js                                                           2.6kb    0.8%
    ├ src/utils/dropmenu.js                                                                                        1.5kb    0.5%
    ├ node_modules/w3c-keyname/index.js                                                                            1.5kb    0.4%
    ├ node_modules/@tiptap/extension-ordered-list/dist/index.js                                                    1.4kb    0.4%
    ├ node_modules/orderedmap/dist/index.js                                                                        1.4kb    0.4%
-   ├ node_modules/prosemirror-keymap/dist/index.js                                                                1.1kb    0.3%
+   ├ node_modules/prosemirror-keymap/dist/index.js                                                                1.2kb    0.4%
    ├ node_modules/@tiptap/extension-bold/dist/index.js                                                            1.0kb    0.3%
    ├ node_modules/@tiptap/extension-horizontal-rule/dist/index.js                                                 1.0kb    0.3%
    ├ node_modules/@tiptap/extension-bullet-list/dist/index.js                                                     1.0kb    0.3%
@@ -580,10 +580,10 @@
    ├ src/utils/hasBootstrap.js                                                                                     30b     0.0%
    └ src/utils/isString.js                                                                                         29b     0.0%
 
-  dist/data-table.min.js                                                                                        322.7kb  100.0%
+  dist/data-table.min.js                                                                                        323.0kb  100.0%
    ├ node_modules/datatables.net/js/dataTables.mjs                                                               98.1kb   30.4%
-   ├ node_modules/jquery/dist/jquery.js                                                                          86.1kb   26.7%
-   ├ node_modules/datatables.net-buttons/js/dataTables.buttons.mjs                                               27.7kb    8.6%
+   ├ node_modules/jquery/dist/jquery.js                                                                          86.0kb   26.6%
+   ├ node_modules/datatables.net-buttons/js/dataTables.buttons.mjs                                               27.8kb    8.6%
    ├ node_modules/datatables.net-select/js/dataTables.select.mjs                                                 20.0kb    6.2%
    ├ node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css                                           19.0kb    5.9%
    ├ node_modules/datatables.net-responsive/js/dataTables.responsive.mjs                                         15.5kb    4.8%
@@ -591,7 +591,7 @@
    ├ node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css                                       8.0kb    2.5%
    ├ node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs                                      7.5kb    2.3%
    ├ node_modules/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css                                 5.9kb    1.8%
-   ├ node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs                                              3.6kb    1.1%
+   ├ node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs                                              3.7kb    1.1%
    ├ node_modules/datatables.net-fixedcolumns-bs5/css/fixedColumns.bootstrap5.min.css                             3.3kb    1.0%
    ├ node_modules/datatables.net-select-bs5/css/select.bootstrap5.min.css                                         2.1kb    0.7%
    ├ node_modules/datatables.net-rowgroup-bs5/css/rowGroup.bootstrap5.min.css                                     1.9kb    0.6%
@@ -620,15 +620,15 @@
    ├ node_modules/datatables.net-fixedheader-bs5/js/fixedHeader.bootstrap5.mjs                                     18b     0.0%
    └ node_modules/datatables.net-rowgroup-bs5/js/rowGroup.bootstrap5.mjs                                           18b     0.0%
 
-  dist/data-table.raw.min.js                                                                                    281.7kb  100.0%
+  dist/data-table.raw.min.js                                                                                    282.0kb  100.0%
    ├ node_modules/datatables.net/js/dataTables.mjs                                                               98.1kb   34.8%
-   ├ node_modules/jquery/dist/jquery.js                                                                          86.1kb   30.6%
-   ├ node_modules/datatables.net-buttons/js/dataTables.buttons.mjs                                               27.7kb    9.8%
+   ├ node_modules/jquery/dist/jquery.js                                                                          86.0kb   30.5%
+   ├ node_modules/datatables.net-buttons/js/dataTables.buttons.mjs                                               27.8kb    9.9%
    ├ node_modules/datatables.net-select/js/dataTables.select.mjs                                                 20.0kb    7.1%
    ├ node_modules/datatables.net-responsive/js/dataTables.responsive.mjs                                         15.5kb    5.5%
    ├ node_modules/datatables.net-fixedheader/js/dataTables.fixedHeader.mjs                                       12.1kb    4.3%
    ├ node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs                                      7.5kb    2.7%
-   ├ node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs                                              3.6kb    1.3%
+   ├ node_modules/datatables.net-rowgroup/js/dataTables.rowGroup.mjs                                              3.7kb    1.3%
    ├ src/classes/DataTableElement.js                                                                              1.5kb    0.5%
    ├ node_modules/datatables.net-responsive-bs5/js/responsive.bootstrap5.mjs                                      1.1kb    0.4%
    ├ node_modules/datatables.net-buttons-bs5/js/buttons.bootstrap5.mjs                                            969b     0.3%
@@ -1210,7 +1210,7 @@
   dist\tel-input.raw.min.js       557.3kb
   dist\tabulator-grid.min.js      469.2kb
   dist\tabulator-grid.raw.min.js  420.1kb
-  dist\tiptap-editor.min.js       328.3kb
+  dist\tiptap-editor.min.js       329.1kb
   ...and 34 more output files...
 
-Done in 125ms
+Done in 3531ms
