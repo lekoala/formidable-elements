@@ -137,7 +137,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-      "bytes": 37460,
+      "bytes": 38600,
       "imports": [],
       "format": "esm"
     },
@@ -613,7 +613,7 @@
       "format": "cjs"
     },
     "node_modules/datatables.net/js/dataTables.mjs": {
-      "bytes": 375809,
+      "bytes": 375957,
       "imports": [
         {
           "path": "node_modules/jquery/dist/jquery.js",
@@ -751,7 +751,7 @@
       "format": "esm"
     },
     "node_modules/datatables.net-responsive/js/dataTables.responsive.mjs": {
-      "bytes": 46257,
+      "bytes": 46573,
       "imports": [
         {
           "path": "node_modules/jquery/dist/jquery.js",
@@ -825,7 +825,7 @@
       "format": "esm"
     },
     "node_modules/datatables.net-select/js/dataTables.select.mjs": {
-      "bytes": 49714,
+      "bytes": 50075,
       "imports": [
         {
           "path": "node_modules/jquery/dist/jquery.js",
@@ -841,7 +841,7 @@
       "format": "esm"
     },
     "node_modules/datatables.net-select-bs5/js/select.bootstrap5.mjs": {
-      "bytes": 353,
+      "bytes": 372,
       "imports": [
         {
           "path": "node_modules/jquery/dist/jquery.js",
@@ -959,7 +959,7 @@
       "format": "esm"
     },
     "node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css": {
-      "bytes": 19427,
+      "bytes": 19703,
       "imports": []
     },
     "node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css": {
@@ -983,7 +983,7 @@
       "imports": []
     },
     "node_modules/datatables.net-select-bs5/css/select.bootstrap5.min.css": {
-      "bytes": 2157,
+      "bytes": 2275,
       "imports": []
     },
     "src/css/datatables.min.css": {
@@ -1536,7 +1536,7 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
-      "bytes": 36161,
+      "bytes": 36167,
       "imports": [
         {
           "path": "node_modules/@floating-ui/utils/dist/floating-ui.utils.mjs",
@@ -1557,7 +1557,7 @@
       "format": "esm"
     },
     "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-      "bytes": 26461,
+      "bytes": 27498,
       "imports": [
         {
           "path": "node_modules/@floating-ui/core/dist/floating-ui.core.mjs",
@@ -2431,7 +2431,7 @@
       "format": "esm"
     },
     "node_modules/squire-rte/dist/squire-raw.mjs": {
-      "bytes": 120467,
+      "bytes": 120563,
       "imports": [],
       "format": "esm"
     },
@@ -5256,12 +5256,12 @@
       "format": "esm"
     },
     "node_modules/intl-tel-input/build/js/intlTelInputWithUtils.js": {
-      "bytes": 440287,
+      "bytes": 443330,
       "imports": [],
       "format": "cjs"
     },
     "node_modules/intl-tel-input/build/js/utils.js": {
-      "bytes": 265475,
+      "bytes": 266119,
       "imports": [],
       "format": "esm"
     },
@@ -5901,7 +5901,7 @@
       "format": "esm"
     },
     "node_modules/linkifyjs/dist/linkify.mjs": {
-      "bytes": 63846,
+      "bytes": 63626,
       "imports": [],
       "format": "esm"
     },
@@ -6814,7 +6814,7 @@
       "entryPoint": "src/bs-autocomplete.js",
       "inputs": {
         "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-          "bytesInOutput": 15590
+          "bytesInOutput": 15813
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6847,7 +6847,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 17498
+      "bytes": 17721
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -7166,7 +7166,7 @@
       "entryPoint": "src/count-up.js",
       "inputs": {
         "node_modules/countup.js/dist/countUp.min.js": {
-          "bytesInOutput": 5903
+          "bytesInOutput": 5915
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -7211,7 +7211,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 9302
+      "bytes": 9314
     },
     "dist/data-table.min.js": {
       "imports": [],
@@ -7219,19 +7219,19 @@
       "entryPoint": "src/data-table.js",
       "inputs": {
         "node_modules/jquery/dist/jquery.js": {
-          "bytesInOutput": 88096
+          "bytesInOutput": 88102
         },
         "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
           "bytesInOutput": 935
         },
         "node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 100462
+          "bytesInOutput": 100481
         },
         "node_modules/datatables.net-fixedcolumns-bs5/js/fixedColumns.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
         "node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs": {
-          "bytesInOutput": 7731
+          "bytesInOutput": 7733
         },
         "node_modules/datatables.net-fixedheader-bs5/js/fixedHeader.bootstrap5.mjs": {
           "bytesInOutput": 18
@@ -7249,7 +7249,7 @@
           "bytesInOutput": 1174
         },
         "node_modules/datatables.net-responsive/js/dataTables.responsive.mjs": {
-          "bytesInOutput": 15908
+          "bytesInOutput": 15990
         },
         "node_modules/datatables.net-rowgroup-bs5/js/rowGroup.bootstrap5.mjs": {
           "bytesInOutput": 18
@@ -7258,10 +7258,10 @@
           "bytesInOutput": 3797
         },
         "node_modules/datatables.net-select-bs5/js/select.bootstrap5.mjs": {
-          "bytesInOutput": 64
+          "bytesInOutput": 83
         },
         "node_modules/datatables.net-select/js/dataTables.select.mjs": {
-          "bytesInOutput": 20471
+          "bytesInOutput": 20645
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7303,7 +7303,7 @@
           "bytesInOutput": 60
         },
         "node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css": {
-          "bytesInOutput": 19451
+          "bytesInOutput": 19727
         },
         "node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css": {
           "bytesInOutput": 8155
@@ -7321,7 +7321,7 @@
           "bytesInOutput": 1979
         },
         "node_modules/datatables.net-select-bs5/css/select.bootstrap5.min.css": {
-          "bytesInOutput": 2173
+          "bytesInOutput": 2291
         },
         "src/css/datatables.min.css": {
           "bytesInOutput": 280
@@ -7333,7 +7333,7 @@
           "bytesInOutput": 71
         }
       },
-      "bytes": 330769
+      "bytes": 331465
     },
     "dist/data-table.raw.min.js": {
       "imports": [],
@@ -7341,19 +7341,19 @@
       "entryPoint": "src/data-table.raw.js",
       "inputs": {
         "node_modules/jquery/dist/jquery.js": {
-          "bytesInOutput": 88096
+          "bytesInOutput": 88102
         },
         "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
           "bytesInOutput": 935
         },
         "node_modules/datatables.net/js/dataTables.mjs": {
-          "bytesInOutput": 100462
+          "bytesInOutput": 100481
         },
         "node_modules/datatables.net-fixedcolumns-bs5/js/fixedColumns.bootstrap5.mjs": {
           "bytesInOutput": 18
         },
         "node_modules/datatables.net-fixedcolumns/js/dataTables.fixedColumns.mjs": {
-          "bytesInOutput": 7731
+          "bytesInOutput": 7733
         },
         "node_modules/datatables.net-fixedheader-bs5/js/fixedHeader.bootstrap5.mjs": {
           "bytesInOutput": 18
@@ -7371,7 +7371,7 @@
           "bytesInOutput": 1174
         },
         "node_modules/datatables.net-responsive/js/dataTables.responsive.mjs": {
-          "bytesInOutput": 15908
+          "bytesInOutput": 15990
         },
         "node_modules/datatables.net-rowgroup-bs5/js/rowGroup.bootstrap5.mjs": {
           "bytesInOutput": 18
@@ -7380,10 +7380,10 @@
           "bytesInOutput": 3797
         },
         "node_modules/datatables.net-select-bs5/js/select.bootstrap5.mjs": {
-          "bytesInOutput": 64
+          "bytesInOutput": 83
         },
         "node_modules/datatables.net-select/js/dataTables.select.mjs": {
-          "bytesInOutput": 20471
+          "bytesInOutput": 20645
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7428,7 +7428,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 288724
+      "bytes": 289026
     },
     "dist/filepond-input.min.js": {
       "imports": [],
@@ -7584,10 +7584,10 @@
       "entryPoint": "src/flatpickr-input.js",
       "inputs": {
         "node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.js": {
-          "bytesInOutput": 1892
+          "bytesInOutput": 1894
         },
         "node_modules/flatpickr/dist/plugins/monthSelect/index.js": {
-          "bytesInOutput": 5504
+          "bytesInOutput": 5506
         },
         "node_modules/flatpickr/dist/esm/types/options.js": {
           "bytesInOutput": 1838
@@ -7611,7 +7611,7 @@
           "bytesInOutput": 320
         },
         "node_modules/flatpickr/dist/esm/index.js": {
-          "bytesInOutput": 42094
+          "bytesInOutput": 42096
         },
         "src/classes/FlatpickrInput.js": {
           "bytesInOutput": 4300
@@ -7686,7 +7686,7 @@
           "bytesInOutput": 419
         }
       },
-      "bytes": 87629
+      "bytes": 87635
     },
     "dist/flatpickr-input.raw.min.js": {
       "imports": [],
@@ -7694,10 +7694,10 @@
       "entryPoint": "src/flatpickr-input.raw.js",
       "inputs": {
         "node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.js": {
-          "bytesInOutput": 1892
+          "bytesInOutput": 1894
         },
         "node_modules/flatpickr/dist/plugins/monthSelect/index.js": {
-          "bytesInOutput": 5504
+          "bytesInOutput": 5506
         },
         "node_modules/flatpickr/dist/esm/types/options.js": {
           "bytesInOutput": 1838
@@ -7721,7 +7721,7 @@
           "bytesInOutput": 320
         },
         "node_modules/flatpickr/dist/esm/index.js": {
-          "bytesInOutput": 42094
+          "bytesInOutput": 42096
         },
         "src/classes/FlatpickrInput.js": {
           "bytesInOutput": 4300
@@ -7784,7 +7784,7 @@
           "bytesInOutput": 35
         }
       },
-      "bytes": 67694
+      "bytes": 67700
     },
     "dist/floating-ui.min.js": {
       "imports": [],
@@ -7795,13 +7795,13 @@
           "bytesInOutput": 1463
         },
         "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
-          "bytesInOutput": 7396
+          "bytesInOutput": 7398
         },
         "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs": {
           "bytesInOutput": 2480
         },
         "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-          "bytesInOutput": 6858
+          "bytesInOutput": 7072
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7843,7 +7843,7 @@
           "bytesInOutput": 410
         }
       },
-      "bytes": 25008
+      "bytes": 25224
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -8056,7 +8056,7 @@
           "bytesInOutput": 201
         },
         "node_modules/inputmask/lib/mask-lexer.js": {
-          "bytesInOutput": 7049
+          "bytesInOutput": 7050
         },
         "node_modules/inputmask/lib/inputmask.js": {
           "bytesInOutput": 5921
@@ -8107,7 +8107,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 92390
+      "bytes": 92391
     },
     "dist/limited-input.min.js": {
       "imports": [],
@@ -8208,7 +8208,7 @@
       "entryPoint": "src/squire-editor.js",
       "inputs": {
         "node_modules/squire-rte/dist/squire-raw.mjs": {
-          "bytesInOutput": 51904
+          "bytesInOutput": 51959
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8268,7 +8268,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 70387
+      "bytes": 70442
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -8282,7 +8282,7 @@
       "entryPoint": "src/squire-editor.raw.js",
       "inputs": {
         "node_modules/squire-rte/dist/squire-raw.mjs": {
-          "bytesInOutput": 51904
+          "bytesInOutput": 51959
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8336,7 +8336,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 69481
+      "bytes": 69536
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -9702,13 +9702,13 @@
       "entryPoint": "src/tel-input.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInputWithUtils.js": {
-          "bytesInOutput": 300372
+          "bytesInOutput": 301459
         },
         "src/classes/TelInput.js": {
           "bytesInOutput": 3041
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 262766
+          "bytesInOutput": 263336
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -9765,7 +9765,7 @@
           "bytesInOutput": 520
         }
       },
-      "bytes": 587388
+      "bytes": 589045
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -9773,13 +9773,13 @@
       "entryPoint": "src/tel-input.raw.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInputWithUtils.js": {
-          "bytesInOutput": 300372
+          "bytesInOutput": 301459
         },
         "src/classes/TelInput.js": {
           "bytesInOutput": 3041
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 262766
+          "bytesInOutput": 263336
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -9830,7 +9830,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 570630
+      "bytes": 572287
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -9934,7 +9934,7 @@
           "bytesInOutput": 906
         },
         "node_modules/rope-sequence/dist/index.js": {
-          "bytesInOutput": 3394
+          "bytesInOutput": 3398
         },
         "node_modules/prosemirror-history/dist/index.js": {
           "bytesInOutput": 5744
@@ -9961,7 +9961,7 @@
           "bytesInOutput": 3076
         },
         "node_modules/linkifyjs/dist/linkify.mjs": {
-          "bytesInOutput": 19635
+          "bytesInOutput": 19648
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
           "bytesInOutput": 5486
@@ -10030,7 +10030,7 @@
           "bytesInOutput": 56
         }
       },
-      "bytes": 337108
+      "bytes": 337125
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -10134,7 +10134,7 @@
           "bytesInOutput": 906
         },
         "node_modules/rope-sequence/dist/index.js": {
-          "bytesInOutput": 3394
+          "bytesInOutput": 3398
         },
         "node_modules/prosemirror-history/dist/index.js": {
           "bytesInOutput": 5744
@@ -10161,7 +10161,7 @@
           "bytesInOutput": 3076
         },
         "node_modules/linkifyjs/dist/linkify.mjs": {
-          "bytesInOutput": 19635
+          "bytesInOutput": 19648
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
           "bytesInOutput": 5486
@@ -10224,7 +10224,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 335942
+      "bytes": 335959
     },
     "dist/tom-select.min.js": {
       "imports": [],
@@ -10250,7 +10250,7 @@
           "bytesInOutput": 560
         },
         "node_modules/@orchidjs/sifter/dist/esm/sifter.js": {
-          "bytesInOutput": 2587
+          "bytesInOutput": 2589
         },
         "node_modules/tom-select/src/utils.ts": {
           "bytesInOutput": 1158
@@ -10277,7 +10277,7 @@
           "bytesInOutput": 55
         },
         "node_modules/tom-select/src/plugins/checkbox_options/plugin.ts": {
-          "bytesInOutput": 1329
+          "bytesInOutput": 1331
         },
         "node_modules/tom-select/src/plugins/clear_button/plugin.ts": {
           "bytesInOutput": 398
@@ -10370,7 +10370,7 @@
           "bytesInOutput": 122
         }
       },
-      "bytes": 69784
+      "bytes": 69788
     },
     "dist/tom-select.raw.min.js": {
       "imports": [],
@@ -10396,7 +10396,7 @@
           "bytesInOutput": 560
         },
         "node_modules/@orchidjs/sifter/dist/esm/sifter.js": {
-          "bytesInOutput": 2587
+          "bytesInOutput": 2589
         },
         "node_modules/tom-select/src/utils.ts": {
           "bytesInOutput": 1158
@@ -10423,7 +10423,7 @@
           "bytesInOutput": 55
         },
         "node_modules/tom-select/src/plugins/checkbox_options/plugin.ts": {
-          "bytesInOutput": 1329
+          "bytesInOutput": 1331
         },
         "node_modules/tom-select/src/plugins/clear_button/plugin.ts": {
           "bytesInOutput": 398
@@ -10510,7 +10510,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 54137
+      "bytes": 54141
     }
   }
 }

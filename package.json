@@ -70,7 +70,7 @@
     "web-component"
   ],
   "scripts": {
-    "build": "esbuild ./src/*.js --target=es2020,safari13 --bundle --minify --loader:.css=text --format=iife --outdir=dist --out-extension:.js=.min.js",
+    "build": "esbuild ./src/*.js --target=es2020,safari11.1 --bundle --minify --loader:.css=text --format=iife --outdir=dist --out-extension:.js=.min.js",
     "start": "npm run build -- --servedir=.",
     "watch": "npm run build -- --watch",
     "bump": "npm run build-all && bun version patch",
