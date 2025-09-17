@@ -90,6 +90,11 @@
           "path": "src/utils/reflectedProperties.js",
           "kind": "import-statement",
           "original": "../utils/reflectedProperties.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -138,7 +143,13 @@
     },
     "node_modules/bootstrap5-autocomplete/autocomplete.js": {
       "bytes": 38600,
-      "imports": [],
+      "imports": [
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
       "format": "esm"
     },
     "src/utils/rmElements.js": {
@@ -1609,6 +1620,11 @@
           "path": "src/utils/reflectedProperties.js",
           "kind": "import-statement",
           "original": "../utils/reflectedProperties.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -1656,6 +1672,11 @@
           "path": "src/utils/reflectedProperties.js",
           "kind": "import-statement",
           "original": "../utils/reflectedProperties.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -1693,6 +1714,11 @@
           "path": "src/utils/reflectedProperties.js",
           "kind": "import-statement",
           "original": "../utils/reflectedProperties.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -1720,6 +1746,11 @@
           "path": "src/utils/whenParsed.js",
           "kind": "import-statement",
           "original": "../utils/whenParsed.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -2315,6 +2346,11 @@
           "path": "src/utils/insertHiddenInput.js",
           "kind": "import-statement",
           "original": "../utils/insertHiddenInput.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -2342,6 +2378,11 @@
           "path": "src/utils/whenParsed.js",
           "kind": "import-statement",
           "original": "../utils/whenParsed.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -2685,6 +2726,11 @@
           "path": "node_modules/tabulator-tables/src/js/core/cell/Cell.js",
           "kind": "import-statement",
           "original": "../cell/Cell.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -3042,6 +3088,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/Layout/defaults/modes.js",
           "kind": "import-statement",
           "original": "./defaults/modes.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -3068,6 +3119,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/Localize/defaults/langs.js",
           "kind": "import-statement",
           "original": "./defaults/langs.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -3079,6 +3135,11 @@
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
           "kind": "import-statement",
           "original": "../../core/Module.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -3106,7 +3167,13 @@
     },
     "node_modules/tabulator-tables/src/js/core/tools/TableRegistry.js": {
       "bytes": 1568,
-      "imports": [],
+      "imports": [
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
       "format": "esm"
     },
     "node_modules/tabulator-tables/src/js/core/tools/ModuleBinder.js": {
@@ -3121,6 +3188,11 @@
           "path": "node_modules/tabulator-tables/src/js/core/tools/TableRegistry.js",
           "kind": "import-statement",
           "original": "./TableRegistry.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -3208,6 +3280,11 @@
           "path": "node_modules/tabulator-tables/src/js/core/tools/Alert.js",
           "kind": "import-statement",
           "original": "./tools/Alert.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -3234,6 +3311,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/Accessor/defaults/accessors.js",
           "kind": "import-statement",
           "original": "./defaults/accessors.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -3285,6 +3367,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/Ajax/defaults/contentTypeFormatters.js",
           "kind": "import-statement",
           "original": "./defaults/contentTypeFormatters.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -3347,6 +3434,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/Clipboard/extensions/extensions.js",
           "kind": "import-statement",
           "original": "./extensions/extensions.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -3393,6 +3485,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/ColumnCalcs/defaults/calculations.js",
           "kind": "import-statement",
           "original": "./defaults/calculations.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -3414,6 +3511,11 @@
           "path": "node_modules/tabulator-tables/src/js/core/row/RowComponent.js",
           "kind": "import-statement",
           "original": "../../core/row/RowComponent.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -3425,6 +3527,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/DataTree/DataTree.js",
           "kind": "import-statement",
           "original": "../../../../node_modules/tabulator-tables/src/js/modules/DataTree/DataTree.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -3513,6 +3620,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/Download/defaults/downloaders.js",
           "kind": "import-statement",
           "original": "./defaults/downloaders.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -3705,6 +3817,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors.js",
           "kind": "import-statement",
           "original": "./defaults/editors.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -3756,6 +3873,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/Export/defaults/rowLookups.js",
           "kind": "import-statement",
           "original": "./defaults/rowLookups.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -3777,6 +3899,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/Filter/defaults/filters.js",
           "kind": "import-statement",
           "original": "./defaults/filters.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4037,6 +4164,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters.js",
           "kind": "import-statement",
           "original": "./defaults/formatters.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4048,6 +4180,11 @@
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
           "kind": "import-statement",
           "original": "../../core/Module.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4059,6 +4196,11 @@
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
           "kind": "import-statement",
           "original": "../../core/Module.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4096,6 +4238,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/GroupRows/Group.js",
           "kind": "import-statement",
           "original": "./Group.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4168,6 +4315,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/History/extensions/extensions.js",
           "kind": "import-statement",
           "original": "./extensions/extensions.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4179,6 +4331,11 @@
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
           "kind": "import-statement",
           "original": "../../core/Module.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4241,6 +4398,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/Import/defaults/importers.js",
           "kind": "import-statement",
           "original": "./defaults/importers.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4262,6 +4424,11 @@
           "path": "node_modules/tabulator-tables/src/js/core/column/Column.js",
           "kind": "import-statement",
           "original": "../../core/column/Column.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4293,6 +4460,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/Keybindings/defaults/actions.js",
           "kind": "import-statement",
           "original": "./defaults/actions.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4304,6 +4476,11 @@
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
           "kind": "import-statement",
           "original": "../../core/Module.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4320,6 +4497,11 @@
           "path": "node_modules/tabulator-tables/src/js/core/tools/Helpers.js",
           "kind": "import-statement",
           "original": "../../core/tools/Helpers.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4356,6 +4538,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/MoveRows/defaults/receivers.js",
           "kind": "import-statement",
           "original": "./defaults/receivers.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4377,6 +4564,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js",
           "kind": "import-statement",
           "original": "./defaults/mutators.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4419,6 +4611,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/Page/defaults/pageCounters.js",
           "kind": "import-statement",
           "original": "./defaults/pageCounters.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4450,6 +4647,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/Persistence/defaults/writers.js",
           "kind": "import-statement",
           "original": "./defaults/writers.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4461,6 +4663,11 @@
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
           "kind": "import-statement",
           "original": "../../core/Module.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4472,6 +4679,11 @@
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
           "kind": "import-statement",
           "original": "../../core/Module.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4483,6 +4695,11 @@
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
           "kind": "import-statement",
           "original": "../../core/Module.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4494,6 +4711,11 @@
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
           "kind": "import-statement",
           "original": "../../core/Module.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4505,6 +4727,11 @@
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
           "kind": "import-statement",
           "original": "../../core/Module.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4516,6 +4743,11 @@
           "path": "node_modules/tabulator-tables/src/js/core/Module.js",
           "kind": "import-statement",
           "original": "../../core/Module.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4527,6 +4759,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/ResizeTable/ResizeTable.js",
           "kind": "import-statement",
           "original": "../../../../node_modules/tabulator-tables/src/js/modules/ResizeTable/ResizeTable.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4559,6 +4796,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/ResponsiveLayout/extensions/extensions.js",
           "kind": "import-statement",
           "original": "./extensions/extensions.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4570,6 +4812,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/ResponsiveLayout/ResponsiveLayout.js",
           "kind": "import-statement",
           "original": "../../../../node_modules/tabulator-tables/src/js/modules/ResponsiveLayout/ResponsiveLayout.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4608,6 +4855,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/SelectRow/extensions/extensions.js",
           "kind": "import-statement",
           "original": "./extensions/extensions.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4738,6 +4990,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters.js",
           "kind": "import-statement",
           "original": "./defaults/sorters.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4754,6 +5011,11 @@
           "path": "node_modules/tabulator-tables/src/js/core/cell/Cell.js",
           "kind": "import-statement",
           "original": "../../core/cell/Cell.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -4775,6 +5037,11 @@
           "path": "node_modules/tabulator-tables/src/js/modules/Validate/defaults/validators.js",
           "kind": "import-statement",
           "original": "./defaults/validators.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -6162,12 +6429,24 @@
     },
     "node_modules/tom-select/src/contrib/microevent.ts": {
       "bytes": 1532,
-      "imports": [],
+      "imports": [
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
       "format": "esm"
     },
     "node_modules/tom-select/src/contrib/microplugin.ts": {
       "bytes": 3162,
-      "imports": [],
+      "imports": [
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
       "format": "esm"
     },
     "node_modules/@orchidjs/unicode-variants/dist/esm/regex.js": {
@@ -6192,6 +6471,11 @@
           "path": "node_modules/@orchidjs/unicode-variants/dist/esm/strings.js",
           "kind": "import-statement",
           "original": "./strings.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -6229,6 +6513,11 @@
           "path": "node_modules/@orchidjs/sifter/dist/esm/types.js",
           "kind": "import-statement",
           "original": "./types.js"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -6354,6 +6643,11 @@
           "path": "node_modules/tom-select/src/vanilla.ts",
           "kind": "import-statement",
           "original": "./vanilla.ts"
+        },
+        {
+          "path": "<runtime>",
+          "kind": "import-statement",
+          "external": true
         }
       ],
       "format": "esm"
@@ -6765,22 +7059,22 @@
           "bytesInOutput": 156
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 240
+          "bytesInOutput": 264
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 133
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 630
+          "bytesInOutput": 636
         },
         "src/utils/props.js": {
           "bytesInOutput": 270
         },
         "src/utils/reflectedProperties.js": {
-          "bytesInOutput": 119
+          "bytesInOutput": 120
         },
         "src/classes/Anchored.js": {
-          "bytesInOutput": 6147
+          "bytesInOutput": 6262
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -6789,7 +7083,7 @@
           "bytesInOutput": 27
         }
       },
-      "bytes": 7871
+      "bytes": 8185
     },
     "dist/bound-input.min.js": {
       "imports": [],
@@ -6814,7 +7108,7 @@
       "entryPoint": "src/bs-autocomplete.js",
       "inputs": {
         "node_modules/bootstrap5-autocomplete/autocomplete.js": {
-          "bytesInOutput": 15813
+          "bytesInOutput": 15932
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6826,13 +7120,13 @@
           "bytesInOutput": 156
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 240
+          "bytesInOutput": 264
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 131
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 630
+          "bytesInOutput": 636
         },
         "src/utils/rmElements.js": {
           "bytesInOutput": 105
@@ -6847,7 +7141,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 17721
+      "bytes": 18034
     },
     "dist/bs-tags.min.js": {
       "imports": [],
@@ -6855,7 +7149,7 @@
       "entryPoint": "src/bs-tags.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 30350
+          "bytesInOutput": 30606
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6867,13 +7161,13 @@
           "bytesInOutput": 157
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 241
+          "bytesInOutput": 265
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 634
+          "bytesInOutput": 640
         },
         "src/utils/rmElements.js": {
           "bytesInOutput": 106
@@ -6888,13 +7182,13 @@
           "bytesInOutput": 1175
         },
         "src/utils/injectStyles.js": {
-          "bytesInOutput": 159
+          "bytesInOutput": 177
         },
         "src/bs-tags.js": {
           "bytesInOutput": 42
         }
       },
-      "bytes": 33543
+      "bytes": 33847
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -6902,7 +7196,7 @@
       "entryPoint": "src/bs-tags.raw.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 30350
+          "bytesInOutput": 30606
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6914,13 +7208,13 @@
           "bytesInOutput": 157
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 241
+          "bytesInOutput": 265
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 634
+          "bytesInOutput": 640
         },
         "src/utils/rmElements.js": {
           "bytesInOutput": 106
@@ -6935,7 +7229,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 32192
+      "bytes": 32478
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -6955,7 +7249,7 @@
           "bytesInOutput": 2054
         },
         "node_modules/cleave-es6/src/Cleave.js": {
-          "bytesInOutput": 8244
+          "bytesInOutput": 8271
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -6967,13 +7261,13 @@
           "bytesInOutput": 156
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 240
+          "bytesInOutput": 264
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 131
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 630
+          "bytesInOutput": 636
         },
         "src/classes/CleaveInput.js": {
           "bytesInOutput": 374
@@ -6985,7 +7279,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 19650
+      "bytes": 19707
     },
     "dist/clipboard-copy.min.js": {
       "imports": [],
@@ -7002,13 +7296,13 @@
           "bytesInOutput": 156
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 240
+          "bytesInOutput": 264
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 131
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 630
+          "bytesInOutput": 636
         },
         "src/classes/ClipboardCopy.js": {
           "bytesInOutput": 1136
@@ -7020,7 +7314,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 2468
+      "bytes": 2498
     },
     "dist/coloris-input.min.js": {
       "imports": [],
@@ -7028,7 +7322,7 @@
       "entryPoint": "src/coloris-input.js",
       "inputs": {
         "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-          "bytesInOutput": 14568
+          "bytesInOutput": 14979
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7040,22 +7334,22 @@
           "bytesInOutput": 162
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 241
+          "bytesInOutput": 265
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/utils/setId.js": {
-          "bytesInOutput": 67
+          "bytesInOutput": 82
         },
         "src/utils/isRTL.js": {
           "bytesInOutput": 75
         },
         "src/classes/ColorisInput.js": {
-          "bytesInOutput": 488
+          "bytesInOutput": 506
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7064,13 +7358,13 @@
           "bytesInOutput": 8516
         },
         "src/utils/injectStyles.js": {
-          "bytesInOutput": 159
+          "bytesInOutput": 177
         },
         "src/coloris-input.js": {
-          "bytesInOutput": 291
+          "bytesInOutput": 304
         }
       },
-      "bytes": 25775
+      "bytes": 26280
     },
     "dist/coloris-input.raw.min.js": {
       "imports": [],
@@ -7078,7 +7372,7 @@
       "entryPoint": "src/coloris-input.raw.js",
       "inputs": {
         "node_modules/@melloware/coloris/dist/esm/coloris.js": {
-          "bytesInOutput": 14568
+          "bytesInOutput": 14979
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7090,22 +7384,22 @@
           "bytesInOutput": 162
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 241
+          "bytesInOutput": 265
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/utils/setId.js": {
-          "bytesInOutput": 67
+          "bytesInOutput": 82
         },
         "src/utils/isRTL.js": {
           "bytesInOutput": 75
         },
         "src/classes/ColorisInput.js": {
-          "bytesInOutput": 488
+          "bytesInOutput": 506
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7114,7 +7408,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 16842
+      "bytes": 17316
     },
     "dist/count-down.min.js": {
       "imports": [],
@@ -7131,25 +7425,25 @@
           "bytesInOutput": 156
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 240
+          "bytesInOutput": 264
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 131
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 630
+          "bytesInOutput": 636
         },
         "src/utils/date.js": {
           "bytesInOutput": 603
         },
         "src/utils/query.js": {
-          "bytesInOutput": 132
+          "bytesInOutput": 138
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 119
         },
         "src/classes/CountdownElement.js": {
-          "bytesInOutput": 2240
+          "bytesInOutput": 2285
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -7158,7 +7452,7 @@
           "bytesInOutput": 27
         }
       },
-      "bytes": 4423
+      "bytes": 4504
     },
     "dist/count-up.min.js": {
       "imports": [],
@@ -7166,7 +7460,7 @@
       "entryPoint": "src/count-up.js",
       "inputs": {
         "node_modules/countup.js/dist/countUp.min.js": {
-          "bytesInOutput": 5915
+          "bytesInOutput": 5922
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -7178,19 +7472,19 @@
           "bytesInOutput": 156
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 240
+          "bytesInOutput": 264
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 131
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 630
+          "bytesInOutput": 636
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 860
+          "bytesInOutput": 866
         },
         "src/utils/unformatNumber.js": {
-          "bytesInOutput": 244
+          "bytesInOutput": 260
         },
         "src/utils/defaultLang.js": {
           "bytesInOutput": 76
@@ -7211,7 +7505,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 9314
+      "bytes": 9373
     },
     "dist/data-table.min.js": {
       "imports": [],
@@ -7219,7 +7513,7 @@
       "entryPoint": "src/data-table.js",
       "inputs": {
         "node_modules/jquery/dist/jquery.js": {
-          "bytesInOutput": 88102
+          "bytesInOutput": 88155
         },
         "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
           "bytesInOutput": 935
@@ -7273,22 +7567,22 @@
           "bytesInOutput": 164
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 242
+          "bytesInOutput": 266
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 869
+          "bytesInOutput": 875
         },
         "src/utils/icons.js": {
           "bytesInOutput": 579
         },
         "src/utils/getDelete.js": {
-          "bytesInOutput": 58
+          "bytesInOutput": 75
         },
         "src/utils/fetchWrapper.js": {
           "bytesInOutput": 487
@@ -7297,43 +7591,43 @@
           "bytesInOutput": 407
         },
         "src/classes/DataTableElement.js": {
-          "bytesInOutput": 1544
+          "bytesInOutput": 1553
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
         },
         "node_modules/datatables.net-bs5/css/dataTables.bootstrap5.min.css": {
-          "bytesInOutput": 19727
+          "bytesInOutput": 19732
         },
         "node_modules/datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css": {
-          "bytesInOutput": 8155
+          "bytesInOutput": 8156
         },
         "node_modules/datatables.net-fixedcolumns-bs5/css/fixedColumns.bootstrap5.min.css": {
-          "bytesInOutput": 3363
+          "bytesInOutput": 3364
         },
         "node_modules/datatables.net-fixedheader-bs5/css/fixedHeader.bootstrap5.min.css": {
-          "bytesInOutput": 390
+          "bytesInOutput": 391
         },
         "node_modules/datatables.net-responsive-bs5/css/responsive.bootstrap5.min.css": {
-          "bytesInOutput": 6054
+          "bytesInOutput": 6055
         },
         "node_modules/datatables.net-rowgroup-bs5/css/rowGroup.bootstrap5.min.css": {
-          "bytesInOutput": 1979
+          "bytesInOutput": 1980
         },
         "node_modules/datatables.net-select-bs5/css/select.bootstrap5.min.css": {
-          "bytesInOutput": 2291
+          "bytesInOutput": 2292
         },
         "src/css/datatables.min.css": {
           "bytesInOutput": 280
         },
         "src/utils/injectStyles.js": {
-          "bytesInOutput": 159
+          "bytesInOutput": 177
         },
         "src/data-table.js": {
           "bytesInOutput": 71
         }
       },
-      "bytes": 331465
+      "bytes": 331609
     },
     "dist/data-table.raw.min.js": {
       "imports": [],
@@ -7341,7 +7635,7 @@
       "entryPoint": "src/data-table.raw.js",
       "inputs": {
         "node_modules/jquery/dist/jquery.js": {
-          "bytesInOutput": 88102
+          "bytesInOutput": 88155
         },
         "node_modules/datatables.net-bs5/js/dataTables.bootstrap5.mjs": {
           "bytesInOutput": 935
@@ -7395,22 +7689,22 @@
           "bytesInOutput": 164
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 242
+          "bytesInOutput": 266
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 869
+          "bytesInOutput": 875
         },
         "src/utils/icons.js": {
           "bytesInOutput": 579
         },
         "src/utils/getDelete.js": {
-          "bytesInOutput": 58
+          "bytesInOutput": 75
         },
         "src/utils/fetchWrapper.js": {
           "bytesInOutput": 487
@@ -7419,7 +7713,7 @@
           "bytesInOutput": 407
         },
         "src/classes/DataTableElement.js": {
-          "bytesInOutput": 1544
+          "bytesInOutput": 1553
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -7428,7 +7722,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 289026
+      "bytes": 289141
     },
     "dist/filepond-input.min.js": {
       "imports": [],
@@ -7436,7 +7730,7 @@
       "entryPoint": "src/filepond-input.js",
       "inputs": {
         "node_modules/filepond/dist/filepond.esm.js": {
-          "bytesInOutput": 101366
+          "bytesInOutput": 101970
         },
         "node_modules/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.esm.js": {
           "bytesInOutput": 1766
@@ -7445,7 +7739,7 @@
           "bytesInOutput": 1900
         },
         "node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.esm.js": {
-          "bytesInOutput": 6055
+          "bytesInOutput": 6073
         },
         "node_modules/filepond-plugin-file-metadata/dist/filepond-plugin-file-metadata.esm.js": {
           "bytesInOutput": 597
@@ -7454,7 +7748,7 @@
           "bytesInOutput": 1605
         },
         "node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.esm.js": {
-          "bytesInOutput": 20967
+          "bytesInOutput": 21153
         },
         "node_modules/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.esm.js": {
           "bytesInOutput": 1540
@@ -7463,7 +7757,7 @@
           "bytesInOutput": 1232
         },
         "node_modules/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.esm.js": {
-          "bytesInOutput": 21920
+          "bytesInOutput": 22352
         },
         "node_modules/filepond-plugin-image-validate-size/dist/filepond-plugin-image-validate-size.esm.js": {
           "bytesInOutput": 3185
@@ -7478,13 +7772,13 @@
           "bytesInOutput": 164
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 242
+          "bytesInOutput": 266
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/classes/FilePondInput.js": {
           "bytesInOutput": 458
@@ -7493,22 +7787,22 @@
           "bytesInOutput": 60
         },
         "node_modules/filepond/dist/filepond.min.css": {
-          "bytesInOutput": 17473
+          "bytesInOutput": 17480
         },
         "node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.min.css": {
-          "bytesInOutput": 2698
+          "bytesInOutput": 2705
         },
         "node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css": {
-          "bytesInOutput": 3317
+          "bytesInOutput": 3326
         },
         "src/utils/injectStyles.js": {
-          "bytesInOutput": 159
+          "bytesInOutput": 177
         },
         "src/filepond-input.js": {
           "bytesInOutput": 64
         }
       },
-      "bytes": 190360
+      "bytes": 191671
     },
     "dist/filepond-input.raw.min.js": {
       "imports": [],
@@ -7516,7 +7810,7 @@
       "entryPoint": "src/filepond-input.raw.js",
       "inputs": {
         "node_modules/filepond/dist/filepond.esm.js": {
-          "bytesInOutput": 101366
+          "bytesInOutput": 101970
         },
         "node_modules/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.esm.js": {
           "bytesInOutput": 1766
@@ -7525,7 +7819,7 @@
           "bytesInOutput": 1900
         },
         "node_modules/filepond-plugin-file-poster/dist/filepond-plugin-file-poster.esm.js": {
-          "bytesInOutput": 6055
+          "bytesInOutput": 6073
         },
         "node_modules/filepond-plugin-file-metadata/dist/filepond-plugin-file-metadata.esm.js": {
           "bytesInOutput": 597
@@ -7534,7 +7828,7 @@
           "bytesInOutput": 1605
         },
         "node_modules/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.esm.js": {
-          "bytesInOutput": 20967
+          "bytesInOutput": 21153
         },
         "node_modules/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.esm.js": {
           "bytesInOutput": 1540
@@ -7543,7 +7837,7 @@
           "bytesInOutput": 1232
         },
         "node_modules/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.esm.js": {
-          "bytesInOutput": 21920
+          "bytesInOutput": 22352
         },
         "node_modules/filepond-plugin-image-validate-size/dist/filepond-plugin-image-validate-size.esm.js": {
           "bytesInOutput": 3185
@@ -7558,13 +7852,13 @@
           "bytesInOutput": 164
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 242
+          "bytesInOutput": 266
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/classes/FilePondInput.js": {
           "bytesInOutput": 458
@@ -7576,7 +7870,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 166683
+      "bytes": 167953
     },
     "dist/flatpickr-input.min.js": {
       "imports": [],
@@ -7611,10 +7905,10 @@
           "bytesInOutput": 320
         },
         "node_modules/flatpickr/dist/esm/index.js": {
-          "bytesInOutput": 42096
+          "bytesInOutput": 42107
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 4300
+          "bytesInOutput": 4336
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7626,28 +7920,28 @@
           "bytesInOutput": 162
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 241
+          "bytesInOutput": 265
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/utils/insertAfter.js": {
           "bytesInOutput": 59
         },
         "src/utils/insertHiddenInput.js": {
-          "bytesInOutput": 297
+          "bytesInOutput": 303
         },
         "src/utils/setId.js": {
-          "bytesInOutput": 67
+          "bytesInOutput": 82
         },
         "src/utils/waitDefined.js": {
           "bytesInOutput": 107
         },
         "src/utils/query.js": {
-          "bytesInOutput": 217
+          "bytesInOutput": 223
         },
         "src/utils/date.js": {
           "bytesInOutput": 372
@@ -7671,22 +7965,22 @@
           "bytesInOutput": 60
         },
         "node_modules/flatpickr/dist/flatpickr.min.css": {
-          "bytesInOutput": 16177
+          "bytesInOutput": 16191
         },
         "node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.css": {
-          "bytesInOutput": 383
+          "bytesInOutput": 407
         },
         "node_modules/flatpickr/dist/plugins/monthSelect/style.css": {
-          "bytesInOutput": 2832
+          "bytesInOutput": 2949
         },
         "src/utils/injectStyles.js": {
-          "bytesInOutput": 159
+          "bytesInOutput": 177
         },
         "src/flatpickr-input.js": {
-          "bytesInOutput": 419
+          "bytesInOutput": 429
         }
       },
-      "bytes": 87635
+      "bytes": 87922
     },
     "dist/flatpickr-input.raw.min.js": {
       "imports": [],
@@ -7721,10 +8015,10 @@
           "bytesInOutput": 320
         },
         "node_modules/flatpickr/dist/esm/index.js": {
-          "bytesInOutput": 42096
+          "bytesInOutput": 42107
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 4300
+          "bytesInOutput": 4336
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7736,28 +8030,28 @@
           "bytesInOutput": 162
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 241
+          "bytesInOutput": 265
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/utils/insertAfter.js": {
           "bytesInOutput": 59
         },
         "src/utils/insertHiddenInput.js": {
-          "bytesInOutput": 297
+          "bytesInOutput": 303
         },
         "src/utils/setId.js": {
-          "bytesInOutput": 67
+          "bytesInOutput": 82
         },
         "src/utils/waitDefined.js": {
           "bytesInOutput": 107
         },
         "src/utils/query.js": {
-          "bytesInOutput": 217
+          "bytesInOutput": 223
         },
         "src/utils/date.js": {
           "bytesInOutput": 372
@@ -7784,7 +8078,7 @@
           "bytesInOutput": 35
         }
       },
-      "bytes": 67700
+      "bytes": 67804
     },
     "dist/floating-ui.min.js": {
       "imports": [],
@@ -7795,13 +8089,13 @@
           "bytesInOutput": 1463
         },
         "node_modules/@floating-ui/core/dist/floating-ui.core.mjs": {
-          "bytesInOutput": 7398
+          "bytesInOutput": 7412
         },
         "node_modules/@floating-ui/utils/dist/floating-ui.utils.dom.mjs": {
           "bytesInOutput": 2480
         },
         "node_modules/@floating-ui/dom/dist/floating-ui.dom.mjs": {
-          "bytesInOutput": 7072
+          "bytesInOutput": 7079
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7813,13 +8107,13 @@
           "bytesInOutput": 164
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 242
+          "bytesInOutput": 266
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/utils/props.js": {
           "bytesInOutput": 308
@@ -7831,19 +8125,19 @@
           "bytesInOutput": 120
         },
         "src/classes/FloatingUi.js": {
-          "bytesInOutput": 4404
+          "bytesInOutput": 4551
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
         },
         "src/utils/injectStyles.js": {
-          "bytesInOutput": 159
+          "bytesInOutput": 177
         },
         "src/floating-ui.js": {
-          "bytesInOutput": 410
+          "bytesInOutput": 422
         }
       },
-      "bytes": 25224
+      "bytes": 25621
     },
     "dist/format-date.min.js": {
       "imports": [],
@@ -7860,13 +8154,13 @@
           "bytesInOutput": 156
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 240
+          "bytesInOutput": 264
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 131
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 630
+          "bytesInOutput": 636
         },
         "src/utils/date.js": {
           "bytesInOutput": 363
@@ -7878,16 +8172,16 @@
           "bytesInOutput": 119
         },
         "src/classes/DateFormatter.js": {
-          "bytesInOutput": 1074
+          "bytesInOutput": 1124
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
         },
         "src/format-date.js": {
-          "bytesInOutput": 27
+          "bytesInOutput": 28
         }
       },
-      "bytes": 2961
+      "bytes": 3206
     },
     "dist/format-number.min.js": {
       "imports": [],
@@ -7904,13 +8198,13 @@
           "bytesInOutput": 156
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 240
+          "bytesInOutput": 264
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 131
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 630
+          "bytesInOutput": 636
         },
         "src/utils/defaultLang.js": {
           "bytesInOutput": 76
@@ -7919,7 +8213,7 @@
           "bytesInOutput": 119
         },
         "src/classes/NumberFormatter.js": {
-          "bytesInOutput": 725
+          "bytesInOutput": 765
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -7928,7 +8222,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 2251
+      "bytes": 2485
     },
     "dist/growing-textarea.min.js": {
       "imports": [],
@@ -7939,7 +8233,7 @@
           "bytesInOutput": 131
         },
         "src/classes/GrowingTextarea.js": {
-          "bytesInOutput": 551
+          "bytesInOutput": 595
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -7948,7 +8242,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 782
+      "bytes": 990
     },
     "dist/hi-mark.min.js": {
       "imports": [],
@@ -7959,7 +8253,7 @@
           "bytesInOutput": 241
         },
         "src/classes/HiMark.js": {
-          "bytesInOutput": 222
+          "bytesInOutput": 231
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -7968,13 +8262,13 @@
           "bytesInOutput": 592
         },
         "src/utils/injectStyles.js": {
-          "bytesInOutput": 158
+          "bytesInOutput": 176
         },
         "src/hi-mark.js": {
           "bytesInOutput": 38
         }
       },
-      "bytes": 1319
+      "bytes": 1346
     },
     "dist/hi-mark.raw.min.js": {
       "imports": [],
@@ -7985,7 +8279,7 @@
           "bytesInOutput": 241
         },
         "src/classes/HiMark.js": {
-          "bytesInOutput": 222
+          "bytesInOutput": 231
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -7994,7 +8288,7 @@
           "bytesInOutput": 23
         }
       },
-      "bytes": 554
+      "bytes": 563
     },
     "dist/input-mask.min.js": {
       "imports": [],
@@ -8017,7 +8311,7 @@
           "bytesInOutput": 479
         },
         "node_modules/inputmask/lib/dependencyLibs/events.js": {
-          "bytesInOutput": 2427
+          "bytesInOutput": 2439
         },
         "node_modules/inputmask/lib/dependencyLibs/inputmask.dependencyLib.js": {
           "bytesInOutput": 364
@@ -8029,7 +8323,7 @@
           "bytesInOutput": 623
         },
         "node_modules/inputmask/lib/validation-tests.js": {
-          "bytesInOutput": 10430
+          "bytesInOutput": 10442
         },
         "node_modules/inputmask/lib/validation.js": {
           "bytesInOutput": 9919
@@ -8056,22 +8350,22 @@
           "bytesInOutput": 201
         },
         "node_modules/inputmask/lib/mask-lexer.js": {
-          "bytesInOutput": 7050
+          "bytesInOutput": 7110
         },
         "node_modules/inputmask/lib/inputmask.js": {
           "bytesInOutput": 5921
         },
         "node_modules/inputmask/lib/extensions/inputmask.extensions.js": {
-          "bytesInOutput": 1889
+          "bytesInOutput": 1904
         },
         "node_modules/inputmask/lib/extensions/inputmask.date.i18n.js": {
           "bytesInOutput": 411
         },
         "node_modules/inputmask/lib/extensions/inputmask.date.extensions.js": {
-          "bytesInOutput": 11905
+          "bytesInOutput": 11935
         },
         "node_modules/inputmask/lib/extensions/inputmask.numeric.extensions.js": {
-          "bytesInOutput": 12276
+          "bytesInOutput": 12283
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8083,22 +8377,22 @@
           "bytesInOutput": 164
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 242
+          "bytesInOutput": 266
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/utils/insertAfter.js": {
           "bytesInOutput": 59
         },
         "src/utils/insertHiddenInput.js": {
-          "bytesInOutput": 297
+          "bytesInOutput": 303
         },
         "src/classes/InputmaskElement.js": {
-          "bytesInOutput": 1234
+          "bytesInOutput": 1291
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8107,7 +8401,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 92391
+      "bytes": 92789
     },
     "dist/limited-input.min.js": {
       "imports": [],
@@ -8118,7 +8412,7 @@
           "bytesInOutput": 131
         },
         "src/classes/LimitedInput.js": {
-          "bytesInOutput": 1169
+          "bytesInOutput": 1213
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -8127,7 +8421,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 1397
+      "bytes": 1605
     },
     "dist/locale-provider.min.js": {
       "imports": [],
@@ -8161,16 +8455,16 @@
           "bytesInOutput": 156
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 240
+          "bytesInOutput": 264
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 131
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 630
+          "bytesInOutput": 636
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 860
+          "bytesInOutput": 866
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
@@ -8185,7 +8479,7 @@
           "bytesInOutput": 133
         },
         "src/classes/ProgressButton.js": {
-          "bytesInOutput": 2476
+          "bytesInOutput": 2500
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -8194,7 +8488,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 5726
+      "bytes": 5786
     },
     "dist/squire-editor.min.js": {
       "imports": [
@@ -8208,7 +8502,7 @@
       "entryPoint": "src/squire-editor.js",
       "inputs": {
         "node_modules/squire-rte/dist/squire-raw.mjs": {
-          "bytesInOutput": 51959
+          "bytesInOutput": 52030
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8220,22 +8514,22 @@
           "bytesInOutput": 164
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 242
+          "bytesInOutput": 266
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 869
+          "bytesInOutput": 875
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
         },
         "src/utils/query.js": {
-          "bytesInOutput": 134
+          "bytesInOutput": 140
         },
         "src/utils/parseHTML.js": {
           "bytesInOutput": 63
@@ -8247,13 +8541,13 @@
           "bytesInOutput": 30
         },
         "src/utils/bootstrap-icons.js": {
-          "bytesInOutput": 7378
+          "bytesInOutput": 7417
         },
         "src/utils/props.js": {
           "bytesInOutput": 58
         },
         "src/classes/SquireEditor.js": {
-          "bytesInOutput": 6597
+          "bytesInOutput": 6675
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8262,13 +8556,13 @@
           "bytesInOutput": 724
         },
         "src/utils/injectStyles.js": {
-          "bytesInOutput": 159
+          "bytesInOutput": 177
         },
         "src/squire-editor.js": {
           "bytesInOutput": 56
         }
       },
-      "bytes": 70442
+      "bytes": 70690
     },
     "dist/squire-editor.raw.min.js": {
       "imports": [
@@ -8282,7 +8576,7 @@
       "entryPoint": "src/squire-editor.raw.js",
       "inputs": {
         "node_modules/squire-rte/dist/squire-raw.mjs": {
-          "bytesInOutput": 51959
+          "bytesInOutput": 52030
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8294,22 +8588,22 @@
           "bytesInOutput": 164
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 242
+          "bytesInOutput": 266
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 869
+          "bytesInOutput": 875
         },
         "src/utils/ce.js": {
           "bytesInOutput": 35
         },
         "src/utils/query.js": {
-          "bytesInOutput": 134
+          "bytesInOutput": 140
         },
         "src/utils/parseHTML.js": {
           "bytesInOutput": 63
@@ -8321,13 +8615,13 @@
           "bytesInOutput": 30
         },
         "src/utils/bootstrap-icons.js": {
-          "bytesInOutput": 7378
+          "bytesInOutput": 7417
         },
         "src/utils/props.js": {
           "bytesInOutput": 58
         },
         "src/classes/SquireEditor.js": {
-          "bytesInOutput": 6597
+          "bytesInOutput": 6675
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -8336,7 +8630,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 69536
+      "bytes": 69766
     },
     "dist/superfile-input.min.js": {
       "imports": [],
@@ -8344,7 +8638,7 @@
       "entryPoint": "src/superfile-input.js",
       "inputs": {
         "node_modules/superfile/superfile.js": {
-          "bytesInOutput": 5641
+          "bytesInOutput": 5653
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -8356,13 +8650,13 @@
           "bytesInOutput": 156
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 240
+          "bytesInOutput": 264
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 131
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 630
+          "bytesInOutput": 636
         },
         "src/classes/SuperfileElement.js": {
           "bytesInOutput": 177
@@ -8371,13 +8665,13 @@
           "bytesInOutput": 56
         },
         "src/utils/injectStyles.js": {
-          "bytesInOutput": 158
+          "bytesInOutput": 176
         },
         "src/superfile-input.js": {
-          "bytesInOutput": 245
+          "bytesInOutput": 253
         }
       },
-      "bytes": 7523
+      "bytes": 7591
     },
     "dist/superfile-input.raw.min.js": {
       "imports": [],
@@ -8385,7 +8679,7 @@
       "entryPoint": "src/superfile-input.raw.js",
       "inputs": {
         "node_modules/superfile/superfile.js": {
-          "bytesInOutput": 5641
+          "bytesInOutput": 5653
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -8397,13 +8691,13 @@
           "bytesInOutput": 156
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 240
+          "bytesInOutput": 264
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 131
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 630
+          "bytesInOutput": 636
         },
         "src/classes/SuperfileElement.js": {
           "bytesInOutput": 177
@@ -8415,7 +8709,7 @@
           "bytesInOutput": 32
         }
       },
-      "bytes": 7152
+      "bytes": 7194
     },
     "dist/tabulator-grid.min.js": {
       "imports": [],
@@ -8441,25 +8735,25 @@
           "bytesInOutput": 4150
         },
         "node_modules/tabulator-tables/src/js/core/column/Column.js": {
-          "bytesInOutput": 13431
+          "bytesInOutput": 13439
         },
         "node_modules/tabulator-tables/src/js/core/tools/Helpers.js": {
           "bytesInOutput": 757
         },
         "node_modules/tabulator-tables/src/js/core/tools/OptionsList.js": {
-          "bytesInOutput": 588
+          "bytesInOutput": 589
         },
         "node_modules/tabulator-tables/src/js/core/rendering/Renderer.js": {
           "bytesInOutput": 2281
         },
         "node_modules/tabulator-tables/src/js/core/rendering/renderers/BasicHorizontal.js": {
-          "bytesInOutput": 301
+          "bytesInOutput": 302
         },
         "node_modules/tabulator-tables/src/js/core/rendering/renderers/VirtualDomHorizontal.js": {
-          "bytesInOutput": 8041
+          "bytesInOutput": 8042
         },
         "node_modules/tabulator-tables/src/js/core/ColumnManager.js": {
-          "bytesInOutput": 10111
+          "bytesInOutput": 10115
         },
         "node_modules/tabulator-tables/src/js/core/row/RowComponent.js": {
           "bytesInOutput": 1063
@@ -8468,19 +8762,19 @@
           "bytesInOutput": 6089
         },
         "node_modules/tabulator-tables/src/js/core/rendering/renderers/BasicVertical.js": {
-          "bytesInOutput": 1256
+          "bytesInOutput": 1257
         },
         "node_modules/tabulator-tables/src/js/core/rendering/renderers/VirtualDomVertical.js": {
-          "bytesInOutput": 7517
+          "bytesInOutput": 7521
         },
         "node_modules/tabulator-tables/src/js/core/RowManager.js": {
-          "bytesInOutput": 16053
+          "bytesInOutput": 16059
         },
         "node_modules/tabulator-tables/src/js/core/FooterManager.js": {
-          "bytesInOutput": 1456
+          "bytesInOutput": 1457
         },
         "node_modules/tabulator-tables/src/js/core/tools/InteractionMonitor.js": {
-          "bytesInOutput": 4151
+          "bytesInOutput": 4152
         },
         "node_modules/tabulator-tables/src/js/core/tools/ComponentFunctionBinder.js": {
           "bytesInOutput": 631
@@ -8519,34 +8813,34 @@
           "bytesInOutput": 580
         },
         "node_modules/tabulator-tables/src/js/modules/Layout/defaults/modes/fitColumns.js": {
-          "bytesInOutput": 1872
+          "bytesInOutput": 1876
         },
         "node_modules/tabulator-tables/src/js/modules/Layout/defaults/modes.js": {
           "bytesInOutput": 83
         },
         "node_modules/tabulator-tables/src/js/modules/Layout/Layout.js": {
-          "bytesInOutput": 1119
+          "bytesInOutput": 1134
         },
         "node_modules/tabulator-tables/src/js/modules/Localize/defaults/langs.js": {
           "bytesInOutput": 432
         },
         "node_modules/tabulator-tables/src/js/modules/Localize/Localize.js": {
-          "bytesInOutput": 2165
+          "bytesInOutput": 2179
         },
         "node_modules/tabulator-tables/src/js/modules/Comms/Comms.js": {
-          "bytesInOutput": 625
+          "bytesInOutput": 626
         },
         "node_modules/tabulator-tables/src/js/core/tools/TableRegistry.js": {
-          "bytesInOutput": 802
+          "bytesInOutput": 810
         },
         "node_modules/tabulator-tables/src/js/core/tools/ModuleBinder.js": {
-          "bytesInOutput": 1930
+          "bytesInOutput": 1938
         },
         "node_modules/tabulator-tables/src/js/core/tools/Alert.js": {
           "bytesInOutput": 1026
         },
         "node_modules/tabulator-tables/src/js/core/Tabulator.js": {
-          "bytesInOutput": 14130
+          "bytesInOutput": 14145
         },
         "src/classes/tabulator/optional.js": {
           "bytesInOutput": 806
@@ -8555,7 +8849,7 @@
           "bytesInOutput": 62
         },
         "node_modules/tabulator-tables/src/js/modules/Accessor/Accessor.js": {
-          "bytesInOutput": 1784
+          "bytesInOutput": 1799
         },
         "node_modules/tabulator-tables/src/js/modules/Ajax/defaults/config.js": {
           "bytesInOutput": 22
@@ -8570,13 +8864,13 @@
           "bytesInOutput": 456
         },
         "node_modules/tabulator-tables/src/js/modules/Ajax/Ajax.js": {
-          "bytesInOutput": 2135
+          "bytesInOutput": 2143
         },
         "node_modules/tabulator-tables/src/js/modules/Clipboard/defaults/pasteActions.js": {
           "bytesInOutput": 165
         },
         "node_modules/tabulator-tables/src/js/modules/Clipboard/defaults/pasteParsers.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 645
         },
         "node_modules/tabulator-tables/src/js/modules/Clipboard/extensions/keybindings/bindings.js": {
           "bytesInOutput": 51
@@ -8588,7 +8882,7 @@
           "bytesInOutput": 46
         },
         "node_modules/tabulator-tables/src/js/modules/Clipboard/Clipboard.js": {
-          "bytesInOutput": 4551
+          "bytesInOutput": 4560
         },
         "node_modules/tabulator-tables/src/js/modules/ColumnCalcs/CalcComponent.js": {
           "bytesInOutput": 484
@@ -8597,16 +8891,16 @@
           "bytesInOutput": 1004
         },
         "node_modules/tabulator-tables/src/js/modules/ColumnCalcs/ColumnCalcs.js": {
-          "bytesInOutput": 9394
+          "bytesInOutput": 9422
         },
         "node_modules/tabulator-tables/src/js/modules/DataTree/DataTree.js": {
-          "bytesInOutput": 10801
+          "bytesInOutput": 10802
         },
         "src/classes/tabulator/DataTree/DataTree.js": {
-          "bytesInOutput": 999
+          "bytesInOutput": 1013
         },
         "node_modules/tabulator-tables/src/js/modules/Download/defaults/downloaders/csv.js": {
-          "bytesInOutput": 784
+          "bytesInOutput": 785
         },
         "node_modules/tabulator-tables/src/js/modules/Download/defaults/downloaders/json.js": {
           "bytesInOutput": 460
@@ -8621,13 +8915,13 @@
           "bytesInOutput": 104
         },
         "node_modules/tabulator-tables/src/js/modules/Download/defaults/downloaders/jsonLines.js": {
-          "bytesInOutput": 461
+          "bytesInOutput": 462
         },
         "node_modules/tabulator-tables/src/js/modules/Download/defaults/downloaders.js": {
           "bytesInOutput": 60
         },
         "node_modules/tabulator-tables/src/js/modules/Download/Download.js": {
-          "bytesInOutput": 1965
+          "bytesInOutput": 1980
         },
         "node_modules/tabulator-tables/src/js/modules/Edit/inputMask.js": {
           "bytesInOutput": 862
@@ -8669,19 +8963,19 @@
           "bytesInOutput": 1161
         },
         "node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/adaptable.js": {
-          "bytesInOutput": 449
+          "bytesInOutput": 450
         },
         "node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors.js": {
           "bytesInOutput": 131
         },
         "node_modules/tabulator-tables/src/js/modules/Edit/Edit.js": {
-          "bytesInOutput": 12512
+          "bytesInOutput": 12526
         },
         "node_modules/tabulator-tables/src/js/modules/Export/ExportRow.js": {
-          "bytesInOutput": 100
+          "bytesInOutput": 101
         },
         "node_modules/tabulator-tables/src/js/modules/Export/ExportColumn.js": {
-          "bytesInOutput": 111
+          "bytesInOutput": 112
         },
         "node_modules/tabulator-tables/src/js/modules/Export/defaults/columnLookups.js": {
           "bytesInOutput": 10
@@ -8690,13 +8984,13 @@
           "bytesInOutput": 334
         },
         "node_modules/tabulator-tables/src/js/modules/Export/Export.js": {
-          "bytesInOutput": 11457
+          "bytesInOutput": 11470
         },
         "node_modules/tabulator-tables/src/js/modules/Filter/defaults/filters.js": {
           "bytesInOutput": 1100
         },
         "node_modules/tabulator-tables/src/js/modules/Filter/Filter.js": {
-          "bytesInOutput": 14538
+          "bytesInOutput": 14546
         },
         "node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/plaintext.js": {
           "bytesInOutput": 77
@@ -8756,7 +9050,7 @@
           "bytesInOutput": 258
         },
         "node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/adaptable.js": {
-          "bytesInOutput": 402
+          "bytesInOutput": 403
         },
         "node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/array.js": {
           "bytesInOutput": 275
@@ -8768,13 +9062,13 @@
           "bytesInOutput": 248
         },
         "node_modules/tabulator-tables/src/js/modules/Format/Format.js": {
-          "bytesInOutput": 3167
+          "bytesInOutput": 3175
         },
         "node_modules/tabulator-tables/src/js/modules/FrozenColumns/FrozenColumns.js": {
-          "bytesInOutput": 5271
+          "bytesInOutput": 5272
         },
         "node_modules/tabulator-tables/src/js/modules/FrozenRows/FrozenRows.js": {
-          "bytesInOutput": 2883
+          "bytesInOutput": 2884
         },
         "node_modules/tabulator-tables/src/js/modules/GroupRows/GroupComponent.js": {
           "bytesInOutput": 806
@@ -8783,7 +9077,7 @@
           "bytesInOutput": 9514
         },
         "node_modules/tabulator-tables/src/js/modules/GroupRows/GroupRows.js": {
-          "bytesInOutput": 9775
+          "bytesInOutput": 9776
         },
         "node_modules/tabulator-tables/src/js/modules/History/defaults/undoers.js": {
           "bytesInOutput": 735
@@ -8801,13 +9095,13 @@
           "bytesInOutput": 46
         },
         "node_modules/tabulator-tables/src/js/modules/History/History.js": {
-          "bytesInOutput": 2784
+          "bytesInOutput": 2792
         },
         "node_modules/tabulator-tables/src/js/modules/HtmlTableImport/HtmlTableImport.js": {
-          "bytesInOutput": 2145
+          "bytesInOutput": 2146
         },
         "node_modules/tabulator-tables/src/js/modules/Import/defaults/importers/csv.js": {
-          "bytesInOutput": 330
+          "bytesInOutput": 332
         },
         "node_modules/tabulator-tables/src/js/modules/Import/defaults/importers/json.js": {
           "bytesInOutput": 142
@@ -8822,10 +9116,10 @@
           "bytesInOutput": 41
         },
         "node_modules/tabulator-tables/src/js/modules/Import/Import.js": {
-          "bytesInOutput": 3990
+          "bytesInOutput": 4004
         },
         "node_modules/tabulator-tables/src/js/modules/Interaction/Interaction.js": {
-          "bytesInOutput": 6126
+          "bytesInOutput": 6127
         },
         "node_modules/tabulator-tables/src/js/modules/Keybindings/defaults/bindings.js": {
           "bytesInOutput": 148
@@ -8834,13 +9128,13 @@
           "bytesInOutput": 1253
         },
         "node_modules/tabulator-tables/src/js/modules/Keybindings/Keybindings.js": {
-          "bytesInOutput": 1972
+          "bytesInOutput": 1980
         },
         "node_modules/tabulator-tables/src/js/modules/Menu/Menu.js": {
-          "bytesInOutput": 6011
+          "bytesInOutput": 6012
         },
         "node_modules/tabulator-tables/src/js/modules/MoveColumns/MoveColumns.js": {
-          "bytesInOutput": 5636
+          "bytesInOutput": 5639
         },
         "node_modules/tabulator-tables/src/js/modules/MoveRows/defaults/senders.js": {
           "bytesInOutput": 44
@@ -8849,13 +9143,13 @@
           "bytesInOutput": 301
         },
         "node_modules/tabulator-tables/src/js/modules/MoveRows/MoveRows.js": {
-          "bytesInOutput": 11829
+          "bytesInOutput": 11853
         },
         "node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js": {
           "bytesInOutput": 10
         },
         "node_modules/tabulator-tables/src/js/modules/Mutator/Mutator.js": {
-          "bytesInOutput": 2406
+          "bytesInOutput": 2421
         },
         "node_modules/tabulator-tables/src/js/modules/Page/defaults/pageCounters/rows.js": {
           "bytesInOutput": 710
@@ -8867,7 +9161,7 @@
           "bytesInOutput": 26
         },
         "node_modules/tabulator-tables/src/js/modules/Page/Page.js": {
-          "bytesInOutput": 15644
+          "bytesInOutput": 15658
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/defaults/readers.js": {
           "bytesInOutput": 278
@@ -8876,40 +9170,40 @@
           "bytesInOutput": 221
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/Persistence.js": {
-          "bytesInOutput": 7877
+          "bytesInOutput": 7885
         },
         "node_modules/tabulator-tables/src/js/modules/Popup/Popup.js": {
-          "bytesInOutput": 5329
+          "bytesInOutput": 5330
         },
         "node_modules/tabulator-tables/src/js/modules/Print/Print.js": {
-          "bytesInOutput": 3069
+          "bytesInOutput": 3070
         },
         "node_modules/tabulator-tables/src/js/modules/ReactiveData/ReactiveData.js": {
-          "bytesInOutput": 4971
+          "bytesInOutput": 4972
         },
         "node_modules/tabulator-tables/src/js/modules/ResizeColumns/ResizeColumns.js": {
-          "bytesInOutput": 6282
+          "bytesInOutput": 6283
         },
         "node_modules/tabulator-tables/src/js/modules/ResizeRows/ResizeRows.js": {
-          "bytesInOutput": 2535
+          "bytesInOutput": 2536
         },
         "node_modules/tabulator-tables/src/js/modules/ResizeTable/ResizeTable.js": {
-          "bytesInOutput": 3114
+          "bytesInOutput": 3115
         },
         "src/classes/tabulator/ResizeTable/ResizeTable.js": {
-          "bytesInOutput": 3038
+          "bytesInOutput": 3039
         },
         "node_modules/tabulator-tables/src/js/modules/ResponsiveLayout/extensions/formatters/responsiveCollapse.js": {
-          "bytesInOutput": 962
+          "bytesInOutput": 973
         },
         "node_modules/tabulator-tables/src/js/modules/ResponsiveLayout/extensions/extensions.js": {
           "bytesInOutput": 53
         },
         "node_modules/tabulator-tables/src/js/modules/ResponsiveLayout/ResponsiveLayout.js": {
-          "bytesInOutput": 5887
+          "bytesInOutput": 5889
         },
         "src/classes/tabulator/ResponsiveLayout/ResponsiveLayout.js": {
-          "bytesInOutput": 2949
+          "bytesInOutput": 2954
         },
         "node_modules/tabulator-tables/src/js/modules/SelectRow/extensions/formatters/rowSelection.js": {
           "bytesInOutput": 866
@@ -8918,7 +9212,7 @@
           "bytesInOutput": 47
         },
         "node_modules/tabulator-tables/src/js/modules/SelectRow/SelectRow.js": {
-          "bytesInOutput": 7926
+          "bytesInOutput": 7928
         },
         "node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters/number.js": {
           "bytesInOutput": 386
@@ -8927,13 +9221,13 @@
           "bytesInOutput": 337
         },
         "node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters/datetime.js": {
-          "bytesInOutput": 552
+          "bytesInOutput": 553
         },
         "node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters/date.js": {
-          "bytesInOutput": 95
+          "bytesInOutput": 96
         },
         "node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters/time.js": {
-          "bytesInOutput": 90
+          "bytesInOutput": 91
         },
         "node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters/boolean.js": {
           "bytesInOutput": 130
@@ -8948,19 +9242,19 @@
           "bytesInOutput": 597
         },
         "node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters.js": {
-          "bytesInOutput": 98
+          "bytesInOutput": 99
         },
         "node_modules/tabulator-tables/src/js/modules/Sort/Sort.js": {
-          "bytesInOutput": 6255
+          "bytesInOutput": 6271
         },
         "node_modules/tabulator-tables/src/js/modules/Tooltip/Tooltip.js": {
-          "bytesInOutput": 2070
+          "bytesInOutput": 2071
         },
         "node_modules/tabulator-tables/src/js/modules/Validate/defaults/validators.js": {
           "bytesInOutput": 1607
         },
         "node_modules/tabulator-tables/src/js/modules/Validate/Validate.js": {
-          "bytesInOutput": 4037
+          "bytesInOutput": 4051
         },
         "src/classes/tabulator/custom-editors.js": {
           "bytesInOutput": 67
@@ -8993,25 +9287,25 @@
           "bytesInOutput": 110
         },
         "src/classes/tabulator/Format/formatters/responsiveCollapse.js": {
-          "bytesInOutput": 1196
+          "bytesInOutput": 1206
         },
         "src/utils/icons.js": {
           "bytesInOutput": 2004
         },
         "src/classes/tabulator/Format/formatters/customTickCross.js": {
-          "bytesInOutput": 482
+          "bytesInOutput": 500
         },
         "src/classes/tabulator/Format/formatters/flag.js": {
-          "bytesInOutput": 191
+          "bytesInOutput": 200
         },
         "src/classes/tabulator/Format/formatters/external.js": {
-          "bytesInOutput": 295
+          "bytesInOutput": 313
         },
         "src/utils/interpolate.js": {
           "bytesInOutput": 58
         },
         "src/classes/tabulator/Format/formatters/button.js": {
-          "bytesInOutput": 879
+          "bytesInOutput": 933
         },
         "src/classes/tabulator/helpers.js": {
           "bytesInOutput": 225
@@ -9023,43 +9317,43 @@
           "bytesInOutput": 162
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 241
+          "bytesInOutput": 265
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 869
+          "bytesInOutput": 875
         },
         "src/utils/parseBool.js": {
           "bytesInOutput": 70
         },
         "src/utils/getDelete.js": {
-          "bytesInOutput": 58
+          "bytesInOutput": 75
         },
         "src/classes/TabulatorGrid.js": {
-          "bytesInOutput": 3476
+          "bytesInOutput": 3505
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
         },
         "node_modules/tabulator-tables/dist/css/tabulator_bootstrap5.min.css": {
-          "bytesInOutput": 39395
+          "bytesInOutput": 39396
         },
         "src/css/tabulator-grid.min.css": {
           "bytesInOutput": 10582
         },
         "src/utils/injectStyles.js": {
-          "bytesInOutput": 159
+          "bytesInOutput": 177
         },
         "src/tabulator-grid.js": {
           "bytesInOutput": 132
         }
       },
-      "bytes": 480436
+      "bytes": 481182
     },
     "dist/tabulator-grid.raw.min.js": {
       "imports": [],
@@ -9085,25 +9379,25 @@
           "bytesInOutput": 4150
         },
         "node_modules/tabulator-tables/src/js/core/column/Column.js": {
-          "bytesInOutput": 13431
+          "bytesInOutput": 13439
         },
         "node_modules/tabulator-tables/src/js/core/tools/Helpers.js": {
           "bytesInOutput": 757
         },
         "node_modules/tabulator-tables/src/js/core/tools/OptionsList.js": {
-          "bytesInOutput": 588
+          "bytesInOutput": 589
         },
         "node_modules/tabulator-tables/src/js/core/rendering/Renderer.js": {
           "bytesInOutput": 2281
         },
         "node_modules/tabulator-tables/src/js/core/rendering/renderers/BasicHorizontal.js": {
-          "bytesInOutput": 301
+          "bytesInOutput": 302
         },
         "node_modules/tabulator-tables/src/js/core/rendering/renderers/VirtualDomHorizontal.js": {
-          "bytesInOutput": 8041
+          "bytesInOutput": 8042
         },
         "node_modules/tabulator-tables/src/js/core/ColumnManager.js": {
-          "bytesInOutput": 10111
+          "bytesInOutput": 10115
         },
         "node_modules/tabulator-tables/src/js/core/row/RowComponent.js": {
           "bytesInOutput": 1063
@@ -9112,19 +9406,19 @@
           "bytesInOutput": 6089
         },
         "node_modules/tabulator-tables/src/js/core/rendering/renderers/BasicVertical.js": {
-          "bytesInOutput": 1256
+          "bytesInOutput": 1257
         },
         "node_modules/tabulator-tables/src/js/core/rendering/renderers/VirtualDomVertical.js": {
-          "bytesInOutput": 7517
+          "bytesInOutput": 7521
         },
         "node_modules/tabulator-tables/src/js/core/RowManager.js": {
-          "bytesInOutput": 16053
+          "bytesInOutput": 16059
         },
         "node_modules/tabulator-tables/src/js/core/FooterManager.js": {
-          "bytesInOutput": 1456
+          "bytesInOutput": 1457
         },
         "node_modules/tabulator-tables/src/js/core/tools/InteractionMonitor.js": {
-          "bytesInOutput": 4151
+          "bytesInOutput": 4152
         },
         "node_modules/tabulator-tables/src/js/core/tools/ComponentFunctionBinder.js": {
           "bytesInOutput": 631
@@ -9163,34 +9457,34 @@
           "bytesInOutput": 580
         },
         "node_modules/tabulator-tables/src/js/modules/Layout/defaults/modes/fitColumns.js": {
-          "bytesInOutput": 1872
+          "bytesInOutput": 1876
         },
         "node_modules/tabulator-tables/src/js/modules/Layout/defaults/modes.js": {
           "bytesInOutput": 83
         },
         "node_modules/tabulator-tables/src/js/modules/Layout/Layout.js": {
-          "bytesInOutput": 1119
+          "bytesInOutput": 1134
         },
         "node_modules/tabulator-tables/src/js/modules/Localize/defaults/langs.js": {
           "bytesInOutput": 432
         },
         "node_modules/tabulator-tables/src/js/modules/Localize/Localize.js": {
-          "bytesInOutput": 2165
+          "bytesInOutput": 2179
         },
         "node_modules/tabulator-tables/src/js/modules/Comms/Comms.js": {
-          "bytesInOutput": 625
+          "bytesInOutput": 626
         },
         "node_modules/tabulator-tables/src/js/core/tools/TableRegistry.js": {
-          "bytesInOutput": 802
+          "bytesInOutput": 810
         },
         "node_modules/tabulator-tables/src/js/core/tools/ModuleBinder.js": {
-          "bytesInOutput": 1930
+          "bytesInOutput": 1938
         },
         "node_modules/tabulator-tables/src/js/core/tools/Alert.js": {
           "bytesInOutput": 1026
         },
         "node_modules/tabulator-tables/src/js/core/Tabulator.js": {
-          "bytesInOutput": 14130
+          "bytesInOutput": 14145
         },
         "src/classes/tabulator/optional.js": {
           "bytesInOutput": 806
@@ -9199,7 +9493,7 @@
           "bytesInOutput": 62
         },
         "node_modules/tabulator-tables/src/js/modules/Accessor/Accessor.js": {
-          "bytesInOutput": 1784
+          "bytesInOutput": 1799
         },
         "node_modules/tabulator-tables/src/js/modules/Ajax/defaults/config.js": {
           "bytesInOutput": 22
@@ -9214,13 +9508,13 @@
           "bytesInOutput": 456
         },
         "node_modules/tabulator-tables/src/js/modules/Ajax/Ajax.js": {
-          "bytesInOutput": 2135
+          "bytesInOutput": 2143
         },
         "node_modules/tabulator-tables/src/js/modules/Clipboard/defaults/pasteActions.js": {
           "bytesInOutput": 165
         },
         "node_modules/tabulator-tables/src/js/modules/Clipboard/defaults/pasteParsers.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 645
         },
         "node_modules/tabulator-tables/src/js/modules/Clipboard/extensions/keybindings/bindings.js": {
           "bytesInOutput": 51
@@ -9232,7 +9526,7 @@
           "bytesInOutput": 46
         },
         "node_modules/tabulator-tables/src/js/modules/Clipboard/Clipboard.js": {
-          "bytesInOutput": 4551
+          "bytesInOutput": 4560
         },
         "node_modules/tabulator-tables/src/js/modules/ColumnCalcs/CalcComponent.js": {
           "bytesInOutput": 484
@@ -9241,16 +9535,16 @@
           "bytesInOutput": 1004
         },
         "node_modules/tabulator-tables/src/js/modules/ColumnCalcs/ColumnCalcs.js": {
-          "bytesInOutput": 9394
+          "bytesInOutput": 9422
         },
         "node_modules/tabulator-tables/src/js/modules/DataTree/DataTree.js": {
-          "bytesInOutput": 10801
+          "bytesInOutput": 10802
         },
         "src/classes/tabulator/DataTree/DataTree.js": {
-          "bytesInOutput": 999
+          "bytesInOutput": 1013
         },
         "node_modules/tabulator-tables/src/js/modules/Download/defaults/downloaders/csv.js": {
-          "bytesInOutput": 784
+          "bytesInOutput": 785
         },
         "node_modules/tabulator-tables/src/js/modules/Download/defaults/downloaders/json.js": {
           "bytesInOutput": 460
@@ -9265,13 +9559,13 @@
           "bytesInOutput": 104
         },
         "node_modules/tabulator-tables/src/js/modules/Download/defaults/downloaders/jsonLines.js": {
-          "bytesInOutput": 461
+          "bytesInOutput": 462
         },
         "node_modules/tabulator-tables/src/js/modules/Download/defaults/downloaders.js": {
           "bytesInOutput": 60
         },
         "node_modules/tabulator-tables/src/js/modules/Download/Download.js": {
-          "bytesInOutput": 1965
+          "bytesInOutput": 1980
         },
         "node_modules/tabulator-tables/src/js/modules/Edit/inputMask.js": {
           "bytesInOutput": 862
@@ -9313,19 +9607,19 @@
           "bytesInOutput": 1161
         },
         "node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors/adaptable.js": {
-          "bytesInOutput": 449
+          "bytesInOutput": 450
         },
         "node_modules/tabulator-tables/src/js/modules/Edit/defaults/editors.js": {
           "bytesInOutput": 131
         },
         "node_modules/tabulator-tables/src/js/modules/Edit/Edit.js": {
-          "bytesInOutput": 12512
+          "bytesInOutput": 12526
         },
         "node_modules/tabulator-tables/src/js/modules/Export/ExportRow.js": {
-          "bytesInOutput": 100
+          "bytesInOutput": 101
         },
         "node_modules/tabulator-tables/src/js/modules/Export/ExportColumn.js": {
-          "bytesInOutput": 111
+          "bytesInOutput": 112
         },
         "node_modules/tabulator-tables/src/js/modules/Export/defaults/columnLookups.js": {
           "bytesInOutput": 10
@@ -9334,13 +9628,13 @@
           "bytesInOutput": 334
         },
         "node_modules/tabulator-tables/src/js/modules/Export/Export.js": {
-          "bytesInOutput": 11457
+          "bytesInOutput": 11470
         },
         "node_modules/tabulator-tables/src/js/modules/Filter/defaults/filters.js": {
           "bytesInOutput": 1100
         },
         "node_modules/tabulator-tables/src/js/modules/Filter/Filter.js": {
-          "bytesInOutput": 14538
+          "bytesInOutput": 14546
         },
         "node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/plaintext.js": {
           "bytesInOutput": 77
@@ -9400,7 +9694,7 @@
           "bytesInOutput": 258
         },
         "node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/adaptable.js": {
-          "bytesInOutput": 402
+          "bytesInOutput": 403
         },
         "node_modules/tabulator-tables/src/js/modules/Format/defaults/formatters/array.js": {
           "bytesInOutput": 275
@@ -9412,13 +9706,13 @@
           "bytesInOutput": 248
         },
         "node_modules/tabulator-tables/src/js/modules/Format/Format.js": {
-          "bytesInOutput": 3167
+          "bytesInOutput": 3175
         },
         "node_modules/tabulator-tables/src/js/modules/FrozenColumns/FrozenColumns.js": {
-          "bytesInOutput": 5271
+          "bytesInOutput": 5272
         },
         "node_modules/tabulator-tables/src/js/modules/FrozenRows/FrozenRows.js": {
-          "bytesInOutput": 2883
+          "bytesInOutput": 2884
         },
         "node_modules/tabulator-tables/src/js/modules/GroupRows/GroupComponent.js": {
           "bytesInOutput": 806
@@ -9427,7 +9721,7 @@
           "bytesInOutput": 9514
         },
         "node_modules/tabulator-tables/src/js/modules/GroupRows/GroupRows.js": {
-          "bytesInOutput": 9775
+          "bytesInOutput": 9776
         },
         "node_modules/tabulator-tables/src/js/modules/History/defaults/undoers.js": {
           "bytesInOutput": 735
@@ -9445,13 +9739,13 @@
           "bytesInOutput": 46
         },
         "node_modules/tabulator-tables/src/js/modules/History/History.js": {
-          "bytesInOutput": 2784
+          "bytesInOutput": 2792
         },
         "node_modules/tabulator-tables/src/js/modules/HtmlTableImport/HtmlTableImport.js": {
-          "bytesInOutput": 2145
+          "bytesInOutput": 2146
         },
         "node_modules/tabulator-tables/src/js/modules/Import/defaults/importers/csv.js": {
-          "bytesInOutput": 330
+          "bytesInOutput": 332
         },
         "node_modules/tabulator-tables/src/js/modules/Import/defaults/importers/json.js": {
           "bytesInOutput": 142
@@ -9466,10 +9760,10 @@
           "bytesInOutput": 41
         },
         "node_modules/tabulator-tables/src/js/modules/Import/Import.js": {
-          "bytesInOutput": 3990
+          "bytesInOutput": 4004
         },
         "node_modules/tabulator-tables/src/js/modules/Interaction/Interaction.js": {
-          "bytesInOutput": 6126
+          "bytesInOutput": 6127
         },
         "node_modules/tabulator-tables/src/js/modules/Keybindings/defaults/bindings.js": {
           "bytesInOutput": 148
@@ -9478,13 +9772,13 @@
           "bytesInOutput": 1253
         },
         "node_modules/tabulator-tables/src/js/modules/Keybindings/Keybindings.js": {
-          "bytesInOutput": 1972
+          "bytesInOutput": 1980
         },
         "node_modules/tabulator-tables/src/js/modules/Menu/Menu.js": {
-          "bytesInOutput": 6011
+          "bytesInOutput": 6012
         },
         "node_modules/tabulator-tables/src/js/modules/MoveColumns/MoveColumns.js": {
-          "bytesInOutput": 5636
+          "bytesInOutput": 5639
         },
         "node_modules/tabulator-tables/src/js/modules/MoveRows/defaults/senders.js": {
           "bytesInOutput": 44
@@ -9493,13 +9787,13 @@
           "bytesInOutput": 301
         },
         "node_modules/tabulator-tables/src/js/modules/MoveRows/MoveRows.js": {
-          "bytesInOutput": 11829
+          "bytesInOutput": 11853
         },
         "node_modules/tabulator-tables/src/js/modules/Mutator/defaults/mutators.js": {
           "bytesInOutput": 10
         },
         "node_modules/tabulator-tables/src/js/modules/Mutator/Mutator.js": {
-          "bytesInOutput": 2406
+          "bytesInOutput": 2421
         },
         "node_modules/tabulator-tables/src/js/modules/Page/defaults/pageCounters/rows.js": {
           "bytesInOutput": 710
@@ -9511,7 +9805,7 @@
           "bytesInOutput": 26
         },
         "node_modules/tabulator-tables/src/js/modules/Page/Page.js": {
-          "bytesInOutput": 15644
+          "bytesInOutput": 15658
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/defaults/readers.js": {
           "bytesInOutput": 278
@@ -9520,40 +9814,40 @@
           "bytesInOutput": 221
         },
         "node_modules/tabulator-tables/src/js/modules/Persistence/Persistence.js": {
-          "bytesInOutput": 7877
+          "bytesInOutput": 7885
         },
         "node_modules/tabulator-tables/src/js/modules/Popup/Popup.js": {
-          "bytesInOutput": 5329
+          "bytesInOutput": 5330
         },
         "node_modules/tabulator-tables/src/js/modules/Print/Print.js": {
-          "bytesInOutput": 3069
+          "bytesInOutput": 3070
         },
         "node_modules/tabulator-tables/src/js/modules/ReactiveData/ReactiveData.js": {
-          "bytesInOutput": 4971
+          "bytesInOutput": 4972
         },
         "node_modules/tabulator-tables/src/js/modules/ResizeColumns/ResizeColumns.js": {
-          "bytesInOutput": 6282
+          "bytesInOutput": 6283
         },
         "node_modules/tabulator-tables/src/js/modules/ResizeRows/ResizeRows.js": {
-          "bytesInOutput": 2535
+          "bytesInOutput": 2536
         },
         "node_modules/tabulator-tables/src/js/modules/ResizeTable/ResizeTable.js": {
-          "bytesInOutput": 3114
+          "bytesInOutput": 3115
         },
         "src/classes/tabulator/ResizeTable/ResizeTable.js": {
-          "bytesInOutput": 3038
+          "bytesInOutput": 3039
         },
         "node_modules/tabulator-tables/src/js/modules/ResponsiveLayout/extensions/formatters/responsiveCollapse.js": {
-          "bytesInOutput": 962
+          "bytesInOutput": 973
         },
         "node_modules/tabulator-tables/src/js/modules/ResponsiveLayout/extensions/extensions.js": {
           "bytesInOutput": 53
         },
         "node_modules/tabulator-tables/src/js/modules/ResponsiveLayout/ResponsiveLayout.js": {
-          "bytesInOutput": 5887
+          "bytesInOutput": 5889
         },
         "src/classes/tabulator/ResponsiveLayout/ResponsiveLayout.js": {
-          "bytesInOutput": 2949
+          "bytesInOutput": 2954
         },
         "node_modules/tabulator-tables/src/js/modules/SelectRow/extensions/formatters/rowSelection.js": {
           "bytesInOutput": 866
@@ -9562,7 +9856,7 @@
           "bytesInOutput": 47
         },
         "node_modules/tabulator-tables/src/js/modules/SelectRow/SelectRow.js": {
-          "bytesInOutput": 7926
+          "bytesInOutput": 7928
         },
         "node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters/number.js": {
           "bytesInOutput": 386
@@ -9571,13 +9865,13 @@
           "bytesInOutput": 337
         },
         "node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters/datetime.js": {
-          "bytesInOutput": 552
+          "bytesInOutput": 553
         },
         "node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters/date.js": {
-          "bytesInOutput": 95
+          "bytesInOutput": 96
         },
         "node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters/time.js": {
-          "bytesInOutput": 90
+          "bytesInOutput": 91
         },
         "node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters/boolean.js": {
           "bytesInOutput": 130
@@ -9592,19 +9886,19 @@
           "bytesInOutput": 597
         },
         "node_modules/tabulator-tables/src/js/modules/Sort/defaults/sorters.js": {
-          "bytesInOutput": 98
+          "bytesInOutput": 99
         },
         "node_modules/tabulator-tables/src/js/modules/Sort/Sort.js": {
-          "bytesInOutput": 6255
+          "bytesInOutput": 6271
         },
         "node_modules/tabulator-tables/src/js/modules/Tooltip/Tooltip.js": {
-          "bytesInOutput": 2070
+          "bytesInOutput": 2071
         },
         "node_modules/tabulator-tables/src/js/modules/Validate/defaults/validators.js": {
           "bytesInOutput": 1607
         },
         "node_modules/tabulator-tables/src/js/modules/Validate/Validate.js": {
-          "bytesInOutput": 4037
+          "bytesInOutput": 4051
         },
         "src/classes/tabulator/custom-editors.js": {
           "bytesInOutput": 67
@@ -9637,25 +9931,25 @@
           "bytesInOutput": 110
         },
         "src/classes/tabulator/Format/formatters/responsiveCollapse.js": {
-          "bytesInOutput": 1196
+          "bytesInOutput": 1206
         },
         "src/utils/icons.js": {
           "bytesInOutput": 2004
         },
         "src/classes/tabulator/Format/formatters/customTickCross.js": {
-          "bytesInOutput": 482
+          "bytesInOutput": 500
         },
         "src/classes/tabulator/Format/formatters/flag.js": {
-          "bytesInOutput": 191
+          "bytesInOutput": 200
         },
         "src/classes/tabulator/Format/formatters/external.js": {
-          "bytesInOutput": 295
+          "bytesInOutput": 313
         },
         "src/utils/interpolate.js": {
           "bytesInOutput": 58
         },
         "src/classes/tabulator/Format/formatters/button.js": {
-          "bytesInOutput": 879
+          "bytesInOutput": 933
         },
         "src/classes/tabulator/helpers.js": {
           "bytesInOutput": 225
@@ -9667,25 +9961,25 @@
           "bytesInOutput": 162
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 241
+          "bytesInOutput": 265
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 869
+          "bytesInOutput": 875
         },
         "src/utils/parseBool.js": {
           "bytesInOutput": 70
         },
         "src/utils/getDelete.js": {
-          "bytesInOutput": 58
+          "bytesInOutput": 75
         },
         "src/classes/TabulatorGrid.js": {
-          "bytesInOutput": 3476
+          "bytesInOutput": 3505
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -9694,7 +9988,7 @@
           "bytesInOutput": 34
         }
       },
-      "bytes": 430202
+      "bytes": 430929
     },
     "dist/tel-input.min.js": {
       "imports": [],
@@ -9702,13 +9996,13 @@
       "entryPoint": "src/tel-input.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInputWithUtils.js": {
-          "bytesInOutput": 301459
+          "bytesInOutput": 302166
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 3041
+          "bytesInOutput": 3056
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 263336
+          "bytesInOutput": 263349
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -9720,16 +10014,16 @@
           "bytesInOutput": 164
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 242
+          "bytesInOutput": 266
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 869
+          "bytesInOutput": 875
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
@@ -9747,7 +10041,7 @@
           "bytesInOutput": 59
         },
         "src/utils/insertHiddenInput.js": {
-          "bytesInOutput": 297
+          "bytesInOutput": 303
         },
         "src/utils/isRTL.js": {
           "bytesInOutput": 75
@@ -9759,13 +10053,13 @@
           "bytesInOutput": 16108
         },
         "src/utils/injectStyles.js": {
-          "bytesInOutput": 159
+          "bytesInOutput": 177
         },
         "src/tel-input.js": {
-          "bytesInOutput": 520
+          "bytesInOutput": 540
         }
       },
-      "bytes": 589045
+      "bytes": 589860
     },
     "dist/tel-input.raw.min.js": {
       "imports": [],
@@ -9773,13 +10067,13 @@
       "entryPoint": "src/tel-input.raw.js",
       "inputs": {
         "node_modules/intl-tel-input/build/js/intlTelInputWithUtils.js": {
-          "bytesInOutput": 301459
+          "bytesInOutput": 302166
         },
         "src/classes/TelInput.js": {
-          "bytesInOutput": 3041
+          "bytesInOutput": 3056
         },
         "node_modules/intl-tel-input/build/js/utils.js": {
-          "bytesInOutput": 263336
+          "bytesInOutput": 263349
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -9791,16 +10085,16 @@
           "bytesInOutput": 164
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 242
+          "bytesInOutput": 266
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 869
+          "bytesInOutput": 875
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
@@ -9818,7 +10112,7 @@
           "bytesInOutput": 59
         },
         "src/utils/insertHiddenInput.js": {
-          "bytesInOutput": 297
+          "bytesInOutput": 303
         },
         "src/utils/isRTL.js": {
           "bytesInOutput": 75
@@ -9830,7 +10124,7 @@
           "bytesInOutput": 29
         }
       },
-      "bytes": 572287
+      "bytes": 573064
     },
     "dist/tiptap-editor.min.js": {
       "imports": [],
@@ -9841,19 +10135,19 @@
           "bytesInOutput": 1439
         },
         "node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 44219
+          "bytesInOutput": 44345
         },
         "node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 30539
+          "bytesInOutput": 30549
         },
         "node_modules/prosemirror-state/dist/index.js": {
-          "bytesInOutput": 11827
+          "bytesInOutput": 11843
         },
         "node_modules/@tiptap/pm/state/dist/index.js": {
           "bytesInOutput": 0
         },
         "node_modules/prosemirror-view/dist/index.js": {
-          "bytesInOutput": 95508
+          "bytesInOutput": 95584
         },
         "node_modules/@tiptap/pm/view/dist/index.js": {
           "bytesInOutput": 0
@@ -9874,7 +10168,7 @@
           "bytesInOutput": 0
         },
         "node_modules/prosemirror-commands/dist/index.js": {
-          "bytesInOutput": 9457
+          "bytesInOutput": 9458
         },
         "node_modules/@tiptap/pm/commands/dist/index.js": {
           "bytesInOutput": 0
@@ -9886,7 +10180,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 61658
+          "bytesInOutput": 62200
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -9898,7 +10192,7 @@
           "bytesInOutput": 46
         },
         "node_modules/@tiptap/extension-heading/dist/index.js": {
-          "bytesInOutput": 984
+          "bytesInOutput": 1028
         },
         "node_modules/@tiptap/extension-italic/dist/index.js": {
           "bytesInOutput": 1008
@@ -9919,7 +10213,7 @@
           "bytesInOutput": 644
         },
         "node_modules/@tiptap/extension-code-block/dist/index.js": {
-          "bytesInOutput": 2668
+          "bytesInOutput": 2685
         },
         "node_modules/prosemirror-dropcursor/dist/index.js": {
           "bytesInOutput": 3039
@@ -9931,13 +10225,13 @@
           "bytesInOutput": 152
         },
         "node_modules/@tiptap/extension-hard-break/dist/index.js": {
-          "bytesInOutput": 906
+          "bytesInOutput": 907
         },
         "node_modules/rope-sequence/dist/index.js": {
           "bytesInOutput": 3398
         },
         "node_modules/prosemirror-history/dist/index.js": {
-          "bytesInOutput": 5744
+          "bytesInOutput": 5751
         },
         "node_modules/@tiptap/pm/history/dist/index.js": {
           "bytesInOutput": 0
@@ -9949,22 +10243,22 @@
           "bytesInOutput": 1058
         },
         "node_modules/@tiptap/extension-bullet-list/dist/index.js": {
-          "bytesInOutput": 1045
+          "bytesInOutput": 1054
         },
         "node_modules/@tiptap/extension-list-item/dist/index.js": {
           "bytesInOutput": 494
         },
         "node_modules/@tiptap/extension-ordered-list/dist/index.js": {
-          "bytesInOutput": 1456
+          "bytesInOutput": 1465
         },
         "node_modules/@tiptap/extension-typography/dist/index.js": {
-          "bytesInOutput": 3076
+          "bytesInOutput": 3230
         },
         "node_modules/linkifyjs/dist/linkify.mjs": {
-          "bytesInOutput": 19648
+          "bytesInOutput": 19723
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 5486
+          "bytesInOutput": 5532
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -9979,28 +10273,28 @@
           "bytesInOutput": 164
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 242
+          "bytesInOutput": 266
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 869
+          "bytesInOutput": 875
         },
         "src/utils/ce.js": {
           "bytesInOutput": 36
         },
         "src/utils/query.js": {
-          "bytesInOutput": 135
+          "bytesInOutput": 141
         },
         "src/utils/hasBootstrap.js": {
           "bytesInOutput": 30
         },
         "src/utils/bootstrap-icons.js": {
-          "bytesInOutput": 8254
+          "bytesInOutput": 8300
         },
         "src/utils/props.js": {
           "bytesInOutput": 58
@@ -10012,10 +10306,10 @@
           "bytesInOutput": 75
         },
         "src/utils/dropmenu.js": {
-          "bytesInOutput": 1568
+          "bytesInOutput": 1577
         },
         "src/classes/TiptapEditor.js": {
-          "bytesInOutput": 7822
+          "bytesInOutput": 7945
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -10024,13 +10318,13 @@
           "bytesInOutput": 984
         },
         "src/utils/injectStyles.js": {
-          "bytesInOutput": 159
+          "bytesInOutput": 177
         },
         "src/tiptap-editor.js": {
           "bytesInOutput": 56
         }
       },
-      "bytes": 337125
+      "bytes": 338496
     },
     "dist/tiptap-editor.raw.min.js": {
       "imports": [],
@@ -10041,19 +10335,19 @@
           "bytesInOutput": 1439
         },
         "node_modules/prosemirror-model/dist/index.js": {
-          "bytesInOutput": 44219
+          "bytesInOutput": 44345
         },
         "node_modules/prosemirror-transform/dist/index.js": {
-          "bytesInOutput": 30539
+          "bytesInOutput": 30549
         },
         "node_modules/prosemirror-state/dist/index.js": {
-          "bytesInOutput": 11827
+          "bytesInOutput": 11843
         },
         "node_modules/@tiptap/pm/state/dist/index.js": {
           "bytesInOutput": 0
         },
         "node_modules/prosemirror-view/dist/index.js": {
-          "bytesInOutput": 95508
+          "bytesInOutput": 95584
         },
         "node_modules/@tiptap/pm/view/dist/index.js": {
           "bytesInOutput": 0
@@ -10074,7 +10368,7 @@
           "bytesInOutput": 0
         },
         "node_modules/prosemirror-commands/dist/index.js": {
-          "bytesInOutput": 9457
+          "bytesInOutput": 9458
         },
         "node_modules/@tiptap/pm/commands/dist/index.js": {
           "bytesInOutput": 0
@@ -10086,7 +10380,7 @@
           "bytesInOutput": 0
         },
         "node_modules/@tiptap/core/dist/index.js": {
-          "bytesInOutput": 61658
+          "bytesInOutput": 62200
         },
         "node_modules/@tiptap/extension-document/dist/index.js": {
           "bytesInOutput": 58
@@ -10098,7 +10392,7 @@
           "bytesInOutput": 46
         },
         "node_modules/@tiptap/extension-heading/dist/index.js": {
-          "bytesInOutput": 984
+          "bytesInOutput": 1028
         },
         "node_modules/@tiptap/extension-italic/dist/index.js": {
           "bytesInOutput": 1008
@@ -10119,7 +10413,7 @@
           "bytesInOutput": 644
         },
         "node_modules/@tiptap/extension-code-block/dist/index.js": {
-          "bytesInOutput": 2668
+          "bytesInOutput": 2685
         },
         "node_modules/prosemirror-dropcursor/dist/index.js": {
           "bytesInOutput": 3039
@@ -10131,13 +10425,13 @@
           "bytesInOutput": 152
         },
         "node_modules/@tiptap/extension-hard-break/dist/index.js": {
-          "bytesInOutput": 906
+          "bytesInOutput": 907
         },
         "node_modules/rope-sequence/dist/index.js": {
           "bytesInOutput": 3398
         },
         "node_modules/prosemirror-history/dist/index.js": {
-          "bytesInOutput": 5744
+          "bytesInOutput": 5751
         },
         "node_modules/@tiptap/pm/history/dist/index.js": {
           "bytesInOutput": 0
@@ -10149,22 +10443,22 @@
           "bytesInOutput": 1058
         },
         "node_modules/@tiptap/extension-bullet-list/dist/index.js": {
-          "bytesInOutput": 1045
+          "bytesInOutput": 1054
         },
         "node_modules/@tiptap/extension-list-item/dist/index.js": {
           "bytesInOutput": 494
         },
         "node_modules/@tiptap/extension-ordered-list/dist/index.js": {
-          "bytesInOutput": 1456
+          "bytesInOutput": 1465
         },
         "node_modules/@tiptap/extension-typography/dist/index.js": {
-          "bytesInOutput": 3076
+          "bytesInOutput": 3230
         },
         "node_modules/linkifyjs/dist/linkify.mjs": {
-          "bytesInOutput": 19648
+          "bytesInOutput": 19723
         },
         "node_modules/@tiptap/extension-link/dist/index.js": {
-          "bytesInOutput": 5486
+          "bytesInOutput": 5532
         },
         "node_modules/@tiptap/extension-image/dist/index.js": {
           "bytesInOutput": 728
@@ -10179,28 +10473,28 @@
           "bytesInOutput": 164
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 242
+          "bytesInOutput": 266
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/utils/EventfulElement.js": {
-          "bytesInOutput": 869
+          "bytesInOutput": 875
         },
         "src/utils/ce.js": {
           "bytesInOutput": 36
         },
         "src/utils/query.js": {
-          "bytesInOutput": 135
+          "bytesInOutput": 141
         },
         "src/utils/hasBootstrap.js": {
           "bytesInOutput": 30
         },
         "src/utils/bootstrap-icons.js": {
-          "bytesInOutput": 8254
+          "bytesInOutput": 8300
         },
         "src/utils/props.js": {
           "bytesInOutput": 58
@@ -10212,10 +10506,10 @@
           "bytesInOutput": 75
         },
         "src/utils/dropmenu.js": {
-          "bytesInOutput": 1568
+          "bytesInOutput": 1577
         },
         "src/classes/TiptapEditor.js": {
-          "bytesInOutput": 7822
+          "bytesInOutput": 7945
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -10224,7 +10518,7 @@
           "bytesInOutput": 33
         }
       },
-      "bytes": 335959
+      "bytes": 337312
     },
     "dist/tom-select.min.js": {
       "imports": [],
@@ -10232,25 +10526,25 @@
       "entryPoint": "src/tom-select.js",
       "inputs": {
         "node_modules/tom-select/src/contrib/microevent.ts": {
-          "bytesInOutput": 469
+          "bytesInOutput": 479
         },
         "node_modules/tom-select/src/contrib/microplugin.ts": {
-          "bytesInOutput": 837
+          "bytesInOutput": 881
         },
         "node_modules/@orchidjs/unicode-variants/dist/esm/regex.js": {
-          "bytesInOutput": 458
+          "bytesInOutput": 488
         },
         "node_modules/@orchidjs/unicode-variants/dist/esm/strings.js": {
           "bytesInOutput": 198
         },
         "node_modules/@orchidjs/unicode-variants/dist/esm/index.js": {
-          "bytesInOutput": 3792
+          "bytesInOutput": 3832
         },
         "node_modules/@orchidjs/sifter/dist/esm/utils.js": {
           "bytesInOutput": 560
         },
         "node_modules/@orchidjs/sifter/dist/esm/sifter.js": {
-          "bytesInOutput": 2589
+          "bytesInOutput": 2609
         },
         "node_modules/tom-select/src/utils.ts": {
           "bytesInOutput": 1158
@@ -10268,10 +10562,10 @@
           "bytesInOutput": 982
         },
         "node_modules/tom-select/src/getSettings.ts": {
-          "bytesInOutput": 1547
+          "bytesInOutput": 1549
         },
         "node_modules/tom-select/src/tom-select.ts": {
-          "bytesInOutput": 26439
+          "bytesInOutput": 26864
         },
         "node_modules/tom-select/src/plugins/change_listener/plugin.ts": {
           "bytesInOutput": 55
@@ -10280,10 +10574,10 @@
           "bytesInOutput": 1331
         },
         "node_modules/tom-select/src/plugins/clear_button/plugin.ts": {
-          "bytesInOutput": 398
+          "bytesInOutput": 416
         },
         "node_modules/tom-select/src/plugins/drag_drop/plugin.ts": {
-          "bytesInOutput": 1201
+          "bytesInOutput": 1259
         },
         "node_modules/tom-select/src/plugins/dropdown_header/plugin.ts": {
           "bytesInOutput": 560
@@ -10328,16 +10622,16 @@
           "bytesInOutput": 162
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 241
+          "bytesInOutput": 265
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/utils/setId.js": {
-          "bytesInOutput": 67
+          "bytesInOutput": 82
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
@@ -10346,7 +10640,7 @@
           "bytesInOutput": 208
         },
         "src/utils/getDelete.js": {
-          "bytesInOutput": 58
+          "bytesInOutput": 75
         },
         "src/utils/fetchWrapper.js": {
           "bytesInOutput": 487
@@ -10355,22 +10649,22 @@
           "bytesInOutput": 407
         },
         "src/classes/TomSelectElement.js": {
-          "bytesInOutput": 1299
+          "bytesInOutput": 1320
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
         },
         "node_modules/tom-select/dist/css/tom-select.bootstrap5.min.css": {
-          "bytesInOutput": 15396
+          "bytesInOutput": 15415
         },
         "src/utils/injectStyles.js": {
-          "bytesInOutput": 159
+          "bytesInOutput": 177
         },
         "src/tom-select.js": {
           "bytesInOutput": 122
         }
       },
-      "bytes": 69788
+      "bytes": 70723
     },
     "dist/tom-select.raw.min.js": {
       "imports": [],
@@ -10378,25 +10672,25 @@
       "entryPoint": "src/tom-select.raw.js",
       "inputs": {
         "node_modules/tom-select/src/contrib/microevent.ts": {
-          "bytesInOutput": 469
+          "bytesInOutput": 479
         },
         "node_modules/tom-select/src/contrib/microplugin.ts": {
-          "bytesInOutput": 837
+          "bytesInOutput": 881
         },
         "node_modules/@orchidjs/unicode-variants/dist/esm/regex.js": {
-          "bytesInOutput": 458
+          "bytesInOutput": 488
         },
         "node_modules/@orchidjs/unicode-variants/dist/esm/strings.js": {
           "bytesInOutput": 198
         },
         "node_modules/@orchidjs/unicode-variants/dist/esm/index.js": {
-          "bytesInOutput": 3792
+          "bytesInOutput": 3832
         },
         "node_modules/@orchidjs/sifter/dist/esm/utils.js": {
           "bytesInOutput": 560
         },
         "node_modules/@orchidjs/sifter/dist/esm/sifter.js": {
-          "bytesInOutput": 2589
+          "bytesInOutput": 2609
         },
         "node_modules/tom-select/src/utils.ts": {
           "bytesInOutput": 1158
@@ -10414,10 +10708,10 @@
           "bytesInOutput": 982
         },
         "node_modules/tom-select/src/getSettings.ts": {
-          "bytesInOutput": 1547
+          "bytesInOutput": 1549
         },
         "node_modules/tom-select/src/tom-select.ts": {
-          "bytesInOutput": 26439
+          "bytesInOutput": 26864
         },
         "node_modules/tom-select/src/plugins/change_listener/plugin.ts": {
           "bytesInOutput": 55
@@ -10426,10 +10720,10 @@
           "bytesInOutput": 1331
         },
         "node_modules/tom-select/src/plugins/clear_button/plugin.ts": {
-          "bytesInOutput": 398
+          "bytesInOutput": 416
         },
         "node_modules/tom-select/src/plugins/drag_drop/plugin.ts": {
-          "bytesInOutput": 1201
+          "bytesInOutput": 1259
         },
         "node_modules/tom-select/src/plugins/dropdown_header/plugin.ts": {
           "bytesInOutput": 560
@@ -10474,16 +10768,16 @@
           "bytesInOutput": 162
         },
         "src/utils/simpleConfig.js": {
-          "bytesInOutput": 241
+          "bytesInOutput": 265
         },
         "src/utils/whenParsed.js": {
           "bytesInOutput": 134
         },
         "src/utils/FormidableElement.js": {
-          "bytesInOutput": 644
+          "bytesInOutput": 650
         },
         "src/utils/setId.js": {
-          "bytesInOutput": 67
+          "bytesInOutput": 82
         },
         "src/utils/localeProvider.js": {
           "bytesInOutput": 120
@@ -10492,7 +10786,7 @@
           "bytesInOutput": 208
         },
         "src/utils/getDelete.js": {
-          "bytesInOutput": 58
+          "bytesInOutput": 75
         },
         "src/utils/fetchWrapper.js": {
           "bytesInOutput": 487
@@ -10501,7 +10795,7 @@
           "bytesInOutput": 407
         },
         "src/classes/TomSelectElement.js": {
-          "bytesInOutput": 1299
+          "bytesInOutput": 1320
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 60
@@ -10510,7 +10804,7 @@
           "bytesInOutput": 30
         }
       },
-      "bytes": 54141
+      "bytes": 55039
     }
   }
 }

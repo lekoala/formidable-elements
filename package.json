@@ -74,8 +74,8 @@
     "start": "npm run build -- --servedir=.",
     "watch": "npm run build -- --watch",
     "bump": "npm run build-all && bun version patch",
-    "build-all": "esbuild ./src/*.js --bundle --minify --loader:.css=text --format=iife --outdir=dist --out-extension:.js=.min.js --metafile=meta.json --analyze 2> ./docs/filesize.md",
-    "build-all-debug": "esbuild ./src/*.js --bundle --loader:.css=text --format=iife --outdir=debug --out-extension:.js=.js",
+    "build-all": "esbuild ./src/*.js --target=es2020,safari11.1 --bundle --minify --loader:.css=text --format=iife --outdir=dist --out-extension:.js=.min.js --metafile=meta.json --analyze 2> ./docs/filesize.md",
+    "build-all-debug": "esbuild ./src/*.js --target=es2020,safari11.1 --bundle --loader:.css=text --format=iife --outdir=debug --out-extension:.js=.js",
     "jsdoc": "bunx jsdoc-to-markdown ./src/classes/*.js > ./docs/api.md",
     "update-deps": "bunx npm-check-updates -u",
     "local-server": "php -S localhost:8002 -t ."
