@@ -41,27 +41,27 @@
         <a href="../index.html">Back to index</a>
     </header>
     <div class="mb-3">
-        count with grouping : <count-up>5000</count-up><br/>
-        count with grouping using value attr : <count-up value="5000"></count-up><br/>
-        count with large numbers : <count-up>500000000</count-up><br/>
-        count with large formatted numbers : <count-up>   500 000 000   $$sdds$sd</count-up><br/>
-        count longer : <count-up data-duration="5">5000</count-up><br/>
-        count raw :  <count-up data-format="false">5000</count-up><br/>
-        count with grouping and decimals : <count-up data-decimals="2">5000</count-up><br/>
+        count with grouping : <count-up>5000</count-up><br />
+        count with grouping using value attr : <count-up value="5000"></count-up><br />
+        count with large numbers : <count-up>500000000</count-up><br />
+        count with large formatted numbers : <count-up> 500 000 000 $$sdds$sd</count-up><br />
+        count longer : <count-up data-duration="5">5000</count-up><br />
+        count raw : <count-up data-format="false">5000</count-up><br />
+        count with grouping and decimals : <count-up data-decimals="2">5000</count-up><br />
     </div>
     <div class="mb-3">
-        decimals (auto) : <count-up>0.0531</count-up><br/>
+        decimals (auto) : <count-up>0.0531</count-up><br />
         decimals (manual) : <count-up data-decimal-places="3">0.0531</count-up>
     </div>
     <div class="mb-3">
-        french count up <count-up lang="fr">5000</count-up><br/>
+        french count up <count-up lang="fr">5000</count-up><br />
         german count up <count-up lang="de">5000</count-up>
     </div>
     <div class="mb-3">
-        money <count-up data-currency="EUR">5000</count-up><br/>
-        money <count-up data-currency="EUR" data-currency-display="code">5000</count-up><br/>
-        money <count-up data-currency="EUR" data-currency-display="name">5000</count-up><br/>
-        percent <count-up data-suffix=" %">96</count-up><br/>
+        money <count-up data-currency="EUR">5000</count-up><br />
+        money <count-up data-currency="EUR" data-currency-display="code">5000</count-up><br />
+        money <count-up data-currency="EUR" data-currency-display="name">5000</count-up><br />
+        percent <count-up data-suffix=" %">96</count-up><br />
         custom prefix/suffix <count-up data-prefix="PRE " data-suffix=" POST">96</count-up>
     </div>
     <div style="margin-bottom:100vh">
@@ -70,6 +70,10 @@
 
     <div class="mb-3">
         <count-up>5000</count-up>
+        <p class="count-up">
+            <count-up data-start-val="0" data-duration="2" data-format="false"
+                data-config='{"smartEasingThreshold": 2000, "scrollSpyDelay": 2000, "enableScrollSpy": true}'> 50000</count-up>
+        </p>
     </div>
     <hr>
     <button class="btn btn-light delete-btn" data-name="count-up">Delete element</button>

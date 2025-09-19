@@ -57,7 +57,16 @@ class CountUpElement extends EventfulElement {
     }
 
     this.countup = new CountUp(this, v, config);
-    this.countup.start();
+    if (!config.enableScrollSpy) {
+      if (!this.countup.error) {
+        this.countup.start();
+      } else {
+        console.error(this.countup.error);
+      }
+    }
+    else {
+        console.log(config, this);
+    }
   }
 
   destroyed() {
