@@ -567,7 +567,7 @@
       "format": "esm"
     },
     "src/classes/CountUpElement.js": {
-      "bytes": 2034,
+      "bytes": 2158,
       "imports": [
         {
           "path": "node_modules/countup.js/dist/countUp.min.js",
@@ -7496,7 +7496,7 @@
           "bytesInOutput": 22
         },
         "src/classes/CountUpElement.js": {
-          "bytesInOutput": 801
+          "bytesInOutput": 892
         },
         "src/utils/defineEl.js": {
           "bytesInOutput": 56
@@ -7505,7 +7505,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 9373
+      "bytes": 9464
     },
     "dist/data-table.min.js": {
       "imports": [],

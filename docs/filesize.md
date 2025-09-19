@@ -1047,13 +1047,13 @@
    └ src/utils/isString.js                                                                                         29b     0.2%
 
   dist/count-up.min.js                                                                                            9.2kb  100.0%
-   ├ node_modules/countup.js/dist/countUp.min.js                                                                  5.8kb   63.2%
+   ├ node_modules/countup.js/dist/countUp.min.js                                                                  5.8kb   62.6%
+   ├ src/classes/CountUpElement.js                                                                                892b     9.4%
    ├ src/utils/EventfulElement.js                                                                                 866b     9.2%
-   ├ src/classes/CountUpElement.js                                                                                801b     8.5%
-   ├ src/utils/FormidableElement.js                                                                               636b     6.8%
+   ├ src/utils/FormidableElement.js                                                                               636b     6.7%
    ├ src/utils/simpleConfig.js                                                                                    264b     2.8%
-   ├ src/utils/unformatNumber.js                                                                                  260b     2.8%
-   ├ src/utils/replaceCallbacks.js                                                                                156b     1.7%
+   ├ src/utils/unformatNumber.js                                                                                  260b     2.7%
+   ├ src/utils/replaceCallbacks.js                                                                                156b     1.6%
    ├ src/utils/whenParsed.js                                                                                      131b     1.4%
    ├ src/utils/defaultLang.js                                                                                      76b     0.8%
    ├ src/utils/parseBool.js                                                                                        69b     0.7%
@@ -1213,4 +1213,4 @@
   dist\tiptap-editor.min.js       330.6kb
   ...and 34 more output files...
 
-Done in 121ms
+Done in 232ms
