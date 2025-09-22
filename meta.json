@@ -74,7 +74,7 @@
       "format": "esm"
     },
     "src/classes/Anchored.js": {
-      "bytes": 16835,
+      "bytes": 16191,
       "imports": [
         {
           "path": "src/utils/FormidableElement.js",
@@ -1402,7 +1402,7 @@
       "format": "esm"
     },
     "src/classes/FlatpickrInput.js": {
-      "bytes": 10835,
+      "bytes": 11774,
       "imports": [
         {
           "path": "node_modules/flatpickr/dist/esm/index.js",
@@ -2611,7 +2611,7 @@
       "format": "esm"
     },
     "src/classes/SuperfileElement.js": {
-      "bytes": 478,
+      "bytes": 455,
       "imports": [
         {
           "path": "node_modules/superfile/superfile.js",
