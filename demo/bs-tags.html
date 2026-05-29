@@ -45,7 +45,7 @@
             <label for="preselectedRemote" class="form-label">Tags (preselect + remote)</label>
             <!-- you can pass functions as json as well -->
             <bs-tags
-                  data-config='{"server": "https://api.github.com/search/repositories", "queryParam": "q", "liveServer": true, "serverDataKey": "items"}'>
+                  data-config='{"server": "https://api.github.com/search/repositories", "queryParam": "q", "liveServer": true, "serverDataKey": "items", "labelField": "name", "valueField": "full_name"}'>
                 <select class="form-select" id="preselectedRemote" name="preselectedRemote[]" multiple>
                     <option disabled hidden value="">Choose repos...</option>
                     <option value="my_repo" selected="selected">My repo</option>

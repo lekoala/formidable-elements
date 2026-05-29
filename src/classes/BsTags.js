@@ -20,7 +20,19 @@ class BsTags extends FormidableElement {
   created() {
     // Clear dropdown if element was duplicated
     rmElements(this, "div.dropdown");
-    this.tags = new Tags(this.el, this.config);
+    let config = this.config;
+    // Sanitizer expects a string but remote data can return numbers or null
+    if (!config.sanitizer) {
+      config.sanitizer = (str) => {
+        if (str === null || str === undefined) {
+          return "";
+        }
+        return String(str).replace(/[&\n\<>'"]/g, function (e) {
+          return "&#" + e.charCodeAt(0) + ";";
+        });
+      };
+    }
+    this.tags = new Tags(this.el, config);
   }
 
   destroyed() {
