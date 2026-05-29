@@ -740,7 +740,7 @@
    ├ node_modules/flatpickr/dist/esm/index.js                                                                    41.1kb   47.9%
    ├ node_modules/flatpickr/dist/flatpickr.min.css                                                               15.8kb   18.4%
    ├ node_modules/flatpickr/dist/plugins/monthSelect/index.js                                                     5.4kb    6.3%
-   ├ src/classes/FlatpickrInput.js                                                                                4.2kb    4.9%
+   ├ src/classes/FlatpickrInput.js                                                                                4.3kb    5.0%
    ├ node_modules/flatpickr/dist/plugins/monthSelect/style.css                                                    2.9kb    3.4%
    ├ node_modules/flatpickr/dist/esm/utils/formatting.js                                                          2.5kb    2.9%
    ├ node_modules/flatpickr/dist/esm/utils/dates.js                                                               2.0kb    2.4%
@@ -865,7 +865,7 @@
   dist/flatpickr-input.raw.min.js                                                                                66.2kb  100.0%
    ├ node_modules/flatpickr/dist/esm/index.js                                                                    41.1kb   62.1%
    ├ node_modules/flatpickr/dist/plugins/monthSelect/index.js                                                     5.4kb    8.1%
-   ├ src/classes/FlatpickrInput.js                                                                                4.2kb    6.4%
+   ├ src/classes/FlatpickrInput.js                                                                                4.3kb    6.4%
    ├ node_modules/flatpickr/dist/esm/utils/formatting.js                                                          2.5kb    3.8%
    ├ node_modules/flatpickr/dist/esm/utils/dates.js                                                               2.0kb    3.1%
    ├ node_modules/flatpickr/dist/plugins/confirmDate/confirmDate.js                                               1.8kb    2.8%
@@ -955,7 +955,7 @@
    ├ src/bs-tags.js                                                                                                42b     0.1%
    └ src/utils/isString.js                                                                                         28b     0.1%
 
-  dist/bs-tags.raw.min.js                                                                                        31.7kb  100.0%
+  dist/bs-tags.raw.min.js                                                                                        31.8kb  100.0%
    ├ node_modules/bootstrap5-tags/tags.js                                                                        29.9kb   94.2%
    ├ src/utils/FormidableElement.js                                                                               640b     2.0%
    ├ src/utils/simpleConfig.js                                                                                    265b     0.8%
@@ -1213,4 +1213,4 @@
   dist\tiptap-editor.min.js       330.6kb
   ...and 34 more output files...
 
-Done in 2468ms
+Done in 4681ms

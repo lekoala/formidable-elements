@@ -195,7 +195,7 @@
       "format": "esm"
     },
     "node_modules/bootstrap5-tags/tags.js": {
-      "bytes": 73690,
+      "bytes": 74182,
       "imports": [],
       "format": "esm"
     },
@@ -1402,7 +1402,7 @@
       "format": "esm"
     },
     "src/classes/FlatpickrInput.js": {
-      "bytes": 11774,
+      "bytes": 11821,
       "imports": [
         {
           "path": "node_modules/flatpickr/dist/esm/index.js",
@@ -7149,7 +7149,7 @@
       "entryPoint": "src/bs-tags.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 30606
+          "bytesInOutput": 30665
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -7188,7 +7188,7 @@
           "bytesInOutput": 42
         }
       },
-      "bytes": 33847
+      "bytes": 33906
     },
     "dist/bs-tags.raw.min.js": {
       "imports": [],
@@ -7196,7 +7196,7 @@
       "entryPoint": "src/bs-tags.raw.js",
       "inputs": {
         "node_modules/bootstrap5-tags/tags.js": {
-          "bytesInOutput": 30606
+          "bytesInOutput": 30665
         },
         "src/utils/isString.js": {
           "bytesInOutput": 28
@@ -7229,7 +7229,7 @@
           "bytesInOutput": 25
         }
       },
-      "bytes": 32478
+      "bytes": 32537
     },
     "dist/cleave-input.min.js": {
       "imports": [],
@@ -7908,7 +7908,7 @@
           "bytesInOutput": 42107
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 4336
+          "bytesInOutput": 4366
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -7980,7 +7980,7 @@
           "bytesInOutput": 429
         }
       },
-      "bytes": 87922
+      "bytes": 87952
     },
     "dist/flatpickr-input.raw.min.js": {
       "imports": [],
@@ -8018,7 +8018,7 @@
           "bytesInOutput": 42107
         },
         "src/classes/FlatpickrInput.js": {
-          "bytesInOutput": 4336
+          "bytesInOutput": 4366
         },
         "src/utils/isString.js": {
           "bytesInOutput": 29
@@ -8078,7 +8078,7 @@
           "bytesInOutput": 35
         }
       },
-      "bytes": 67804
+      "bytes": 67834
     },
     "dist/floating-ui.min.js": {
       "imports": [],

@@ -21,7 +21,7 @@
     "@tiptap/pm": "^2.23.0",
     "@tiptap/starter-kit": "^2.23.0",
     "bootstrap5-autocomplete": "^1.1.39",
-    "bootstrap5-tags": "^1.7.15",
+    "bootstrap5-tags": "^1.7.17",
     "cleave-es6": "^1.0.6",
     "countup.js": "^2.9.0",
     "datatables.net": "^2.3.3",
