@@ -33,17 +33,18 @@ class ColorisInput extends FormidableElement {
     }
 
     created() {
-        const id = setId(this.el, name);
-        this.el.autocomplete = "off";
+        const input = this.el;
+        const id = setId(input, name);
+        input.autocomplete = "off";
 
         // el, wrap, rtl, inline, defaultColor and a11y can only be set globally
         Coloris.coloris({
-            el: `#${id}`,
+            el: input,
             rtl: rtl,
             themeMode: themeMode,
         });
         // parent, theme, themeMode, margin, format, formatToggle, focusInput, selectInput, swatchesOnly, alpha, forceAlpha, swatches
-        const config = this.config;
+        const config = { ...this.config };
         // you can set a shortcut data-swatches attribute if you only want to display a few colors
         if (this.dataset.swatches) {
             config.swatchesOnly = true;
