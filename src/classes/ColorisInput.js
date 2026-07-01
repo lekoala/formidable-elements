@@ -16,6 +16,8 @@ import isRTL from "../utils/isRTL.js";
 const themeMode = document.documentElement.dataset.bsTheme || "auto";
 const rtl = isRTL();
 const name = "coloris-input";
+const instanceAttribute = "data-coloris-input-instance";
+let instanceCounter = 0;
 
 // Only once! after, use .set
 Coloris.init();
@@ -34,7 +36,21 @@ class ColorisInput extends FormidableElement {
 
     created() {
         const input = this.el;
-        const id = setId(input, name);
+        if (!input) {
+            setTimeout(() => {
+                if (this.isConnected && this.el) {
+                    this.created();
+                }
+            });
+            return;
+        }
+
+        setId(input, name);
+        const instanceId = `${name}-${++instanceCounter}`;
+        const instanceSelector = `[${instanceAttribute}="${instanceId}"]`;
+
+        this._colorisInstanceSelector = instanceSelector;
+        input.setAttribute(instanceAttribute, instanceId);
         input.autocomplete = "off";
 
         // el, wrap, rtl, inline, defaultColor and a11y can only be set globally
@@ -50,12 +66,14 @@ class ColorisInput extends FormidableElement {
             config.swatchesOnly = true;
             config.swatches = this.dataset.swatches.split(",");
         }
-        Coloris.setInstance(`#${id}`, config);
+        Coloris.setInstance(instanceSelector, config);
     }
 
     destroyed() {
-        const id = this.el.id;
-        Coloris.removeInstance(`#${id}`);
+        if (this._colorisInstanceSelector) {
+            Coloris.removeInstance(this._colorisInstanceSelector);
+        }
+        this.el?.removeAttribute(instanceAttribute);
     }
 }
 
